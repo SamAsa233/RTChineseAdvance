@@ -36,7 +36,7 @@ void disclaimer_scene_init_gfx3(void) {
     u16 c;
 
     func_08007324(TRUE);
-    task = palette_fade_in(0, ticks_to_frames(12), 1, 0x0000, &disclaimer_pal[0][0], BG_PALETTE_BUFFER(0));
+    task = palette_fade_in(0, ticks_to_frames(12), 16, 0x0000, &disclaimer_pal[0][0], BG_PALETTE_BUFFER(0));
     run_func_after_task(task, disclaimer_scene_wait_if_not_seen, 0);
 
     #ifdef GIT_COMMIT_STR
@@ -70,7 +70,7 @@ void disclaimer_scene_init_gfx2(void) {
 void disclaimer_scene_init_gfx1(void) {
     schedule_function_call(get_current_mem_id(), disclaimer_scene_init_gfx2, 0, 2);
     scene_show_obj_layer();
-    scene_set_bg_layer_display(BG_LAYER_1, TRUE, 0, 0, 0, 29, BGCNT_PRIORITY(1));
+    scene_set_bg_layer_display(BG_LAYER_1, TRUE, 0, 0, 0, 29, BGCNT_256_PALETTE | BGCNT_PRIORITY(1));
 }
 
 
