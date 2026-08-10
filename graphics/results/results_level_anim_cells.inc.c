@@ -75,8 +75,8 @@ AnimationCel results_level_cel005[] = {
 
 AnimationCel results_level_cel006[] = {
     /* Len */ 2,
-    /* 000 */ 0x00e3, 0x41c0, 0x2152,
-    /* 001 */ 0x80e3, 0x01d0, 0x218d
+    /* 000 */ 0x00db, 0x41c0, 0x2152,
+    /* 001 */ 0x80db, 0x01d0, 0x218d
 };
 
 AnimationCel results_level_cel007[] = {
