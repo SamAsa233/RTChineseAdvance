@@ -159,10 +159,10 @@ const s32 D_0805aaa0[] = {
 };
 
 const s32 D_0805aab0[][4] = {
-    { 0x4c, 0x76, 0x93, 0xbd },
-    { 0x4a, 0x71, 0x88, 0xaf },
-    { 0x4f, 0x8f, 0xa2, -0x40 },
-    { 0x45, 0x63, 0x81, 0xa1 },
+    { 0x52, 0x6f, 0x8b, 0xa8 },
+    { 0x4e, 0x6c, 0x90, 0xac },
+    { 0x62, 0x80, 0x96, -0x40 },
+    { 0x58, 0x74, 0x8f, 0xa4 },
 };
 
 // [D_089e8dcc] Buffered Textures List
@@ -315,22 +315,22 @@ struct Animation *mechanical_horse_lesson_text_anim[][4] = {
         /* 0x03 */ anim_horse_text_ka
     },
     /* TROT */ {
-        /* 0x00 */ anim_horse_text_tot,
-        /* 0x01 */ anim_horse_text_ka,
-        /* 0x02 */ anim_horse_text_tot,
-        /* 0x03 */ anim_horse_text_ka
+        /* 0x00 */ anim_horse_text_rap,
+        /* 0x01 */ anim_horse_text_tot,
+        /* 0x02 */ anim_horse_text_rap,
+        /* 0x03 */ anim_horse_text_tot
     },
     /* CANTER */ {
-        /* 0x00 */ anim_horse_text_pa,
-        /* 0x01 */ anim_horse_text_ta,
-        /* 0x02 */ anim_horse_text_rap,
-        /* 0x03 */ anim_horse_text_pa
+        /* 0x00 */ anim_horse_text_pak,
+        /* 0x01 */ anim_horse_text_pa,
+        /* 0x02 */ anim_horse_text_dod,
+        /* 0x03 */ anim_horse_text_pak
     },
     /* GALLOP */ {
         /* 0x00 */ anim_horse_text_do,
         /* 0x01 */ anim_horse_text_do,
         /* 0x02 */ anim_horse_text_do,
-        /* 0x03 */ anim_horse_text_dod
+        /* 0x03 */ anim_horse_text_ta
     }
 };
 

@@ -297,23 +297,23 @@ void func_08041970(void) {
                 } else {
                     if (gMechanicalHorse->unk2cc == 1) {     
                         if (gMechanicalHorse->unk3c[i].unk3 == 0 || gMechanicalHorse->unk3c[i].unk3 == 2) {               
-                            sprite_set_anim(gSpriteHandler, gMechanicalHorse->unk3c[i].sprite, anim_horse_text_tot, 0, 0, 0, 0);
+                            sprite_set_anim(gSpriteHandler, gMechanicalHorse->unk3c[i].sprite, anim_horse_text_rap, 0, 0, 0, 0);
                         } else {
-                            sprite_set_anim(gSpriteHandler, gMechanicalHorse->unk3c[i].sprite, anim_horse_text_ka, 0, 0, 0, 0);
+                            sprite_set_anim(gSpriteHandler, gMechanicalHorse->unk3c[i].sprite, anim_horse_text_tot, 0, 0, 0, 0);
                         }
                     } else if (gMechanicalHorse->unk2cc == 2) {
                         if (gMechanicalHorse->unk3c[i].unk3 == 0) {
-                            sprite_set_anim(gSpriteHandler, gMechanicalHorse->unk3c[i].sprite, anim_horse_text_pa, 0, 0, 0, 0);
+                            sprite_set_anim(gSpriteHandler, gMechanicalHorse->unk3c[i].sprite, anim_horse_text_pak, 0, 0, 0, 0);
                         } else if (gMechanicalHorse->unk3c[i].unk3 == 1) {
-                            sprite_set_anim(gSpriteHandler, gMechanicalHorse->unk3c[i].sprite, anim_horse_text_ta, 0, 0, 0, 0); 
+                            sprite_set_anim(gSpriteHandler, gMechanicalHorse->unk3c[i].sprite, anim_horse_text_pa, 0, 0, 0, 0); 
                         } else {
-                            sprite_set_anim(gSpriteHandler, gMechanicalHorse->unk3c[i].sprite, anim_horse_text_rap, 0, 0, 0, 0);
+                            sprite_set_anim(gSpriteHandler, gMechanicalHorse->unk3c[i].sprite, anim_horse_text_dod, 0, 0, 0, 0);
                         }
                     } else {
                         if (gMechanicalHorse->unk3c[i].unk3 <= 2) {
                              sprite_set_anim(gSpriteHandler, gMechanicalHorse->unk3c[i].sprite, anim_horse_text_do, 0, 0, 0, 0);
                         } else {
-                             sprite_set_anim(gSpriteHandler, gMechanicalHorse->unk3c[i].sprite, anim_horse_text_dod, 0, 0, 0, 0);
+                             sprite_set_anim(gSpriteHandler, gMechanicalHorse->unk3c[i].sprite, anim_horse_text_ta, 0, 0, 0, 0);
                         }
                     }
                 }
