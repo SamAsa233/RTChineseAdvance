@@ -22,6 +22,7 @@ AnimationCel mechanical_horse_cel001[] = {
     /* 011 */ 0x0000, 0x01f8, 0x22b6
 };
 
+// [D_0892ff84]
 AnimationCel mechanical_horse_cel002[] = {
     /* Len */ 8,
     /* 000 */ 0x00e0, 0x000a, 0x231f,
@@ -34,6 +35,7 @@ AnimationCel mechanical_horse_cel002[] = {
     /* 007 */ 0x00f8, 0x4008, 0x22d4
 };
 
+// [D_0892ffb6]
 AnimationCel mechanical_horse_cel003[] = {
     /* Len */ 8,
     /* 000 */ 0x00de, 0x000b, 0x231f,
@@ -46,6 +48,7 @@ AnimationCel mechanical_horse_cel003[] = {
     /* 007 */ 0x00f8, 0x4009, 0x230c
 };
 
+// [D_0892ffe8]
 AnimationCel mechanical_horse_cel004[] = {
     /* Len */ 8,
     /* 000 */ 0x00e0, 0x000a, 0x231f,
@@ -58,6 +61,7 @@ AnimationCel mechanical_horse_cel004[] = {
     /* 007 */ 0x00f8, 0x4008, 0x2300
 };
 
+// [D_0893001a]
 AnimationCel mechanical_horse_cel005[] = {
     /* Len */ 8,
     /* 000 */ 0x00de, 0x000b, 0x231f,
@@ -70,6 +74,7 @@ AnimationCel mechanical_horse_cel005[] = {
     /* 007 */ 0x00f8, 0x4009, 0x2302
 };
 
+// [D_0893004c]
 AnimationCel mechanical_horse_cel006[] = {
     /* Len */ 8,
     /* 000 */ 0x00e0, 0x0009, 0x231f,
@@ -82,6 +87,7 @@ AnimationCel mechanical_horse_cel006[] = {
     /* 007 */ 0x00f8, 0x4006, 0x22da
 };
 
+// [D_0893007e]
 AnimationCel mechanical_horse_cel007[] = {
     /* Len */ 8,
     /* 000 */ 0x00de, 0x000a, 0x231f,
@@ -94,6 +100,7 @@ AnimationCel mechanical_horse_cel007[] = {
     /* 007 */ 0x00f8, 0x4007, 0x22de
 };
 
+// [D_089300b0]
 AnimationCel mechanical_horse_cel008[] = {
     /* Len */ 8,
     /* 000 */ 0x00e0, 0x0008, 0x231f,
@@ -106,6 +113,7 @@ AnimationCel mechanical_horse_cel008[] = {
     /* 007 */ 0x00f8, 0x4006, 0x230a
 };
 
+// [D_089300e2]
 AnimationCel mechanical_horse_cel009[] = {
     /* Len */ 8,
     /* 000 */ 0x00de, 0x000a, 0x231f,
@@ -118,18 +126,21 @@ AnimationCel mechanical_horse_cel009[] = {
     /* 007 */ 0x00f8, 0x4007, 0x2310
 };
 
+// [D_08930114]
 AnimationCel mechanical_horse_cel010[] = {
     /* Len */ 2,
     /* 000 */ 0x80d1, 0x81f5, 0x2188,
     /* 001 */ 0x00e0, 0x4005, 0x22d0
 };
 
+// [D_08930122]
 AnimationCel mechanical_horse_cel011[] = {
     /* Len */ 2,
     /* 000 */ 0x80d2, 0x81f5, 0x2188,
     /* 001 */ 0x00de, 0x4005, 0x219e
 };
 
+// [D_08930130]
 AnimationCel mechanical_horse_cel012[] = {
     /* Len */ 7,
     /* 000 */ 0x00de, 0x0009, 0x231f,
@@ -141,6 +152,7 @@ AnimationCel mechanical_horse_cel012[] = {
     /* 006 */ 0x40f9, 0x81f8, 0x2250
 };
 
+// [D_0893015c]
 AnimationCel mechanical_horse_cel013[] = {
     /* Len */ 7,
     /* 000 */ 0x00dc, 0x0008, 0x231f,
@@ -152,6 +164,7 @@ AnimationCel mechanical_horse_cel013[] = {
     /* 006 */ 0x40f8, 0x81f8, 0x2210
 };
 
+// [D_08930188]
 AnimationCel mechanical_horse_cel014[] = {
     /* Len */ 7,
     /* 000 */ 0x00d9, 0x0007, 0x231f,
@@ -163,6 +176,7 @@ AnimationCel mechanical_horse_cel014[] = {
     /* 006 */ 0x40f7, 0x81f8, 0x2208
 };
 
+// [D_089301b4]
 AnimationCel mechanical_horse_cel015[] = {
     /* Len */ 7,
     /* 000 */ 0x00dd, 0x000a, 0x231f,
@@ -174,36 +188,42 @@ AnimationCel mechanical_horse_cel015[] = {
     /* 006 */ 0x40f8, 0x81f9, 0x229c
 };
 
+// [D_089301e0]
 AnimationCel mechanical_horse_cel016[] = {
     /* Len */ 2,
     /* 000 */ 0x40d8, 0x81f4, 0x2258,
     /* 001 */ 0x40e8, 0x41f4, 0x2312
 };
 
+// [D_089301ee]
 AnimationCel mechanical_horse_cel017[] = {
     /* Len */ 2,
     /* 000 */ 0x40d8, 0x81f4, 0x22cc,
     /* 001 */ 0x40e8, 0x01f4, 0x2318
 };
 
+// [D_089301fc]
 AnimationCel mechanical_horse_cel018[] = {
     /* Len */ 2,
     /* 000 */ 0x40d8, 0x81f4, 0x2280,
     /* 001 */ 0x40e8, 0x01f4, 0x2316
 };
 
+// [D_0893020a]
 AnimationCel mechanical_horse_cel019[] = {
     /* Len */ 2,
     /* 000 */ 0x40d8, 0x81f4, 0x2284,
     /* 001 */ 0x40e8, 0x01f4, 0x231a
 };
 
+// [D_08930218]
 AnimationCel mechanical_horse_cel020[] = {
     /* Len */ 2,
     /* 000 */ 0x40d8, 0x81f4, 0x2258,
     /* 001 */ 0x40e8, 0x41f4, 0x2312
 };
 
+// [D_08930226]
 AnimationCel mechanical_horse_cel021[] = {
     /* Len */ 7,
     /* 000 */ 0x00dc, 0x0008, 0x231f,
@@ -215,6 +235,7 @@ AnimationCel mechanical_horse_cel021[] = {
     /* 006 */ 0x40f8, 0x81f8, 0x2290
 };
 
+// [D_08930252]
 AnimationCel mechanical_horse_cel022[] = {
     /* Len */ 7,
     /* 000 */ 0x00dd, 0x0009, 0x231f,
@@ -226,6 +247,7 @@ AnimationCel mechanical_horse_cel022[] = {
     /* 006 */ 0x40f8, 0x81f9, 0x2288
 };
 
+// [D_0893027e]
 AnimationCel mechanical_horse_cel023[] = {
     /* Len */ 7,
     /* 000 */ 0x00e1, 0x000d, 0x231f,
@@ -237,6 +259,7 @@ AnimationCel mechanical_horse_cel023[] = {
     /* 006 */ 0x40f9, 0x81fa, 0x21da
 };
 
+// [D_089302aa]
 AnimationCel mechanical_horse_cel024[] = {
     /* Len */ 7,
     /* 000 */ 0x00dc, 0x0009, 0x231f,
@@ -248,6 +271,7 @@ AnimationCel mechanical_horse_cel024[] = {
     /* 006 */ 0x40f8, 0x81f8, 0x2254
 };
 
+// [D_089302d6]
 AnimationCel mechanical_horse_cel025[] = {
     /* Len */ 7,
     /* 000 */ 0x00d7, 0x0007, 0x231f,
@@ -259,89 +283,156 @@ AnimationCel mechanical_horse_cel025[] = {
     /* 006 */ 0x40f7, 0x81f8, 0x2214
 };
 
+// [D_08930302]
 AnimationCel mechanical_horse_cel026[] = {
-    /* Len */ 1,
-    /* 000 */ 0x00f8, 0x41f8, 0x933a
+    2,
+    0x00fc, 0x01f8, 0x7335,
+    0x00fe, 0x0000, 0x7309
 };
 
+// [D_08930310]
 AnimationCel mechanical_horse_cel027[] = {
-    /* Len */ 1,
-    /* 000 */ 0x00f8, 0x41f8, 0x2306
+    6,
+    0x00f8, 0x41e7, 0x2304,
+    0x80f8, 0x01f1, 0x2308,
+    0x40fb, 0x31f5, 0x232e,
+    0x4002, 0x01f4, 0x232e,
+    0x00fc, 0x41fb, 0x22d8,
+    0x0001, 0x0008, 0x2338
 };
 
+// [D_0893031e]
 AnimationCel mechanical_horse_cel028[] = {
-    /* Len */ 1,
-    /* 000 */ 0x00f8, 0x41f8, 0x9336
+    2,
+    0x00fc, 0x01fc, 0x7336,
+    0x00fc, 0x0004, 0x7337
 };
 
+// [D_08930326]
 AnimationCel mechanical_horse_cel029[] = {
-    /* Len */ 1,
-    /* 000 */ 0x00f8, 0x41f8, 0x22d8
+    3,
+    0x00fc, 0x41e9, 0x22d8,
+    0x40fb, 0x01f3, 0x2339,
+    0x4003, 0x01f3, 0x233b
 };
 
+// [D_0893032e]
 AnimationCel mechanical_horse_cel030[] = {
-    /* Len */ 1,
-    /* 000 */ 0x00f8, 0x41f8, 0x933a
+    2,
+    0x00fc, 0x01fc, 0x731c,
+    0x00fc, 0x0004, 0x72fc
 };
 
+// [D_08930336]
 AnimationCel mechanical_horse_cel031[] = {
-    /* Len */ 1,
-    /* 000 */ 0x00f8, 0x41f8, 0x2306
+    9,
+    0x0001, 0x001a, 0x2338,
+    0x40f8, 0x01f8, 0x2306,
+    0x0000, 0x01fa, 0x2328,
+    0x40fe, 0x01ff, 0x2326,
+    0x0003, 0x01ff, 0x22fd,
+    0x40fb, 0x3007, 0x232e,
+    0x4002, 0x0006, 0x232e,
+    0x40fb, 0x000f, 0x22dc,
+    0x0003, 0x0011, 0x22fd
 };
 
+// [D_0893033e]
 AnimationCel mechanical_horse_cel032[] = {
-    /* Len */ 1,
-    /* 000 */ 0x00f8, 0x41f8, 0x9338
+    1,
+    0x00fc, 0x01fa, 0x7334
 };
 
+// [D_0893034c]
 AnimationCel mechanical_horse_cel033[] = {
-    /* Len */ 1,
-    /* 000 */ 0x00f8, 0x41f8, 0x2304
+    3,
+    0x80f8, 0x01f6, 0x2308,
+    0x40fb, 0x01f9, 0x2339,
+    0x4003, 0x01f9, 0x233b
 };
 
+// [D_0893035a]
 AnimationCel mechanical_horse_cel034[] = {
-    /* Len */ 1,
-    /* 000 */ 0x00f8, 0x41f8, 0x933c
+    2,
+    0x00fc, 0x01fc, 0x730e,
+    0x00fd, 0x0001, 0x7309
 };
 
+// [D_08930368]
 AnimationCel mechanical_horse_cel035[] = {
-    /* Len */ 1,
-    /* 000 */ 0x00f8, 0x41f8, 0x230e
+    6,
+    0x40f8, 0x01ef, 0x2306,
+    0x0000, 0x01f1, 0x2328,
+    0x40fb, 0x01f5, 0x2339,
+    0x4003, 0x01f5, 0x233b,
+    0x00fc, 0x41fc, 0x22d8,
+    0x0001, 0x0009, 0x2338
 };
 
+// [D_08930376]
 AnimationCel mechanical_horse_cel036[] = {
-    /* Len */ 1,
-    /* 000 */ 0x00f8, 0x41f8, 0x9334
+    1,
+    0x00fc, 0x01fc, 0x730e
 };
 
+// [D_0893037e]
 AnimationCel mechanical_horse_cel037[] = {
-    /* Len */ 1,
-    /* 000 */ 0x00f8, 0x41f8, 0x2308
+    5,
+    0x40f8, 0x01f8, 0x2306,
+    0x0000, 0x01fa, 0x2328,
+    0x4003, 0x01fe, 0x233b,
+    0x40fb, 0x01fe, 0x2339,
+    0x0001, 0x000a, 0x2338
 };
 
+// [D_08930386]
 AnimationCel mechanical_horse_cel038[] = {
-    /* Len */ 1,
-    /* 000 */ 0x00f8, 0x41f8, 0x9334
+    2,
+    0x00fc, 0x01fb, 0x730e,
+    0x00fd, 0x0000, 0x7309
 };
 
+// [D_08930394]
 AnimationCel mechanical_horse_cel039[] = {
-    /* Len */ 1,
-    /* 000 */ 0x00f8, 0x41f8, 0x2308
+    5,
+    0x40f8, 0x01f6, 0x2306,
+    0x0000, 0x01f8, 0x2328,
+    0x4003, 0x01fc, 0x233b,
+    0x40fb, 0x01fc, 0x2339,
+    0x00fc, 0x4003, 0x22d8
 };
 
+// [D_089303a2]
 AnimationCel mechanical_horse_cel040[] = {
     /* Len */ 2,
     /* 000 */ 0x00f4, 0x41f8, 0x32d6,
     /* 001 */ 0x00e5, 0x41f8, 0x32d2
 };
 
+// [D_089303b0]
 AnimationCel mechanical_horse_cel041[] = {
     /* Len */ 1,
     /* 000 */ 0x000e, 0x01ee, 0x3332
 };
 
+// [D_089303b8]
 AnimationCel mechanical_horse_cel042[] = {
     /* Len */ 1,
     /* 000 */ 0x000e, 0x01ee, 0x3333
 };
 
+// [D_089303b8]
+AnimationCel mechanical_horse_cel043[] = {
+    1,
+    0x00fc, 0x01fc, 0x7329
+};
+
+// [D_089303b8]
+AnimationCel mechanical_horse_cel044[] = {
+    5,
+    0x40fb, 0x01e7, 0x22dc,
+    0x0003, 0x01e9, 0x22fd,
+    0x40fb, 0x01ee, 0x2339,
+    0x4003, 0x01ee, 0x233b,
+    0x0000, 0x01fa, 0x2338
+};

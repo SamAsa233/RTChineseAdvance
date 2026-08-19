@@ -158,12 +158,11 @@ const s32 D_0805aaa0[] = {
     0xd800, 0x14000, 0x1e000, 0x28000
 };
 
-// 这些是坐标
 const s32 D_0805aab0[][4] = {
-    { 0x4c, 0x6c, 0x84, 0xa4 },
-    { 0x48, 0x68, 0x88, 0xa8 },
-    { 0x60, 0x78, 0x90, -0x40 },
-    { 0x5a, 0x6e, 0x82, 0x98 },
+    { 0x4c, 0x76, 0x93, 0xbd },
+    { 0x4a, 0x71, 0x88, 0xaf },
+    { 0x4f, 0x8f, 0xa2, -0x40 },
+    { 0x45, 0x63, 0x81, 0xa1 },
 };
 
 // [D_089e8dcc] Buffered Textures List
@@ -317,13 +316,13 @@ struct Animation *mechanical_horse_lesson_text_anim[][4] = {
     },
     /* TROT */ {
         /* 0x00 */ anim_horse_text_tot,
-        /* 0x01 */ anim_horse_text_tot,
+        /* 0x01 */ anim_horse_text_ka,
         /* 0x02 */ anim_horse_text_tot,
-        /* 0x03 */ anim_horse_text_tot
+        /* 0x03 */ anim_horse_text_ka
     },
     /* CANTER */ {
         /* 0x00 */ anim_horse_text_pa,
-        /* 0x01 */ anim_horse_text_ka,
+        /* 0x01 */ anim_horse_text_ta,
         /* 0x02 */ anim_horse_text_rap,
         /* 0x03 */ anim_horse_text_pa
     },
