@@ -3,6 +3,7 @@
 #include "graphics/title/title_graphics.h"
 #include "src/code_080092cc.h"
 
+
 /* TITLE SCENE */
 
 
@@ -96,8 +97,11 @@ void title_logo_bounce_all(void) {
         struct LogoBubble *bubble = &gTitle->logoBubbles[i];
 
         if (bubble->active) {
-            bubble->bounceDistance += INT_TO_FIXED(6.0);
-            bubble->bounceAngle = bubble->bounceBaseAngle + agb_random(INT_TO_FIXED(2.0 / 8)) - INT_TO_FIXED(1.0 / 8);
+            bubble->bounceDistance += INT_TO_FIXED(4.0);
+            if (bubble->bounceBaseAngle == 37) {
+                bubble->bounceAngle = bubble->bounceBaseAngle + INT_TO_FIXED(2.0 / 8) - INT_TO_FIXED(1.0 / 8); }
+            else
+                bubble->bounceAngle = bubble->bounceBaseAngle + agb_random(INT_TO_FIXED(2.0 / 8)) - INT_TO_FIXED(1.0 / 8);
             title_logo_set_bubble_pos(i);
         }
     }
@@ -223,6 +227,7 @@ void title_scene_update_inputs(void) {
         func_0801d968(script_scene_title_exit);
         gTitle->inputsEnabled = FALSE;
         play_sound_w_pitch_volume(&s_nyuka_fan_seqData, INT_TO_FIXED(1.25), INT_TO_FIXED(0.0));
+        rumble_play_menu_confirm();
         scene_set_music_volume_env(100);
         D_030046a8->data.unkB0 = TRUE;
         gTitle->timeUntilDemo = 9999;
