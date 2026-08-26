@@ -43,14 +43,14 @@ void disclaimer_scene_init_gfx3(void) {
     for (i = 0; i < 7; i++) {
         c = GIT_COMMIT_STR[i];
         if (c >= '0' && c <= '9') {
-            c = 395 + (c - '0');
+            c = 316 + (c - '0');
         } else if (c >= 'a' && c <= 'f') {
-            c = 395 + (c - 'a') + 10;
+            c = 316 + (c - 'a') + 10;
         } else {
-            c = 395;
+            c = 316;
         }
         
-        *(GET_BG_MAP_ADDR(29, 22 + i, 18)) = c;
+        *(GET_BG_MAP_ADDR(29, 23 + i, 19)) = c;
     }
     #endif
 }
