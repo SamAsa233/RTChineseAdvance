@@ -477,53 +477,46 @@ void text_printer_fill_vram_tiles(u32 tileBaseX, u32 tileBaseY, u32 allocatedTil
 }
 
 
-// Get Glyph ID 
+// Get Glyph ID (GB2312)
+// ASCII (0x20-0x7E) renders as its GB2312 fullwidth form (D_08938194).
+// Two-byte characters use lead byte 0xA1-0xF7, trail byte 0xA1-0xFE:
+//     glyphID = D_08938140[lead - 0xA1] + (trail - 0xA1)
+// D_08938140 holds the base ID of each zone (-1 = zone has no glyphs), so the
+// glyph bins only need to contain the zones the Chinese text actually uses.
 s32 text_printer_get_glyph_id(const char **string) {
     const char *s;
-    char c1;
-    char c2;
-    s8 r0;
+    u8 c1;
+    u8 c2;
     s32 id;
 
     s = *string;
-    c1 = s[0];
-    (*string)++;
+    c1 = (u8)s[0];
 
-    r0 = (c1 - 0x20);
-    if ((u8)r0 < 0x5f) {
-        c2 = D_08938194[((u8)r0 * 2) + 1];
-        c1 = D_08938194[(u8)r0 * 2];
-    } else {
-        c2 = s[1];
+    if (c1 >= 0x20 && c1 <= 0x7E) {
+        // ASCII single byte: use its GB2312 fullwidth form.
         (*string)++;
-    }
-
-    r0 = (c1 + 0x7f);
-    if ((u8)r0 < 0x1f) {
-        id = (u16)D_08938140[c1 - 0x81];
+        c2 = (u8)D_08938194[(c1 - 0x20) * 2 + 1];
+        c1 = (u8)D_08938194[(c1 - 0x20) * 2];
+    } else if (c1 >= 0xA1 && c1 <= 0xF7) {
+        // GB2312 two-byte character.
+        c2 = (u8)s[1];
+        if (c2 < 0xA1 || c2 > 0xFE) {
+            return -1;
+        }
+        (*string) += 2;
     } else {
-        r0 = (c1 + 0x20);
-        if ((u8)r0 < 0xb) {
-            id = (u16)D_0893817e[c1 - 0xe0];
-        } else {
-            id = -1;
-        }
+        // Control characters (0x00-0x1F) are handled by the caller before
+        // this point; anything else is not a valid GB2312 lead byte.
+        (*string)++;
+        return -1;
     }
 
-    if (id != -1) {
-        if (c2 < 0x7f) {
-            id -= 0x40 - c2;
-        } else {
-            r0 = (c2 + 0x80);
-            if ((u8)r0 < 0x7d) {
-                id -= 0x41 - c2;
-            } else {
-                id = -1;
-            }
-        }
+    id = D_08938140[c1 - 0xA1];
+    if (id < 0) {
+        return -1;
     }
 
-    return id;
+    return id + (c2 - 0xA1);
 }
 
 
