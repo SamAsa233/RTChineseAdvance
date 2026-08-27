@@ -39,7 +39,7 @@ const char D_0805dd90[] =
 const char D_0805ddb8[] =
     "Now, without further ado,\n"
     "let's start the practice\n"
-    "with just ‡M presses.";
+    "by just hitting â‘­.";
 
 const char D_0805dde0[] =
     "Listen closely,\n"
@@ -47,11 +47,11 @@ const char D_0805dde0[] =
 
 const char D_0805ddfc[] =
     "This time, Ponta will join in.\n"
-    "Ponta's part uses Down on ‡O.";
+    "Ponta's part uses Down on â‘¯.";
 
 const char D_0805de40[] =
     "Now for a fast part.\n"
-    "Alternating ‡M and Right on ‡O\n"
+    "Alternating â‘­ and Right on â‘¯\n"
     "will make it much easier.";
 
 const char D_0805de88[] = 

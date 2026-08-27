@@ -19,30 +19,26 @@ const char D_0805db74[] = "Amazing acrobatics on both ends!";
 
 const char D_0805db94[] = "The Ringmaster's advice:";
 
-const char D_0805dba0[] = "‚g‚‰C@‚hf‚@‚s‚’‚‚DDD";
+const char D_0805dba0[] = "Hi, I'm Tram...";
 
-const char D_0805dbb0[] = "‚‚‚„@‚hf‚@‚o‚‚•‚Œ‚‰‚‚…DDD";
+const char D_0805dbb0[] = "and I'm Pauline...";
 
-const char D_0805dbc0[] = "‚‚‚„@‚”‚‚‡‚…‚”‚ˆ‚…‚’C@‚—‚…@‚”‚’‚‚‚‚‚Œ‚‰‚‚…I";
+const char D_0805dbc0[] = "and together, we trampoline!";
 
-const char D_0805dbd8[] = "‚`‚”@‚”‚ˆ‚…@‚‚…‚‚‹@‚‚†@‚‚•‚’@‚Š‚•‚‚‚“C";
+const char D_0805dbd8[] = "At the peak of our jumps,";
 
-const char D_0805dbf4[] = "‚‚’‚…‚“‚“@{@‚†‚‚’@‚‚…C";
+const char D_0805dbf4[] = "press + for me,";
 
-const char D_0805dc0c[] = "‚‚‚„@T@‚†‚‚’@‚‚…C";
+const char D_0805dc0c[] = "and ã‚ for me,";
 
-const char D_0805dc24[] = "‚‚‚„@‚—‚…f‚Œ‚Œ@‚”‚’‚‚‚“‚†‚‚’‚I";
+const char D_0805dc24[] = "and we'll transform!";
 
-#ifdef PARADISE
-const char D_0805dc38[] = "‚k‚…‚”f‚“@‚‚’‚‚ƒ‚”‚‰‚“‚…@‚†‚‚’@‚@‚‚‚‰‚”I";
-#else
-const char D_0805dc38[] = "‚k‚…‚”f‚“@‚‚’‚‚ƒ‚”‚‰‚ƒ‚…@‚†‚‚’@‚@‚‚‚‰‚”I";
-#endif
+const char D_0805dc38[] = "Let's practice for a bit!";
 
-const char D_0805dc58[] = "‚r‚•‚ƒ‚ƒ‚…‚“‚“‚‰‚–‚…@‚Š‚•‚‚‚“@‚‚‚—I";
+const char D_0805dc58[] = "Successive jumps now!";
 
-const char D_0805dc70[] = "‚s‚—‚@‚Š‚•‚‚‚“C@‚‰‚@‚”‚•‚’‚‚“I";
+const char D_0805dc70[] = "Two jumps, in turns!";
 
-const char D_0805dc88[] = "‚s‚—‚@‚Š‚•‚‚‚“C@‚”‚‚‡‚…‚”‚ˆ‚…‚’I";
+const char D_0805dc88[] = "Two jumps, together!";
 
-const char D_0805dc9c[] = "‚m‚‚—@‚—‚…f‚’‚…@‚’‚…‚‚„‚™@‚”‚@‚“‚”‚‚’‚”I";
+const char D_0805dc9c[] = "Now we're ready to start!";
