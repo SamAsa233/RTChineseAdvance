@@ -57,21 +57,18 @@ def glyph_index(lead, trail):
 # We fall back to 0xA1AA (U+2015 HORIZONTAL BAR) so '~' never renders as a
 # dropped glyph. Adjust below if you want a different fallback.
 
-ASCII_FULLWIDTH_FALLBACK = gb2312(0xA1, 0xAA)  # U+2015 '―'
 
 
 def ascii_to_fullwidth(code):
+    """ASCII 0x20-0x7E -> GB2312 fullwidth code (GB2312-80 standard).
+
+    0x20 (space) -> 0xA1A1 (U+3000);
+    0x21-0x7E    -> 0xA3A1 + (code - 0x21)  (U+FF01 .. U+FF5E)
+    """
     if code == 0x20:
-        return gb2312(0xA1, 0xA1)          # U+3000
-    if 0x21 <= code <= 0x3E:
-        return gb2312(0xA1, 0xC1 + (code - 0x21))
-    if 0x3F <= code <= 0x5E:
-        return gb2312(0xA1, 0xDF + (code - 0x3F))
-    if 0x5F <= code <= 0x7E:
-        gb = gb2312(0xA2, 0xA1 + (code - 0x5F))
-        if code == 0x7E:                   # '~' -> U+FF5E not in GB2312-80
-            return ASCII_FULLWIDTH_FALLBACK
-        return gb
+        return gb2312(0xA1, 0xA1)
+    if 0x21 <= code <= 0x7E:
+        return gb2312(0xA3, 0xA1 + (code - 0x21))
     raise ValueError("not ASCII 0x20-0x7E")
 
 
