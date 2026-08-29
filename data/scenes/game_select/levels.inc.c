@@ -2,11 +2,11 @@
 struct LevelData level_data_table[] = {
     /* KARATE_MAN */ {
         /* Entry Scene   */ &scene_karate_man,
-        /* Level Name    */ "Karate Man",
-        /* Level Desc.   */ "The key to karate,\n"
-                            "like all things, is rhythm.\n"
-                            "Now, let us throw some\n"
-                            "stuff for you to punch.",
+        /* Level Name    */ "空手道家",
+        /* Level Desc.   */ "向飞来的东西\n"
+                            "按A键出拳！\n"
+                            "很常见的游戏？\n"
+                            "……也许吧。",
         /* Level Icon    */ 8,
         /* Level Type    */ LEVEL_TYPE_GAME,
         /* Epilogue GFX  */ epilogue_karate_man_gfx_tables,
