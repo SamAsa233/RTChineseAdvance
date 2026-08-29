@@ -27,9 +27,9 @@ const char D_0806a314[] =
 
 const char D_0806a32c[] =
     "\x01\x4c" "Music:\n"
-    "        TSUNKU♂\n"
+    "        Tsunku♂\n"
     "Arrangement:\n"
-    "        Yuasa Koichi";
+    "        Koichi Yuasa";
 
 const char D_0806a370[] =
     "\x01\x43" "Managed by J.P ROOM";

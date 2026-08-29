@@ -85,7 +85,7 @@ static const char *options_scene_bitmap_get_value(s32 entry) {
             return CHECK_ADVANCE_FLAG(D_030046a8->data.advanceFlags, ADVANCE_FLAG_SKIP_DISCLAIMER) ? "Skip" : "Show";
 
         case OPTIONS_BITMAP_ALT_GAME_SELECT_MUSIC:
-            return CHECK_ADVANCE_FLAG(D_030046a8->data.advanceFlags, ADVANCE_FLAG_USE_ALT_GAME_SELECT_MUSIC) ? "On" : "Off";
+            return CHECK_ADVANCE_FLAG(D_030046a8->data.advanceFlags, ADVANCE_FLAG_USE_ALT_GAME_SELECT_MUSIC) ? "Swapped" : "Normal";
     }
 
     return "SHAFFY FUCKED UP";
