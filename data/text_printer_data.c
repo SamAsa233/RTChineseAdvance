@@ -35,7 +35,7 @@ struct TextPrinterFont D_089380ac[] = {
 };
 
 // [D_089380d0] Line Cut-Off Ellipsis (GB2312)
-char D_089380d0[] = "";
+char D_089380d0[] = "¡­¡­";
 
 // [D_089380d4] Full-Width Open Brackets (GB2312)
 char D_089380d4[] = "£¨¡²£Û£û¡¸¡º¡¾";
