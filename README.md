@@ -35,6 +35,16 @@
 - Levi Highway
 - lunar_dust月尘
 - 阿斯特拉贡
+- ~•VariableN2763•~ (Discord)
+- arandomdude (Discord)
+
+### 特别感谢
+
+- 所有负责初代《节奏天国》的开发人员
+- [Rhythm Heaven Advance](https://github.com/RHAdvance/RhythmHeavenAdvance)项目的维护者
+- 负责[《节奏天国》反编译项目](https://github.com/arthurtilly/rhythmtengoku)的所有成员
+- Tailx的[《节奏天国》资源包](https://github.com/Tailx501/RhythmHeavenResourcesPack)
+- 以及热爱《节奏天国》系列的 **你**
 
 ## BUG反馈
 
