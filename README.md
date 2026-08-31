@@ -35,7 +35,7 @@
 - Levi Highway
 - lunar_dust月尘
 - 阿斯特拉贡
-- ~•VariableN2763•~ (Discord)
+- •VariableN2763• (Discord)
 - arandomdude (Discord)
 
 ### 特别感谢
