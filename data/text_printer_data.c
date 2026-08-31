@@ -35,7 +35,7 @@ struct TextPrinterFont D_089380ac[] = {
 };
 
 // [D_089380d0] Line Cut-Off Ellipsis (GB2312)
-char D_089380d0[] = "¡­¡­";
+char D_089380d0[] = "¡­";
 
 // [D_089380d4] Full-Width Open Brackets (GB2312)
 char D_089380d4[] = "£¨¡²£Û£û¡¸¡º¡¾";
@@ -44,7 +44,7 @@ char D_089380d4[] = "£¨¡²£Û£û¡¸¡º¡¾";
 char D_089380e4[] = "([{";
 
 // [D_089380e8] Full-Width Ending Punctuation (GB2312)
-char D_089380e8[] = "¡¢¡££¬£®£¿£¡¡«£©¡³£Ý£ý¡¹¡»¡¿";
+char D_089380e8[] = "¡¢¡££¬£®£¿£¡?¡«¥¡¥£¥¥¥§¥©¥Ã¥ã¥å¥ç¥î¥õ¥ö¤¡¤£¤¥¤§¤©¤Ã¤ã¤å¤ç¤î¡­?£©¡³£Ý£ý¡¹¡»¡¿";
 
 // [D_08938138] Half-Width Ending Punctuation
 char D_08938138[] = "!?,.)]}";
