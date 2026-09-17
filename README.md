@@ -37,6 +37,7 @@
 - 阿斯特拉贡
 - •VariableN2763• (Discord)
 - arandomdude (Discord)
+- Player (Discord)
 
 ### 特别感谢
 

@@ -1,5 +1,7 @@
 # 编译指南
 
+>## 我们强烈建议您在wifi环境下执行以下操作
+
 ### 前置要求
 
 在开始编译前，你需要先准备这些东西：
@@ -20,6 +22,7 @@
 安装所需软件包 (Ubuntu/Debian):
 ```bash
 sudo apt update
+sudo apt upgrade
 sudo apt install build-essential binutils-arm-none-eabi git libpng-dev ffmpeg python3
 ```
 
