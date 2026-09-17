@@ -49,7 +49,7 @@ void marching_orders_extra_prologue_engine_start(u32 ver) {
     scene_show_obj_layer();
     scene_set_bg_layer_display(BG_LAYER_1, TRUE, 0, 0, 0, 29, (BGCNT_TILEMAP_SIZE(BG_ROT_TILEMAP_32x32) | BGCNT_256_PALETTE | BGCNT_PRIORITY(BG_PRIORITY_LOW)));
 
-    gPrologueEngineData->textSprite = sprite_create(gSpriteHandler, anim_marching_orders_extra_prologue_title, 0, 112, 140, 0, 0, 0, 0);
+    gPrologueEngineData->textSprite = sprite_create(gSpriteHandler, anim_marching_orders_extra_prologue_title, 0, 120, 140, 0, 0, 0, 0);
 }
 
 
