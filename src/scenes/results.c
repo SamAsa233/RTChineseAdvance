@@ -547,7 +547,7 @@ void results_render_skill_screen(void) {
     char numString[0x20];
     u32 badInputScore, score, level;
 
-    textAnim = bmp_font_obj_print_c(gResults->objFont, ":1" "****" ":0" "  Grade  " ":1" "****", 0, 7);
+    textAnim = bmp_font_obj_print_c(gResults->objFont, ":1" "****" ":0" "  评分  " ":1" "****", 0, 7);
     sprite_create(gSpriteHandler, textAnim->frames, 0, 120, 16, 0x4800, 1, 0, 0);
 
     results_tracker_calculate_skill_averages();
@@ -688,8 +688,8 @@ u32 results_get_negative_comments(void) {
 // [D_089d7b34] Rank Comment Pool (Try Again)
 const char *results_try_again_comment_pool[] = {
     "",
-    "...And, ",
-    "...Also, "
+    "还有，",
+    "另外，"
 };
 
 
@@ -756,7 +756,7 @@ s24_8 results_get_positive_comments(void) {
                 modifiedComment[0] += 32;
             }
 
-            memcpy(commentsText, "...But ", 8);
+            memcpy(commentsText, "…不过，", 8);
             strcat(commentsText, modifiedComment);
             anim = results_get_comment_anim(commentsText, TEXT_ANCHOR_BOTTOM_RIGHT, 3);
             palette = EXTRA_COMMENT_PALETTE;
@@ -772,10 +772,10 @@ s24_8 results_get_positive_comments(void) {
                     memcpy(commentsText, "", 1);
                     break;
                 case 1:
-                    memcpy(commentsText, "...And ", 10); // ("moreover,")
+                    memcpy(commentsText, "而且，", 10); // ("moreover,")
                     break;
                 default:
-                    memcpy(commentsText, "...Plus, ", 12); // ("also,")
+                    memcpy(commentsText, "再加上，", 12); // ("also,")
                     break;
             }
             strcat(commentsText, modifiedComment);
@@ -815,13 +815,13 @@ s24_8 results_get_positive_comments(void) {
 
 // [D_089d7b40] Rank Comment Pool (OK)
 const char *results_ok_comment_pool[] = {
-    "I guess that was all right.",
-    "Good enough...",
-    "I don't know...",
+    "就算可以吧。",
+    "暂且……",
+    "算是一般般吧。",
     #ifdef PARADISE
     "Hmm..."
     #else
-    "Hm..."
+    "唔〜嗯……"
     #endif
 };
 

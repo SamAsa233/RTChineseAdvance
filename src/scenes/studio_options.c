@@ -9,19 +9,19 @@
 
 // [D_089d841c] Options
 const char *studio_options_no_replay[] = {
-    /* LISTEN */ "Play",
-    /* DRUM   */ "Drum",
-    /* SORT   */ "Sort",
-    /* MARK   */ "Bookmark"
+    /* LISTEN */ "试听",
+    /* DRUM   */ "击鼓",
+    /* SORT   */ "重新排序",
+    /* MARK   */ "勾选"
 };
 
 
 // [D_089d842c] Options (Replay)
 const char *studio_options_is_replay[] = {
-    /* LISTEN */ "Play",
-    /* DELETE */ "Erase Data",
-    /* SORT   */ "Sort",
-    /* MARK   */ "Bookmark"
+    /* LISTEN */ "试听",
+    /* DELETE */ "删除数据",
+    /* SORT   */ "重新排序",
+    /* MARK   */ "勾选"
 };
 
 
@@ -183,8 +183,8 @@ void studio_option_list_update(void) {
                             STUDIO_WARNING_OPT_DISMISS,
                             // Not even one song has
                             // a check mark on it.
-                            "There are currently\n"
-                            "no songs selected.",
+                            "还没有勾选\n"
+                            "任何曲子。",
                             studio_option_list_warning_no_checks_result, 0,
                             &s_menu_kettei2_seqData);
                     play_sound_in_player(MUSIC_PLAYER_2, &s_menu_kettei2_seqData);
@@ -197,8 +197,8 @@ void studio_option_list_update(void) {
                                 STUDIO_WARNING_OPT_Y,
                                 // In listening mode, only the songs
                                 // with a check mark will be played.
-                                "Only selected songs will be played.\n"
-                                "Is that OK?",
+                                "试听模式只会播放已勾选的曲子。\n"
+                                "要继续吗？",
                                 studio_option_list_warning_unchecked_result, 0,
                                 &s_menu_se24_seqData);
                         play_sound_in_player(MUSIC_PLAYER_2, &s_menu_kettei2_seqData);
@@ -226,8 +226,8 @@ void studio_option_list_update(void) {
                             STUDIO_WARNING_OPT_N,
                             // You'll erase this performance
                             // data! Is that really OK?
-                            "Delete this drum performance!\n"
-                            "Are you sure?",
+                            "要删除这份演奏数据哦！\n"
+                            "真的要删吗？",
                             studio_option_list_warning_deletion_result, 0,
                             &s_menu_se13_seqData);
                 }

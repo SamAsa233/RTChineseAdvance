@@ -9,21 +9,21 @@
 
 // [D_089d83d0] Drum Kit Names
 const char *studio_drum_kit_names[] = {
-    /* DEFAULT */ "Standard Drum",
-    /* DRY     */ "Dry Drum",
-    /* POWER   */ "Power Drum",
-    /* TECHNO  */ "Techno Drum",
-    /* MATTE   */ "Matte Drum",
-    /* ASIAN   */ "Asian Drum",
-    /* LIGHT   */ "Light Drum",
-    /* HEAVY   */ "Heavy Drum",
-    /* HIHAT   */ "Hi-Hat Drum",
-    /* HEEL1   */ "Heel Drop Drum 1",
-    /* HEEL2   */ "Heel Drop Drum 2",
-    /* SFX     */ "Sound FX Drum",
-    /* TAP     */ "Tap Drum",
-    /* AIR     */ "Swift Drum",
-    /* SAMURAI */ "Samurai Drum"
+    /* DEFAULT */ "普通鼓组",
+    /* DRY     */ "干音鼓组",
+    /* POWER   */ "强力鼓组",
+    /* TECHNO  */ "电子鼓组",
+    /* MATTE   */ "沉稳鼓组",
+    /* ASIAN   */ "亚洲风鼓组",
+    /* LIGHT   */ "轻盈鼓组",
+    /* HEAVY   */ "硬派鼓组",
+    /* HIHAT   */ "踩镲技巧鼓组",
+    /* HEEL1   */ "脚跟技巧鼓组 1",
+    /* HEEL2   */ "脚跟技巧鼓组 2",
+    /* SFX     */ "音效鼓组",
+    /* TAP     */ "踢踏鼓组",
+    /* AIR     */ "疾风鼓组",
+    /* SAMURAI */ "武士鼓组"
 };
 
 
@@ -101,18 +101,18 @@ const char *studio_mem_warnings_text[] = {
     /* NO MEMORY -------------------------------------- */
         // [ You can't save any more data. ]
         // [ Perform without saving? ]
-        "Your memory is full.\n"
-        "Perform anyway?",
+        "存储空间已满。\n"
+        "本次演奏将无法保存，还要继续吗？",
     /* TOO MANY REPLAYS ------------------------------- */
         // [ You can only save 10 recitals. ]
         // [ Perform without saving? ]
-        "There's no more room for\n"
-        "saving. Perform anyway?",
+        "演奏数据最多只能保留 10 份。\n"
+        "本次演奏将无法保存，还要继续吗？",
     /* LOW MEMORY ------------------------------------- */
         // [ There's not much memory left. ]
         // [ Perform anyway? ]
-        "Save memory is running low.\n"
-        "Do you want to perform anyway?"
+        "存储空间快满了。\n"
+        "还要继续演奏吗？"
     /* ------------------------------------------------ */
 };
 
