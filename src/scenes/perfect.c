@@ -203,27 +203,27 @@ void perfect_scene_start(void *sVar, s32 dArg) {
                 break;
 
             default:
-                strcat(gPerfect->string, "'s song");
+                strcat(gPerfect->string, "的音乐");
                 break;
         }
     }
 
-    strcat(gPerfect->string, "\0020" "\0010" "\nYou've earned a gift! "); // You've earned a gift!
+    strcat(gPerfect->string, "\0020" "\0010" "\n已送给你！"); // You've earned a gift!
     strcat(gPerfect->string, perfect_gift_directive_text[giftType]);
 
     if (campaignsLeft > 0) {
         if (campaignsLeft > 1) {
-            strcat(gPerfect->string, "Looks like there are still " "\0021" "\0011"); // There are still...
+            strcat(gPerfect->string, "礼物还有  " "\0021" "\0011"); // There are still...
             strcat(gPerfect->string, count);
-            strcat(gPerfect->string, " gifts " "\0020" "\0010" "left.\n" // ...gifts
-                                         "Keep pushing yourself to earn them all!"); // left to get. Keep going!
+            strcat(gPerfect->string, " 份，" "\0020" "\0010" "\n" // ...gifts
+                                         "也去试试其他完美挑战吧！"); // left to get. Keep going!
         } else {
-            strcat(gPerfect->string, "There's now just " "\0021" "\0011" "one gift " "\0020" "\0010" "left.\n" // ...gift
-                                         "You can do it!"); // left to get. Keep going!
+            strcat(gPerfect->string, "礼物就剩下 " "\0021" "\0011" "一份 " "\0020" "\0010" "了，\n" // ...gift
+                                         "你可以做到的！"); // left to get. Keep going!
         }
     } else {
-        strcat(gPerfect->string,"\0021" "\0011" "You've earned all of the gifts!" "\0020" "\0010" "\n"); // You finally got them all!
-        strcat(gPerfect->string, "That means you got a Perfect on everything!"); // Congratulations!
+        strcat(gPerfect->string,"\0021" "\0011" "礼物已经全部送完啦。" "\0020" "\0010" "\n"); // You finally got them all!
+        strcat(gPerfect->string, "所有完美挑战都完成了！"); // Congratulations!
     }
 
     text_printer_set_string(gPerfect->printer, gPerfect->string);
