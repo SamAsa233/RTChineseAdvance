@@ -46,9 +46,9 @@ struct CompressedData *perfect_certificate_buffered_textures[] = {
         // You can read it in your e-mail.
         //
 const char *perfect_gift_directive_text[] = {
-    /* Song     */ "Listen to it in the studio!\n",
-    /* Drum Kit */ "Play it in the studio!\n",
-    /* E-Mail   */ "Read it in the archives!\n",
+    /* Song     */ "（可在录音室试听）\n",
+    /* Drum Kit */ "（可在录音室演奏）\n",
+    /* E-Mail   */ "（可在节奏资料室查看）\n",
     /* Other    */ "",
 };
 

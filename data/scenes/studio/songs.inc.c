@@ -48,152 +48,152 @@ extern const struct Beatscript script_studio_perfect[];
 // [D_089d81b4] Studio Song Entries
 struct StudioEntry studio_song_table[] = {
     /* SILENCE */ {
-        /* Full Title  */ "Silence",
+        /* Full Title  */ "无声",
         /* Short Title */ NULL,
         /* Drum Script */ script_studio_silence
     },
     /* KARATE_MAN */ {
-        /* Full Title  */ "Karate Man",
+        /* Full Title  */ "空手道家",
         /* Short Title */ NULL,
         /* Drum Script */ script_studio_karate_man
     },
     /* CLAPPY_TRIO */ {
-        /* Full Title  */ "The Clappy Trio",
+        /* Full Title  */ "啪叽啪叽三人组",
         /* Short Title */ NULL,
         /* Drum Script */ script_studio_clappy_trio
     },
     /* TAP_TRIAL */ {
-        /* Full Title  */ "Tap Trial",
+        /* Full Title  */ "踢踏舞",
         /* Short Title */ NULL,
         /* Drum Script */ script_studio_tap_trial
     },
     /* SPACE_DANCE */ {
-        /* Full Title  */ "Space Dance",
+        /* Full Title  */ "太空之舞",
         /* Short Title */ NULL,
         /* Drum Script */ script_studio_space_dance
     },
     /* HONEY_SWEET_ANGEL */ {
-        /* Full Title  */ "Honey Sweet Angel of Love",
-        /* Short Title */ "Honey Sweet Angel...",
+        /* Full Title  */ "恋爱的Honey Sweet〜Angel",
+        /* Short Title */ "恋爱的Honey Sweet〜…",
         /* Drum Script */ script_studio_honey_sweet_angel
     },
     /* WISH */ {
-        /* Full Title  */ "WISH - Can't Wait for You",
-        /* Short Title */ "WISH - Can't Wait...",
+        /* Full Title  */ "WISH 我多想再为你等待",
+        /* Short Title */ "WISH 我多想再…",
         /* Drum Script */ script_studio_wish
     },
     /* NIGHT_WALK */ {
-        /* Full Title  */ "Night Walk",
+        /* Full Title  */ "夜空漫步",
         /* Short Title */ NULL,
         /* Drum Script */ script_studio_night_walk
     },
     /* BON_ODORI */ {
-        /* Full Title  */ "The☆Bon Odori",
+        /* Full Title  */ "The☆盂兰盆舞",
         /* Short Title */ NULL,
         /* Drum Script */ script_studio_bon_odori
     },
     /* BON_DANCE */ {
-        /* Full Title  */ "The☆Bon Dance",
+        /* Full Title  */ "盆舞",
         /* Short Title */ NULL,
         /* Drum Script */ script_studio_bon_dance
     },
     /* COSMIC_DANCE */ {
-        /* Full Title  */ "Cosmic Dance",
+        /* Full Title  */ "宇宙之舞",
         /* Short Title */ NULL,
         /* Drum Script */ script_studio_cosmic_dance
     },
     /* RHYTHM_TWEEZERS */ {
-        /* Full Title  */ "Rhythm Tweezers",
+        /* Full Title  */ "节奏脱毛",
         /* Short Title */ NULL,
         /* Drum Script */ script_studio_rhythm_tweezers
     },
     /* SNAPPY_TRIO */ {
-        /* Full Title  */ "The Snappy Trio",
+        /* Full Title  */ "帅气帅气三人组",
         /* Short Title */ NULL,
         /* Drum Script */ script_studio_snappy_trio
     },
     /* TAP_TRIAL_2 */ {
-        /* Full Title  */ "Tap Trial 2",
+        /* Full Title  */ "超级踢踏舞",
         /* Short Title */ NULL,
         /* Drum Script */ script_studio_tap_trial_2
     },
     /* WIZARDS_WALTZ */ {
-        /* Full Title  */ "Wizard's Waltz",
+        /* Full Title  */ "魔法使",
         /* Short Title */ NULL,
         /* Drum Script */ script_studio_wizards_waltz
     },
     /* MARCHING_ORDERS */ {
-        /* Full Title  */ "Marching Orders",
+        /* Full Title  */ "行军",
         /* Short Title */ NULL,
         /* Drum Script */ script_studio_marching_orders
     },
     /* SPACEBALL */ {
-        /* Full Title  */ "Spaceball",
+        /* Full Title  */ "空中击球手",
         /* Short Title */ NULL,
         /* Drum Script */ script_studio_spaceball
     },
     /* SNEAKY_SPIRITS */ {
-        /* Full Title  */ "Sneaky Spirits",
+        /* Full Title  */ "白色的鬼",
         /* Short Title */ NULL,
         /* Drum Script */ script_studio_sneaky_spirits
     },
     /* SAMURAI_SLICE */ {
-        /* Full Title  */ "Samurai Slice",
+        /* Full Title  */ "居合斩",
         /* Short Title */ NULL,
         /* Drum Script */ script_studio_samurai_slice
     },
     /* RAT_RACE */ {
-        /* Full Title  */ "Rat Race",
+        /* Full Title  */ "蹑鼠蹑脚",
         /* Short Title */ NULL,
         /* Drum Script */ script_studio_rat_race
     },
     /* SICK_BEATS */ {
-        /* Full Title  */ "Sick Beats",
+        /* Full Title  */ "细菌博士",
         /* Short Title */ NULL,
         /* Drum Script */ script_studio_sick_beats
     },
     /* SHOWTIME */ {
-        /* Full Title  */ "Showtime",
+        /* Full Title  */ "表演时间",
         /* Short Title */ NULL,
         /* Drum Script */ script_studio_showtime
     },
     /* BUNNY_HOP */ {
-        /* Full Title  */ "Bunny Hop",
+        /* Full Title  */ "跃兔",
         /* Short Title */ NULL,
         /* Drum Script */ script_studio_bunny_hop
     },
     /* TRAM_PAULINE */ {
-        /* Full Title  */ "Tram & Pauline",
+        /* Full Title  */ "小蹦与小床",
         /* Short Title */ NULL,
         /* Drum Script */ script_studio_tram_pauline
     },
     /* QUIZ_SHOW */ {
-        /* Full Title  */ "Quiz Show Opening",
+        /* Full Title  */ "节奏问答",
         /* Short Title */ NULL,
         /* Drum Script */ script_studio_quiz_show
     },
     /* POWER_CALLIGRAPHY */ {
-        /* Full Title  */ "Power Calligraphy",
+        /* Full Title  */ "节奏书法",
         /* Short Title */ NULL,
         /* Drum Script */ script_studio_power_calligraphy
     },
     /* POLYRHYTHM */ {
-        /* Full Title  */ "Polyrhythm",
+        /* Full Title  */ "复合节奏",
         /* Short Title */ NULL,
         /* Drum Script */ script_studio_polyrhythm
     },
     /* BOUNCY_ROAD */ {
-        /* Full Title  */ "Bouncy Road",
+        /* Full Title  */ "跳杆之路",
         /* Short Title */ NULL,
         /* Drum Script */ script_studio_bouncy_road
     },
     /* TOSS_BOYS */ {
-        /* Full Title  */ "Toss Team",
+        /* Full Title  */ "传球少年",
         /* Short Title */ NULL,
         /* Drum Script */ script_studio_toss_boys
     },
     /* FIREWORKS */ {
-        /* Full Title  */ "Fireworks",
+        /* Full Title  */ "烟火",
         /* Short Title */ NULL,
         /* Drum Script */ script_studio_fireworks
     },
@@ -213,37 +213,37 @@ struct StudioEntry studio_song_table[] = {
         /* Drum Script */ script_studio_remix6
     },
     /* TITLE */ {
-        /* Full Title  */ "Title",
+        /* Full Title  */ "标题",
         /* Short Title */ NULL,
         /* Drum Script */ script_studio_title
     },
     /* MAIN_MENU */ {
-        /* Full Title  */ "Menu",
+        /* Full Title  */ "主菜单",
         /* Short Title */ NULL,
         /* Drum Script */ script_studio_main_menu
     },
     /* GAME_SELECT_1 */ {
-        /* Full Title  */ "Game Select",
+        /* Full Title  */ "游戏选择",
         /* Short Title */ NULL,
         /* Drum Script */ script_studio_game_select_1
     },
     /* DATA_ROOM */ {
-        /* Full Title  */ "Rhythm Archives",
+        /* Full Title  */ "节奏资料室",
         /* Short Title */ NULL,
         /* Drum Script */ script_studio_data_room
     },
     /* OPENING */ {
-        /* Full Title  */ "Opening",
+        /* Full Title  */ "开场",
         /* Short Title */ NULL,
         /* Drum Script */ script_studio_opening
     },
     /* STAFF_CREDIT */ {
-        /* Full Title  */ "Staff Credits",
+        /* Full Title  */ "制作人员名单",
         /* Short Title */ NULL,
         /* Drum Script */ script_studio_staff_credit
     },
     /* GAME_SELECT_2 */ {
-        /* Full Title  */ "Game Select 2",
+        /* Full Title  */ "游戏选择２",
         /* Short Title */ NULL,
         /* Drum Script */ script_studio_game_select_2
     },
@@ -251,28 +251,28 @@ struct StudioEntry studio_song_table[] = {
         #ifdef PARADISE
         /* Full Title  */ "Café Counselling",
         #else
-        /* Full Title  */ "Café Counseling",
+        /* Full Title  */ "咖啡谈心",
         #endif
         /* Short Title */ NULL,
         /* Drum Script */ script_studio_cafe
     },
     /* TRY_AGAIN */ {
-        /* Full Title  */ "Try Again",
+        /* Full Title  */ "再试一次吧",
         /* Short Title */ NULL,
         /* Drum Script */ script_studio_try_again
     },
     /* OK */ {
-        /* Full Title  */ "OK",
+        /* Full Title  */ "平凡",
         /* Short Title */ NULL,
         /* Drum Script */ script_studio_ok
     },
     /* SUPERB */ {
-        /* Full Title  */ "Superb",
+        /* Full Title  */ "高水准",
         /* Short Title */ NULL,
         /* Drum Script */ script_studio_superb,
     },
     /* PERFECT */ {
-        /* Full Title  */ "Perfect",
+        /* Full Title  */ "完美通关",
         /* Short Title */ NULL,
         /* Drum Script */ script_studio_perfect,
     }

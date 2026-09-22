@@ -43,7 +43,7 @@ struct CompressedData *arrival_buffered_textures[] = {
 };
 
 // [D_089cd1f0] "Error" Title
-char arrival_default_title[] = "Error[";
+char arrival_default_title[] = "错误";
 
 // [D_089cd1f8] Animations
 struct Animation *arrival_option_anim[] = {
