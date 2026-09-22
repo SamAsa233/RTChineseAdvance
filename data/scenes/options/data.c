@@ -77,32 +77,27 @@ const char *advance_options_label_text[] = {
 
 const char *advance_options_desc_text[] = {
     /* NON-JP SFX ------------------------------------- */
-        // TODO 未校对：advance_options_desc_text[0] 译文包未到 stage 5，暂留原文。
-        "\0023" "\0013" "\001C" "Sound Effects\n"
-        "\0024" "\0011" "\001L" "English   " "\0021" "Use the localized sound effects.\n"
-        "\0024" "\0011" "\001L" "Japanese  " "\0021" "Use the original sound effects.",
+        "\0023" "\0013" "\001C" "音效\n"
+        "\0024" "\0011" "\001L" "中文  " "\0021" "使用中文翻配音效\n"
+        "\0024" "\0011" "\001L" "日语  " "\0021" "使用原版日语音效",
     /* NON-JP MUSIC ----------------------------------- */
-        // TODO 未校对：advance_options_desc_text[1] 译文包未到 stage 5，暂留原文。
-        "\0023" "\0013" "\001C" "Music\n"
-        "\0024" "\0011" "\001L" "English   " "\0021" "Use the localized music.\n"
-        "\0024" "\0011" "\001L" "Japanese  " "\0021" "Use the original music.",
+        "\0023" "\0013" "\001C" "音乐\n"
+        "\0024" "\0011" "\001L" "中文翻唱  " "\0021" "使用中文翻唱音乐\n"
+        "\0024" "\0011" "\001L" "日语原唱  " "\0021" "使用原版日语音乐",
     /* RUMBLE ----------------------------------------- */
 #ifdef RUMBLE
-        // TODO 未校对：advance_options_desc_text[2] 译文包未到 stage 5，暂留原文。
-        "\0023" "\0013" "\001C" "Rumble\n"
-        "\0024" "\0011" "\001L" "On        " "\0021" "Rumble is active during gameplay.\n"
-        "\0024" "\0011" "\001L" "Off       " "\0021" "Rumble is disabled.",
+        "\0023" "\0013" "\001C" "震动\n"
+        "\0024" "\0011" "\001L" "开       " "\0021" "游玩时设备将会震动\n"
+        "\0024" "\0011" "\001L" "关       " "\0021" "游玩时震动将被禁用",
 #endif
     /* SHOW DISCLAIMER -------------------------------- */
-        // TODO 未校对：advance_options_desc_text[3] 译文包未到 stage 5，暂留原文。
-        "\0023" "\0013" "\001C" "Show Disclaimer\n"
-        "\0024" "\0011" "\001L" "Show      " "\0021" "Show the disclaimer at startup.\n"
-        "\0024" "\0011" "\001L" "Skip      " "\0021" "Skip the disclaimer at startup.",
+        "\0023" "\0013" "\001C" "汉化声明\n"
+        "\0024" "\0011" "\001L" "展示      " "\0021" "游戏启动时展示汉化声明\n"
+        "\0024" "\0011" "\001L" "跳过      " "\0021" "启动时不再展示汉化声明",
     /* ALT GAME SELECT MUSIC --------------------------- */
-        // TODO 未校对：advance_options_desc_text[4] 译文包未到 stage 5，暂留原文。
-        "\0023" "\0013" "\001C" "Game Select Music\n"
-        "\0024" "\0011" "\001L" "Normal    " "\0021" "Use Game Select 2 after the credits.\n"
-        "\0024" "\0011" "\001L" "Swapped   " "\0021" "Use Game Select 1 after the credits.",
+        "\0023" "\0013" "\001C" "游戏选择菜单音乐\n"
+        "\0024" "\0011" "\001L" "启用切换    " "\0021" "二周目将切换新音乐\n"
+        "\0024" "\0011" "\001L" "禁用切换    " "\0021" "二周目仍播放旧音乐",
 };
 
 

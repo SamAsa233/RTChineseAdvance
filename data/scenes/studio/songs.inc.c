@@ -82,10 +82,8 @@ struct StudioEntry studio_song_table[] = {
         /* Drum Script */ script_studio_honey_sweet_angel
     },
     /* WISH */ {
-        // TODO 未校对：song_wish 译文包未到 stage 5，暂留原文。
-        /* Full Title  */ "WISH - Can't Wait for You",
-        // TODO 未校对：song_wish_short 译文包未到 stage 5，暂留原文。
-        /* Short Title */ "WISH - Can't Wait...",
+        /* Full Title  */ "WISH 我多想再为你等待",
+        /* Short Title */ "WISH 我多想再…",
         /* Drum Script */ script_studio_wish
     },
     /* NIGHT_WALK */ {
