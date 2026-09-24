@@ -335,13 +335,13 @@ AnimationCel title_cel017[] = {
     /* 006 */ 0x00ec, 0x01f3, 0x001d
 };
 
-AnimationCel title_cel097[] = {
+AnimationCel title_cel018[] = {
     /* Len */ 2,
     /* 000 */ 0x00f1, 0x81ed, 0x0014,
     /* 001 */ 0x80f1, 0x000d, 0x0146
 };
 
-AnimationCel title_cel098[] = {
+AnimationCel title_cel019[] = {
     /* Len */ 2,
     /* 000 */ 0x00ef, 0x81ec, 0x0010,
     /* 001 */ 0x80ef, 0x400c, 0x0094
