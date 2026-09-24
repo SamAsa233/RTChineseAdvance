@@ -7,7 +7,7 @@ struct LevelData level_data_table[] = {
         /* Entry Scene   */ &scene_karate_man,
         /* Level Name    */ "空手道家",
         /* Level Desc.   */ "向飞来的东西\n"
-                            "按A键出拳！\n"
+                            "按" CHAR_A_BUTTON_UTF8 "出拳\n"
                             "很常见的游戏？\n"
                             "……也许吧。",
         /* Level Icon    */ 8,
@@ -21,16 +21,16 @@ struct LevelData level_data_table[] = {
     },
     /* KARATE_MAN_2 */ {
         /* Entry Scene   */ &scene_karate_man_2,
-        /* Level Name    */ "空手道家２",
+        /* Level Name    */ "空手道家 2",
         /* Level Desc.   */ "向飞来的东西\n"
-                            "按A键出拳！\n"
+                            "按" CHAR_A_BUTTON_UTF8 "出拳！\n"
                             "不过，这速度\n"
                             "有点古怪哦。",
         /* Level Icon    */ 0,
         /* Level Type    */ LEVEL_TYPE_GAME,
         /* Epilogue GFX  */ epilogue_karate_man_2_gfx_tables,
         /* Epilogue Text */ {
-            /* TRY_AGAIN */ "这节奏是什么鬼啊—！！",
+            /* TRY_AGAIN */ "这节奏是什么鬼啊——！！",
             /* OK        */ "嘛，先不管那些。来吃饭吧！",
             /* SUPERB    */ "差不多就是这样啦——！！"
         },
@@ -64,11 +64,10 @@ struct LevelData level_data_table[] = {
         /* Epilogue Text */ {
             /* TRY_AGAIN */ "呀啊！饶了我吧！！",
             /* OK        */ "就差那么一点点了呢…",
-            // 阶段 5 已校对：level_bari_1_result_2/3；两个地区原文措辞不同，中文同义。
             #ifdef PARADISE
             /* SUPERB    */ "配合十分默契！ 耶ー！"
             #else
-            /* SUPERB    */ "配合十分默契！ 耶ー！"
+            /* SUPERB    */ "配合十分默契！ 耶——！"
             #endif
         },
         /* Level Flags   */ LEVEL_DATA_FLAG_NO_PRACTICE
@@ -76,7 +75,10 @@ struct LevelData level_data_table[] = {
     /* POLYRHYTHM */ {
         /* Entry Scene   */ &scene_polyrhythm,
         /* Level Name    */ "复合节奏",
-        /* Level Desc.   */ "掌握十字键与A键同时按下的诀窍！\n其实挺简单的。大概吧……",
+        /* Level Desc.   */ "掌握"CHAR_DPAD_UTF8"与"CHAR_A_BUTTON_UTF8"\n"
+							"同时按下的诀窍！\n"
+							"其实挺简单的。\n"
+							"大概吧……",
         /* Level Icon    */ 3,
         /* Level Type    */ LEVEL_TYPE_GAME,
         /* Epilogue GFX  */ epilogue_polyrhythm_gfx_tables,
@@ -89,7 +91,7 @@ struct LevelData level_data_table[] = {
     },
     /* POLYRHYTHM_2 */ {
         /* Entry Scene   */ &scene_polyrhythm_2,
-        /* Level Name    */ "复合节奏２",
+        /* Level Name    */ "复合节奏 2",
         /* Level Desc.   */ "这就是左右分控！\n"
                             "跟着节奏完成操作，\n"
                             "来吧，复合节奏！\n"
@@ -123,7 +125,7 @@ struct LevelData level_data_table[] = {
     },
     /* NIGHT_WALK_2 */ {
         /* Entry Scene   */ &scene_night_walk_2,
-        /* Level Name    */ "夜空漫步２",
+        /* Level Name    */ "夜空漫步 2",
         /* Level Desc.   */ "跟着音乐节拍\n"
                             "尽情跳起来！\n"
                             "遇到电击鱼\n"
@@ -156,7 +158,7 @@ struct LevelData level_data_table[] = {
     },
     /* RHYTHM_TWEEZERS_2 */ {
         /* Entry Scene   */ &scene_rhythm_tweezers_2,
-        /* Level Name    */ "节奏脱毛２",
+        /* Level Name    */ "节奏脱毛 2",
         /* Level Desc.   */ "那讨厌的“毛”\n"
                             "居然又长出来了！\n"
                             "拔掉它，\n"
@@ -165,7 +167,7 @@ struct LevelData level_data_table[] = {
         /* Level Type    */ LEVEL_TYPE_GAME,
         /* Epilogue GFX  */ epilogue_rhythm_tweezers_2_gfx_tables,
         /* Epilogue Text */ {
-            /* TRY_AGAIN */ "为什么会长毛啊ー！？",
+            /* TRY_AGAIN */ "为什么会长毛啊——！？",
             /* OK        */ "为啥偏偏只有俺家的蔬菜会长毛…？",
             /* SUPERB    */ "一身轻松！空气好得不得了！！"
         },
@@ -174,7 +176,6 @@ struct LevelData level_data_table[] = {
     /* SICK_BEATS */ {
         /* Entry Scene   */ &scene_sick_beats,
         /* Level Name    */ "细菌博士",
-        // 阶段 5 已校对 level_baikin_1_desc；保留 \0023 格式码及地区分支。
         /* Level Desc.   */ "\0023" "来自助手的通报\n"
                             "“不好了！\n"
                             "细菌爆发啦！！\n"
@@ -198,19 +199,19 @@ struct LevelData level_data_table[] = {
         /* Level Name    */ "跳杆之路",
         /* Level Desc.   */ "飞过来的圆球，\n"
                             "那可是好东西，\n"
-                            "千万别漏接哦！",
+							"千万别漏接哦！",
         /* Level Icon    */ 12,
         /* Level Type    */ LEVEL_TYPE_GAME,
         /* Epilogue GFX  */ epilogue_bouncy_road_gfx_tables,
         /* Epilogue Text */ {
-            /* TRY_AGAIN */ "还挺有难度啊ー！",
+            /* TRY_AGAIN */ "还挺有难度啊——！",
             /* OK        */ "刚才这些配合还挺厉害呢！",
             /* SUPERB    */ "简单 简单♪"
         }
     },
     /* BOUNCY_ROAD_2 */ {
         /* Entry Scene   */ &scene_bouncy_road_2,
-        /* Level Name    */ "跳杆之路２",
+        /* Level Name    */ "跳杆之路 2",
         /* Level Desc.   */ "飞过来的圆球。\n"
                             "那真的是个\n"
                             "好东西哟～。\n"
@@ -228,7 +229,9 @@ struct LevelData level_data_table[] = {
     /* NINJA_BODYGUARD */ {
         /* Entry Scene   */ &scene_ninja_bodyguard,
         /* Level Name    */ "忍者",
-        /* Level Desc.   */ "敌人来袭！\n用十字键与 A 键迎战！\n富士山！！",
+        /* Level Desc.   */ "敌人来袭！\n"
+                            "用"CHAR_DPAD_UTF8"与"CHAR_A_BUTTON_UTF8"迎战！\n"
+                            "富士山！！",
         /* Level Icon    */ 5,
         /* Level Type    */ LEVEL_TYPE_GAME,
         /* Epilogue GFX  */ epilogue_ninja_bodyguard_gfx_tables,
@@ -250,7 +253,7 @@ struct LevelData level_data_table[] = {
         /* Level Type    */ LEVEL_TYPE_GAME,
         /* Epilogue GFX  */ epilogue_ninja_reincarnate_gfx_tables,
         /* Epilogue Text */ {
-            /* TRY_AGAIN */ "别输啊！就指望你了ー！！",
+            /* TRY_AGAIN */ "别输啊！就指望你了——！！",
             /* OK        */ "嗯，底子不错嘛。加油！",
             /* SUPERB    */ "你很强。祝你幸福…！"
         },
@@ -274,7 +277,7 @@ struct LevelData level_data_table[] = {
     },
     /* SNEAKY_SPIRITS_2 */ {
         /* Entry Scene   */ &scene_sneaky_spirits_2,
-        /* Level Name    */ "白色的鬼２",
+        /* Level Name    */ "白色的鬼 2",
         /* Level Desc.   */ "那个白色的家伙\n"
                             "完全不把咱们放在眼里！\n"
                             "可恶可恶！！\n"
@@ -310,7 +313,7 @@ struct LevelData level_data_table[] = {
         /* Entry Scene   */ &scene_spaceball,
         /* Level Name    */ "空中击球手",
         /* Level Desc.   */ "别在意镜头缩放！\n"
-                            "用心去击球！\n"
+                            "就这样，请饶了我吧。\n"
                             "不要依赖视觉！\n"
                             "大胆上吧～！",
         /* Level Icon    */ 9,
@@ -319,13 +322,13 @@ struct LevelData level_data_table[] = {
         /* Epilogue Text */ {
             /* TRY_AGAIN */ "就这样，请饶了我吧。",
             /* OK        */ "朝着更高处继续练吧！",
-            /* SUPERB    */ "我居然拿到这个啦ー！"
+            /* SUPERB    */ "我居然拿到这个啦——！"
         },
         /* Level Flags   */ LEVEL_DATA_FLAG_NO_PRACTICE
     },
     /* SPACEBALL_2 */ {
         /* Entry Scene   */ &scene_spaceball_2,
-        /* Level Name    */ "空中击球手２",
+        /* Level Name    */ "空中击球手 2",
         /* Level Desc.   */ "别在意镜头缩放！\n"
                             "用心去击球！\n"
                             "不要依赖视觉！\n"
@@ -336,7 +339,7 @@ struct LevelData level_data_table[] = {
         /* Epilogue Text */ {
             /* TRY_AGAIN */ "你在干什么啦！",
             /* OK        */ "怎么能在这里结束！",
-            /* SUPERB    */ "大家快看快看ー！"
+            /* SUPERB    */ "大家快看快看——！"
         },
         /* Level Flags   */ LEVEL_DATA_FLAG_NO_PRACTICE
     },
@@ -355,7 +358,6 @@ struct LevelData level_data_table[] = {
             #else
             /* TRY_AGAIN */ "真不甘心呀。",
             #endif
-            // 阶段 5 已校对 level_tap_dance_1_result_1；两个地区分支保持相同中文。
             /* OK        */ "虽然有几处怪怪的啦！",
             /* SUPERB    */ "心情已经嗨到顶了！！"
         }
