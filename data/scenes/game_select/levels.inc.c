@@ -2,353 +2,350 @@
 struct LevelData level_data_table[] = {
     /* KARATE_MAN */ {
         /* Entry Scene   */ &scene_karate_man,
-        /* Level Name    */ "Karate Man",
-        /* Level Desc.   */ "The key to karate,\n"
-                            "like all things, is rhythm.\n"
-                            "Now, let us throw some\n"
-                            "stuff for you to punch.",
+        /* Level Name    */ "空手道家",
+        /* Level Desc.   */ "向飞来的东西\n"
+                            "按" CHAR_A_BUTTON_UTF8 "出拳\n"
+                            "很常见的游戏？\n"
+                            "……也许吧。",
         /* Level Icon    */ 8,
         /* Level Type    */ LEVEL_TYPE_GAME,
         /* Epilogue GFX  */ epilogue_karate_man_gfx_tables,
         /* Epilogue Text */ {
-            /* TRY_AGAIN */ "I can always try again tomorrow...",
-            /* OK        */ "Time for a lunch break!",
-            /* SUPERB    */ "Look at all this stuff I punched away!"
+            /* TRY_AGAIN */ "没关系，还有明天。",
+            /* OK        */ "总之，先吃饭吧！",
+            /* SUPERB    */ "居然打飞了这么多！！"
         }
     },
     /* KARATE_MAN_2 */ {
         /* Entry Scene   */ &scene_karate_man_2,
-        /* Level Name    */ "Karate Man 2",
-        /* Level Desc.   */ "Something's up with\n"
-                            "the speed! Stay sharp\n"
-                            "as we throw you some\n"
-                            "more stuff to punch.",
+        /* Level Name    */ "空手道家 2",
+        /* Level Desc.   */ "向飞来的东西\n"
+                            "按" CHAR_A_BUTTON_UTF8 "出拳！\n"
+                            "不过，这速度\n"
+                            "有点古怪哦。",
         /* Level Icon    */ 0,
         /* Level Type    */ LEVEL_TYPE_GAME,
         /* Epilogue GFX  */ epilogue_karate_man_2_gfx_tables,
         /* Epilogue Text */ {
-            /* TRY_AGAIN */ "What's the point of these speed changes, anyway!?",
-            /* OK        */ "Well, that's that. Let's eat!",
-            /* SUPERB    */ "I think we've gone through everything!"
+            /* TRY_AGAIN */ "这节奏是什么鬼啊——！！",
+            /* OK        */ "嘛，先不管那些。来吃饭吧！",
+            /* SUPERB    */ "差不多就是这样啦——！！"
         },
         /* Level Flags   */ LEVEL_DATA_FLAG_NO_PRACTICE
     },
     /* CLAPPY_TRIO */ {
         /* Entry Scene   */ &scene_clappy_trio,
-        /* Level Name    */ "The Clappy Trio",
-        /* Level Desc.   */ "Clap your hands in\n"
-                            "order! You're the third\n"
-                            "clapper. Keep an eye\n"
-							"on the other two!",
+        /* Level Name    */ "啪叽啪叽三人组",
+        /* Level Desc.   */ "我们要依次拍手哦！\n"
+                            "你排在第３个。\n"
+                            "仔细看好前面两人！",
         /* Level Icon    */ 4,
         /* Level Type    */ LEVEL_TYPE_GAME,
         /* Epilogue GFX  */ epilogue_clappy_trio_gfx_tables,
         /* Epilogue Text */ {
-            /* TRY_AGAIN */ "The trio just went solo!",
-            /* OK        */ "You need to make it to more of our practice sessions...",
-            /* SUPERB    */ "Trio-riffic!"
+            /* TRY_AGAIN */ "同伴都走啦！",
+            /* OK        */ "现在就满足，可能还早了点呢。",
+            /* SUPERB    */ "这三人组，配合也太默契啦！！"
         }
     },
     /* SNAPPY_TRIO */ {
         /* Entry Scene   */ &scene_snappy_trio,
-        /* Level Name    */ "The Snappy Trio",
-        /* Level Desc.   */ "Look at the trio in their\n"
-                            "Western outfits!\n"
-                            "So cool! Dare we say\n"
-                            "they look... snappy?",
+        /* Level Name    */ "帅气帅气三人组",
+        /* Level Desc.   */ "原本穿着随意的他们\n"
+                            "这次换上了\n"
+                            "一身笔挺西装！\n"
+                            "太帅了！！",
         /* Level Icon    */ 10,
         /* Level Type    */ LEVEL_TYPE_GAME,
         /* Epilogue GFX  */ epilogue_snappy_trio_gfx_tables,
         /* Epilogue Text */ {
-            /* TRY_AGAIN */ "I spent everything I had on this outfit!",
-            /* OK        */ "We were so close...",
+            /* TRY_AGAIN */ "呀啊！饶了我吧！！",
+            /* OK        */ "就差那么一点点了呢…",
             #ifdef PARADISE
             /* SUPERB    */ "Perfect sync! It must be the outfits, right?"
             #else
-            /* SUPERB    */ "Perfect sync! It's gotta be the outfits, right?"
+            /* SUPERB    */ "配合十分默契！ 耶——！"
             #endif
         },
         /* Level Flags   */ LEVEL_DATA_FLAG_NO_PRACTICE
     },
     /* POLYRHYTHM */ {
         /* Entry Scene   */ &scene_polyrhythm,
-        /* Level Name    */ "Polyrhythm",
-        /* Level Desc.   */ "Manage the "CHAR_DPAD_UTF8" and "CHAR_A_BUTTON_UTF8"\n"
-							"paths at the same time\n"
-							"to keep those red rods\n"
-							"rolling! Simple enough?",
+        /* Level Name    */ "复合节奏",
+        /* Level Desc.   */ "掌握"CHAR_DPAD_UTF8"与"CHAR_A_BUTTON_UTF8"\n"
+							"同时按下的诀窍！\n"
+							"其实挺简单的。\n"
+							"大概吧……",
         /* Level Icon    */ 3,
         /* Level Type    */ LEVEL_TYPE_GAME,
         /* Epilogue GFX  */ epilogue_polyrhythm_gfx_tables,
         /* Epilogue Text */ {
-            /* TRY_AGAIN */ "Producing these red rods is harder than I thought...",
-            /* OK        */ "Still getting the hang of making these red rods.",
-            /* SUPERB    */ "We've produced more red rods than we can stock!"
+            /* TRY_AGAIN */ "这红色小东西，想实现大规模量产真是相当困难啊…",
+            /* OK        */ "源源不断地生产红色小东西吧！",
+            /* SUPERB    */ "可真是一个劲儿地猛造红色小东西啊！！"
         },
         /* Level Flags   */ LEVEL_DATA_FLAG_NO_PRACTICE
     },
     /* POLYRHYTHM_2 */ {
         /* Entry Scene   */ &scene_polyrhythm_2,
-        /* Level Name    */ "Polyrhythm 2",
-        /* Level Desc.   */ "The left and right paths\n"
-                            "have unique patterns!\n"
-                            "Mind the tempo and\n"
-                            "play to the polyrhythm!",
+        /* Level Name    */ "复合节奏 2",
+        /* Level Desc.   */ "这就是左右分控！\n"
+                            "跟着节奏完成操作，\n"
+                            "来吧，复合节奏！\n"
+                            "耶——！",
         /* Level Icon    */ 51,
         /* Level Type    */ LEVEL_TYPE_GAME,
         /* Epilogue GFX  */ epilogue_polyrhythm_2_gfx_tables,
         /* Epilogue Text */ {
-            /* TRY_AGAIN */ "We need to produce a whole lot more red rods...",
-            /* OK        */ "Producing more red rods wouldn't hurt!",
-            /* SUPERB    */ "Red rod production is at an all time high!"
+            /* TRY_AGAIN */ "红色小东西，还得再多生产点才行…",
+            /* OK        */ "再多一点 再多一点，继续生产红色小东西！",
+            /* SUPERB    */ "红色小东西要铺天盖地大规模量产咯！！"
         },
         /* Level Flags   */ LEVEL_DATA_FLAG_NO_PRACTICE
     },
     /* NIGHT_WALK */ {
         /* Entry Scene   */ &scene_night_walk,
-        /* Level Name    */ "Night Walk",
-        /* Level Desc.   */ "What's better than a\n"
-                            "stroll in the starlight?\n"
-                            "How about a series of\n"
-                            "jumps in the starlight?",
+        /* Level Name    */ "夜空漫步",
+        /* Level Desc.   */ "跟着音乐一起\n"
+                            "尽情跳起来！\n"
+                            "星星聚集，\n"
+                            "你也奔向夜空…",
         /* Level Icon    */ 7,
         /* Level Type    */ LEVEL_TYPE_GAME,
         /* Epilogue GFX  */ epilogue_night_walk_gfx_tables,
         /* Epilogue Text */ {
-            /* TRY_AGAIN */ "Didn't see that hole in the dark!",
-            /* OK        */ "Nothing like a stroll at night.",
-            /* SUPERB    */ "You followed us up here!"
+            /* TRY_AGAIN */ "下一次可要再加把劲喔…",
+            /* OK        */ "在夜空下散步，真开心呀。",
+            /* SUPERB    */ "星星们正在欢迎你哦！"
         },
         /* Level Flags   */ LEVEL_DATA_FLAG_NO_PRACTICE
     },
     /* NIGHT_WALK_2 */ {
         /* Entry Scene   */ &scene_night_walk_2,
-        /* Level Name    */ "Night Walk 2",
-        /* Level Desc.   */ "Time to jump in the\n"
-                            "starlight again!\n"
-                            "Keep a look out\n"
-                            "for the electric fish.",
+        /* Level Name    */ "夜空漫步 2",
+        /* Level Desc.   */ "跟着音乐节拍\n"
+                            "尽情跳起来！\n"
+                            "遇到电击鱼\n"
+                            "可要小心哦。",
         /* Level Icon    */ 41,
         /* Level Type    */ LEVEL_TYPE_GAME,
         /* Epilogue GFX  */ epilogue_night_walk_2_gfx_tables,
         /* Epilogue Text */ {
-            /* TRY_AGAIN */ "No! You fell!",
-            /* OK        */ "The night breeze feels so cool...",
-            /* SUPERB    */ "You made friends with the stars!"
+            /* TRY_AGAIN */ "哇呀——！失败了！！",
+            /* OK        */ "夜晚的风吹起来可真舒服呀。",
+            /* SUPERB    */ "你已经跟星星们成好朋友啦！"
         },
         /* Level Flags   */ LEVEL_DATA_FLAG_NO_PRACTICE
     },
     /* RHYTHM_TWEEZERS */ {
         /* Entry Scene   */ &scene_rhythm_tweezers,
-        /* Level Name    */ "Rhythm Tweezers",
-        /* Level Desc.   */ "\n"
-                            "My roots are showing!\n"
-                            "Can you pluck them off?\n",
+        /* Level Name    */ "节奏脱毛",
+        /* Level Desc.   */ "那讨厌的“毛”\n"
+                            "总是不停地长出来！\n"
+                            "拔掉它，\n"
+                            "拔掉它！",
         /* Level Icon    */ 14,
         /* Level Type    */ LEVEL_TYPE_GAME,
         /* Epilogue GFX  */ epilogue_rhythm_tweezers_gfx_tables,
         /* Epilogue Text */ {
-            /* TRY_AGAIN */ "I can't sell these!",
-            /* OK        */ "Wh-why do my vegetables grow hair?",
-            /* SUPERB    */ "So nice and clean! Even the air seems fresher!"
+            /* TRY_AGAIN */ "这样可根本卖不出去啊！",
+            /* OK        */ "为啥俺家的蔬菜会长毛啊？",
+            /* SUPERB    */ "一身轻松！空气真新鲜！！"
         }
     },
     /* RHYTHM_TWEEZERS_2 */ {
         /* Entry Scene   */ &scene_rhythm_tweezers_2,
-        /* Level Name    */ "Rhythm Tweezers 2",
-        /* Level Desc.   */ "My roots are\n"
-                            "growing back!\n"
-                            "You've got to pluck\n"
-                            "them off again!",
+        /* Level Name    */ "节奏脱毛 2",
+        /* Level Desc.   */ "那讨厌的“毛”\n"
+                            "居然又长出来了！\n"
+                            "拔掉它，\n"
+                            "拔掉它！",
         /* Level Icon    */ 25,
         /* Level Type    */ LEVEL_TYPE_GAME,
         /* Epilogue GFX  */ epilogue_rhythm_tweezers_2_gfx_tables,
         /* Epilogue Text */ {
-            /* TRY_AGAIN */ "Why do you have to be so hairy!?",
-            /* OK        */ "Why do only my vegetables grow hair, anyway...?",
-            /* SUPERB    */ "How refreshing! The air is cool and crisp!"
+            /* TRY_AGAIN */ "为什么会长毛啊——！？",
+            /* OK        */ "为啥偏偏只有俺家的蔬菜会长毛…？",
+            /* SUPERB    */ "一身轻松！空气好得不得了！！"
         },
         /* Level Flags   */ LEVEL_DATA_FLAG_NO_PRACTICE
     },
     /* SICK_BEATS */ {
         /* Entry Scene   */ &scene_sick_beats,
-        /* Level Name    */ "Sick Beats",
-        /* Level Desc.   */ "\0023" "Assistant's memo:\n"
-                            "We have an outbreak\n"
-                            "of an unknown virus!\n"
+        /* Level Name    */ "细菌博士",
+        /* Level Desc.   */ "\0023" "来自助手的通报\n"
+                            "“不好了！\n"
+                            "细菌爆发啦！！\n"
                             #ifdef PARADISE
                             "Help us, Dr Cutlery!",
                             #else
-                            "Help us, Dr. Cutlery!",
+                            "博士，快来救命啊～”",
                             #endif
         /* Level Icon    */ 13,
         /* Level Type    */ LEVEL_TYPE_GAME,
         /* Epilogue GFX  */ epilogue_sick_beats_gfx_tables,
         /* Epilogue Text */ {
-            /* TRY_AGAIN */ "Our experiment has failed...",
-            /* OK        */ "Failure is just the first step to success!",
-            /* SUPERB    */ "We've created breakthrough medicine!"
+            /* TRY_AGAIN */ "研究失败了。",
+            /* OK        */ "或许失败乃成功之母呢！",
+            /* SUPERB    */ "研制出了超级厉害的药剂！！"
         },
         /* Level Flags   */ LEVEL_DATA_FLAG_NO_PRACTICE
     },
     /* BOUNCY_ROAD */ {
         /* Entry Scene   */ &scene_bouncy_road,
-        /* Level Name    */ "Bouncy Road",
-        /* Level Desc.   */ "See that ball bouncing\n"
-                            "down the road?\n"
-                            "You wouldn't want to\n"
-							"let it fall...would you?",
+        /* Level Name    */ "跳杆之路",
+        /* Level Desc.   */ "飞过来的圆球，\n"
+                            "那可是好东西，\n"
+							"千万别漏接哦！",
         /* Level Icon    */ 12,
         /* Level Type    */ LEVEL_TYPE_GAME,
         /* Epilogue GFX  */ epilogue_bouncy_road_gfx_tables,
         /* Epilogue Text */ {
-            /* TRY_AGAIN */ "Ow! That was hard...",
-            /* OK        */ "Nice combo!",
-            /* SUPERB    */ "Where's the challenge?"
+            /* TRY_AGAIN */ "还挺有难度啊——！",
+            /* OK        */ "刚才这些配合还挺厉害呢！",
+            /* SUPERB    */ "简单 简单♪"
         }
     },
     /* BOUNCY_ROAD_2 */ {
         /* Entry Scene   */ &scene_bouncy_road_2,
-        /* Level Name    */ "Bouncy Road 2",
-        /* Level Desc.   */ "See that ball bouncing\n"
-                            "down the road?\n"
-                            "It's such a nice ball,\n"
-                            "so don't let it fall!",
+        /* Level Name    */ "跳杆之路 2",
+        /* Level Desc.   */ "飞过来的圆球。\n"
+                            "那真的是个\n"
+                            "好东西哟～。\n"
+                            "可别漏接哦！",
         /* Level Icon    */ 50,
         /* Level Type    */ LEVEL_TYPE_GAME,
         /* Epilogue GFX  */ epilogue_bouncy_road_2_gfx_tables,
         /* Epilogue Text */ {
-            /* TRY_AGAIN */ "Ow! We failed!",
-            /* OK        */ "We're working our hardest!",
-            /* SUPERB    */ "Easy come, easy go."
+            /* TRY_AGAIN */ "呜哇！搞砸了！！",
+            /* OK        */ "你刚才已经相当努力了呢！",
+            /* SUPERB    */ "轻松 轻松♪"
         },
         /* Level Flags   */ LEVEL_DATA_FLAG_NO_PRACTICE
     },
     /* NINJA_BODYGUARD */ {
         /* Entry Scene   */ &scene_ninja_bodyguard,
-        /* Level Name    */ "Ninja Bodyguard",
-        /* Level Desc.   */ "An enemy is attacking\n"
-                            "your lord! Block the\n"
-                            "arrows with your sword\n"
-							"using "CHAR_DPAD_UTF8" and "CHAR_A_BUTTON_UTF8"!",
+        /* Level Name    */ "忍者",
+        /* Level Desc.   */ "敌人来袭！\n"
+                            "用"CHAR_DPAD_UTF8"与"CHAR_A_BUTTON_UTF8"迎战！\n"
+                            "富士山！！",
         /* Level Icon    */ 5,
         /* Level Type    */ LEVEL_TYPE_GAME,
         /* Epilogue GFX  */ epilogue_ninja_bodyguard_gfx_tables,
         /* Epilogue Text */ {
-            /* TRY_AGAIN */ "My lord has fainted! Nooooo!",
-            /* OK        */ "I cannot apologize enough, my lord!",
-            /* SUPERB    */ "Not a scratch! He said I'm admirable!"
+            /* TRY_AGAIN */ "啊呀！主公昏倒了！！",
+            /* OK        */ "主公！对不起啊〜。",
+            /* SUPERB    */ "被人夸干得漂亮啦！！"
         },
         /* Level Flags   */ LEVEL_DATA_FLAG_NO_PRACTICE
     },
     /* NINJA_REINCARNATE */ {
         /* Entry Scene   */ &scene_ninja_reincarnate,
-        /* Level Name    */ "Ninja Descendant",
-        /* Level Desc.   */ "You know, my family's\n"
-                            "ancestors came from\n"
-                            "a long lineage of ninjas.\n"
-                            "Cool, right?",
+        /* Level Name    */ "忍者的后代",
+        /* Level Desc.   */ "我爷爷的\n"
+                            "爷爷的\n"
+                            "爷爷啊，\n"
+                            "可是忍者呢。",
         /* Level Icon    */ 38,
         /* Level Type    */ LEVEL_TYPE_GAME,
         /* Epilogue GFX  */ epilogue_ninja_reincarnate_gfx_tables,
         /* Epilogue Text */ {
-            /* TRY_AGAIN */ "You can't give up! She's counting on you!",
-            /* OK        */ "You are... strong. Don't give up yet.",
-            /* SUPERB    */ "You have proven your worth! You have our blessing..."
+            /* TRY_AGAIN */ "别输啊！就指望你了——！！",
+            /* OK        */ "嗯，底子不错嘛。加油！",
+            /* SUPERB    */ "你很强。祝你幸福…！"
         },
         /* Level Flags   */ LEVEL_DATA_FLAG_NO_PRACTICE
     },
     /* SNEAKY_SPIRITS */ {
         /* Entry Scene   */ &scene_sneaky_spirits,
-        /* Level Name    */ "Sneaky Spirits",
-        /* Level Desc.   */ "These spirits aren't\n"
-                            "exactly evil, but they\n"
-                            "ARE mean: they'll laugh\n"
-                            "at you if you miss.",
+        /* Level Name    */ "白色的鬼",
+        /* Level Desc.   */ "那个白色的家伙\n"
+                            "在小瞧咱们！\n"
+                            "气死我啦——！！\n"
+                            "得狠狠教训它！",
         /* Level Icon    */ 1,
         /* Level Type    */ LEVEL_TYPE_GAME,
         /* Epilogue GFX  */ epilogue_sneaky_spirits_gfx_tables,
         /* Epilogue Text */ {
-            /* TRY_AGAIN */ "Escaped ghosts are nothing but trouble.",
-            /* OK        */ "This one's not going anywhere!",
-            /* SUPERB    */ "No ghost escapes on your watch!"
+            /* TRY_AGAIN */ "竟被逃掉的家伙捉弄了！",
+            /* OK        */ "拿下！",
+            /* SUPERB    */ "干掉一大堆！！"
         }
     },
     /* SNEAKY_SPIRITS_2 */ {
         /* Entry Scene   */ &scene_sneaky_spirits_2,
-        /* Level Name    */ "Sneaky Spirits 2",
-        /* Level Desc.   */ "Those spirits are\n"
-                            "acting up again!\n"
-                            "Let them have it,\n"
-                            "archery style!",
+        /* Level Name    */ "白色的鬼 2",
+        /* Level Desc.   */ "那个白色的家伙\n"
+                            "完全不把咱们放在眼里！\n"
+                            "可恶可恶！！\n"
+                            "得狠狠教训它一顿！",
         /* Level Icon    */ 53,
         /* Level Type    */ LEVEL_TYPE_GAME,
         /* Epilogue GFX  */ epilogue_sneaky_spirits_2_gfx_tables,
         /* Epilogue Text */ {
-            /* TRY_AGAIN */ "Gah! They slipped right past you!",
-            /* OK        */ "L-let me go! Please!",
-            /* SUPERB    */ "You ghosts stay and think about what you've done!"
+            /* TRY_AGAIN */ "哇啊！被耍得毫无还手之力！",
+            /* OK        */ "鬼：“什、什么呀～”",
+            /* SUPERB    */ "你们，都给我好好反省！"
         },
         /* Level Flags   */ LEVEL_DATA_FLAG_NO_PRACTICE
     },
     /* SAMURAI_SLICE */ {
         /* Entry Scene   */ &scene_samurai_slice,
-        /* Level Name    */ "Samurai Slice",
-        /* Level Desc.   */ "Demons have put\n"
-                            "the town in a panic!\n"
-                            "Come on, Samurai--\n"
-                            "slice them all!",
+        /* Level Name    */ "居合斩",
+        /* Level Desc.   */ "闪开 闪开，\n"
+                            "那群家伙来了。\n"
+                            "你身为武士，\n"
+                            "格杀勿论！",
         /* Level Icon    */ 18,
         /* Level Type    */ LEVEL_TYPE_GAME,
         /* Epilogue GFX  */ epilogue_samurai_slice_gfx_tables,
         /* Epilogue Text */ {
-            /* TRY_AGAIN */ "I've broken my blade!",
-            /* OK        */ "I shall push myself harder!",
-            /* SUPERB    */ "Have you ever seen a sword this sharp?"
+            /* TRY_AGAIN */ "刀刃崩口了！",
+            /* OK        */ "仍需继续磨练！",
+            /* SUPERB    */ "这锋利度，简直棒极了！！"
         },
         /* Level Flags   */ LEVEL_DATA_FLAG_NO_PRACTICE
     },
     /* SPACEBALL */ {
         /* Entry Scene   */ &scene_spaceball,
-        /* Level Name    */ "Spaceball",
-        /* Level Desc.   */ "Ignore the camera's\n"
-                            "zooms! Make the ball\n"
-                            "zoom away! Don't blink!\n"
-                            "Don't wipe your tears!",
+        /* Level Name    */ "空中击球手",
+        /* Level Desc.   */ "别在意镜头缩放！\n"
+                            "就这样，请饶了我吧。\n"
+                            "不要依赖视觉！\n"
+                            "大胆上吧～！",
         /* Level Icon    */ 9,
         /* Level Type    */ LEVEL_TYPE_GAME,
         /* Epilogue GFX  */ epilogue_spaceball_gfx_tables,
         /* Epilogue Text */ {
-            /* TRY_AGAIN */ "Can I have my ball back? I'll give you my last rice ball...",
-            /* OK        */ "Must... train... harder...",
-            /* SUPERB    */ "I won first \"space\"!"
+            /* TRY_AGAIN */ "就这样，请饶了我吧。",
+            /* OK        */ "朝着更高处继续练吧！",
+            /* SUPERB    */ "我居然拿到这个啦——！"
         },
         /* Level Flags   */ LEVEL_DATA_FLAG_NO_PRACTICE
     },
     /* SPACEBALL_2 */ {
         /* Entry Scene   */ &scene_spaceball_2,
-        /* Level Name    */ "Spaceball 2",
-        /* Level Desc.   */ "Ignore the camera's\n"
-                            "zooms! Just believe\n"
-                            "in yourself and\n"
-                            "send the ball flying!",
+        /* Level Name    */ "空中击球手 2",
+        /* Level Desc.   */ "别在意镜头缩放！\n"
+                            "用心去击球！\n"
+                            "不要依赖视觉！\n"
+                            "眼泪也别擦啦～！",
         /* Level Icon    */ 52,
         /* Level Type    */ LEVEL_TYPE_GAME,
         /* Epilogue GFX  */ epilogue_spaceball_2_gfx_tables,
         /* Epilogue Text */ {
-            /* TRY_AGAIN */ "Next time, swing your bat somewhere else!",
-            /* OK        */ "I can't give up now!",
-            /* SUPERB    */ "Guys, guys, look at what I've won!"
+            /* TRY_AGAIN */ "你在干什么啦！",
+            /* OK        */ "怎么能在这里结束！",
+            /* SUPERB    */ "大家快看快看——！"
         },
         /* Level Flags   */ LEVEL_DATA_FLAG_NO_PRACTICE
     },
     /* TAP_TRIAL */ {
         /* Entry Scene   */ &scene_tap_trial,
-        /* Level Name    */ "Tap Trial",
-        /* Level Desc.   */ "You are the girl.\n"
-                            "They are the monkeys.\n"
-                            "Follow them to tap\n"
-                            "stardom!",
+        /* Level Name    */ "踢踏舞",
+        /* Level Desc.   */ "你是个女孩子。\n"
+                            "要跟着旁边那群猴子\n"
+                            "一起踩出踢踏节奏哦！",
         /* Level Icon    */ 6,
         /* Level Type    */ LEVEL_TYPE_GAME,
         /* Epilogue GFX  */ epilogue_tap_trial_gfx_tables,
@@ -356,26 +353,26 @@ struct LevelData level_data_table[] = {
             #ifdef PARADISE
             /* TRY_AGAIN */ "Better tap out.",
             #else
-            /* TRY_AGAIN */ "Gotta tap out.",
+            /* TRY_AGAIN */ "真不甘心呀。",
             #endif
-            /* OK        */ "You were ALMOST as good as a monkey...",
-            /* SUPERB    */ "Tap loves you too, Giraffe!"
+            /* OK        */ "虽然有几处怪怪的啦！",
+            /* SUPERB    */ "心情已经嗨到顶了！！"
         }
     },
     /* TAP_TRIAL_2 */ {
         /* Entry Scene   */ &scene_tap_trial_2,
-        /* Level Name    */ "Tap Trial 2",
-        /* Level Desc.   */ "The monkeys are\n"
-                            "bringing their A game!\n"
-                            "Can you keep up? Don't\n"
-                            "let them out-tap you!",
+        /* Level Name    */ "超级踢踏舞",
+        /* Level Desc.   */ "猴子们强化啦！\n"
+                            "你还能不能\n"
+                            "跟上他们呢！？\n"
+                            "别输呀〜！",
         /* Level Icon    */ 11,
         /* Level Type    */ LEVEL_TYPE_GAME,
         /* Epilogue GFX  */ epilogue_tap_trial_2_gfx_tables,
         /* Epilogue Text */ {
-            /* TRY_AGAIN */ "Looks like we tapped TOO hard!",
-            /* OK        */ "Hey... Where'd our rhythm go?",
-            /* SUPERB    */ "Monkeys are the key to tappiness!"
+            /* TRY_AGAIN */ "不会吧——！",
+            /* OK        */ "嗯〜… 感觉还差了那么一点…",
+            /* SUPERB    */ "这股感觉，根本停不下来啦！"
         },
         /* Level Flags   */ LEVEL_DATA_FLAG_NO_PRACTICE
     },
