@@ -4,7 +4,7 @@ struct LevelData level_data_table[] = {
         /* Entry Scene   */ &scene_karate_man,
         /* Level Name    */ "空手道家",
         /* Level Desc.   */ "向飞来的东西\n"
-                            "按" CHAR_A_BUTTON_UTF8 "出拳\n"
+                            "按"CHAR_A_BUTTON_UTF8"出拳\n"
                             "很常见的游戏？\n"
                             "……也许吧。",
         /* Level Icon    */ 8,
@@ -20,7 +20,7 @@ struct LevelData level_data_table[] = {
         /* Entry Scene   */ &scene_karate_man_2,
         /* Level Name    */ "空手道家 2",
         /* Level Desc.   */ "向飞来的东西\n"
-                            "按" CHAR_A_BUTTON_UTF8 "出拳！\n"
+                            "按"CHAR_A_BUTTON_UTF8"出拳！\n"
                             "不过，这速度\n"
                             "有点古怪哦。",
         /* Level Icon    */ 0,
@@ -378,110 +378,108 @@ struct LevelData level_data_table[] = {
     },
     /* MARCHING_ORDERS */ {
         /* Entry Scene   */ &scene_marching_orders,
-        /* Level Name    */ "Marching Orders",
-        /* Level Desc.   */ "Ready, march! Following\n"
-                            "orders as a unit builds\n"
-                            "your camaraderie.\n"
-							"Also, rhythm.",
+        /* Level Name    */ "行军",
+        /* Level Desc.   */ "现在开始行进。\n"
+                            "擅自行动可是会\n"
+                            "毁掉整个队伍的！\n"
+							"好好努力吧。",
         /* Level Icon    */ 21,
         /* Level Type    */ LEVEL_TYPE_GAME,
         /* Epilogue GFX  */ epilogue_marching_orders_gfx_tables,
         /* Epilogue Text */ {
-            /* TRY_AGAIN */ "Wait! You left without us!",
-            /* OK        */ "Today's mission: Cleaning. ",
-            /* SUPERB    */ "Mission success! We rescued the alien!"
+            /* TRY_AGAIN */ "哇啊！被丢下啦！",
+            /* OK        */ "今天的任务，是打扫卫生哦♪",
+            /* SUPERB    */ "拯救外星人大成功！！"
         }
     },
     /* MARCHING_ORDERS_2 */ {
         /* Entry Scene   */ &scene_marching_orders_2,
-        /* Level Name    */ "Marching Orders 2",
-        /* Level Desc.   */ "Ready, march!\n"
-                            "This mission requires\n"
-                            "finesse and technique,\n"
-                            "so march your best!",
+        /* Level Name    */ "行军 2",
+        /* Level Desc.   */ "现在开始行进。\n"
+                            "这次的动作\n"
+                            "有点复杂！\n"
+                            "好好努力吧。",
         /* Level Icon    */ 20,
         /* Level Type    */ LEVEL_TYPE_GAME,
         /* Epilogue GFX  */ epilogue_marching_orders_2_gfx_tables,
         /* Epilogue Text */ {
-            /* TRY_AGAIN */ "This is unacceptable...",
-            /* OK        */ "I know we can perform better than that!",
-            /* SUPERB    */ "Now THIS is a reward!"
+            /* TRY_AGAIN */ "这、这样可不行！唔〜嗯…",
+            /* OK        */ "唔！舞步还得更帅才行！",
+            /* SUPERB    */ "我居然还拿到了这种奖励！！"
         },
         /* Level Flags   */ LEVEL_DATA_FLAG_NO_PRACTICE
     },
     /* WIZARDS_WALTZ */ {
         /* Entry Scene   */ &scene_wizards_waltz,
-        /* Level Name    */ "Wizard's Waltz",
-        /* Level Desc.   */ "There's a lonely girl\n"
-                            "over there. Put your\n"
-                            "flower power to good\n"
-                            "use and cheer her up!",
+        /* Level Name    */ "魔法使",
+        /* Level Desc.   */ "你是一位魔法使。\n"
+                            "给那个怕寂寞的\n"
+                            "小姑娘送上一朵花吧。",
         /* Level Icon    */ 23,
         /* Level Type    */ LEVEL_TYPE_GAME,
         /* Epilogue GFX  */ epilogue_wizards_waltz_gfx_tables,
         /* Epilogue Text */ {
-            /* TRY_AGAIN */ "... I'm scared!",
-            /* OK        */ "These will look SO lovely when they bloom!",
-            /* SUPERB    */ "Who could feel lonely with all these flowers?"
+            /* TRY_AGAIN */ "这种我不要啦〜，好可怕呀〜！",
+            /* OK        */ "要是能开出更多花，我会更开心呀〜。",
+            /* SUPERB    */ "哇——！我已经不寂寞啦！"
         }
     },
     /* BUNNY_HOP */ {
         /* Entry Scene   */ &scene_bunny_hop,
-        /* Level Name    */ "Bunny Hop",
-        /* Level Desc.   */ "This rabbit has an\n"
-                            "impossible goal: to jump\n"
-                            "to the moon! Can you\n"
-                            "make her dream reality?",
+        /* Level Name    */ "跃兔",
+        /* Level Desc.   */ "这只小白兔\n"
+                            "最擅长跳跃啦。\n"
+                            "踩着节拍，\n"
+                            "一起渡过大海吧！",
         /* Level Icon    */ 24,
         /* Level Type    */ LEVEL_TYPE_GAME,
         /* Epilogue GFX  */ epilogue_bunny_hop_gfx_tables,
         /* Epilogue Text */ {
-            /* TRY_AGAIN */ "I'm not sure I thought this through...",
-            /* OK        */ "Didn't quite stick the landing...",
-            /* SUPERB    */ "A perfect landing! Who needs rockets?!"
+            /* TRY_AGAIN */ "我想回月亮上去〜！",
+            /* OK        */ "落地失败啦…",
+            /* SUPERB    */ "满分！！"
         },
         /* Level Flags   */ LEVEL_DATA_FLAG_NO_PRACTICE
     },
     /* FIREWORKS */ {
         /* Entry Scene   */ &scene_fireworks,
-        /* Level Name    */ "Fireworks",
-        /* Level Desc.   */ "It's not summertime\n"
-                            "without fireworks!\n"
-                            "Light them up to fill the\n"
+        /* Level Name    */ "烟火",
+        /* Level Desc.   */ "说到夏天嘛，\n"
+                            "果然还是烟火吧？\n"
+                            "就让它绚丽多彩地\n"
                             #ifdef PARADISE
                             "sky with pretty colours!",
                             #else
-                            "sky with pretty colors!",
+                            "升上夜空吧！",
                             #endif
         /* Level Icon    */ 26,
         /* Level Type    */ LEVEL_TYPE_GAME,
         /* Epilogue GFX  */ epilogue_fireworks_gfx_tables,
         /* Epilogue Text */ {
-            /* TRY_AGAIN */ "Cough, cough... I think I blew it...",
-            /* OK        */ "That wasn't half bad!",
-            /* SUPERB    */ "I am THE go-to fireworks guy!"
+            /* TRY_AGAIN */ "咳咳咳… 失败。",
+            /* OK        */ "做得相当不错嘛！",
+            /* SUPERB    */ "说到烟火就交给我吧！！"
         }
     },
     /* POWER_CALLIGRAPHY */ {
         /* Entry Scene   */ &scene_power_calligraphy,
-        /* Level Name    */ "Power Calligraphy",
-        /* Level Desc.   */ "Japanese calligraphy\n"
-                            "requires grace, finesse,\n"
-                            "and a shocking amount\n"
-                            "of upper body strength.",
+        /* Level Name    */ "节奏书法",
+        /* Level Desc.   */ "要用毛笔来写日文。y\n"
+                            "而你负责的，\n"
+                            "只有最精彩的部分。",
         /* Level Icon    */ 28,
         /* Level Type    */ LEVEL_TYPE_GAME,
         /* Epilogue GFX  */ epilogue_power_power_calligraphy_gfx_tables,
         /* Epilogue Text */ {
-            /* TRY_AGAIN */ "Maybe I should stick with pencils...",
-            /* OK        */ "Precision! Grace! What's not to like?",
-            /* SUPERB    */ "Woo! Calligraphy party!"
+            /* TRY_AGAIN */ "呼〜… 不行呀。",
+            /* OK        */ "再多享受一些书法的乐趣吧！",
+            /* SUPERB    */ "书法这玩意儿也太带感啦！！"
         }
     },
     /* POWER_CALLIGRAPHY_2 */ { // this still kills me lmao
         /* Entry Scene   */ &scene_power_calligraphy,
-        /* Level Name    */ "Power Calligraphy 2",
-        /* Level Desc.   */ "haha unused\n"
+        /* Level Name    */ "节奏书法 2",
+        /* Level Desc.   */ "被捣蛋鬼偷走了\n"
                             "\n"
                             "\n"
                             "",
@@ -497,15 +495,15 @@ struct LevelData level_data_table[] = {
     },
     /* TOSS_BOYS */ {
         /* Entry Scene   */ &scene_toss_boys,
-        /* Level Name    */ "Toss Team",
-        /* Level Desc.   */ "This trio of friends love\n"
+        /* Level Name    */ "传球少年",
+        /* Level Desc.   */ "感情超好的三人组，\n"
                             #ifdef PARADISE
                             "practising volleyball.\n"
                             #else
-                            "practicing volleyball.\n"
+                            "一边互相喊话，\n"
                             #endif
-                            "Listen for their names\n"
-                            "as they pass their ball!",
+                            "一边总是开心地\n"
+                            "练习传球呢。",
         /* Level Icon    */ 30,
         /* Level Type    */ LEVEL_TYPE_GAME,
         /* Epilogue GFX  */ epilogue_toss_boys_gfx_tables,
@@ -513,341 +511,339 @@ struct LevelData level_data_table[] = {
             #ifdef PARADISE
             /* TRY_AGAIN */ "We've been thrown out!",
             #else
-            /* TRY_AGAIN */ "We've been tossed out!",
+            /* TRY_AGAIN */ "完全不行啦〜！",
             #endif
-            /* OK        */ "Next time, we'll toss better than the best!",
+            /* OK        */ "你肯定还能做得更好！",
             #ifdef PARADISE
             /* SUPERB    */ "Chuck World Championship, here we come!"
             #else
-            /* SUPERB    */ "Toss World Championship, here we come!"
+            /* SUPERB    */ "目标是拿下传球世界锦标赛冠军——！！"
             #endif
         }
     },
     /* TOSS_BOYS_2 */ {
         /* Entry Scene   */ &scene_toss_boys_2,
-        /* Level Name    */ "Toss Team 2",
-        /* Level Desc.   */ "This trio of friends love\n"
+        /* Level Name    */ "传球少年 2",
+        /* Level Desc.   */ "感情超好的三人组，\n"
                             #ifdef PARADISE
                             "practising volleyball.\n"
                             #else
-                            "practicing volleyball.\n"
+                            "一边互相喊话，\n"
                             #endif
-                            "Today, they're training\n"
-                            "harder than ever!",
+                            "一边总是开心地\n"
+                            "练习传球呢。",
         /* Level Icon    */ 29,
         /* Level Type    */ LEVEL_TYPE_GAME,
         /* Epilogue GFX  */ epilogue_toss_boys_2_gfx_tables,
         /* Epilogue Text */ {
-            /* TRY_AGAIN */ "Our spirits have been deflated...",
-            /* OK        */ "We still have a long way to go!",
+            /* TRY_AGAIN */ "惨兮兮啦〜！",
+            /* OK        */ "怎么能在这里结束！",
             #ifdef PARADISE
             /* SUPERB    */ "Three cheers for our star thrower!"
             #else
-            /* SUPERB    */ "Three cheers for our star tosser!"
+            /* SUPERB    */ "最强阵容诞生啦ー！！"
             #endif
         },
         /* Level Flags   */ LEVEL_DATA_FLAG_NO_PRACTICE
     },
     /* RAT_RACE */ {
         /* Entry Scene   */ &scene_rat_race,
-        /* Level Name    */ "Rat Race",
-        /* Level Desc.   */ "You are a rat. She is\n"
-                            "a cat. You love cheese.\n"
-                            "All the ingredients of a\n"
-                            "tense encounter.",
+        /* Level Name    */ "蹑鼠蹑脚",
+        /* Level Desc.   */ "你是一只老鼠。\n"
+                            "朝着最爱的奶酪\n"
+                            "前进吧，\n"
+                            "Stop & Go！！",
         /* Level Icon    */ 31,
         /* Level Type    */ LEVEL_TYPE_GAME,
         /* Epilogue GFX  */ epilogue_rat_race_gfx_tables,
         /* Epilogue Text */ {
-            /* TRY_AGAIN */ "I guess we could try to eat the plate...",
-            /* OK        */ "You know, I really like cheese. Like, a LOT.",
-            /* SUPERB    */ "We'll have to start a family to eat all this!"
+            /* TRY_AGAIN */ "我想吃奶酪呀～…",
+            /* OK        */ "奶酪真好吃呀。",
+            /* SUPERB    */ "大家都吃到了，太好啦！"
         }
     },
     /* TRAM_PAULINE */ {
         /* Entry Scene   */ &scene_tram_pauline,
-        /* Level Name    */ "Tram & Pauline",
-        /* Level Desc.   */ "Gather round, one and\n"
-                            "all! Tram and Pauline's\n"
-                            "acrobatic magic show\n"
-							"is about to begin!",
+        /* Level Name    */ "小蹦与小床Tram & Pauline",
+        /* Level Desc.   */ "小狐狸小蹦，\n"
+                            "再加上小床的\n"
+                            "杂技秀就要开始啦！",
         /* Level Icon    */ 32,
         /* Level Type    */ LEVEL_TYPE_GAME,
         /* Epilogue GFX  */ epilogue_tram_pauline_gfx_tables,
         /* Epilogue Text */ {
-            /* TRY_AGAIN */ "We've transformed the show into a failure!",
-            /* OK        */ "At least we only messed up half the show...",
-            /* SUPERB    */ "We're the perfect duo!"
+            /* TRY_AGAIN */ "大失败啦〜！！",
+            /* OK        */ "有点不上不下呀…",
+            /* SUPERB    */ "配合得稳稳的！！"
         }
     },
     /* SHOWTIME */ {
         /* Entry Scene   */ &scene_showtime,
-        /* Level Name    */ "Showtime",
-        /* Level Desc.   */ "Our plucky penguins\n"
-                            "are ready for their act!\n"
-                            "Get out there and wow\n"
-                            "the crowd! It's showtime!",
+        /* Level Name    */ "表演时间",
+        /* Level Desc.   */ "企鹅小子们的\n"
+                            "表演时间\n"
+                            "要开始啦！\n"
+                            "好耶好耶！",
         /* Level Icon    */ 36,
         /* Level Type    */ LEVEL_TYPE_GAME,
         /* Epilogue GFX  */ epilogue_showtime_gfx_tables,
         /* Epilogue Text */ {
-            /* TRY_AGAIN */ "We've betrayed our audience...",
-            /* OK        */ "I know we're capable of more than this...",
-            /* SUPERB    */ "They loved us out there!"
+            /* TRY_AGAIN */ "客人们都生气了呢…",
+            /* OK        */ "我们可不是只有这点水平…",
+            /* SUPERB    */ "太好啦！！ 客人们玩得很开心耶——！！"
         }
     },
     /* SPACE_DANCE */ {
         /* Entry Scene   */ &scene_space_dance,
-        /* Level Name    */ "Space Dance",
-        /* Level Desc.   */ "You want a dancing\n"
-                            "challenge? Try dancing\n"
-                            "in zero gravity!\n"
-							"IN SPAAAAAAAAAACE!",
+        /* Level Name    */ "太空之舞",
+        /* Level Desc.   */ "这里是失重宇宙。\n"
+                            "不过，还是来跳舞吧！\n"
+                            "Let's Space Dance！",
         /* Level Icon    */ 40,
         /* Level Type    */ LEVEL_TYPE_GAME,
         /* Epilogue GFX  */ epilogue_space_dance_gfx_tables,
         /* Epilogue Text */ {
-            /* TRY_AGAIN */ "Our despair has lead us into a black hole!",
-            /* OK        */ "Let us aim for the stars!",
-            /* SUPERB    */ "We are galactic superstars!"
+            /* TRY_AGAIN */ "黑、黑洞来啦——！！",
+            /* OK        */ "真想像那颗星星一样闪闪发亮呀…",
+            /* SUPERB    */ "我们就是太空超级巨星！！"
         }
     },
     /* COSMIC_DANCE */ {
         /* Entry Scene   */ &scene_cosmic_dance,
-        /* Level Name    */ "Cosmic Dance",
-        /* Level Desc.   */ "These paragons of\n"
-                            "dancing have mastered\n"
-                            "their zero-G moves\n"
-                            "and want to show off!",
+        /* Level Name    */ "宇宙之舞",
+        /* Level Desc.   */ "代表宇宙的\n"
+                            "舞者们！\n"
+                            "那种利落动作\n"
+                            "让人完全移不开眼呀！！",
         /* Level Icon    */ 16,
         /* Level Type    */ LEVEL_TYPE_GAME,
         /* Epilogue GFX  */ epilogue_cosmic_dance_gfx_tables,
         /* Epilogue Text */ {
-            /* TRY_AGAIN */ "We cannot go on like THIS!",
-            /* OK        */ "Is that the best you guys can do?",
-            /* SUPERB    */ "All aboard... for SPACE!"
+            /* TRY_AGAIN */ "完、完蛋啦——！！",
+            /* OK        */ "你们就只有这点本事吗？",
+            /* SUPERB    */ "我们可是超级宇宙明星啊！！"
         },
         /* Level Flags   */ LEVEL_DATA_FLAG_NO_PRACTICE
     },
     /* RAP_MEN */ {
         /* Entry Scene   */ &scene_rap_men,
-        /* Level Name    */ "RAPMEN",
-        /* Level Desc.   */ "The coolest rapping\n"
-                            "duo has arrived! Their\n"
-                            "hot rapping skills are\n"
-                            "the talk of the town!",
+        /* Level Name    */ "饶舌男",
+        /* Level Desc.   */ "一对超酷的搭档\n"
+                            "登场啦！\n"
+                            "火热的\n"
+                            "让人兴奋到不行！",
         /* Level Icon    */ 42,
         /* Level Type    */ LEVEL_TYPE_GAME,
         /* Epilogue GFX  */ epilogue_rap_men_gfx_tables,
         /* Epilogue Text */ {
-            /* TRY_AGAIN */ "We need more practice...",
-            /* OK        */ "I think our tone was off.",
-            /* SUPERB    */ "We're looking forward to hearing from you again!"
+            /* TRY_AGAIN */ "我们这样也太土了吧…",
+            /* OK        */ "啧。总觉得状态不太对啊。",
+            /* SUPERB    */ "以后也请多多关照啦——！！"
         }
     },
     /* RAP_WOMEN */ {
         /* Entry Scene   */ &scene_rap_women,
-        /* Level Name    */ "RAPWOMEN",
-        /* Level Desc.   */ "The RAPMEN have\n"
-                            "some new rivals!\n"
-                            "Don't be deceived\n"
-                            "by their cute voices!",
+        /* Level Name    */ "饶舌女",
+        /* Level Desc.   */ "那群饶舌男的\n"
+                            "对手登场啦！\n"
+                            "这可爱嗓音\n"
+                            "简直让人神魂颠倒！",
         /* Level Icon    */ 15,
         /* Level Type    */ LEVEL_TYPE_GAME,
         /* Epilogue GFX  */ epilogue_rap_women_gfx_tables,
         /* Epilogue Text */ {
-            /* TRY_AGAIN */ "No... This isn't right.",
-            /* OK        */ "I know we can rap better than this!",
-            /* SUPERB    */ "Yes, yes, YES! We've got it!"
+            /* TRY_AGAIN */ "不是这种感觉啦…",
+            /* OK        */ "总觉得还是差了那么一点点…！",
+            /* SUPERB    */ "对对对，就是这个就是这个啦——！！耶——咿！"
         },
         /* Level Flags   */ LEVEL_DATA_FLAG_NO_PRACTICE
     },
     /* QUIZ_SHOW */ {
         /* Entry Scene   */ &scene_quiz_show,
-        /* Level Name    */ "Quiz Show",
-        /* Level Desc.   */ "Play a quiz where you\n"
-                            "copy the host's pattern.\n"
-                            "Seems simple, right?\n"
-                            "Simple, but not easy.",
+        /* Level Name    */ "节奏问答",
+        /* Level Desc.   */ "这是个很简单的问答，\n"
+                            "只要猜中主持人\n"
+                            "“敲了几下”\n"
+                            "就可以啦。",
         /* Level Icon    */ 43,
         /* Level Type    */ LEVEL_TYPE_GAME,
         /* Epilogue GFX  */ epilogue_quiz_show_gfx_tables,
         /* Epilogue Text */ {
-            /* TRY_AGAIN */ "I can do better... I can do better...",
+            /* TRY_AGAIN */ "嘛，也就这样吧。",
             #ifdef PARADISE
             /* OK        */ "Must study... for next time... Zzz...",
             #else
-            /* OK        */ "Gotta study... for next time... Zzz...",
+            /* OK        */ "为了下次，学习、学习……Zzz",
             #endif
-            /* SUPERB    */ "I won the grand prize! A world tour!"
+            /* SUPERB    */ "我居然赢得了环球旅行！"
         }
     },
     /* BON_ODORI */ {
         /* Entry Scene   */ &scene_bon_odori,
-        /* Level Name    */ "The☆Bon Odori",
-        /* Level Desc.   */ "Let's celebrate the\n"
-                            "Japanese Bon Festival!\n"
-                            "Clap along as they sing\n"
-                            "their traditional song!",
+        /* Level Name    */ "The☆盂兰盆舞",
+        /* Level Desc.   */ "跟着盂兰盆舞的\n"
+                            "歌声，\n"
+                            "“啪”地\n"
+                            "拍手吧。",
         /* Level Icon    */ 35,
         /* Level Type    */ LEVEL_TYPE_GAME,
         /* Epilogue GFX  */ epilogue_bon_odori_gfx_tables,
         /* Epilogue Text */ {
-            /* TRY_AGAIN */ "I feel so cold...",
-            /* OK        */ "Oh... the quaint fizzle of a sparkler...",
-            /* SUPERB    */ "That was so much fun! I can't wait for next year!"
+            /* TRY_AGAIN */ "变冷了呢…",
+            /* OK        */ "手持烟花，总让人有点伤感呢。",
+            /* SUPERB    */ "啊，太有趣了！"
         }
     },
     /* BON_DANCE */ {
         /* Entry Scene   */ &scene_bon_dance,
-        /* Level Name    */ "The☆Bon Dance",
-        /* Level Desc.   */ "The Bon Festival has\n"
-                            "a modern-day style!\n"
-                            "Clap along to this\n"
-                            "new arrangement!",
+        /* Level Name    */ "盆舞The☆Bon Dance",
+        /* Level Desc.   */ "这是现代版的\n"
+                            "盂兰盆舞！\n"
+                            "超带感哦！\n"
+                            "耶！",
         /* Level Icon    */ 17,
         /* Level Type    */ LEVEL_TYPE_GAME,
         /* Epilogue GFX  */ epilogue_bon_dance_gfx_tables,
         /* Epilogue Text */ {
-            /* TRY_AGAIN */ "It's over...",
-            /* OK        */ "When did it start raining?",
-            /* SUPERB    */ "Our new Bon Dance is a lot of fun!"
+            /* TRY_AGAIN */ "别再跳了…",
+            /* OK        */ "嗯，开始下雨了。",
+            /* SUPERB    */ "盆舞真的太有意思了！"
         },
         /* Level Flags   */ LEVEL_DATA_FLAG_NO_PRACTICE
     },
     /* REMIX_1 */ {
         /* Entry Scene   */ &scene_remix_1,
         /* Level Name    */ "Remix 1",
-        /* Level Desc.   */ "Let's test your skills!\n"
-                            "Stage 1's games have\n"
-                            "all been remixed!\n"
-                            "Think you can beat it?",
+        /* Level Desc.   */ "想检验一下\n"
+                            "你的实力吗？\n"
+                            "让之前的经验\n"
+                            "发挥作用吧！",
         /* Level Icon    */ 22,
         /* Level Type    */ LEVEL_TYPE_REMIX,
         /* Epilogue GFX  */ epilogue_remix1_gfx_tables,
         /* Epilogue Text */ {
-            /* TRY_AGAIN */ "You were as good as... a cat's snack.",
-            /* OK        */ "You were as good as... an ordinary breakfast.",
-            /* SUPERB    */ "You were as good as... why, a delicious dinner!"
+            /* TRY_AGAIN */ "本次的表现 ：猫咪零食级",
+            /* OK        */ "本次的表现 ：早餐级",
+            /* SUPERB    */ "本次的表现 ：竟然是晚餐级！！"
         },
         /* Level Flags   */ LEVEL_DATA_FLAG_NO_PRACTICE
     },
     /* REMIX_2 */ {
         /* Entry Scene   */ &scene_remix_2,
         /* Level Name    */ "Remix 2",
-        /* Level Desc.   */ "Let's test your skills!\n"
-                            "This one's got a lively\n"
-                            "atmosphere perfect\n"
-                            "for dance lessons!",
+        /* Level Desc.   */ "想检验一下\n"
+                            "你的实力吗？\n"
+                            "让之前的经验\n"
+                            "发挥作用吧！",
         /* Level Icon    */ 27,
         /* Level Type    */ LEVEL_TYPE_REMIX,
         /* Epilogue GFX  */ epilogue_remix2_gfx_tables,
         /* Epilogue Text */ {
-            /* TRY_AGAIN */ "That was as lively as... playing ball by yourself.",
-            /* OK        */ "That was as lively as... a pleasant game of catch.",
-            /* SUPERB    */ "That was as lively as... a huge baseball tournament!"
+            /* TRY_AGAIN */ "本次的热度 ：独自练习的程度",
+            /* OK        */ "本次的热度 ：开心传接球的程度",
+            /* SUPERB    */ "本次的热度 ：精彩大赛的程度！！"
         },
         /* Level Flags   */ LEVEL_DATA_FLAG_NO_PRACTICE
     },
     /* REMIX_3 */ {
         /* Entry Scene   */ &scene_remix_3,
         /* Level Name    */ "Remix 3",
-        /* Level Desc.   */ "Let's test your skills!\n"
-                            "This one's got an\n"
-                            "adorable love song with\n"
-                            "adorable love lyrics!",
+        /* Level Desc.   */ "想检验一下\n"
+                            "你的实力吗？\n"
+                            "让之前的经验\n"
+                            "发挥作用吧！",
         /* Level Icon    */ 33,
         /* Level Type    */ LEVEL_TYPE_REMIX,
         /* Epilogue GFX  */ epilogue_remix3_gfx_tables,
         /* Epilogue Text */ {
-            /* TRY_AGAIN */ "Their love ended in... heartbreak...",
-            /* OK        */ "Their love ended in... a good friendship.",
-            /* SUPERB    */ "Their love ended in... a tender marriage!"
+            /* TRY_AGAIN */ "本次的爱意 ： 好像已经心碎了…",
+            /* OK        */ "本次的爱意 ： 非常友好的感觉呢♪",
+            /* SUPERB    */ "本次的爱意 ： 甜甜蜜蜜——！！"
         },
         /* Level Flags   */ LEVEL_DATA_FLAG_NO_PRACTICE
     },
     /* REMIX_4 */ {
         /* Entry Scene   */ &scene_remix_4,
         /* Level Name    */ "Remix 4",
-        /* Level Desc.   */ "Let's test your skills!\n"
-                            "This one's got a casual,\n"
-                            "easygoing vibe, like a\n"
-                            "nice, pleasant stroll...",
+        /* Level Desc.   */ "想检验一下\n"
+                            "你的实力吗？\n"
+                            "让之前的经验\n"
+                            "发挥作用吧！",
         /* Level Icon    */ 34,
         /* Level Type    */ LEVEL_TYPE_REMIX,
         /* Epilogue GFX  */ epilogue_remix4_gfx_tables,
         /* Epilogue Text */ {
-            /* TRY_AGAIN */ "Today's forecast... raining buckets.",
-            /* OK        */ "Today's forecast... very cloudy.",
-            /* SUPERB    */ "Today's forecast... clear skies all day!"
+            /* TRY_AGAIN */ "本次的天气 ： 雨",
+            /* OK        */ "本次的天气 ： 多云",
+            /* SUPERB    */ "本次的天气 ：快乐的大晴天！！"
         },
         /* Level Flags   */ LEVEL_DATA_FLAG_NO_PRACTICE
     },
     /* REMIX_5 */ {
         /* Entry Scene   */ &scene_remix_5,
         /* Level Name    */ "Remix 5",
-        /* Level Desc.   */ "Let's test your skills!\n"
-                            "This one's got some\n"
-                            "melancholic lyrics.\n"
-                            "Try to keep your cool!",
+        /* Level Desc.   */ "想检验一下\n"
+                            "你的实力吗？\n"
+                            "让之前的经验\n"
+                            "发挥作用吧！",
         /* Level Icon    */ 39,
         /* Level Type    */ LEVEL_TYPE_REMIX,
         /* Epilogue GFX  */ epilogue_remix5_gfx_tables,
         /* Epilogue Text */ {
-            /* TRY_AGAIN */ "This couple is... in trouble!",
-            /* OK        */ "This couple is... a little nervous...",
-            /* SUPERB    */ "This couple is... living their happy-ever-after!"
+            /* TRY_AGAIN */ "本次的二人 ：被人搅和了！",
+            /* OK        */ "本次的二人 ：今后可能有点不安……",
+            /* SUPERB    */ "本次的二人 ：过上幸福生活啦♪"
         },
         /* Level Flags   */ LEVEL_DATA_FLAG_NO_PRACTICE
     },
     /* REMIX_6 */ {
         /* Entry Scene   */ &scene_remix_6,
         /* Level Name    */ "Remix 6",
-        /* Level Desc.   */ "Let's test your skills!\n"
-                            "Every game you've\n"
-                            "played is here! Show\n"
-                            "us what you've learned!",
+        /* Level Desc.   */ "想检验一下\n"
+                            "你的实力吗？\n"
+                            "让之前的经验\n"
+                            "发挥作用吧！",
         /* Level Icon    */ 2,
         /* Level Type    */ LEVEL_TYPE_REMIX,
         /* Epilogue GFX  */ epilogue_remix6_gfx_tables,
         /* Epilogue Text */ {
-            /* TRY_AGAIN */ "Your fish tank is... pretty sparse.",
-            /* OK        */ "Your fish tank is... unique for sure!",
-            /* SUPERB    */ "Your fish tank is... unbelievable!"
+            /* TRY_AGAIN */ "本次的内容 ： 有些孤单的感觉",
+            /* OK        */ "本次的内容 ： 意外的感觉",
+            /* SUPERB    */ "本次的内容 ： 难以置信的感觉！！"
         },
         /* Level Flags   */ LEVEL_DATA_FLAG_NO_PRACTICE
     },
     /* REMIX_7 */ {
         /* Entry Scene   */ &scene_remix_7,
         /* Level Name    */ "Remix 7",
-        /* Level Desc.   */ "Let's test your skills!\n"
-                            "A lot of the remixes\n"
-                            "make a comeback here!\n"
-                            "It's a remix remix!",
+        /* Level Desc.   */ "想检验一下\n"
+                            "你的实力吗？\n"
+                            "让之前的经验\n"
+                            "发挥作用吧！",
         /* Level Icon    */ 19,
         /* Level Type    */ LEVEL_TYPE_REMIX,
         /* Epilogue GFX  */ epilogue_remix7_gfx_tables,
         /* Epilogue Text */ {
-            /* TRY_AGAIN */ "Your Jurassic visit was... terrifying!",
-            /* OK        */ "Your Jurassic visit was... rather tame.",
-            /* SUPERB    */ "Your Jurassic visit was... too much fun!"
+            /* TRY_AGAIN */ "本次的恐龙 ：有点坏心眼",
+            /* OK        */ "本次的恐龙 ： 暖呼呼的",
+            /* SUPERB    */ "本次的恐龙 ： 太好玩了～！！"
         },
         /* Level Flags   */ LEVEL_DATA_FLAG_NO_PRACTICE
     },
     /* REMIX_8 */ {
         /* Entry Scene   */ &scene_remix_8,
         /* Level Name    */ "Remix 8",
-        /* Level Desc.   */ "Let's test your skills!\n"
-                            "This special remix is a\n"
-                            "real challenge! Show\n"
-                            "us what you've learned!",
+        /* Level Desc.   */ "想检验一下\n"
+                            "你的实力吗？\n"
+                            "让之前的经验\n"
+                            "发挥作用吧！",
         /* Level Icon    */ 37,
         /* Level Type    */ LEVEL_TYPE_REMIX,
         /* Epilogue GFX  */ epilogue_remix8_gfx_tables,
         /* Epilogue Text */ {
-            /* TRY_AGAIN */ "Your road trip was... oh boy...",
-            /* OK        */ "Your road trip was... a little long.",
-            /* SUPERB    */ "Your road trip was... absolutely spectacular!"
+            /* TRY_AGAIN */ "本次的兜风 ：真是的…",
+            /* OK        */ "本次的兜风 ：看来还要开很久啊",
+            /* SUPERB    */ "本次的兜风 ： 太爽快了！！"
         },
         /* Level Flags   */ LEVEL_DATA_FLAG_NO_PRACTICE
     },
@@ -856,12 +852,12 @@ struct LevelData level_data_table[] = {
         #ifdef PARADISE
         /* Level Name    */ "Café Counselling",
         #else
-        /* Level Name    */ "Café Counseling",
+        /* Level Name    */ "咖啡谈心",
         #endif
-        /* Level Desc.   */ "How are you feeling?\n"
-                            "If something's on your\n"
-                            "mind, feel free to\n"
-                            "come and talk.",
+        /* Level Desc.   */ "最近状态怎么样？\n"
+                            "要是有什么在意的事，\n"
+                            "就来这里\n"
+                            "聊一聊吧。",
         /* Level Icon    */ 45,
         /* Level Type    */ LEVEL_TYPE_BONUS,
         /* Epilogue GFX  */ epilogue_cafe_gfx_tables,
@@ -873,11 +869,10 @@ struct LevelData level_data_table[] = {
     },
     /* RHYTHM_TOYS */ {
         /* Entry Scene   */ &scene_toys_menu,
-        /* Level Name    */ "Rhythm Toys",
-        /* Level Desc.   */ "Collect medals to\n"
-                            "play with some\n"
-                            "Rhythm Toys!\n"
-                            "Check them out!",
+        /* Level Name    */ "节奏玩具",
+        /* Level Desc.   */ "收集奖牌，\n"
+                            "去玩玩那些会发声的玩具吧！\n"
+                            "有好几个哦。",
         /* Level Icon    */ 46,
         /* Level Type    */ LEVEL_TYPE_BONUS,
         /* Epilogue GFX  */ epilogue_toys_menu_gfx_tables,
@@ -889,11 +884,10 @@ struct LevelData level_data_table[] = {
     },
     /* ENDLESS_GAMES */ {
         /* Entry Scene   */ &scene_endless_menu,
-        /* Level Name    */ "Endless Games",
-        /* Level Desc.   */ "Collect medals to\n"
-                            "unlock special\n"
-                            "Endless Games!\n"
-                            "Check them out!",
+        /* Level Name    */ "无尽游戏",
+        /* Level Desc.   */ "收集奖牌，\n"
+                            "去挑战特别游戏吧！\n"
+                            "有好几个哦。",
         /* Level Icon    */ 47,
         /* Level Type    */ LEVEL_TYPE_BONUS,
         /* Epilogue GFX  */ epilogue_endless_menu_gfx_tables,
@@ -905,11 +899,10 @@ struct LevelData level_data_table[] = {
     },
     /* DRUM_LESSONS */ {
         /* Entry Scene   */ &scene_lessons_menu,
-        /* Level Name    */ "Drum Lessons",
-        /* Level Desc.   */ "Collect medals to take\n"
-                            "some Drum Lessons.\n"
-                            "You could become\n"
-                            "a master drummer!",
+        /* Level Name    */ "击鼓课程",
+        /* Level Desc.   */ "收集奖牌，\n"
+                            "去上击鼓课程吧。\n"
+                            "要变得更厉害哦！",
         /* Level Icon    */ 48,
         /* Level Type    */ LEVEL_TYPE_BONUS,
         /* Epilogue GFX  */ epilogue_lessons_menu_gfx_tables,
@@ -921,11 +914,11 @@ struct LevelData level_data_table[] = {
     },
     /* STAFF_CREDIT */ {
         /* Entry Scene   */ &scene_staff_credit,
-        /* Level Name    */ "Staff Credits",
-        /* Level Desc.   */ "Here's the staff who\n"
-                            "helped develop\n"
-                            "this game. Feel free\n"
-                            "to take a look!",
+        /* Level Name    */ "制作人员",
+        /* Level Desc.   */ "要是你愿意的话，\n"
+                            "也来看看吧。\n"
+                            "这里是这款游戏的\n"
+                            "制作人员哦。",
         /* Level Icon    */ 49,
         /* Level Type    */ LEVEL_TYPE_BONUS,
         /* Epilogue GFX  */ epilogue_staff_credit_gfx_tables,
@@ -937,118 +930,119 @@ struct LevelData level_data_table[] = {
     },
     /* LIVE_MENU */ {
         /* Entry Scene   */ &scene_drum_live,
-        /* Level Name    */ "Concert",
-        /* Level Desc.   */ "We're hosting a\n"
-                            "concert! You've got\n"
-                            "good rhythm, right?\n"
-                            "So give it a try!",
+        /* Level Name    */ "现场演出",
+        /* Level Desc.   */ "要登台演出啦！\n"
+                            "我觉得你的节奏感\n"
+                            "已经很不错了，\n"
+                            "放轻松就好～",
         /* Level Icon    */ 44,
         /* Level Type    */ LEVEL_TYPE_BONUS,
         /* Epilogue GFX  */ epilogue_drum_live_gfx_tables,
         /* Epilogue Text */ {
-            /* TRY_AGAIN */ "The cleaner says... \"I know you can do it, keep at it!\"",
-            /* OK        */ "The owner says... \"You've got great skills, you know!\"",
-            /* SUPERB    */ "The producer says... \"You should play at our place, too!\""
+            /* TRY_AGAIN */ "阿姨：“下次再加油呀！”",
+            /* OK        */ "老板：“你啊，还挺有天分哦”",
+            /* SUPERB    */ "制作人：“要不要来我们这边试试？”"
         }
     },
     /* KARATE_MAN */ {
         /* Entry Scene   */ &scene_karate_man_extra,
-        /* Level Name    */ "Karate Man",
-        /* Level Desc.   */ "We've increased the\n"
-                            "speed! Do your best,\n"
-                            "as we throw some more\n"
-                            "stuff for you to punch.",
+        /* Level Name    */ "空手道家",
+        /* Level Desc.   */ "向飞来的东西\n"
+                            "按"CHAR_A_BUTTON_UTF8"出拳！\n"
+                            "用干劲和气势\n"
+                            "把它们打飞吧！",
         /* Level Icon    */ 54,
         /* Level Type    */ LEVEL_TYPE_GAME,
         /* Epilogue GFX  */ epilogue_karate_man_extra_gfx_tables,
         /* Epilogue Text */ {
-            /* TRY_AGAIN */ "The tournament didn't go so well...",
-            /* OK        */ "I may not have won, but I did really well!",
-            /* SUPERB    */ "I won the tournament and took home the gold!"
+            /* TRY_AGAIN */ "比赛当天表现不太行。",
+            /* OK        */ "比赛当天，感觉还挺不错的！",
+            /* SUPERB    */ "比赛当天夺冠了！！"
         },
         /* Level Flags   */ LEVEL_DATA_FLAG_IS_EXTRA | LEVEL_DATA_FLAG_NO_PRACTICE
     },
     /* RHYTHM_TWEEZERS */ {
         /* Entry Scene   */ &scene_rhythm_tweezers_extra,
-        /* Level Name    */ "Rhythm Tweezers",
-        /* Level Desc.   */ "My roots are showing!\n"
-                            "Don't let the speed trip\n"
-                            "you up! Pluck them off!\n",
+        /* Level Name    */ "节奏脱毛",
+        /* Level Desc.   */ "那讨厌的“毛”\n"
+                            "总是不停地长出来！\n"
+                            "不要被速度迷惑了\n"
+                            "拔掉它，\n"
+                            "拔掉它！",
+
         /* Level Icon    */ 55,
         /* Level Type    */ LEVEL_TYPE_GAME,
         /* Epilogue GFX  */ epilogue_rhythm_tweezers_extra_gfx_tables,
         /* Epilogue Text */ {
-            /* TRY_AGAIN */ "I can't pluck anything at this speed!",
-            /* OK        */ "These hairs are pretty tough to pluck.",
-            /* SUPERB    */ "Look at those flowers! They're so relaxing..."
-        },
+            /* TRY_AGAIN */ "毛长得太快了啊…",
+            /* OK        */ "还真是挺难对付的毛啊",
+            /* SUPERB    */ "嗯——清爽了！去看看花吧！",
         /* Level Flags   */ LEVEL_DATA_FLAG_IS_EXTRA | LEVEL_DATA_FLAG_NO_PRACTICE
     },
     /* MARCHING_ORDERS */ {
         /* Entry Scene   */ &scene_marching_orders_extra,
-        /* Level Name    */ "Marching Orders",
-        /* Level Desc.   */ "Ready, march!\n"
-                            "This mission will require\n"
-                            "quick marching, so stay\n"
-							"focused!",
+        /* Level Name    */ "行军",
+        /* Level Desc.   */ "现在开始行进。\n"
+                            "这次需要非常迅速地\n"
+                            "做出判断。\n"
+							"好好努力吧。",
         /* Level Icon    */ 56,
         /* Level Type    */ LEVEL_TYPE_GAME,
         /* Epilogue GFX  */ epilogue_marching_orders_extra_gfx_tables,
         /* Epilogue Text */ {
-            /* TRY_AGAIN */ "MONSTER! Retreat! Retreat!",
-            /* OK        */ "Ah, there's the lost puppy!",
-            /* SUPERB    */ "We rescued the lost puppy! Hooray!"
+            /* TRY_AGAIN */ "撤退！撤退啦！！",
+            /* OK        */ "啊，发现走失的小朋友了！",
+            /* SUPERB    */ "救到走失的小朋友啦！太好了！！"
         },
         /* Level Flags   */ LEVEL_DATA_FLAG_IS_EXTRA | LEVEL_DATA_FLAG_NO_PRACTICE
     },
     /* SPACEBALL */ {
         /* Entry Scene   */ &scene_spaceball_extra,
-        /* Level Name    */ "Spaceball",
-        /* Level Desc.   */ "Ignore the camera's\n"
-                            "zooms! Make the ball\n"
-                            "zoom away! Don't fall\n"
-                            "behind! Let it fly!",
+        /* Level Name    */ "空中击球手",
+        /* Level Desc.   */ "别在意镜头缩放！\n"
+                            "用心去击球！\n"
+                            "不要依赖视觉，\n"
+                            "把球打飞吧～！",
         /* Level Icon    */ 57,
         /* Level Type    */ LEVEL_TYPE_GAME,
         /* Epilogue GFX  */ epilogue_spaceball_extra_gfx_tables,
         /* Epilogue Text */ {
-            /* TRY_AGAIN */ "Ahhh! Nooooooo!",
-            /* OK        */ "Graaaah!",
-            /* SUPERB    */ "A home run! I did it!"
+            /* TRY_AGAIN */ "哇，不行啊～！",
+            /* OK        */ "耶。",
+            /* SUPERB    */ "成功啦——！！"
         },
         /* Level Flags   */ LEVEL_DATA_FLAG_IS_EXTRA | LEVEL_DATA_FLAG_NO_PRACTICE
     },
     /* CLAPPY_TRIO */ {
         /* Entry Scene   */ &scene_clappy_trio_extra,
-        /* Level Name    */ "The Clappy Trio",
-        /* Level Desc.   */ "Clap your hands in\n"
-                            "order! You're the third\n"
-                            "clapper. Watch out\n"
-							"for your fast friends!",
+        /* Level Name    */ "啪叽啪叽三人组",
+        /* Level Desc.   */ "我们要依次拍手哦！\n"
+                            "你排在第３个。\n"
+                            "仔细看好前面两人再拍哦！",
         /* Level Icon    */ 58,
         /* Level Type    */ LEVEL_TYPE_GAME,
         /* Epilogue GFX  */ epilogue_clappy_trio_extra_gfx_tables,
         /* Epilogue Text */ {
-            /* TRY_AGAIN */ "Wait! Don't leave without us!",
-            /* OK        */ "This is one nice space cruise!",
-            /* SUPERB    */ "I've discovered a new planet! Stellar!"
+            /* TRY_AGAIN */ "哦～！",
+            /* OK        */ "愉快的太空巡航。",
+            /* SUPERB    */ "第一个到达未知星球！伟业！！"
         },
         /* Level Flags   */ LEVEL_DATA_FLAG_IS_EXTRA | LEVEL_DATA_FLAG_NO_PRACTICE
     },
     /* REMIX_1 */ {
         /* Entry Scene   */ &scene_remix_1_extra,
         /* Level Name    */ "Extra Remix",
-        /* Level Desc.   */ "Let's test your skills!\n"
-                            "This remix is faster\n"
-                            "than ever!\n"
-                            "Think you can beat it?",
+        /* Level Desc.   */ "这是额外关卡的Remix哦。\n"
+                            "能跟上这个速度吗？\n"
+                            "到最后都要\n"
+                            "尽情享受哦！",
         /* Level Icon    */ 59,
         /* Level Type    */ LEVEL_TYPE_REMIX,
         /* Epilogue GFX  */ epilogue_remix1_extra_gfx_tables,
         /* Epilogue Text */ {
-            /* TRY_AGAIN */ "This is going to take a while...",
-            /* OK        */ "Just a normal chick. Cheep-Cheep!",
-            /* SUPERB    */ "You've grown splendidly! You look downright dignified!"
+            /* TRY_AGAIN */ "还有很长的路要走呢。",
+            /* OK        */ "很普通呢～。啾啾。",
+            /* SUPERB    */ "成长得很出色呢！好厉害！！"
         },
         /* Level Flags   */ LEVEL_DATA_FLAG_IS_EXTRA | LEVEL_DATA_FLAG_NO_PRACTICE
     }
