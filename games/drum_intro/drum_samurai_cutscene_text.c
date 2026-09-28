@@ -6,7 +6,10 @@
 
 
 const char D_0805df4c[] =
-    "Welcome to\nthis funky game,\nthe JIEZOU-\nTIANGUO world!!";
+    "Welcome to the\n"
+    "funky world of\n"
+    #ifdef PARADISE
+    "Rhythm Paradise Advance!";
     #else
     "Rhythm Heaven Advance!";
     #endif

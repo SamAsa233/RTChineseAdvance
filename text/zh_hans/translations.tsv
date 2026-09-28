@@ -934,10 +934,6 @@ games/drum_intro/drum_intro_unused_text.c:D_0805d5a4	games/drum_intro/drum_intro
 你也加油试试看吧。"	final	
 games/drum_intro/drum_intro_unused_text.c:D_0805d5ec	games/drum_intro/drum_intro_unused_text.c	D_0805d5ec	\nSee you in the next lesson.\nGoodbye!	"那么，下次再见。
 再会啦。"	final	
-games/drum_intro/drum_samurai_cutscene_text.c:D_0805df4c	games/drum_intro/drum_samurai_cutscene_text.c	D_0805df4c	Welcome to the\nfunky world of\nRhythm Paradise Advance!	"Welcome to
-this funky game,
-the JIEZOU-
-TIANGUO world!!"	final	
 games/drum_intro/drum_samurai_cutscene_text.c:D_0805df88	games/drum_intro/drum_samurai_cutscene_text.c	D_0805df88	I hope you enjoy your time\nwith this game!	"欢迎来到节奏天国！
 请尽情享受
 这段 funky 的时光吧！"	final	
@@ -1430,7 +1426,6 @@ games/karate_man/karate_man_text.c:D_0805ad04	games/karate_man/karate_man_text.c
 games/karate_man/karate_man_text.c:D_0805ad38	games/karate_man/karate_man_text.c	D_0805ad38	Well, there you have it!\nJust flow with the music\nand punch away!	"那么，就照这个感觉，
 跟着音乐的节奏，
 把那些“东西”统统打飞吧！"	final	
-games/karate_man/karate_man_text.c:D_0805ad80	games/karate_man/karate_man_text.c	D_0805ad80	\nReady, steady, punch!	正式开始！！	final	
 games/marching_orders/marching_orders_text.c:D_0805c774	games/marching_orders/marching_orders_text.c	D_0805c774	You haven't grasped the basics.	基本功还不够啊。	final	
 games/marching_orders/marching_orders_text.c:D_0805c790	games/marching_orders/marching_orders_text.c	D_0805c790	Impressive marching!	挺不错！	final	
 games/marching_orders/marching_orders_text.c:D_0805c7a8	games/marching_orders/marching_orders_text.c	D_0805c7a8	You lack proper judgement.	你的判断还差一点啊。	final	

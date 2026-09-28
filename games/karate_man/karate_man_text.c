@@ -42,7 +42,9 @@ const char D_0805ad38[] =
     "那么，就照这个感觉，\n跟着音乐的节奏，\n把那些“东西”统统打飞吧！";
 
 const char D_0805ad80[] =
-    "正式开始！！";
+    "\n"
+    #ifdef PARADISE
+    "Ready, steady, punch!";
     #else
     "Ready, set, punch!";
     #endif
