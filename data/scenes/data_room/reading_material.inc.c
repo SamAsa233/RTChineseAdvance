@@ -503,46 +503,51 @@ struct ReadingMaterial reading_material_table[TOTAL_READING_MATERIALS] = {
         /* TITLE ---------------------------------------------------------- */
             "喜悦来信",
         /* BODY ----------------------------------------------------------- */
-            "We've received many letters from satisfied\n"
+            // 阶段 5 已校对 reading_praise_story；沿用原三处地区分支和强调、对齐控制码。
+            // TODO 未校对：中文自动折行、分页与两个见证人的署名位置仍需实机查看。
+            "我们收到了许多玩过\n"
             #ifdef PARADISE
-            "players of Rhythm Paradise Advance.\n"
+            "《节奏天国》的人寄来的开心来信。\n"
             #else
-            "players of Rhythm Heaven Advance.\n"
+            "《节奏天国》的人寄来的开心来信。\n"
             #endif
             "\n"
-            "So, SO many in fact(!), that we can't show all of them,\n"
-            "but here are just a few of our players' thoughts!\n"
+            "来信和邮件（！）实在太多，没法一一介绍，\n"
+            "所以这里只挑出其中一小部分，和大家分享。\n"
+            "各位也请一定亲自试试看，\n"
+            "再把它的效果告诉你的朋友们吧！！\n"
             "\n"
             "\n"
             "\n"
             "\n"
-            "Just by improving my sense of rhythm...\n"
+            "明明只是节奏感变好了而已…\n"
             "\n"
-            "\0031" "\001m" "I've become... popular?\n"
+            "\0031" "\001m" "居然一下子这么受欢迎，真的没问题吗！？\n"
             "\0030" "\001s" "\n"
             #ifdef PARADISE
-            "Before I found Rhythm Paradise Advance,\n"
+            "在遇到《节奏天国》之前，\n"
             #else
-            "Before I found Rhythm Heaven Advance,\n"
+            "在遇到《节奏天国》之前，\n"
             #endif
-            "I had no luck with women, but now I'm a real hot shot\n"
-            "with a new lease on life!\n"
+            "我几乎完全不受女性注意，\n"
+            "但现在却忽然变得很受欢迎… 连人生观都改变了。\n"
             "\n"
-            "\001R" "Mr. T, Age 38, Office Worker\n"
-            "\001L" "Just by improving my sense of rhythm...\n"
+            "\001R" "T 先生 38 岁 公司职员\n"
+            "\001L" "明明只是节奏感变好了而已…\n"
             "\n"
-            "\0031" "\001m" "I've become...\n"
-            "\0031" "\001R" "a better singer?"
+            "\0031" "\001m" "居然被人说\n"
+            "\0031" "\001R" "唱歌变好听了！？"
             "\0030" "\001s" "\n"
             #ifdef PARADISE
-            "\001L" "Before I found Rhythm Paradise Advance,\n"
+            "\001L" "在遇到《节奏天国》之前，\n"
             #else
-            "\001L" "Before I found Rhythm Heaven Advance,\n"
+            "\001L" "在遇到《节奏天国》之前，\n"
             #endif
-            "I was the textbook definition of tone-deaf,\n"
-            "but lately people have told me my singing is much nicer!\n"
-            "I'm still tone deaf, of course, but at least I'm happy!\n"
-            "\001R" "Mrs. H, Age 29, Housewife\n",
+            "我一直被说简直就是跑调代表，\n"
+            "可最近却常常被夸。\n"
+            "明明我还是一样会跑调，真不可思议。\n"
+            "不过真的很开心！\n"
+            "\001R" "H 女士 29 岁 家庭主妇\n",
         /* STYLE ---------------------------------------------------------- */
             /* GFX */ reading_style_mail_gfx_table,
             /* BGM */ &reading_style_mail_bgm

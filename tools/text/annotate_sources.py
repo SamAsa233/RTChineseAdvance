@@ -45,7 +45,11 @@ def main():
         path = ROOT / name
         if path.suffix not in ('.c', '.bs') or not path.exists():
             continue
-        text = path.read_text(encoding='utf-8')
+        # 按原始字节记住行尾格式；只加注释时不能把旧 CRLF 文件整篇改成 LF。
+        raw = path.read_bytes()
+        newline = '\r\n' if b'\r\n' in raw else '\n'
+        text = raw.decode('utf-8').replace('\r\n', '\n')
+        original = text
         siblings = defaultdict(list)
         for row in members:
             siblings[row['key'].split('[', 1)[0]].append(row)
@@ -75,8 +79,8 @@ def main():
         if any(row['status'] == 'final' and not row['note'] for row in members) and not text.startswith(header):
             text = header + text
             headers += 1
-        if edits or (text != path.read_text(encoding='utf-8')):
-            atomic_text(path, text)
+        if text != original:
+            atomic_text(path, text.replace('\n', newline))
     print(f'commented files={headers}, inline TODO={todos}, index-only TODO={unsafe}')
 
 

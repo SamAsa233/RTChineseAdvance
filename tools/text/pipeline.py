@@ -585,6 +585,7 @@ def reading_story_installed(text, key, translation):
         'reading_radio_story': ('RAP_MEN', 1),
         'reading_final_story': ('REMIX8', 1),
         'reading_manzai_story': ('TOSS_BOYS', 3),
+        'reading_praise_story': ('FAN_MAIL', 3),
     }
     if key not in specs:
         return False
@@ -610,7 +611,15 @@ def reading_story_installed(text, key, translation):
         selected = branches.sub(lambda match: match.group(1 if paradise else 2), source)
         joined = ''.join(literal[1:-1] for literal in LITERAL.findall(remove_comments(selected)))
         controls = CONTROL_TOKEN.findall(joined)
-        expected_controls = [r'\001R'] if key == 'reading_final_story' else []
+        # 来信有两段强调文字和左右对齐的署名；逐码核对，防止译文正确但版式损坏。
+        expected_controls = {
+            'reading_final_story': [r'\001R'],
+            'reading_praise_story': [
+                r'\0031', r'\001m', r'\0030', r'\001s', r'\001R', r'\001L',
+                r'\0031', r'\001m', r'\0031', r'\001R', r'\0030', r'\001s',
+                r'\001L', r'\001R',
+            ],
+        }.get(key, [])
         if controls != expected_controls:
             return None
         return CONTROL_TOKEN.sub('', joined).replace(r'\n', '\n').replace(r'\"', '"')
@@ -649,6 +658,33 @@ def reading_haiku_installed(text, key, translation):
     shown = CONTROL_TOKEN.sub('', raw).replace(r'\n', '\n').replace(r'\"', '"')
     return (''.join(char for char in shown if not char.isspace())
             == ''.join(char for char in translation if not char.isspace()))
+
+
+def cafe_rhythm_sense_installed(text, translation):
+    """逐地区核对同一句咖啡馆台词，避免条件编译造成已接入译文的误报。"""
+    match = re.search(
+        r'const char \*cafe_dialogue_rhythm_sense\[\]\s*=\s*\{(.*?)END_OF_DIALOGUE',
+        text, re.S)
+    if not match:
+        return False
+    body = match.group(1)
+    dividers = list(re.finditer(r'/\*\s*-{8,}\s*\*/', body))
+    if len(dividers) != 5:
+        return False
+    # 原归档的 [7] 是第三句；保留分隔符定位，防止其他台词改动后错认槽位。
+    entry = body[dividers[2].end():dividers[3].start()]
+    branches = list(re.finditer(r'#ifdef\s+PARADISE(.*?)#else(.*?)#endif', entry, re.S))
+    if len(branches) != 1:
+        return False
+    branch = branches[0]
+    for side in (1, 2):
+        selected = entry[:branch.start()] + branch.group(side) + entry[branch.end():]
+        raw = ''.join(literal[1:-1] for literal in LITERAL.findall(remove_comments(selected)))
+        # 这里只含可见文字和原换行；若后来加控制码，必须重新人工审核。
+        # 首个换行是咖啡馆原有的顶端留白；归档只存可见台词正文。
+        if CONTROL_TOKEN.search(raw) or raw.replace(r'\n', '\n') != '\n' + translation:
+            return False
+    return True
 
 
 def extract():
@@ -831,6 +867,15 @@ def extract():
             continue
         for (key, row), index in zip(members, assigned):
             if groups[index] is None:
+                saved = previous.get(f"{path.relative_to(ROOT).as_posix()}:{key}")
+                # 双地区台词已接入时保留表内 TODO，继续复核语气；其他条件分支仍报未定位。
+                if (archive_name == 'data/cafe/dialogue.json'
+                        and key == 'cafe_dialogue_rhythm_sense[7]' and row['stage'] == 5
+                        and saved and saved['status'] == 'final'
+                        and saved['target'] == '\n' + row['translation']
+                        and cafe_rhythm_sense_installed(text, row['translation'])):
+                    output.append(saved)
+                    continue
                 unresolved.append(f"{json_path.relative_to(ARCHIVE)}:{key}: conditional branches need review")
                 old = previous.get(f"{path.relative_to(ROOT).as_posix()}:{key}")
                 if old:
