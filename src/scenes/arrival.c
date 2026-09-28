@@ -67,13 +67,15 @@ void arrival_scene_start(void *sVar, s32 dArg) {
 
     printer = text_printer_create_new(get_current_mem_id(), 1, 240, 32);
     text_printer_set_x_y(printer, 24, 48);
-    text_printer_set_string(printer, "        Notification from the Rhythm Archives:"); // "Notification from the Rhythm Reference Room"
+    // 阶段 5 已校对：通知标题使用“节奏资料室通知”，保留原版左侧留白。
+    text_printer_set_string(printer, "        节奏资料室通知：");
     text_printer_update(printer);
     text_printer_update(printer);
 
     printer = text_printer_create_new(get_current_mem_id(), 1, 240, 30);
     text_printer_set_x_y(printer, 24, 96);
-    text_printer_set_string(printer, "                            has been received!"); // "You have received [_______]."
+    // 阶段 5 已校对：物品标题由下一行动态插入，这一行只显示固定结尾。
+    text_printer_set_string(printer, "                            现已入库。");
     text_printer_update(printer);
     text_printer_update(printer);
 
