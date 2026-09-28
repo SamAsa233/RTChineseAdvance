@@ -1317,6 +1317,25 @@ games/drum_intro/drum_samurai_cutscene_text.c:D_0805e10c	games/drum_intro/drum_s
 一边磨练你的节奏感吧。"	final	
 games/drum_intro/drum_samurai_cutscene_text.c:D_0805e15c	games/drum_intro/drum_samurai_cutscene_text.c	D_0805e15c	With that, I'll see you around!	"那么，待会儿
 再见吧。"	final	
+games/drum_intro/tanuki_and_monkey.bs:D_08a2f220	games/drum_intro/tanuki_and_monkey.bs	D_08a2f220	Okay, let's start out\nsimple for now.	那先来个简单点的。	final	
+games/drum_intro/tanuki_and_monkey.bs:D_08a2f248	games/drum_intro/tanuki_and_monkey.bs	D_08a2f248	Strike 1!\nYou have two more\nchances. Good luck!	"再来一次！
+还剩 2 次机会。
+加油！"	final	
+games/drum_intro/tanuki_and_monkey.bs:D_08a2f278	games/drum_intro/tanuki_and_monkey.bs	D_08a2f278	Strike 2!\nThis is your last\nchance! Concentrate!	"再来一次！
+最后一次机会！
+集中精神！！"	final	
+games/drum_intro/tanuki_and_monkey.bs:D_08a2f2a0	games/drum_intro/tanuki_and_monkey.bs	D_08a2f2a0	OK! Onto the next one!\nThink you can handle\nthis one?	"可以哦。
+来试试下一个吧！
+跟得上吗？"	final	
+games/drum_intro/tanuki_and_monkey.bs:D_08a2f2d4	games/drum_intro/tanuki_and_monkey.bs	D_08a2f2d4	Good job.\nFor the next pattern,\nPonta will play along, too!	"有两下子嘛。
+下一个花样里
+胖太也会一起敲哦！"	final	
+games/drum_intro/tanuki_and_monkey.bs:D_08a2f308	games/drum_intro/tanuki_and_monkey.bs	D_08a2f308	That was great!\nThis next one's a\nlittle more tricky!	"哦哦，厉害！
+下一个会稍微
+讲点技巧哦！"	final	
+games/drum_intro/tanuki_and_monkey.bs:D_08a2f340	games/drum_intro/tanuki_and_monkey.bs	D_08a2f340	Heh, you're better\nthan we thought!\nLooks like we'll have to\nbring out the big guns!\n	"哼，还挺难缠！！
+既然这样，
+就让你见识压箱底的吧！"	final	
 games/drum_intro/tanuki_and_monkey_text.c:D_0805dcb8	games/drum_intro/tanuki_and_monkey_text.c	D_0805dcb8	Bzz!\nGame over for you!\nLooks like we win!	"呼呼——！！
 游戏结束啦！
 这次是我们赢啦！"	final	

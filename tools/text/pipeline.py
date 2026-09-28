@@ -267,6 +267,10 @@ def source_path(json_path):
         stem = relative.with_suffix('')
         if stem.name.endswith('_add'):
             stem = stem.with_name(stem.name[:-4])
+        if stem.name.endswith('_more_text'):
+            # Some reviewed dialogue JSON files split their source under the
+            # shared parent .bs script (for example tanuki_and_monkey.bs).
+            stem = stem.with_name(stem.name[:-10])
         candidates = [ROOT / (str(stem) + '.c'), ROOT / (str(stem) + '.bs')]
         if stem.name.endswith('_lyrics'):
             candidates.append(ROOT / (str(stem.with_name(stem.name[:-7])) + '.bs'))
