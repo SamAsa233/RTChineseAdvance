@@ -79,9 +79,9 @@ void arrival_scene_start(void *sVar, s32 dArg) {
     text_printer_update(printer);
     text_printer_update(printer);
 
-    memcpy(message, "\"", 5);
-    strcat(message, title);
-    strcat(message, "\"");
+    // 原代码从只有 2 字节的引号字符串读取 5 字节，可能读到无关内存。
+    // 汉字标题占更多字节；按上面分配的 0x100 字节限长拼接并补 NUL。
+    snprintf(message, 0x100, "\"%s\"", title);
 
     printer = text_printer_create_new(get_current_mem_id(), 1, 240, 28);
     text_printer_set_x_y(printer, 0, 72);
