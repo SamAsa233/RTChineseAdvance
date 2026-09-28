@@ -1,3 +1,4 @@
+/* 中文文本：选项页仅接入阶段 5 的已校对译文；控制码待复核项见 TODO_未校对.md。 */
 #include "global.h"
 #include "graphics.h"
 #include "src/scenes/options.h"
@@ -73,24 +74,29 @@ const char *advance_options_label_text[] = {
 
 const char *advance_options_desc_text[] = {
     /* NON-JP SFX ------------------------------------- */
+        // TODO 未校对：advance_options_desc_text[0] 译文包未到 stage 5，暂留原文。
         "\0023" "\0013" "\001C" "Sound Effects\n"
         "\0024" "\0011" "\001L" "English   " "\0021" "Use the localized sound effects.\n"
         "\0024" "\0011" "\001L" "Japanese  " "\0021" "Use the original sound effects.",
     /* NON-JP MUSIC ----------------------------------- */
+        // TODO 未校对：advance_options_desc_text[1] 译文包未到 stage 5，暂留原文。
         "\0023" "\0013" "\001C" "Music\n"
         "\0024" "\0011" "\001L" "English   " "\0021" "Use the localized music.\n"
         "\0024" "\0011" "\001L" "Japanese  " "\0021" "Use the original music.",
     /* RUMBLE ----------------------------------------- */
 #ifdef RUMBLE
+        // TODO 未校对：advance_options_desc_text[2] 译文包未到 stage 5，暂留原文。
         "\0023" "\0013" "\001C" "Rumble\n"
         "\0024" "\0011" "\001L" "On        " "\0021" "Rumble is active during gameplay.\n"
         "\0024" "\0011" "\001L" "Off       " "\0021" "Rumble is disabled.",
 #endif
     /* SHOW DISCLAIMER -------------------------------- */
+        // TODO 未校对：advance_options_desc_text[3] 译文包未到 stage 5，暂留原文。
         "\0023" "\0013" "\001C" "Show Disclaimer\n"
         "\0024" "\0011" "\001L" "Show      " "\0021" "Show the disclaimer at startup.\n"
         "\0024" "\0011" "\001L" "Skip      " "\0021" "Skip the disclaimer at startup.",
     /* ALT GAME SELECT MUSIC --------------------------- */
+        // TODO 未校对：advance_options_desc_text[4] 译文包未到 stage 5，暂留原文。
         "\0023" "\0013" "\001C" "Game Select Music\n"
         "\0024" "\0011" "\001L" "Normal    " "\0021" "Use Game Select 2 after the credits.\n"
         "\0024" "\0011" "\001L" "Swapped   " "\0021" "Use Game Select 1 after the credits.",

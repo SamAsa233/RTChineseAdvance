@@ -1,3 +1,4 @@
+/* 汉化改动：扩展描边字库范围与缓存记录结构，支持稀疏 CJK 字形编号。 */
 #pragma once
 
 #include "global.h"

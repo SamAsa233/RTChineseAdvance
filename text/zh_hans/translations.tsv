@@ -1,174 +1,262 @@
 id	file	key	source	target	status	note
 data/scenes/arrival/data.c:arrival_default_title	data/scenes/arrival/data.c	arrival_default_title	Error[	错误	final	
-data/scenes/cafe/dialogue.c:cafe_dialogue_adhd[0]	data/scenes/cafe/dialogue.c	cafe_dialogue_adhd[0]	\nI'm not sure why, but man, am I tired...\n\n\n	"说起来，
-我现在不知怎么的，特别困呀…
+data/scenes/cafe/dialogue.c:cafe_dialogue_adhd[0]	data/scenes/cafe/dialogue.c	cafe_dialogue_adhd[0]	\nI'm not sure why, but man, am I tired...\n\n\n	"
+说起来，我现在不知怎么的，
+特别困呀…
+
 "	final	
-data/scenes/cafe/dialogue.c:cafe_dialogue_adhd[12]	data/scenes/cafe/dialogue.c	cafe_dialogue_adhd[12]	\nWant to go for a drive with me, sometime?\nIf you want to, I mean...\nAnyway, see you later.	"下次要不要去兜个风呢？
+data/scenes/cafe/dialogue.c:cafe_dialogue_adhd[12]	data/scenes/cafe/dialogue.c	cafe_dialogue_adhd[12]	\nWant to go for a drive with me, sometime?\nIf you want to, I mean...\nAnyway, see you later.	"
+下次要不要去兜个风呢？
 不过，也得看你愿不愿意啦。
 那，下回见。"	final	
-data/scenes/cafe/dialogue.c:cafe_dialogue_adhd[4]	data/scenes/cafe/dialogue.c	cafe_dialogue_adhd[4]	\nI was up last night playing until\nwho-knows-when...\n\n	"毕竟昨晚玩到很晚嘛…
+data/scenes/cafe/dialogue.c:cafe_dialogue_adhd[4]	data/scenes/cafe/dialogue.c	cafe_dialogue_adhd[4]	\nI was up last night playing until\nwho-knows-when...\n\n	"
+毕竟昨晚玩到很晚嘛…
+
 "	final	
-data/scenes/cafe/dialogue.c:cafe_dialogue_adhd[8]	data/scenes/cafe/dialogue.c	cafe_dialogue_adhd[8]	\nOops! Sorry.\nI'm talking to myself again.\nDon't mind me.\n	"啊，不，没什么，这是我自己的事。
+data/scenes/cafe/dialogue.c:cafe_dialogue_adhd[8]	data/scenes/cafe/dialogue.c	cafe_dialogue_adhd[8]	\nOops! Sorry.\nI'm talking to myself again.\nDon't mind me.\n	"
+啊，不，没什么，这是我自己的事。
 只是自言自语啦… 抱歉哦。
 "	final	
-data/scenes/cafe/dialogue.c:cafe_dialogue_all_perfects_clear[0]	data/scenes/cafe/dialogue.c	cafe_dialogue_all_perfects_clear[0]	\nIf you've made it this far, then your\nsense of rhythm has just got to be\na step above the rest!	"哎呀，都已经玩到这种地步了，
+data/scenes/cafe/dialogue.c:cafe_dialogue_all_perfects_clear[0]	data/scenes/cafe/dialogue.c	cafe_dialogue_all_perfects_clear[0]	\nIf you've made it this far, then your\nsense of rhythm has just got to be\na step above the rest!	"
+哎呀，都已经玩到这种地步了，
 你的节奏感
 肯定已经变得相当好了呢！"	final	
-data/scenes/cafe/dialogue.c:cafe_dialogue_all_perfects_clear[13]	data/scenes/cafe/dialogue.c	cafe_dialogue_all_perfects_clear[13]	\nSo I guess that means you've\ncollected everything?\nImpressive!	"哎呀呀，这可真是不得了，
+data/scenes/cafe/dialogue.c:cafe_dialogue_all_perfects_clear[13]	data/scenes/cafe/dialogue.c	cafe_dialogue_all_perfects_clear[13]	\nSo I guess that means you've\ncollected everything?\nImpressive!	"
+哎呀呀，这可真是不得了，
 居然全部完成了呀。
 真有你的〜。"	final	
-data/scenes/cafe/dialogue.c:cafe_dialogue_all_perfects_clear[17]	data/scenes/cafe/dialogue.c	cafe_dialogue_all_perfects_clear[17]	\nGood work out there, my friend.\nYou've really earned a break.\nSee you around!\n	"你也累了吧？
+data/scenes/cafe/dialogue.c:cafe_dialogue_all_perfects_clear[17]	data/scenes/cafe/dialogue.c	cafe_dialogue_all_perfects_clear[17]	\nGood work out there, my friend.\nYou've really earned a break.\nSee you around!\n	"
+你也累了吧？
 稍微休息一下哦。
-那，下回见。"	final	
-data/scenes/cafe/dialogue.c:cafe_dialogue_all_perfects_clear[5]	data/scenes/cafe/dialogue.c	cafe_dialogue_all_perfects_clear[5]	\nI'm so proud of you.\nMoved to tears, even!\n\n	"我也高兴得
-眼泪汪汪啦…
+那，下回见。
 "	final	
-data/scenes/cafe/dialogue.c:cafe_dialogue_all_perfects_clear[8]	data/scenes/cafe/dialogue.c	cafe_dialogue_all_perfects_clear[8]	\nI know it's not much of a gift,\nbut I've opened up more studio\nsongs for you.\n	"对了对了，
+data/scenes/cafe/dialogue.c:cafe_dialogue_all_perfects_clear[5]	data/scenes/cafe/dialogue.c	cafe_dialogue_all_perfects_clear[5]	\nI'm so proud of you.\nMoved to tears, even!\n\n	"
+我也高兴得
+眼泪汪汪啦…
+
+"	final	
+data/scenes/cafe/dialogue.c:cafe_dialogue_all_perfects_clear[8]	data/scenes/cafe/dialogue.c	cafe_dialogue_all_perfects_clear[8]	\nI know it's not much of a gift,\nbut I've opened up more studio\nsongs for you.\n	"
+对了对了，
 作为庆祝，虽然只是小小心意，
 我帮你往录音室里添了些曲子。
 "	final	
-data/scenes/cafe/dialogue.c:cafe_dialogue_all_perfects_clear_big[0]	data/scenes/cafe/dialogue.c	cafe_dialogue_all_perfects_clear_big[0]	\nwoohoo main & extra!\n\n	天哪，主关卡和额外关卡	draft	
-data/scenes/cafe/dialogue.c:cafe_dialogue_all_perfects_clear_big[1]	data/scenes/cafe/dialogue.c	cafe_dialogue_all_perfects_clear_big[1]	\nyou finished the campaign!\n\n	你完成了所有的完美挑战！	draft	
-data/scenes/cafe/dialogue.c:cafe_dialogue_coffee[0]	data/scenes/cafe/dialogue.c	cafe_dialogue_coffee[0]	\nSo, I made you some coffee.\n\n	"说起来，
-咖啡已经上好啦。
+data/scenes/cafe/dialogue.c:cafe_dialogue_all_perfects_clear_big[0]	data/scenes/cafe/dialogue.c	cafe_dialogue_all_perfects_clear_big[0]	\nwoohoo main & extra!\n\n	天哪，主关卡和额外关卡	draft	TODO 未校对
+data/scenes/cafe/dialogue.c:cafe_dialogue_all_perfects_clear_big[1]	data/scenes/cafe/dialogue.c	cafe_dialogue_all_perfects_clear_big[1]	\nyou finished the campaign!\n\n	你完成了所有的完美挑战！	draft	TODO 未校对
+data/scenes/cafe/dialogue.c:cafe_dialogue_coffee[0]	data/scenes/cafe/dialogue.c	cafe_dialogue_coffee[0]	\nSo, I made you some coffee.\n\n	"
+说起来，咖啡已经上好啦。
+
 "	final	
-data/scenes/cafe/dialogue.c:cafe_dialogue_coffee[11]	data/scenes/cafe/dialogue.c	cafe_dialogue_coffee[11]	\nMe? I can make coffee, but...\nneed to work on the rest. Heh...\n\n	"我嘛，也就只会给人煮煮咖啡而已啦… 哈哈哈…
+data/scenes/cafe/dialogue.c:cafe_dialogue_coffee[11]	data/scenes/cafe/dialogue.c	cafe_dialogue_coffee[11]	\nMe? I can make coffee, but...\nneed to work on the rest. Heh...\n\n	"
+我嘛，也就只会给人煮煮咖啡而已啦… 哈哈哈…
+
 "	final	
-data/scenes/cafe/dialogue.c:cafe_dialogue_coffee[4]	data/scenes/cafe/dialogue.c	cafe_dialogue_coffee[4]	\nWait, you didn't order coffee?\nOh, this is from the person\nsitting next to you. His treat.	"咦？你说你没点？ 啊，这个嘛，是旁边那位请的啦…
+data/scenes/cafe/dialogue.c:cafe_dialogue_coffee[4]	data/scenes/cafe/dialogue.c	cafe_dialogue_coffee[4]	\nWait, you didn't order coffee?\nOh, this is from the person\nsitting next to you. His treat.	"
+咦？你说你没点？ 啊，这个嘛，是旁边那位请的啦…
 "	final	
-data/scenes/cafe/dialogue.c:cafe_dialogue_coffee[7]	data/scenes/cafe/dialogue.c	cafe_dialogue_coffee[7]	\nHe's not much for words, but\nhe's pretty friendly, and I guess\ngenerous too.	"虽、虽然那位不太爱说话，
+data/scenes/cafe/dialogue.c:cafe_dialogue_coffee[7]	data/scenes/cafe/dialogue.c	cafe_dialogue_coffee[7]	\nHe's not much for words, but\nhe's pretty friendly, and I guess\ngenerous too.	"
+虽、虽然那位不太爱说话，
 但大概也是想跟你交个朋友吧？
 "	final	
-data/scenes/cafe/dialogue.c:cafe_dialogue_come_back_later[0]	data/scenes/cafe/dialogue.c	cafe_dialogue_come_back_later[0]	\nCould you come back in a while?\nI'm a bit busy.\n\n	"过一会儿再来哦〜。
+data/scenes/cafe/dialogue.c:cafe_dialogue_come_back_later[0]	data/scenes/cafe/dialogue.c	cafe_dialogue_come_back_later[0]	\nCould you come back in a while?\nI'm a bit busy.\n\n	"
+过一会儿再来哦〜。
+
 "	final	
-data/scenes/cafe/dialogue.c:cafe_dialogue_dog_barista[0]	data/scenes/cafe/dialogue.c	cafe_dialogue_dog_barista[0]	\nBy the way, I'm actually a dog.\n\n	"说起来，
-其实啊，我是一只狗哦。
+data/scenes/cafe/dialogue.c:cafe_dialogue_dog_barista[0]	data/scenes/cafe/dialogue.c	cafe_dialogue_dog_barista[0]	\nBy the way, I'm actually a dog.\n\n	"
+说起来，其实啊，我是一只狗哦。
+
 "	final	
-data/scenes/cafe/dialogue.c:cafe_dialogue_dog_barista[12]	data/scenes/cafe/dialogue.c	cafe_dialogue_dog_barista[12]	\nYou're a human, right? They say I'm\nsupposed to be your best friend.\nWe'd better get along then!	"客人你是人类吧？
+data/scenes/cafe/dialogue.c:cafe_dialogue_dog_barista[12]	data/scenes/cafe/dialogue.c	cafe_dialogue_dog_barista[12]	\nYou're a human, right? They say I'm\nsupposed to be your best friend.\nWe'd better get along then!	"
+客人你是人类吧？
 虽然我是只狗，不过今后
 也请继续跟我好好相处哦〜。"	final	
-data/scenes/cafe/dialogue.c:cafe_dialogue_dog_barista[4]	data/scenes/cafe/dialogue.c	cafe_dialogue_dog_barista[4]	\nI'm nine years old. Pretty spry\nfor my age, if I say so.\n\n	"算起来我已经 9 岁了，
-也算一把年纪啦。"	final	
-data/scenes/cafe/dialogue.c:cafe_dialogue_dog_barista[8]	data/scenes/cafe/dialogue.c	cafe_dialogue_dog_barista[8]	\nTime goes by pretty fast when you're\nas old as I am.\n\n	"哎呀呀，到了这个年纪，
+data/scenes/cafe/dialogue.c:cafe_dialogue_dog_barista[4]	data/scenes/cafe/dialogue.c	cafe_dialogue_dog_barista[4]	\nI'm nine years old. Pretty spry\nfor my age, if I say so.\n\n	"
+算起来我已经 9 岁了，
+也算一把年纪啦。
+
+"	final	
+data/scenes/cafe/dialogue.c:cafe_dialogue_dog_barista[8]	data/scenes/cafe/dialogue.c	cafe_dialogue_dog_barista[8]	\nTime goes by pretty fast when you're\nas old as I am.\n\n	"
+哎呀呀，到了这个年纪，
 时间过得可真快呢。
+
 "	final	
-data/scenes/cafe/dialogue.c:cafe_dialogue_drum_lessons[0]	data/scenes/cafe/dialogue.c	cafe_dialogue_drum_lessons[0]	\nYou ever check out the drum\nlessons in the bonus corner?\n\n	"说起来，奖励角里的击鼓课程，
+data/scenes/cafe/dialogue.c:cafe_dialogue_drum_lessons[0]	data/scenes/cafe/dialogue.c	cafe_dialogue_drum_lessons[0]	\nYou ever check out the drum\nlessons in the bonus corner?\n\n	"
+说起来，奖励角里的击鼓课程，
 你玩过吗？
+
 "	final	
-data/scenes/cafe/dialogue.c:cafe_dialogue_drum_lessons[12]	data/scenes/cafe/dialogue.c	cafe_dialogue_drum_lessons[12]	\nBut once you start getting into it,\nit's hard to stop.\n\n	"可一旦开始上课呀，
+data/scenes/cafe/dialogue.c:cafe_dialogue_drum_lessons[12]	data/scenes/cafe/dialogue.c	cafe_dialogue_drum_lessons[12]	\nBut once you start getting into it,\nit's hard to stop.\n\n	"
+可一旦开始上课呀，
 就还真有点停不下来呢〜。
+
 "	final	
-data/scenes/cafe/dialogue.c:cafe_dialogue_drum_lessons[15]	data/scenes/cafe/dialogue.c	cafe_dialogue_drum_lessons[15]	\nI guess no one can master the drums\nin a day, though. We should take\nour time with that stuff.	"不过嘛，乐器这种东西本来就不是一下子能变厉害的，
+data/scenes/cafe/dialogue.c:cafe_dialogue_drum_lessons[15]	data/scenes/cafe/dialogue.c	cafe_dialogue_drum_lessons[15]	\nI guess no one can master the drums\nin a day, though. We should take\nour time with that stuff.	"
+不过嘛，乐器这种东西本来就不是一下子能变厉害的，
 还是耐下心来，慢慢练下去吧…"	final	
-data/scenes/cafe/dialogue.c:cafe_dialogue_drum_lessons[3]	data/scenes/cafe/dialogue.c	cafe_dialogue_drum_lessons[3]	\nI've been taking lessons every week,\nbut I never seem to get any better.\n\n	"我每周会去上一次课，
-不过怎么也不见
-有多少长进呢。"	final	
-data/scenes/cafe/dialogue.c:cafe_dialogue_drum_lessons[8]	data/scenes/cafe/dialogue.c	cafe_dialogue_drum_lessons[8]	\nMy teacher told me that I have a\nbit of a problem pacing myself, that\nI shouldn't push myself so much.	"老师也说过啦，
+data/scenes/cafe/dialogue.c:cafe_dialogue_drum_lessons[3]	data/scenes/cafe/dialogue.c	cafe_dialogue_drum_lessons[3]	\nI've been taking lessons every week,\nbut I never seem to get any better.\n\n	"
+我每周会去上一次课，
+不过怎么也不见有多少长进呢。
+
+"	final	
+data/scenes/cafe/dialogue.c:cafe_dialogue_drum_lessons[8]	data/scenes/cafe/dialogue.c	cafe_dialogue_drum_lessons[8]	\nMy teacher told me that I have a\nbit of a problem pacing myself, that\nI shouldn't push myself so much.	"
+老师也说过啦，
 这种事本来就各有所好，
 不用勉强自己。话虽如此——"	final	
-data/scenes/cafe/dialogue.c:cafe_dialogue_extra_perfects_clear[0]	data/scenes/cafe/dialogue.c	cafe_dialogue_extra_perfects_clear[0]	\nblabla you finished the extra campaign!\n\n	你完美了额外关卡！	draft	
-data/scenes/cafe/dialogue.c:cafe_dialogue_extra_perfects_clear[1]	data/scenes/cafe/dialogue.c	cafe_dialogue_extra_perfects_clear[1]	\nit's so AWESOME!!\n\n	这太棒了！	draft	
-data/scenes/cafe/dialogue.c:cafe_dialogue_first_visit[0]	data/scenes/cafe/dialogue.c	cafe_dialogue_first_visit[0]	\nWelcome to the café.\nThis your first time here?\n\n	"欢迎光临。
+data/scenes/cafe/dialogue.c:cafe_dialogue_extra_perfects_clear[0]	data/scenes/cafe/dialogue.c	cafe_dialogue_extra_perfects_clear[0]	\nblabla you finished the extra campaign!\n\n	你完美了额外关卡！	draft	TODO 未校对
+data/scenes/cafe/dialogue.c:cafe_dialogue_extra_perfects_clear[1]	data/scenes/cafe/dialogue.c	cafe_dialogue_extra_perfects_clear[1]	\nit's so AWESOME!!\n\n	这太棒了！	draft	TODO 未校对
+data/scenes/cafe/dialogue.c:cafe_dialogue_first_visit[0]	data/scenes/cafe/dialogue.c	cafe_dialogue_first_visit[0]	\nWelcome to the café.\nThis your first time here?\n\n	"
+欢迎光临。
 你是第一次来这里吧？
+
 "	final	
 data/scenes/cafe/dialogue.c:cafe_dialogue_first_visit[15]	data/scenes/cafe/dialogue.c	cafe_dialogue_first_visit[15]	\nIf there's anything I can\ndo to help, well, \0051\0015that's\nwhat I'm here for.\0054\0018	"只要有我帮得上忙的地方，
 我都会尽力的哦。
 "	final	control codes need review
-data/scenes/cafe/dialogue.c:cafe_dialogue_first_visit[23]	data/scenes/cafe/dialogue.c	cafe_dialogue_first_visit[23]	\nI'm a little busy right now,\nsince I only just opened for the\nday, but we'll talk more later.	"我现在正在准备点东西，
+data/scenes/cafe/dialogue.c:cafe_dialogue_first_visit[23]	data/scenes/cafe/dialogue.c	cafe_dialogue_first_visit[23]	\nI'm a little busy right now,\nsince I only just opened for the\nday, but we'll talk more later.	"
+我现在正在准备点东西，
 请你晚点再来哦。
 "	final	
-data/scenes/cafe/dialogue.c:cafe_dialogue_first_visit[27]	data/scenes/cafe/dialogue.c	cafe_dialogue_first_visit[27]	\nCome back soon!\n\n	"那，下回见哦。
+data/scenes/cafe/dialogue.c:cafe_dialogue_first_visit[27]	data/scenes/cafe/dialogue.c	cafe_dialogue_first_visit[27]	\nCome back soon!\n\n	"
+那，下回见哦。
+
 "	final	
 data/scenes/cafe/dialogue.c:cafe_dialogue_first_visit[4]	data/scenes/cafe/dialogue.c	cafe_dialogue_first_visit[4]	\nFeel free to come on by anytime you\nfind the games \0051\0015too hard to play \0054\0018or\nyou just need to take a break.	"这里嘛，就是所谓的咖啡店啦。
 游戏打得不太顺的时候，
 或者累了的时候，都可以来坐坐哦。"	final	control codes need review
-data/scenes/cafe/dialogue.c:cafe_dialogue_healing_with_music[0]	data/scenes/cafe/dialogue.c	cafe_dialogue_healing_with_music[0]	\nSo, when you're sad, what do\nyou do to cheer yourself up?\nMe, I listen to music.	"说起来，难过的时候
+data/scenes/cafe/dialogue.c:cafe_dialogue_healing_with_music[0]	data/scenes/cafe/dialogue.c	cafe_dialogue_healing_with_music[0]	\nSo, when you're sad, what do\nyou do to cheer yourself up?\nMe, I listen to music.	"
+说起来，难过的时候
 你会做什么呢？
 我呀，基本上就是听音乐呢。"	final	
-data/scenes/cafe/dialogue.c:cafe_dialogue_healing_with_music[11]	data/scenes/cafe/dialogue.c	cafe_dialogue_healing_with_music[11]	\nMaybe if I studied this stuff I'd know,\nbut I haven't!\nSorry! Heh.\n	"不过嘛，那些详细道理
+data/scenes/cafe/dialogue.c:cafe_dialogue_healing_with_music[11]	data/scenes/cafe/dialogue.c	cafe_dialogue_healing_with_music[11]	\nMaybe if I studied this stuff I'd know,\nbut I haven't!\nSorry! Heh.\n	"
+不过嘛，那些详细道理
 我也不懂就是啦。哈哈哈。
 "	final	
-data/scenes/cafe/dialogue.c:cafe_dialogue_healing_with_music[5]	data/scenes/cafe/dialogue.c	cafe_dialogue_healing_with_music[5]	\nDusting off a favorite record of mine\nand taking a nostalgia trip...\nThat never fails to put me at ease.	"把那些挺老的唱片翻出来，
+data/scenes/cafe/dialogue.c:cafe_dialogue_healing_with_music[5]	data/scenes/cafe/dialogue.c	cafe_dialogue_healing_with_music[5]	\nDusting off a favorite record of mine\nand taking a nostalgia trip...\nThat never fails to put me at ease.	"
+把那些挺老的唱片翻出来，
 一边听一边回想当时的事，
 心里就会慢慢放松下来。"	final	
-data/scenes/cafe/dialogue.c:cafe_dialogue_healing_with_music[7]	data/scenes/cafe/dialogue.c	cafe_dialogue_healing_with_music[7]	\nMusic's weird like that.\nWhy does it hold such power\nover our feelings?	"音乐真是很不可思议呢〜。
+data/scenes/cafe/dialogue.c:cafe_dialogue_healing_with_music[7]	data/scenes/cafe/dialogue.c	cafe_dialogue_healing_with_music[7]	\nMusic's weird like that.\nWhy does it hold such power\nover our feelings?	"
+音乐真是很不可思议呢〜。
 为什么它能那样
 深深触动人的心呢。"	final	
-data/scenes/cafe/dialogue.c:cafe_dialogue_keep_trying[0]	data/scenes/cafe/dialogue.c	cafe_dialogue_keep_trying[0]	\nGive it some practice and you'll do\nfine. I'm sure of it!\n\n	"多玩几次的话，
+data/scenes/cafe/dialogue.c:cafe_dialogue_keep_trying[0]	data/scenes/cafe/dialogue.c	cafe_dialogue_keep_trying[0]	\nGive it some practice and you'll do\nfine. I'm sure of it!\n\n	"
+多玩几次的话，
 我想你会慢慢抓到诀窍的哦。
+
 "	final	
-data/scenes/cafe/dialogue.c:cafe_dialogue_keep_trying[4]	data/scenes/cafe/dialogue.c	cafe_dialogue_keep_trying[4]	\nI'm sure getting into the groove\nof the music will be pretty\nfun all its own.	"同时呢，
+data/scenes/cafe/dialogue.c:cafe_dialogue_keep_trying[4]	data/scenes/cafe/dialogue.c	cafe_dialogue_keep_trying[4]	\nI'm sure getting into the groove\nof the music will be pretty\nfun all its own.	"
+同时呢，
 你也会越来越享受跟着音乐律动的感觉。
 "	final	
-data/scenes/cafe/dialogue.c:cafe_dialogue_keep_trying[8]	data/scenes/cafe/dialogue.c	cafe_dialogue_keep_trying[8]	\nTry not to get all worked up out\nthere. Make sure to have a good time.\n\n	"别太较劲啦，
+data/scenes/cafe/dialogue.c:cafe_dialogue_keep_trying[8]	data/scenes/cafe/dialogue.c	cafe_dialogue_keep_trying[8]	\nTry not to get all worked up out\nthere. Make sure to have a good time.\n\n	"
+别太较劲啦，
 开心玩就好…
+
 "	final	
-data/scenes/cafe/dialogue.c:cafe_dialogue_not_practicing_perfect[0]	data/scenes/cafe/dialogue.c	cafe_dialogue_not_practicing_perfect[0]	\nIs that so? My bad, then.\nGuess that's why you shouldn't put\nso much stock in a rumor.	"这样呀。
+data/scenes/cafe/dialogue.c:cafe_dialogue_not_practicing_perfect[0]	data/scenes/cafe/dialogue.c	cafe_dialogue_not_practicing_perfect[0]	\nIs that so? My bad, then.\nGuess that's why you shouldn't put\nso much stock in a rumor.	"
+这样呀。
 还跟你聊了些传闻，
 真是失礼啦。"	final	
-data/scenes/cafe/dialogue.c:cafe_dialogue_not_practicing_perfect[5]	data/scenes/cafe/dialogue.c	cafe_dialogue_not_practicing_perfect[5]	\nEnjoy the games at your own pace,\nalright? See you around.\n\n	"请继续享受游戏哦。
+data/scenes/cafe/dialogue.c:cafe_dialogue_not_practicing_perfect[5]	data/scenes/cafe/dialogue.c	cafe_dialogue_not_practicing_perfect[5]	\nEnjoy the games at your own pace,\nalright? See you around.\n\n	"
+请继续享受游戏哦。
 那回头见。
+
 "	final	
-data/scenes/cafe/dialogue.c:cafe_dialogue_offbeats[0]	data/scenes/cafe/dialogue.c	cafe_dialogue_offbeats[0]	\nYou've probably heard of something\ncalled an offbeat.\nDo you know what that is?	"说起来，这个世界里常听人说的
+data/scenes/cafe/dialogue.c:cafe_dialogue_offbeats[0]	data/scenes/cafe/dialogue.c	cafe_dialogue_offbeats[0]	\nYou've probably heard of something\ncalled an offbeat.\nDo you know what that is?	"
+说起来，这个世界里常听人说的
 “反拍”到底是什么，
 你知道吗？"	final	
-data/scenes/cafe/dialogue.c:cafe_dialogue_offbeats[11]	data/scenes/cafe/dialogue.c	cafe_dialogue_offbeats[11]	\nWell, the offbeat is supposed to be\nthe exact point right inbetween each\nof your claps.	"那每次拍手和拍手之间，
+data/scenes/cafe/dialogue.c:cafe_dialogue_offbeats[11]	data/scenes/cafe/dialogue.c	cafe_dialogue_offbeats[11]	\nWell, the offbeat is supposed to be\nthe exact point right inbetween each\nof your claps.	"
+那每次拍手和拍手之间，
 刚好正中间的那个时机，
 听说就叫“反拍”。"	final	
-data/scenes/cafe/dialogue.c:cafe_dialogue_offbeats[16]	data/scenes/cafe/dialogue.c	cafe_dialogue_offbeats[16]	\nAt least I think so. I'm not so great at\nexplaining this stuff, but I hope it helps.\nSee you around.	"嗯，大概就是这么回事啦。
+data/scenes/cafe/dialogue.c:cafe_dialogue_offbeats[16]	data/scenes/cafe/dialogue.c	cafe_dialogue_offbeats[16]	\nAt least I think so. I'm not so great at\nexplaining this stuff, but I hope it helps.\nSee you around.	"
+嗯，大概就是这么回事啦。
 讲得随随便便的，真不好意思哦。
 那，下回见。"	final	
-data/scenes/cafe/dialogue.c:cafe_dialogue_offbeats[5]	data/scenes/cafe/dialogue.c	cafe_dialogue_offbeats[5]	\nI'm no expert myself, but I think\nI've got the jist of it.\n\n	"不过嘛，我其实也没懂得那么多，
+data/scenes/cafe/dialogue.c:cafe_dialogue_offbeats[5]	data/scenes/cafe/dialogue.c	cafe_dialogue_offbeats[5]	\nI'm no expert myself, but I think\nI've got the jist of it.\n\n	"
+不过嘛，我其实也没懂得那么多，
 所以讲得可能不太靠谱哦。
+
 "	final	
-data/scenes/cafe/dialogue.c:cafe_dialogue_offbeats[7]	data/scenes/cafe/dialogue.c	cafe_dialogue_offbeats[7]	\nSo, suppose you're clapping to\nthe beat of some music, right?\n\n	"比如说，
+data/scenes/cafe/dialogue.c:cafe_dialogue_offbeats[7]	data/scenes/cafe/dialogue.c	cafe_dialogue_offbeats[7]	\nSo, suppose you're clapping to\nthe beat of some music, right?\n\n	"
+比如说，
 你跟着音乐很自然地拍手，对吧。
+
 "	final	
-data/scenes/cafe/dialogue.c:cafe_dialogue_practicing_perfect[0]	data/scenes/cafe/dialogue.c	cafe_dialogue_practicing_perfect[0]	\n...Sorry for yelling. I just got a little\nexcited.\n\n	"抱歉，刚才声音太大了。
+data/scenes/cafe/dialogue.c:cafe_dialogue_practicing_perfect[0]	data/scenes/cafe/dialogue.c	cafe_dialogue_practicing_perfect[0]	\n...Sorry for yelling. I just got a little\nexcited.\n\n	"
+抱歉，刚才声音太大了。
 我实在是太替你高兴了…
+
 "	final	
-data/scenes/cafe/dialogue.c:cafe_dialogue_practicing_perfect[4]	data/scenes/cafe/dialogue.c	cafe_dialogue_practicing_perfect[4]	\nGood luck on getting those Perfects!\nSee you around.\n\n	"Perfect 也要继续加油哦。
+data/scenes/cafe/dialogue.c:cafe_dialogue_practicing_perfect[4]	data/scenes/cafe/dialogue.c	cafe_dialogue_practicing_perfect[4]	\nGood luck on getting those Perfects!\nSee you around.\n\n	"
+Perfect 也要继续加油哦。
 那回头见。
+
 "	final	
-data/scenes/cafe/dialogue.c:cafe_dialogue_ranks_and_medals[0]	data/scenes/cafe/dialogue.c	cafe_dialogue_ranks_and_medals[0]	\nBy the way, have you ever gotten a\nSuperb rank on a game?\n\n	"说起来，
-你有在游戏里拿过
-“高水准”这个评价吗？"	final	
-data/scenes/cafe/dialogue.c:cafe_dialogue_ranks_and_medals[11]	data/scenes/cafe/dialogue.c	cafe_dialogue_ranks_and_medals[11]	\nThose medals let you unlock\nsome prizes. Sounds like it\nwould be worth your while.	"收集奖牌之后，
+data/scenes/cafe/dialogue.c:cafe_dialogue_ranks_and_medals[0]	data/scenes/cafe/dialogue.c	cafe_dialogue_ranks_and_medals[0]	\nBy the way, have you ever gotten a\nSuperb rank on a game?\n\n	"
+说起来，你有在游戏里拿过
+“高水准”这个评价吗？
+
+"	final	
+data/scenes/cafe/dialogue.c:cafe_dialogue_ranks_and_medals[11]	data/scenes/cafe/dialogue.c	cafe_dialogue_ranks_and_medals[11]	\nThose medals let you unlock\nsome prizes. Sounds like it\nwould be worth your while.	"
+收集奖牌之后，
 就能玩到各种各样的
 奖励内容，所以要加油收集哦。"	final	
-data/scenes/cafe/dialogue.c:cafe_dialogue_ranks_and_medals[16]	data/scenes/cafe/dialogue.c	cafe_dialogue_ranks_and_medals[16]	\nBut you probably already knew that,\nright? Sorry if I bored you.\nSee you around.	"如果你本来就知道的话，
+data/scenes/cafe/dialogue.c:cafe_dialogue_ranks_and_medals[16]	data/scenes/cafe/dialogue.c	cafe_dialogue_ranks_and_medals[16]	\nBut you probably already knew that,\nright? Sorry if I bored you.\nSee you around.	"
+如果你本来就知道的话，
 那我这番话可就有点无聊啦。
-不好意思哦，那下回见。
-"	final	
-data/scenes/cafe/dialogue.c:cafe_dialogue_ranks_and_medals[5]	data/scenes/cafe/dialogue.c	cafe_dialogue_ranks_and_medals[5]	\nThere are three ranks you can get:\nTry Again, OK, and Superb.\n\n	"游戏成绩一共有
+不好意思哦，那下回见。"	final	
+data/scenes/cafe/dialogue.c:cafe_dialogue_ranks_and_medals[5]	data/scenes/cafe/dialogue.c	cafe_dialogue_ranks_and_medals[5]	\nThere are three ranks you can get:\nTry Again, OK, and Superb.\n\n	"
+游戏成绩一共有
 “再试一次吧”“平凡”“高水准”这三种哦。
+
 "	final	
-data/scenes/cafe/dialogue.c:cafe_dialogue_ranks_and_medals[7]	data/scenes/cafe/dialogue.c	cafe_dialogue_ranks_and_medals[7]	\nAnd, if you get a Superb,\nyou also get a medal.\n\n	"然后呢，只要拿到“高水准”，
+data/scenes/cafe/dialogue.c:cafe_dialogue_ranks_and_medals[7]	data/scenes/cafe/dialogue.c	cafe_dialogue_ranks_and_medals[7]	\nAnd, if you get a Superb,\nyou also get a medal.\n\n	"
+然后呢，只要拿到“高水准”，
 就能得到奖牌哦。
+
 "	final	
-data/scenes/cafe/dialogue.c:cafe_dialogue_rhythm_sense[0]	data/scenes/cafe/dialogue.c	cafe_dialogue_rhythm_sense[0]	\nBy the way, is a sense of rhythm any\ndifferent for humans?\n\n	"说起来呀，节奏感这种东西，对人类来说究竟意味着什么呢。
+data/scenes/cafe/dialogue.c:cafe_dialogue_rhythm_sense[0]	data/scenes/cafe/dialogue.c	cafe_dialogue_rhythm_sense[0]	\nBy the way, is a sense of rhythm any\ndifferent for humans?\n\n	"
+说起来呀，节奏感这种东西，对人类来说究竟意味着什么呢。
+
 "	final	
-data/scenes/cafe/dialogue.c:cafe_dialogue_rhythm_sense[10]	data/scenes/cafe/dialogue.c	cafe_dialogue_rhythm_sense[10]	\nMaybe I should try some of those\nrhythm games myself...\n\n	"我也来试着玩玩游戏好了…
+data/scenes/cafe/dialogue.c:cafe_dialogue_rhythm_sense[10]	data/scenes/cafe/dialogue.c	cafe_dialogue_rhythm_sense[10]	\nMaybe I should try some of those\nrhythm games myself...\n\n	"
+我也来试着玩玩游戏好了…
+
 "	final	
-data/scenes/cafe/dialogue.c:cafe_dialogue_rhythm_sense[3]	data/scenes/cafe/dialogue.c	cafe_dialogue_rhythm_sense[3]	\nWell, not like my rhythm couldn't do with\na bit of work, but...\n\n	"不过像我嘛，
+data/scenes/cafe/dialogue.c:cafe_dialogue_rhythm_sense[3]	data/scenes/cafe/dialogue.c	cafe_dialogue_rhythm_sense[3]	\nWell, not like my rhythm couldn't do with\na bit of work, but...\n\n	"
+不过像我嘛，
 平时倒也不怎么会特意去想这个啦。
+
 "	final	
-data/scenes/cafe/dialogue.c:cafe_dialogue_rhythm_sense[7]	data/scenes/cafe/dialogue.c	cafe_dialogue_rhythm_sense[7]	\nWhen your sense of rhythm\nimproves... that has to be\nimproves... that's gotta be\neuphoric, huh?	"不过，节奏感变好了的话，
-人应该也会稍微开心一点吧。"	final	
-data/scenes/cafe/dialogue.c:cafe_dialogue_rhythm_test[0]	data/scenes/cafe/dialogue.c	cafe_dialogue_rhythm_test[0]	\nSay, have you tried doing the\nRhythm Test again?\n\n	"说起来，
+data/scenes/cafe/dialogue.c:cafe_dialogue_rhythm_sense[7]	data/scenes/cafe/dialogue.c	cafe_dialogue_rhythm_sense[7]	\nWhen your sense of rhythm\nimproves... that has to be\nimproves... that's gotta be\neuphoric, huh?	"
+不过，节奏感变好了的话，
+人应该也会稍微开心一点吧。"	final	TODO 未校对：PARADISE 双分支的语气待分别核验
+data/scenes/cafe/dialogue.c:cafe_dialogue_rhythm_test[0]	data/scenes/cafe/dialogue.c	cafe_dialogue_rhythm_test[0]	\nSay, have you tried doing the\nRhythm Test again?\n\n	"
+说起来，
 你最近有做“节奏感测试”吗？
+
 "	final	
-data/scenes/cafe/dialogue.c:cafe_dialogue_rhythm_test[11]	data/scenes/cafe/dialogue.c	cafe_dialogue_rhythm_test[11]	\nCounting those silent beats...\nIt's tricky, don't you think?\n\n	"要去数空拍这种事，
+data/scenes/cafe/dialogue.c:cafe_dialogue_rhythm_test[11]	data/scenes/cafe/dialogue.c	cafe_dialogue_rhythm_test[11]	\nCounting those silent beats...\nIt's tricky, don't you think?\n\n	"
+要去数空拍这种事，
 还真是挺难的呢〜。
+
 "	final	
-data/scenes/cafe/dialogue.c:cafe_dialogue_rhythm_test[15]	data/scenes/cafe/dialogue.c	cafe_dialogue_rhythm_test[15]	\nWell, let's take it one step at a time.\nSee you around.\n\n	"不过嘛，就慢慢来吧。
+data/scenes/cafe/dialogue.c:cafe_dialogue_rhythm_test[15]	data/scenes/cafe/dialogue.c	cafe_dialogue_rhythm_test[15]	\nWell, let's take it one step at a time.\nSee you around.\n\n	"
+不过嘛，就慢慢来吧。
 那，下回见。
+
 "	final	
-data/scenes/cafe/dialogue.c:cafe_dialogue_rhythm_test[4]	data/scenes/cafe/dialogue.c	cafe_dialogue_rhythm_test[4]	\nI've been giving it a spin lately.\nSeems like 65 points is my limit.\n\n	"我偶尔也会去测，
+data/scenes/cafe/dialogue.c:cafe_dialogue_rhythm_test[4]	data/scenes/cafe/dialogue.c	cafe_dialogue_rhythm_test[4]	\nI've been giving it a spin lately.\nSeems like 65 points is my limit.\n\n	"
+我偶尔也会去测，
 不过，65 分左右就是我的极限啦……
+
 "	final	
-data/scenes/cafe/dialogue.c:cafe_dialogue_rhythm_test[8]	data/scenes/cafe/dialogue.c	cafe_dialogue_rhythm_test[8]	\nThat second test gives me quite\na bit of trouble.\n\n	"那个第二项测试呀，
-我怎么也做不好呢。"	final	
+data/scenes/cafe/dialogue.c:cafe_dialogue_rhythm_test[8]	data/scenes/cafe/dialogue.c	cafe_dialogue_rhythm_test[8]	\nThat second test gives me quite\na bit of trouble.\n\n	"
+那个第二项测试呀，
+我怎么也做不好呢。
+
+"	final	
 data/scenes/cafe/dialogue.c:cafe_dialogue_shouts_cheer[0]	data/scenes/cafe/dialogue.c	cafe_dialogue_shouts_cheer[0]	\0032\001l\0051\0015\n\nGo for it!\0030\001s\0054\0018	\0032\001l\0051\0015加油啊！\0030\001s\0054\0018	final	
 data/scenes/cafe/dialogue.c:cafe_dialogue_shouts_cheer[16]	data/scenes/cafe/dialogue.c	cafe_dialogue_shouts_cheer[16]	\0032\001l\0051\0015\n\nGive it your all!\0030\001s\0054\0018	\0032\001l\0051\0015冲呀！\0030\001s\0054\0018	final	
 data/scenes/cafe/dialogue.c:cafe_dialogue_shouts_cheer[27]	data/scenes/cafe/dialogue.c	cafe_dialogue_shouts_cheer[27]	\0032\001l\0051\0015\n\nKeep going!\0030\001s\0054\0018	\0032\001l\0051\0015上啊上啊！\0030\001s\0054\0018	final	
@@ -179,20 +267,25 @@ data/scenes/cafe/dialogue.c:cafe_dialogue_shouts_praise[16]	data/scenes/cafe/dia
 data/scenes/cafe/dialogue.c:cafe_dialogue_shouts_praise[27]	data/scenes/cafe/dialogue.c	cafe_dialogue_shouts_praise[27]	\0032\001l\0051\0015\n\nCongratulations!\0030\001s\0054\0018	\0032\001l\0051\0015恭喜啦!!\0030\001s\0054\0018	final	
 data/scenes/cafe/dialogue.c:cafe_dialogue_shouts_praise[38]	data/scenes/cafe/dialogue.c	cafe_dialogue_shouts_praise[38]	\0032\001l\0051\0015\n\nGreat job!\0030\001s\0054\0018	\0032\001l\0051\0015干得漂亮!!\0030\001s\0054\0018	final	
 data/scenes/cafe/dialogue.c:cafe_dialogue_shouts_praise[49]	data/scenes/cafe/dialogue.c	cafe_dialogue_shouts_praise[49]	\0032\001l\0051\0015\n\nI can't believe it!\0030\001s\0054\0018	\0032\001l\0051\0015难以置信!!\0030\001s\0054\0018	final	
-data/scenes/cafe/dialogue.c:cafe_dialogue_speaking_with_music[0]	data/scenes/cafe/dialogue.c	cafe_dialogue_speaking_with_music[0]	\nI heard you can hold a conversation\nwith only rhythm.\n\n	"说起来，
+data/scenes/cafe/dialogue.c:cafe_dialogue_speaking_with_music[0]	data/scenes/cafe/dialogue.c	cafe_dialogue_speaking_with_music[0]	\nI heard you can hold a conversation\nwith only rhythm.\n\n	"
+说起来，
 你知道节奏也能拿来对话吗？
+
 "	final	
-data/scenes/cafe/dialogue.c:cafe_dialogue_speaking_with_music[12]	data/scenes/cafe/dialogue.c	cafe_dialogue_speaking_with_music[12]	\nAt least that's what a customer\nonce told me.\nDoesn't that sound fun?	"前阵子来店里的客人
+data/scenes/cafe/dialogue.c:cafe_dialogue_speaking_with_music[12]	data/scenes/cafe/dialogue.c	cafe_dialogue_speaking_with_music[12]	\nAt least that's what a customer\nonce told me.\nDoesn't that sound fun?	"
+前阵子来店里的客人
 告诉我这件事时，
 我就觉得还挺有意思的，不是吗？"	final	
-data/scenes/cafe/dialogue.c:cafe_dialogue_speaking_with_music[16]	data/scenes/cafe/dialogue.c	cafe_dialogue_speaking_with_music[16]	\nBut if you had percussive election\nspeeches or bongo arguments...\nExpect a lot of noise. Hahaha!	"不过要是拿鼓来做竞选演说，
+data/scenes/cafe/dialogue.c:cafe_dialogue_speaking_with_music[16]	data/scenes/cafe/dialogue.c	cafe_dialogue_speaking_with_music[16]	\nBut if you had percussive election\nspeeches or bongo arguments...\nExpect a lot of noise. Hahaha!	"
+不过要是拿鼓来做竞选演说，
 或者夫妻俩拿邦戈鼓吵架的话，
 感觉会吵得不得了呢。哈哈哈。"	final	
-data/scenes/cafe/dialogue.c:cafe_dialogue_speaking_with_music[4]	data/scenes/cafe/dialogue.c	cafe_dialogue_speaking_with_music[4]	\nYou can put words and meanings\nbehind different rhythms, like morse\ncode, and talk without speaking.	"就是把不同的节奏型
+data/scenes/cafe/dialogue.c:cafe_dialogue_speaking_with_music[4]	data/scenes/cafe/dialogue.c	cafe_dialogue_speaking_with_music[4]	\nYou can put words and meanings\nbehind different rhythms, like morse\ncode, and talk without speaking.	"
+就是把不同的节奏型
 对应成话语和含义，
-然后用来交流的样子哦。
-"	final	
-data/scenes/cafe/dialogue.c:cafe_dialogue_speaking_with_music[7]	data/scenes/cafe/dialogue.c	cafe_dialogue_speaking_with_music[7]	\nLike, bang out a message into one\nof those taiko drums, and you could\ncommunicate acres apart.	"听说他们会用响亮的鼓声
+然后用来交流的样子哦。"	final	
+data/scenes/cafe/dialogue.c:cafe_dialogue_speaking_with_music[7]	data/scenes/cafe/dialogue.c	cafe_dialogue_speaking_with_music[7]	\nLike, bang out a message into one\nof those taiko drums, and you could\ncommunicate acres apart.	"
+听说他们会用响亮的鼓声
 打出节奏，跟远处的人
 交流哦。"	final	
 data/scenes/data_room/reading_material.inc.c:reading_air_batter	data/scenes/data_room/reading_material.inc.c	reading_air_batter	Spaceball Report	空中击球手快报	final	
@@ -353,7 +446,7 @@ data/scenes/data_room/reading_material.inc.c:reading_lyrics_1	data/scenes/data_r
 看啊！盛大节日 哇—咻—！
 这就是 Made in Japan
 嗖嘞 让我们转起圈来 咚咚嗙嗙
-哈～ 跳这盂兰盆舞～"	draft	
+哈～ 跳这盂兰盆舞～"	draft	TODO 未校对
 data/scenes/data_room/reading_material.inc.c:reading_lyrics_1_title	data/scenes/data_room/reading_material.inc.c	reading_lyrics_1_title	Lyrics Card ①	歌词卡片①	final	
 data/scenes/data_room/reading_material.inc.c:reading_lyrics_2	data/scenes/data_room/reading_material.inc.c	reading_lyrics_2	"Honey Sweet Angel of Love\n\nEnglish Vocals: Bellajenna\nJapanese Vocals: Ami Tokito\nLyrics/Music: Tsunku♂\nArrangement: Hideyuki \""Daichi\"" Suzuki\nTranslation: castIeRook, Mizuka Lover\n\n(This song appears in Remix 3.)\nLove has a charming flow\nLove has mysterious glow\nLove's many shapes and degrees\nLove's many small subtleties\n\nMy honey sweet angel\n\n\n\nWhenever I hear you say\n\""I love you\"" everyday,\nSometimes I can't tell what you mean\n\nIf I read into what you say,\nPut it another way,\nSomehow it's like you mean it now\nYou know?\n\nLove that tastes of raspberry\nSweet and sour too\n\nThat's just like how we are together, don't you see?\n\nI love you!\n\n\n\nLove has a charming flow\nLove has mysterious glow\nLove's many shapes and degrees\nLove's many small subtleties\n\nMy honey sweet angel"	"恋爱的Honey Sweet～Angel
 演唱：時東ぁみ
@@ -426,13 +519,13 @@ data/scenes/game_select/levels.inc.c:level_air_batter_2_desc	data/scenes/game_se
 data/scenes/game_select/levels.inc.c:level_air_batter_2_result_1	data/scenes/game_select/levels.inc.c	level_air_batter_2_result_1	Next time, swing your bat somewhere else!	你在干什么啦！	final	
 data/scenes/game_select/levels.inc.c:level_air_batter_2_result_2	data/scenes/game_select/levels.inc.c	level_air_batter_2_result_2	I can't give up now!	怎么能在这里结束！	final	
 data/scenes/game_select/levels.inc.c:level_air_batter_2_result_3	data/scenes/game_select/levels.inc.c	level_air_batter_2_result_3	Guys, guys, look at what I've won!	大家快看快看ー！	final	
-data/scenes/game_select/levels.inc.c:level_air_batter_extra	data/scenes/game_select/levels.inc.c	level_air_batter_extra	Spaceball	空中击球手	draft	
+data/scenes/game_select/levels.inc.c:level_air_batter_extra	data/scenes/game_select/levels.inc.c	level_air_batter_extra	Spaceball	空中击球手	draft	TODO 未校对
 data/scenes/game_select/levels.inc.c:level_air_batter_extra_desc	data/scenes/game_select/levels.inc.c	level_air_batter_extra_desc	Ignore the camera's\nzooms! Make the ball\nzoom away! Don't fall\nbehind! Let it fly!	"别在意镜头缩放！
 用心去击球！
-不要依赖视觉，把球打飞吧～！"	draft	
-data/scenes/game_select/levels.inc.c:level_air_batter_extra_result_1	data/scenes/game_select/levels.inc.c	level_air_batter_extra_result_1	Ahhh! Nooooooo!	哇，不行啊～！	draft	
-data/scenes/game_select/levels.inc.c:level_air_batter_extra_result_2	data/scenes/game_select/levels.inc.c	level_air_batter_extra_result_2	Graaaah!	耶。	draft	
-data/scenes/game_select/levels.inc.c:level_air_batter_extra_result_3	data/scenes/game_select/levels.inc.c	level_air_batter_extra_result_3	A home run! I did it!	成功啦——！！	draft	
+不要依赖视觉，把球打飞吧～！"	draft	TODO 未校对
+data/scenes/game_select/levels.inc.c:level_air_batter_extra_result_1	data/scenes/game_select/levels.inc.c	level_air_batter_extra_result_1	Ahhh! Nooooooo!	哇，不行啊～！	draft	TODO 未校对
+data/scenes/game_select/levels.inc.c:level_air_batter_extra_result_2	data/scenes/game_select/levels.inc.c	level_air_batter_extra_result_2	Graaaah!	耶。	draft	TODO 未校对
+data/scenes/game_select/levels.inc.c:level_air_batter_extra_result_3	data/scenes/game_select/levels.inc.c	level_air_batter_extra_result_3	A home run! I did it!	成功啦——！！	draft	TODO 未校对
 data/scenes/game_select/levels.inc.c:level_baikin_1	data/scenes/game_select/levels.inc.c	level_baikin_1	Sick Beats	细菌博士	final	
 data/scenes/game_select/levels.inc.c:level_baikin_1_result_1	data/scenes/game_select/levels.inc.c	level_baikin_1_result_1	Our experiment has failed...	研究失败了。	final	
 data/scenes/game_select/levels.inc.c:level_baikin_1_result_2	data/scenes/game_select/levels.inc.c	level_baikin_1_result_2	Failure is just the first step to success!	或许失败乃成功之母呢！	final	
@@ -461,7 +554,6 @@ data/scenes/game_select/levels.inc.c:level_bon_odori_1_result_2	data/scenes/game
 data/scenes/game_select/levels.inc.c:level_bon_odori_1_result_3	data/scenes/game_select/levels.inc.c	level_bon_odori_1_result_3	That was so much fun! I can't wait for next year!	啊，太有趣了！	final	
 data/scenes/game_select/levels.inc.c:level_cafe_counsel_desc	data/scenes/game_select/levels.inc.c	level_cafe_counsel_desc	How are you feeling?\nIf something's on your\nmind, feel free to\ncome and talk.	"最近状态怎么样？
 要是有什么在意的事，
-
 就来这里
 聊一聊吧。"	final	
 data/scenes/game_select/levels.inc.c:level_cosmo_dance_1	data/scenes/game_select/levels.inc.c	level_cosmo_dance_1	Cosmic Dance	宇宙之舞	final	
@@ -523,12 +615,12 @@ data/scenes/game_select/levels.inc.c:level_karate_2_desc	data/scenes/game_select
 data/scenes/game_select/levels.inc.c:level_karate_2_result_1	data/scenes/game_select/levels.inc.c	level_karate_2_result_1	What's the point of these speed changes, anyway!?	这节奏是什么鬼啊—！！	final	
 data/scenes/game_select/levels.inc.c:level_karate_2_result_2	data/scenes/game_select/levels.inc.c	level_karate_2_result_2	Well, that's that. Let's eat!	嘛，先不管那些。来吃饭吧！	final	
 data/scenes/game_select/levels.inc.c:level_karate_2_result_3	data/scenes/game_select/levels.inc.c	level_karate_2_result_3	I think we've gone through everything!	差不多就是这样啦——！！	final	
-data/scenes/game_select/levels.inc.c:level_karate_extra	data/scenes/game_select/levels.inc.c	level_karate_extra	Karate Man	空手道家	draft	
+data/scenes/game_select/levels.inc.c:level_karate_extra	data/scenes/game_select/levels.inc.c	level_karate_extra	Karate Man	空手道家	draft	TODO 未校对
 data/scenes/game_select/levels.inc.c:level_karate_extra_desc	data/scenes/game_select/levels.inc.c	level_karate_extra_desc	We've increased the\nspeed! Do your best,\nas we throw some more\nstuff for you to punch.	"向飞来的东西 按A键出拳！
-用干劲和气势把它们打飞吧！"	draft	
-data/scenes/game_select/levels.inc.c:level_karate_extra_result_1	data/scenes/game_select/levels.inc.c	level_karate_extra_result_1	The tournament didn't go so well...	比赛当天表现不太行。	draft	
-data/scenes/game_select/levels.inc.c:level_karate_extra_result_2	data/scenes/game_select/levels.inc.c	level_karate_extra_result_2	I may not have won, but I did really well!	比赛当天，感觉还挺不错的！	draft	
-data/scenes/game_select/levels.inc.c:level_karate_extra_result_3	data/scenes/game_select/levels.inc.c	level_karate_extra_result_3	I won the tournament and took home the gold!	比赛当天夺冠了！！	draft	
+用干劲和气势把它们打飞吧！"	draft	TODO 未校对
+data/scenes/game_select/levels.inc.c:level_karate_extra_result_1	data/scenes/game_select/levels.inc.c	level_karate_extra_result_1	The tournament didn't go so well...	比赛当天表现不太行。	draft	TODO 未校对
+data/scenes/game_select/levels.inc.c:level_karate_extra_result_2	data/scenes/game_select/levels.inc.c	level_karate_extra_result_2	I may not have won, but I did really well!	比赛当天，感觉还挺不错的！	draft	TODO 未校对
+data/scenes/game_select/levels.inc.c:level_karate_extra_result_3	data/scenes/game_select/levels.inc.c	level_karate_extra_result_3	I won the tournament and took home the gold!	比赛当天夺冠了！！	draft	TODO 未校对
 data/scenes/game_select/levels.inc.c:level_live	data/scenes/game_select/levels.inc.c	level_live	Concert	现场演出	final	
 data/scenes/game_select/levels.inc.c:level_live_desc	data/scenes/game_select/levels.inc.c	level_live_desc	We're hosting a\nconcert! You've got\ngood rhythm, right?\nSo give it a try!	"要登台演出啦！
 我觉得你的节奏感
@@ -560,13 +652,13 @@ data/scenes/game_select/levels.inc.c:level_marcha_2_desc	data/scenes/game_select
 data/scenes/game_select/levels.inc.c:level_marcha_2_result_1	data/scenes/game_select/levels.inc.c	level_marcha_2_result_1	This is unacceptable...	这、这样可不行！唔〜嗯…	final	
 data/scenes/game_select/levels.inc.c:level_marcha_2_result_2	data/scenes/game_select/levels.inc.c	level_marcha_2_result_2	I know we can perform better than that!	唔！舞步还得更帅才行！	final	
 data/scenes/game_select/levels.inc.c:level_marcha_2_result_3	data/scenes/game_select/levels.inc.c	level_marcha_2_result_3	Now THIS is a reward!	我居然还拿到了这种奖励！！	final	
-data/scenes/game_select/levels.inc.c:level_marcha_extra	data/scenes/game_select/levels.inc.c	level_marcha_extra	Marching Orders	行军	draft	
+data/scenes/game_select/levels.inc.c:level_marcha_extra	data/scenes/game_select/levels.inc.c	level_marcha_extra	Marching Orders	行军	draft	TODO 未校对
 data/scenes/game_select/levels.inc.c:level_marcha_extra_desc	data/scenes/game_select/levels.inc.c	level_marcha_extra_desc	Ready, march!\nThis mission will require\nquick marching, so stay\nfocused!	"现在开始行进。
 这次需要非常迅速地做出判断。
-好好努力吧。"	draft	
-data/scenes/game_select/levels.inc.c:level_marcha_extra_result_1	data/scenes/game_select/levels.inc.c	level_marcha_extra_result_1	MONSTER! Retreat! Retreat!	撤退！撤退啦！！	draft	
-data/scenes/game_select/levels.inc.c:level_marcha_extra_result_2	data/scenes/game_select/levels.inc.c	level_marcha_extra_result_2	Ah, there's the lost puppy!	啊，发现走失的小朋友了！	draft	
-data/scenes/game_select/levels.inc.c:level_marcha_extra_result_3	data/scenes/game_select/levels.inc.c	level_marcha_extra_result_3	We rescued the lost puppy! Hooray!	救到走失的小朋友啦！太好了！！	draft	
+好好努力吧。"	draft	TODO 未校对
+data/scenes/game_select/levels.inc.c:level_marcha_extra_result_1	data/scenes/game_select/levels.inc.c	level_marcha_extra_result_1	MONSTER! Retreat! Retreat!	撤退！撤退啦！！	draft	TODO 未校对
+data/scenes/game_select/levels.inc.c:level_marcha_extra_result_2	data/scenes/game_select/levels.inc.c	level_marcha_extra_result_2	Ah, there's the lost puppy!	啊，发现走失的小朋友了！	draft	TODO 未校对
+data/scenes/game_select/levels.inc.c:level_marcha_extra_result_3	data/scenes/game_select/levels.inc.c	level_marcha_extra_result_3	We rescued the lost puppy! Hooray!	救到走失的小朋友啦！太好了！！	draft	TODO 未校对
 data/scenes/game_select/levels.inc.c:level_night_1	data/scenes/game_select/levels.inc.c	level_night_1	Night Walk	夜空漫步	final	
 data/scenes/game_select/levels.inc.c:level_night_1_desc	data/scenes/game_select/levels.inc.c	level_night_1_desc	What's better than a\nstroll in the starlight?\nHow about a series of\njumps in the starlight?	"跟着音乐一起
 尽情跳起来！
@@ -605,13 +697,13 @@ data/scenes/game_select/levels.inc.c:level_pachi_1_desc	data/scenes/game_select/
 data/scenes/game_select/levels.inc.c:level_pachi_1_result_1	data/scenes/game_select/levels.inc.c	level_pachi_1_result_1	The trio just went solo!	同伴都走啦！	final	
 data/scenes/game_select/levels.inc.c:level_pachi_1_result_2	data/scenes/game_select/levels.inc.c	level_pachi_1_result_2	You need to make it to more of our practice sessions...	现在就满足，可能还早了点呢。	final	
 data/scenes/game_select/levels.inc.c:level_pachi_1_result_3	data/scenes/game_select/levels.inc.c	level_pachi_1_result_3	Trio-riffic!	这三人组，配合也太默契啦！！	final	
-data/scenes/game_select/levels.inc.c:level_pachi_extra	data/scenes/game_select/levels.inc.c	level_pachi_extra	The Clappy Trio	啪叽啪叽三人组	draft	
+data/scenes/game_select/levels.inc.c:level_pachi_extra	data/scenes/game_select/levels.inc.c	level_pachi_extra	The Clappy Trio	啪叽啪叽三人组	draft	TODO 未校对
 data/scenes/game_select/levels.inc.c:level_pachi_extra_desc	data/scenes/game_select/levels.inc.c	level_pachi_extra_desc	Clap your hands in\norder! You're the third\nclapper. Watch out\nfor your fast friends!	"我们要依次拍手哦！
 你排在第３个。
-仔细看好前面两人再拍哦！"	draft	
-data/scenes/game_select/levels.inc.c:level_pachi_extra_result_1	data/scenes/game_select/levels.inc.c	level_pachi_extra_result_1	Wait! Don't leave without us!	哦～！	draft	
-data/scenes/game_select/levels.inc.c:level_pachi_extra_result_2	data/scenes/game_select/levels.inc.c	level_pachi_extra_result_2	This is one nice space cruise!	愉快的太空巡航。	draft	
-data/scenes/game_select/levels.inc.c:level_pachi_extra_result_3	data/scenes/game_select/levels.inc.c	level_pachi_extra_result_3	I've discovered a new planet! Stellar!	第一个到达未知星球！伟业！！	draft	
+仔细看好前面两人再拍哦！"	draft	TODO 未校对
+data/scenes/game_select/levels.inc.c:level_pachi_extra_result_1	data/scenes/game_select/levels.inc.c	level_pachi_extra_result_1	Wait! Don't leave without us!	哦～！	draft	TODO 未校对
+data/scenes/game_select/levels.inc.c:level_pachi_extra_result_2	data/scenes/game_select/levels.inc.c	level_pachi_extra_result_2	This is one nice space cruise!	愉快的太空巡航。	draft	TODO 未校对
+data/scenes/game_select/levels.inc.c:level_pachi_extra_result_3	data/scenes/game_select/levels.inc.c	level_pachi_extra_result_3	I've discovered a new planet! Stellar!	第一个到达未知星球！伟业！！	draft	TODO 未校对
 data/scenes/game_select/levels.inc.c:level_poly_1	data/scenes/game_select/levels.inc.c	level_poly_1	Polyrhythm	复合节奏	final	
 data/scenes/game_select/levels.inc.c:level_poly_1_desc	data/scenes/game_select/levels.inc.c	level_poly_1_desc	Manage the  and \npaths at the same time\nto keep those red rods\nrolling! Simple enough?	"掌握十字键与A键同时按下的诀窍！
 其实挺简单的。大概吧……"	final	
@@ -720,13 +812,13 @@ data/scenes/game_select/levels.inc.c:level_remix_8_desc	data/scenes/game_select/
 data/scenes/game_select/levels.inc.c:level_remix_8_result_1	data/scenes/game_select/levels.inc.c	level_remix_8_result_1	Your road trip was... oh boy...	本次的兜风 ：真是的…	final	
 data/scenes/game_select/levels.inc.c:level_remix_8_result_2	data/scenes/game_select/levels.inc.c	level_remix_8_result_2	Your road trip was... a little long.	本次的兜风 ：看来还要开很久啊	final	
 data/scenes/game_select/levels.inc.c:level_remix_8_result_3	data/scenes/game_select/levels.inc.c	level_remix_8_result_3	Your road trip was... absolutely spectacular!	本次的兜风 ： 太爽快了！！	final	
-data/scenes/game_select/levels.inc.c:level_remix_extra	data/scenes/game_select/levels.inc.c	level_remix_extra	Extra Remix	Extra Remix	draft	
+data/scenes/game_select/levels.inc.c:level_remix_extra	data/scenes/game_select/levels.inc.c	level_remix_extra	Extra Remix	Extra Remix	draft	TODO 未校对
 data/scenes/game_select/levels.inc.c:level_remix_extra_desc	data/scenes/game_select/levels.inc.c	level_remix_extra_desc	Let's test your skills!\nThis remix is faster\nthan ever!\nThink you can beat it?	"这是额外关卡的Remix哦。
 能跟上这个速度吗？
-到最后都要尽情享受哦！"	draft	
-data/scenes/game_select/levels.inc.c:level_remix_extra_result_1	data/scenes/game_select/levels.inc.c	level_remix_extra_result_1	This is going to take a while...	还有很长的路要走呢。	draft	
-data/scenes/game_select/levels.inc.c:level_remix_extra_result_2	data/scenes/game_select/levels.inc.c	level_remix_extra_result_2	Just a normal chick. Cheep-Cheep!	很普通呢～。啾啾。	draft	
-data/scenes/game_select/levels.inc.c:level_remix_extra_result_3	data/scenes/game_select/levels.inc.c	level_remix_extra_result_3	You've grown splendidly! You look downright dignified!	成长得很出色呢！好厉害！！	draft	
+到最后都要尽情享受哦！"	draft	TODO 未校对
+data/scenes/game_select/levels.inc.c:level_remix_extra_result_1	data/scenes/game_select/levels.inc.c	level_remix_extra_result_1	This is going to take a while...	还有很长的路要走呢。	draft	TODO 未校对
+data/scenes/game_select/levels.inc.c:level_remix_extra_result_2	data/scenes/game_select/levels.inc.c	level_remix_extra_result_2	Just a normal chick. Cheep-Cheep!	很普通呢～。啾啾。	draft	TODO 未校对
+data/scenes/game_select/levels.inc.c:level_remix_extra_result_3	data/scenes/game_select/levels.inc.c	level_remix_extra_result_3	You've grown splendidly! You look downright dignified!	成长得很出色呢！好厉害！！	draft	TODO 未校对
 data/scenes/game_select/levels.inc.c:level_rhythm_datsu_1	data/scenes/game_select/levels.inc.c	level_rhythm_datsu_1	Rhythm Tweezers	节奏脱毛	final	
 data/scenes/game_select/levels.inc.c:level_rhythm_datsu_1_desc	data/scenes/game_select/levels.inc.c	level_rhythm_datsu_1_desc	\nMy roots are showing!\nCan you pluck them off?\n	"那讨厌的“毛”
 总是不停地长出来！
@@ -743,13 +835,13 @@ data/scenes/game_select/levels.inc.c:level_rhythm_datsu_2_desc	data/scenes/game_
 data/scenes/game_select/levels.inc.c:level_rhythm_datsu_2_result_1	data/scenes/game_select/levels.inc.c	level_rhythm_datsu_2_result_1	Why do you have to be so hairy!?	为什么会长毛啊ー！？	final	
 data/scenes/game_select/levels.inc.c:level_rhythm_datsu_2_result_2	data/scenes/game_select/levels.inc.c	level_rhythm_datsu_2_result_2	Why do only my vegetables grow hair, anyway...?	为啥偏偏只有俺家的蔬菜会长毛…？	final	
 data/scenes/game_select/levels.inc.c:level_rhythm_datsu_2_result_3	data/scenes/game_select/levels.inc.c	level_rhythm_datsu_2_result_3	How refreshing! The air is cool and crisp!	一身轻松！空气好得不得了！！	final	
-data/scenes/game_select/levels.inc.c:level_rhythm_datsu_extra	data/scenes/game_select/levels.inc.c	level_rhythm_datsu_extra	Rhythm Tweezers	节奏脱毛	draft	
+data/scenes/game_select/levels.inc.c:level_rhythm_datsu_extra	data/scenes/game_select/levels.inc.c	level_rhythm_datsu_extra	Rhythm Tweezers	节奏脱毛	draft	TODO 未校对
 data/scenes/game_select/levels.inc.c:level_rhythm_datsu_extra_desc	data/scenes/game_select/levels.inc.c	level_rhythm_datsu_extra_desc	My roots are showing!\nDon't let the speed trip\nyou up! Pluck them off!\n	"那讨厌的“毛” 总是不停地长出来！
 不要被快速的节奏迷惑了
-拔掉它，拔掉它！"	draft	
-data/scenes/game_select/levels.inc.c:level_rhythm_datsu_extra_result_1	data/scenes/game_select/levels.inc.c	level_rhythm_datsu_extra_result_1	I can't pluck anything at this speed!	毛长得太快了啊……	draft	
-data/scenes/game_select/levels.inc.c:level_rhythm_datsu_extra_result_2	data/scenes/game_select/levels.inc.c	level_rhythm_datsu_extra_result_2	These hairs are pretty tough to pluck.	还真是挺难对付的毛啊。	draft	
-data/scenes/game_select/levels.inc.c:level_rhythm_datsu_extra_result_3	data/scenes/game_select/levels.inc.c	level_rhythm_datsu_extra_result_3	Look at those flowers! They're so relaxing...	嗯——清爽了！去看看花吧！	draft	
+拔掉它，拔掉它！"	draft	TODO 未校对
+data/scenes/game_select/levels.inc.c:level_rhythm_datsu_extra_result_1	data/scenes/game_select/levels.inc.c	level_rhythm_datsu_extra_result_1	I can't pluck anything at this speed!	毛长得太快了啊……	draft	TODO 未校对
+data/scenes/game_select/levels.inc.c:level_rhythm_datsu_extra_result_2	data/scenes/game_select/levels.inc.c	level_rhythm_datsu_extra_result_2	These hairs are pretty tough to pluck.	还真是挺难对付的毛啊。	draft	TODO 未校对
+data/scenes/game_select/levels.inc.c:level_rhythm_datsu_extra_result_3	data/scenes/game_select/levels.inc.c	level_rhythm_datsu_extra_result_3	Look at those flowers! They're so relaxing...	嗯——清爽了！去看看花吧！	draft	TODO 未校对
 data/scenes/game_select/levels.inc.c:level_showtime_1	data/scenes/game_select/levels.inc.c	level_showtime_1	Showtime	表演时间	final	
 data/scenes/game_select/levels.inc.c:level_showtime_1_desc	data/scenes/game_select/levels.inc.c	level_showtime_1_desc	Our plucky penguins\nare ready for their act!\nGet out there and wow\nthe crowd! It's showtime!	"企鹅小子们的
 表演时间
@@ -858,19 +950,19 @@ data/scenes/medal_corner/lessons_menu.inc.c:lesson_short_8	data/scenes/medal_cor
 data/scenes/medal_corner/lessons_menu.inc.c:lesson_short_9	data/scenes/medal_corner/lessons_menu.inc.c	lesson_short_9	Basic 9	短篇 ９	final	
 data/scenes/options/data.c:advance_options_desc_text[0]	data/scenes/options/data.c	advance_options_desc_text[0]	\0023\0013\001CSound Effects\n\0024\0011\001LEnglish   \0021Use the localized sound effects.\n\0024\0011\001LJapanese  \0021Use the original sound effects.	"音效
 中文   使用中文翻配音效
-日语   使用原版日语音效"	draft	control codes need review
+日语   使用原版日语音效"	draft	TODO 未校对; control codes need review
 data/scenes/options/data.c:advance_options_desc_text[1]	data/scenes/options/data.c	advance_options_desc_text[1]	\0023\0013\001CMusic\n\0024\0011\001LEnglish   \0021Use the localized music.\n\0024\0011\001LJapanese  \0021Use the original music.	"音乐
 中文翻唱   使用中文翻唱音乐
-日语原唱   使用原版日语音乐"	draft	control codes need review
+日语原唱   使用原版日语音乐"	draft	TODO 未校对; control codes need review
 data/scenes/options/data.c:advance_options_desc_text[2]	data/scenes/options/data.c	advance_options_desc_text[2]	\0023\0013\001CRumble\n\0024\0011\001LOn        \0021Rumble is active during gameplay.\n\0024\0011\001LOff       \0021Rumble is disabled.	"震动
 开       游玩时设备将会震动
-关       游玩时震动将被禁用"	draft	control codes need review
+关       游玩时震动将被禁用"	draft	TODO 未校对; control codes need review
 data/scenes/options/data.c:advance_options_desc_text[3]	data/scenes/options/data.c	advance_options_desc_text[3]	\0023\0013\001CShow Disclaimer\n\0024\0011\001LShow      \0021Show the disclaimer at startup.\n\0024\0011\001LSkip      \0021Skip the disclaimer at startup.	"汉化声明
 展示      游戏启动时展示汉化声明
-跳过      启动时不再展示汉化声明"	draft	control codes need review
+跳过      启动时不再展示汉化声明"	draft	TODO 未校对; control codes need review
 data/scenes/options/data.c:advance_options_desc_text[4]	data/scenes/options/data.c	advance_options_desc_text[4]	\0023\0013\001CGame Select Music\n\0024\0011\001LNormal    \0021Use Game Select 2 after the credits.\n\0024\0011\001LSwapped   \0021Use Game Select 1 after the credits.	"游戏选择菜单音乐
 启用切换   二周目将切换新音乐
-禁用切换   二周目仍播放旧音乐"	draft	control codes need review
+禁用切换   二周目仍播放旧音乐"	draft	TODO 未校对; control codes need review
 data/scenes/options/data.c:options_data_clear_confirm_text	data/scenes/options/data.c	options_data_clear_confirm_text	\0023\0013\001CAre you sure?\n\0021\0011\001C       Yes\n     No	"真的要删掉吗？
 　　　　　　　确认
 　　　　　　　取消"	final	control codes need review
@@ -880,11 +972,11 @@ data/scenes/options/data.c:options_desc_text[0]	data/scenes/options/data.c	optio
 data/scenes/options/data.c:options_desc_text[1]	data/scenes/options/data.c	options_desc_text[1]	\0023\0013\001CClear Data\n\0021\0011\001CThis will delete all of your save data and start\nyou over from the beginning. Be careful!	"清除数据
 会把至今为止的记录全部删掉，然后从头开始。
 要想清楚哦！"	final	control codes need review
-data/scenes/perfect/data.c:perfect_gift_directive_text[0]	data/scenes/perfect/data.c	perfect_gift_directive_text[0]	Listen to it in the studio!\n	"（可在录音室试听）
+data/scenes/perfect/data.c:perfect_gift_directive_text[0]	data/scenes/perfect/data.c	perfect_gift_directive_text[0]	（可在录音室试听）\n	"（可在录音室试听）
 "	final	
-data/scenes/perfect/data.c:perfect_gift_directive_text[1]	data/scenes/perfect/data.c	perfect_gift_directive_text[1]	Play it in the studio!\n	"（可在录音室演奏）
+data/scenes/perfect/data.c:perfect_gift_directive_text[1]	data/scenes/perfect/data.c	perfect_gift_directive_text[1]	（可在录音室演奏）\n	"（可在录音室演奏）
 "	final	
-data/scenes/perfect/data.c:perfect_gift_directive_text[2]	data/scenes/perfect/data.c	perfect_gift_directive_text[2]	Read it in the archives!\n	"（可在节奏资料室查看）
+data/scenes/perfect/data.c:perfect_gift_directive_text[2]	data/scenes/perfect/data.c	perfect_gift_directive_text[2]	（可在节奏资料室查看）\n	"（可在节奏资料室查看）
 "	final	
 data/scenes/results/data.inc.c:results_letter_ranks[0]	data/scenes/results/data.inc.c	results_letter_ranks[0]	:1.1D	:1.1Ｄ	final	
 data/scenes/results/data.inc.c:results_letter_ranks[1]	data/scenes/results/data.inc.c	results_letter_ranks[1]	:1.5C	:1.5Ｃ	final	
@@ -970,76 +1062,76 @@ data/scenes/studio/songs.inc.c:song_title	data/scenes/studio/songs.inc.c	song_ti
 data/scenes/studio/songs.inc.c:song_toran_to_porin	data/scenes/studio/songs.inc.c	song_toran_to_porin	Tram & Pauline	小蹦与小床	final	
 data/scenes/studio/songs.inc.c:song_toss_boys	data/scenes/studio/songs.inc.c	song_toss_boys	Toss Team	传球少年	final	
 data/scenes/studio/songs.inc.c:song_usagi_tobi	data/scenes/studio/songs.inc.c	song_usagi_tobi	Bunny Hop	跃兔	final	
-data/scenes/studio/songs.inc.c:song_wish	data/scenes/studio/songs.inc.c	song_wish	WISH - Can't Wait for You	WISH 我多想再为你等待	draft	
-data/scenes/studio/songs.inc.c:song_wish_short	data/scenes/studio/songs.inc.c	song_wish_short	WISH - Can't Wait...	WISH 我多想再…	draft	
+data/scenes/studio/songs.inc.c:song_wish	data/scenes/studio/songs.inc.c	song_wish	WISH - Can't Wait for You	WISH 我多想再为你等待	draft	TODO 未校对
+data/scenes/studio/songs.inc.c:song_wish_short	data/scenes/studio/songs.inc.c	song_wish_short	WISH - Can't Wait...	WISH 我多想再…	draft	TODO 未校对
 data/scenes/studio/songs.inc.c:song_yarinaoshi	data/scenes/studio/songs.inc.c	song_yarinaoshi	Try Again	再试一次吧	final	
-games/bon_odori/bon_dance_text.c:D_0806a384	games/bon_odori/bon_dance_text.c	D_0806a384	The first half was kinda rough...	前半段还差一点啊。	draft	
-games/bon_odori/bon_dance_text.c:D_0806a3a4	games/bon_odori/bon_dance_text.c	D_0806a3a4	The first half was pretty good!	前半段很稳嘛！	draft	
+games/bon_odori/bon_dance_text.c:D_0806a384	games/bon_odori/bon_dance_text.c	D_0806a384	The first half was kinda rough...	前半段还差一点啊。	draft	TODO 未校对
+games/bon_odori/bon_dance_text.c:D_0806a3a4	games/bon_odori/bon_dance_text.c	D_0806a3a4	The first half was pretty good!	前半段很稳嘛！	draft	TODO 未校对
 games/bon_odori/bon_dance_text.c:D_0806a3bc	games/bon_odori/bon_dance_text.c	D_0806a3bc	The second half was rather dreary.	后半段气氛有点冷下来了啊。	final	
-games/bon_odori/bon_dance_text.c:D_0806a3e0	games/bon_odori/bon_dance_text.c	D_0806a3e0	The second half was incredible!	后半段热起来啦〜！	draft	
-games/bon_odori/bon_dance_text.c:D_0806a400	games/bon_odori/bon_dance_text.c	D_0806a400	It really ramped up near the end!	高潮部分很到位！！	draft	
-games/bon_odori/bon_dance_text.c:D_0806a424	games/bon_odori/bon_dance_text.c	D_0806a424	The ending was pitch perfect!	最后收得很漂亮呢！	draft	
-games/bon_odori/bon_dance_text.c:D_0806a448	games/bon_odori/bon_dance_text.c	D_0806a448	The audience says...	周围人的评价	draft	
-games/bon_odori/bon_dance_text.c:text_bon_dance_ame_ga_agare_ba	games/bon_odori/bon_dance_text.c	text_bon_dance_ame_ga_agare_ba	.0:0Ame ga agare ba~	.0:0如果雨停了的话～	draft	
-games/bon_odori/bon_dance_text.c:text_bon_dance_don_don_pan_pan	games/bon_odori/bon_dance_text.c	text_bon_dance_don_don_pan_pan	.1:0Do-n do-n .2:0pa-n pa-n	咚　咚　嗙　嗙	draft	control codes need review
-games/bon_odori/bon_dance_text.c:text_bon_dance_dondo_pan_pan	games/bon_odori/bon_dance_text.c	text_bon_dance_dondo_pan_pan	.1:0Dondo .2:0pa-n pan	咚咚　嗙　嗙	draft	control codes need review
-games/bon_odori/bon_dance_text.c:text_bon_dance_dondo_panpa	games/bon_odori/bon_dance_text.c	text_bon_dance_dondo_panpa	.1:0Dondo .2:0panpa	咚咚　嗙嗙	draft	control codes need review
-games/bon_odori/bon_dance_text.c:text_bon_dance_dondo_panpa_dondo_panpa	games/bon_odori/bon_dance_text.c	text_bon_dance_dondo_panpa_dondo_panpa	.1:0Dondo .2:0panpa .1:0dondo .2:0panpa	咚咚　嗙嗙　咚咚　嗙嗙	draft	control codes need review
-games/bon_odori/bon_dance_text.c:text_bon_dance_dondo_panpa_pan	games/bon_odori/bon_dance_text.c	text_bon_dance_dondo_panpa_pan	.1:0Dondo .2:0panpa pan	咚咚　嗙嗙　嗙	draft	control codes need review
-games/bon_odori/bon_dance_text.c:text_bon_dance_ha	games/bon_odori/bon_dance_text.c	text_bon_dance_ha	.0:0Haa~	.0:0哈～	draft	
-games/bon_odori/bon_dance_text.c:text_bon_dance_ha_bon_odori	games/bon_odori/bon_dance_text.c	text_bon_dance_ha_bon_odori	.0:0Ha~ Bon Odori	.0:0哈～ 跳这盂兰盆舞	draft	
-games/bon_odori/bon_dance_text.c:text_bon_dance_haa	games/bon_odori/bon_dance_text.c	text_bon_dance_haa	.0:0Ha~ Ah~	.0:0哈～啊～	draft	
-games/bon_odori/bon_dance_text.c:text_bon_dance_hanabi_agare_ba	games/bon_odori/bon_dance_text.c	text_bon_dance_hanabi_agare_ba	.0:0Hanabi agare ba~	.0:0如果烟花绽放啦～	draft	
-games/bon_odori/bon_dance_text.c:text_bon_dance_hora_matsuri_da_wasshoi	games/bon_odori/bon_dance_text.c	text_bon_dance_hora_matsuri_da_wasshoi	.0:0Hora! Matsuri da wasshoi!	.0:0看啊！盛大节日 哇—咻—！	draft	
-games/bon_odori/bon_dance_text.c:text_bon_dance_kansei_agaru	games/bon_odori/bon_dance_text.c	text_bon_dance_kansei_agaru	.0:0Kansei agaru~	.0:0大家都欢声笑语～	draft	
-games/bon_odori/bon_dance_text.c:text_bon_dance_korezo	games/bon_odori/bon_dance_text.c	text_bon_dance_korezo	.0:0Korezo	.0:0这就是	draft	
-games/bon_odori/bon_dance_text.c:text_bon_dance_kyuryo_agaru	games/bon_odori/bon_dance_text.c	text_bon_dance_kyuryo_agaru	.0:0Kyuryou agaru~	.0:0大家有更多工资～	draft	
-games/bon_odori/bon_dance_text.c:text_bon_dance_matsuri_da_wasshoi	games/bon_odori/bon_dance_text.c	text_bon_dance_matsuri_da_wasshoi	.0:0Matsuri da wasshoi!	.0:0整个日本 哇—咻—！	draft	
-games/bon_odori/bon_dance_text.c:text_bon_dance_meido_in_japan	games/bon_odori/bon_dance_text.c	text_bon_dance_meido_in_japan	.0:0made in Ja.2PAN	Made in Japan	draft	control codes need review
-games/bon_odori/bon_dance_text.c:text_bon_dance_ninki_agare_ba	games/bon_odori/bon_dance_text.c	text_bon_dance_ninki_agare_ba	.0:0Ninki agare ba~	.0:0如果人气兴旺啊～	draft	
-games/bon_odori/bon_dance_text.c:text_bon_dance_nippon_chu_ga_wasshoi	games/bon_odori/bon_dance_text.c	text_bon_dance_nippon_chu_ga_wasshoi	.0:0Nippon chuu ga wasshoi!	.0:0在节日中 哇—咻—！	draft	
-games/bon_odori/bon_dance_text.c:text_bon_dance_pan	games/bon_odori/bon_dance_text.c	text_bon_dance_pan	.2:0Pan	.2:0嗙	draft	
-games/bon_odori/bon_dance_text.c:text_bon_dance_pan_pan_dondo_don	games/bon_odori/bon_dance_text.c	text_bon_dance_pan_pan_dondo_don	.2:0Pan pan .1:0dondo don	嗙　嗙　咚咚　咚	draft	control codes need review
-games/bon_odori/bon_dance_text.c:text_bon_dance_pan_panpa_pa	games/bon_odori/bon_dance_text.c	text_bon_dance_pan_panpa_pa	.2:0Pa-n panpa pan	.2:0嗙　嗙嗙　嗙	draft	
-games/bon_odori/bon_dance_text.c:text_bon_dance_panpa_don_pan	games/bon_odori/bon_dance_text.c	text_bon_dance_panpa_don_pan	.2:0Panpa .1:0do-n .2:0pan	嗙嗙　咚　嗙	draft	control codes need review
-games/bon_odori/bon_dance_text.c:text_bon_dance_panpa_dondo	games/bon_odori/bon_dance_text.c	text_bon_dance_panpa_dondo	.2:0Panpa .1:0dondo 	嗙嗙　咚咚	draft	control codes need review
-games/bon_odori/bon_dance_text.c:text_bon_dance_sore_hikkuri_kaette	games/bon_odori/bon_dance_text.c	text_bon_dance_sore_hikkuri_kaette	.0:0Sore hikkuri kaette	.0:0嗖嘞 让我们转起圈来	draft	
-games/bon_odori/bon_dance_text.c:text_bon_dance_yagura_ni_agaru	games/bon_odori/bon_dance_text.c	text_bon_dance_yagura_ni_agaru	.0:0Yagura ni agaru~	.0:0登上塔楼去眺望～	draft	
-games/bon_odori/bon_odori_text.c:D_080676b4	games/bon_odori/bon_odori_text.c	D_080676b4	The first half was kinda rough...	前半段还差一点啊。	draft	
-games/bon_odori/bon_odori_text.c:D_080676d4	games/bon_odori/bon_odori_text.c	D_080676d4	The first half was really good!	前半段很稳嘛！	draft	
+games/bon_odori/bon_dance_text.c:D_0806a3e0	games/bon_odori/bon_dance_text.c	D_0806a3e0	The second half was incredible!	后半段热起来啦〜！	draft	TODO 未校对
+games/bon_odori/bon_dance_text.c:D_0806a400	games/bon_odori/bon_dance_text.c	D_0806a400	It really ramped up near the end!	高潮部分很到位！！	draft	TODO 未校对
+games/bon_odori/bon_dance_text.c:D_0806a424	games/bon_odori/bon_dance_text.c	D_0806a424	The ending was pitch perfect!	最后收得很漂亮呢！	draft	TODO 未校对
+games/bon_odori/bon_dance_text.c:D_0806a448	games/bon_odori/bon_dance_text.c	D_0806a448	The audience says...	周围人的评价	draft	TODO 未校对
+games/bon_odori/bon_dance_text.c:text_bon_dance_ame_ga_agare_ba	games/bon_odori/bon_dance_text.c	text_bon_dance_ame_ga_agare_ba	.0:0Ame ga agare ba~	.0:0如果雨停了的话～	draft	TODO 未校对
+games/bon_odori/bon_dance_text.c:text_bon_dance_don_don_pan_pan	games/bon_odori/bon_dance_text.c	text_bon_dance_don_don_pan_pan	.1:0Do-n do-n .2:0pa-n pa-n	咚　咚　嗙　嗙	draft	TODO 未校对; control codes need review
+games/bon_odori/bon_dance_text.c:text_bon_dance_dondo_pan_pan	games/bon_odori/bon_dance_text.c	text_bon_dance_dondo_pan_pan	.1:0Dondo .2:0pa-n pan	咚咚　嗙　嗙	draft	TODO 未校对; control codes need review
+games/bon_odori/bon_dance_text.c:text_bon_dance_dondo_panpa	games/bon_odori/bon_dance_text.c	text_bon_dance_dondo_panpa	.1:0Dondo .2:0panpa	咚咚　嗙嗙	draft	TODO 未校对; control codes need review
+games/bon_odori/bon_dance_text.c:text_bon_dance_dondo_panpa_dondo_panpa	games/bon_odori/bon_dance_text.c	text_bon_dance_dondo_panpa_dondo_panpa	.1:0Dondo .2:0panpa .1:0dondo .2:0panpa	咚咚　嗙嗙　咚咚　嗙嗙	draft	TODO 未校对; control codes need review
+games/bon_odori/bon_dance_text.c:text_bon_dance_dondo_panpa_pan	games/bon_odori/bon_dance_text.c	text_bon_dance_dondo_panpa_pan	.1:0Dondo .2:0panpa pan	咚咚　嗙嗙　嗙	draft	TODO 未校对; control codes need review
+games/bon_odori/bon_dance_text.c:text_bon_dance_ha	games/bon_odori/bon_dance_text.c	text_bon_dance_ha	.0:0Haa~	.0:0哈～	draft	TODO 未校对
+games/bon_odori/bon_dance_text.c:text_bon_dance_ha_bon_odori	games/bon_odori/bon_dance_text.c	text_bon_dance_ha_bon_odori	.0:0Ha~ Bon Odori	.0:0哈～ 跳这盂兰盆舞	draft	TODO 未校对
+games/bon_odori/bon_dance_text.c:text_bon_dance_haa	games/bon_odori/bon_dance_text.c	text_bon_dance_haa	.0:0Ha~ Ah~	.0:0哈～啊～	draft	TODO 未校对
+games/bon_odori/bon_dance_text.c:text_bon_dance_hanabi_agare_ba	games/bon_odori/bon_dance_text.c	text_bon_dance_hanabi_agare_ba	.0:0Hanabi agare ba~	.0:0如果烟花绽放啦～	draft	TODO 未校对
+games/bon_odori/bon_dance_text.c:text_bon_dance_hora_matsuri_da_wasshoi	games/bon_odori/bon_dance_text.c	text_bon_dance_hora_matsuri_da_wasshoi	.0:0Hora! Matsuri da wasshoi!	.0:0看啊！盛大节日 哇—咻—！	draft	TODO 未校对
+games/bon_odori/bon_dance_text.c:text_bon_dance_kansei_agaru	games/bon_odori/bon_dance_text.c	text_bon_dance_kansei_agaru	.0:0Kansei agaru~	.0:0大家都欢声笑语～	draft	TODO 未校对
+games/bon_odori/bon_dance_text.c:text_bon_dance_korezo	games/bon_odori/bon_dance_text.c	text_bon_dance_korezo	.0:0Korezo	.0:0这就是	draft	TODO 未校对
+games/bon_odori/bon_dance_text.c:text_bon_dance_kyuryo_agaru	games/bon_odori/bon_dance_text.c	text_bon_dance_kyuryo_agaru	.0:0Kyuryou agaru~	.0:0大家有更多工资～	draft	TODO 未校对
+games/bon_odori/bon_dance_text.c:text_bon_dance_matsuri_da_wasshoi	games/bon_odori/bon_dance_text.c	text_bon_dance_matsuri_da_wasshoi	.0:0Matsuri da wasshoi!	.0:0整个日本 哇—咻—！	draft	TODO 未校对
+games/bon_odori/bon_dance_text.c:text_bon_dance_meido_in_japan	games/bon_odori/bon_dance_text.c	text_bon_dance_meido_in_japan	.0:0made in Ja.2PAN	Made in Japan	draft	TODO 未校对; control codes need review
+games/bon_odori/bon_dance_text.c:text_bon_dance_ninki_agare_ba	games/bon_odori/bon_dance_text.c	text_bon_dance_ninki_agare_ba	.0:0Ninki agare ba~	.0:0如果人气兴旺啊～	draft	TODO 未校对
+games/bon_odori/bon_dance_text.c:text_bon_dance_nippon_chu_ga_wasshoi	games/bon_odori/bon_dance_text.c	text_bon_dance_nippon_chu_ga_wasshoi	.0:0Nippon chuu ga wasshoi!	.0:0在节日中 哇—咻—！	draft	TODO 未校对
+games/bon_odori/bon_dance_text.c:text_bon_dance_pan	games/bon_odori/bon_dance_text.c	text_bon_dance_pan	.2:0Pan	.2:0嗙	draft	TODO 未校对
+games/bon_odori/bon_dance_text.c:text_bon_dance_pan_pan_dondo_don	games/bon_odori/bon_dance_text.c	text_bon_dance_pan_pan_dondo_don	.2:0Pan pan .1:0dondo don	嗙　嗙　咚咚　咚	draft	TODO 未校对; control codes need review
+games/bon_odori/bon_dance_text.c:text_bon_dance_pan_panpa_pa	games/bon_odori/bon_dance_text.c	text_bon_dance_pan_panpa_pa	.2:0Pa-n panpa pan	.2:0嗙　嗙嗙　嗙	draft	TODO 未校对
+games/bon_odori/bon_dance_text.c:text_bon_dance_panpa_don_pan	games/bon_odori/bon_dance_text.c	text_bon_dance_panpa_don_pan	.2:0Panpa .1:0do-n .2:0pan	嗙嗙　咚　嗙	draft	TODO 未校对; control codes need review
+games/bon_odori/bon_dance_text.c:text_bon_dance_panpa_dondo	games/bon_odori/bon_dance_text.c	text_bon_dance_panpa_dondo	.2:0Panpa .1:0dondo 	嗙嗙　咚咚	draft	TODO 未校对; control codes need review
+games/bon_odori/bon_dance_text.c:text_bon_dance_sore_hikkuri_kaette	games/bon_odori/bon_dance_text.c	text_bon_dance_sore_hikkuri_kaette	.0:0Sore hikkuri kaette	.0:0嗖嘞 让我们转起圈来	draft	TODO 未校对
+games/bon_odori/bon_dance_text.c:text_bon_dance_yagura_ni_agaru	games/bon_odori/bon_dance_text.c	text_bon_dance_yagura_ni_agaru	.0:0Yagura ni agaru~	.0:0登上塔楼去眺望～	draft	TODO 未校对
+games/bon_odori/bon_odori_text.c:D_080676b4	games/bon_odori/bon_odori_text.c	D_080676b4	The first half was kinda rough...	前半段还差一点啊。	draft	TODO 未校对
+games/bon_odori/bon_odori_text.c:D_080676d4	games/bon_odori/bon_odori_text.c	D_080676d4	The first half was really good!	前半段很稳嘛！	draft	TODO 未校对
 games/bon_odori/bon_odori_text.c:D_080676ec	games/bon_odori/bon_odori_text.c	D_080676ec	The second half was sorta sloppy.	后半段气氛有点冷下来了啊。	final	
-games/bon_odori/bon_odori_text.c:D_08067710	games/bon_odori/bon_odori_text.c	D_08067710	The second half was incredible!	后半段热起来啦〜！	draft	
-games/bon_odori/bon_odori_text.c:D_08067730	games/bon_odori/bon_odori_text.c	D_08067730	It really ramped up near the end!	高潮部分很到位！！	draft	
-games/bon_odori/bon_odori_text.c:D_08067754	games/bon_odori/bon_odori_text.c	D_08067754	The ending was pitch perfect!	最后收得很漂亮呢！	draft	
-games/bon_odori/bon_odori_text.c:D_08067778	games/bon_odori/bon_odori_text.c	D_08067778	The audience says...	周围人的评价	draft	
-games/bon_odori/bon_odori_text.c:D_08067a84	games/bon_odori/bon_odori_text.c	D_08067a84	.6:1Welcome to the Bon Festival!	.6:1来跳盆舞吧！	draft	
+games/bon_odori/bon_odori_text.c:D_08067710	games/bon_odori/bon_odori_text.c	D_08067710	The second half was incredible!	后半段热起来啦〜！	draft	TODO 未校对
+games/bon_odori/bon_odori_text.c:D_08067730	games/bon_odori/bon_odori_text.c	D_08067730	It really ramped up near the end!	高潮部分很到位！！	draft	TODO 未校对
+games/bon_odori/bon_odori_text.c:D_08067754	games/bon_odori/bon_odori_text.c	D_08067754	The ending was pitch perfect!	最后收得很漂亮呢！	draft	TODO 未校对
+games/bon_odori/bon_odori_text.c:D_08067778	games/bon_odori/bon_odori_text.c	D_08067778	The audience says...	周围人的评价	draft	TODO 未校对
+games/bon_odori/bon_odori_text.c:D_08067a84	games/bon_odori/bon_odori_text.c	D_08067a84	.6:1Welcome to the Bon Festival!	.6:1来跳盆舞吧！	draft	TODO 未校对
 games/bon_odori/bon_odori_text.c:D_08067aa4	games/bon_odori/bon_odori_text.c	D_08067aa4	".6:1When we say \""Pan,\"" you clap!"	.6:1照着大家的样子拍手哦。	final	
-games/bon_odori/bon_odori_text.c:D_08067ad0	games/bon_odori/bon_odori_text.c	D_08067ad0	.6:0Nice clapping!	.6:0ＯＫ！	draft	
-games/bon_odori/bon_odori_text.c:D_08067adc	games/bon_odori/bon_odori_text.c	D_08067adc	".6:1When we say \""Panpa,\"" clap twice!"	.6:1再来一遍吧〜！	draft	
-games/bon_odori/bon_odori_text.c:D_08067b00	games/bon_odori/bon_odori_text.c	D_08067b00	.6:1Looks like you've got it!	.6:1那么，正式上场可要加油哦！	draft	
-games/bon_odori/bon_odori_text.c:text_bon_odori_ame_ga_agare_ba	games/bon_odori/bon_odori_text.c	text_bon_odori_ame_ga_agare_ba	.0:0Ame ga agare ba~	.0:0如果雨停了的话～	draft	
-games/bon_odori/bon_odori_text.c:text_bon_odori_don_don_pan	games/bon_odori/bon_odori_text.c	text_bon_odori_don_don_pan	.1:0Do-n do-n .2:0pan	咚　咚　嗙	draft	control codes need review
-games/bon_odori/bon_odori_text.c:text_bon_odori_don_don_pan_pan	games/bon_odori/bon_odori_text.c	text_bon_odori_don_don_pan_pan	.1:0Do-n do-n .2:0pa-n pa-n	咚　咚　嗙　嗙	draft	control codes need review
-games/bon_odori/bon_odori_text.c:text_bon_odori_don_don_pan_pan_2	games/bon_odori/bon_odori_text.c	text_bon_odori_don_don_pan_pan_2	.1:0Do-n do-n .2:0pa-n pan	咚　咚　嗙　嗙	draft	control codes need review
-games/bon_odori/bon_odori_text.c:text_bon_odori_don_pan_pan	games/bon_odori/bon_odori_text.c	text_bon_odori_don_pan_pan	.1:0Do-n .2:0pa-n pan	咚　嗙　嗙	draft	control codes need review
-games/bon_odori/bon_odori_text.c:text_bon_odori_dondo_pan_pan	games/bon_odori/bon_odori_text.c	text_bon_odori_dondo_pan_pan	.1:0Dondo .2:0pa-n pan	咚咚　嗙　嗙	draft	control codes need review
-games/bon_odori/bon_odori_text.c:text_bon_odori_dondo_panpa	games/bon_odori/bon_odori_text.c	text_bon_odori_dondo_panpa	.1:0Dondo .2:0panpa	咚咚　嗙嗙	draft	control codes need review
-games/bon_odori/bon_odori_text.c:text_bon_odori_dondo_panpa_dondo_panpa	games/bon_odori/bon_odori_text.c	text_bon_odori_dondo_panpa_dondo_panpa	.1:0Dondo .2:0panpa .1:0dondo .2:0panpa	咚咚　嗙嗙　咚咚　嗙嗙	draft	control codes need review
-games/bon_odori/bon_odori_text.c:text_bon_odori_ha	games/bon_odori/bon_odori_text.c	text_bon_odori_ha	.0:0Haa~	.0:0哈～	draft	
-games/bon_odori/bon_odori_text.c:text_bon_odori_ha_bon_odori	games/bon_odori/bon_odori_text.c	text_bon_odori_ha_bon_odori	.0:0Ha~ Bon Odori	.0:0哈～　跳这盂兰盆舞	draft	
-games/bon_odori/bon_odori_text.c:text_bon_odori_haa	games/bon_odori/bon_odori_text.c	text_bon_odori_haa	.0:0Ha~ Ah~	.0:0哈～啊～	draft	
-games/bon_odori/bon_odori_text.c:text_bon_odori_hanabi_agare_ba	games/bon_odori/bon_odori_text.c	text_bon_odori_hanabi_agare_ba	.0:0Hanabi agare ba~	.0:0如果烟花绽放啦～	draft	
-games/bon_odori/bon_odori_text.c:text_bon_odori_hora_matsuri_da_wasshoi	games/bon_odori/bon_odori_text.c	text_bon_odori_hora_matsuri_da_wasshoi	.0:0Hora! Matsuri da wasshoi!	.0:0看啊！盛大节日 哇—咻—！	draft	
-games/bon_odori/bon_odori_text.c:text_bon_odori_kansei_agaru	games/bon_odori/bon_odori_text.c	text_bon_odori_kansei_agaru	.0:0Kansei agaru~	.0:0大家都欢声笑语～	draft	
-games/bon_odori/bon_odori_text.c:text_bon_odori_korezo	games/bon_odori/bon_odori_text.c	text_bon_odori_korezo	.0:0Korezo	.0:0这就是	draft	
-games/bon_odori/bon_odori_text.c:text_bon_odori_kyuryo_agaru	games/bon_odori/bon_odori_text.c	text_bon_odori_kyuryo_agaru	.0:0Kyuryou agaru~	.0:0大家有更多工资～	draft	
-games/bon_odori/bon_odori_text.c:text_bon_odori_matsuri_da_wasshoi	games/bon_odori/bon_odori_text.c	text_bon_odori_matsuri_da_wasshoi	.0:0Matsuri da wasshoi!	.0:0整个日本　哇—咻—！	draft	
-games/bon_odori/bon_odori_text.c:text_bon_odori_meido_in_japan	games/bon_odori/bon_odori_text.c	text_bon_odori_meido_in_japan	.0:0made in Ja.2PAN	Ｍａｄｅ　ｉｎ　Ｊａｐａｎ	draft	control codes need review
-games/bon_odori/bon_odori_text.c:text_bon_odori_ninki_agare_ba	games/bon_odori/bon_odori_text.c	text_bon_odori_ninki_agare_ba	.0:0Ninki agare ba~	.0:0如果人气兴旺啊～	draft	
-games/bon_odori/bon_odori_text.c:text_bon_odori_nippon_chu_ga_wasshoi	games/bon_odori/bon_odori_text.c	text_bon_odori_nippon_chu_ga_wasshoi	.0:0Nippon chuu ga wasshoi!	.0:0在节日中　哇—咻—！	draft	
-games/bon_odori/bon_odori_text.c:text_bon_odori_pan_pan	games/bon_odori/bon_odori_text.c	text_bon_odori_pan_pan	.2:0Pan pan	.2:0嗙　嗙	draft	
-games/bon_odori/bon_odori_text.c:text_bon_odori_sore_hikkuri_kaette	games/bon_odori/bon_odori_text.c	text_bon_odori_sore_hikkuri_kaette	.0:0Sore hikkuri kaette	.0:0嗖嘞　让我们转起圈来	draft	
-games/bon_odori/bon_odori_text.c:text_bon_odori_yagura_ni_agaru	games/bon_odori/bon_odori_text.c	text_bon_odori_yagura_ni_agaru	.0:0Yagura ni agaru~	.0:0登上塔楼去眺望～	draft	
+games/bon_odori/bon_odori_text.c:D_08067ad0	games/bon_odori/bon_odori_text.c	D_08067ad0	.6:0Nice clapping!	.6:0ＯＫ！	draft	TODO 未校对
+games/bon_odori/bon_odori_text.c:D_08067adc	games/bon_odori/bon_odori_text.c	D_08067adc	".6:1When we say \""Panpa,\"" clap twice!"	.6:1再来一遍吧〜！	draft	TODO 未校对
+games/bon_odori/bon_odori_text.c:D_08067b00	games/bon_odori/bon_odori_text.c	D_08067b00	.6:1Looks like you've got it!	.6:1那么，正式上场可要加油哦！	draft	TODO 未校对
+games/bon_odori/bon_odori_text.c:text_bon_odori_ame_ga_agare_ba	games/bon_odori/bon_odori_text.c	text_bon_odori_ame_ga_agare_ba	.0:0Ame ga agare ba~	.0:0如果雨停了的话～	draft	TODO 未校对
+games/bon_odori/bon_odori_text.c:text_bon_odori_don_don_pan	games/bon_odori/bon_odori_text.c	text_bon_odori_don_don_pan	.1:0Do-n do-n .2:0pan	咚　咚　嗙	draft	TODO 未校对; control codes need review
+games/bon_odori/bon_odori_text.c:text_bon_odori_don_don_pan_pan	games/bon_odori/bon_odori_text.c	text_bon_odori_don_don_pan_pan	.1:0Do-n do-n .2:0pa-n pa-n	咚　咚　嗙　嗙	draft	TODO 未校对; control codes need review
+games/bon_odori/bon_odori_text.c:text_bon_odori_don_don_pan_pan_2	games/bon_odori/bon_odori_text.c	text_bon_odori_don_don_pan_pan_2	.1:0Do-n do-n .2:0pa-n pan	咚　咚　嗙　嗙	draft	TODO 未校对; control codes need review
+games/bon_odori/bon_odori_text.c:text_bon_odori_don_pan_pan	games/bon_odori/bon_odori_text.c	text_bon_odori_don_pan_pan	.1:0Do-n .2:0pa-n pan	咚　嗙　嗙	draft	TODO 未校对; control codes need review
+games/bon_odori/bon_odori_text.c:text_bon_odori_dondo_pan_pan	games/bon_odori/bon_odori_text.c	text_bon_odori_dondo_pan_pan	.1:0Dondo .2:0pa-n pan	咚咚　嗙　嗙	draft	TODO 未校对; control codes need review
+games/bon_odori/bon_odori_text.c:text_bon_odori_dondo_panpa	games/bon_odori/bon_odori_text.c	text_bon_odori_dondo_panpa	.1:0Dondo .2:0panpa	咚咚　嗙嗙	draft	TODO 未校对; control codes need review
+games/bon_odori/bon_odori_text.c:text_bon_odori_dondo_panpa_dondo_panpa	games/bon_odori/bon_odori_text.c	text_bon_odori_dondo_panpa_dondo_panpa	.1:0Dondo .2:0panpa .1:0dondo .2:0panpa	咚咚　嗙嗙　咚咚　嗙嗙	draft	TODO 未校对; control codes need review
+games/bon_odori/bon_odori_text.c:text_bon_odori_ha	games/bon_odori/bon_odori_text.c	text_bon_odori_ha	.0:0Haa~	.0:0哈～	draft	TODO 未校对
+games/bon_odori/bon_odori_text.c:text_bon_odori_ha_bon_odori	games/bon_odori/bon_odori_text.c	text_bon_odori_ha_bon_odori	.0:0Ha~ Bon Odori	.0:0哈～　跳这盂兰盆舞	draft	TODO 未校对
+games/bon_odori/bon_odori_text.c:text_bon_odori_haa	games/bon_odori/bon_odori_text.c	text_bon_odori_haa	.0:0Ha~ Ah~	.0:0哈～啊～	draft	TODO 未校对
+games/bon_odori/bon_odori_text.c:text_bon_odori_hanabi_agare_ba	games/bon_odori/bon_odori_text.c	text_bon_odori_hanabi_agare_ba	.0:0Hanabi agare ba~	.0:0如果烟花绽放啦～	draft	TODO 未校对
+games/bon_odori/bon_odori_text.c:text_bon_odori_hora_matsuri_da_wasshoi	games/bon_odori/bon_odori_text.c	text_bon_odori_hora_matsuri_da_wasshoi	.0:0Hora! Matsuri da wasshoi!	.0:0看啊！盛大节日 哇—咻—！	draft	TODO 未校对
+games/bon_odori/bon_odori_text.c:text_bon_odori_kansei_agaru	games/bon_odori/bon_odori_text.c	text_bon_odori_kansei_agaru	.0:0Kansei agaru~	.0:0大家都欢声笑语～	draft	TODO 未校对
+games/bon_odori/bon_odori_text.c:text_bon_odori_korezo	games/bon_odori/bon_odori_text.c	text_bon_odori_korezo	.0:0Korezo	.0:0这就是	draft	TODO 未校对
+games/bon_odori/bon_odori_text.c:text_bon_odori_kyuryo_agaru	games/bon_odori/bon_odori_text.c	text_bon_odori_kyuryo_agaru	.0:0Kyuryou agaru~	.0:0大家有更多工资～	draft	TODO 未校对
+games/bon_odori/bon_odori_text.c:text_bon_odori_matsuri_da_wasshoi	games/bon_odori/bon_odori_text.c	text_bon_odori_matsuri_da_wasshoi	.0:0Matsuri da wasshoi!	.0:0整个日本　哇—咻—！	draft	TODO 未校对
+games/bon_odori/bon_odori_text.c:text_bon_odori_meido_in_japan	games/bon_odori/bon_odori_text.c	text_bon_odori_meido_in_japan	.0:0made in Ja.2PAN	Ｍａｄｅ　ｉｎ　Ｊａｐａｎ	draft	TODO 未校对; control codes need review
+games/bon_odori/bon_odori_text.c:text_bon_odori_ninki_agare_ba	games/bon_odori/bon_odori_text.c	text_bon_odori_ninki_agare_ba	.0:0Ninki agare ba~	.0:0如果人气兴旺啊～	draft	TODO 未校对
+games/bon_odori/bon_odori_text.c:text_bon_odori_nippon_chu_ga_wasshoi	games/bon_odori/bon_odori_text.c	text_bon_odori_nippon_chu_ga_wasshoi	.0:0Nippon chuu ga wasshoi!	.0:0在节日中　哇—咻—！	draft	TODO 未校对
+games/bon_odori/bon_odori_text.c:text_bon_odori_pan_pan	games/bon_odori/bon_odori_text.c	text_bon_odori_pan_pan	.2:0Pan pan	.2:0嗙　嗙	draft	TODO 未校对
+games/bon_odori/bon_odori_text.c:text_bon_odori_sore_hikkuri_kaette	games/bon_odori/bon_odori_text.c	text_bon_odori_sore_hikkuri_kaette	.0:0Sore hikkuri kaette	.0:0嗖嘞　让我们转起圈来	draft	TODO 未校对
+games/bon_odori/bon_odori_text.c:text_bon_odori_yagura_ni_agaru	games/bon_odori/bon_odori_text.c	text_bon_odori_yagura_ni_agaru	.0:0Yagura ni agaru~	.0:0登上塔楼去眺望～	draft	TODO 未校对
 games/bouncy_road/bouncy_road_text.c:D_0805b778	games/bouncy_road/bouncy_road_text.c	D_0805b778	Word on the Wind	风声传闻	final	
 games/bouncy_road/bouncy_road_text.c:D_0805b784	games/bouncy_road/bouncy_road_text.c	D_0805b784	Your basics need work.	基本功还不太行呢。	final	
 games/bouncy_road/bouncy_road_text.c:D_0805b7a4	games/bouncy_road/bouncy_road_text.c	D_0805b7a4	The consecutive spheres made you panic...	连续来球时，失误有点太多了呢。	final	
@@ -1939,18 +2031,18 @@ games/rap_men/rap_women_text.c:D_08067e6c	games/rap_men/rap_women_text.c	D_08067
 games/rap_men/rap_women_text.c:D_08067e98	games/rap_men/rap_women_text.c	D_08067e98	RAPNOTES from the Girls:	她们的点评	final	
 games/rap_men/rap_women_text.c:D_08067eb0	games/rap_men/rap_women_text.c	D_08067eb0	Shall we?	上吧！	final	
 games/rap_men/rap_women_text.c:D_08067ebc	games/rap_men/rap_women_text.c	D_08067ebc	We should do that again sometime!	下次再一起玩呀〜	final	
-games/rap_men/rap_women_unused.bs:text_rap_women_unused_aketeii_kamo_ne	games/rap_men/rap_women_unused.bs	text_rap_women_unused_aketeii_kamo_ne	.9:1Open 'em up, .9:0ya feel me?.8:1	应该可以打开的吧	draft	control codes need review
-games/rap_men/rap_women_unused.bs:text_rap_women_unused_amakute_saikou	games/rap_men/rap_women_unused.bs	text_rap_women_unused_amakute_saikou	.a:1Sweets are .a:0so AWESOME!.8:1	甜品都太棒啦一！！	draft	control codes need review
-games/rap_men/rap_women_unused.bs:text_rap_women_unused_betsubara_saikou	games/rap_men/rap_women_unused.bs	text_rap_women_unused_betsubara_saikou	.a:1Cakes are .a:0so AWESOME!.8:1	半饱腹最棒啦一！！	draft	control codes need review
-games/rap_men/rap_women_unused.bs:text_rap_women_unused_dare_ni_mo_naisho	games/rap_men/rap_women_unused.bs	text_rap_women_unused_dare_ni_mo_naisho	.a:1Tell 'em we are .a:0LOATHSOME!.8:1	对谁都要保密呀一！！	draft	control codes need review
-games/rap_men/rap_women_unused.bs:text_rap_women_unused_juji_desu_ka	games/rap_men/rap_women_unused.bs	text_rap_women_unused_juji_desu_ka	.b:1It's 10 AM, .b:0huh?.8:1	十点了吗？	draft	control codes need review
-games/rap_men/rap_women_unused.bs:text_rap_women_unused_kare_ni_wa_naisho	games/rap_men/rap_women_unused.bs	text_rap_women_unused_kare_ni_wa_naisho	.a:1Clueless that we .a:0STOLE 'EM!.8:1	对他要保密啊一！！	draft	control codes need review
-games/rap_men/rap_women_unused.bs:text_rap_women_unused_kare_no_oyatsu_da_ne	games/rap_men/rap_women_unused.bs	text_rap_women_unused_kare_no_oyatsu_da_ne	.9:1These are all their snacks,.9:0 ya see?.8:1	那是他放的点心吧	draft	control codes need review
-games/rap_men/rap_women_unused.bs:text_rap_women_unused_kibun_wa_saikou	games/rap_men/rap_women_unused.bs	text_rap_women_unused_kibun_wa_saikou	.a:1I feel .a:0so AWESOME!.8:1	心情最棒啦一！！	draft	control codes need review
-games/rap_men/rap_women_unused.bs:text_rap_women_unused_naisho_desu_ka	games/rap_men/rap_women_unused.bs	text_rap_women_unused_naisho_desu_ka	.b:1Who's to know, .b:0huh?.8:1	要保密吗？	draft	control codes need review
-games/rap_men/rap_women_unused.bs:text_rap_women_unused_oyatsu_desu_ka	games/rap_men/rap_women_unused.bs	text_rap_women_unused_oyatsu_desu_ka	.b:1It's snack time, .b:0huh?.8:1	来吃点心吗？	draft	control codes need review
-games/rap_men/rap_women_unused.bs:text_rap_women_unused_oyatsu_wa_saikou	games/rap_men/rap_women_unused.bs	text_rap_women_unused_oyatsu_wa_saikou	.a:1Snacking is .a:0so AWESOME!.8:1	吃点心最棒啦—！！	draft	control codes need review
-games/rap_men/rap_women_unused.bs:text_rap_women_unused_tabeteii_kamo_ne	games/rap_men/rap_women_unused.bs	text_rap_women_unused_tabeteii_kamo_ne	.9:1Eat 'em all up, .9:0ya feel me?.8:1	应该可以偷吃的吧	draft	control codes need review
+games/rap_men/rap_women_unused.bs:text_rap_women_unused_aketeii_kamo_ne	games/rap_men/rap_women_unused.bs	text_rap_women_unused_aketeii_kamo_ne	.9:1Open 'em up, .9:0ya feel me?.8:1	应该可以打开的吧	draft	TODO 未校对; control codes need review
+games/rap_men/rap_women_unused.bs:text_rap_women_unused_amakute_saikou	games/rap_men/rap_women_unused.bs	text_rap_women_unused_amakute_saikou	.a:1Sweets are .a:0so AWESOME!.8:1	甜品都太棒啦一！！	draft	TODO 未校对; control codes need review
+games/rap_men/rap_women_unused.bs:text_rap_women_unused_betsubara_saikou	games/rap_men/rap_women_unused.bs	text_rap_women_unused_betsubara_saikou	.a:1Cakes are .a:0so AWESOME!.8:1	半饱腹最棒啦一！！	draft	TODO 未校对; control codes need review
+games/rap_men/rap_women_unused.bs:text_rap_women_unused_dare_ni_mo_naisho	games/rap_men/rap_women_unused.bs	text_rap_women_unused_dare_ni_mo_naisho	.a:1Tell 'em we are .a:0LOATHSOME!.8:1	对谁都要保密呀一！！	draft	TODO 未校对; control codes need review
+games/rap_men/rap_women_unused.bs:text_rap_women_unused_juji_desu_ka	games/rap_men/rap_women_unused.bs	text_rap_women_unused_juji_desu_ka	.b:1It's 10 AM, .b:0huh?.8:1	十点了吗？	draft	TODO 未校对; control codes need review
+games/rap_men/rap_women_unused.bs:text_rap_women_unused_kare_ni_wa_naisho	games/rap_men/rap_women_unused.bs	text_rap_women_unused_kare_ni_wa_naisho	.a:1Clueless that we .a:0STOLE 'EM!.8:1	对他要保密啊一！！	draft	TODO 未校对; control codes need review
+games/rap_men/rap_women_unused.bs:text_rap_women_unused_kare_no_oyatsu_da_ne	games/rap_men/rap_women_unused.bs	text_rap_women_unused_kare_no_oyatsu_da_ne	.9:1These are all their snacks,.9:0 ya see?.8:1	那是他放的点心吧	draft	TODO 未校对; control codes need review
+games/rap_men/rap_women_unused.bs:text_rap_women_unused_kibun_wa_saikou	games/rap_men/rap_women_unused.bs	text_rap_women_unused_kibun_wa_saikou	.a:1I feel .a:0so AWESOME!.8:1	心情最棒啦一！！	draft	TODO 未校对; control codes need review
+games/rap_men/rap_women_unused.bs:text_rap_women_unused_naisho_desu_ka	games/rap_men/rap_women_unused.bs	text_rap_women_unused_naisho_desu_ka	.b:1Who's to know, .b:0huh?.8:1	要保密吗？	draft	TODO 未校对; control codes need review
+games/rap_men/rap_women_unused.bs:text_rap_women_unused_oyatsu_desu_ka	games/rap_men/rap_women_unused.bs	text_rap_women_unused_oyatsu_desu_ka	.b:1It's snack time, .b:0huh?.8:1	来吃点心吗？	draft	TODO 未校对; control codes need review
+games/rap_men/rap_women_unused.bs:text_rap_women_unused_oyatsu_wa_saikou	games/rap_men/rap_women_unused.bs	text_rap_women_unused_oyatsu_wa_saikou	.a:1Snacking is .a:0so AWESOME!.8:1	吃点心最棒啦—！！	draft	TODO 未校对; control codes need review
+games/rap_men/rap_women_unused.bs:text_rap_women_unused_tabeteii_kamo_ne	games/rap_men/rap_women_unused.bs	text_rap_women_unused_tabeteii_kamo_ne	.9:1Eat 'em all up, .9:0ya feel me?.8:1	应该可以偷吃的吧	draft	TODO 未校对; control codes need review
 games/rat_race/rat_race_text.c:D_0805d104	games/rat_race/rat_race_text.c	D_0805d104	Work on those stops!	不够利落啊。	final	
 games/rat_race/rat_race_text.c:D_0805d118	games/rat_race/rat_race_text.c	D_0805d118	Your stops were perfect!	停得很稳！	final	
 games/rat_race/rat_race_text.c:D_0805d130	games/rat_race/rat_race_text.c	D_0805d130	You need to practice your starts.	起步拖拖拉拉啊…	final	
@@ -2032,15 +2124,15 @@ games/remix_5/remix_5_text.c:D_0806a280	games/remix_5/remix_5_text.c	D_0806a280	
 games/remix_5/remix_5_text.c:D_0806a2a4	games/remix_5/remix_5_text.c	D_0806a2a4	Your technique needs work.	再好好磨练一下吧。	final	
 games/remix_5/remix_5_text.c:D_0806a2c0	games/remix_5/remix_5_text.c	D_0806a2c0	Your technique is solid!	技术不错啊！	final	
 games/remix_5/remix_5_text.c:D_0806a2d8	games/remix_5/remix_5_text.c	D_0806a2d8	Rhythm League notes:	来自神秘节奏组织的通告	final	
-games/remix_5/remix_5_text.c:D_0806a2f4	games/remix_5/remix_5_text.c	D_0806a2f4	\x01\x52\x05\x31\x01\x35♪ WISH - Can't Wait for You 	♪ WISH 我多想再为你等待	draft	control codes need review
+games/remix_5/remix_5_text.c:D_0806a2f4	games/remix_5/remix_5_text.c	D_0806a2f4	\x01\x52\x05\x31\x01\x35♪ WISH - Can't Wait for You 	♪ WISH 我多想再为你等待	draft	TODO 未校对; control codes need review
 games/remix_5/remix_5_text.c:D_0806a314	games/remix_5/remix_5_text.c	D_0806a314	\x01\x4c Vocals:  Sohshi Tanaka	演唱　　田中　総史	final	control codes need review
 games/remix_5/remix_5_text.c:D_0806a32c	games/remix_5/remix_5_text.c	D_0806a32c	\x01\x4c Music:\n        Tsunku♂\n Arrangement:\n        Koichi Yuasa	"作词　作曲
 　　　　　　　　淳君
 编曲
 　　　　　　　　湯浅　公一"	final	control codes need review
 games/remix_5/remix_5_text.c:D_0806a370	games/remix_5/remix_5_text.c	D_0806a370	\x01\x43Managed by J.P ROOM	歌曲提供　　J.P.ROOM	final	control codes need review
-games/remix_6/remix_6.bs:text_remix_6_honto_desu_ka	games/remix_6/remix_6.bs	text_remix_6_honto_desu_ka	.b:1Maybe so, .b:0huh?.8:1	真的这样吗？	draft	control codes need review
-games/remix_6/remix_6.bs:text_remix_6_kimi_tte_saikou	games/remix_6/remix_6.bs	text_remix_6_kimi_tte_saikou	.a:1You are .a:0so AWESOME!.8:0	你真的太棒啦—！！	draft	control codes need review
+games/remix_6/remix_6.bs:text_remix_6_honto_desu_ka	games/remix_6/remix_6.bs	text_remix_6_honto_desu_ka	.b:1Maybe so, .b:0huh?.8:1	真的这样吗？	draft	TODO 未校对; control codes need review
+games/remix_6/remix_6.bs:text_remix_6_kimi_tte_saikou	games/remix_6/remix_6.bs	text_remix_6_kimi_tte_saikou	.a:1You are .a:0so AWESOME!.8:0	你真的太棒啦—！！	draft	TODO 未校对; control codes need review
 games/remix_6/remix_6_text.c:D_0806a7a8	games/remix_6/remix_6_text.c	D_0806a7a8	Try a little harder.	还差一点。	final	
 games/remix_6/remix_6_text.c:D_0806a7b8	games/remix_6/remix_6_text.c	D_0806a7b8	That was really great!	简直太棒啦！！	final	
 games/remix_6/remix_6_text.c:D_0806a7d4	games/remix_6/remix_6_text.c	D_0806a7d4	Your decisions took too long.	判断还差点火候。	final	
@@ -2270,22 +2362,22 @@ games/staff_credit/staff_credit_text.c:D_08069c24	games/staff_credit/staff_credi
 games/staff_credit/staff_credit_text.c:D_08069c30	games/staff_credit/staff_credit_text.c	D_08069c30	N. Hashida	橋田 直樹	final	
 games/staff_credit/staff_credit_text.c:D_08069c3c	games/staff_credit/staff_credit_text.c	D_08069c3c	S. Takada	髙田 成雄	final	
 games/staff_credit/staff_credit_text.c:D_08069c48	games/staff_credit/staff_credit_text.c	D_08069c48	D. Nishikawa	西川 大輔	final	
-games/staff_credit/staff_credit_text.c:D_08069c54	games/staff_credit/staff_credit_text.c	D_08069c54	R. Sugo	西郷 すご	draft	
+games/staff_credit/staff_credit_text.c:D_08069c54	games/staff_credit/staff_credit_text.c	D_08069c54	R. Sugo	西郷 すご	draft	TODO 未校对
 games/staff_credit/staff_credit_text.c:D_08069c5c	games/staff_credit/staff_credit_text.c	D_08069c5c	S. Adachi	足立 真吾	final	
-games/staff_credit/staff_credit_text.c:D_08069c68	games/staff_credit/staff_credit_text.c	D_08069c68	H. Sakaguchi	坂口 さかぐち	draft	
+games/staff_credit/staff_credit_text.c:D_08069c68	games/staff_credit/staff_credit_text.c	D_08069c68	H. Sakaguchi	坂口 さかぐち	draft	TODO 未校对
 games/staff_credit/staff_credit_text.c:D_08069c74	games/staff_credit/staff_credit_text.c	D_08069c74	N. Watanabe	渡辺 紀之	final	
-games/staff_credit/staff_credit_text.c:D_08069c80	games/staff_credit/staff_credit_text.c	D_08069c80	H. Matsuda	松田 まつだ	draft	
-games/staff_credit/staff_credit_text.c:D_08069c8c	games/staff_credit/staff_credit_text.c	D_08069c8c	D. Morita	森田 もりた	draft	
-games/staff_credit/staff_credit_text.c:D_08069c98	games/staff_credit/staff_credit_text.c	D_08069c98	K. Umeda	梅田 うめだ	draft	
-games/staff_credit/staff_credit_text.c:D_08069ca0	games/staff_credit/staff_credit_text.c	D_08069ca0	Y. Nakai	中井 なかい	draft	
+games/staff_credit/staff_credit_text.c:D_08069c80	games/staff_credit/staff_credit_text.c	D_08069c80	H. Matsuda	松田 まつだ	draft	TODO 未校对
+games/staff_credit/staff_credit_text.c:D_08069c8c	games/staff_credit/staff_credit_text.c	D_08069c8c	D. Morita	森田 もりた	draft	TODO 未校对
+games/staff_credit/staff_credit_text.c:D_08069c98	games/staff_credit/staff_credit_text.c	D_08069c98	K. Umeda	梅田 うめだ	draft	TODO 未校对
+games/staff_credit/staff_credit_text.c:D_08069ca0	games/staff_credit/staff_credit_text.c	D_08069ca0	Y. Nakai	中井 なかい	draft	TODO 未校对
 games/staff_credit/staff_credit_text.c:D_08069ca8	games/staff_credit/staff_credit_text.c	D_08069ca8	Y. Fujikawa	藤川 容子	final	
-games/staff_credit/staff_credit_text.c:D_08069cb4	games/staff_credit/staff_credit_text.c	D_08069cb4	K. Nishimoto	西本 にしもと	draft	
-games/staff_credit/staff_credit_text.c:D_08069cc0	games/staff_credit/staff_credit_text.c	D_08069cc0	T. Akiho	海保 あきほ	draft	
+games/staff_credit/staff_credit_text.c:D_08069cb4	games/staff_credit/staff_credit_text.c	D_08069cb4	K. Nishimoto	西本 にしもと	draft	TODO 未校对
+games/staff_credit/staff_credit_text.c:D_08069cc0	games/staff_credit/staff_credit_text.c	D_08069cc0	T. Akiho	海保 あきほ	draft	TODO 未校对
 games/staff_credit/staff_credit_text.c:D_08069cc8	games/staff_credit/staff_credit_text.c	D_08069cc8	J. Terai	寺井 准	final	
-games/staff_credit/staff_credit_text.c:D_08069cd0	games/staff_credit/staff_credit_text.c	D_08069cd0	A. Shimizubata	清水端 しみずばた	draft	
-games/staff_credit/staff_credit_text.c:D_08069ce0	games/staff_credit/staff_credit_text.c	D_08069ce0	Y. Yamashita	山下 やました	draft	
+games/staff_credit/staff_credit_text.c:D_08069cd0	games/staff_credit/staff_credit_text.c	D_08069cd0	A. Shimizubata	清水端 しみずばた	draft	TODO 未校对
+games/staff_credit/staff_credit_text.c:D_08069ce0	games/staff_credit/staff_credit_text.c	D_08069ce0	Y. Yamashita	山下 やました	draft	TODO 未校对
 games/staff_credit/staff_credit_text.c:D_08069cec	games/staff_credit/staff_credit_text.c	D_08069cec	\0023Special Thanks	\0023特别鸣谢	final	
-games/staff_credit/staff_credit_text.c:D_08069cfc	games/staff_credit/staff_credit_text.c	D_08069cfc	Y. Kuratsune	鞍常 くらつね	draft	
+games/staff_credit/staff_credit_text.c:D_08069cfc	games/staff_credit/staff_credit_text.c	D_08069cfc	Y. Kuratsune	鞍常 くらつね	draft	TODO 未校对
 games/staff_credit/staff_credit_text.c:D_08069d08	games/staff_credit/staff_credit_text.c	D_08069d08	R. Kaimoto	改元 竜太	final	
 games/staff_credit/staff_credit_text.c:D_08069d14	games/staff_credit/staff_credit_text.c	D_08069d14	H. Sakagami	坂上 博樹	final	
 games/staff_credit/staff_credit_text.c:D_08069d20	games/staff_credit/staff_credit_text.c	D_08069d20	R. Yoshitomi	吉冨 亮二	final	
@@ -2299,7 +2391,7 @@ games/staff_credit/staff_credit_text.c:D_08069d74	games/staff_credit/staff_credi
 games/staff_credit/staff_credit_text.c:D_08069d7c	games/staff_credit/staff_credit_text.c	D_08069d7c	\0023	执行	final	control codes need review
 games/staff_credit/staff_credit_text.c:D_08069d88	games/staff_credit/staff_credit_text.c	D_08069d88	\0023Executive Producers	\0023制作人	final	
 games/staff_credit/staff_credit_text.c:D_08069d98	games/staff_credit/staff_credit_text.c	D_08069d98	S. Iwata	岩田 聡	final	
-games/staff_credit/staff_credit_text.c:D_08069da0	games/staff_credit/staff_credit_text.c	D_08069da0	S. Terai	寺井 てらい	draft	
+games/staff_credit/staff_credit_text.c:D_08069da0	games/staff_credit/staff_credit_text.c	D_08069da0	S. Terai	寺井 てらい	draft	TODO 未校对
 games/staff_credit/staff_credit_text.c:D_08069dac	games/staff_credit/staff_credit_text.c	D_08069dac	(C) 2006 Nintendo / J.P ROOM	(C)2006 Nintendo/J.P.ROOM	final	
 games/staff_credit/staff_credit_text.c:D_08069dc8	games/staff_credit/staff_credit_text.c	D_08069dc8	\nHey, you did it!	辛苦了。	final	
 games/staff_credit/staff_credit_text.c:D_08069ddc	games/staff_credit/staff_credit_text.c	D_08069ddc	You worked hard out there!\nSo, do you think your sense\nof rhythm has gotten a little\nbit better now?	"你真的很努力呢！

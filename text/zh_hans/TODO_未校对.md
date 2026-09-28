@@ -1,0 +1,263 @@
+# TODO 未校对
+
+阶段 5 以外的译文尚未导入源码；未定位的条目也在此列出。
+
+## 已定位但未校对
+- TODO 未校对 data/scenes/cafe/dialogue.c:cafe_dialogue_all_perfects_clear_big[0]
+- TODO 未校对 data/scenes/cafe/dialogue.c:cafe_dialogue_all_perfects_clear_big[1]
+- TODO 未校对 data/scenes/cafe/dialogue.c:cafe_dialogue_extra_perfects_clear[0]
+- TODO 未校对 data/scenes/cafe/dialogue.c:cafe_dialogue_extra_perfects_clear[1]
+- TODO 未校对 data/scenes/data_room/reading_material.inc.c:reading_lyrics_1
+- TODO 未校对 data/scenes/game_select/levels.inc.c:level_air_batter_extra
+- TODO 未校对 data/scenes/game_select/levels.inc.c:level_air_batter_extra_desc
+- TODO 未校对 data/scenes/game_select/levels.inc.c:level_air_batter_extra_result_1
+- TODO 未校对 data/scenes/game_select/levels.inc.c:level_air_batter_extra_result_2
+- TODO 未校对 data/scenes/game_select/levels.inc.c:level_air_batter_extra_result_3
+- TODO 未校对 data/scenes/game_select/levels.inc.c:level_karate_extra
+- TODO 未校对 data/scenes/game_select/levels.inc.c:level_karate_extra_desc
+- TODO 未校对 data/scenes/game_select/levels.inc.c:level_karate_extra_result_1
+- TODO 未校对 data/scenes/game_select/levels.inc.c:level_karate_extra_result_2
+- TODO 未校对 data/scenes/game_select/levels.inc.c:level_karate_extra_result_3
+- TODO 未校对 data/scenes/game_select/levels.inc.c:level_marcha_extra
+- TODO 未校对 data/scenes/game_select/levels.inc.c:level_marcha_extra_desc
+- TODO 未校对 data/scenes/game_select/levels.inc.c:level_marcha_extra_result_1
+- TODO 未校对 data/scenes/game_select/levels.inc.c:level_marcha_extra_result_2
+- TODO 未校对 data/scenes/game_select/levels.inc.c:level_marcha_extra_result_3
+- TODO 未校对 data/scenes/game_select/levels.inc.c:level_pachi_extra
+- TODO 未校对 data/scenes/game_select/levels.inc.c:level_pachi_extra_desc
+- TODO 未校对 data/scenes/game_select/levels.inc.c:level_pachi_extra_result_1
+- TODO 未校对 data/scenes/game_select/levels.inc.c:level_pachi_extra_result_2
+- TODO 未校对 data/scenes/game_select/levels.inc.c:level_pachi_extra_result_3
+- TODO 未校对 data/scenes/game_select/levels.inc.c:level_remix_extra
+- TODO 未校对 data/scenes/game_select/levels.inc.c:level_remix_extra_desc
+- TODO 未校对 data/scenes/game_select/levels.inc.c:level_remix_extra_result_1
+- TODO 未校对 data/scenes/game_select/levels.inc.c:level_remix_extra_result_2
+- TODO 未校对 data/scenes/game_select/levels.inc.c:level_remix_extra_result_3
+- TODO 未校对 data/scenes/game_select/levels.inc.c:level_rhythm_datsu_extra
+- TODO 未校对 data/scenes/game_select/levels.inc.c:level_rhythm_datsu_extra_desc
+- TODO 未校对 data/scenes/game_select/levels.inc.c:level_rhythm_datsu_extra_result_1
+- TODO 未校对 data/scenes/game_select/levels.inc.c:level_rhythm_datsu_extra_result_2
+- TODO 未校对 data/scenes/game_select/levels.inc.c:level_rhythm_datsu_extra_result_3
+- TODO 未校对 data/scenes/options/data.c:advance_options_desc_text[0]
+- TODO 未校对 data/scenes/options/data.c:advance_options_desc_text[1]
+- TODO 未校对 data/scenes/options/data.c:advance_options_desc_text[2]
+- TODO 未校对 data/scenes/options/data.c:advance_options_desc_text[3]
+- TODO 未校对 data/scenes/options/data.c:advance_options_desc_text[4]
+- TODO 未校对 data/scenes/studio/songs.inc.c:song_wish
+- TODO 未校对 data/scenes/studio/songs.inc.c:song_wish_short
+- TODO 未校对 games/bon_odori/bon_dance_text.c:D_0806a384
+- TODO 未校对 games/bon_odori/bon_dance_text.c:D_0806a3a4
+- TODO 未校对 games/bon_odori/bon_dance_text.c:D_0806a3e0
+- TODO 未校对 games/bon_odori/bon_dance_text.c:D_0806a400
+- TODO 未校对 games/bon_odori/bon_dance_text.c:D_0806a424
+- TODO 未校对 games/bon_odori/bon_dance_text.c:D_0806a448
+- TODO 未校对 games/bon_odori/bon_dance_text.c:text_bon_dance_ame_ga_agare_ba
+- TODO 未校对 games/bon_odori/bon_dance_text.c:text_bon_dance_don_don_pan_pan
+- TODO 未校对 games/bon_odori/bon_dance_text.c:text_bon_dance_dondo_pan_pan
+- TODO 未校对 games/bon_odori/bon_dance_text.c:text_bon_dance_dondo_panpa
+- TODO 未校对 games/bon_odori/bon_dance_text.c:text_bon_dance_dondo_panpa_dondo_panpa
+- TODO 未校对 games/bon_odori/bon_dance_text.c:text_bon_dance_dondo_panpa_pan
+- TODO 未校对 games/bon_odori/bon_dance_text.c:text_bon_dance_ha
+- TODO 未校对 games/bon_odori/bon_dance_text.c:text_bon_dance_ha_bon_odori
+- TODO 未校对 games/bon_odori/bon_dance_text.c:text_bon_dance_haa
+- TODO 未校对 games/bon_odori/bon_dance_text.c:text_bon_dance_hanabi_agare_ba
+- TODO 未校对 games/bon_odori/bon_dance_text.c:text_bon_dance_hora_matsuri_da_wasshoi
+- TODO 未校对 games/bon_odori/bon_dance_text.c:text_bon_dance_kansei_agaru
+- TODO 未校对 games/bon_odori/bon_dance_text.c:text_bon_dance_korezo
+- TODO 未校对 games/bon_odori/bon_dance_text.c:text_bon_dance_kyuryo_agaru
+- TODO 未校对 games/bon_odori/bon_dance_text.c:text_bon_dance_matsuri_da_wasshoi
+- TODO 未校对 games/bon_odori/bon_dance_text.c:text_bon_dance_meido_in_japan
+- TODO 未校对 games/bon_odori/bon_dance_text.c:text_bon_dance_ninki_agare_ba
+- TODO 未校对 games/bon_odori/bon_dance_text.c:text_bon_dance_nippon_chu_ga_wasshoi
+- TODO 未校对 games/bon_odori/bon_dance_text.c:text_bon_dance_pan
+- TODO 未校对 games/bon_odori/bon_dance_text.c:text_bon_dance_pan_pan_dondo_don
+- TODO 未校对 games/bon_odori/bon_dance_text.c:text_bon_dance_pan_panpa_pa
+- TODO 未校对 games/bon_odori/bon_dance_text.c:text_bon_dance_panpa_don_pan
+- TODO 未校对 games/bon_odori/bon_dance_text.c:text_bon_dance_panpa_dondo
+- TODO 未校对 games/bon_odori/bon_dance_text.c:text_bon_dance_sore_hikkuri_kaette
+- TODO 未校对 games/bon_odori/bon_dance_text.c:text_bon_dance_yagura_ni_agaru
+- TODO 未校对 games/bon_odori/bon_odori_text.c:D_080676b4
+- TODO 未校对 games/bon_odori/bon_odori_text.c:D_080676d4
+- TODO 未校对 games/bon_odori/bon_odori_text.c:D_08067710
+- TODO 未校对 games/bon_odori/bon_odori_text.c:D_08067730
+- TODO 未校对 games/bon_odori/bon_odori_text.c:D_08067754
+- TODO 未校对 games/bon_odori/bon_odori_text.c:D_08067778
+- TODO 未校对 games/bon_odori/bon_odori_text.c:D_08067a84
+- TODO 未校对 games/bon_odori/bon_odori_text.c:D_08067ad0
+- TODO 未校对 games/bon_odori/bon_odori_text.c:D_08067adc
+- TODO 未校对 games/bon_odori/bon_odori_text.c:D_08067b00
+- TODO 未校对 games/bon_odori/bon_odori_text.c:text_bon_odori_ame_ga_agare_ba
+- TODO 未校对 games/bon_odori/bon_odori_text.c:text_bon_odori_don_don_pan
+- TODO 未校对 games/bon_odori/bon_odori_text.c:text_bon_odori_don_don_pan_pan
+- TODO 未校对 games/bon_odori/bon_odori_text.c:text_bon_odori_don_don_pan_pan_2
+- TODO 未校对 games/bon_odori/bon_odori_text.c:text_bon_odori_don_pan_pan
+- TODO 未校对 games/bon_odori/bon_odori_text.c:text_bon_odori_dondo_pan_pan
+- TODO 未校对 games/bon_odori/bon_odori_text.c:text_bon_odori_dondo_panpa
+- TODO 未校对 games/bon_odori/bon_odori_text.c:text_bon_odori_dondo_panpa_dondo_panpa
+- TODO 未校对 games/bon_odori/bon_odori_text.c:text_bon_odori_ha
+- TODO 未校对 games/bon_odori/bon_odori_text.c:text_bon_odori_ha_bon_odori
+- TODO 未校对 games/bon_odori/bon_odori_text.c:text_bon_odori_haa
+- TODO 未校对 games/bon_odori/bon_odori_text.c:text_bon_odori_hanabi_agare_ba
+- TODO 未校对 games/bon_odori/bon_odori_text.c:text_bon_odori_hora_matsuri_da_wasshoi
+- TODO 未校对 games/bon_odori/bon_odori_text.c:text_bon_odori_kansei_agaru
+- TODO 未校对 games/bon_odori/bon_odori_text.c:text_bon_odori_korezo
+- TODO 未校对 games/bon_odori/bon_odori_text.c:text_bon_odori_kyuryo_agaru
+- TODO 未校对 games/bon_odori/bon_odori_text.c:text_bon_odori_matsuri_da_wasshoi
+- TODO 未校对 games/bon_odori/bon_odori_text.c:text_bon_odori_meido_in_japan
+- TODO 未校对 games/bon_odori/bon_odori_text.c:text_bon_odori_ninki_agare_ba
+- TODO 未校对 games/bon_odori/bon_odori_text.c:text_bon_odori_nippon_chu_ga_wasshoi
+- TODO 未校对 games/bon_odori/bon_odori_text.c:text_bon_odori_pan_pan
+- TODO 未校对 games/bon_odori/bon_odori_text.c:text_bon_odori_sore_hikkuri_kaette
+- TODO 未校对 games/bon_odori/bon_odori_text.c:text_bon_odori_yagura_ni_agaru
+- TODO 未校对 games/rap_men/rap_women_unused.bs:text_rap_women_unused_aketeii_kamo_ne
+- TODO 未校对 games/rap_men/rap_women_unused.bs:text_rap_women_unused_amakute_saikou
+- TODO 未校对 games/rap_men/rap_women_unused.bs:text_rap_women_unused_betsubara_saikou
+- TODO 未校对 games/rap_men/rap_women_unused.bs:text_rap_women_unused_dare_ni_mo_naisho
+- TODO 未校对 games/rap_men/rap_women_unused.bs:text_rap_women_unused_juji_desu_ka
+- TODO 未校对 games/rap_men/rap_women_unused.bs:text_rap_women_unused_kare_ni_wa_naisho
+- TODO 未校对 games/rap_men/rap_women_unused.bs:text_rap_women_unused_kare_no_oyatsu_da_ne
+- TODO 未校对 games/rap_men/rap_women_unused.bs:text_rap_women_unused_kibun_wa_saikou
+- TODO 未校对 games/rap_men/rap_women_unused.bs:text_rap_women_unused_naisho_desu_ka
+- TODO 未校对 games/rap_men/rap_women_unused.bs:text_rap_women_unused_oyatsu_desu_ka
+- TODO 未校对 games/rap_men/rap_women_unused.bs:text_rap_women_unused_oyatsu_wa_saikou
+- TODO 未校对 games/rap_men/rap_women_unused.bs:text_rap_women_unused_tabeteii_kamo_ne
+- TODO 未校对 games/remix_5/remix_5_text.c:D_0806a2f4
+- TODO 未校对 games/remix_6/remix_6.bs:text_remix_6_honto_desu_ka
+- TODO 未校对 games/remix_6/remix_6.bs:text_remix_6_kimi_tte_saikou
+- TODO 未校对 games/staff_credit/staff_credit_text.c:D_08069c54
+- TODO 未校对 games/staff_credit/staff_credit_text.c:D_08069c68
+- TODO 未校对 games/staff_credit/staff_credit_text.c:D_08069c80
+- TODO 未校对 games/staff_credit/staff_credit_text.c:D_08069c8c
+- TODO 未校对 games/staff_credit/staff_credit_text.c:D_08069c98
+- TODO 未校对 games/staff_credit/staff_credit_text.c:D_08069ca0
+- TODO 未校对 games/staff_credit/staff_credit_text.c:D_08069cb4
+- TODO 未校对 games/staff_credit/staff_credit_text.c:D_08069cc0
+- TODO 未校对 games/staff_credit/staff_credit_text.c:D_08069cd0
+- TODO 未校对 games/staff_credit/staff_credit_text.c:D_08069ce0
+- TODO 未校对 games/staff_credit/staff_credit_text.c:D_08069cfc
+- TODO 未校对 games/staff_credit/staff_credit_text.c:D_08069da0
+
+## 尚未安全定位
+
+- TODO 未校对 data\cafe\dialogue.json:cafe_dialogue_rhythm_sense[7]: conditional branches need review
+- TODO 未校对 data\data_room\reading.json:reading_material_error_1: key not found
+- TODO 未校对 data\data_room\reading.json:reading_material_error_2: key not found
+- TODO 未校对 data\data_room\reading_material.inc.json:reading_greeting: key not found
+- TODO 未校对 data\data_room\reading_material.inc.json:reading_night_walk_story: key not found
+- TODO 未校对 data\data_room\reading_material.inc.json:reading_horse_machine_story: key not found
+- TODO 未校对 data\data_room\reading_material.inc.json:reading_radio_story: key not found
+- TODO 未校对 data\data_room\reading_material.inc.json:reading_lyrics_3: key not found
+- TODO 未校对 data\data_room\reading_material.inc.json:reading_final_story: key not found
+- TODO 未校对 data\data_room\reading_material.inc.json:reading_manzai_story: key not found
+- TODO 未校对 data\data_room\reading_material.inc.json:reading_praise_story: key not found
+- TODO 未校对 data\data_room\reading_material.inc.json:reading_haiku_1: key not found
+- TODO 未校对 data\data_room\reading_material.inc.json:reading_haiku_2: key not found
+- TODO 未校对 data\data_room\reading_material.inc.json:reading_haiku_3: key not found
+- TODO 未校对 data\data_room\reading_material.inc.json:reading_haiku_4: key not found
+- TODO 未校对 data\data_room\reading_material.inc.json:reading_haiku_5: key not found
+- TODO 未校对 data\game_select\levels.inc.json:level_bari_1_result_2: key not found
+- TODO 未校对 data\game_select\levels.inc.json:level_bari_1_result_3: key not found
+- TODO 未校对 data\game_select\levels.inc.json:level_baikin_1_desc: key not found
+- TODO 未校对 data\game_select\levels.inc.json:level_tap_dance_1_result_1: key not found
+- TODO 未校对 data\game_select\levels.inc.json:level_hanabi_1_desc: key not found
+- TODO 未校对 data\game_select\levels.inc.json:level_toss_boys_1_desc: key not found
+- TODO 未校对 data\game_select\levels.inc.json:level_toss_boys_1_result_1: key not found
+- TODO 未校对 data\game_select\levels.inc.json:level_toss_boys_1_result_2: key not found
+- TODO 未校对 data\game_select\levels.inc.json:level_toss_boys_1_result_3: key not found
+- TODO 未校对 data\game_select\levels.inc.json:level_toss_boys_2_desc: key not found
+- TODO 未校对 data\game_select\levels.inc.json:level_toss_boys_2_result_2: key not found
+- TODO 未校对 data\game_select\levels.inc.json:level_toss_boys_2_result_3: key not found
+- TODO 未校对 data\game_select\levels.inc.json:level_quiz_1_result_1: key not found
+- TODO 未校对 data\game_select\levels.inc.json:level_quiz_1_result_2: key not found
+- TODO 未校对 data\game_select\levels.inc.json:level_cafe_counsel: key not found
+- TODO 未校对 data\medal_corner\endless_menu.inc.json:endless_ura_otoko: key not found
+- TODO 未校对 data\medal_corner\endless_menu.inc.json:endless_baikin_hakase_sp: key not found
+- TODO 未校对 data\medal_corner\endless_menu.inc.json:endless_quiz_special: key not found
+- TODO 未校对 data\medal_corner\endless_menu.inc.json:endless_manekin_factory: key not found
+- TODO 未校对 data\medal_corner\toys_menu.inc.json:toy_neko_machine: key not found
+- TODO 未校对 data\medal_corner\toys_menu.inc.json:toy_uma_machine: key not found
+- TODO 未校对 data\medal_corner\toys_menu.inc.json:toy_kokuhaku_machine: key not found
+- TODO 未校对 data\medal_corner\toys_menu.inc.json:toy_rap_machine: key not found
+- TODO 未校对 data\studio\songs.inc.json:song_cafe_counsel: key not found
+- TODO 未校对 games\drum_intro\drum_samurai_cutscene_text.json:D_0805df4c: key not found
+- TODO 未校对 games\drum_intro\tanuki_and_monkey_more_text.json:D_08a2f220: key not found
+- TODO 未校对 games\drum_intro\tanuki_and_monkey_more_text.json:D_08a2f248: key not found
+- TODO 未校对 games\drum_intro\tanuki_and_monkey_more_text.json:D_08a2f278: key not found
+- TODO 未校对 games\drum_intro\tanuki_and_monkey_more_text.json:D_08a2f2a0: key not found
+- TODO 未校对 games\drum_intro\tanuki_and_monkey_more_text.json:D_08a2f2d4: key not found
+- TODO 未校对 games\drum_intro\tanuki_and_monkey_more_text.json:D_08a2f308: key not found
+- TODO 未校对 games\drum_intro\tanuki_and_monkey_more_text.json:D_08a2f340: key not found
+- TODO 未校对 games\drum_live\drum_live_menu_engine.json:drum_live_menu_poster_desc[4]: 3 source entries vs 13 translations
+- TODO 未校对 games\drum_live\drum_live_menu_engine.json:drum_live_menu_poster_desc[10]: 3 source entries vs 13 translations
+- TODO 未校对 games\drum_live\drum_live_menu_engine.json:drum_live_menu_poster_desc[15]: 3 source entries vs 13 translations
+- TODO 未校对 games\drum_live\drum_live_menu_engine.json:drum_live_menu_poster_desc[20]: 3 source entries vs 13 translations
+- TODO 未校对 games\drum_live\drum_live_menu_engine.json:drum_live_menu_poster_desc[26]: 3 source entries vs 13 translations
+- TODO 未校对 games\drum_live\drum_live_menu_engine.json:drum_live_menu_poster_desc[32]: 3 source entries vs 13 translations
+- TODO 未校对 games\drum_live\drum_live_menu_engine.json:drum_live_menu_poster_desc[37]: 3 source entries vs 13 translations
+- TODO 未校对 games\drum_live\drum_live_menu_engine.json:drum_live_menu_poster_desc[42]: 3 source entries vs 13 translations
+- TODO 未校对 games\drum_live\drum_live_menu_engine.json:drum_live_menu_poster_desc[48]: 3 source entries vs 13 translations
+- TODO 未校对 games\drum_live\drum_live_menu_engine.json:drum_live_menu_poster_desc[54]: 3 source entries vs 13 translations
+- TODO 未校对 games\drum_live\drum_live_menu_engine.json:drum_live_menu_poster_desc[61]: 3 source entries vs 13 translations
+- TODO 未校对 games\drum_live\drum_live_menu_engine.json:drum_live_menu_poster_desc[66]: 3 source entries vs 13 translations
+- TODO 未校对 games\drum_live\drum_live_menu_engine.json:drum_live_menu_poster_desc[71]: 3 source entries vs 13 translations
+- TODO 未校对 games\karate_man\karate_man_text.json:D_0805ad80: key not found
+- TODO 未校对 src\arrival.json:arrival_title: key not found
+- TODO 未校对 src\arrival.json:arrival_message_template: key not found
+- TODO 未校对 src\cafe.json:cafe_line_1: key not found
+- TODO 未校对 src\cafe.json:cafe_line_2: key not found
+- TODO 未校对 src\cafe.json:cafe_line_3: key not found
+- TODO 未校对 src\cafe.json:cafe_line_4: key not found
+- TODO 未校对 src\cafe.json:cafe_line_5: key not found
+- TODO 未校对 src\cafe.json:cafe_line_6: key not found
+- TODO 未校对 src\cafe.json:cafe_line_7: key not found
+- TODO 未校对 src\cafe.json:cafe_line_8: key not found
+- TODO 未校对 src\cafe.json:cafe_line_9: key not found
+- TODO 未校对 src\cafe.json:cafe_line_10: key not found
+- TODO 未校对 src\cafe.json:cafe_line_11: key not found
+- TODO 未校对 src\cafe.json:cafe_line_12: key not found
+- TODO 未校对 src\cafe.json:cafe_line_13: key not found
+- TODO 未校对 src\cafe.json:cafe_line_14: key not found
+- TODO 未校对 src\cafe.json:cafe_line_15: key not found
+- TODO 未校对 src\cafe.json:cafe_line_16: key not found
+- TODO 未校对 src\cafe.json:cafe_line_17: key not found
+- TODO 未校对 src\cafe.json:cafe_line_18: key not found
+- TODO 未校对 src\cafe.json:cafe_line_19: key not found
+- TODO 未校对 src\cafe.json:cafe_line_20: key not found
+- TODO 未校对 src\cafe.json:cafe_line_21: key not found
+- TODO 未校对 src\cafe_add.json:cafe_line_extra_1: key not found
+- TODO 未校对 src\cafe_add.json:cafe_line_extra_2: key not found
+- TODO 未校对 src\cafe_add.json:cafe_line_extra_3: key not found
+- TODO 未校对 src\data_check.json:data_check_title: key not found
+- TODO 未校对 src\data_check.json:data_check_avg_score: key not found
+- TODO 未校对 src\data_check.json:data_check_avg_score_suffix: key not found
+- TODO 未校对 src\data_check.json:data_check_play_count: key not found
+- TODO 未校对 src\data_check.json:data_check_play_count_suffix: key not found
+- TODO 未校对 src\data_check.json:data_check_first_pass: key not found
+- TODO 未校对 src\data_check.json:data_check_not_yet_1: key not found
+- TODO 未校对 src\data_check.json:data_check_count_1: key not found
+- TODO 未校对 src\data_check.json:data_check_first_great_pass: key not found
+- TODO 未校对 src\data_check.json:data_check_not_yet_2: key not found
+- TODO 未校对 src\data_check.json:data_check_count_2: key not found
+- TODO 未校对 src\debug_menu.json:debug_menu_title: key not found
+- TODO 未校对 src\debug_menu_table.json:debug_menu_52: key not found
+- TODO 未校对 src\game_select.json:game_select_new_game: key not found
+- TODO 未校对 src\game_select.json:game_select_perfect_prefix: key not found
+- TODO 未校对 src\game_select.json:game_select_perfect_suffix: key not found
+- TODO 未校对 src\game_select.json:game_select_gift_prefix: key not found
+- TODO 未校对 src\game_select.json:game_select_gift_middle: key not found
+- TODO 未校对 src\game_select.json:game_select_gift_suffix: key not found
+- TODO 未校对 src\perfect.json:perfect_gift_prefix: key not found
+- TODO 未校对 src\perfect.json:perfect_gift_suffix: key not found
+- TODO 未校对 src\perfect.json:perfect_remaining_prefix: key not found
+- TODO 未校对 src\perfect.json:perfect_remaining_suffix: key not found
+- TODO 未校对 src\perfect.json:perfect_complete: key not found
+- TODO 未校对 src\results.json:results_scoring: key not found
+- TODO 未校对 src\results.json:results_also: key not found
+- TODO 未校对 src\results.json:results_more: key not found
+- TODO 未校对 src\results.json:results_but: key not found
+- TODO 未校对 src\results.json:results_moreover: key not found
+- TODO 未校对 src\results.json:results_further: key not found
+- TODO 未校对 src\results.json:results_acceptable: key not found
+- TODO 未校对 src\results.json:results_for_now: key not found
+- TODO 未校对 src\results.json:results_so_so: key not found
+- TODO 未校对 src\results.json:results_well: key not found

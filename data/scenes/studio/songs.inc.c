@@ -1,3 +1,6 @@
+/* 中文文本：本文件采用译文包中 stage 5 的已校对条目。
+ * 字符串中的 \n 是游戏画面换行；相邻引号只是方便阅读源码。
+ * 未校对或未定位的条目见 text/zh_hans/TODO_未校对.md。 */
 extern const struct Beatscript script_studio_silence[];
 extern const struct Beatscript script_studio_karate_man[];
 extern const struct Beatscript script_studio_clappy_trio[];
@@ -78,7 +81,9 @@ struct StudioEntry studio_song_table[] = {
         /* Drum Script */ script_studio_honey_sweet_angel
     },
     /* WISH */ {
+        // TODO 未校对：song_wish 译文包未到 stage 5，暂留原文。
         /* Full Title  */ "WISH - Can't Wait for You",
+        // TODO 未校对：song_wish_short 译文包未到 stage 5，暂留原文。
         /* Short Title */ "WISH - Can't Wait...",
         /* Drum Script */ script_studio_wish
     },

@@ -1,3 +1,6 @@
+/* 中文文本：本文件采用译文包中 stage 5 的已校对条目。
+ * 字符串中的 \n 是游戏画面换行；相邻引号只是方便阅读源码。
+ * 未校对或未定位的条目见 text/zh_hans/TODO_未校对.md。 */
 #include "global.h"
 #include "studio.h"
 #include "graphics/studio/studio_graphics.h"
@@ -101,15 +104,18 @@ const char *studio_mem_warnings_text[] = {
     /* NO MEMORY -------------------------------------- */
         // [ You can't save any more data. ]
         // [ Perform without saving? ]
-        "存储空间已满。\n本次演奏将无法保存，还要继续吗？",
+        "存储空间已满。\n"
+        "本次演奏将无法保存，还要继续吗？",
     /* TOO MANY REPLAYS ------------------------------- */
         // [ You can only save 10 recitals. ]
         // [ Perform without saving? ]
-        "演奏数据最多只能保留 10 份。\n本次演奏将无法保存，还要继续吗？",
+        "演奏数据最多只能保留 10 份。\n"
+        "本次演奏将无法保存，还要继续吗？",
     /* LOW MEMORY ------------------------------------- */
         // [ There's not much memory left. ]
         // [ Perform anyway? ]
-        "存储空间快满了。\n还要继续演奏吗？"
+        "存储空间快满了。\n"
+        "还要继续演奏吗？"
     /* ------------------------------------------------ */
 };
 

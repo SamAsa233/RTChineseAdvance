@@ -1,3 +1,4 @@
+/* 汉化改动：完美挑战奖励通知由已校对中文片段组成，并用有容量限制的 snprintf 写入缓冲区。 */
 #include "global.h"
 #include "game_select.h"
 #include "graphics/game_select/game_select_graphics.h"
@@ -253,7 +254,8 @@ const char *get_campaign_gift_title(s32 id, s32 shortenSongTitle) {
             return reading_material_table[giftID].title;
 
         case CAMPAIGN_GIFT_NEW_GAME:
-            return "New Game"; // New Game
+            // 已校对的「新游戏」来自 game_select_new_game；用于奖励标题。
+            return "新游戏";
     }
 }
 
@@ -261,43 +263,24 @@ const char *get_campaign_gift_title(s32 id, s32 shortenSongTitle) {
 // Start Perfect Campaign Notice
 void start_campaign_notice(s32 id) {
     struct CampaignNotice *notice = &gGameSelect->campaignNotice;
-    u32 isSpecialSong = FALSE;
-    u32 isSong = FALSE;
     u32 giftType = campaign_gifts_table[id].type;
-    u32 giftID = campaign_gifts_table[id].id;
     struct LevelData *level;
-    char *string;
-
-    if (giftType == CAMPAIGN_GIFT_SONG) {
-        isSong = TRUE;
-        switch (giftID) {
-            case STUDIO_SONG_WISH:
-            case STUDIO_SONG_HONEY_SWEET_ANGEL:
-                isSpecialSong = TRUE;
-                break;
-        }
-    }
+    const char *giftTitle;
+    const char *giftKind;
 
     notice->x = campaign_gifts_table[id].x;
     notice->y = campaign_gifts_table[id].y;
     level = get_level_data_from_grid_xy(notice->x, notice->y);
-    string = notice->text;
-    memcpy(string, "\001C" "If you get a Perfect on\n", 45); // [Right now]
-    strcat(string, level->name); // "<game_name>"
-    strcat(string, "\nright now, you'll earn "); // Get a perfect on this
-    if (giftType == CAMPAIGN_GIFT_DRUM_KIT || giftType == CAMPAIGN_GIFT_READING_MATERIAL) {
-        strcat(string, "the following bonus:\n"); // received as a present!!
-    }
-    if (isSong) {
-        if(isSpecialSong) {
-            strcat(string, "the following song:\n");
-        } else {
-            strcat(string, "the game's song, also titled\n");
-    }
-    }
-    strcat(string, get_campaign_gift_title(id, FALSE)); // "<gift>"
-    strcat(string, ".\n");
-    text_printer_set_string(notice->printer, string);
+    giftTitle = get_campaign_gift_title(id, FALSE);
+    giftKind = (giftType == CAMPAIGN_GIFT_SONG) ? "的音乐" : "";
+    // 中文是按 game_select.json 中阶段 5 的片段重组的；保留 \001C
+    // 文本控制码和换行。旧 memcpy 固定拷贝 45 字节，随后 strcat 会越界；
+    // snprintf 按缓冲区实际容量写入并保证结尾有 NUL。
+    // TODO 未校对：整句重组后的语气与实机折行，仍需人工确认。
+    snprintf(notice->text, sizeof(notice->text),
+             "\001C在「%s」达成完美通关的话，\n即可获赠\n %s%s就送给你！\n",
+             level->name, giftTitle, giftKind);
+    text_printer_set_string(notice->printer, notice->text);
 
     sprite_set_visible(gSpriteHandler, gGameSelect->selectionBorderSprite, FALSE);
     notice->textAdvDelay = 10;

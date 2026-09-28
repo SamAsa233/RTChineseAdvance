@@ -1,3 +1,4 @@
+/* 汉化改动：稀疏汉字按码点查找，字形编号及缓存键扩为 32 位，避免超过 255 个字时复用错误字形。 */
 #include "bitmap_font.h"
 #include "code_08001360.h"
 #include "memory_heap.h"
@@ -53,6 +54,8 @@ static s32 bmp_font_codepoint_to_glyph(const struct BitmapFontData *font, u32 co
     while (glyphRange->glyphTextures != NULL) {
         if ((codepoint >= glyphRange->utf8Start) && (codepoint <= glyphRange->utf8End)) {
             if (glyphRange->codepointList != NULL) {
+                // 汉字纹理只收录实际用到的字，二分查找把 Unicode 码点换成纹理序号。
+                // 没收录的码点不能直接按“码点减起点”取图，否则会显示错字。
                 low = 0;
                 high = glyphRange->glyphCount;
                 while (low < high) {
@@ -358,6 +361,7 @@ u16 bmp_font_obj_print_glyph(struct BitmapFontOBJ *textObj, const char *string, 
     }
 
     glyphSet = glyph.glyphSet - font->glyphRanges;
+    // 缓存键同时包含字号、字库区段和字形序号；旧 8 位序号超过 255 会撞号。
     glyphKey = 1 + (sObjFontStyle << 24) + (glyphSet << 16) + glyph.glyphID;
 
     for (i = 0; i < textObj->maxAllocatedTileRows; i++) {
@@ -474,6 +478,7 @@ struct PrintedTextAnim *bmp_font_obj_print_text(struct BitmapFontOBJ *textObj, c
         tileNum = bmp_font_obj_print_glyph(textObj, string, &glyphWidth);
         if (tileNum == (u16)-1) {
 #ifdef PLAYTEST
+            // 调试 ROM 里用方框显示缺字，方便截图时发现漏收录的汉字。
             tileNum = bmp_font_obj_print_glyph(textObj, "□", &glyphWidth);
 #endif
             if (tileNum == (u16)-1) {

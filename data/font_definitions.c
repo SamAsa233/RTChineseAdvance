@@ -1,3 +1,4 @@
+/* 汉化改动：加入按已用汉字生成的稀疏描边字形及宽度表，让标题字体显示中文而不装入整块 CJK 纹理。 */
 #include "global.h"
 #include "graphics.h"
 #include "src/bitmap_font.h"

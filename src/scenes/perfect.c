@@ -1,3 +1,4 @@
+/* 汉化待办：证书页的动态奖励句子尚无逐句校对译文，保留英文并标注待校对位置。 */
 #include "global.h"
 #include "scenes.h"
 #include "perfect.h"
@@ -191,6 +192,8 @@ void perfect_scene_start(void *sVar, s32 dArg) {
     if (activeCampaignsCleared < activeCampaignsTotal) {
         campaignsLeft = activeCampaignsTotal - activeCampaignsCleared;
     }
+    // TODO 未校对：下列奖励名称后的英文语法、礼物提示和剩余数量句子
+    // 不在阶段 5 已校对译文中；目前保留原文，待逐句校对后再接入汉化。
     strint(count, campaignsLeft);
     memcpy(gPerfect->string, "\0021" "\0011" "\001C" "\0030" "\001s" "\0054" "\0018" "", 25);
     strcat(gPerfect->string, get_campaign_gift_title(gPerfect->campaignID, FALSE));

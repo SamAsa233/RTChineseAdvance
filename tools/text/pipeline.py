@@ -81,7 +81,9 @@ def c_initializer(text, base):
                 return groups
         elif char == ',' and depth == 1:
             group = literal_group(text, section, pos)
-            if group:
+            # Keep a placeholder for the conditional rhythm-sense line;
+            # otherwise following array indices slide onto the wrong text.
+            if group or base == 'cafe_dialogue_rhythm_sense':
                 groups.append(group)
             section = pos + 1
     return None
@@ -330,6 +332,12 @@ def extract():
             unresolved.extend(f"{json_path.relative_to(ARCHIVE)}:{key}: {len(groups)} source entries vs {len(members)} translations" for key, _ in members)
             continue
         for (key, row), index in zip(members, assigned):
+            if groups[index] is None:
+                unresolved.append(f"{json_path.relative_to(ARCHIVE)}:{key}: conditional branches need review")
+                old = previous.get(f"{path.relative_to(ROOT).as_posix()}:{key}")
+                if old:
+                    output.append(old)
+                continue
             source = groups[index][2]
             target = row['translation']
             controls = CONTROL.findall(source)
@@ -344,8 +352,20 @@ def extract():
                 elif source != target:
                     note = 'control codes need review'
             relative = path.relative_to(ROOT).as_posix()
-            record = dict(id=f"{relative}:{key}", file=relative, key=key, source=source, target=target, status='final' if row['stage'] == 5 else 'draft', note=note)
-            output.append(record if base == 'perfect_gift_directive_text' else previous.get(record['id'], record))
+            reviewed = row['stage'] == 5
+            # Only stage 5 in the supplied package is proof of review. Keep
+            # unfinished translations searchable without importing them.
+            if not reviewed:
+                note = '; '.join(filter(None, ('TODO 未校对', note)))
+            record = dict(id=f"{relative}:{key}", file=relative, key=key, source=source, target=target, status='final' if reviewed else 'draft', note=note)
+            saved = previous.get(record['id'], record)
+            if not reviewed:
+                saved['status'] = 'draft'
+                # Normalize repeated rerun markers so Ctrl+F shows one clear TODO.
+                old_notes = [part.strip() for part in saved['note'].split(';')
+                             if part.strip() and part.strip() != 'TODO 未校对']
+                saved['note'] = '; '.join(['TODO 未校对'] + old_notes)
+            output.append(record if base == 'perfect_gift_directive_text' else saved)
     # Supplemental *_add.json entries override the same key from the base file.
     output = list({row['id']: row for row in output}.values())
     output.sort(key=lambda row: row['id'])
@@ -357,6 +377,13 @@ def extract():
     atomic_text(TABLE, stream.getvalue())
     REPORT.mkdir(parents=True, exist_ok=True)
     atomic_text(REPORT / 'unresolved.txt', '\n'.join(unresolved) + '\n')
+    # Track every unfinished key in version control so Ctrl+F finds it even
+    # when conditional C code has no safe location for an inline comment.
+    todo = ['# TODO 未校对', '', '阶段 5 以外的译文尚未导入源码；未定位的条目也在此列出。', '', '## 已定位但未校对']
+    todo.extend(f"- TODO 未校对 {row['id']}" for row in output if row['status'] != 'final')
+    todo.extend(['', '## 尚未安全定位', ''])
+    todo.extend(f'- TODO 未校对 {entry}' for entry in unresolved)
+    atomic_text(ROOT / 'text/zh_hans/TODO_未校对.md', '\n'.join(todo) + '\n')
     # Include unresolved translations so the font is ready when their mappings land.
     chars = sorted({ch for path in ARCHIVE.rglob('*.json')
                     for row in json.loads(path.read_text(encoding='utf-8'))
@@ -445,10 +472,15 @@ def import_text(check, only_final):
             else:
                 problems.append(row['id'] + ': array changed')
                 continue
+            if groups[index] is None:
+                problems.append(row['id'] + ': conditional branches need review')
+                continue
             start, end, current = groups[index]
             quoted = json.dumps(row['target'], ensure_ascii=False)
             target = ('    .asciz ' + quoted) if path.suffix == '.bs' else quoted
-            if text[start:end] == target:
+            # Adjacent C string literals are one string at runtime. Accept
+            # their combined value so import never flattens hand-laid lines.
+            if text[start:end] == target or current == quoted[1:-1]:
                 continue
             if current != row['source'] and current != quoted[1:-1]:
                 problems.append(row['id'] + ': source changed')

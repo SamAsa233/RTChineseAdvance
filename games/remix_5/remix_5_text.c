@@ -1,3 +1,6 @@
+/* 中文文本：本文件采用译文包中 stage 5 的已校对条目。
+ * 字符串中的 \n 是游戏画面换行；相邻引号只是方便阅读源码。
+ * 未校对或未定位的条目见 text/zh_hans/TODO_未校对.md。 */
 #include "global.h"
 #include "text.h"
 
@@ -20,6 +23,7 @@ const char D_0806a2c0[] = "技术不错啊！";
 const char D_0806a2d8[] = "来自神秘节奏组织的通告";
 
 const char D_0806a2f4[] =
+    // TODO 未校对：D_0806a2f4 译文包未到 stage 5，暂留原文。
     "\x01\x52" "\x05\x31" "\x01\x35" "♪ WISH - Can't Wait for You ";
 
 const char D_0806a314[] =

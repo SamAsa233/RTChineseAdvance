@@ -1,3 +1,4 @@
+/* 汉化改动：正文折行同时处理英文单词与中文禁则，避免中文标点落在不合适的行首或行尾。 */
 #include "global.h"
 #include "text_printer.h"
 
@@ -378,6 +379,7 @@ s32 text_printer_print_formatted_line(s32 tileBaseX, s32 tileBaseY, s32 font, co
         }
 
         if (nextCodepoint >= 0) {
+            // 中文没有英文单词间空格；折行时往前挪分界，避免标点独占行首、左引号留在行尾。
             while (keepGlyphs > 1 && utf8_codepoint_is_in_list(nextCodepoint, gTextLineStartForbidden)) {
                 keepGlyphs--;
                 nextCodepoint = sGlyphBuffer[keepGlyphs].codepoint;

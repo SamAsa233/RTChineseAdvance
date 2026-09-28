@@ -1,3 +1,6 @@
+/* 中文文本：本文件采用译文包中 stage 5 的已校对条目。
+ * 字符串中的 \n 是游戏画面换行；相邻引号只是方便阅读源码。
+ * 未校对或未定位的条目见 text/zh_hans/TODO_未校对.md。 */
 #include "global.h"
 #include "text.h"
 
@@ -95,36 +98,47 @@ const char D_08069c3c[] = "髙田 成雄";
 
 const char D_08069c48[] = "西川 大輔";
 
+// TODO 未校对：D_08069c54 译文包未到 stage 5，暂留原文。
 const char D_08069c54[] = "R. Sugo";
 
 const char D_08069c5c[] = "足立 真吾";
 
+// TODO 未校对：D_08069c68 译文包未到 stage 5，暂留原文。
 const char D_08069c68[] = "H. Sakaguchi";
 
 const char D_08069c74[] = "渡辺 紀之";
 
+// TODO 未校对：D_08069c80 译文包未到 stage 5，暂留原文。
 const char D_08069c80[] = "H. Matsuda";
 
+// TODO 未校对：D_08069c8c 译文包未到 stage 5，暂留原文。
 const char D_08069c8c[] = "D. Morita";
 
+// TODO 未校对：D_08069c98 译文包未到 stage 5，暂留原文。
 const char D_08069c98[] = "K. Umeda";
 
+// TODO 未校对：D_08069ca0 译文包未到 stage 5，暂留原文。
 const char D_08069ca0[] = "Y. Nakai";
 
 const char D_08069ca8[] = "藤川 容子";
 
+// TODO 未校对：D_08069cb4 译文包未到 stage 5，暂留原文。
 const char D_08069cb4[] = "K. Nishimoto";
 
+// TODO 未校对：D_08069cc0 译文包未到 stage 5，暂留原文。
 const char D_08069cc0[] = "T. Akiho";
 
 const char D_08069cc8[] = "寺井 准";
 
+// TODO 未校对：D_08069cd0 译文包未到 stage 5，暂留原文。
 const char D_08069cd0[] = "A. Shimizubata";
 
+// TODO 未校对：D_08069ce0 译文包未到 stage 5，暂留原文。
 const char D_08069ce0[] = "Y. Yamashita";
 
 const char D_08069cec[] = "\\0023特别鸣谢";
 
+// TODO 未校对：D_08069cfc 译文包未到 stage 5，暂留原文。
 const char D_08069cfc[] = "Y. Kuratsune";
 
 const char D_08069d08[] = "改元 竜太";
@@ -153,6 +167,7 @@ const char D_08069d88[] = "\\0023制作人";
 
 const char D_08069d98[] = "岩田 聡";
 
+// TODO 未校对：D_08069da0 译文包未到 stage 5，暂留原文。
 const char D_08069da0[] = "S. Terai";
 
 const char D_08069da8[] = "";
@@ -163,13 +178,21 @@ const char D_08069dc8[] =
     "辛苦了。";
 
 const char D_08069ddc[] =
-    "你真的很努力呢！\n你的节奏感要是\n变得更好了，我会很开心的。\n";
+    "你真的很努力呢！\n"
+    "你的节奏感要是\n"
+    "变得更好了，我会很开心的。\n";
 
 const char D_08069e24[] =
-    "已经通关的游戏，\n往往是玩熟了以后\n才最有意思，所以之后也\n再拿出来玩玩看吧！";
+    "已经通关的游戏，\n"
+    "往往是玩熟了以后\n"
+    "才最有意思，所以之后也\n"
+    "再拿出来玩玩看吧！";
 
 const char D_08069e78[] =
-    "后面还有一点内容，\n不过先在这里\n给你介绍一下\n制作人员吧。";
+    "后面还有一点内容，\n"
+    "不过先在这里\n"
+    "给你介绍一下\n"
+    "制作人员吧。";
 
 const char D_08069ed4[] =
     "那么，请看吧〜！";
@@ -178,13 +201,22 @@ const char D_08069ee8[] =
     "你好呀！";
 
 const char D_08069ef8[] =
-    "还在加油吗？\n你的节奏感要是\n变得更好了，我会很开心的。\n";
+    "还在加油吗？\n"
+    "你的节奏感要是\n"
+    "变得更好了，我会很开心的。\n";
 
 const char D_08069f40[] =
-    "已经通关的游戏，\n往往是玩熟了以后\n才最有意思，所以也要\n多玩几次哦！";
+    "已经通关的游戏，\n"
+    "往往是玩熟了以后\n"
+    "才最有意思，所以也要\n"
+    "多玩几次哦！";
 
 const char D_08069f90[] =
-    "对了，还得介绍\n游戏的制作人员呢。\n不知道他们现在\n又在做什么游戏呢…";
+    "对了，还得介绍\n"
+    "游戏的制作人员呢。\n"
+    "不知道他们现在\n"
+    "又在做什么游戏呢…";
 
 const char D_08069fe4[] =
-    "好了，先不说这个。\n那么，请看吧〜！";
+    "好了，先不说这个。\n"
+    "那么，请看吧〜！";

@@ -1,3 +1,4 @@
+@ 中文文本：保留原脚本时序，只替换阶段 5 的已校对台词；未校对项搜索 TODO 未校对。
 .include "include/beatscript.inc"
 .include "games/space_dance/macros.inc"
 .include "games/bouncy_road/macros.inc"
@@ -179,10 +180,12 @@ sb_stop
 @ Remix 6 - Rap Men Text
 
 text text_remix_6_honto_desu_ka
+@ TODO 未校对：text_remix_6_honto_desu_ka 译文包未到 stage 5，暂留原文。
     .asciz ".b:1Maybe so, .b:0huh?.8:1"
 endtext
 
 text text_remix_6_kimi_tte_saikou
+@ TODO 未校对：text_remix_6_kimi_tte_saikou 译文包未到 stage 5，暂留原文。
     .asciz ".a:1You are .a:0so AWESOME!.8:0"
 endtext
 

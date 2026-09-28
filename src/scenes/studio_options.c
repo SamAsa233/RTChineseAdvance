@@ -1,3 +1,6 @@
+/* 中文文本：本文件采用译文包中 stage 5 的已校对条目。
+ * 字符串中的 \n 是游戏画面换行；相邻引号只是方便阅读源码。
+ * 未校对或未定位的条目见 text/zh_hans/TODO_未校对.md。 */
 #include "global.h"
 #include "studio.h"
 #include "graphics/studio/studio_graphics.h"
@@ -224,7 +227,8 @@ void studio_option_list_update(void) {
                             STUDIO_WARNING_OPT_N,
                             // You'll erase this performance
                             // data! Is that really OK?
-                            "要删除这份演奏数据哦！\n真的要删吗？",
+                            "要删除这份演奏数据哦！\n"
+                            "真的要删吗？",
                             studio_option_list_warning_deletion_result, 0,
                             &s_menu_se13_seqData);
                 }

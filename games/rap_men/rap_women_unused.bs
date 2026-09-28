@@ -1,3 +1,4 @@
+@ 中文文本：保留原脚本指令，只把已校对台词接入；未校对项搜索 TODO 未校对。
 .include "include/beatscript.inc"
 .include "games/rap_men/macros.inc"
 
@@ -31,50 +32,62 @@ define_gameplay_scene scene_rap_women_unused, script_rap_women_unused_entry
 @ Rap Women (Unused) - Text
 
 text text_rap_women_unused_juji_desu_ka
+@ TODO 未校对：text_rap_women_unused_juji_desu_ka 译文包未到 stage 5，暂留原文。
     .asciz ".b:1It's 10 AM, .b:0huh?.8:1"
 endtext
 
 text text_rap_women_unused_oyatsu_desu_ka
+@ TODO 未校对：text_rap_women_unused_oyatsu_desu_ka 译文包未到 stage 5，暂留原文。
     .asciz ".b:1It's snack time, .b:0huh?.8:1"
 endtext
 
 text text_rap_women_unused_naisho_desu_ka
+@ TODO 未校对：text_rap_women_unused_naisho_desu_ka 译文包未到 stage 5，暂留原文。
     .asciz ".b:1Who's to know, .b:0huh?.8:1"
 endtext
 
 text text_rap_women_unused_kare_no_oyatsu_da_ne
+@ TODO 未校对：text_rap_women_unused_kare_no_oyatsu_da_ne 译文包未到 stage 5，暂留原文。
     .asciz ".9:1These are all their snacks,.9:0 ya see?.8:1"
 endtext
 
 text text_rap_women_unused_tabeteii_kamo_ne
+@ TODO 未校对：text_rap_women_unused_tabeteii_kamo_ne 译文包未到 stage 5，暂留原文。
     .asciz ".9:1Eat 'em all up, .9:0ya feel me?.8:1"
 endtext
 
 text text_rap_women_unused_aketeii_kamo_ne
+@ TODO 未校对：text_rap_women_unused_aketeii_kamo_ne 译文包未到 stage 5，暂留原文。
     .asciz ".9:1Open 'em up, .9:0ya feel me?.8:1"
 endtext
 
 text text_rap_women_unused_oyatsu_wa_saikou
+@ TODO 未校对：text_rap_women_unused_oyatsu_wa_saikou 译文包未到 stage 5，暂留原文。
     .asciz ".a:1Snacking is .a:0so AWESOME!.8:1"
 endtext
 
 text text_rap_women_unused_kibun_wa_saikou
+@ TODO 未校对：text_rap_women_unused_kibun_wa_saikou 译文包未到 stage 5，暂留原文。
     .asciz ".a:1I feel .a:0so AWESOME!.8:1"
 endtext
 
 text text_rap_women_unused_amakute_saikou
+@ TODO 未校对：text_rap_women_unused_amakute_saikou 译文包未到 stage 5，暂留原文。
     .asciz ".a:1Sweets are .a:0so AWESOME!.8:1"
 endtext
 
 text text_rap_women_unused_betsubara_saikou
+@ TODO 未校对：text_rap_women_unused_betsubara_saikou 译文包未到 stage 5，暂留原文。
     .asciz ".a:1Cakes are .a:0so AWESOME!.8:1"
 endtext
 
 text text_rap_women_unused_kare_ni_wa_naisho
+@ TODO 未校对：text_rap_women_unused_kare_ni_wa_naisho 译文包未到 stage 5，暂留原文。
     .asciz ".a:1Clueless that we .a:0STOLE 'EM!.8:1"
 endtext
 
 text text_rap_women_unused_dare_ni_mo_naisho
+@ TODO 未校对：text_rap_women_unused_dare_ni_mo_naisho 译文包未到 stage 5，暂留原文。
     .asciz ".a:1Tell 'em we are .a:0LOATHSOME!.8:1"
 endtext
 

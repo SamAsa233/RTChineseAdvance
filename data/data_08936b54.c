@@ -1,3 +1,4 @@
+/* 汉化改动：数值字符表明确使用 ASCII 数字，避免旧的全角数字说明误导后续字库维护。 */
 #include "data_08936b54.h"
 #include "src/code_08003b28.h"
 #include "src/code_080068f8.h"

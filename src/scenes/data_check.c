@@ -1,3 +1,4 @@
+/* 汉化改动：统计页数字改用 ASCII 输出，避免原全角数字转换与扩充字库发生偏差。 */
 #include "global.h"
 #include "data_check.h"
 #include "src/scenes/game_select.h"
