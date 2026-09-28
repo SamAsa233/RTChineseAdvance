@@ -78,45 +78,38 @@ struct ReadingMaterial reading_material_table[TOTAL_READING_MATERIALS] = {
         /* TITLE ---------------------------------------------------------- */
             "夜空漫步情报",
         /* BODY ----------------------------------------------------------- */
+            // 阶段 5 已校对 reading_night_walk_story：中文谜题改为三个编号，所以正文中的编号也逐处对应更新。
+            // 相邻的 C 字符串会自动拼接；只有 \n 会让画面换行，故长段按语义拆开源码但不额外插入画面换行。
+            // 原版用 PARADISE 区分英美拼写；中文虽相同，仍保留两条编译路径并逐条核验。
+            // \001C/\001L 切换居中/左对齐，\0031/\0030 和 \001m/\001s 切换字号，强调范围按中文编号调整。
+            // TODO 未校对：两地区的编号强调、自动折行和分页仍需模拟器或实机核对。
             #ifdef PARADISE
-	        "There's this strange fellow who you might recognise\n"
+            "出演《夜间漫步》的那位，据说非常喜欢音乐。听说他以前也做过音乐相关的工作，"
             #else
-	        "There's this strange fellow who you might recognize\n"
+            "出演《夜间漫步》的那位，据说非常喜欢音乐。听说他以前也做过音乐相关的工作，"
             #endif
-            "from Night Walk.\n"
-            "He seems to really love music.\n"
+            "这次会在这款游戏里登场，好像也是托了那层关系的福。前阵子我在街上偶然碰见他，就上前聊了几句，"
+            "结果他只丢下一句“最喜欢音乐啦！”，就顺着楼梯往上跑，不知道去了哪里。我当时还稍微想了一下，"
+            "要是以后还能在哪儿再见到这位音乐迷就好了。话说回来，他到底叫什么名字呢？\n"
             "\n"
-            "Apparently he's worked with music before,\n"
-            "and landed a role in this game through connections.\n"
+            "好了，接下来是问答时间！\n"
+            "那位先生的名字是…\n"
+            "\001C" "\0031" "\001m" "①②③\n"
+            "\001L" "\0030" "\001s" "请写出各个编号里该填的字！\n"
+            "答对的话，就能看到下一页的文章啦！！\n"
             "\n"
+            "\0031" "\001m" "\001C" "节奏游戏《问答》的秘密\n"
+            "\0030" "\001s" "\001L" "\n"
+            "那个游戏里，音乐开始" "\0031" "\001m" "①②" "\0030" "\001s" "后，\n"
+            "玩家每按一下按钮，\n"
+            "计数器就会照着次数增加，对吧？\n"
             "\n"
+            "其实，只要把规则" "\0031" "\001m" "②" "\0030" "\001s" "在一边，\n"
+            "不停地猛按按钮，\n"
+            "就会发生不得了的事情。\n"
             "\n"
-            "I ran into him in the city one time.\n"
-            "\n"
-            "All he said was \"I love music!\", and then just\n"
-            "disappeared up some stairs.\n"
-            "I wonder if I'll ever meet that music-loving guy again.\n"
-            "\n"
-            "Come to think of it, I don't even know his name...\n"
-            "\n"
-            "\n"
-            "Okay, time for a quiz!\n"
-            "His name is...\n"
-            "\n"
-            "\001C" "\0031" "\001m" "①②③④-④③⑤\n"
-            "\001L" "\0030" "\001s" "\n"
-            "Answer which letters go in each of the numbers!\n"
-            "If you answer correctly, you'll be able to read the\n"
-            "following text!\n"
-            "\n"
-            "\n"
-            "\0031" "\001m" "\001C" "Quiz Show's Secret\n"
-            "\0030" "\001s" "\001C" "\n"
-            "In this g" "\0031" "\001m" "③" "\0030" "\001s" "me, the " "\0031" "\001m" "①" "\0030" "\001s" "la" "\0031" "\001m" "④" "\0030" "\001s" "er has to m" "\0031" "\001m" "③" "\0030" "\001s" "tch\n"
-            "\0030" "\001s" "the host's " "\0031" "\001m" "⑤" "\0030" "\001s" "umber of button " "\0031" "\001m" "①" "\0030" "\001s" "resses. But\n"
-            "\0030" "\001s" "if you mash the butto" "\0031" "\001m" "⑤" "\0030" "\001s" "s rea" "\0031" "\001m" "②②" "\0030" "\001s" "y f" "\0031" "\001m" "③" "\0030" "\001s" "st instead,\n"
-            "\0030" "\001s" "somethi" "\0031" "\001m" "⑤" "\0030" "\001s" "g interesting can h" "\0031" "\001m" "③" "\0030" "\001s" "ppen.\n"
-            "\0030" "\001s" "It's nothing crazy or an" "\0031" "\001m" "④" "\0030" "\001s" "thing, but it's neat!",
+            "诸" "\0031" "\001m" "③" "\0030" "\001s" "不妨亲自试试看。\n"
+            "不过嘛，也别抱太大期待啦～！",
         /* STYLE ---------------------------------------------------------- */
             /* GFX */ reading_style_train_gfx_table,
             /* BGM */ &reading_style_train_bgm

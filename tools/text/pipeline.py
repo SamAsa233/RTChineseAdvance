@@ -581,6 +581,7 @@ def conditional_level_translation_installed(text, key, translation):
 def reading_story_installed(text, key, translation):
     """核对资料室长文两种地区路径的实际显示字串。"""
     specs = {
+        'reading_night_walk_story': ('NIGHT_WALK', 1),
         'reading_horse_machine_story': ('MECHANICAL_HORSE', 1),
         'reading_radio_story': ('RAP_MEN', 1),
         'reading_final_story': ('REMIX8', 1),
@@ -613,6 +614,16 @@ def reading_story_installed(text, key, translation):
         controls = CONTROL_TOKEN.findall(joined)
         # 来信有两段强调文字和左右对齐的署名；逐码核对，防止译文正确但版式损坏。
         expected_controls = {
+            # 中文谜题只有三个编号；逐项检查居中、字号切换和三个提示的强调，避免旧英文的 ④⑤ 码残留。
+            'reading_night_walk_story': [
+                r'\001C', r'\0031', r'\001m',
+                r'\001L', r'\0030', r'\001s',
+                r'\0031', r'\001m', r'\001C',
+                r'\0030', r'\001s', r'\001L',
+                r'\0031', r'\001m', r'\0030', r'\001s',
+                r'\0031', r'\001m', r'\0030', r'\001s',
+                r'\0031', r'\001m', r'\0030', r'\001s',
+            ],
             'reading_final_story': [r'\001R'],
             'reading_praise_story': [
                 r'\0031', r'\001m', r'\0030', r'\001s', r'\001R', r'\001L',
@@ -624,6 +635,9 @@ def reading_story_installed(text, key, translation):
             return None
         return CONTROL_TOKEN.sub('', joined).replace(r'\n', '\n').replace(r'\"', '"')
 
+    # 这篇译文已有明确的段落换行；逐字比较换行，防止排版变化时被宽松匹配掩盖。
+    if key == 'reading_night_walk_story':
+        return all(visible(body, paradise) == translation for paradise in (True, False))
     expected = ''.join(char for char in translation if not char.isspace())
     return all(value is not None and ''.join(char for char in value if not char.isspace()) == expected
                for value in (visible(body, True), visible(body, False)))

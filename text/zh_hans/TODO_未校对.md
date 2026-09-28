@@ -227,6 +227,5 @@
 
 ## 尚未安全定位
 
-- TODO 未校对 data\data_room\reading_material.inc.json:reading_night_walk_story: key not found
 - TODO 未校对 data\data_room\reading_material.inc.json:reading_lyrics_3: key not found
 - TODO 未校对 games\drum_live\drum_live_menu_engine.json:drum_live_menu_poster_desc[42]: TODO 未校对（阶段 2）
