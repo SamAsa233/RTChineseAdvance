@@ -620,6 +620,37 @@ def reading_story_installed(text, key, translation):
                for value in (visible(body, True), visible(body, False)))
 
 
+def reading_haiku_installed(text, key, translation):
+    """五首俳句共用一个 BODY，按诗号核对文字及左右居中控制码。"""
+    if not re.fullmatch(r'reading_haiku_[1-5]', key):
+        return False
+    entry = re.search(r'/\* RHYTHM_HAIKU \(', text)
+    next_entry = re.search(r'(?m)^    /\* [A-Z][A-Z0-9_]+ ', text[entry.end():]) if entry else None
+    if not next_entry:
+        return False
+    body = text[entry.end():entry.end() + next_entry.start()]
+    start_marker = '// ' + key + '：'
+    if start_marker not in body:
+        return False
+    section = body.split(start_marker, 1)[1]
+    next_verse = re.search(r'(?m)^\s*// reading_haiku_[1-5]：', section)
+    if next_verse:
+        section = section[:next_verse.start()]
+    else:
+        section = section.split('/* STYLE', 1)[0]
+    raw = ''.join(literal[1:-1] for literal in LITERAL.findall(remove_comments(section)))
+    triple = lambda letter: [r'\001' + letter, r'\0030', r'\001s']
+    controls = triple('L') + triple('C') + triple('R')
+    if key != 'reading_haiku_3':
+        controls += triple('L')  # 原版第三首没有这次重置，其他四首有。
+    controls += triple('C')
+    if CONTROL_TOKEN.findall(raw) != controls:
+        return False
+    shown = CONTROL_TOKEN.sub('', raw).replace(r'\n', '\n').replace(r'\"', '"')
+    return (''.join(char for char in shown if not char.isspace())
+            == ''.join(char for char in translation if not char.isspace()))
+
+
 def extract():
     output, unresolved = [], []
     previous = {}
@@ -648,8 +679,10 @@ def extract():
                 and path is not None and len(members) == 1):
             key, row = members[0]
             # 为什么手工校验：长文有条件编译，普通定位器会拒绝修改整篇。
-            if (row['stage'] == 5 and reading_story_installed(
-                    path.read_text(encoding='utf-8'), key, row['translation'])):
+            source = path.read_text(encoding='utf-8')
+            if (row['stage'] == 5 and
+                    (reading_story_installed(source, key, row['translation'])
+                     or reading_haiku_installed(source, key, row['translation']))):
                 continue
         if (archive_name in ('src/arrival.json', 'src/game_select.json')
                 and path is not None and len(members) == 1):
