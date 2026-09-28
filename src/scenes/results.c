@@ -587,7 +587,8 @@ void results_render_skill_screen(void) {
         }
     }
 
-    snprintf(scoreString, sizeof(scoreString), ".5:1" "R-IQ  " ".6:0" "%d", score);
+    // 阶段 5 已校对：只替换评分标题，前后的颜色控制码保持原样。
+    snprintf(scoreString, sizeof(scoreString), ".5:1" "评分　　" ".6:0" "%d", score);
 
     textAnim = bmp_font_obj_print_r(gResults->objFont, scoreString, 0, 0);
     sprite_create(gSpriteHandler, textAnim->frames, 0, 204, 144, 0x4800, 0, 0, 0);
@@ -663,8 +664,8 @@ u32 results_get_negative_comments(void) {
         u16 sprite;
         char modifiedComment[0x100];
 
-        // Copy the comment to a modifiable buffer, TO BE ABLE TO ALTER IT CAUSE YOU CANT CHANGE THEM UNLESS YOU FIRST COPY THEM WHICH IS ANNOYING
-        strcpy(modifiedComment, comments[i]);
+        // 中文可能比英文占更多字节；按实际数组容量复制，保留后续英文首字母处理。
+        snprintf(modifiedComment, sizeof(modifiedComment), "%s", comments[i]);
 
         // Convert the first character to lowercase for all the comments except the first one
         // Except for sentences where you don't need to change the capitalization
@@ -672,8 +673,10 @@ u32 results_get_negative_comments(void) {
             modifiedComment[0] += 32;
         }
 
-        strcpy(commentsText, results_try_again_comment_pool[clamp_int32(i, 0, 2)]);
-        strcat(commentsText, modifiedComment);
+        // 前缀与评语一次限长拼接，避免中文增长后 strcat 写出 0x100 字节缓冲区。
+        // TODO 未校对：拼接后的结算评语宽度还需在实际关卡结果页检查。
+        snprintf(commentsText, sizeof(gResults->negativeCommentsText), "%s%s",
+                 results_try_again_comment_pool[clamp_int32(i, 0, 2)], modifiedComment);
 
         anim = results_get_comment_anim(commentsText, TEXT_ANCHOR_BOTTOM_LEFT, 3);
         sprite = sprite_create(gSpriteHandler, anim, 0, 0, 0, 0x800, 0, 0, 0);
@@ -688,8 +691,9 @@ u32 results_get_negative_comments(void) {
 // [D_089d7b34] Rank Comment Pool (Try Again)
 const char *results_try_again_comment_pool[] = {
     "",
-    "...And, ",
-    "...Also, "
+    // 阶段 5 已校对：第二、三条失败原因前的衔接词。
+    "还有，",
+    "另外，"
 };
 
 
@@ -747,7 +751,8 @@ s24_8 results_get_positive_comments(void) {
             continue;
         }
         
-        strcpy(modifiedComment, criteria->positiveRemark);
+        // 评语要进入 0x100 字节的可修改缓冲区，不能无限制 strcpy。
+        snprintf(modifiedComment, sizeof(modifiedComment), "%s", criteria->positiveRemark);
 
         if (gResults->totalNegativeComments > 0) {
 
@@ -756,8 +761,8 @@ s24_8 results_get_positive_comments(void) {
                 modifiedComment[0] += 32;
             }
 
-            memcpy(commentsText, "...But ", 8);
-            strcat(commentsText, modifiedComment);
+            // 阶段 5 已校对：保留“先差后好”的转折，同时按缓冲区容量拼接。
+            snprintf(commentsText, 0x100, "%s%s", "…不过，", modifiedComment);
             anim = results_get_comment_anim(commentsText, TEXT_ANCHOR_BOTTOM_RIGHT, 3);
             palette = EXTRA_COMMENT_PALETTE;
         } else {
@@ -767,18 +772,19 @@ s24_8 results_get_positive_comments(void) {
                 modifiedComment[0] += 32;
             }
 
+            // 原 memcpy 会从短英文常量读取 10/12 字节；改成前缀选择后限长写入。
+            // 这些前缀按译文包的阶段 5 顺序对应“而且、再加上”。
             switch (totalPassed) {
                 case 0:
-                    memcpy(commentsText, "", 1);
+                    snprintf(commentsText, 0x100, "%s", modifiedComment);
                     break;
                 case 1:
-                    memcpy(commentsText, "...And ", 10); // ("moreover,")
+                    snprintf(commentsText, 0x100, "%s%s", "而且，", modifiedComment);
                     break;
                 default:
-                    memcpy(commentsText, "...Plus, ", 12); // ("also,")
+                    snprintf(commentsText, 0x100, "%s%s", "再加上，", modifiedComment);
                     break;
             }
-            strcat(commentsText, modifiedComment);
             anim = results_get_comment_anim(commentsText, TEXT_ANCHOR_BOTTOM_LEFT, 3);
             palette = COMMENT_PALETTE;
         }
@@ -815,13 +821,15 @@ s24_8 results_get_positive_comments(void) {
 
 // [D_089d7b40] Rank Comment Pool (OK)
 const char *results_ok_comment_pool[] = {
-    "I guess that was all right.",
-    "Good enough...",
-    "I don't know...",
+    // 阶段 5 已校对：无额外评语时随机选用的四句评价。
+    "就算可以吧。",
+    "暂且……",
+    "算是一般般吧。",
     #ifdef PARADISE
-    "Hmm..."
+    // 两个地区原来的英文感叹词不同，中文共用同一条已校对译文。
+    "唔〜嗯……"
     #else
-    "Hm..."
+    "唔〜嗯……"
     #endif
 };
 

@@ -2692,6 +2692,16 @@ src/scenes/debug_menu_table.c:debug_menu_96	src/scenes/debug_menu_table.c	debug_
 src/scenes/debug_menu_table.c:debug_menu_97	src/scenes/debug_menu_table.c	debug_menu_97	Ninja Bodyguard	忍者	final	
 src/scenes/debug_menu_table.c:debug_menu_98	src/scenes/debug_menu_table.c	debug_menu_98	Ninja Descendant	忍者的后代	final	
 src/scenes/debug_menu_table.c:debug_menu_99	src/scenes/debug_menu_table.c	debug_menu_99	Toss Team	传球少年	final	
+src/scenes/results.c:results_acceptable	src/scenes/results.c	results_acceptable	就算可以吧。	就算可以吧。	final	
+src/scenes/results.c:results_also	src/scenes/results.c	results_also	还有，	还有，	final	
+src/scenes/results.c:results_but	src/scenes/results.c	results_but	…不过，	…不过，	final	
+src/scenes/results.c:results_for_now	src/scenes/results.c	results_for_now	暂且……	暂且……	final	
+src/scenes/results.c:results_further	src/scenes/results.c	results_further	再加上，	再加上，	final	
+src/scenes/results.c:results_more	src/scenes/results.c	results_more	另外，	另外，	final	
+src/scenes/results.c:results_moreover	src/scenes/results.c	results_moreover	而且，	而且，	final	
+src/scenes/results.c:results_scoring	src/scenes/results.c	results_scoring	评分　　	评分　　	final	
+src/scenes/results.c:results_so_so	src/scenes/results.c	results_so_so	算是一般般吧。	算是一般般吧。	final	
+src/scenes/results.c:results_well	src/scenes/results.c	results_well	唔〜嗯……	唔〜嗯……	final	
 src/scenes/studio_drums.c:studio_drums_1	src/scenes/studio_drums.c	studio_drums_1	Standard Drum	普通鼓组	final	
 src/scenes/studio_drums.c:studio_drums_10	src/scenes/studio_drums.c	studio_drums_10	Heel Drop Drum 1	脚跟技巧鼓组 1	final	
 src/scenes/studio_drums.c:studio_drums_11	src/scenes/studio_drums.c	studio_drums_11	Heel Drop Drum 2	脚跟技巧鼓组 2	final	

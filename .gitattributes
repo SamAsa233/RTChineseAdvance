@@ -1,2 +1,4 @@
 # TSV 的最后一列是 note；空 note 必须保留末尾制表符，不能当作多余空白删掉。
 text/zh_hans/translations.tsv whitespace=-blank-at-eol
+# 仓库原有 C 源码使用 CRLF；忽略行尾的回车，仍检查真正的行尾空格。
+*.c whitespace=cr-at-eol

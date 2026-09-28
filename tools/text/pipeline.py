@@ -176,6 +176,47 @@ def debug_menu_mapping():
 
 def ordinal_slot(text, path, key):
     name = path.relative_to(ROOT).as_posix()
+    if name == 'src/scenes/results.c':
+        # 结算页译文分散在分数格式串、两组评语和运行时前缀中。
+        # 按使用位置逐项核对已校对译文，避免同一句话出现在别处时误判。
+        rows = json.loads((ARCHIVE / 'src/results.json').read_text(encoding='utf-8'))
+        translations = {row['key']: row for row in rows}
+        if key not in translations or translations[key]['stage'] != 5:
+            return None
+        wanted = json.dumps(translations[key]['translation'], ensure_ascii=False)
+        if key == 'results_scoring':
+            match = re.search(r'"\.5:1"\s*("(?:\\.|[^"\\])*")\s*"\.6:0"', text)
+            return [(match.start(1), match.end(1), wanted[1:-1])] if match and match.group(1) == wanted else None
+        if key in ('results_also', 'results_more'):
+            groups = c_initializer(text, 'results_try_again_comment_pool')
+            index = 1 if key == 'results_also' else 2
+            return [groups[index]] if groups and len(groups) == 3 and groups[index][2] == wanted[1:-1] else None
+        if key in ('results_but', 'results_moreover', 'results_further'):
+            # 第一个前缀用于“先差后好”，后两个按通过项目的数量选用。
+            pattern = r'snprintf\(commentsText,\s*0x100,\s*"%s%s",\s*("(?:\\.|[^"\\])*")\s*,\s*modifiedComment\)'
+            matches = list(re.finditer(pattern, text))
+            index = ('results_but', 'results_moreover', 'results_further').index(key)
+            if len(matches) != 3 or matches[index].group(1) != wanted:
+                return None
+            match = matches[index]
+            return [(match.start(1), match.end(1), wanted[1:-1])]
+        if key in ('results_acceptable', 'results_for_now', 'results_so_so'):
+            groups = c_initializer(text, 'results_ok_comment_pool')
+            index = ('results_acceptable', 'results_for_now', 'results_so_so').index(key)
+            return [groups[index]] if groups and len(groups) == 3 and groups[index][2] == wanted[1:-1] else None
+        if key == 'results_well':
+            # 最后一句位于两个地区分支；必须两侧都已翻译才算完成。
+            anchor = 'const char *results_ok_comment_pool[] = {'
+            start = text.find(anchor)
+            end = text.find('};', start)
+            if start < 0 or end < 0:
+                return None
+            matches = list(LITERAL.finditer(remove_comments(text[start:end])))
+            if len(matches) != 5 or matches[3].group() != wanted or matches[4].group() != wanted:
+                return None
+            match = matches[3]
+            return [(start + match.start(), start + match.end(), wanted[1:-1])]
+        return None
     if name == 'src/scenes/data_check.c':
         # 统计页译文是同一个函数里依次 strcat 的片段，不是同名数组。
         # 按调用顺序定位，并核对阶段 5 译文；顺序变了就留在 TODO。
