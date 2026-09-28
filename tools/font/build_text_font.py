@@ -13,6 +13,20 @@ from tengoku_font import encode_glyph
 ROOT = Path(__file__).resolve().parents[2]
 THIRD = Path(__file__).resolve().parent / "third_party"
 START, END = 0x4E00, 0x9FFF
+SMALL_MANUAL = {
+    # 蹑: separate the 足 radical from the dense 聂 component at 9x9.
+    0x8E51: (
+        '###.#####',
+        '#.#..#.#.',
+        '###..###.',
+        '.#...#.#.',
+        '##...###.',
+        '#.#..#.#.',
+        '.##..###.',
+        '..#.#.#.#',
+        '##..#.#.#',
+    ),
+}
 
 
 def atomic_write(path, data):
@@ -151,7 +165,14 @@ def build(size, required, fusion, unifont, out, report, keep, small_fallback=Non
             glyphs.extend(previous[index * height * 2:(index + 1) * height * 2] if previous else bytes(height * 2))
             widths.append(old_widths[index] if old_widths else 0)
             continue
-        if size != "large" and cp in fusion:
+        if size == 'small' and cp in SMALL_MANUAL:
+            rows = [[0] * 16 for _ in range(height)]
+            for y, line in enumerate(SMALL_MANUAL[cp]):
+                for x, pixel in enumerate(line):
+                    rows[top + y][x] = int(pixel == '#')
+            width = target
+            counts['manual'] += 1
+        elif size != "large" and cp in fusion:
             rows, width = bdf_canvas(fusion[cp], height, 9)
             counts["fusion"] += 1
         elif size == 'small' and cp in small_fallback:
