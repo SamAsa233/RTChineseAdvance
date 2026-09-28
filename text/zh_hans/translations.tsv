@@ -219,10 +219,6 @@ data/scenes/game_select/levels.inc.c:level_air_batter_extra_result_1	data/scenes
 data/scenes/game_select/levels.inc.c:level_air_batter_extra_result_2	data/scenes/game_select/levels.inc.c	level_air_batter_extra_result_2	Graaaah!	耶。	draft	
 data/scenes/game_select/levels.inc.c:level_air_batter_extra_result_3	data/scenes/game_select/levels.inc.c	level_air_batter_extra_result_3	A home run! I did it!	成功啦——！！	draft	
 data/scenes/game_select/levels.inc.c:level_baikin_1	data/scenes/game_select/levels.inc.c	level_baikin_1	Sick Beats	细菌博士	final	
-data/scenes/game_select/levels.inc.c:level_baikin_1_desc	data/scenes/game_select/levels.inc.c	level_baikin_1_desc	\0023Assistant's memo:\nWe have an outbreak\nof an unknown virus!\nHelp us, Dr Cutlery!Help us, Dr. Cutlery!	"来自助手的通报
-“不好了！
-细菌爆发啦！！
-博士，快来救命啊～”"	final	control codes need review
 data/scenes/game_select/levels.inc.c:level_baikin_1_result_1	data/scenes/game_select/levels.inc.c	level_baikin_1_result_1	Our experiment has failed...	研究失败了。	final	
 data/scenes/game_select/levels.inc.c:level_baikin_1_result_2	data/scenes/game_select/levels.inc.c	level_baikin_1_result_2	Failure is just the first step to success!	或许失败乃成功之母呢！	final	
 data/scenes/game_select/levels.inc.c:level_baikin_1_result_3	data/scenes/game_select/levels.inc.c	level_baikin_1_result_3	We've created breakthrough medicine!	研制出了超级厉害的药剂！！	final	
@@ -232,7 +228,6 @@ data/scenes/game_select/levels.inc.c:level_bari_1_desc	data/scenes/game_select/l
 一身笔挺西装！
 太帅了！！"	final	
 data/scenes/game_select/levels.inc.c:level_bari_1_result_1	data/scenes/game_select/levels.inc.c	level_bari_1_result_1	I spent everything I had on this outfit!	呀啊！饶了我吧！！	final	
-data/scenes/game_select/levels.inc.c:level_bari_1_result_2	data/scenes/game_select/levels.inc.c	level_bari_1_result_2	We were so close...	就差那么一点点了呢…	final	
 data/scenes/game_select/levels.inc.c:level_bon_dance_1	data/scenes/game_select/levels.inc.c	level_bon_dance_1	The☆Bon Dance	盆舞	final	
 data/scenes/game_select/levels.inc.c:level_bon_dance_1_desc	data/scenes/game_select/levels.inc.c	level_bon_dance_1_desc	The Bon Festival has\na modern-day style!\nClap along to this\nnew arrangement!	"这是现代版的
 盂兰盆舞！
@@ -271,10 +266,6 @@ data/scenes/game_select/levels.inc.c:level_games_desc	data/scenes/game_select/le
 去挑战特别游戏吧！
 有好几个哦。"	final	
 data/scenes/game_select/levels.inc.c:level_hanabi_1	data/scenes/game_select/levels.inc.c	level_hanabi_1	Fireworks	烟火	final	
-data/scenes/game_select/levels.inc.c:level_hanabi_1_desc	data/scenes/game_select/levels.inc.c	level_hanabi_1_desc	It's not summertime\nwithout fireworks!\nLight them up to fill the\nsky with pretty colours!sky with pretty colors!	"说到夏天嘛，
-果然还是烟火吧？
-就让它绚丽多彩地
-升上夜空吧！"	final	
 data/scenes/game_select/levels.inc.c:level_hanabi_1_result_1	data/scenes/game_select/levels.inc.c	level_hanabi_1_result_1	Cough, cough... I think I blew it...	咳咳咳… 失败。	final	
 data/scenes/game_select/levels.inc.c:level_hanabi_1_result_2	data/scenes/game_select/levels.inc.c	level_hanabi_1_result_2	That wasn't half bad!	做得相当不错嘛！	final	
 data/scenes/game_select/levels.inc.c:level_hanabi_1_result_3	data/scenes/game_select/levels.inc.c	level_hanabi_1_result_3	I am THE go-to fireworks guy!	说到烟火就交给我吧！！	final	
@@ -425,7 +416,6 @@ data/scenes/game_select/levels.inc.c:level_quiz_1_desc	data/scenes/game_select/l
 只要猜中主持人
 “敲了几下”
 就可以啦。"	final	
-data/scenes/game_select/levels.inc.c:level_quiz_1_result_1	data/scenes/game_select/levels.inc.c	level_quiz_1_result_1	I can do better... I can do better...	嘛，也就这样吧。	final	
 data/scenes/game_select/levels.inc.c:level_quiz_1_result_3	data/scenes/game_select/levels.inc.c	level_quiz_1_result_3	I won the grand prize! A world tour!	我居然赢得了环球旅行！	final	
 data/scenes/game_select/levels.inc.c:level_rap_men_1	data/scenes/game_select/levels.inc.c	level_rap_men_1	RAPMEN	饶舌男	final	
 data/scenes/game_select/levels.inc.c:level_rap_men_1_desc	data/scenes/game_select/levels.inc.c	level_rap_men_1_desc	The coolest rapping\nduo has arrived! Their\nhot rapping skills are\nthe talk of the town!	"一对超酷的搭档
@@ -601,18 +591,8 @@ data/scenes/game_select/levels.inc.c:level_toran_porin_1_result_1	data/scenes/ga
 data/scenes/game_select/levels.inc.c:level_toran_porin_1_result_2	data/scenes/game_select/levels.inc.c	level_toran_porin_1_result_2	At least we only messed up half the show...	有点不上不下呀…	final	
 data/scenes/game_select/levels.inc.c:level_toran_porin_1_result_3	data/scenes/game_select/levels.inc.c	level_toran_porin_1_result_3	We're the perfect duo!	配合得稳稳的！！	final	
 data/scenes/game_select/levels.inc.c:level_toss_boys_1	data/scenes/game_select/levels.inc.c	level_toss_boys_1	Toss Team	传球少年	final	
-data/scenes/game_select/levels.inc.c:level_toss_boys_1_desc	data/scenes/game_select/levels.inc.c	level_toss_boys_1_desc	This trio of friends love\npractising volleyball.\npracticing volleyball.\nListen for their names\nas they pass their ball!	"感情超好的三人组，
-一边互相喊话，
-一边总是开心地
-练习传球呢。"	final	
-data/scenes/game_select/levels.inc.c:level_toss_boys_1_result_2	data/scenes/game_select/levels.inc.c	level_toss_boys_1_result_2	Next time, we'll toss better than the best!	你肯定还能做得更好！	final	
 data/scenes/game_select/levels.inc.c:level_toss_boys_2	data/scenes/game_select/levels.inc.c	level_toss_boys_2	Toss Team 2	传球少年２	final	
-data/scenes/game_select/levels.inc.c:level_toss_boys_2_desc	data/scenes/game_select/levels.inc.c	level_toss_boys_2_desc	This trio of friends love\npractising volleyball.\npracticing volleyball.\nToday, they're training\nharder than ever!	"感情超好的三人组，
-一边互相喊话，
-一边总是开心地
-练习传球呢。"	final	
 data/scenes/game_select/levels.inc.c:level_toss_boys_2_result_1	data/scenes/game_select/levels.inc.c	level_toss_boys_2_result_1	Our spirits have been deflated...	惨兮兮啦〜！	final	
-data/scenes/game_select/levels.inc.c:level_toss_boys_2_result_2	data/scenes/game_select/levels.inc.c	level_toss_boys_2_result_2	We still have a long way to go!	怎么能在这里结束！	final	
 data/scenes/game_select/levels.inc.c:level_toys	data/scenes/game_select/levels.inc.c	level_toys	Rhythm Toys	节奏玩具	final	
 data/scenes/game_select/levels.inc.c:level_toys_desc	data/scenes/game_select/levels.inc.c	level_toys_desc	Collect medals to\nplay with some\nRhythm Toys!\nCheck them out!	"收集奖牌，
 去玩玩那些会发声的玩具吧！
@@ -1835,7 +1815,6 @@ games/remix_8/remix_8_text.c:D_0806a9cc	games/remix_8/remix_8_text.c	D_0806a9cc	
 games/remix_8/remix_8_text.c:D_0806a9f0	games/remix_8/remix_8_text.c	D_0806a9f0	Your technique needs work.	再好好磨练一下吧。	final	
 games/remix_8/remix_8_text.c:D_0806aa0c	games/remix_8/remix_8_text.c	D_0806aa0c	Your technique is solid!	技术不错啊！	final	
 games/remix_8/remix_8_text.c:D_0806aa24	games/remix_8/remix_8_text.c	D_0806aa24	Rhythm League notes:	来自神秘节奏组织的通告	final	
-games/remix_8/remix_8_text.c:D_0806aa40	games/remix_8/remix_8_text.c	D_0806aa40	For you it is possible!	你一定能做到！	final	
 games/remix_8/remix_8_text.c:D_0806aa40	games/remix_8/remix_8_text.c	D_0806aa40	For you it is possible!	你一定能做到！	final	
 games/remix_8/remix_8_text.c:D_0806aa50	games/remix_8/remix_8_text.c	D_0806aa50	Keep it up!	可得撑住啊——！！	final	
 games/remix_8/remix_8_text.c:D_0806aa64	games/remix_8/remix_8_text.c	D_0806aa64	Give it your all!	冲啊！！	final	

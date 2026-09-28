@@ -19,7 +19,7 @@ const char D_0806aa0c[] = "技术不错啊！";
 
 const char D_0806aa24[] = "来自神秘节奏组织的通告";
 
-const char D_0806aa40[] = "For you it is possible!";
+const char D_0806aa40[] = "你一定能做到！";
 
 const char D_0806aa50[] = "可得撑住啊——！！";
 

@@ -49,7 +49,7 @@ struct LevelData level_data_table[] = {
         /* Epilogue GFX  */ epilogue_snappy_trio_gfx_tables,
         /* Epilogue Text */ {
             /* TRY_AGAIN */ "呀啊！饶了我吧！！",
-            /* OK        */ "就差那么一点点了呢…",
+            /* OK        */ "We were so close...",
             #ifdef PARADISE
             /* SUPERB    */ "Perfect sync! It must be the outfits, right?"
             #else
@@ -374,7 +374,13 @@ struct LevelData level_data_table[] = {
     /* FIREWORKS */ {
         /* Entry Scene   */ &scene_fireworks,
         /* Level Name    */ "烟火",
-        /* Level Desc.   */ "说到夏天嘛，\n果然还是烟火吧？\n就让它绚丽多彩地\n升上夜空吧！",
+        /* Level Desc.   */ "It's not summertime\n"
+                            "without fireworks!\n"
+                            "Light them up to fill the\n"
+                            #ifdef PARADISE
+                            "sky with pretty colours!",
+                            #else
+                            "sky with pretty colors!",
                             #endif
         /* Level Icon    */ 26,
         /* Level Type    */ LEVEL_TYPE_GAME,
@@ -415,7 +421,14 @@ struct LevelData level_data_table[] = {
     /* TOSS_BOYS */ {
         /* Entry Scene   */ &scene_toss_boys,
         /* Level Name    */ "传球少年",
-        /* Level Desc.   */ "感情超好的三人组，\n一边互相喊话，\n一边总是开心地\n练习传球呢。",
+        /* Level Desc.   */ "This trio of friends love\n"
+                            #ifdef PARADISE
+                            "practising volleyball.\n"
+                            #else
+                            "practicing volleyball.\n"
+                            #endif
+                            "Listen for their names\n"
+                            "as they pass their ball!",
         /* Level Icon    */ 30,
         /* Level Type    */ LEVEL_TYPE_GAME,
         /* Epilogue GFX  */ epilogue_toss_boys_gfx_tables,
@@ -425,7 +438,7 @@ struct LevelData level_data_table[] = {
             #else
             /* TRY_AGAIN */ "We've been tossed out!",
             #endif
-            /* OK        */ "你肯定还能做得更好！",
+            /* OK        */ "Next time, we'll toss better than the best!",
             #ifdef PARADISE
             /* SUPERB    */ "Chuck World Championship, here we come!"
             #else
@@ -436,13 +449,20 @@ struct LevelData level_data_table[] = {
     /* TOSS_BOYS_2 */ {
         /* Entry Scene   */ &scene_toss_boys_2,
         /* Level Name    */ "传球少年２",
-        /* Level Desc.   */ "感情超好的三人组，\n一边互相喊话，\n一边总是开心地\n练习传球呢。",
+        /* Level Desc.   */ "This trio of friends love\n"
+                            #ifdef PARADISE
+                            "practising volleyball.\n"
+                            #else
+                            "practicing volleyball.\n"
+                            #endif
+                            "Today, they're training\n"
+                            "harder than ever!",
         /* Level Icon    */ 29,
         /* Level Type    */ LEVEL_TYPE_GAME,
         /* Epilogue GFX  */ epilogue_toss_boys_2_gfx_tables,
         /* Epilogue Text */ {
             /* TRY_AGAIN */ "惨兮兮啦〜！",
-            /* OK        */ "怎么能在这里结束！",
+            /* OK        */ "We still have a long way to go!",
             #ifdef PARADISE
             /* SUPERB    */ "Three cheers for our star thrower!"
             #else
@@ -552,7 +572,7 @@ struct LevelData level_data_table[] = {
         /* Level Type    */ LEVEL_TYPE_GAME,
         /* Epilogue GFX  */ epilogue_quiz_show_gfx_tables,
         /* Epilogue Text */ {
-            /* TRY_AGAIN */ "嘛，也就这样吧。",
+            /* TRY_AGAIN */ "I can do better... I can do better...",
             #ifdef PARADISE
             /* OK        */ "Must study... for next time... Zzz...",
             #else

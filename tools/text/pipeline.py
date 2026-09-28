@@ -44,6 +44,8 @@ def literal_group(text, start, end):
     matches = list(LITERAL.finditer(remove_comments(text[start:end])))
     if not matches:
         return None
+    if re.search(r'(?m)^\s*#\s*(?:if|ifdef|ifndef|else|elif|endif)\b', text[start + matches[0].start():start + matches[-1].end()]):
+        return None
     return (start + matches[0].start(), start + matches[-1].end(), ''.join(match.group()[1:-1] for match in matches))
 
 
@@ -134,6 +136,8 @@ def level_slot(text, key):
         if close != -1:
             following.append(close)
     field_end = min(following) if following else len(section)
+    if re.search(r'(?m)^\s*#\s*(?:if|ifdef|ifndef|else|elif|endif)\b', section[current.end():field_end]):
+        return None
     group = literal_group(section, current.end(), field_end)
     if not group:
         return None
@@ -267,6 +271,8 @@ def extract():
             relative = path.relative_to(ROOT).as_posix()
             record = dict(id=f"{relative}:{key}", file=relative, key=key, source=source, target=target, status='final' if row['stage'] == 5 else 'draft', note=note)
             output.append(previous.get(record['id'], record))
+    # Supplemental *_add.json entries override the same key from the base file.
+    output = list({row['id']: row for row in output}.values())
     output.sort(key=lambda row: row['id'])
     from io import StringIO
     stream = StringIO(newline='')
