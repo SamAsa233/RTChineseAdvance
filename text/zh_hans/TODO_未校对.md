@@ -266,7 +266,6 @@
 - TODO 未校对 data\medal_corner\toys_menu.inc.json:toy_uma_machine: key not found
 - TODO 未校对 data\medal_corner\toys_menu.inc.json:toy_kokuhaku_machine: key not found
 - TODO 未校对 data\medal_corner\toys_menu.inc.json:toy_rap_machine: key not found
-- TODO 未校对 data\studio\songs.inc.json:song_cafe_counsel: key not found
 - TODO 未校对 games\drum_intro\drum_samurai_cutscene_text.json:D_0805df4c: key not found
 - TODO 未校对 games\drum_intro\tanuki_and_monkey_more_text.json:D_08a2f220: key not found
 - TODO 未校对 games\drum_intro\tanuki_and_monkey_more_text.json:D_08a2f248: key not found

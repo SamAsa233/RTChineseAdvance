@@ -311,6 +311,13 @@ def extract():
         # they intentionally have no standalone source literal to replace.
         if json_path.relative_to(ARCHIVE).as_posix() == 'src/perfect.json':
             continue
+        # Cafe Counselling has two spelling branches in the source; both are
+        # updated manually to one reviewed Chinese title.
+        if (json_path.relative_to(ARCHIVE).as_posix() == 'data/studio/songs.inc.json'
+                and base == 'song_cafe_counsel'):
+            unresolved = [item for item in unresolved
+                          if not item.startswith(f'{json_path.relative_to(ARCHIVE)}:{base}:')]
+            continue
         if base == 'perfect_gift_directive_text' and len(members) == 1:
             # The source JSON contains three reward-type messages in one row,
             # while the English port stores them in three array entries.
