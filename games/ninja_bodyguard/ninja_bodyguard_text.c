@@ -5,32 +5,32 @@
 /* Game Text - Ninja Bodyguard */
 
 
-const char D_0805b8e0[] = "I hired you to protect me.";
+const char D_0805b8e0[] = "可要好好保护我哦…";
 
 const char D_0805b8f8[] = "";
 
-const char D_0805b8fc[] = "Your swordplay skills were lacking.";
+const char D_0805b8fc[] = "这手快剑还不够利落。";
 
-const char D_0805b924[] = "You're quite nimble with a sword!";
+const char D_0805b924[] = "这手快剑挺漂亮！";
 
-const char D_0805b944[] = "Their four-arrow barrage overwhelmed you.";
+const char D_0805b944[] = "被“四连箭”打得够惨啊。";
 
-const char D_0805b968[] = "You blocked their four-arrow barrage!";
+const char D_0805b968[] = "“四连箭回击”很漂亮！";
 
-const char D_0805b988[] = "My lord solemnly intones...";
+const char D_0805b988[] = "主公的话";
 
-const char D_0805b99c[] = "I thought you were trying to protect me...";
+const char D_0805b99c[] = "可要好好保护我哦…";
 
 const char D_0805b9b4[] = "";
 
-const char D_0805b9b8[] = "Your stick swipes weren't quick enough.";
+const char D_0805b9b8[] = "这手快棍还不够利落。";
 
-const char D_0805b9dc[] = "You're pretty quick with a stick!";
+const char D_0805b9dc[] = "这手快棍耍得真漂亮！";
 
-const char D_0805b9fc[] = "Their five-rock barrage overwhelmed you.";
+const char D_0805b9fc[] = "被“五连石”打得够惨呢。";
 
-const char D_0805ba1c[] = "You blocked their five-rock barrage!";
+const char D_0805ba1c[] = "“五连石回击”真漂亮！";
 
-const char D_0805ba40[] = "You deflected two rocks at once! Incredible!";
+const char D_0805ba40[] = "厉害！ 一瞬间打掉 2 块石头！！";
 
-const char D_0805ba68[] = "My girlfriend calmly comments...";
+const char D_0805ba68[] = "她的一句话";

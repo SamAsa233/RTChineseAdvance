@@ -1,0 +1,26 @@
+[
+  {
+    "key": "toy_neko_machine",
+    "original": "ネコ マシーン",
+    "translation": "猫咪发声机",
+    "stage": 5
+  },
+  {
+    "key": "toy_uma_machine",
+    "original": "うま マシーン",
+    "translation": "骑马机",
+    "stage": 5
+  },
+  {
+    "key": "toy_kokuhaku_machine",
+    "original": "告白 マシーン",
+    "translation": "告白机",
+    "stage": 5
+  },
+  {
+    "key": "toy_rap_machine",
+    "original": "ラップ マシーン",
+    "translation": "饶舌发声机",
+    "stage": 5
+  }
+]

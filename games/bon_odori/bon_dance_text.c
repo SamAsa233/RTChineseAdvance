@@ -9,7 +9,7 @@ const char D_0806a384[] = "The first half was kinda rough...";
 
 const char D_0806a3a4[] = "The first half was pretty good!";
 
-const char D_0806a3bc[] = "The second half was rather dreary.";
+const char D_0806a3bc[] = "后半段气氛有点冷下来了啊。";
 
 const char D_0806a3e0[] = "The second half was incredible!";
 

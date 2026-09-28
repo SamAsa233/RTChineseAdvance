@@ -30,10 +30,7 @@ define_gameplay_scene scene_drum_lesson_short_8, script_drum_lesson_short_8_entr
 @ Drum Lesson (Short 8) - Data
 
 text D_0805fa78
-    .ascii "Listen to my pattern, then\n"
-    .ascii "repeat when you're ready.\n"
-    .ascii "I'll show it to you again\n"
-    .asciz "if you stop playing."
+    .asciz "仔细听好再照着做哦。\n想什么时候开始都可以。\n停下演奏的话，\n还能再听一遍示范哦！"
 endtext
 
 
@@ -56,9 +53,7 @@ return
 
 
 text D_0805fb60
-    .ascii "\n"
-    .ascii "Let's add some more snare.\n"
-    .asciz "Use both hands to hit this!\n"
+    .asciz "有一处会多一个音哦！\n听得出来吗？\n提示：双手一起"
 endtext
 
 
@@ -78,10 +73,7 @@ return
 
 
 text D_0805fc24
-    .ascii "\n"
-    .ascii "And now we slip in\n"
-    .ascii "one more bass beat!\n"
-    .asciz "Should be simple enough!"
+    .asciz "还会再多一处哦！\n听得出来吗？"
 endtext
 
 
@@ -94,10 +86,7 @@ return
 
 
 text D_0805fc90
-    .ascii "\n"
-    .ascii "And another one!\n"
-    .ascii "It's easier if you use both\n"
-    .asciz " and Down on  for it.\n"
+    .asciz "又会再多一处哦！\n听得出来吗？"
 endtext
 
 
@@ -112,10 +101,7 @@ return
 
 
 text D_0805fd14
-    .ascii "\n"
-    .ascii "Surprise! It's time for\n"
-    .ascii "some more bass beats!\n"
-    .asciz "Take all the time you need.\n"
+    .asciz "然后居然又多一处哦！\n听得出来吗？"
 endtext
 
 
@@ -132,10 +118,7 @@ return
 
 
 text D_0805fdbc
-    .ascii "We're almost done!\n"
-    .ascii "Just one more beat\n"
-    .ascii "on the bass, and that's\n"
-    .asciz "it for this lesson!\n"
+    .asciz "这回居然也多一处哦！\n听得出来吗？"
 endtext
 
 

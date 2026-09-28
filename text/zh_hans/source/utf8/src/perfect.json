@@ -1,0 +1,32 @@
+[
+  {
+    "key": "perfect_gift_prefix",
+    "original": "の曲",
+    "translation": "的音乐",
+    "stage": 5
+  },
+  {
+    "key": "perfect_gift_suffix",
+    "original": "をプレゼント！",
+    "translation": "已送给你！",
+    "stage": 5
+  },
+  {
+    "key": "perfect_remaining_prefix",
+    "original": "プレゼントは　あと　",
+    "translation": "礼物还有 ",
+    "stage": 5
+  },
+  {
+    "key": "perfect_remaining_suffix",
+    "original": "コ　あるから、\n他のキャンペーンにもチャレンジしてみてネ！",
+    "translation": " 份，\n也去试试其他完美挑战吧！",
+    "stage": 5
+  },
+  {
+    "key": "perfect_complete",
+    "original": "プレゼントは　これで オシマイ です。\nパーフェクトキャンペーン、コンプリートです！",
+    "translation": "礼物已经全部送完啦。\n所有完美挑战都完成了！",
+    "stage": 5
+  }
+]

@@ -1,0 +1,92 @@
+[
+  {
+    "key": "text_rap_men_sanji_desu_ka",
+    "original": "ＰＭ３：００　ですか？",
+    "translation": "下午三点了吗？",
+    "stage": 5
+  },
+  {
+    "key": "text_rap_men_oyatsu_desu_ka",
+    "original": "おやつ　ですか？",
+    "translation": "该吃点心了吗？",
+    "stage": 5
+  },
+  {
+    "key": "text_rap_men_honto_desu_ka",
+    "original": "ほんとですか？",
+    "translation": "真的吗？",
+    "stage": 5
+  },
+  {
+    "key": "text_rap_men_wakarimasu_ka",
+    "original": "わかりますか？",
+    "translation": "明白了吗？",
+    "stage": 5
+  },
+  {
+    "key": "text_rap_men_oishii_kamo_ne",
+    "original": "おいしい　かもネ",
+    "translation": "也许很好吃吧",
+    "stage": 5
+  },
+  {
+    "key": "text_rap_men_herushii_kamo_ne",
+    "original": "ヘルシー　かもネ",
+    "translation": "也许很健康吧",
+    "stage": 5
+  },
+  {
+    "key": "text_rap_men_ore_no_sei_kamo_ne",
+    "original": "オレの　せいかもネ",
+    "translation": "也许是我的错吧",
+    "stage": 5
+  },
+  {
+    "key": "text_rap_men_sore_mo_sou_kamo_ne",
+    "original": "それもそう　かもネ",
+    "translation": "也许真是那样吧",
+    "stage": 5
+  },
+  {
+    "key": "text_rap_men_tanoshii_kamo_ne",
+    "original": "たのしい　かもネ",
+    "translation": "也许会很开心吧",
+    "stage": 5
+  },
+  {
+    "key": "text_rap_men_oyatsu_wa_saikou",
+    "original": "おやつは　サイコー！！",
+    "translation": "点心最棒啦——！！",
+    "stage": 5
+  },
+  {
+    "key": "text_rap_men_kibun_wa_saikou",
+    "original": "きぶんは　サイコー！！",
+    "translation": "心情最棒啦——！！",
+    "stage": 5
+  },
+  {
+    "key": "text_rap_men_ore_tte_saikou",
+    "original": "オレって　サイコー！！",
+    "translation": "我最棒啦——！！",
+    "stage": 5
+  },
+  {
+    "key": "text_rap_men_kimi_tte_saikou",
+    "original": "キミって　サイコー！！",
+    "translation": "你最棒啦——！！",
+    "stage": 5
+  },
+  {
+    "key": "text_rap_men_oyatsu_ga_nai_yo",
+    "original": "おやつが　ナイヨー！！",
+    "translation": "点心不见啦——！！",
+    "stage": 5
+  },
+  {
+    "key": "text_rap_men_ore_shiranai_yo",
+    "original": "オレ、　しらないヨー！！",
+    "translation": "我不知道啦——！！",
+    "stage": 5
+  }
+]

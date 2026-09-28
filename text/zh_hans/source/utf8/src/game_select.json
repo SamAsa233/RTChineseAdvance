@@ -1,0 +1,38 @@
+[
+  {
+    "key": "game_select_new_game",
+    "original": "新ゲーム",
+    "translation": "新游戏",
+    "stage": 5
+  },
+  {
+    "key": "game_select_perfect_prefix",
+    "original": "ただいま「",
+    "translation": "在「",
+    "stage": 5
+  },
+  {
+    "key": "game_select_perfect_suffix",
+    "original": "」でパーフェクトを達成すると",
+    "translation": "」达成完美通关的话，",
+    "stage": 5
+  },
+  {
+    "key": "game_select_gift_prefix",
+    "original": "もれなく\n ",
+    "translation": "即可获赠\n ",
+    "stage": 5
+  },
+  {
+    "key": "game_select_gift_middle",
+    "original": "の曲",
+    "translation": "的音乐",
+    "stage": 5
+  },
+  {
+    "key": "game_select_gift_suffix",
+    "original": "をプレゼント!!",
+    "translation": "就送给你！",
+    "stage": 5
+  }
+]

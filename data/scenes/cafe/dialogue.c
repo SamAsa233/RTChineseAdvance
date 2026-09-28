@@ -38,10 +38,7 @@
 
 const char *cafe_dialogue_first_visit[] = {
     /* ------------------------------------------------ */
-        "\n"
-        "Welcome to the café.\n"
-        "This your first time here?\n"
-        "\n",
+        "欢迎光临。\n你是第一次来这里吧？\n",
     /* ------------------------------------------------ */
         "\n"
         "Feel free to come on by anytime you\n"
@@ -53,14 +50,9 @@ const char *cafe_dialogue_first_visit[] = {
         "do to help, well, " "\0051" "\0015" "that's\n"
         "what I'm here for." "\0054" "\0018" "",
     /* ------------------------------------------------ */
-        "\n"
-        "I'm a little busy right now,\n"
-        "since I only just opened for the\n"
-        "day, but we'll talk more later.",
+        "我现在正在准备点东西，\n请你晚点再来哦。\n",
     /* ------------------------------------------------ */
-        "\n"
-        "Come back soon!\n"
-        "\n",
+        "那，下回见哦。\n",
     /* ------------------------------------------------ */
     END_OF_DIALOGUE
 };
@@ -76,10 +68,7 @@ const char *cafe_dialogue_first_visit[] = {
 
 const char *cafe_dialogue_come_back_later[] = {
     /* ------------------------------------------------ */
-        "\n"
-        "Could you come back in a while?\n"
-        "I'm a bit busy.\n"
-        "\n",
+        "过一会儿再来哦〜。\n",
     /* ------------------------------------------------ */
     END_OF_DIALOGUE
 };
@@ -105,20 +94,11 @@ const char *cafe_dialogue_come_back_later[] = {
 
 const char *cafe_dialogue_keep_trying[] = {
     /* ------------------------------------------------ */
-        "\n"
-        "Give it some practice and you'll do\n"
-        "fine. I'm sure of it!\n"
-        "\n",
+        "多玩几次的话，\n我想你会慢慢抓到诀窍的哦。\n",
     /* ------------------------------------------------ */
-        "\n"
-        "I'm sure getting into the groove\n"
-        "of the music will be pretty\n"
-        "fun all its own.",
+        "同时呢，\n你也会越来越享受跟着音乐律动的感觉。\n",
     /* ------------------------------------------------ */
-        "\n"
-        "Try not to get all worked up out\n"
-        "there. Make sure to have a good time.\n"
-        "\n",
+        "别太较劲啦，\n开心玩就好…\n",
     /* ------------------------------------------------ */
     END_OF_DIALOGUE
 };
@@ -139,15 +119,9 @@ const char *cafe_dialogue_keep_trying[] = {
 
 const char *cafe_dialogue_practicing_perfect[] = {
     /* ------------------------------------------------ */
-        "\n"
-        "...Sorry for yelling. I just got a little\n"
-        "excited.\n"
-        "\n",
+        "抱歉，刚才声音太大了。\n我实在是太替你高兴了…\n",
     /* ------------------------------------------------ */
-        "\n"
-        "Good luck on getting those Perfects!\n"
-        "See you around.\n"
-        "\n",
+        "Perfect 也要继续加油哦。\n那回头见。\n",
     /* ------------------------------------------------ */
     END_OF_DIALOGUE
 };
@@ -168,15 +142,9 @@ const char *cafe_dialogue_practicing_perfect[] = {
 
 const char *cafe_dialogue_not_practicing_perfect[] = {
     /* ------------------------------------------------ */
-        "\n"
-        "Is that so? My bad, then.\n"
-        "Guess that's why you shouldn't put\n"
-        "so much stock in a rumor.",
+        "这样呀。\n还跟你聊了些传闻，\n真是失礼啦。",
     /* ------------------------------------------------ */
-        "\n"
-        "Enjoy the games at your own pace,\n"
-        "alright? See you around.\n"
-        "\n",
+        "请继续享受游戏哦。\n那回头见。\n",
     /* ------------------------------------------------ */
     END_OF_DIALOGUE
 };
@@ -212,30 +180,15 @@ const char *cafe_dialogue_not_practicing_perfect[] = {
 
 const char *cafe_dialogue_all_perfects_clear[] = {
     /* ------------------------------------------------ */
-        "\n"
-        "If you've made it this far, then your\n"
-        "sense of rhythm has just got to be\n"
-        "a step above the rest!",
+        "哎呀，都已经玩到这种地步了，\n你的节奏感\n肯定已经变得相当好了呢！",
     /* ------------------------------------------------ */
-        "\n"
-        "I'm so proud of you.\n"
-        "Moved to tears, even!\n"
-        "\n",
+        "我也高兴得\n眼泪汪汪啦…\n",
     /* ------------------------------------------------ */
-        "\n"
-        "I know it's not much of a gift,\n"
-        "but I've opened up more studio\n"
-        "songs for you.\n",
+        "对了对了，\n作为庆祝，虽然只是小小心意，\n我帮你往录音室里添了些曲子。\n",
     /* ------------------------------------------------ */
-        "\n"
-        "So I guess that means you've\n"
-        "collected everything?\n"
-        "Impressive!",
+        "哎呀呀，这可真是不得了，\n居然全部完成了呀。\n真有你的〜。",
     /* ------------------------------------------------ */
-        "\n"
-        "Good work out there, my friend.\n"
-        "You've really earned a break.\n"
-        "See you around!\n",
+        "你也累了吧？\n稍微休息一下哦。\n那，下回见。",
     /* ------------------------------------------------ */
     END_OF_DIALOGUE
 };
@@ -392,29 +345,13 @@ const char *cafe_dialogue_shouts_cheer[] = {
 
 const char *cafe_dialogue_rhythm_sense[] = {
     /* ------------------------------------------------ */
-        "\n"
-        "By the way, is a sense of rhythm any\n"
-        "different for humans?\n"
-        "\n",
+        "说起来呀，节奏感这种东西，对人类来说究竟意味着什么呢。\n",
     /* ------------------------------------------------ */
-        "\n"
-        "Well, not like my rhythm couldn't do with\n"
-        "a bit of work, but...\n"
-        "\n",
+        "不过像我嘛，\n平时倒也不怎么会特意去想这个啦。\n",
     /* ------------------------------------------------ */
-        "\n"
-        "When your sense of rhythm\n"
-        #ifdef PARADISE
-        "improves... that has to be\n"
-        #else
-        "improves... that's gotta be\n"
-        #endif
-        "euphoric, huh?",
+        "不过，节奏感变好了的话，\n人应该也会稍微开心一点吧。",
     /* ------------------------------------------------ */
-        "\n"
-        "Maybe I should try some of those\n"
-        "rhythm games myself...\n"
-        "\n",
+        "我也来试着玩玩游戏好了…\n",
     /* ------------------------------------------------ */
     END_OF_DIALOGUE
 };
@@ -450,30 +387,15 @@ const char *cafe_dialogue_rhythm_sense[] = {
 
 const char *cafe_dialogue_offbeats[] = {
     /* ------------------------------------------------ */
-        "\n"
-        "You've probably heard of something\n"
-        "called an offbeat.\n"
-        "Do you know what that is?",
+        "说起来，这个世界里常听人说的\n“反拍”到底是什么，\n你知道吗？",
     /* ------------------------------------------------ */
-        "\n"
-        "I'm no expert myself, but I think\n"
-        "I've got the jist of it.\n"
-        "\n",
+        "不过嘛，我其实也没懂得那么多，\n所以讲得可能不太靠谱哦。\n",
     /* ------------------------------------------------ */
-        "\n"
-        "So, suppose you're clapping to\n"
-        "the beat of some music, right?\n"
-        "\n",
+        "比如说，\n你跟着音乐很自然地拍手，对吧。\n",
     /* ------------------------------------------------ */
-        "\n"
-        "Well, the offbeat is supposed to be\n"
-        "the exact point right inbetween each\n"
-        "of your claps.",
+        "那每次拍手和拍手之间，\n刚好正中间的那个时机，\n听说就叫“反拍”。",
     /* ------------------------------------------------ */
-        "\n"
-        "At least I think so. I'm not so great at\n"
-        "explaining this stuff, but I hope it helps.\n"
-        "See you around.",
+        "嗯，大概就是这么回事啦。\n讲得随随便便的，真不好意思哦。\n那，下回见。",
     /* ------------------------------------------------ */
     END_OF_DIALOGUE
 };
@@ -509,30 +431,15 @@ const char *cafe_dialogue_offbeats[] = {
 
 const char *cafe_dialogue_rhythm_test[] = {
     /* ------------------------------------------------ */
-        "\n"
-        "Say, have you tried doing the\n"
-        "Rhythm Test again?\n"
-        "\n",
+        "说起来，\n你最近有做“节奏感测试”吗？\n",
     /* ------------------------------------------------ */
-        "\n"
-        "I've been giving it a spin lately.\n"
-        "Seems like 65 points is my limit.\n"
-        "\n",
+        "我偶尔也会去测，\n不过，65 分左右就是我的极限啦……\n",
     /* ------------------------------------------------ */
-        "\n"
-        "That second test gives me quite\n"
-        "a bit of trouble.\n"
-        "\n",
+        "那个第二项测试呀，\n我怎么也做不好呢。",
     /* ------------------------------------------------ */
-        "\n"
-        "Counting those silent beats...\n"
-        "It's tricky, don't you think?\n"
-        "\n",
+        "要去数空拍这种事，\n还真是挺难的呢〜。\n",
     /* ------------------------------------------------ */
-        "\n"
-        "Well, let's take it one step at a time.\n"
-        "See you around.\n"
-        "\n",
+        "不过嘛，就慢慢来吧。\n那，下回见。\n",
     /* ------------------------------------------------ */
     END_OF_DIALOGUE
 };
@@ -568,30 +475,15 @@ const char *cafe_dialogue_rhythm_test[] = {
 
 const char *cafe_dialogue_drum_lessons[] = {
     /* ------------------------------------------------ */
-        "\n"
-        "You ever check out the drum\n"
-        "lessons in the bonus corner?\n"
-        "\n",
+        "说起来，奖励角里的击鼓课程，\n你玩过吗？\n",
     /* ------------------------------------------------ */
-        "\n"
-        "I've been taking lessons every week,\n"
-        "but I never seem to get any better.\n"
-        "\n",
+        "我每周会去上一次课，\n不过怎么也不见\n有多少长进呢。",
     /* ------------------------------------------------ */
-        "\n"
-        "My teacher told me that I have a\n"
-        "bit of a problem pacing myself, that\n"
-        "I shouldn't push myself so much.",
+        "老师也说过啦，\n这种事本来就各有所好，\n不用勉强自己。话虽如此——",
     /* ------------------------------------------------ */
-        "\n"
-        "But once you start getting into it,\n"
-        "it's hard to stop.\n"
-        "\n",
+        "可一旦开始上课呀，\n就还真有点停不下来呢〜。\n",
     /* ------------------------------------------------ */
-        "\n"
-        "I guess no one can master the drums\n"
-        "in a day, though. We should take\n"
-        "our time with that stuff.",
+        "不过嘛，乐器这种东西本来就不是一下子能变厉害的，\n还是耐下心来，慢慢练下去吧…",
     /* ------------------------------------------------ */
     END_OF_DIALOGUE
 };
@@ -622,25 +514,13 @@ const char *cafe_dialogue_drum_lessons[] = {
 
 const char *cafe_dialogue_adhd[] = {
     /* ------------------------------------------------ */
-        "\n"
-        "I'm not sure why, but man, am I tired...\n"
-        "\n"
-        "\n",
+        "说起来，\n我现在不知怎么的，特别困呀…\n",
     /* ------------------------------------------------ */
-        "\n"
-        "I was up last night playing until\n"
-        "who-knows-when...\n"
-        "\n",
+        "毕竟昨晚玩到很晚嘛…\n",
     /* ------------------------------------------------ */
-        "\n"
-        "Oops! Sorry.\n"
-        "I'm talking to myself again.\n"
-        "Don't mind me.\n",
+        "啊，不，没什么，这是我自己的事。\n只是自言自语啦… 抱歉哦。\n",
     /* ------------------------------------------------ */
-        "\n"
-        "Want to go for a drive with me, sometime?\n"
-        "If you want to, I mean...\n"
-        "Anyway, see you later.",
+        "下次要不要去兜个风呢？\n不过，也得看你愿不愿意啦。\n那，下回见。",
     /* ------------------------------------------------ */
     END_OF_DIALOGUE
 };
@@ -671,24 +551,13 @@ const char *cafe_dialogue_adhd[] = {
 
 const char *cafe_dialogue_coffee[] = {
     /* ------------------------------------------------ */
-        "\n"
-        "So, I made you some coffee.\n"
-        "\n",
+        "说起来，\n咖啡已经上好啦。\n",
     /* ------------------------------------------------ */
-        "\n"
-        "Wait, you didn't order coffee?\n"
-        "Oh, this is from the person\n"
-        "sitting next to you. His treat.",
+        "咦？你说你没点？ 啊，这个嘛，是旁边那位请的啦…\n",
     /* ------------------------------------------------ */
-        "\n"
-        "He's not much for words, but\n"
-        "he's pretty friendly, and I guess\n"
-        "generous too.",
+        "虽、虽然那位不太爱说话，\n但大概也是想跟你交个朋友吧？\n",
     /* ------------------------------------------------ */
-        "\n"
-        "Me? I can make coffee, but...\n"
-        "need to work on the rest. Heh...\n"
-        "\n",
+        "我嘛，也就只会给人煮煮咖啡而已啦… 哈哈哈…\n",
     /* ------------------------------------------------ */
     END_OF_DIALOGUE
 };
@@ -719,24 +588,13 @@ const char *cafe_dialogue_coffee[] = {
 
 const char *cafe_dialogue_dog_barista[] = {
     /* ------------------------------------------------ */
-        "\n"
-        "By the way, I'm actually a dog.\n"
-        "\n",
+        "说起来，\n其实啊，我是一只狗哦。\n",
     /* ------------------------------------------------ */
-        "\n"
-        "I'm nine years old. Pretty spry\n"
-        "for my age, if I say so.\n"
-        "\n",
+        "算起来我已经 9 岁了，\n也算一把年纪啦。",
     /* ------------------------------------------------ */
-        "\n"
-        "Time goes by pretty fast when you're\n"
-        "as old as I am.\n"
-        "\n",
+        "哎呀呀，到了这个年纪，\n时间过得可真快呢。\n",
     /* ------------------------------------------------ */
-        "\n"
-        "You're a human, right? They say I'm\n"
-        "supposed to be your best friend.\n"
-        "We'd better get along then!",
+        "客人你是人类吧？\n虽然我是只狗，不过今后\n也请继续跟我好好相处哦〜。",
     /* ------------------------------------------------ */
     END_OF_DIALOGUE
 };
@@ -767,25 +625,13 @@ const char *cafe_dialogue_dog_barista[] = {
 
 const char *cafe_dialogue_healing_with_music[] = {
     /* ------------------------------------------------ */
-        "\n"
-        "So, when you're sad, what do\n"
-        "you do to cheer yourself up?\n"
-        "Me, I listen to music.",
+        "说起来，难过的时候\n你会做什么呢？\n我呀，基本上就是听音乐呢。",
     /* ------------------------------------------------ */
-        "\n"
-        "Dusting off a favorite record of mine\n"
-        "and taking a nostalgia trip...\n"
-        "That never fails to put me at ease.",
+        "把那些挺老的唱片翻出来，\n一边听一边回想当时的事，\n心里就会慢慢放松下来。",
     /* ------------------------------------------------ */
-        "\n"
-        "Music's weird like that.\n"
-        "Why does it hold such power\n"
-        "over our feelings?",
+        "音乐真是很不可思议呢〜。\n为什么它能那样\n深深触动人的心呢。",
     /* ------------------------------------------------ */
-        "\n"
-        "Maybe if I studied this stuff I'd know,\n"
-        "but I haven't!\n"
-        "Sorry! Heh.\n",
+        "不过嘛，那些详细道理\n我也不懂就是啦。哈哈哈。\n",
     /* ------------------------------------------------ */
     END_OF_DIALOGUE
 };
@@ -821,30 +667,15 @@ const char *cafe_dialogue_healing_with_music[] = {
 
 const char *cafe_dialogue_speaking_with_music[] = {
     /* ------------------------------------------------ */
-        "\n"
-        "I heard you can hold a conversation\n"
-        "with only rhythm.\n"
-        "\n",
+        "说起来，\n你知道节奏也能拿来对话吗？\n",
     /* ------------------------------------------------ */
-        "\n"
-        "You can put words and meanings\n"
-        "behind different rhythms, like morse\n"
-        "code, and talk without speaking.",
+        "就是把不同的节奏型\n对应成话语和含义，\n然后用来交流的样子哦。\n",
     /* ------------------------------------------------ */
-        "\n"
-        "Like, bang out a message into one\n"
-        "of those taiko drums, and you could\n"
-        "communicate acres apart.",
+        "听说他们会用响亮的鼓声\n打出节奏，跟远处的人\n交流哦。",
     /* ------------------------------------------------ */
-        "\n"
-        "At least that's what a customer\n"
-        "once told me.\n"
-        "Doesn't that sound fun?",
+        "前阵子来店里的客人\n告诉我这件事时，\n我就觉得还挺有意思的，不是吗？",
     /* ------------------------------------------------ */
-        "\n"
-        "But if you had percussive election\n"
-        "speeches or bongo arguments...\n"
-        "Expect a lot of noise. Hahaha!",
+        "不过要是拿鼓来做竞选演说，\n或者夫妻俩拿邦戈鼓吵架的话，\n感觉会吵得不得了呢。哈哈哈。",
     /* ------------------------------------------------ */
     END_OF_DIALOGUE
 };
@@ -880,30 +711,15 @@ const char *cafe_dialogue_speaking_with_music[] = {
 
 const char *cafe_dialogue_ranks_and_medals[] = {
     /* ------------------------------------------------ */
-        "\n"
-        "By the way, have you ever gotten a\n"
-        "Superb rank on a game?\n"
-        "\n",
+        "说起来，\n你有在游戏里拿过\n“高水准”这个评价吗？",
     /* ------------------------------------------------ */
-        "\n"
-        "There are three ranks you can get:\n"
-        "Try Again, OK, and Superb.\n"
-        "\n",
+        "游戏成绩一共有\n“再试一次吧”“平凡”“高水准”这三种哦。\n",
     /* ------------------------------------------------ */
-        "\n"
-        "And, if you get a Superb,\n"
-        "you also get a medal.\n"
-        "\n",
+        "然后呢，只要拿到“高水准”，\n就能得到奖牌哦。\n",
     /* ------------------------------------------------ */
-        "\n"
-        "Those medals let you unlock\n"
-        "some prizes. Sounds like it\n"
-        "would be worth your while.",
+        "收集奖牌之后，\n就能玩到各种各样的\n奖励内容，所以要加油收集哦。",
     /* ------------------------------------------------ */
-        "\n"
-        "But you probably already knew that,\n"
-        "right? Sorry if I bored you.\n"
-        "See you around.",
+        "如果你本来就知道的话，\n那我这番话可就有点无聊啦。\n不好意思哦，那下回见。\n",
     /* ------------------------------------------------ */
     END_OF_DIALOGUE
 };

@@ -1,0 +1,104 @@
+[
+  {
+    "key": "D_08059f9c",
+    "original": "\nスタートだけに集中！",
+    "translation": "\n先只专心顾好开头！",
+    "stage": 5
+  },
+  {
+    "key": "D_08059fb4",
+    "original": "\nちゃんと　アタマを狙おう。",
+    "translation": "\n开头要打准哦。",
+    "stage": 5
+  },
+  {
+    "key": "D_08059fd0",
+    "original": "\nボーッと　しないで！",
+    "translation": "\n别发呆啊！",
+    "stage": 5
+  },
+  {
+    "key": "D_08059fe8",
+    "original": "\nＡボタンもしっかり押そう。",
+    "translation": "\nA 键也要按扎实哦。",
+    "stage": 5
+  },
+  {
+    "key": "D_0805a004",
+    "original": "\nＲボタンもしっかり押そう。",
+    "translation": "\nR 键也要按扎实哦。",
+    "stage": 5
+  },
+  {
+    "key": "D_0805a020",
+    "original": "\n同時に押してないです。",
+    "translation": "\n没有同时按下哦。",
+    "stage": 5
+  },
+  {
+    "key": "D_0805a038",
+    "original": "\n前のめりです。",
+    "translation": "\n你有点抢拍啦。",
+    "stage": 5
+  },
+  {
+    "key": "D_0805a048",
+    "original": "\n遅れてます。",
+    "translation": "\n慢了哦。",
+    "stage": 5
+  },
+  {
+    "key": "D_0805a058",
+    "original": "\nベリー　グッド！！",
+    "translation": "\nVery Good！！",
+    "stage": 5
+  },
+  {
+    "key": "D_0805a06c",
+    "original": "\nグー！",
+    "translation": "\nGood！",
+    "stage": 5
+  },
+  {
+    "key": "D_0805a0c0",
+    "original": "\n評価",
+    "translation": "\n评价",
+    "stage": 5
+  },
+  {
+    "key": "D_0805a0c8",
+    "original": ".",
+    "translation": ".",
+    "stage": 5
+  },
+  {
+    "key": "D_0805a0cc",
+    "original": "点",
+    "translation": "分",
+    "stage": 5
+  },
+  {
+    "key": "drum_lessons_rank_text[1]",
+    "original": "\nまずまずだネ！",
+    "translation": "\n还算不错哦！",
+    "stage": 5
+  },
+  {
+    "key": "drum_lessons_rank_text[2]",
+    "original": "\nなかなかいいヨ！",
+    "translation": "\n已经挺不错啦！",
+    "stage": 5
+  },
+  {
+    "key": "drum_lessons_rank_text[3]",
+    "original": "\nバッチグー！！",
+    "translation": "\n棒极了！！",
+    "stage": 5
+  },
+  {
+    "key": "drum_lessons_rank_text[4]",
+    "original": "\nカンペキッス！！",
+    "translation": "\n完美啦！！",
+    "stage": 5
+  }
+]

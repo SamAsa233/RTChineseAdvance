@@ -5,83 +5,83 @@
 /* Game Text - Tap Trial */
 
 
-const char D_0805c0d0[] = "Your basics were a little sloppy.";
+const char D_0805c0d0[] = "基本功还没做到位呢。";
 
-const char D_0805c0ec[] = "You stayed focused no matter what!";
+const char D_0805c0ec[] = "适应能力不错！";
 
-const char D_0805c104[] = "Your decisions took too long.";
+const char D_0805c104[] = "判断还差一点。";
 
-const char D_0805c11c[] = "You thought on the spot well!";
+const char D_0805c11c[] = "判断真不赖！";
 
-const char D_0805c130[] = "You needed to concentrate more.";
+const char D_0805c130[] = "再集中一点吧。";
 
-const char D_0805c144[] = "You were clearly concentrating hard.";
+const char D_0805c144[] = "这专注力很厉害哦！";
 
-const char D_0805c15c[] = "You let your guard down at the end.";
+const char D_0805c15c[] = "收尾还不够利落。";
 
 const char D_0805c170[] = "";
 
-const char D_0805c174[] = "Let's dance!";
+const char D_0805c174[] = "正式开始！";
 
-const char D_0805c18c[] = "I love tap!";
+const char D_0805c18c[] = "我要开始检查咯。";
 
-const char D_0805c1a8[] = "What a performance!";
+const char D_0805c1a8[] = "辛苦你啦。";
 
-const char D_0805c1bc[] = "Let's tap!";
+const char D_0805c1bc[] = "来踢踏吧！";
 
 #ifdef PARADISE
-const char D_0805c1d0[] = "Practise first!";
+const char D_0805c1d0[] = "先来练习。";
 #else
 const char D_0805c1d0[] = "Practice first!";
 #endif
 
-const char D_0805c1e8[] = "Just copy us!";
+const char D_0805c1e8[] = "跟着做哦。";
 
-const char D_0805c1f8[] = "OK, here's another step!";
+const char D_0805c1f8[] = "OK！ 下一个来啦。";
 
-const char D_0805c210[] = "Nice! One more! ";
+const char D_0805c210[] = "OK！ 还有哦。";
 
-const char D_0805c228[] = "Good! Last one!";
+const char D_0805c228[] = "OK！ 最后啦。";
 
-const char D_0805c240[] = "Ookii! Nice work!";
+const char D_0805c240[] = "OK！";
 
-const char D_0805c248[] = "Your basics were a little sloppy.";
+const char D_0805c248[] = "基本功可能还差一点…";
 
-const char D_0805c264[] = "You showed real rhythm potential!";
+const char D_0805c264[] = "已经很上手啦！";
 
-const char D_0805c274[] = "You seemed to be looking for the rhythm.";
+const char D_0805c274[] = "判断可能还差一点…";
 
-const char D_0805c290[] = "You had nice rhythm awareness!";
+const char D_0805c290[] = "这判断真可以哦！";
 
-const char D_0805c2a8[] = "You needed to concentrate more.";
+const char D_0805c2a8[] = "再集中一点吧。";
 
-const char D_0805c2bc[] = "You were clearly concentrating hard.";
+const char D_0805c2bc[] = "专注力真厉害呀〜！";
 
-const char D_0805c2d4[] = "Did you lose focus at the end?";
+const char D_0805c2d4[] = "收尾可能还差一点。";
 
 const char D_0805c2e8[] = "";
 
-const char D_0805c2ec[] = "Monkey feedback:";
+const char D_0805c2ec[] = "猴子的点评";
 
-const char D_0805c300[] = "Let's dance!";
+const char D_0805c300[] = "正式开始！";
 
-const char D_0805c318[] = "I love tap!";
+const char D_0805c318[] = "我要开始检查咯。";
 
-const char D_0805c334[] = "What a performance!";
+const char D_0805c334[] = "辛苦你啦。";
 
-const char D_0805c348[] = "Let's tap!";
+const char D_0805c348[] = "来踢踏吧！";
 
 #ifdef PARADISE
-const char D_0805c35c[] = "Practise first!";
+const char D_0805c35c[] = "先来练习。";
 #else
 const char D_0805c35c[] = "Practice first!";
 #endif
-const char D_0805c374[] = "Just copy us!";
+const char D_0805c374[] = "跟着做哦。";
 
-const char D_0805c384[] = "OK, here's another step!";
+const char D_0805c384[] = "OK！ 下一个来啦。";
 
-const char D_0805c39c[] = "Nice! One more! ";
+const char D_0805c39c[] = "OK！ 还有哦。";
 
-const char D_0805c3b4[] = "Good! Last one!";
+const char D_0805c3b4[] = "OK！ 最后啦。";
 
-const char D_0805c3cc[] = "Ookii! Nice work!";
+const char D_0805c3cc[] = "OK！";

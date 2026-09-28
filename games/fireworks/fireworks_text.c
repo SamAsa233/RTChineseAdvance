@@ -5,27 +5,27 @@
 /* Game Text - Fireworks */
 
 
-const char D_0805cd60[] = "Look alive out there!";
+const char D_0805cd60[] = "再放得华丽一点吧！";
 
-const char D_0805cd7c[] = "Phenomenal explosions!";
+const char D_0805cd7c[] = "这烟火放得真漂亮！！";
 
 #ifdef PARADISE
-const char D_0805cda0[] = "You have to react a little quicker!";
+const char D_0805cda0[] = "反应太慢啦！";
 #else
 const char D_0805cda0[] = "You gotta react a little quicker!";
 #endif
 
-const char D_0805cdb4[] = "You were quick on your feet!";
+const char D_0805cdb4[] = "反应不错嘛！";
 
-const char D_0805cdc8[] = "Notes from the Director";
+const char D_0805cdc8[] = "师傅的话";
 
-const char D_0805cde0[] = "Before the festival begins...";
+const char D_0805cde0[] = "・・・　祭典之前　・・・";
 
-const char D_0805ce00[] = "...let's have a crash course!";
+const char D_0805ce00[] = "特训开始！";
 
-const char D_0805ce10[] = "When you hear \"Go!\" press "CHAR_A_BUTTON_UTF8;
+const char D_0805ce10[] = "听到“嘿！”这个信号时就按 A 键"CHAR_A_BUTTON_UTF8;
 
-const char D_0805ce34[] = "First of all, normal fireworks.";
+const char D_0805ce34[] = "首先是“普通的烟火”";
 
 const char D_0805ce5c[] =
     ".b" "One "
@@ -57,7 +57,7 @@ const char D_0805ceec[] =
     ".c" "Three "
     ".c:0" "Go!";
 
-const char D_0805cf10[] = "Next up, our Spirit Rockets!";
+const char D_0805cf10[] = "“有气势的烟火”";
 
 const char D_0805cf2c[] =
     ".b" "Hi"
@@ -101,7 +101,7 @@ const char D_0805cfcc[] =
     ".c" "! "
     ".c:0" "Go!";
 
-const char D_0805cfec[] = "Finally, our Drummer's Bomb!";
+const char D_0805cfec[] = "“压轴的太鼓爆破”";
 
 const char D_0805d010[] =
     ".b" "Here "
@@ -144,6 +144,6 @@ const char D_0805d0b0[] =
     ".c" "! "
     ".c:0" "Go!";
 
-const char D_0805d0d0[] = "Alright! Let the festival begin!";
+const char D_0805d0d0[] = "好，那就正式开始！";
 
-const char D_0805d0e8[] = "We won't count anymore... Good luck!";
+const char D_0805d0e8[] = "这次可没有信号哦…";

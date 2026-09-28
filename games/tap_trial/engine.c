@@ -2202,11 +2202,11 @@ const char D_0805a8bc[] = "";
 
 // [D_089e8054] ?
 const char *D_089e8054[] = {
-    "Divine!",
-    "Dazzling!",
-    "So technical!",
-    "Sharp work!",
-    "I think I'm in love!",
+    "挺行嘛！！",
+    "真帅！！",
+    "技术真硬！",
+    "酷毙了！！",
+    "我都迷上你啦！！",
 };
 
 // [D_089e8068] ?

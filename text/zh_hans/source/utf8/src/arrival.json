@@ -1,0 +1,14 @@
+[
+  {
+    "key": "arrival_title",
+    "original": "リズム資料室からお知らせ",
+    "translation": "节奏资料室通知",
+    "stage": 5
+  },
+  {
+    "key": "arrival_message_template",
+    "original": "　　　　　　　　　　　　　　　　　　　　を入荷しました。",
+    "translation": "　　　　　　　　　　　　　　　现已入库。",
+    "stage": 5
+  }
+]

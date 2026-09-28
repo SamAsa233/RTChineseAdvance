@@ -1,0 +1,218 @@
+[
+  {
+    "key": "results_letter_ranks[0]",
+    "original": "Ｄ",
+    "translation": "Ｄ",
+    "stage": 5
+  },
+  {
+    "key": "results_letter_ranks[1]",
+    "original": "Ｃ",
+    "translation": "Ｃ",
+    "stage": 5
+  },
+  {
+    "key": "results_letter_ranks[2]",
+    "original": "Ｂ",
+    "translation": "Ｂ",
+    "stage": 5
+  },
+  {
+    "key": "results_letter_ranks[3]",
+    "original": "Ａ",
+    "translation": "Ａ",
+    "stage": 5
+  },
+  {
+    "key": "results_letter_ranks[4]",
+    "original": "Ｓ",
+    "translation": "Ｓ",
+    "stage": 5
+  },
+  {
+    "key": "results_skill_text_accuracy[0]",
+    "original": "プロから　みた　ピッタシさ",
+    "translation": "专业人士眼中的合拍度",
+    "stage": 5
+  },
+  {
+    "key": "results_skill_text_accuracy[1]",
+    "original": "リズムかん　バッチシさ",
+    "translation": "节奏感到位度",
+    "stage": 5
+  },
+  {
+    "key": "results_skill_text_accuracy[2]",
+    "original": "なっとくの　せいかくさ",
+    "translation": "令人信服的准确度",
+    "stage": 5
+  },
+  {
+    "key": "results_skill_text_barely_trk2[0]",
+    "original": "テクニック　レベル",
+    "translation": "技巧等级",
+    "stage": 5
+  },
+  {
+    "key": "results_skill_text_barely_trk2[1]",
+    "original": "てきおう　のうりょく",
+    "translation": "适应能力",
+    "stage": 5
+  },
+  {
+    "key": "results_skill_text_barely_trk2[2]",
+    "original": "あたまの　かいてん　スピード",
+    "translation": "脑筋转速",
+    "stage": 5
+  },
+  {
+    "key": "results_skill_text_barely_trk1[0]",
+    "original": "せきにんかん",
+    "translation": "责任感",
+    "stage": 5
+  },
+  {
+    "key": "results_skill_text_barely_trk1[1]",
+    "original": "ここ　イッパツ",
+    "translation": "关键时刻的爆发力",
+    "stage": 5
+  },
+  {
+    "key": "results_skill_text_barely_trk1[2]",
+    "original": "てがたい　かんじ",
+    "translation": "稳妥的感觉",
+    "stage": 5
+  },
+  {
+    "key": "results_skill_text_hit_avg[0]",
+    "original": "シロートめの　ピッタシさ",
+    "translation": "外行眼中的合拍度",
+    "stage": 5
+  },
+  {
+    "key": "results_skill_text_hit_avg[1]",
+    "original": "いっぱんてき　バッチシど",
+    "translation": "普普通通的合拍度",
+    "stage": 5
+  },
+  {
+    "key": "results_skill_text_hit_avg[2]",
+    "original": "ほどほどの　せいかくさ",
+    "translation": "马马虎虎的准确度",
+    "stage": 5
+  },
+  {
+    "key": "results_skill_text_irrelevant_inputs[0]",
+    "original": "せつやく　のうりょく",
+    "translation": "节约能力",
+    "stage": 5
+  },
+  {
+    "key": "results_skill_text_irrelevant_inputs[1]",
+    "original": "ごうりてき　さいのう",
+    "translation": "合理的才能",
+    "stage": 5
+  },
+  {
+    "key": "results_skill_text_irrelevant_inputs[2]",
+    "original": "おちつき",
+    "translation": "沉着冷静",
+    "stage": 5
+  },
+  {
+    "key": "results_skill_text_accuracy_lenient[0]",
+    "original": "あんていの　ほど",
+    "translation": "稳定程度",
+    "stage": 5
+  },
+  {
+    "key": "results_skill_text_accuracy_lenient[1]",
+    "original": "リズムの　しん",
+    "translation": "节奏的核心",
+    "stage": 5
+  },
+  {
+    "key": "results_skill_text_accuracy_lenient[2]",
+    "original": "いっかんせい　みたいなもの",
+    "translation": "一致性之类的东西",
+    "stage": 5
+  },
+  {
+    "key": "results_skill_text_miss[0]",
+    "original": "やるき",
+    "translation": "干劲",
+    "stage": 5
+  },
+  {
+    "key": "results_skill_text_miss[1]",
+    "original": "どうたい　しりょく",
+    "translation": "动态视力",
+    "stage": 5
+  },
+  {
+    "key": "results_skill_text_miss[2]",
+    "original": "まえむきな　しせい",
+    "translation": "积极的态度",
+    "stage": 5
+  },
+  {
+    "key": "results_skill_text_miss_trk2[0]",
+    "original": "りんきおうへん",
+    "translation": "随机应变",
+    "stage": 5
+  },
+  {
+    "key": "results_skill_text_miss_trk2[1]",
+    "original": "じゅうなんせい",
+    "translation": "灵活性",
+    "stage": 5
+  },
+  {
+    "key": "results_skill_text_miss_trk2[2]",
+    "original": "ちゅういぶかさ",
+    "translation": "细心程度",
+    "stage": 5
+  },
+  {
+    "key": "results_skill_text_random[0]",
+    "original": "らいねんの　れんあい　うん",
+    "translation": "明年的恋爱运",
+    "stage": 5
+  },
+  {
+    "key": "results_skill_text_random[1]",
+    "original": "ことしの　きんせん　うん",
+    "translation": "今年的财运",
+    "stage": 5
+  },
+  {
+    "key": "results_skill_text_random[2]",
+    "original": "あしたの　てんき",
+    "translation": "明天的天气",
+    "stage": 5
+  },
+  {
+    "key": "results_skill_text_random[3]",
+    "original": "きのうの　やしょく",
+    "translation": "昨晚的夜宵",
+    "stage": 5
+  },
+  {
+    "key": "results_skill_text_random[4]",
+    "original": "けつえきがた（すいそく）",
+    "translation": "血型（推测）",
+    "stage": 5
+  },
+  {
+    "key": "results_skill_text_random[5]",
+    "original": "そだちの　よさ",
+    "translation": "教养程度",
+    "stage": 5
+  },
+  {
+    "key": "results_skill_text_random[6]",
+    "original": "にんげんせい",
+    "translation": "人品",
+    "stage": 5
+  }
+]

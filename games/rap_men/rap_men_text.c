@@ -5,62 +5,62 @@
 /* Game Text - Rap Men */
 
 
-const char D_0805e914[] = "The \"huh?\" lines were just confusing.";
+const char D_0805e914[] = "“……吗？”这段节奏还没跟上。";
 
-const char D_0805e938[] = "The \"huh?\" lines had some real groove!";
+const char D_0805e938[] = "“……吗？”这段节奏跟得真准！";
 
-const char D_0805e960[] = "I \"feel\" like we could've done better.";
+const char D_0805e960[] = "“……吧”这段还有点生硬。";
 
-const char D_0805e988[] = "Your \"feel\" for this is impressive!";
+const char D_0805e988[] = "“……吧”这段真有感觉！";
 
-const char D_0805e9ac[] = "The \"AWESOME!\" lines... weren't.";
+const char D_0805e9ac[] = "“最棒啦！”这段还不够棒啊。";
 
-const char D_0805e9d8[] = "The \"AWESOME!\" lines were nothing less!";
+const char D_0805e9d8[] = "“最棒啦！”这段简直棒极啦！";
 
-const char D_0805ea04[] = "RAPNOTES from the Boys:";
+const char D_0805ea04[] = "那两位的点评";
 
-const char D_0805ea18[] = "Let's get into it.";
+const char D_0805ea18[] = "那就正式上吧";
 
-const char D_0805ea34[] = "We should do that again.";
+const char D_0805ea34[] = "下次再一起玩啊";
 
-const char D_0805ea44[] = "Yo.";
+const char D_0805ea44[] = "哟！";
 
-const char D_0805ea50[] = "Wanna rap together?";
+const char D_0805ea50[] = "来，跟我们一起嗨吧";
 
-const char D_0805ea6c[] = "Lemme break it down for you.";
+const char D_0805ea6c[] = "我们来教你怎么跟上节奏";
 
-const char D_0805ea84[] = "Press "CHAR_A_BUTTON_UTF8" at the \"Uh!\"";
+const char D_0805ea84[] = "听到“嗯”那一下就按 A 键";
 
-const char D_0805eaac[] = "Give it a listen.";
+const char D_0805eaac[] = "先听一遍吧";
 
-const char D_0805eac4[] = "You got it?";
+const char D_0805eac4[] = "懂了吗？";
 
-const char D_0805ead0[] = "Try it out!";
+const char D_0805ead0[] = "来，试试看";
 
-const char D_0805eae8[] = "Do your best!";
+const char D_0805eae8[] = "加把劲啊";
 
-const char D_0805eaf8[] = "It's at the \"Uh!\"";
+const char D_0805eaf8[] = "就是“嗯”那一下哦〜";
 
 #ifdef PARADISE
-const char D_0805eb14[] = "You have to press "CHAR_A_BUTTON_UTF8" at the \"Uh!\"";
+const char D_0805eb14[] = "都说了是“嗯”那一下啦";
 #else
 const char D_0805eb14[] = "You gotta press "CHAR_A_BUTTON_UTF8" at the \"Uh!\"";
 #endif
 
-const char D_0805eb34[] = "OK! You've got it!";
+const char D_0805eb34[] = "OK！";
 
 const char D_0805eb3c[] = "That was a \".bhuh?.8\" line.";
 
 const char D_0805eb6c[] = "Now let's try the \".9ya feel me?.8\" line.";
 
-const char D_0805eb94[] = "Take a listen.";
+const char D_0805eb94[] = "先听一遍吧";
 
-const char D_0805ebac[] = "You got this!";
+const char D_0805ebac[] = "那就，来吧";
 
 const char D_0805ebc4[] = "All that's left is our \".aAWESOME!.8\" line.";
 
-const char D_0805ebf4[] = "Give it a listen...";
+const char D_0805ebf4[] = "这个也先听一遍吧";
 
-const char D_0805ec0c[] = "Now follow it up!";
+const char D_0805ec0c[] = "好，来吧";
 
 const char D_0805ec24[] = "OK! You're pretty \".aawesome.8\" at this!";

@@ -30,10 +30,7 @@ define_gameplay_scene scene_drum_lesson_short_5, script_drum_lesson_short_5_entr
 @ Drum Lesson (Short 5) - Data
 
 text D_0805fea0
-    .ascii "Listen to my pattern, then\n"
-    .ascii "repeat when you're ready.\n"
-    .ascii "I'll show it to you again\n"
-    .asciz "if you stop playing."
+    .asciz "仔细听好再照着做哦。\n想什么时候开始都可以。\n停下演奏的话，\n还能再听一遍示范哦！"
 endtext
 
 
@@ -55,10 +52,7 @@ return
 
 
 text D_0805ff7c
-    .ascii "\n"
-    .ascii "Now, let's add a crash cymbal!\n"
-    .ascii "Hit it with , and time it with\n"
-    .asciz "the bass drum here."
+    .asciz "有一处会多一个音哦！\n听得出来吗？\n提示：R 键"
 endtext
 
 
@@ -70,9 +64,7 @@ return
 
 
 text D_0805ffe4
-    .ascii "\n"
-    .ascii "Now for a new snare beat.\n"
-    .asciz "Listen carefully and go for it!\n"
+    .asciz "还会再多一处哦！\n听得出来吗？"
 endtext
 
 
@@ -89,10 +81,7 @@ return
 
 
 text D_08060080
-    .ascii "Let's add a tom beat.\n"
-    .ascii "Remember, you can use\n"
-    .ascii "either  or Left on \n"
-    .asciz "for the snare.\n"
+    .asciz "又会再多一处哦！\n听得出来吗？\n提示：十字键右"
 endtext
 
 
@@ -111,10 +100,7 @@ return
 
 
 text D_08060148
-    .ascii "\n"
-    .ascii "Now let's squeeze in one more\n"
-    .ascii "snare right before the end.\n"
-    .asciz "This should be easy!\n"
+    .asciz "然后居然又多一处哦！\n听得出来吗？"
 endtext
 
 
@@ -135,10 +121,7 @@ return
 
 
 text D_08060220
-    .ascii "We're not done yet!\n"
-    .ascii "Add one more snare beat\n"
-    .ascii "at the end, and we'll\n"
-    .asciz "wrap up this lesson!"
+    .asciz "这回居然也多一处哦！\n听得出来吗？"
 endtext
 
 

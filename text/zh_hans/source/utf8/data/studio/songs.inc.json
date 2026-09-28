@@ -1,0 +1,284 @@
+[
+  {
+    "key": "song_silent",
+    "original": "サイレント",
+    "translation": "无声",
+    "stage": 5
+  },
+  {
+    "key": "song_karate_ie",
+    "original": "カラテ家",
+    "translation": "空手道家",
+    "stage": 5
+  },
+  {
+    "key": "song_pachi_pachi_sannin_shu",
+    "original": "パチパチ三人衆",
+    "translation": "啪叽啪叽三人组",
+    "stage": 5
+  },
+  {
+    "key": "song_tap_dance",
+    "original": "タップダンズ",
+    "translation": "踢踏舞",
+    "stage": 5
+  },
+  {
+    "key": "song_space_dance",
+    "original": "スペースダンス",
+    "translation": "太空之舞",
+    "stage": 5
+  },
+  {
+    "key": "song_koi_no_honey_sweet_angel",
+    "original": "恋のハニースイ〜トエンジェル",
+    "translation": "恋爱的Honey Sweet〜Angel",
+    "stage": 5
+  },
+  {
+    "key": "song_koi_no_honey_short",
+    "original": "恋のハニースイ〜…",
+    "translation": "恋爱的Honey Sweet〜…",
+    "stage": 5
+  },
+  {
+    "key": "song_wish",
+    "original": "WISH 君を待てなくて",
+    "translation": "WISH 我多想再为你等待",
+    "stage": 2
+  },
+  {
+    "key": "song_wish_short",
+    "original": "WISH 君を待て…",
+    "translation": "WISH 我多想再…",
+    "stage": 2
+  },
+  {
+    "key": "song_night_walk",
+    "original": "ナイトウォーク",
+    "translation": "夜空漫步",
+    "stage": 5
+  },
+  {
+    "key": "song_bon_odori",
+    "original": "ザ☆ぼんおどり",
+    "translation": "The☆盂兰盆舞",
+    "stage": 5
+  },
+  {
+    "key": "song_bon_dance",
+    "original": "ボンダンス",
+    "translation": "盆舞",
+    "stage": 5
+  },
+  {
+    "key": "song_cosmo_dance",
+    "original": "コスモダンス",
+    "translation": "宇宙之舞",
+    "stage": 5
+  },
+  {
+    "key": "song_rhythm_datsumou",
+    "original": "リズム脱毛",
+    "translation": "节奏脱毛",
+    "stage": 5
+  },
+  {
+    "key": "song_bari_bari_sannin_shu",
+    "original": "バリバリ三人衆",
+    "translation": "帅气帅气三人组",
+    "stage": 5
+  },
+  {
+    "key": "song_super_tap",
+    "original": "スーパータップ",
+    "translation": "超级踢踏舞",
+    "stage": 5
+  },
+  {
+    "key": "song_mahoutsukai",
+    "original": "まほうつかい",
+    "translation": "魔法使",
+    "stage": 5
+  },
+  {
+    "key": "song_marcha",
+    "original": "マーチャ",
+    "translation": "行军",
+    "stage": 5
+  },
+  {
+    "key": "song_air_batter",
+    "original": "エアーバッター",
+    "translation": "空中击球手",
+    "stage": 5
+  },
+  {
+    "key": "song_shiroi_obake",
+    "original": "しろいおばけ",
+    "translation": "白色的鬼",
+    "stage": 5
+  },
+  {
+    "key": "song_iai_giri",
+    "original": "ゐあひ斬り",
+    "translation": "居合斩",
+    "stage": 5
+  },
+  {
+    "key": "song_kossori_ratt",
+    "original": "こっそりラット",
+    "translation": "蹑鼠蹑脚",
+    "stage": 5
+  },
+  {
+    "key": "song_baikin_hakase",
+    "original": "バイキンはかせ",
+    "translation": "细菌博士",
+    "stage": 5
+  },
+  {
+    "key": "song_showtime",
+    "original": "ショータイム",
+    "translation": "表演时间",
+    "stage": 5
+  },
+  {
+    "key": "song_usagi_tobi",
+    "original": "ウサギとび",
+    "translation": "跃兔",
+    "stage": 5
+  },
+  {
+    "key": "song_toran_to_porin",
+    "original": "トランとポリン",
+    "translation": "小蹦与小床",
+    "stage": 5
+  },
+  {
+    "key": "song_quiz",
+    "original": "クイズ",
+    "translation": "节奏问答",
+    "stage": 5
+  },
+  {
+    "key": "song_rhythm_oshuji",
+    "original": "リズムお習字",
+    "translation": "节奏书法",
+    "stage": 5
+  },
+  {
+    "key": "song_polyrhythm",
+    "original": "ポリリズム",
+    "translation": "复合节奏",
+    "stage": 5
+  },
+  {
+    "key": "song_hopping_road",
+    "original": "ホッピングロード",
+    "translation": "跳杆之路",
+    "stage": 5
+  },
+  {
+    "key": "song_toss_boys",
+    "original": "トスボーイズ",
+    "translation": "传球少年",
+    "stage": 5
+  },
+  {
+    "key": "song_hanabi",
+    "original": "花火",
+    "translation": "烟火",
+    "stage": 5
+  },
+  {
+    "key": "song_remix_7",
+    "original": "リミックス７",
+    "translation": "Remix７",
+    "stage": 5
+  },
+  {
+    "key": "song_remix_8",
+    "original": "リミックス８",
+    "translation": "Remix８",
+    "stage": 5
+  },
+  {
+    "key": "song_remix_6",
+    "original": "リミックス６",
+    "translation": "Remix６",
+    "stage": 5
+  },
+  {
+    "key": "song_title",
+    "original": "タイトル",
+    "translation": "标题",
+    "stage": 5
+  },
+  {
+    "key": "song_menu",
+    "original": "メニュー",
+    "translation": "主菜单",
+    "stage": 5
+  },
+  {
+    "key": "song_game_select",
+    "original": "ゲームセレクト",
+    "translation": "游戏选择",
+    "stage": 5
+  },
+  {
+    "key": "song_rhythm_shiryoshitsu",
+    "original": "リズム資料室",
+    "translation": "节奏资料室",
+    "stage": 5
+  },
+  {
+    "key": "song_opening",
+    "original": "オープニング",
+    "translation": "开场",
+    "stage": 5
+  },
+  {
+    "key": "song_staff_credit",
+    "original": "スタッフクレジット",
+    "translation": "制作人员名单",
+    "stage": 5
+  },
+  {
+    "key": "song_game_select_2",
+    "original": "ゲームセレクト２",
+    "translation": "游戏选择２",
+    "stage": 5
+  },
+  {
+    "key": "song_cafe_counsel",
+    "original": "喫茶カウンセル",
+    "translation": "咖啡谈心",
+    "stage": 5
+  },
+  {
+    "key": "song_yarinaoshi",
+    "original": "やりなおし",
+    "translation": "再试一次吧",
+    "stage": 5
+  },
+  {
+    "key": "song_heibon",
+    "original": "平凡",
+    "translation": "平凡",
+    "stage": 5
+  },
+  {
+    "key": "song_high_level",
+    "original": "ハイレベル",
+    "translation": "高水准",
+    "stage": 5
+  },
+  {
+    "key": "song_perfect",
+    "original": "パーフェクト",
+    "translation": "完美通关",
+    "stage": 5
+  }
+]

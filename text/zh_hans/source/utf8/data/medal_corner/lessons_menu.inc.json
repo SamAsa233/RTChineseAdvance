@@ -1,0 +1,116 @@
+[
+  {
+    "key": "lesson_basic_1",
+    "original": "ベーシック １",
+    "translation": "基础篇 １",
+    "stage": 5
+  },
+  {
+    "key": "lesson_basic_2",
+    "original": "ベーシック ２",
+    "translation": "基础篇 ２",
+    "stage": 5
+  },
+  {
+    "key": "lesson_short_1",
+    "original": "ショート １",
+    "translation": "短篇  １",
+    "stage": 5
+  },
+  {
+    "key": "lesson_short_2",
+    "original": "ショート ２",
+    "translation": "短篇 ２",
+    "stage": 5
+  },
+  {
+    "key": "lesson_short_3",
+    "original": "ショート ３",
+    "translation": "短篇 ３",
+    "stage": 5
+  },
+  {
+    "key": "lesson_short_4",
+    "original": "ショート ４",
+    "translation": "短篇 ４",
+    "stage": 5
+  },
+  {
+    "key": "lesson_short_5",
+    "original": "ショート ５",
+    "translation": "短篇 ５",
+    "stage": 5
+  },
+  {
+    "key": "lesson_short_6",
+    "original": "ショート ６",
+    "translation": "短篇 ６",
+    "stage": 5
+  },
+  {
+    "key": "lesson_short_7",
+    "original": "ショート ７",
+    "translation": "短篇 ７",
+    "stage": 5
+  },
+  {
+    "key": "lesson_short_8",
+    "original": "ショート ８",
+    "translation": "短篇 ８",
+    "stage": 5
+  },
+  {
+    "key": "lesson_short_9",
+    "original": "ショート ９",
+    "translation": "短篇 ９",
+    "stage": 5
+  },
+  {
+    "key": "lesson_long_1",
+    "original": "ロング １",
+    "translation": "长篇 １",
+    "stage": 5
+  },
+  {
+    "key": "lesson_long_2",
+    "original": "ロング ２",
+    "translation": "长篇 2",
+    "stage": 5
+  },
+  {
+    "key": "lesson_long_3",
+    "original": "ロング ３",
+    "translation": "长篇 3",
+    "stage": 5
+  },
+  {
+    "key": "lesson_long_4",
+    "original": "ロング ４",
+    "translation": "长篇 ４",
+    "stage": 5
+  },
+  {
+    "key": "lesson_long_5",
+    "original": "ロング ５",
+    "translation": "长篇 ５",
+    "stage": 5
+  },
+  {
+    "key": "lesson_long_6",
+    "original": "ロング ６",
+    "translation": "长篇 ６",
+    "stage": 5
+  },
+  {
+    "key": "lesson_hitech_1",
+    "original": "ハイテク １",
+    "translation": "高阶篇 １",
+    "stage": 5
+  },
+  {
+    "key": "lesson_hitech_2",
+    "original": "ハイテク ２",
+    "translation": "高阶篇 ２",
+    "stage": 5
+  }
+]

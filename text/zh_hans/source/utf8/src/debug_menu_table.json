@@ -1,0 +1,824 @@
+[
+  {
+    "key": "debug_menu_1",
+    "original": "Ｒ－ＩＱ　（Ｔｉｔｌｅ）",
+    "translation": "Ｒ－ＩＱ　（标题）",
+    "stage": 5
+  },
+  {
+    "key": "debug_menu_2",
+    "original": "Ｒ－ＩＱ　（Ｍｅｎｕ）",
+    "translation": "Ｒ－ＩＱ　（菜单）",
+    "stage": 5
+  },
+  {
+    "key": "debug_menu_3",
+    "original": "Ｒ－ＩＱ　（Ｇａｍｅ）",
+    "translation": "Ｒ－ＩＱ　（游戏）",
+    "stage": 5
+  },
+  {
+    "key": "debug_menu_4",
+    "original": "Ｒ－ＩＱ　（Ｌｅｔｔｅｒ）",
+    "translation": "Ｒ－ＩＱ　（资料室）",
+    "stage": 5
+  },
+  {
+    "key": "debug_menu_5",
+    "original": "Ｒ－ＩＱ　（Ｓｔｕｄｉｏ）",
+    "translation": "Ｒ－ＩＱ　（录音室）",
+    "stage": 5
+  },
+  {
+    "key": "debug_menu_6",
+    "original": "Ｒ－ＩＱ　（Ｏｐｔｉｏｎ）",
+    "translation": "Ｒ－ＩＱ　（选项）",
+    "stage": 5
+  },
+  {
+    "key": "debug_menu_7",
+    "original": "Ｒ－ＩＱ　（Ｒｅｓｕｌｔ）",
+    "translation": "Ｒ－ＩＱ　（结果）",
+    "stage": 5
+  },
+  {
+    "key": "debug_menu_8",
+    "original": "Ｒ－ＩＱ　（Ｒｅｓｕｌｔ　２）",
+    "translation": "Ｒ－ＩＱ　（结果　２）",
+    "stage": 5
+  },
+  {
+    "key": "debug_menu_9",
+    "original": "Ｒ－ＩＱ　（Ｒｅｓｕｌｔ　３）",
+    "translation": "Ｒ－ＩＱ　（结果　３）",
+    "stage": 5
+  },
+  {
+    "key": "debug_menu_10",
+    "original": "Ｒ－ＩＱ　（Ｒｅｓｕｌｔ　４）",
+    "translation": "Ｒ－ＩＱ　（结果　４）",
+    "stage": 5
+  },
+  {
+    "key": "debug_menu_11",
+    "original": "Ｒ－ＩＱ　（Ｅｍａｉｌ）",
+    "translation": "Ｒ－ＩＱ　（获得信件）",
+    "stage": 5
+  },
+  {
+    "key": "debug_menu_12",
+    "original": "Ｒ－ＩＱ　（Ｐｅｒｆｅｃｔ）",
+    "translation": "Ｒ－ＩＱ　（完美）",
+    "stage": 5
+  },
+  {
+    "key": "debug_menu_13",
+    "original": "Ｒ－ＩＱ　（Ｅｎｄｌｅｓｓ　Ｇａｍｅｓ）",
+    "translation": "Ｒ－ＩＱ　（无尽游戏）",
+    "stage": 5
+  },
+  {
+    "key": "debug_menu_14",
+    "original": "Ｒ－ＩＱ　（Ｄｒｕｍ　Ｌｅｓｓｏｎｓ）",
+    "translation": "Ｒ－ＩＱ　（击鼓课程）",
+    "stage": 5
+  },
+  {
+    "key": "debug_menu_15",
+    "original": "Ｒ－ＩＱ　（Ｒｈｙｔｈｍ　Ｔｏｙｓ）",
+    "translation": "Ｒ－ＩＱ　（节奏玩具）",
+    "stage": 5
+  },
+  {
+    "key": "debug_menu_16",
+    "original": "Ｒ－ＩＱ　（Ｃａｆｅ　Ｃｏｕｎｓｅｌｌｉｎｇ）",
+    "translation": "Ｒ－ＩＱ　（咖啡谈心）",
+    "stage": 5
+  },
+  {
+    "key": "debug_menu_17",
+    "original": "Ｗａｒｎｉｎｇ",
+    "translation": "警告",
+    "stage": 5
+  },
+  {
+    "key": "debug_menu_18",
+    "original": "ＧＢＰ　Ｈａｎｄｓｈａｋｅ",
+    "translation": "ＧＢＰ　手柄震动",
+    "stage": 5
+  },
+  {
+    "key": "debug_menu_19",
+    "original": "Ｄｉｓｃｌａｉｍｅｒ",
+    "translation": "声明",
+    "stage": 5
+  },
+  {
+    "key": "debug_menu_20",
+    "original": "Ｏｐｅｎｉｎｇ　（Ｔｙｐｅ　Ａ）",
+    "translation": "开场　（类型A）",
+    "stage": 5
+  },
+  {
+    "key": "debug_menu_21",
+    "original": "Ｏｐｅｎｉｎｇ　（Ｔｙｐｅ　Ｂ）",
+    "translation": "开场　（类型B）",
+    "stage": 5
+  },
+  {
+    "key": "debug_menu_22",
+    "original": "Ｒｈｙｔｈｍ　Ｔｅｓｔ　（Ｏｐｅｎｉｎｇ）",
+    "translation": "节奏感测试　（开场）",
+    "stage": 5
+  },
+  {
+    "key": "debug_menu_23",
+    "original": "Ｒｈｙｔｈｍ　Ｔｅｓｔ　（Ｃｌｉｃｋ）",
+    "translation": "节奏感测试　（点击）",
+    "stage": 5
+  },
+  {
+    "key": "debug_menu_24",
+    "original": "Ｒｈｙｔｈｍ　Ｔｅｓｔ　（Ｃｕｅ）",
+    "translation": "节奏感测试　（数拍）",
+    "stage": 5
+  },
+  {
+    "key": "debug_menu_25",
+    "original": "Ｒｈｙｔｈｍ　Ｔｅｓｔ　（Ｔｒｉｃｋｙ）",
+    "translation": "节奏感测试　（棘手）",
+    "stage": 5
+  },
+  {
+    "key": "debug_menu_26",
+    "original": "Ｅｍａｉｌ",
+    "translation": "信件",
+    "stage": 5
+  },
+  {
+    "key": "debug_menu_27",
+    "original": "Ｓｔｕｄｉｏ　Ｄｒｕｍｓ　（Ｖｅｒ．　０）",
+    "translation": "录音室打鼓　（Ｖｅｒ．　０）",
+    "stage": 5
+  },
+  {
+    "key": "debug_menu_28",
+    "original": "Ｓｔｕｄｉｏ　Ｄｒｕｍｓ　（Ｖｅｒ．　２）",
+    "translation": "录音室打鼓　（Ｖｅｒ．　２）",
+    "stage": 5
+  },
+  {
+    "key": "debug_menu_29",
+    "original": "Ｃｏｎｃｅｒｔ",
+    "translation": "现场演出",
+    "stage": 5
+  },
+  {
+    "key": "debug_menu_30",
+    "original": "Ｅｎｄｉｎｇ　（Ｇａｍｅ　Ｃｌｅａｒｅｄ）",
+    "translation": "结尾　（通关）",
+    "stage": 5
+  },
+  {
+    "key": "debug_menu_31",
+    "original": "Ｅｎｄｉｎｇ　（Ｅｘｔｒａ　Ｖｉｅｗｉｎｇｓ）",
+    "translation": "结尾　（再次观看）",
+    "stage": 5
+  },
+  {
+    "key": "debug_menu_32",
+    "original": "Ｌｅｓｓｏｎ　（Ｉｎｔｒｏ　１）",
+    "translation": "课程 （入门　１）",
+    "stage": 5
+  },
+  {
+    "key": "debug_menu_33",
+    "original": "Ｌｅｓｓｏｎ　（Ｉｎｔｒｏ　２）",
+    "translation": "课程 （入门　２）",
+    "stage": 5
+  },
+  {
+    "key": "debug_menu_34",
+    "original": "Ｌｅｓｓｏｎ　（Ｂａｓｉｃ　１）",
+    "translation": "课程 （基础　１）",
+    "stage": 5
+  },
+  {
+    "key": "debug_menu_35",
+    "original": "Ｌｅｓｓｏｎ　（Ｂａｓｉｃ　２）",
+    "translation": "课程 （基础　２）",
+    "stage": 5
+  },
+  {
+    "key": "debug_menu_36",
+    "original": "Ｌｅｓｓｏｎ　（Ｂａｓｉｃ　３）",
+    "translation": "课程 （基础　３）",
+    "stage": 5
+  },
+  {
+    "key": "debug_menu_37",
+    "original": "Ｌｅｓｓｏｎ　（Ｂａｓｉｃ　４）",
+    "translation": "课程 （基础　４）",
+    "stage": 5
+  },
+  {
+    "key": "debug_menu_38",
+    "original": "Ｌｅｓｓｏｎ　（Ｂａｓｉｃ　５）",
+    "translation": "课程 （基础　５）",
+    "stage": 5
+  },
+  {
+    "key": "debug_menu_39",
+    "original": "Ｌｅｓｓｏｎ　（Ｂａｓｉｃ　６）",
+    "translation": "课程 （基础　６）",
+    "stage": 5
+  },
+  {
+    "key": "debug_menu_40",
+    "original": "Ｌｅｓｓｏｎ　（Ｂａｓｉｃ　７）",
+    "translation": "课程 （基础　７）",
+    "stage": 5
+  },
+  {
+    "key": "debug_menu_41",
+    "original": "Ｌｅｓｓｏｎ　（Ｂａｓｉｃ　８）",
+    "translation": "课程 （基础　８）",
+    "stage": 5
+  },
+  {
+    "key": "debug_menu_42",
+    "original": "Ｌｅｓｓｏｎ　（Ｂａｓｉｃ　９）",
+    "translation": "课程 （基础　９）",
+    "stage": 5
+  },
+  {
+    "key": "debug_menu_43",
+    "original": "Ｌｅｓｓｏｎ　（Ａｄｖａｎｃｅｄ　１）",
+    "translation": "课程 （进阶　１）",
+    "stage": 5
+  },
+  {
+    "key": "debug_menu_44",
+    "original": "Ｌｅｓｓｏｎ　（Ａｄｖａｎｃｅｄ　２）",
+    "translation": "课程 （进阶　２）",
+    "stage": 5
+  },
+  {
+    "key": "debug_menu_45",
+    "original": "Ｌｅｓｓｏｎ　（Ａｄｖａｎｃｅｄ　３）",
+    "translation": "课程 （进阶　３）",
+    "stage": 5
+  },
+  {
+    "key": "debug_menu_46",
+    "original": "Ｌｅｓｓｏｎ　（Ａｄｖａｎｃｅｄ　４）",
+    "translation": "课程 （进阶　４）",
+    "stage": 5
+  },
+  {
+    "key": "debug_menu_47",
+    "original": "Ｌｅｓｓｏｎ　（Ａｄｖａｎｃｅｄ　５）",
+    "translation": "课程 （进阶　５）",
+    "stage": 5
+  },
+  {
+    "key": "debug_menu_48",
+    "original": "Ｌｅｓｓｏｎ　（Ａｄｖａｎｃｅｄ　６）",
+    "translation": "课程 （进阶　６）",
+    "stage": 5
+  },
+  {
+    "key": "debug_menu_49",
+    "original": "Ｌｅｓｓｏｎ　（Ｔｅｃｈｎｉｃａｌ　１）",
+    "translation": "课程 （技巧　１）",
+    "stage": 5
+  },
+  {
+    "key": "debug_menu_50",
+    "original": "Ｌｅｓｓｏｎ　（Ｔｅｃｈｎｉｃａｌ　２）",
+    "translation": "课程 （技巧　２）",
+    "stage": 5
+  },
+  {
+    "key": "debug_menu_51",
+    "original": "Ｍｒ　Ｕｐｂｅａｔ",
+    "translation": "反拍男",
+    "stage": 5
+  },
+  {
+    "key": "debug_menu_52",
+    "original": "Ｓｉｃｋ　Ｂｅａｔｓ　ｅｃｉａｌ",
+    "translation": "细菌博士　ＳＰ",
+    "stage": 5
+  },
+  {
+    "key": "debug_menu_53",
+    "original": "Ｑｕｉｚ　Ｓｈｏｗ　Ｓｐｅｃｉａｌ",
+    "translation": "节奏问答　特别篇",
+    "stage": 5
+  },
+  {
+    "key": "debug_menu_54",
+    "original": "Ｍａｎｎｅｑｕｉｎ　Ｆａｃｔｏｒｙ",
+    "translation": "头模工厂",
+    "stage": 5
+  },
+  {
+    "key": "debug_menu_55",
+    "original": "Ｃａｔ　Ｍａｃｈｉｎｅ",
+    "translation": "猫咪发声机",
+    "stage": 5
+  },
+  {
+    "key": "debug_menu_56",
+    "original": "Ｈｏｒｓｅ　Ｍａｃｈｉｎｅ",
+    "translation": "骑马机",
+    "stage": 5
+  },
+  {
+    "key": "debug_menu_57",
+    "original": "Ｌｏｖｅ　Ｍａｃｈｉｎｅ",
+    "translation": "告白机",
+    "stage": 5
+  },
+  {
+    "key": "debug_menu_58",
+    "original": "Ｒａｐ　Ｍａｃｈｉｎｅ",
+    "translation": "饶舌发声机",
+    "stage": 5
+  },
+  {
+    "key": "debug_menu_59",
+    "original": "Ｋａｒａｔｅ　Ｍａｎ",
+    "translation": "空手道家",
+    "stage": 5
+  },
+  {
+    "key": "debug_menu_60",
+    "original": "Ｋａｒａｔｅ　Ｍａｎ　２",
+    "translation": "空手道家　２",
+    "stage": 5
+  },
+  {
+    "key": "debug_menu_61",
+    "original": "Ｋａｒａｔｅ　Ｍａｎ　（Ｅｘｔｒａ）　ＷＩＰ",
+    "translation": "空手道家　（额外）　ＷＩＰ",
+    "stage": 5
+  },
+  {
+    "key": "debug_menu_62",
+    "original": "Ｒｈｙｔｈｍ　Ｔｗｅｅｚｅｒｓ",
+    "translation": "节奏脱毛",
+    "stage": 5
+  },
+  {
+    "key": "debug_menu_63",
+    "original": "Ｒｈｙｔｈｍ　Ｔｗｅｅｚｅｒｓ　２",
+    "translation": "节奏脱毛　２",
+    "stage": 5
+  },
+  {
+    "key": "debug_menu_64",
+    "original": "Ｒｈｙｔｈｍ　Ｔｗｅｅｚｅｒｓ　（Ｅｘｔｒａ）",
+    "translation": "节奏脱毛　（额外）",
+    "stage": 5
+  },
+  {
+    "key": "debug_menu_65",
+    "original": "Ｍａｒｃｈｉｎｇ　Ｏｒｄｅｒｓ",
+    "translation": "行军",
+    "stage": 5
+  },
+  {
+    "key": "debug_menu_66",
+    "original": "Ｍａｒｃｈｉｎｇ　Ｏｒｄｅｒｓ　２",
+    "translation": "行军　２",
+    "stage": 5
+  },
+  {
+    "key": "debug_menu_67",
+    "original": "Ｍａｒｃｈｉｎｇ　Ｏｒｄｅｒｓ　（Ｅｘｔｒａ）",
+    "translation": "行军　（额外）",
+    "stage": 5
+  },
+  {
+    "key": "debug_menu_68",
+    "original": "Ｓｐａｃｅｂａｌｌ",
+    "translation": "空中击球手",
+    "stage": 5
+  },
+  {
+    "key": "debug_menu_69",
+    "original": "Ｓｐａｃｅｂａｌｌ　２",
+    "translation": "空中击球手　２",
+    "stage": 5
+  },
+  {
+    "key": "debug_menu_70",
+    "original": "Ｓｐａｃｅｂａｌｌ　（Ｅｘｔｒａ）",
+    "translation": "空中击球手　（额外）",
+    "stage": 5
+  },
+  {
+    "key": "debug_menu_71",
+    "original": "Ｔｈｅ　Ｃｌａｐｐｙ　Ｔｒｉｏ",
+    "translation": "啪叽啪叽三人组",
+    "stage": 5
+  },
+  {
+    "key": "debug_menu_72",
+    "original": "Ｔｈｅ　Ｓｎａｐｐｙ　Ｔｒｉｏ",
+    "translation": "帅气帅气三人组",
+    "stage": 5
+  },
+  {
+    "key": "debug_menu_73",
+    "original": "Ｔｈｅ　Ｃｌａｐｐｙ　Ｔｒｉｏ　（Ｅｘｔｒａ）　ＷＩＰ",
+    "translation": "啪叽啪叽三人组　（额外）　ＷＩＰ",
+    "stage": 5
+  },
+  {
+    "key": "debug_menu_74",
+    "original": "Ｓｎｅａｋｙ　Ｓｐｉｒｉｔｓ",
+    "translation": "白色的鬼",
+    "stage": 5
+  },
+  {
+    "key": "debug_menu_75",
+    "original": "Ｓｎｅａｋｙ　Ｓｐｉｒｉｔｓ　２",
+    "translation": "白色的鬼　２",
+    "stage": 5
+  },
+  {
+    "key": "debug_menu_76",
+    "original": "Ｓａｍｕｒａｉ　Ｓｌｉｃｅ",
+    "translation": "居合斩",
+    "stage": 5
+  },
+  {
+    "key": "debug_menu_77",
+    "original": "Ｒａｔ　Ｒａｃｅ",
+    "translation": "蹑鼠蹑脚",
+    "stage": 5
+  },
+  {
+    "key": "debug_menu_78",
+    "original": "Ｓｉｃｋ　Ｂｅａｔｓ",
+    "translation": "细菌博士",
+    "stage": 5
+  },
+  {
+    "key": "debug_menu_79",
+    "original": "Ｔｈｅ　Ｂｏｎ　Ｏｄｏｒｉ",
+    "translation": "Ｔｈｅ　盂兰盆舞",
+    "stage": 5
+  },
+  {
+    "key": "debug_menu_80",
+    "original": "Ｔｈｅ　Ｂｏｎ　Ｄａｎｃｅ",
+    "translation": "盆舞",
+    "stage": 5
+  },
+  {
+    "key": "debug_menu_81",
+    "original": "Ｗｉｚａｒｄ’ｓ　Ｗａｌｔｚ",
+    "translation": "魔法使",
+    "stage": 5
+  },
+  {
+    "key": "debug_menu_82",
+    "original": "Ｓｈｏｗｔｉｍｅ",
+    "translation": "表演时间",
+    "stage": 5
+  },
+  {
+    "key": "debug_menu_83",
+    "original": "Ｂｕｎｎｙ　Ｈｏｐ",
+    "translation": "跃兔",
+    "stage": 5
+  },
+  {
+    "key": "debug_menu_84",
+    "original": "Ｔｒａｍ　＆　Ｐａｕｌｉｎｅ",
+    "translation": "小蹦与小床",
+    "stage": 5
+  },
+  {
+    "key": "debug_menu_85",
+    "original": "Ｓｐａｃｅ　Ｄａｎｃｅ",
+    "translation": "太空之舞",
+    "stage": 5
+  },
+  {
+    "key": "debug_menu_86",
+    "original": "Ｃｏｓｍｉｃ　Ｄａｎｃｅ",
+    "translation": "宇宙之舞",
+    "stage": 5
+  },
+  {
+    "key": "debug_menu_87",
+    "original": "Ｑｕｉｚ　Ｓｈｏｗ",
+    "translation": "节奏问答",
+    "stage": 5
+  },
+  {
+    "key": "debug_menu_88",
+    "original": "Ｎｉｇｈｔ　Ｗａｌｋ",
+    "translation": "夜间漫步",
+    "stage": 5
+  },
+  {
+    "key": "debug_menu_89",
+    "original": "Ｎｉｇｈｔ　Ｗａｌｋ　２",
+    "translation": "夜间漫步　２",
+    "stage": 5
+  },
+  {
+    "key": "debug_menu_90",
+    "original": "Ｐｏｗｅｒ　Ｃａｌｌｉｇｒａｐｈｙ",
+    "translation": "节奏书法",
+    "stage": 5
+  },
+  {
+    "key": "debug_menu_91",
+    "original": "Ｐｏｌｙｒｈｙｔｈｍ",
+    "translation": "复合节奏",
+    "stage": 5
+  },
+  {
+    "key": "debug_menu_92",
+    "original": "Ｐｏｌｙｒｈｙｔｈｍ　２",
+    "translation": "复合节奏　２",
+    "stage": 5
+  },
+  {
+    "key": "debug_menu_93",
+    "original": "ＲＡＰＭＥＮ",
+    "translation": "饶舌男",
+    "stage": 5
+  },
+  {
+    "key": "debug_menu_94",
+    "original": "ＲＡＰＷＯＭＥＮ　（ｂｙ　ＹＯＮＥ）",
+    "translation": "饶舌女　（米政美版）",
+    "stage": 5
+  },
+  {
+    "key": "debug_menu_95",
+    "original": "Ｂｏｕｎｃｙ　Ｒｏａｄ",
+    "translation": "跳杆之路",
+    "stage": 5
+  },
+  {
+    "key": "debug_menu_96",
+    "original": "Ｂｏｕｎｃｙ　Ｒｏａｄ　２",
+    "translation": "跳杆之路　２",
+    "stage": 5
+  },
+  {
+    "key": "debug_menu_97",
+    "original": "Ｎｉｎｊａ　Ｂｏｄｙｇｕａｒｄ",
+    "translation": "忍者",
+    "stage": 5
+  },
+  {
+    "key": "debug_menu_98",
+    "original": "Ｎｉｎｊａ　Ｄｅｓｃｅｎｄａｎｔ",
+    "translation": "忍者的后代",
+    "stage": 5
+  },
+  {
+    "key": "debug_menu_99",
+    "original": "Ｔｏｓｓ　Ｔｅａｍ",
+    "translation": "传球少年",
+    "stage": 5
+  },
+  {
+    "key": "debug_menu_100",
+    "original": "Ｔｏｓｓ　Ｔｅａｍ　２",
+    "translation": "传球少年　２",
+    "stage": 5
+  },
+  {
+    "key": "debug_menu_101",
+    "original": "Ｆｉｒｅｗｏｒｋｓ",
+    "translation": "烟火",
+    "stage": 5
+  },
+  {
+    "key": "debug_menu_102",
+    "original": "Ｔａｐ　Ｔｒｉａｌ",
+    "translation": "踢踏舞",
+    "stage": 5
+  },
+  {
+    "key": "debug_menu_103",
+    "original": "Ｔａｐ　Ｔｒｉａｌ　２",
+    "translation": "超级踢踏舞",
+    "stage": 5
+  },
+  {
+    "key": "debug_menu_104",
+    "original": "Ｒｅｍｉｘ　１",
+    "translation": "Ｒｅｍｉｘ　１",
+    "stage": 5
+  },
+  {
+    "key": "debug_menu_105",
+    "original": "Ｒｅｍｉｘ　２",
+    "translation": "Ｒｅｍｉｘ　２",
+    "stage": 5
+  },
+  {
+    "key": "debug_menu_106",
+    "original": "Ｒｅｍｉｘ　３",
+    "translation": "Ｒｅｍｉｘ　３",
+    "stage": 5
+  },
+  {
+    "key": "debug_menu_107",
+    "original": "Ｒｅｍｉｘ　４",
+    "translation": "Ｒｅｍｉｘ　４",
+    "stage": 5
+  },
+  {
+    "key": "debug_menu_108",
+    "original": "Ｒｅｍｉｘ　５",
+    "translation": "Ｒｅｍｉｘ　５",
+    "stage": 5
+  },
+  {
+    "key": "debug_menu_109",
+    "original": "Ｒｅｍｉｘ　６",
+    "translation": "Ｒｅｍｉｘ　６",
+    "stage": 5
+  },
+  {
+    "key": "debug_menu_110",
+    "original": "Ｒｅｍｉｘ　７",
+    "translation": "Ｒｅｍｉｘ　７",
+    "stage": 5
+  },
+  {
+    "key": "debug_menu_111",
+    "original": "Ｒｅｍｉｘ　８",
+    "translation": "Ｒｅｍｉｘ　８",
+    "stage": 5
+  },
+  {
+    "key": "debug_menu_112",
+    "original": "Ｒｅｍｉｘ　１　（Ｅｘｔｒａ）　ＷＩＰ",
+    "translation": "Ｒｅｍｉｘ　１　（额外）　ＷＩＰ",
+    "stage": 5
+  },
+  {
+    "key": "debug_menu_113",
+    "original": "Ｄｒｕｍ　Ｉｎｔｒｏ　（Ｕｎｕｓｅｄ）",
+    "translation": "击鼓课程　（未使用）",
+    "stage": 5
+  },
+  {
+    "key": "debug_menu_114",
+    "original": "Ｄｒｕｍ　Ｉｎｔｒｏ　（Ｕｎｕｓｅｄ　２）",
+    "translation": "击鼓课程　（未使用　２）",
+    "stage": 5
+  },
+  {
+    "key": "debug_menu_115",
+    "original": "Ｄｒｕｍ　Ｉｎｔｒｏ　（Ｕｎｕｓｅｄ　３）",
+    "translation": "击鼓课程　（未使用　３）",
+    "stage": 5
+  },
+  {
+    "key": "debug_menu_116",
+    "original": "Ｔａｎｕｋｉ　＆　Ｍｏｎｋｅｙ　（Ｕｎｕｓｅｄ）",
+    "translation": "狸猫与猴子　（未使用）",
+    "stage": 5
+  },
+  {
+    "key": "debug_menu_117",
+    "original": "Ｍｅｔｒｏｎｏｍｅ　（Ｕｎｕｓｅｄ）",
+    "translation": "节拍器　（未使用）",
+    "stage": 5
+  },
+  {
+    "key": "debug_menu_118",
+    "original": "Ｄｒｕｍ　Ｇｉｒｌｓ　（Ｕｎｕｓｅｄ）",
+    "translation": "Ｄｒｕｍ　Ｇｉｒｌｓ　（未使用）",
+    "stage": 5
+  },
+  {
+    "key": "debug_menu_119",
+    "original": "Ｈｏｒｓｅ　Ｍａｃｈｉｎｅ　（Ｕｎｕｓｅｄ）",
+    "translation": "骑马机　（未使用）",
+    "stage": 5
+  },
+  {
+    "key": "debug_menu_120",
+    "original": "Ｍａｒｃｈｉｎｇ　Ｏｒｄｅｒｓ　（Ｕｎｕｓｅｄ）",
+    "translation": "行军　（未使用）",
+    "stage": 5
+  },
+  {
+    "key": "debug_menu_121",
+    "original": "Ｓｐａｃｅｂａｌｌ　（Ｕｎｕｓｅｄ）",
+    "translation": "空中击球手　（未使用）",
+    "stage": 5
+  },
+  {
+    "key": "debug_menu_122",
+    "original": "Ｓｐａｃｅｂａｌｌ　（Ｕｎｕｓｅｄ　２）",
+    "translation": "空中击球手　（未使用　２）",
+    "stage": 5
+  },
+  {
+    "key": "debug_menu_123",
+    "original": "Ｔｈｅ　Ｓｎａｐｐｙ　Ｔｒｉｏ　（Ｕｎｕｓｅｄ）",
+    "translation": "帅气帅气三人组　（未使用）",
+    "stage": 5
+  },
+  {
+    "key": "debug_menu_124",
+    "original": "ＲＡＰＷＯＭＥＮ　（Ｂｙ　ＫＡＺＵ）",
+    "translation": "饶舌女　（大泽和义版）",
+    "stage": 5
+  },
+  {
+    "key": "debug_menu_125",
+    "original": "Ｂｏｕｎｃｙ　Ｒｏａｄ　（Ｕｎｕｓｅｄ）",
+    "translation": "跳杆之路　（未使用）",
+    "stage": 5
+  },
+  {
+    "key": "debug_menu_126",
+    "original": "Ｂｏｕｎｃｙ　Ｒｏａｄ　（Ｕｎｕｓｅｄ　２）",
+    "translation": "跳杆之路　（未使用　２）",
+    "stage": 5
+  },
+  {
+    "key": "debug_menu_127",
+    "original": "Ｔａｐ　Ｔｒｉａｌ　（Ｕｎｕｓｅｄ）",
+    "translation": "踢踏舞　（未使用）",
+    "stage": 5
+  },
+  {
+    "key": "debug_menu_128",
+    "original": "Ｄａｎｃｅ　Ｌｅｓｓｏｎ　１　（Ｕｎｕｓｅｄ）",
+    "translation": "舞蹈课　１　（未使用）",
+    "stage": 5
+  },
+  {
+    "key": "debug_menu_129",
+    "original": "Ｒ－ＩＱ　Ｄａｔａ　Ｃｈｅｃｋ",
+    "translation": "Ｒ－ＩＱ　数据查看",
+    "stage": 5
+  },
+  {
+    "key": "debug_menu_130",
+    "original": "Ａｓｓｅｔ　Ｔｅｓｔ",
+    "translation": "素材测试",
+    "stage": 5
+  },
+  {
+    "key": "debug_menu_131",
+    "original": "Ｆｌａｓｈ　Ｍｅｍｏｒｙ　Ｔｅｓｔ",
+    "translation": "闪存测试",
+    "stage": 5
+  },
+  {
+    "key": "debug_menu_132",
+    "original": "Ｒｅａｄ　Ｅｒｒｏｒ",
+    "translation": "读取错误",
+    "stage": 5
+  },
+  {
+    "key": "debug_menu_133",
+    "original": "Ｔｅｍｐｌａｔｅ　Ｓｃｅｎｅ",
+    "translation": "场景模板",
+    "stage": 5
+  },
+  {
+    "key": "debug_menu_134",
+    "original": "Ｓａｖｅ　Ｄａｔａ　Ｃｌｅａｒ",
+    "translation": "数据清除",
+    "stage": 5
+  },
+  {
+    "key": "debug_menu_135",
+    "original": "Ｒ－ＩＱ　Ｓａｖｅ　Ｅｄｉｔｏｒ",
+    "translation": "Ｒ－ＩＱ　存档编辑器",
+    "stage": 5
+  },
+  {
+    "key": "debug_menu_136",
+    "original": "Ｓｅｑｕｅｎｃｅ　Ｐｌａｙｅｒ",
+    "translation": "序列播放器",
+    "stage": 5
+  },
+  {
+    "key": "debug_menu_137",
+    "original": "Ｄｅｂｕｇ　Ｍｅｎｕ",
+    "translation": "调试菜单",
+    "stage": 5
+  }
+]

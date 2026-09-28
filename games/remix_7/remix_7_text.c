@@ -5,16 +5,16 @@
 /* Game Text - Remix 7 */
 
 
-const char D_0806a16c[] = "Try a little harder.";
+const char D_0806a16c[] = "还得继续努力。";
 
-const char D_0806a17c[] = "That was really great!";
+const char D_0806a17c[] = "简直太棒啦！！";
 
-const char D_0806a198[] = "Your decisions took too long.";
+const char D_0806a198[] = "判断还差点火候。";
 
-const char D_0806a1bc[] = "You thought on the spot well!";
+const char D_0806a1bc[] = "判断真漂亮！";
 
-const char D_0806a1e0[] = "Your technique needs work.";
+const char D_0806a1e0[] = "再好好磨练一下吧。";
 
-const char D_0806a1fc[] = "Your technique is solid!";
+const char D_0806a1fc[] = "技术不错啊！";
 
-const char D_0806a214[] = "Rhythm League notes:";
+const char D_0806a214[] = "来自神秘节奏组织的通告";

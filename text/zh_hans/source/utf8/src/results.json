@@ -1,0 +1,62 @@
+[
+  {
+    "key": "results_scoring",
+    "original": "さいてん　　",
+    "translation": "评分　　",
+    "stage": 5
+  },
+  {
+    "key": "results_also",
+    "original": "また、",
+    "translation": "还有，",
+    "stage": 5
+  },
+  {
+    "key": "results_more",
+    "original": "あと、",
+    "translation": "另外，",
+    "stage": 5
+  },
+  {
+    "key": "results_but",
+    "original": "…でも、",
+    "translation": "…不过，",
+    "stage": 5
+  },
+  {
+    "key": "results_moreover",
+    "original": "しかも、",
+    "translation": "而且，",
+    "stage": 5
+  },
+  {
+    "key": "results_further",
+    "original": "さらに、",
+    "translation": "再加上，",
+    "stage": 5
+  },
+  {
+    "key": "results_acceptable",
+    "original": "よしと　します。",
+    "translation": "就算可以吧。",
+    "stage": 5
+  },
+  {
+    "key": "results_for_now",
+    "original": "とりあえず．．．",
+    "translation": "暂且……",
+    "stage": 5
+  },
+  {
+    "key": "results_so_so",
+    "original": "まぁまぁ、　かな。",
+    "translation": "算是一般般吧。",
+    "stage": 5
+  },
+  {
+    "key": "results_well",
+    "original": "う〜ん．．．",
+    "translation": "唔〜嗯……",
+    "stage": 5
+  }
+]

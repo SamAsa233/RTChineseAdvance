@@ -30,10 +30,7 @@ define_gameplay_scene scene_drum_lesson_long_2, script_drum_lesson_long_2_entry
 @ Drum Lesson (Long 2) - Data
 
 text D_08062d98
-    .ascii "Listen to my pattern, then\n"
-    .ascii "repeat when you're ready.\n"
-    .ascii "I'll show it to you again\n"
-    .asciz "if you stop playing."
+    .asciz "仔细听好再照着做哦。\n想什么时候开始都可以。\n停下演奏的话，\n还能再听一遍示范哦！"
 endtext
 
 
@@ -64,10 +61,7 @@ return
 
 
 text D_08062ee0
-    .ascii "\n"
-    .ascii "Time to kick things up a notch!\n"
-    .ascii "Add a crash at the start and\n"
-    .asciz "a snare at the end! Let's go!\n"
+    .asciz "试着用镲和军鼓\n把它收漂亮吧！\n能打出来吗？"
 endtext
 
 
@@ -101,10 +95,7 @@ return
 
 
 text D_08063024
-    .ascii "\n"
-    .ascii "Let's change the bass a bit.\n"
-    .ascii "Listen carefully and keep\n"
-    .asciz "the rhythm going!"
+    .asciz "我会稍微改一下底鼓。\n能打出来吗？"
 endtext
 
 
@@ -137,10 +128,7 @@ return
 
 
 text D_08063184
-    .ascii "Last but not least, let's add\n"
-    .ascii "one more bass beat in here.\n"
-    .ascii "We're reaching the end, so\n"
-    .asciz "Let's drive it home now!\n"
+    .asciz "我再稍微改一点底鼓哦。\n加油！！"
 endtext
 
 

@@ -6,71 +6,49 @@
 
 
 const char D_0805dcb8[] =
-    "Bzz!\n"
-    "Game over for you!\n"
-    "Looks like we win!";
+    "呼呼——！！\n游戏结束啦！\n这次是我们赢啦！";
 
 const char D_0805dcf0[] = 
-    "Try taking us on again,\n"
-    "sometime!";
+    "再来挑战哦！";
 
 const char D_0805dd04[] =
-    "We lose!\n"
-    "You win!";
+    "服啦！\n这次是你赢了！！";
 
 const char D_0805dd28[] = 
-    "Come play with us again,\n"
-    "sometime!";
+    "还要再来玩哦！";
 
 const char D_0805dd40[] =
-    "\n"
-    "\n"
-    "Hello!";
+    "你好呀！";
 
 const char D_0805dd50[] =
-    "We're Ponta and Monkey.\n"
-    "Samurai Drummer brought\n"
-    "us here to play with you.";
+    "我们是猴子和胖太。\n是鼓武士先生介绍我们\n过来的。";
 
 const char D_0805dd90[] =
-    "We'll be giving out\n"
-    "the lessons this time!";
+    "这次就由我们\n来教你哦！";
 
 const char D_0805ddb8[] =
-    "Now, without further ado,\n"
-    "let's start the practice\n"
-    "with just "CHAR_A_BUTTON_UTF8" presses.";
+    "那就马上开始，\n先练 A 键。";
 
 const char D_0805dde0[] =
-    "Listen closely,\n"
-    "then repeat the pattern!";
+    "仔细听好，\n然后跟着做哦！";
 
 const char D_0805ddfc[] =
-    "This time, Ponta will join in.\n"
-    "Ponta's part uses Down on "CHAR_DPAD_UTF8".";
+    "胖太也会加入。\n胖太那边的声音\n要按十字键下。";
 
 const char D_0805de40[] =
-    "Now for a fast part.\n"
-    "Alternating "CHAR_A_BUTTON_UTF8" and Right on "CHAR_DPAD_UTF8"\n"
-    "will make it much easier.";
+    "接下来会快一点。\nA 键和十字键右\n交替按会轻松些哦。";
 
 const char D_0805de88[] = 
-    "This is the last bit of practice,\n"
-    "as a heads up.";
+    "下一个练习就是最后啦。";
 
 const char D_0805dea0[] =
-    "Is this too hard?\n"
-    "Good luck!";
+    "是不是有点难呀？\n加油哦！";
 
 const char D_0805dec0[] =
-    "Alright! Brace yourself,\n"
-    "it's time to start our\n"
-    "rhythm battle!";
+    "那么，就来和我们\n比一场\n节奏对决吧！";
 
 const char D_0805def8[] =
-    "You have three chances\n"
-    "to beat us for each pattern.";
+    "每种花样\n都有 3 次机会。";
 
 const char D_0805df28[] =
-    "How long can you keep up\n"
-    "with us?";
+    "那么，\n你能跟到哪一步呢？";

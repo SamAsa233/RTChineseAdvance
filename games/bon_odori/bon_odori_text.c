@@ -9,7 +9,7 @@ const char D_080676b4[] = "The first half was kinda rough...";
 
 const char D_080676d4[] = "The first half was really good!";
 
-const char D_080676ec[] = "The second half was sorta sloppy.";
+const char D_080676ec[] = "后半段气氛有点冷下来了啊。";
 
 const char D_08067710[] = "The second half was incredible!";
 
@@ -69,7 +69,7 @@ const char text_bon_odori_don_don_pan_pan_2[] = ".1:0" "Do-n do-n " ".2:0" "pa-n
 
 const char D_08067a84[] = ".6:1" "Welcome to the Bon Festival!";
 
-const char D_08067aa4[] = ".6:1" "When we say \"Pan,\" you clap!";
+const char D_08067aa4[] = ".6:1照着大家的样子拍手哦。";
 
 const char D_08067ad0[] = ".6:0" "Nice clapping!";
 

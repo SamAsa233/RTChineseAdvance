@@ -1,0 +1,128 @@
+[
+  {
+    "key": "cafe_line_1",
+    "original": "お、きたきた！\n待ってたヨ〜！！",
+    "translation": "哦，来啦来啦！\n等你好久啦〜！！",
+    "stage": 5
+  },
+  {
+    "key": "cafe_line_2",
+    "original": "ゲーム　すすんでますか？\nがんばって　くださいね〜。",
+    "translation": "游戏玩得怎么样啦？\n要加油哦〜。",
+    "stage": 5
+  },
+  {
+    "key": "cafe_line_3",
+    "original": "だいぶ　つかれたのでは　ないですか？\nときどき　休んだほうが　よいですよ。",
+    "translation": "你是不是已经很累啦？\n偶尔还是歇一歇比较好哦。",
+    "stage": 5
+  },
+  {
+    "key": "cafe_line_4",
+    "original": "かなり　はまってますねぇ。",
+    "translation": "你已经玩得很上头了呢。",
+    "stage": 5
+  },
+  {
+    "key": "cafe_line_5",
+    "original": "すこしは　休んでくださいね。",
+    "translation": "也稍微休息一下吧。",
+    "stage": 5
+  },
+  {
+    "key": "cafe_line_6",
+    "original": "そうそう、 で\nパーフェクト　だしたんだって！？",
+    "translation": "对了对了，听说你在 \n完美通关啦！？",
+    "stage": 5
+  },
+  {
+    "key": "cafe_line_7",
+    "original": "そういえば、 で\n行きづまってませんか？",
+    "translation": "话说回来，\n你是不是卡在 了呀？",
+    "stage": 5
+  },
+  {
+    "key": "cafe_line_8",
+    "original": "う〜む…　に\nてこずってるんですねぇ。",
+    "translation": "唔〜嗯…\n 让你费了不少劲呢。",
+    "stage": 5
+  },
+  {
+    "key": "cafe_line_9",
+    "original": "ウワサを　きいたんですけど、\n　ばかり\nしてるみたいですね。",
+    "translation": "听说你最近\n一直在玩 呢",
+    "stage": 5
+  },
+  {
+    "key": "cafe_line_10",
+    "original": "あ、　ちょっと　思い出しました！",
+    "translation": "啊，我突然想起来一点事！",
+    "stage": 5
+  },
+  {
+    "key": "cafe_line_11",
+    "original": "そうそう、\nもうすぐ で、\nパーフェクトキャンペーンを\nするそうですヨ。",
+    "translation": "对了对了，\n听说 很快\n就要举办完美挑战了哦。",
+    "stage": 5
+  },
+  {
+    "key": "cafe_line_12",
+    "original": "これからも　がんばってね。\nおうえん　してるからね〜！",
+    "translation": "今后也要继续加油哦。\n我会为你打气的〜！",
+    "stage": 5
+  },
+  {
+    "key": "cafe_line_13",
+    "original": "う〜ん、もし　よければ　なんだけどね、\n進めるようにしておく けど…？\n　　　　　　　　「おねがいします」\n　　　　　　　　「けっこうです」",
+    "translation": "嗯〜，要是你愿意，\n我可以帮你通过这一关，怎么样…？\n　　　　　　　　「那就拜托你了」\n　　　　　　　　「还是不必了」",
+    "stage": 5
+  },
+  {
+    "key": "cafe_line_14",
+    "original": "まかせとき！",
+    "translation": "包在我身上！",
+    "stage": 5
+  },
+  {
+    "key": "cafe_line_15",
+    "original": "そうですか。\nじぶんの　チカラで\nがんばるんですね。\nエライ！！",
+    "translation": "这样啊。\n你想靠自己的力量\n继续努力，对吧。\n真了不起！！",
+    "stage": 5
+  },
+  {
+    "key": "cafe_line_16",
+    "original": "次のゲーム　どんなのでしょうね。\nうまくできると　いいね〜。\nではまた。",
+    "translation": "下一个游戏会是什么样的呢？\n希望你能顺利完成呀〜。\n那，下回见。",
+    "stage": 5
+  },
+  {
+    "key": "cafe_line_17",
+    "original": "では　がんばってくださいね〜。",
+    "translation": "那就继续加油哦〜。",
+    "stage": 5
+  },
+  {
+    "key": "cafe_line_18",
+    "original": "パーフェクト　キャンペーン　に　そなえて　れんしゅうですか？\n　　　　　　　　「そうなんです」\n　　　　　　　　「ちがいますヨ」",
+    "translation": "你是在为完美挑战练习吗？\n　　　　　　　　「没错」\n　　　　　　　　「不是哦」",
+    "stage": 5
+  },
+  {
+    "key": "cafe_line_19",
+    "original": "がんばって　パーフェクト、\nとってくださいネ！",
+    "translation": "加把劲，\n争取完美通关吧！",
+    "stage": 5
+  },
+  {
+    "key": "cafe_line_20",
+    "original": "とうとう、\nパーフェクト　キャンペーンを\nコンプリートしたんだって！？",
+    "translation": "听说你终于\n把所有完美挑战\n都完成了！？",
+    "stage": 5
+  },
+  {
+    "key": "cafe_line_21",
+    "original": "めちゃすごーい!!",
+    "translation": "也太厉害啦!!",
+    "stage": 5
+  }
+]

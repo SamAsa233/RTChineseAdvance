@@ -30,10 +30,7 @@ define_gameplay_scene scene_drum_lesson_long_5, script_drum_lesson_long_5_entry
 @ Drum Lesson (Long 5) - Data
 
 text D_08063e10
-    .ascii "Listen to my pattern, then\n"
-    .ascii "repeat when you're ready.\n"
-    .ascii "I'll show it to you again\n"
-    .asciz "if you stop playing."
+    .asciz "仔细听好再照着做哦。\n想什么时候开始都可以。\n停下演奏的话，\n还能再听一遍示范哦！"
 endtext
 
 
@@ -96,10 +93,7 @@ return
 
 
 text D_080640d8
-    .ascii "Now then, let's add a\n"
-    .ascii "snare and a crash in here.\n"
-    .ascii "Don't get too comfortable,\n"
-    .asciz "and stay focused!\n"
+    .asciz "用军鼓和镲把它\n稳稳收住吧！\n加油！"
 endtext
 
 
@@ -164,10 +158,7 @@ return
 
 
 text D_0806439c
-    .ascii "Let's spice it up a little!\n"
-    .ascii "Switch this snare with a tom.\n"
-    .ascii "Just go along with the beat\n"
-    .asciz "and you'll be good to go!\n"
+    .asciz "我会把其中一处军鼓\n改成嗵鼓哦。\n听得出来吗？"
 endtext
 
 
@@ -221,10 +212,7 @@ return
 
 
 text D_080645fc
-    .ascii "To end it off, one last snare!\n"
-    .ascii "Keep your focus on the\n"
-    .ascii "order you hit the drums.\n"
-    .asciz "You've got this!\n"
+    .asciz "最后再多加一个军鼓！\n顺序要想清楚哦。\n加油〜！"
 endtext
 
 

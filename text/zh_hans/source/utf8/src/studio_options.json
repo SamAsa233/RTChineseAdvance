@@ -1,0 +1,68 @@
+[
+  {
+    "key": "studio_options_listening",
+    "original": "リスニング",
+    "translation": "试听",
+    "stage": 5
+  },
+  {
+    "key": "studio_options_drumming",
+    "original": "ドラミング",
+    "translation": "击鼓",
+    "stage": 5
+  },
+  {
+    "key": "studio_options_reorder",
+    "original": "ならびかえ",
+    "translation": "重新排序",
+    "stage": 5
+  },
+  {
+    "key": "studio_options_check",
+    "original": "チェック",
+    "translation": "勾选",
+    "stage": 5
+  },
+  {
+    "key": "studio_options_listening_2",
+    "original": "リスニング",
+    "translation": "试听",
+    "stage": 5
+  },
+  {
+    "key": "studio_options_delete",
+    "original": "データ消去",
+    "translation": "删除数据",
+    "stage": 5
+  },
+  {
+    "key": "studio_options_reorder_2",
+    "original": "ならびかえ",
+    "translation": "重新排序",
+    "stage": 5
+  },
+  {
+    "key": "studio_options_check_2",
+    "original": "チェック",
+    "translation": "勾选",
+    "stage": 5
+  },
+  {
+    "key": "studio_options_no_checks",
+    "original": "チェックのついている曲が、\nひとつもありません。",
+    "translation": "还没有勾选任何曲子。",
+    "stage": 5
+  },
+  {
+    "key": "studio_options_listening_confirm",
+    "original": "リスニングではチェックのある曲だけ再生します。　よろしいですか〜？",
+    "translation": "试听模式只会播放已勾选的曲子。要继续吗？",
+    "stage": 5
+  },
+  {
+    "key": "studio_options_delete_confirm",
+    "original": "この演奏データを削除するヨ！\nホントにOK？",
+    "translation": "要删除这份演奏数据哦！\n真的要删吗？",
+    "stage": 5
+  }
+]

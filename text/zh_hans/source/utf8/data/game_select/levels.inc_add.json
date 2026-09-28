@@ -1,0 +1,182 @@
+[
+  {
+    "key": "level_karate_extra",
+    "original": "カラテ家",
+    "translation": "空手道家",
+    "stage": 1
+  },
+  {
+    "key": "level_karate_extra_desc",
+    "original": "とんでくるモノを Aボタンでパンチ!\n気合とノリで ぶつ飛ばそう！",
+    "translation": "向飞来的东西 按A键出拳！\n用干劲和气势把它们打飞吧！",
+    "stage": 1
+  },
+  {
+    "key": "level_karate_extra_result_1",
+    "original": "大合当日はイマイチでした。",
+    "translation": "比赛当天表现不太行。",
+    "stage": 1
+  },
+  {
+    "key": "level_karate_extra_result_2",
+    "original": "大会当日、わリといいカソヅでした!",
+    "translation": "比赛当天，感觉还挺不错的！",
+    "stage": 1
+  },
+  {
+    "key": "level_karate_extra_result_3",
+    "original": "あの大会で優勝しちゃった!!",
+    "translation": "比赛当天夺冠了！！",
+    "stage": 1
+  },
+  {
+    "key": "level_rhythm_datsu_extra",
+    "original": "リズム脱毛",
+    "translation": "节奏脱毛",
+    "stage": 1
+  },
+  {
+    "key": "level_rhythm_datsu_extra_desc",
+    "original": "どんどん生えてくる うっとうしい「毛」!\n速いテンポにまどわされずに\nぬいちゃえ、ぬいちゃえ!",
+    "translation": "那讨厌的“毛” 总是不停地长出来！\n不要被快速的节奏迷惑了\n拔掉它，拔掉它！",
+    "stage": 1
+  },
+  {
+    "key": "level_rhythm_datsu_extra_result_1",
+    "original": "毛が速すぎるんだよなぁ・・・",
+    "translation": "毛长得太快了啊……",
+    "stage": 1
+  },
+  {
+    "key": "level_rhythm_datsu_extra_result_2",
+    "original": "なかなか手ごわい毛だったなぁ",
+    "translation": "还真是挺难对付的毛啊。",
+    "stage": 1
+  },
+  {
+    "key": "level_rhythm_datsu_extra_result_3",
+    "original": "うーん、スッキリ！花でも見るか!",
+    "translation": "嗯——清爽了！去看看花吧！",
+    "stage": 1
+  },
+  {
+    "key": "level_marcha_extra",
+    "original": "マーチャ",
+    "translation": "行军",
+    "stage": 1
+  },
+  {
+    "key": "level_marcha_extra_desc",
+    "original": "行進をするのだ。\n今回は非常にすばやい判断が必要だ。\nがんばリたまえ。",
+    "translation": "现在开始行进。\n这次需要非常迅速地做出判断。\n好好努力吧。",
+    "stage": 1
+  },
+  {
+    "key": "level_marcha_extra_result_1",
+    "original": "たいきゃく！たいきゃくでーす!!",
+    "translation": "撤退！撤退啦！！",
+    "stage": 1
+  },
+  {
+    "key": "level_marcha_extra_result_2",
+    "original": "あっ、まいごちゃん 発見で一す!",
+    "translation": "啊，发现走失的小朋友了！",
+    "stage": 1
+  },
+  {
+    "key": "level_marcha_extra_result_3",
+    "original": "まいごちゃんを助けたヨ！やった!!",
+    "translation": "救到走失的小朋友啦！太好了！！",
+    "stage": 1
+  },
+  {
+    "key": "level_air_batter_extra",
+    "original": "エアーバッター",
+    "translation": "空中击球手",
+    "stage": 1
+  },
+  {
+    "key": "level_air_batter_extra_desc",
+    "original": "ズームをきにするな!\n心でボールを打て!\n視覚に頼らず、かつ飛ばせ〜!",
+    "translation": "别在意镜头缩放！\n用心去击球！\n不要依赖视觉，把球打飞吧～！",
+    "stage": 1
+  },
+  {
+    "key": "level_air_batter_extra_result_1",
+    "original": "うわつ、ダメだ〜!",
+    "translation": "哇，不行啊～！",
+    "stage": 1
+  },
+  {
+    "key": "level_air_batter_extra_result_2",
+    "original": "えい。",
+    "translation": "耶。",
+    "stage": 1
+  },
+  {
+    "key": "level_air_batter_extra_result_3",
+    "original": "やりましたー!!",
+    "translation": "成功啦——！！",
+    "stage": 1
+  },
+  {
+    "key": "level_pachi_extra",
+    "original": "パチパチ三人衆",
+    "translation": "啪叽啪叽三人组",
+    "stage": 1
+  },
+  {
+    "key": "level_pachi_extra_desc",
+    "original": "順番に拍手をするヨ!\nあなたは３番目。\n前の２人をよく見て叩いてネ!",
+    "translation": "我们要依次拍手哦！\n你排在第３个。\n仔细看好前面两人再拍哦！",
+    "stage": 1
+  },
+  {
+    "key": "level_pachi_extra_result_1",
+    "original": "お〜っ!",
+    "translation": "哦～！",
+    "stage": 1
+  },
+  {
+    "key": "level_pachi_extra_result_2",
+    "original": "楽しいスペースクルージング。",
+    "translation": "愉快的太空巡航。",
+    "stage": 1
+  },
+  {
+    "key": "level_pachi_extra_result_3",
+    "original": "未知の星に１番のリ！偉業!!",
+    "translation": "第一个到达未知星球！伟业！！",
+    "stage": 1
+  },
+  {
+    "key": "level_remix_extra",
+    "original": "エクストラ　リミックス",
+    "translation": "Extra Remix",
+    "stage": 1
+  },
+  {
+    "key": "level_remix_extra_desc",
+    "original": "エキストラステージのリミックスだヨ。\nこのスピードについてこれるかな?\n最後まで思うぞんぶん楽しんでネ!",
+    "translation": "这是额外关卡的Remix哦。\n能跟上这个速度吗？\n到最后都要尽情享受哦！",
+    "stage": 1
+  },
+  {
+    "key": "level_remix_extra_result_1",
+    "original": "まだまだ、これからだネ。",
+    "translation": "还有很长的路要走呢。",
+    "stage": 1
+  },
+  {
+    "key": "level_remix_extra_result_2",
+    "original": "ふつうでした〜。ピヨピヨ。",
+    "translation": "很普通呢～。啾啾。",
+    "stage": 1
+  },
+  {
+    "key": "level_remix_extra_result_3",
+    "original": "りっぱに成長したネ！リリしい!!",
+    "translation": "成长得很出色呢！好厉害！！",
+    "stage": 1
+  }
+]

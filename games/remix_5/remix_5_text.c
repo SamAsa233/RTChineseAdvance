@@ -5,19 +5,19 @@
 /* Game Text - Remix 5 */
 
 
-const char D_0806a230[] = "Try a little harder.";
+const char D_0806a230[] = "还得继续努力。";
 
-const char D_0806a240[] = "That was really great!";
+const char D_0806a240[] = "简直太棒啦！！";
 
-const char D_0806a25c[] = "Your decisions took too long.";
+const char D_0806a25c[] = "判断还差点火候。";
 
-const char D_0806a280[] = "You thought on the spot well!";
+const char D_0806a280[] = "判断真漂亮！";
 
-const char D_0806a2a4[] = "Your technique needs work.";
+const char D_0806a2a4[] = "再好好磨练一下吧。";
 
-const char D_0806a2c0[] = "Your technique is solid!";
+const char D_0806a2c0[] = "技术不错啊！";
 
-const char D_0806a2d8[] = "Rhythm League notes:";
+const char D_0806a2d8[] = "来自神秘节奏组织的通告";
 
 const char D_0806a2f4[] =
     "\x01\x52" "\x05\x31" "\x01\x35" "♪ WISH - Can't Wait for You ";

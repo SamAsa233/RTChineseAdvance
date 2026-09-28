@@ -6,60 +6,42 @@
 
 
 const char D_0805df4c[] =
-    "Welcome to the\n"
-    "funky world of\n"
-    #ifdef PARADISE
-    "Rhythm Paradise Advance!";
+    "Welcome to\nthis funky game,\nthe JIEZOU-\nTIANGUO world!!";
     #else
     "Rhythm Heaven Advance!";
     #endif
 
 const char D_0805df88[] =
-    "I hope you enjoy your time\n"
-    "with this game!";
+    "欢迎来到节奏天国！\n请尽情享受\n这段 funky 的时光吧！";
 
 const char D_0805dfcc[] =
-    "\n"
-    "Well, see you later!";
+    "那么，稍后\n再见吧！\nsee you!";
 
 
 /* Game Text - Drumming Intro (Part 1) */
 
 
 const char D_0805e000[] =
-    "Everyone has a\n"
-    "sense of rhythm in\n"
-    "some form or fashion.";
+    "节奏感\n是每个人都\n潜在拥有的\n一种感觉。";
 
 const char D_0805e03c[] =
-    "And if you pay attention to it,\n"
-    "that sense of rhythm can\n"
-    "be sharpened like any skill.";
+    "只要有意识地去体会，\n节奏感\n就会越来越好。";
 
 const char D_0805e070[] =
-    "Why don't we take a\n"
-    "quick look at your\n"
-    "sense of rhythm?";
+    "那么首先，\n先来简单看看\n你的节奏感怎么样吧。";
 
 
 /* Game Text - Drumming Intro (Part 2) */
 
 
 const char D_0805e0a8[] =
-    "How did you do? Did you get\n"
-    "a score you're happy with?\n"
-    "";
+    "怎么样？\n有拿到让自己满意的\n结果吗？";
 
 const char D_0805e0d8[] =
-    "Well, your sense of\n"
-    "rhythm can only grow\n"
-    "with some practice, so...";
+    "潜在的节奏感\n是可以通过训练\n成长起来的。";
 
 const char D_0805e10c[] =
-    "...how about trying out\n"
-    "some rhythm games? You\n"
-    "might find it getting\n"
-    "sharper and sharper!";
+    "接下来登场的\n都是些很有节奏感的游戏。\n请一边开心地玩，\n一边磨练你的节奏感吧。";
 
 const char D_0805e15c[] =
-    "With that, I'll see you around!";
+    "那么，待会儿\n再见吧。";

@@ -5,48 +5,43 @@
 /* Game Text - Remix 6 */
 
 
-const char D_0806a7a8[] = "Try a little harder.";
+const char D_0806a7a8[] = "还差一点。";
 
-const char D_0806a7b8[] = "That was really great!";
+const char D_0806a7b8[] = "简直太棒啦！！";
 
-const char D_0806a7d4[] = "Your decisions took too long.";
+const char D_0806a7d4[] = "判断还差点火候。";
 
-const char D_0806a7f8[] = "You thought on the spot well!";
+const char D_0806a7f8[] = "判断真漂亮！";
 
-const char D_0806a81c[] = "Your technique needs work.";
+const char D_0806a81c[] = "再好好磨练一下吧。";
 
-const char D_0806a838[] = "Your technique is solid!";
+const char D_0806a838[] = "技术不错啊！";
 
-const char D_0806a850[] = "Rhythm League notes:";
+const char D_0806a850[] = "来自神秘节奏组织的通告";
 
-const char D_0806a86c[] = "Let's review your learnings!";
+const char D_0806a86c[] = "那么，就从这里开始复习吧！";
 
-const char D_0806a898[] = "It's easy, to say in advance!";
+const char D_0806a898[] = "先说在前头，这关其实挺简单的！！";
 
-const char D_0806a8c8[] = "Let fun be had!";
+const char D_0806a8c8[] = "好好享受哦！";
 
 const char D_0806a8d8[] =
-    "\n"
-    "Here we go!";
+    "要上啦！";
 
 const char D_0806a8e4[] =
-    "\n"
-    "Go ahead.";
+    "请开始。";
 
 const char D_0806a8f0[] =
-    "\n"
-    "Aaaand stop!";
+    "到此为止！！";
 
 const char D_0806a900[] =
-    "\n"
-    "Aww, too bad!";
+    "可惜！！";
 
 const char D_0806a910[] =
-    "\n"
-    "Impressive!";
+    "漂亮！！";
 
 const char D_0806a920[] = ".1:0" "Dondo " ".2:0" "panpa";
 
 const char D_0806a944[] = ".1:0" "Do-n " ".2:0" "pa-n pan";
 
-const char D_0806a970[] = "The end!";
+const char D_0806a970[] = "结束！";

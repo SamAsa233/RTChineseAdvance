@@ -85,7 +85,7 @@ struct Animation *game_select_stage_title_anim[] = {
 
 // [D_089cf9e8] Rank Text (by Completion Level)
 const char *game_select_rank_text[] = {
-    /* HIDDEN    */ "",
+    /* HIDDEN    */ "等级 平凡 等级 高水准",
     /* INVALID   */ "",
     /* CLOSED    */ "",
     /* UNCLEARED */ "",

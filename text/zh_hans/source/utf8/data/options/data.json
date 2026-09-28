@@ -1,0 +1,20 @@
+[
+  {
+    "key": "options_data_clear_confirm_text",
+    "original": "ホントに消すの？\n　　　　　　　はい\n　　　　　　　いいえ",
+    "translation": "真的要删掉吗？\n　　　　　　　确认\n　　　　　　　取消",
+    "stage": 5
+  },
+  {
+    "key": "options_desc_text[0]",
+    "original": "サウンドモード\nステレオ　　ヘッドホンならこっち！オススメ！\nモノラル　　本体のスピーカーならこっち。",
+    "translation": "声音模式\n立体声　　戴耳机就选这个！推荐！\n单声道　　用主机喇叭就选这个。",
+    "stage": 5
+  },
+  {
+    "key": "options_desc_text[1]",
+    "original": "データのクリア\nいままでの記録を全部けして、はじめから\nやりなおします。よく考えてネ！",
+    "translation": "清除数据\n会把至今为止的记录全部删掉，然后从头开始。\n要想清楚哦！",
+    "stage": 5
+  }
+]

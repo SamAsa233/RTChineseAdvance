@@ -219,6 +219,18 @@ char* badBoyMessages[7] = {
     "tangotronic 300"
 };
 
+// Return TRUE only for alphabetic scripts that use space-separated words.
+static s32 text_codepoint_is_word_char(s32 codepoint) {
+    if ((codepoint >= 'A' && codepoint <= 'Z') ||
+        (codepoint >= 'a' && codepoint <= 'z') ||
+        (codepoint >= '0' && codepoint <= '9') ||
+        (codepoint >= 0x00c0 && codepoint <= 0x02ff) ||
+        (codepoint >= 0x0370 && codepoint <= 0x052f)) {
+        return TRUE;
+    }
+    return FALSE;
+}
+
 // Print Formatted Line to VRAM (return width in pixels)
 s32 text_printer_print_formatted_line(s32 tileBaseX, s32 tileBaseY, s32 font, const char **charStream, s32 maxWidth, s32 lineColors, s32 indentWidth, s32 shadowColors) {
     struct FormattedGlyph *fGlyphData;
@@ -336,28 +348,51 @@ s32 text_printer_print_formatted_line(s32 tileBaseX, s32 tileBaseY, s32 font, co
     }
 
     if (maxWidthExceeded && (totalGlyphs != 0)) {
-        s32 lastSpace = -1;
-        for (i = totalGlyphs - 1; i >= 0; i--) {
-            if (*sGlyphBuffer[i].charSrc == ' ') {
-                lastSpace = i;
-                break;
+        const char *peek;
+        s32 nextCodepoint;
+        s32 keepGlyphs;
+        s32 lastSpace;
+
+        peek = stream;
+        nextCodepoint = (*peek >= ' ') ? text_printer_get_codepoint(&peek) : -1;
+        keepGlyphs = totalGlyphs;
+        lastSpace = -1;
+
+        if (text_codepoint_is_word_char(sGlyphBuffer[totalGlyphs - 1].codepoint) &&
+            text_codepoint_is_word_char(nextCodepoint)) {
+            for (i = totalGlyphs; i > 0; i--) {
+                if (sGlyphBuffer[i - 1].codepoint == ' ') {
+                    lastSpace = i - 1;
+                    break;
+                }
+            }
+            if (lastSpace > 0) {
+                keepGlyphs = lastSpace;
+                stream = sGlyphBuffer[lastSpace + 1].formatSrc;
+                while (*stream == ' ') {
+                    stream++;
+                }
+                peek = stream;
+                nextCodepoint = (*peek >= ' ') ? text_printer_get_codepoint(&peek) : -1;
             }
         }
 
-        if (lastSpace > 0) {
-            stream = sGlyphBuffer[lastSpace + 1].formatSrc;
-            totalGlyphs = lastSpace;
-
-            while (*stream == ' ') {
-                stream++;
+        if (nextCodepoint >= 0) {
+            while (keepGlyphs > 1 && utf8_codepoint_is_in_list(nextCodepoint, gTextLineStartForbidden)) {
+                keepGlyphs--;
+                nextCodepoint = sGlyphBuffer[keepGlyphs].codepoint;
             }
-
-            if (totalGlyphs > 0) {
-                struct FormattedGlyph *lastGlyph = &sGlyphBuffer[totalGlyphs - 1];
-                totalWidth = lastGlyph->xOffset + lastGlyph->width;
-            } else {
-                totalWidth = 0;
+            while (keepGlyphs > 1 && utf8_codepoint_is_in_list(sGlyphBuffer[keepGlyphs - 1].codepoint, gTextLineEndForbidden)) {
+                keepGlyphs--;
             }
+        }
+
+        if (keepGlyphs < totalGlyphs) {
+            if (lastSpace <= 0 || keepGlyphs < lastSpace) {
+                stream = sGlyphBuffer[keepGlyphs].formatSrc;
+            }
+            totalGlyphs = keepGlyphs;
+            totalWidth = sGlyphBuffer[totalGlyphs - 1].xOffset + sGlyphBuffer[totalGlyphs - 1].width;
         }
     }
 

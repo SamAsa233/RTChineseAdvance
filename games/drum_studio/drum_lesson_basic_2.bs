@@ -30,10 +30,7 @@ define_gameplay_scene scene_drum_lesson_basic_2, script_drum_lesson_basic_2_entr
 @ Drum Lesson (Basic 2) - Data
 
 text D_08061998
-    .ascii "Listen to my pattern, then\n"
-    .ascii "repeat when you're ready.\n"
-    .ascii "I'll show it to you again\n"
-    .asciz "if you stop playing."
+    .asciz "仔细听好再照着做哦。\n想什么时候开始都可以。\n停下演奏的话，\n还能再听一遍示范哦！"
 endtext
 
 
@@ -54,10 +51,7 @@ return
 
 
 text D_08061a68
-    .ascii "\n"
-    .ascii "I swapped a bass beat\n"
-    .ascii "out for a snare beat.\n"
-    .asciz "Hear the difference?"
+    .asciz "有一处会换音哦！\n听得出来吗？"
 endtext
 
 
@@ -72,9 +66,7 @@ return
 
 
 text D_08061ae4
-    .ascii "\n"
-    .ascii "Now, another beat swap!\n"
-    .asciz "Think you can do it?\n"
+    .asciz "还会再换一处音哦！\n听得出来吗？"
 endtext
 
 
@@ -89,10 +81,7 @@ return
 
 
 text D_08061b64
-    .ascii "\n"
-    .ascii "Let's throw in one\n"
-    .ascii "more bass beat!\n"
-    .asciz "You got this!"
+    .asciz "这次会多一个音哦！\n听得出来吗？"
 endtext
 
 
@@ -109,10 +98,7 @@ return
 
 
 text D_08061c00
-    .ascii "You hear that new bass beat?\n"
-    .ascii "Alternating between both\n"
-    .ascii " and Down on  should\n"
-    .asciz "make it easy!"
+    .asciz "还会再多一个音哦！\n听得出来吗？"
 endtext
 
 
@@ -131,10 +117,7 @@ return
 
 
 text D_08061cb0
-    .ascii "Here's one more new beat!\n"
-    .ascii "This is the last set in this\n"
-    .ascii "lesson, so show me what\n"
-    .asciz "you've learned!"
+    .asciz "又会再多一个音哦！\n听得出来吗？"
 endtext
 
 
@@ -147,33 +130,22 @@ return
 
 
 text D_08061d18
-    .ascii "\n"
-    .ascii "In this lesson,\n"
-    .ascii "we'll be using two drums:\n"
-    .asciz "the bass and the snare.\n"
+    .asciz "这次要用底鼓和军鼓\n这两种鼓来上课。"
 endtext
 
 
 text D_08061d70
-    .ascii "\n"
-    .ascii "Hit the bass drum with \n"
-    .asciz "or by pressing Down on !\n"
+    .asciz "按 B 键或十字键下，\n都可以敲底鼓哦！"
 endtext
 
 
 text D_08061dbc
-    .ascii "If you've played the last\n"
-    .ascii "lesson, you know you can\n"
-    .ascii "hit either  or Left on \n"
-    .asciz "to play the snare."
+    .asciz "你应该已经知道了，\n军鼓是用 A 键和\n十字键左来敲的。"
 endtext
 
 
 text D_08061e04
-    .ascii "\n"
-    .ascii "Keep all of that in mind\n"
-    .ascii "as you play this set!\n"
-    .ascii "Let's begin, taking it slow.\n"
+    .asciz "好，那就差不多开始吧〜"
 endtext
 
 
