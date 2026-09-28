@@ -526,6 +526,58 @@ def notice_translation_installed(text, archive_name, key, translation):
                 and kind.group(1)[1:-1] == targets['game_select_gift_middle'])
 
 
+def conditional_level_translation_installed(text, key, translation):
+    """核对关卡表的地区双分支：两侧都匹配阶段 5 译文才移除 TODO。"""
+    specs = {
+        'level_bari_1_result_2': ('SNAPPY_TRIO', 'OK', 1),
+        'level_bari_1_result_3': ('SNAPPY_TRIO', 'SUPERB', 2),
+        'level_baikin_1_desc': ('SICK_BEATS', 'Level Desc.', 2),
+        'level_tap_dance_1_result_1': ('TAP_TRIAL', 'TRY_AGAIN', 2),
+        'level_hanabi_1_desc': ('FIREWORKS', 'Level Desc.', 2),
+        'level_toss_boys_1_desc': ('TOSS_BOYS', 'Level Desc.', 2),
+        'level_toss_boys_1_result_1': ('TOSS_BOYS', 'TRY_AGAIN', 2),
+        'level_toss_boys_1_result_2': ('TOSS_BOYS', 'OK', 1),
+        'level_toss_boys_1_result_3': ('TOSS_BOYS', 'SUPERB', 2),
+        'level_toss_boys_2_desc': ('TOSS_BOYS_2', 'Level Desc.', 2),
+        'level_toss_boys_2_result_2': ('TOSS_BOYS_2', 'OK', 1),
+        'level_toss_boys_2_result_3': ('TOSS_BOYS_2', 'SUPERB', 2),
+        'level_quiz_1_result_1': ('QUIZ_SHOW', 'TRY_AGAIN', 1),
+        'level_quiz_1_result_2': ('QUIZ_SHOW', 'OK', 2),
+        'level_cafe_counsel': ('CAFE', 'Level Name', 2),
+    }
+    if key not in specs:
+        return False
+    entry, field, count = specs[key]
+    marker = re.search(r'/\* ' + re.escape(entry) + r' \*/ \{', text)
+    if not marker:
+        return False
+    following = re.search(r'(?m)^    /\* [A-Z][A-Z0-9_]+ \*/ \{', text[marker.end():])
+    if not following:
+        return False
+    section = text[marker.end():marker.end() + following.start()]
+    expected = json.dumps(translation, ensure_ascii=False)[1:-1]
+
+    if field == 'Level Desc.':
+        # 描述的共同前后句与地区专用末句被 #ifdef 切开，需拼出两版全文。
+        region = re.search(r'/\* Level Desc\.\s*\*/(.*?)/\* Level Icon\s*\*/', section, re.S)
+        if not region:
+            return False
+        branches = re.search(r'(.*?)#ifdef\s+PARADISE(.*?)#else(.*?)#endif(.*)',
+                             region.group(1), re.S)
+        if not branches:
+            return False
+        values = [''.join(literal[1:-1] for literal in LITERAL.findall(
+                  branches.group(1) + branches.group(side) + branches.group(4)))
+                  for side in (2, 3)]
+        # \0023 是细菌博士说明的字形/显示格式码，必须保留在最前面。
+        expected = (r'\0023' if key == 'level_baikin_1_desc' else '') + expected
+    else:
+        # 评价语和关卡名直接出现在带标签的槽位；双分支须找到两个同名标签。
+        pattern = r'/\*\s*' + re.escape(field) + r'\s*\*/\s*("(?:\\.|[^"\\])*")'
+        values = [match[1:-1] for match in re.findall(pattern, section)]
+    return len(values) == count and all(value == expected for value in values)
+
+
 def extract():
     output, unresolved = [], []
     previous = {}
@@ -557,6 +609,13 @@ def extract():
             if (row['stage'] == 5 and notice_translation_installed(
                     path.read_text(encoding='utf-8'), archive_name,
                     key, row['translation'])):
+                continue
+        if (archive_name == 'data/game_select/levels.inc.json'
+                and path is not None and len(members) == 1):
+            key, row = members[0]
+            # 为什么逐地区检查：自动定位器遇到 #ifdef 时不会猜哪一侧才正确。
+            if (row['stage'] == 5 and conditional_level_translation_installed(
+                    path.read_text(encoding='utf-8'), key, row['translation'])):
                 continue
         if (archive_name in ('src/cafe.json', 'src/cafe_add.json')
                 and path is not None and len(members) == 1):
