@@ -329,6 +329,13 @@ def extract():
             unresolved = [item for item in unresolved
                           if not item.startswith(f'{json_path.relative_to(ARCHIVE)}:{base}:')]
             continue
+        # The opening drum demo title is one shared string with a regional
+        # name branch in the source; the reviewed Chinese text is manual.
+        if (json_path.relative_to(ARCHIVE).as_posix() == 'games/drum_intro/drum_samurai_cutscene_text.json'
+                and base == 'D_0805df4c'):
+            unresolved = [item for item in unresolved
+                          if not item.startswith(f'{json_path.relative_to(ARCHIVE)}:{base}:')]
+            continue
         if base == 'perfect_gift_directive_text' and len(members) == 1:
             # The source JSON contains three reward-type messages in one row,
             # while the English port stores them in three array entries.

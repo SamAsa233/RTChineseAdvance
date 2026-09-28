@@ -266,7 +266,6 @@
 - TODO 未校对 data\medal_corner\toys_menu.inc.json:toy_uma_machine: key not found
 - TODO 未校对 data\medal_corner\toys_menu.inc.json:toy_kokuhaku_machine: key not found
 - TODO 未校对 data\medal_corner\toys_menu.inc.json:toy_rap_machine: key not found
-- TODO 未校对 games\drum_intro\drum_samurai_cutscene_text.json:D_0805df4c: key not found
 - TODO 未校对 games\drum_live\drum_live_menu_engine.json:drum_live_menu_poster_desc[4]: 3 source entries vs 13 translations
 - TODO 未校对 games\drum_live\drum_live_menu_engine.json:drum_live_menu_poster_desc[10]: 3 source entries vs 13 translations
 - TODO 未校对 games\drum_live\drum_live_menu_engine.json:drum_live_menu_poster_desc[15]: 3 source entries vs 13 translations

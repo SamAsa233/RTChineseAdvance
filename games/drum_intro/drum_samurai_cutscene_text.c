@@ -5,17 +5,13 @@
 #include "text.h"
 
 
+/* 汉化：演示开场两个地区分支共用同一条已校对中文欢迎词。 */
 /* Game Text - Drumming Demo */
 
 
 const char D_0805df4c[] =
-    "Welcome to the\n"
-    "funky world of\n"
-    #ifdef PARADISE
-    "Rhythm Paradise Advance!";
-    #else
-    "Rhythm Heaven Advance!";
-    #endif
+    "欢迎来到\n"
+    "这段 funky 的节奏世界！";
 
 const char D_0805df88[] =
     "欢迎来到节奏天国！\n"
