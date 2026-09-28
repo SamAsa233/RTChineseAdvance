@@ -9,24 +9,25 @@ struct ReadingMaterial reading_material_table[TOTAL_READING_MATERIALS] = {
         /* TITLE ---------------------------------------------------------- */
             "欢迎来到节奏天国！",
         /* BODY ----------------------------------------------------------- */
-            "Greetings!\n"
-            "\n"
-            "Thank you for buying "
+            // 阶段 5 已校对：两地区的英文游戏名不同，中文都用《节奏天国》。
+            // 保留原 #ifdef；相邻引号只分隔源码，\n 才是译文包中的画面换行。
+            // TODO 未校对：资料室阅读页的中文自动折行和分页仍需实机核验。
             #ifdef PARADISE
-            "Rhythm Paradise Advance.\n"
+            "问候语\n"
+            "非常感谢你购买《节奏天国》。啊，还是说，是跟朋友借来的？"
+            "难、难不成，是、是二手的吗！？\n"
+            "嘛，先不提那个。能让你对这款游戏产生兴趣，我们深感荣幸。感谢与你相遇！\n"
+            "如果你能长长久久地玩得开心，那就太让人高兴啦！！\n"
+            "谢谢你。"
             #else
-            "Rhythm Heaven Advance.\n"
+            "问候语\n"
+            "非常感谢你购买《节奏天国》。啊，还是说，是跟朋友借来的？"
+            "难、难不成，是、是二手的吗！？\n"
+            "嘛，先不提那个。能让你对这款游戏产生兴趣，我们深感荣幸。感谢与你相遇！\n"
+            "如果你能长长久久地玩得开心，那就太让人高兴啦！！\n"
+            "谢谢你。"
             #endif
-            "Oh... you've borrowed it from a friend?\n"
-            "Or is it... s-secondhand?\n"
-            "Well, that's beside the point.\n"
-            "\n"
-            "The fact is, we're truly honored that you've put your\n"
-            "interest into this game.\n"
-            "It's been nice meeting you, and we hope this game\n"
-            "gives you joy and fulfillment for years to come!\n"
-            "\n"
-            "Thank you very much!",
+            ,
         /* STYLE ---------------------------------------------------------- */
             /* GFX */ reading_style_mail_gfx_table,
             /* BGM */ &reading_style_mail_bgm

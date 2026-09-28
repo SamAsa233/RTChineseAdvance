@@ -228,7 +228,6 @@
 ## 尚未安全定位
 
 - TODO 未校对 data\cafe\dialogue.json:cafe_dialogue_rhythm_sense[7]: conditional branches need review
-- TODO 未校对 data\data_room\reading_material.inc.json:reading_greeting: key not found
 - TODO 未校对 data\data_room\reading_material.inc.json:reading_night_walk_story: key not found
 - TODO 未校对 data\data_room\reading_material.inc.json:reading_horse_machine_story: key not found
 - TODO 未校对 data\data_room\reading_material.inc.json:reading_radio_story: key not found
@@ -256,7 +255,6 @@
 - TODO 未校对 data\game_select\levels.inc.json:level_quiz_1_result_1: key not found
 - TODO 未校对 data\game_select\levels.inc.json:level_quiz_1_result_2: key not found
 - TODO 未校对 data\game_select\levels.inc.json:level_cafe_counsel: key not found
-- TODO 未校对 data\medal_corner\endless_menu.inc.json:endless_ura_otoko: key not found
 - TODO 未校对 games\drum_live\drum_live_menu_engine.json:drum_live_menu_poster_desc[42]: TODO 未校对（阶段 2）
 - TODO 未校对 src\arrival.json:arrival_title: key not found
 - TODO 未校对 src\arrival.json:arrival_message_template: key not found
@@ -295,8 +293,6 @@
 - TODO 未校对 src\data_check.json:data_check_first_great_pass: key not found
 - TODO 未校对 src\data_check.json:data_check_not_yet_2: key not found
 - TODO 未校对 src\data_check.json:data_check_count_2: key not found
-- TODO 未校对 src\debug_menu.json:debug_menu_title: key not found
-- TODO 未校对 src\debug_menu_table.json:debug_menu_52: key not found
 - TODO 未校对 src\game_select.json:game_select_new_game: key not found
 - TODO 未校对 src\game_select.json:game_select_perfect_prefix: key not found
 - TODO 未校对 src\game_select.json:game_select_perfect_suffix: key not found

@@ -79,7 +79,8 @@ void debug_menu_scene_start(void *sVar, s32 dArg) {
     import_all_scene_objects(gSpriteHandler, gDebugMenu->objFont, debug_menu_scene_objects, D_0300558c);
     debug_menu_scene_init_gfx1();
 
-    textAnim = bmp_font_obj_print_l(gDebugMenu->objFont, "Debug Menu", 1, 6); // Sequence Test
+    // 阶段 5 已校对：只换调试页标题，绘制位置与字体参数保持原样。
+    textAnim = bmp_font_obj_print_l(gDebugMenu->objFont, "调试菜单", 1, 6); // Sequence Test
     sprite_create(gSpriteHandler, textAnim->frames, 0, 0, 8, 0x800, 0, 0, 0);
 
     textAnim = bmp_font_obj_print_l(gDebugMenu->objFont, "*", 1, 7);

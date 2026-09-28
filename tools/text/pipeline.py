@@ -328,6 +328,60 @@ def extract():
             previous = {row['id']: row for row in csv.DictReader(stream, delimiter='\t')}
     for (json_path, path, base), members in grouped_archive().items():
         archive_name = json_path.relative_to(ARCHIVE).as_posix()
+        if (archive_name == 'data/data_room/reading_material.inc.json'
+                and base == 'reading_greeting' and path is not None
+                and len(members) == 1):
+            key, row = members[0]
+            text = path.read_text(encoding='utf-8')
+            # 欢迎信的英文标题在两个地区分支里；逐分支拼接相邻 C 字符串，
+            # 只有两侧都与阶段 5 译文（含真实换行）一致才算已接入。
+            markers = ('/* WELCOME ', '/* MANUAL ',
+                       '/* BODY ----------------------------------------------------------- */',
+                       '/* STYLE ---------------------------------------------------------- */')
+            if all(marker in text for marker in markers):
+                material = text.split(markers[0], 1)[1].split(markers[1], 1)[0]
+                body = material.split(markers[2], 1)[1].split(markers[3], 1)[0]
+                clean = remove_comments(body)
+                branches = re.search(r'#ifdef\s+PARADISE(.*?)#else(.*?)#endif', clean, re.S)
+                if branches and row['stage'] == 5:
+                    expected = json.dumps(row['translation'], ensure_ascii=False)[1:-1]
+                    values = [''.join(literal[1:-1] for literal in LITERAL.findall(
+                        clean[:branches.start()] + branches.group(side) + clean[branches.end():]))
+                        for side in (1, 2)]
+                    if values == [expected, expected]:
+                        continue
+        if (archive_name == 'src/debug_menu.json' and base == 'debug_menu_title'
+                and path is not None and len(members) == 1):
+            key, row = members[0]
+            text = path.read_text(encoding='utf-8')
+            # 调试页标题在函数调用里而不是 C 数组里；核对调用参数再消除误报。
+            call = r'bmp_font_obj_print_l\(\s*gDebugMenu->objFont,\s*'
+            if (row['stage'] == 5 and re.search(
+                    call + re.escape(json.dumps(row['translation'], ensure_ascii=False)), text)):
+                continue
+        if (archive_name == 'src/debug_menu_table.json' and base == 'debug_menu_52'
+                and path is not None and len(members) == 1):
+            key, row = members[0]
+            text = path.read_text(encoding='utf-8')
+            # 归档的第 52 项因英文原文拼写不同没法自动对位；用相邻
+            # 表项名称限定范围，确认实际标签已是阶段 5 译文。
+            if '/* Sick Beats Endless */' in text and '/* Quiz Show Endless */' in text:
+                section = text.split('/* Sick Beats Endless */', 1)[1].split('/* Quiz Show Endless */', 1)[0]
+                labels = re.findall(r'/\*\s*Label\s*\*/\s*("(?:\\.|[^"\\])*")', section)
+                if row['stage'] == 5 and labels == [json.dumps(row['translation'], ensure_ascii=False)]:
+                    continue
+        if (archive_name == 'data/medal_corner/endless_menu.inc.json'
+                and base == 'endless_ura_otoko' and path is not None
+                and len(members) == 1):
+            key, row = members[0]
+            text = path.read_text(encoding='utf-8')
+            # 第一项有两个 #ifdef 地区分支；只有两侧都等于阶段 5 译名，
+            # 才把它算作已接入，避免只改一个版本就漏掉另一个版本。
+            if '/* MR_UPBEAT */' in text and '/* SICK_BEATS */' in text:
+                section = text.split('/* MR_UPBEAT */', 1)[1].split('/* SICK_BEATS */', 1)[0]
+                titles = re.findall(r'/\*\s*Title\s*\*/\s*("(?:\\.|[^"\\])*")', section)
+                if row['stage'] == 5 and titles == [json.dumps(row['translation'], ensure_ascii=False)] * 2:
+                    continue
         if archive_name in manual_slots and path is not None and len(members) == 1:
             initializer, positions = manual_slots[archive_name]
             key, row = members[0]
@@ -530,6 +584,17 @@ def import_text(check, only_final):
                 skipped += 1
                 continue
             key = row['key']
+            if filename == 'src/scenes/debug_menu_table.c' and key == 'debug_menu_51':
+                # 导入器原先只看到 PARADISE 一侧；校验两侧译名，
+                # 防止另一种地区版本悄悄保留英文。
+                if '/* Mr. Upbeat */' not in text or '/* Sick Beats Endless */' not in text:
+                    problems.append(row['id'] + ': menu markers missing')
+                    continue
+                section = text.split('/* Mr. Upbeat */', 1)[1].split('/* Sick Beats Endless */', 1)[0]
+                labels = re.findall(r'/\*\s*Label\s*\*/\s*("(?:\\.|[^"\\])*")', section)
+                if labels != [json.dumps(row['target'], ensure_ascii=False)] * 2:
+                    problems.append(row['id'] + ': conditional branches differ')
+                continue
             base = key.split('[', 1)[0]
             groups = locate(text, path, key)
             siblings = all_members[(filename, base)]

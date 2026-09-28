@@ -260,18 +260,20 @@ struct DebugMenuEntry debug_menu_entry_table[] = {
         /* Label */ "课程 （技巧　２）",
         /* Epil. */ FALSE
     },
+    // 阶段 5 已校对：两种地区拼写共用“反拍男”，但仍保留原 #ifdef 结构。
     /* Mr. Upbeat */ {
         /* Scene */ &scene_mr_upbeat,
         #ifdef PARADISE
         /* Label */ "反拍男",
         #else
-        /* Label */ "Mr. Upbeat",
+        /* Label */ "反拍男",
         #endif
         /* Epil. */ FALSE
     },
+    // 阶段 5 已校对：将无尽模式的调试标签接入译文，保持原表项顺序。
     /* Sick Beats Endless */ {
         /* Scene */ &scene_sick_beats_endless,
-        /* Label */ "Sick Beats Special",
+        /* Label */ "细菌博士　ＳＰ",
         /* Epil. */ FALSE
     },
     /* Quiz Show Endless */ {
