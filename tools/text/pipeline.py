@@ -488,6 +488,44 @@ def cafe_translation_installed(text, key, translation):
                                for value in values))
 
 
+def notice_translation_installed(text, archive_name, key, translation):
+    """核对手工拼接的入库通知，防止已译片段继续误报未定位。"""
+    if archive_name == 'src/arrival.json':
+        # 标题和结尾分别占一个打印器；动态资料标题由第三个打印器插入。
+        calls = re.findall(r'text_printer_set_string\(printer,\s*("(?:\\.|[^"\\])*")\)', text)
+        if len(calls) != 2:
+            return False
+        if key == 'arrival_title':
+            return calls[0][1:-1].strip() == translation + '：'
+        if key == 'arrival_message_template':
+            return calls[1][1:-1].strip() == translation.strip()
+        return False
+    if archive_name != 'src/game_select.json':
+        return False
+    if key == 'game_select_new_game':
+        case = re.search(r'case CAMPAIGN_GIFT_NEW_GAME:(.*?)\breturn\s*'
+                         r'("(?:\\.|[^"\\])*")\s*;', remove_comments(text), re.S)
+        return bool(case and case.group(2) == json.dumps(translation, ensure_ascii=False))
+
+    # 奖励通知不是六个独立字符串，而是格式串加动态关卡名、奖品名和种类。
+    # 五个片段共同对上且参数顺序正确时，才认为每个键已接入。
+    rows = json.loads((ARCHIVE / 'src/game_select.json').read_text(encoding='utf-8'))
+    targets = {row['key']: json.dumps(row['translation'], ensure_ascii=False)[1:-1]
+               for row in rows}
+    if key not in targets:
+        return False
+    fmt = (r'\001C' + targets['game_select_perfect_prefix'] + '%s'
+           + targets['game_select_perfect_suffix'] + r'\n'
+           + targets['game_select_gift_prefix']
+           + '%s%s' + targets['game_select_gift_suffix'] + r'\n')
+    call = re.search(r'snprintf\(notice->text,\s*sizeof\(notice->text\),\s*'
+                     r'("(?:\\.|[^"\\])*")\s*,\s*level->name,\s*giftTitle,\s*giftKind\s*\)', text, re.S)
+    kind = re.search(r'giftKind\s*=\s*\(giftType\s*==\s*CAMPAIGN_GIFT_SONG\)\s*'
+                     r'\?\s*("(?:\\.|[^"\\])*")\s*:\s*""', text)
+    return bool(call and call.group(1)[1:-1] == fmt and kind
+                and kind.group(1)[1:-1] == targets['game_select_gift_middle'])
+
+
 def extract():
     output, unresolved = [], []
     previous = {}
@@ -512,6 +550,14 @@ def extract():
             previous = {row['id']: row for row in csv.DictReader(stream, delimiter='\t')}
     for (json_path, path, base), members in grouped_archive().items():
         archive_name = json_path.relative_to(ARCHIVE).as_posix()
+        if (archive_name in ('src/arrival.json', 'src/game_select.json')
+                and path is not None and len(members) == 1):
+            key, row = members[0]
+            # 为什么单独检查：界面直接调用或运行时拼接，没有同名 C 字符串。
+            if (row['stage'] == 5 and notice_translation_installed(
+                    path.read_text(encoding='utf-8'), archive_name,
+                    key, row['translation'])):
+                continue
         if (archive_name in ('src/cafe.json', 'src/cafe_add.json')
                 and path is not None and len(members) == 1):
             key, row = members[0]

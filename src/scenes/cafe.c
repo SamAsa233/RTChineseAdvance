@@ -342,6 +342,7 @@ void cafe_print_dialogue(void) {
             }
 #ifdef TEMPOUP
             if (D_030046a8->data.unk294[CAFE_CLEAR_DIALOGUE_EXTRA_PENDING]) {
+                // TODO 未校对：原源码的 extra intro 没有对应的阶段 5 译文，暂保留英文占位。
                 string = "\n"
                          "extra intro\n"
                          "\n";
@@ -351,6 +352,7 @@ void cafe_print_dialogue(void) {
                 break;
             }
             if (D_030046a8->data.unk294[CAFE_CLEAR_DIALOGUE_BIG_PENDING]) {
+                // TODO 未校对：原源码的主线加额外关卡开场语尚无已校对译文。
                 string = "\n"
                          "combined main + extra intro\n"
                          "\n";

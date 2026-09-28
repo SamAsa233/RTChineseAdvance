@@ -67,7 +67,7 @@ void arrival_scene_start(void *sVar, s32 dArg) {
 
     printer = text_printer_create_new(get_current_mem_id(), 1, 240, 32);
     text_printer_set_x_y(printer, 24, 48);
-    // 阶段 5 已校对：通知标题使用“节奏资料室通知”，保留原版左侧留白。
+    // 阶段 5 已校对：标题使用“节奏资料室通知”；冒号和左侧空格沿用原界面排版。
     text_printer_set_string(printer, "        节奏资料室通知：");
     text_printer_update(printer);
     text_printer_update(printer);
