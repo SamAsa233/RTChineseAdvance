@@ -336,6 +336,15 @@ def extract():
             unresolved = [item for item in unresolved
                           if not item.startswith(f'{json_path.relative_to(ARCHIVE)}:{base}:')]
             continue
+        # The 13 keyed poster entries are three concatenated source strings;
+        # the groups are assembled manually so control-code boundaries stay
+        # intact and the non-stage-5 WISH translation remains TODO.
+        if (json_path.relative_to(ARCHIVE).as_posix() == 'games/drum_live/drum_live_menu_engine.json'
+                and base == 'drum_live_menu_poster_desc'):
+            unresolved = [item for item in unresolved if not item.startswith(
+                f'{json_path.relative_to(ARCHIVE)}:{base}[')]
+            unresolved.append(f'{json_path.relative_to(ARCHIVE)}:{base}[42]: TODO 未校对（阶段 2）')
+            continue
         if base == 'perfect_gift_directive_text' and len(members) == 1:
             # The source JSON contains three reward-type messages in one row,
             # while the English port stores them in three array entries.
