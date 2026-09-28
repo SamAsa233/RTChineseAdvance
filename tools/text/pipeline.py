@@ -307,6 +307,10 @@ def extract():
         with TABLE.open(encoding='utf-8', newline='') as stream:
             previous = {row['id']: row for row in csv.DictReader(stream, delimiter='\t')}
     for (json_path, path, base), members in grouped_archive().items():
+        # These reviewed fragments are composed at runtime in perfect_scene_start;
+        # they intentionally have no standalone source literal to replace.
+        if json_path.relative_to(ARCHIVE).as_posix() == 'src/perfect.json':
+            continue
         if base == 'perfect_gift_directive_text' and len(members) == 1:
             # The source JSON contains three reward-type messages in one row,
             # while the English port stores them in three array entries.
@@ -379,8 +383,16 @@ def extract():
     atomic_text(REPORT / 'unresolved.txt', '\n'.join(unresolved) + '\n')
     # Track every unfinished key in version control so Ctrl+F finds it even
     # when conditional C code has no safe location for an inline comment.
-    todo = ['# TODO 未校对', '', '阶段 5 以外的译文尚未导入源码；未定位的条目也在此列出。', '', '## 已定位但未校对']
+    todo = ['# TODO 未校对', '',
+            '阶段 5 以外的译文尚未导入源码；未定位及控制码待复核的条目也在此列出。',
+            '', '## 已定位但未校对']
     todo.extend(f"- TODO 未校对 {row['id']}" for row in output if row['status'] != 'final')
+    # Stage 5 proves wording was reviewed, not that printer control bytes or
+    # alternate compile-time branches can be moved safely. Keep these searchable
+    # until their source layout is checked in game and the import note is cleared.
+    todo.extend(['', '## 已校对译文仍待控制码或分支复核', ''])
+    todo.extend(f"- TODO 未校对 {row['id']}: {row['note']}"
+                for row in output if row['status'] == 'final' and row['note'])
     todo.extend(['', '## 尚未安全定位', ''])
     todo.extend(f'- TODO 未校对 {entry}' for entry in unresolved)
     atomic_text(ROOT / 'text/zh_hans/TODO_未校对.md', '\n'.join(todo) + '\n')

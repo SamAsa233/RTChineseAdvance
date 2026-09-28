@@ -1,4 +1,4 @@
-/* 汉化待办：证书页的动态奖励句子尚无逐句校对译文，保留英文并标注待校对位置。 */
+/* 汉化：证书页按译文包阶段 5 的片段拼接奖励文案，保留原有颜色控制码。 */
 #include "global.h"
 #include "scenes.h"
 #include "perfect.h"
@@ -99,6 +99,8 @@ static u32 perfect_are_all_extra_campaigns_cleared(void) {
 // Scene Start
 void perfect_scene_start(void *sVar, s32 dArg) {
     char count[0x10];
+    const char *songSuffix;
+    const char *giftTitle;
     u32 baseCampaignsClearedBefore;
     u32 baseCampaignsClearedAfter;
     u32 activeCampaignsTotal;
@@ -192,12 +194,11 @@ void perfect_scene_start(void *sVar, s32 dArg) {
     if (activeCampaignsCleared < activeCampaignsTotal) {
         campaignsLeft = activeCampaignsTotal - activeCampaignsCleared;
     }
-    // TODO 未校对：下列奖励名称后的英文语法、礼物提示和剩余数量句子
-    // 不在阶段 5 已校对译文中；目前保留原文，待逐句校对后再接入汉化。
+    // 已校对片段来自 src/perfect.json；标题、数量和说明的组合顺序沿用原版。
+    // TODO 未校对：动态组合后的整句及实机换行仍需对照证书画面复核。
     strint(count, campaignsLeft);
-    memcpy(gPerfect->string, "\0021" "\0011" "\001C" "\0030" "\001s" "\0054" "\0018" "", 25);
-    strcat(gPerfect->string, get_campaign_gift_title(gPerfect->campaignID, FALSE));
-    strcat(gPerfect->string, "");
+    giftTitle = get_campaign_gift_title(gPerfect->campaignID, FALSE);
+    songSuffix = "";
 
     if (giftType == CAMPAIGN_GIFT_SONG) {
         switch (giftID) {
@@ -206,27 +207,23 @@ void perfect_scene_start(void *sVar, s32 dArg) {
                 break;
 
             default:
-                strcat(gPerfect->string, "'s song");
+                // 部分曲名本身已是完整歌名；其余沿用原版加“的音乐”的规则。
+                songSuffix = "的音乐";
                 break;
         }
     }
 
-    strcat(gPerfect->string, "\0020" "\0010" "\nYou've earned a gift! "); // You've earned a gift!
-    strcat(gPerfect->string, perfect_gift_directive_text[giftType]);
-
     if (campaignsLeft > 0) {
-        if (campaignsLeft > 1) {
-            strcat(gPerfect->string, "Looks like there are still " "\0021" "\0011"); // There are still...
-            strcat(gPerfect->string, count);
-            strcat(gPerfect->string, " gifts " "\0020" "\0010" "left.\n" // ...gifts
-                                         "Keep pushing yourself to earn them all!"); // left to get. Keep going!
-        } else {
-            strcat(gPerfect->string, "There's now just " "\0021" "\0011" "one gift " "\0020" "\0010" "left.\n" // ...gift
-                                         "You can do it!"); // left to get. Keep going!
-        }
+        // 中文“礼物还有…份”可同时覆盖剩余 1 份和多份，避免英语单复数分支。
+        snprintf(gPerfect->string, sizeof(gPerfect->string),
+                 "\0021\0011\001C\0030\001s\0054\0018%s%s已送给你！\0020\0010\n%s"
+                 "礼物还有 \0021\0011%s\0020\0010 份，\n也去试试其他完美挑战吧！",
+                 giftTitle, songSuffix, perfect_gift_directive_text[giftType], count);
     } else {
-        strcat(gPerfect->string,"\0021" "\0011" "You've earned all of the gifts!" "\0020" "\0010" "\n"); // You finally got them all!
-        strcat(gPerfect->string, "That means you got a Perfect on everything!"); // Congratulations!
+        snprintf(gPerfect->string, sizeof(gPerfect->string),
+                 "\0021\0011\001C\0030\001s\0054\0018%s%s已送给你！\0020\0010\n%s"
+                 "\0021\0011礼物已经全部送完啦。\0020\0010\n所有完美挑战都完成了！",
+                 giftTitle, songSuffix, perfect_gift_directive_text[giftType]);
     }
 
     text_printer_set_string(gPerfect->printer, gPerfect->string);

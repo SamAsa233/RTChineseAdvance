@@ -1,6 +1,6 @@
 # TODO 未校对
 
-阶段 5 以外的译文尚未导入源码；未定位的条目也在此列出。
+阶段 5 以外的译文尚未导入源码；未定位及控制码待复核的条目也在此列出。
 
 ## 已定位但未校对
 - TODO 未校对 data/scenes/cafe/dialogue.c:cafe_dialogue_all_perfects_clear_big[0]
@@ -137,6 +137,94 @@
 - TODO 未校对 games/staff_credit/staff_credit_text.c:D_08069cfc
 - TODO 未校对 games/staff_credit/staff_credit_text.c:D_08069da0
 
+## 已校对译文仍待控制码或分支复核
+
+- TODO 未校对 data/scenes/cafe/dialogue.c:cafe_dialogue_first_visit[15]: control codes need review
+- TODO 未校对 data/scenes/cafe/dialogue.c:cafe_dialogue_first_visit[4]: control codes need review
+- TODO 未校对 data/scenes/cafe/dialogue.c:cafe_dialogue_rhythm_sense[7]: TODO 未校对：PARADISE 双分支的语气待分别核验
+- TODO 未校对 data/scenes/data_room/reading_material.inc.c:reading_diagnosis: control codes need review
+- TODO 未校对 data/scenes/data_room/reading_material.inc.c:reading_formula_content: control codes need review
+- TODO 未校对 data/scenes/data_room/reading_material.inc.c:reading_poem: control codes need review
+- TODO 未校对 data/scenes/options/data.c:options_data_clear_confirm_text: control codes need review
+- TODO 未校对 data/scenes/options/data.c:options_desc_text[0]: control codes need review
+- TODO 未校对 data/scenes/options/data.c:options_desc_text[1]: control codes need review
+- TODO 未校对 games/drum_intro/drum_intro_unused_2_text.c:D_0805d928: control codes need review
+- TODO 未校对 games/fireworks/fireworks_text.c:D_0805ce5c: control codes need review
+- TODO 未校对 games/fireworks/fireworks_text.c:D_0805ce80: control codes need review
+- TODO 未校对 games/fireworks/fireworks_text.c:D_0805cea4: control codes need review
+- TODO 未校对 games/fireworks/fireworks_text.c:D_0805cec8: control codes need review
+- TODO 未校对 games/fireworks/fireworks_text.c:D_0805ceec: control codes need review
+- TODO 未校对 games/fireworks/fireworks_text.c:D_0805cf2c: control codes need review
+- TODO 未校对 games/fireworks/fireworks_text.c:D_0805cf4c: control codes need review
+- TODO 未校对 games/fireworks/fireworks_text.c:D_0805cf6c: control codes need review
+- TODO 未校对 games/fireworks/fireworks_text.c:D_0805cf8c: control codes need review
+- TODO 未校对 games/fireworks/fireworks_text.c:D_0805cfac: control codes need review
+- TODO 未校对 games/fireworks/fireworks_text.c:D_0805cfcc: control codes need review
+- TODO 未校对 games/fireworks/fireworks_text.c:D_0805d010: control codes need review
+- TODO 未校对 games/fireworks/fireworks_text.c:D_0805d030: control codes need review
+- TODO 未校对 games/fireworks/fireworks_text.c:D_0805d050: control codes need review
+- TODO 未校对 games/fireworks/fireworks_text.c:D_0805d070: control codes need review
+- TODO 未校对 games/fireworks/fireworks_text.c:D_0805d090: control codes need review
+- TODO 未校对 games/fireworks/fireworks_text.c:D_0805d0b0: control codes need review
+- TODO 未校对 games/night_walk/night_walk_text.c:D_0805b1fc: control codes need review
+- TODO 未校对 games/night_walk/night_walk_text.c:D_0805b220: control codes need review
+- TODO 未校对 games/night_walk/night_walk_text.c:D_0805b250: control codes need review
+- TODO 未校对 games/night_walk/night_walk_text.c:D_0805b310: control codes need review
+- TODO 未校对 games/night_walk/night_walk_text.c:D_0805b334: control codes need review
+- TODO 未校对 games/night_walk/night_walk_text.c:D_0805b35c: control codes need review
+- TODO 未校对 games/night_walk/night_walk_text.c:D_0805b38c: control codes need review
+- TODO 未校对 games/rap_men/rap_men.bs:text_rap_men_herushii_kamo_ne: control codes need review
+- TODO 未校对 games/rap_men/rap_men.bs:text_rap_men_honto_desu_ka: control codes need review
+- TODO 未校对 games/rap_men/rap_men.bs:text_rap_men_kibun_wa_saikou: control codes need review
+- TODO 未校对 games/rap_men/rap_men.bs:text_rap_men_kimi_tte_saikou: control codes need review
+- TODO 未校对 games/rap_men/rap_men.bs:text_rap_men_oishii_kamo_ne: control codes need review
+- TODO 未校对 games/rap_men/rap_men.bs:text_rap_men_ore_no_sei_kamo_ne: control codes need review
+- TODO 未校对 games/rap_men/rap_men.bs:text_rap_men_ore_shiranai_yo: control codes need review
+- TODO 未校对 games/rap_men/rap_men.bs:text_rap_men_ore_tte_saikou: control codes need review
+- TODO 未校对 games/rap_men/rap_men.bs:text_rap_men_oyatsu_desu_ka: control codes need review
+- TODO 未校对 games/rap_men/rap_men.bs:text_rap_men_oyatsu_ga_nai_yo: control codes need review
+- TODO 未校对 games/rap_men/rap_men.bs:text_rap_men_oyatsu_wa_saikou: control codes need review
+- TODO 未校对 games/rap_men/rap_men.bs:text_rap_men_sanji_desu_ka: control codes need review
+- TODO 未校对 games/rap_men/rap_men.bs:text_rap_men_sore_mo_sou_kamo_ne: control codes need review
+- TODO 未校对 games/rap_men/rap_men.bs:text_rap_men_tanoshii_kamo_ne: control codes need review
+- TODO 未校对 games/rap_men/rap_men.bs:text_rap_men_wakarimasu_ka: control codes need review
+- TODO 未校对 games/rap_men/rap_men_text.c:D_0805eb3c: control codes need review
+- TODO 未校对 games/rap_men/rap_men_text.c:D_0805eb6c: control codes need review
+- TODO 未校对 games/rap_men/rap_men_text.c:D_0805ebc4: control codes need review
+- TODO 未校对 games/rap_men/rap_men_text.c:D_0805ec24: control codes need review
+- TODO 未校对 games/rap_men/rap_women.bs:text_rap_women_aketeii_kamo_ne: control codes need review
+- TODO 未校对 games/rap_men/rap_women.bs:text_rap_women_amakute_saikou: control codes need review
+- TODO 未校对 games/rap_men/rap_women.bs:text_rap_women_betsubara_saikou: control codes need review
+- TODO 未校对 games/rap_men/rap_women.bs:text_rap_women_dare_ni_mo_naisho: control codes need review
+- TODO 未校对 games/rap_men/rap_women.bs:text_rap_women_juji_desu_ka: control codes need review
+- TODO 未校对 games/rap_men/rap_women.bs:text_rap_women_kare_ni_wa_naisho: control codes need review
+- TODO 未校对 games/rap_men/rap_women.bs:text_rap_women_kare_no_oyatsu_da_ne: control codes need review
+- TODO 未校对 games/rap_men/rap_women.bs:text_rap_women_kibun_wa_saikou: control codes need review
+- TODO 未校对 games/rap_men/rap_women.bs:text_rap_women_naisho_desu_ka: control codes need review
+- TODO 未校对 games/rap_men/rap_women.bs:text_rap_women_oyatsu_desu_ka: control codes need review
+- TODO 未校对 games/rap_men/rap_women.bs:text_rap_women_oyatsu_wa_saikou: control codes need review
+- TODO 未校对 games/rap_men/rap_women.bs:text_rap_women_tabeteii_kamo_ne: control codes need review
+- TODO 未校对 games/remix_2/remix_2_text.c:D_08067f90: control codes need review
+- TODO 未校对 games/remix_2/remix_2_text.c:D_08067fcc: control codes need review
+- TODO 未校对 games/remix_3/remix_3_text.c:D_0806a0d4: control codes need review
+- TODO 未校对 games/remix_3/remix_3_text.c:D_0806a0fc: control codes need review
+- TODO 未校对 games/remix_3/remix_3_text.c:D_0806a118: control codes need review
+- TODO 未校对 games/remix_3/remix_3_text.c:D_0806a134: control codes need review
+- TODO 未校对 games/remix_3/remix_3_text.c:D_0806a154: control codes need review
+- TODO 未校对 games/remix_5/remix_5_text.c:D_0806a314: control codes need review
+- TODO 未校对 games/remix_5/remix_5_text.c:D_0806a32c: control codes need review
+- TODO 未校对 games/remix_5/remix_5_text.c:D_0806a370: control codes need review
+- TODO 未校对 games/remix_6/remix_6_text.c:D_0806a920: control codes need review
+- TODO 未校对 games/remix_6/remix_6_text.c:D_0806a944: control codes need review
+- TODO 未校对 games/rhythm_tweezers/rhythm_tweezers_text.c:D_0805b580: control codes need review
+- TODO 未校对 games/rhythm_tweezers/rhythm_tweezers_text.c:D_0805b590: control codes need review
+- TODO 未校对 games/rhythm_tweezers/rhythm_tweezers_text.c:D_0805b5c8: control codes need review
+- TODO 未校对 games/rhythm_tweezers/rhythm_tweezers_text.c:D_0805b5f4: control codes need review
+- TODO 未校对 games/staff_credit/staff_credit_text.c:D_08069d7c: control codes need review
+- TODO 未校对 games/toss_boys/toss_boys_text.c:D_0805d7cc: control codes need review
+- TODO 未校对 games/toss_boys/toss_boys_text.c:D_0805d818: control codes need review
+- TODO 未校对 games/toss_boys/toss_boys_text.c:D_0805d86c: control codes need review
+
 ## 尚未安全定位
 
 - TODO 未校对 data\cafe\dialogue.json:cafe_dialogue_rhythm_sense[7]: conditional branches need review
@@ -246,11 +334,6 @@
 - TODO 未校对 src\game_select.json:game_select_gift_prefix: key not found
 - TODO 未校对 src\game_select.json:game_select_gift_middle: key not found
 - TODO 未校对 src\game_select.json:game_select_gift_suffix: key not found
-- TODO 未校对 src\perfect.json:perfect_gift_prefix: key not found
-- TODO 未校对 src\perfect.json:perfect_gift_suffix: key not found
-- TODO 未校对 src\perfect.json:perfect_remaining_prefix: key not found
-- TODO 未校对 src\perfect.json:perfect_remaining_suffix: key not found
-- TODO 未校对 src\perfect.json:perfect_complete: key not found
 - TODO 未校对 src\results.json:results_scoring: key not found
 - TODO 未校对 src\results.json:results_also: key not found
 - TODO 未校对 src\results.json:results_more: key not found
