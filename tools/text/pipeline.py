@@ -9,10 +9,14 @@ Examples:
 import argparse
 from collections import defaultdict
 import csv
+import difflib
+from functools import lru_cache
 import json
 import os
 from pathlib import Path
 import re
+import subprocess
+import unicodedata
 
 ROOT = Path(__file__).resolve().parents[2]
 ARCHIVE = ROOT / "text/zh_hans/source/utf8"
@@ -20,6 +24,7 @@ TABLE = ROOT / "text/zh_hans/translations.tsv"
 REPORT = ROOT / "build/text_report"
 LITERAL = re.compile(r'"(?:\\.|[^"\\])*"', re.S)
 CONTROL = re.compile(r'\\(?:[0-7]{1,3}|x[0-9a-fA-F]+)|[.:][0-9a-fA-F]')
+CONTROL_TOKEN = re.compile(r'\\(?:004|4)[0-9]+\.|\\(?:00[1235]|[1235])[0-9A-Za-z\[\]]|[.:][0-9a-fA-F]')
 FIELDS = ("id", "file", "key", "source", "target", "status", "note")
 
 
@@ -146,14 +151,57 @@ def level_slot(text, key):
     return [(start + group[0], start + group[1], group[2])]
 
 
+@lru_cache(maxsize=1)
+def debug_menu_mapping():
+    path = 'src/scenes/debug_menu_table.c'
+    result = subprocess.run(['git', 'show', 'text_utf8:' + path], cwd=ROOT,
+                            capture_output=True, text=True, encoding='utf-8', check=True)
+    original = result.stdout
+    archive_rows = json.loads((ARCHIVE / 'src/debug_menu_table.json').read_text(encoding='utf-8'))
+    source_names = [unicodedata.normalize('NFKC', row['original']) for row in archive_rows]
+    target_names = [unicodedata.normalize('NFKC', match.group(1)[1:-1]) for match in re.finditer(r'/\*\s*Label\s*\*/\s*("(?:\\.|[^"\\])*")', original)]
+    mapping = {}
+    source_start = target_start = 0
+    for match in difflib.SequenceMatcher(None, source_names, target_names, autojunk=False).get_matching_blocks():
+        if match.a - source_start == match.b - target_start:
+            for offset in range(match.a - source_start):
+                mapping[source_start + offset] = target_start + offset
+        for offset in range(match.size):
+            mapping[match.a + offset] = match.b + offset
+        source_start, target_start = match.a + match.size, match.b + match.size
+    return mapping
+
+
 def ordinal_slot(text, path, key):
+    name = path.relative_to(ROOT).as_posix()
+    if name == 'src/scenes/studio_drums.c':
+        rows = json.loads((ARCHIVE / 'src/studio_drums.json').read_text(encoding='utf-8'))
+        keys = [row['key'] for row in rows]
+        if key in keys:
+            groups = (c_initializer(text, 'studio_drum_kit_names') or []) + (c_initializer(text, 'studio_mem_warnings_text') or [])
+            return [groups[keys.index(key)]] if len(groups) == len(keys) else None
+    if name == 'src/scenes/studio_options.c':
+        rows = json.loads((ARCHIVE / 'src/studio_options.json').read_text(encoding='utf-8'))
+        keys = [row['key'] for row in rows]
+        if key in keys[:8]:
+            groups = (c_initializer(text, 'studio_options_no_replay') or []) + (c_initializer(text, 'studio_options_is_replay') or [])
+            return [groups[keys.index(key)]] if len(groups) == 8 else None
+        if key in keys[8:]:
+            groups = []
+            for marker in re.finditer(re.escape('studio_warning_create('), text):
+                following = text.find('studio_option_list_warning_', marker.end())
+                end = text.rfind(',', marker.end(), following)
+                if end > marker.end():
+                    group = literal_group(text, marker.end(), end)
+                    if group:
+                        groups.append(group)
+            return [groups[keys.index(key) - 8]] if len(groups) == 3 else None
     specs = {
         'src/scenes/debug_menu_table.c': ('src/debug_menu_table.json', r'/\*\s*Label\s*\*/', None),
         'data/scenes/medal_corner/lessons_menu.inc.c': ('data/medal_corner/lessons_menu.inc.json', r'/\*\s*Title\s*\*/', None),
         'data/scenes/studio/songs.inc.c': ('data/studio/songs.inc.json', r'/\*\s*(?:Full|Short) Title\s*\*/', None),
         'data/scenes/data_room/reading_material.inc.c': ('data/data_room/reading_material.inc.json', r'/\*\s*(?:TITLE|BODY)\s*-+\s*\*/', r'/\*\s*STYLE\s*-+\s*\*/'),
     }
-    name = path.relative_to(ROOT).as_posix()
     if name not in specs:
         return None
     source, pattern, end_pattern = specs[name]
@@ -174,11 +222,30 @@ def ordinal_slot(text, path, key):
             if comma >= 0:
                 end = marker.end() + comma
         group = literal_group(text, marker.end(), end)
-        if group:
+        if name.endswith('reading_material.inc.c'):
+            groups.append(group)  # Preserve marker positions when a #if body is unsafe.
+        elif group:
             groups.append(group)
-    if len(groups) != len(keys):
-        return None
-    return [groups[keys.index(key)]]
+    if name.endswith('reading_material.inc.c'):
+        selected = keys.index(key)
+        # The archive's first 39 entries match TITLE/BODY markers in order.
+        # Its five haiku entries share one BODY; the two final credit markers
+        # have no supplied translation. Handle the haiku explicitly later.
+        return [groups[selected]] if selected < 39 and selected < len(groups) and groups[selected] else None
+    if name.endswith('songs.inc.c') and len(groups) == len(keys) + 1:
+        selected = keys.index(key)
+        # Two region-specific Cafe Counselling literals occupy one song entry.
+        # Defer that entry until both conditional branches can be updated.
+        if key == 'song_cafe_counsel':
+            return None
+        selected += selected > keys.index('song_cafe_counsel')
+        return [groups[selected]] if selected < len(groups) else None
+    if len(groups) == len(keys):
+        return [groups[keys.index(key)]]
+    if name.endswith('debug_menu_table.c'):
+        selected = debug_menu_mapping().get(keys.index(key))
+        return [groups[selected]] if selected is not None and selected < len(groups) else None
+    return None
 
 
 def locate(text, path, key):
@@ -282,11 +349,56 @@ def extract():
     atomic_text(TABLE, stream.getvalue())
     REPORT.mkdir(parents=True, exist_ok=True)
     atomic_text(REPORT / 'unresolved.txt', '\n'.join(unresolved) + '\n')
-    chars = sorted({ch for row in output for ch in row['target'] if 0x4E00 <= ord(ch) <= 0x9FFF})
+    # Include unresolved translations so the font is ready when their mappings land.
+    chars = sorted({ch for path in ARCHIVE.rglob('*.json')
+                    for row in json.loads(path.read_text(encoding='utf-8'))
+                    for ch in row['translation'] if 0x4E00 <= ord(ch) <= 0x9FFF})
     atomic_text(REPORT / 'charset.txt', ''.join(chars) + '\n')
     bitmap_rows = [row for row in output if row['file'].endswith('.bs') or 'results/data.inc.c' in row['file']]
     atomic_text(REPORT / 'bitmap_font_strings.txt', '\n'.join(row['id'] + '\t' + row['target'] for row in bitmap_rows) + '\n')
     print(f"mapped={len(output)}, unresolved={len(unresolved)}, final={sum(row['status']=='final' for row in output)}")
+
+
+def preserve_edge_controls(source, target):
+    """Keep complete printer/bitmap control tokens enclosing translated text."""
+    tokens = list(CONTROL_TOKEN.finditer(source))
+    raw = list(CONTROL.finditer(source))
+    if not tokens or len(tokens) != len(raw) or any(a.start() != b.start() for a, b in zip(tokens, raw)):
+        return None
+    if CONTROL.search(target):
+        return None
+    prefix_end = 0
+    while match := CONTROL_TOKEN.match(source, prefix_end):
+        prefix_end = match.end()
+    suffix_start = len(source)
+    for token in reversed(tokens):
+        if token.end() == suffix_start:
+            suffix_start = token.start()
+        else:
+            break
+    if prefix_end >= suffix_start or any(prefix_end < token.start() < suffix_start for token in tokens):
+        return None
+    return source[:prefix_end] + target + source[suffix_start:]
+
+
+def resolve_edge_controls():
+    with TABLE.open(encoding='utf-8', newline='') as stream:
+        rows = list(csv.DictReader(stream, delimiter='\t'))
+    count = 0
+    for row in rows:
+        if row['note'] != 'control codes need review':
+            continue
+        target = preserve_edge_controls(row['source'], row['target'])
+        if target is not None:
+            row['target'], row['note'] = target, ''
+            count += 1
+    from io import StringIO
+    stream = StringIO(newline='')
+    writer = csv.DictWriter(stream, fieldnames=FIELDS, delimiter='\t', lineterminator='\n')
+    writer.writeheader()
+    writer.writerows(rows)
+    atomic_text(TABLE, stream.getvalue())
+    print(f'edge controls preserved={count}')
 
 
 def import_text(check, only_final):
@@ -346,11 +458,13 @@ def import_text(check, only_final):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('action', choices=('extract', 'check', 'import'))
+    parser.add_argument('action', choices=('extract', 'check', 'import', 'resolve-controls'))
     parser.add_argument('--include-draft', action='store_true')
     args = parser.parse_args()
     if args.action == 'extract':
         extract()
+    elif args.action == 'resolve-controls':
+        resolve_edge_controls()
     else:
         raise SystemExit(import_text(args.action == 'check', not args.include_draft))
 

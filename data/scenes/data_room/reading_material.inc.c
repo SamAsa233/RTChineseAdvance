@@ -4,7 +4,7 @@
 struct ReadingMaterial reading_material_table[TOTAL_READING_MATERIALS] = {
     /* WELCOME ("Rhythm Tengoku Welcome") */ {
         /* TITLE ---------------------------------------------------------- */
-            "Greetings!",
+            "欢迎来到节奏天国！",
         /* BODY ----------------------------------------------------------- */
             "Greetings!\n"
             "\n"
@@ -32,16 +32,9 @@ struct ReadingMaterial reading_material_table[TOTAL_READING_MATERIALS] = {
 
     /* MANUAL ("Handling Instructions") */ {
         /* TITLE ---------------------------------------------------------- */
-            "How to Play",
+            "使用说明书",
         /* BODY ----------------------------------------------------------- */
-            "How to play the game:\n"
-            "\n"
-            "Well, this is a pretty straightforward game.\n"
-            "What can I really say...?\n"
-            "Oh, right, the idea is to play along to the music,\n"
-            "so try to feel the flow when you play.\nThat's my advice!\n"
-            "\n"
-            "And that's about it. Pleasure to meet you, by the way!",
+            "这款游戏的玩法\n该怎么说呢，这其实不是那种非得写上一大堆说明的复杂游戏哦～。所以，这里其实也没什么好写的啦。\n啊，对了，重点是要跟着音乐一起摇摆，所以放开来玩会更好！强烈推荐！\n差不多就是这样。请多关照～。",
         /* STYLE ---------------------------------------------------------- */
             /* GFX */ reading_style_cherry_gfx_table,
             /* BGM */ &reading_style_cherry_bgm
@@ -50,30 +43,9 @@ struct ReadingMaterial reading_material_table[TOTAL_READING_MATERIALS] = {
 
     /* CAFE ("More Than a Barista") */ {
         /* TITLE ---------------------------------------------------------- */
-            "From the Barista",
+            "听店长讲讲",
         /* BODY ----------------------------------------------------------- */
-            "I own and operate a café.\n"
-            "I guess you could call me the Barista.\n"
-            "Anyway, it's going well, thanks to the regulars.\n"
-            "And, well, just to let you know, I'm a dog.\n"
-            "\n"
-            "Many of my customers love listening to music.\n"
-            "A lot of them have especially good rhythm,\n"
-            "and a few have even achieved a full set of Perfects!\n"
-            "I'm always amazed by them!\n"
-            "I may look all professional when I run my café,\n"
-            "but I'll be honest, I'm really putting on a front.\n"
-            "\n"
-            "See, it's a little embarrassing, but when I'm off the\n"
-            "clock, I'm always jamming out with these little\n"
-            "dog-sized headphones!\n"
-            "\n"
-            "What can I say? I need a little flow wherever I go.\n"
-            "It's complicated. Haha...\n"
-            "I do go out from time to time, so if you happen to\n"
-            "run into me... please pet me!\n"
-            "\n"
-            "See you around!",
+            "我经营着一家咖啡店。嗯，简单来说，就是这家店的老板。店里的生意嘛，托老顾客们的福，还算过得去。啊，对了，有件事得先说清楚，我是一只狗。\n来我们店里的客人，多半都很喜欢音乐呢。尤其是不少人对节奏特别讲究。甚至还有客人完成过好多次“完美挑战”，真是让人吃惊哦！\n不过嘛，平时我虽然像这样经营着咖啡店，其实这只是我的伪装。本来的我嘛……说出来怪不好意思的，其实是戴着狗狗专用耳机，到处撒欢的那种！果然啊，少了那股劲头，日子就过不下去呢。真是拿自己没办法。哈哈哈。\n我也常常会去各种地方玩，如果你看到我，记得摸摸我哦～！\n那，下回见。",
         /* STYLE ---------------------------------------------------------- */
             /* GFX */ reading_style_train_gfx_table,
             /* BGM */ &reading_style_train_bgm
@@ -82,25 +54,9 @@ struct ReadingMaterial reading_material_table[TOTAL_READING_MATERIALS] = {
 
     /* RHYTHM_TWEEZERS ("Letter to the Editor") */ {
         /* TITLE ---------------------------------------------------------- */
-            "Plucking Letter",
+            "拔毛来稿",
         /* BODY ----------------------------------------------------------- */
-            "I'm an old gentleman who maintains a vegetable\n"
-            "farm.\n"
-            "\n"
-            "So, one day, all my vegetables just started\n"
-            "growing hair!\n"
-            "It was so creepy! I couldn't sell them like that!\n"
-            "\n"
-            "I tried plucking the hairs, but I just couldn't get them\n"
-            "all nice and smooth like a vegetable ought to be.\n"
-            "Well, to lighten up the mood, I put on some music.\n"
-            "Before I knew it, I found myself plucking to the beat.\n"
-            "And... I plucked them clean! It's even a little fun!\n"
-            "\n"
-            "The power of music is really something else!\n"
-            "You've got to try plucking hairs off of your\n"
-            "vegetables!\n"
-            "I can't recommend it enough!",
+            "我是个种菜的大叔。最近啊，我家的蔬菜居然开始长胡子了！又诡异又吓人，这样根本卖不出去，所以我就想把它们的胡子拔掉，可怎么拔都拔不干净。我正发愁的时候，想着换换心情，就一边听音乐一边跟着节奏给蔬菜拔毛。结果居然！拔得干干净净！而且还莫名有点开心！音乐的力量真是太厉害了。大家也一定要试试看给蔬菜拔毛哦！",
         /* STYLE ---------------------------------------------------------- */
             /* GFX */ reading_style_train_gfx_table,
             /* BGM */ &reading_style_train_bgm
@@ -109,7 +65,7 @@ struct ReadingMaterial reading_material_table[TOTAL_READING_MATERIALS] = {
 
     /* NIGHT_WALK ("Night Walk Riddle") */ {
         /* TITLE ---------------------------------------------------------- */
-            "Night Walk Information",
+            "夜空漫步情报",
         /* BODY ----------------------------------------------------------- */
             #ifdef PARADISE
 	        "There's this strange fellow who you might recognise\n"
@@ -158,35 +114,9 @@ struct ReadingMaterial reading_material_table[TOTAL_READING_MATERIALS] = {
 
     /* SPACEBALL ("Inside Spaceball") */ {
         /* TITLE ---------------------------------------------------------- */
-            "Spaceball Report",
+            "空中击球手快报",
         /* BODY ----------------------------------------------------------- */
-            "We're here in outer space for an exclusive interview\n"
-            "with the spacefaring baseball player, the\n"
-            "Space Batter!\n"
-            "\n"
-            "Q. How is this season looking so far?\n"
-            "A. I've been eating rice balls, so it's right on the mark!\n"
-            "\n"
-            "Q. What would you say your goal is?\n"
-            "A. To not miss any rice balls!\n"
-            "Q. You have a girlfriend, right?\n"
-            "A. Yes, I do.\n"
-            "\n"
-            "Q. What would you say is her best trait?\n"
-            "A. She makes a mean rice ball!\n"
-            "\n"
-            "Q. Why do you wear masks in the middle of games?\n"
-            "A. Hm? What do you mean?\n"
-            "\n"
-            "Q. Like that rabbit uniform you wore, for instance?\n"
-            "A. I have no idea what you're talking about.\n"
-            "\n"
-            "Q. Please answer the question!\n"
-            "A. I'll have to take my leave now. Excuse me.\n"
-            "\n"
-            "He's just left his seat!\n"
-            "It seems there's more to this than he's letting on.\n"
-            "That concludes this interstellar interview.",
+            "我们现在来采访一下正在宇宙空间活跃中的空中击球手先生！\nQ．这个赛季状态怎么样？\nA．因为我一直都在吃饭团，状态好极了！\nQ．目标是什么？\nA．绝不能断了饭团！就是这个。\nQ．有女朋友吗？\nA．有。\nQ．她最拿手的料理是什么？\nA．饭团！\nQ．为什么在游戏里要戴那种头套呢？\nA．你在说什么？\nQ．那为什么会穿兔子之类的服装呢？\nA．不知道。\nQ．请正面回答问题！\nA．时间到了，先失陪了。\n说完这些，空中击球手先生就离席了。看来其中似乎另有隐情。以上，就是来自宇宙空间的报道。",
         /* STYLE ---------------------------------------------------------- */
             /* GFX */ reading_style_train_gfx_table,
             /* BGM */ &reading_style_train_bgm
@@ -195,7 +125,7 @@ struct ReadingMaterial reading_material_table[TOTAL_READING_MATERIALS] = {
 
     /* MECHANICAL_HORSE ("Mechanical Horse's Story") */ {
         /* TITLE ---------------------------------------------------------- */
-            "Horse Machine's Story",
+            "骑马机开发秘闻",
         /* BODY ----------------------------------------------------------- */
             	    #ifdef PARADISE
 	    	"We were given the chance to interview M. F,\n"
@@ -260,46 +190,9 @@ struct ReadingMaterial reading_material_table[TOTAL_READING_MATERIALS] = {
 
     /* MARCHING_ORDERS ("Marcher's Diary") */ {
         /* TITLE ---------------------------------------------------------- */
-            "Squadmate Activity Log",
+            "行军活动记录",
         /* BODY ----------------------------------------------------------- */
-            "April 16:\n"
-            "I've enlisted in the Marcher group!\n"
-            "I'm gonna give it my all and help everybody I can!\n"
-            "\n"
-            "April 20:\n"
-            "Today I marched out of line with the others.\n"
-            "Sarge gave me an earful for that one...\n"
-            "\n"
-            "\n"
-            "April 28:\n"
-            "Today we were assigned to clean the front\n"
-            "of the station. This pleasant old lady came by and\n"
-            "offered me some candy for my hard work.\n"
-            "That made my whole day!\n"
-            "\n"
-            "\n"
-            "\n"
-            "\n"
-            "May 4:\n"
-            "I've been pretty sluggish lately.\n"
-            "Is this what they mean by \"spring fever\"?\n"
-            "If I don't shape up soon, I might get shipped out...\n"
-            "\n"
-            "May 8:\n"
-            "Something's up with Sarge...\n"
-            "Yesterday, he told us that he's been dancing with\n"
-            "some rabbits up in outer space. Is he... okay?\n"
-            "May 16:\n"
-            "Recently, I've been coming across other people\n"
-            "who look just like him...\n"
-            "It's got to be my imagination, right?\n"
-            "\n"
-            "May 22:\n"
-            "You'll never believe it! Sarge was...\n"
-            "\n"
-            "\n"
-            "The log ends here.\n"
-            "Just what could've been happening with Sarge?",
+            "4 月 16 日 今天正式入队！我要努力帮上大家的忙！\n4 月 20 日 今天踏步没跟大家踩齐，被队长骂了。\n4 月 28 日 今天在车站前打扫卫生。一位不认识的老奶奶说“谢谢你们打扫得这么干净”，还给了我糖。好开心！\n5 月 4 日 最近总觉得没精神。这就是所谓的五月病吗？再不打起精神，怕是要被大家落下了…\n5 月 8 日 队长有点不对劲…他说昨天在宇宙里跟兔子玩。真的没事吗…？\n5 月 16 日 最近总能看见跟队长一模一样的人。\n是我看错了吗？\n5 月 22 日 我看见了。队长他…\n活动记录到这里就结束了。\n队长身上究竟发生了什么！？",
         /* STYLE ---------------------------------------------------------- */
             /* GFX */ reading_style_cherry_gfx_table,
             /* BGM */ &reading_style_cherry_bgm
@@ -308,7 +201,7 @@ struct ReadingMaterial reading_material_table[TOTAL_READING_MATERIALS] = {
 
     /* RAP_MEN ("Rap Report") */ {
         /* TITLE ---------------------------------------------------------- */
-            "A Certain Radio Station",
+            "某个电台节目",
         /* BODY ----------------------------------------------------------- */
             "Hey there! I'm DJ MON-K!\n"
             "We've got a couple of wonderful guests here today.\n"
@@ -355,7 +248,7 @@ struct ReadingMaterial reading_material_table[TOTAL_READING_MATERIALS] = {
 
     /* BON_ODORI ("Lyrics - The Bon Odori") */ {
         /* TITLE ---------------------------------------------------------- */
-            "Lyrics Card ①",
+            "歌词卡片①",
         /* BODY ----------------------------------------------------------- */
             "The☆Bon Odori\n"
             "\n"
@@ -427,50 +320,9 @@ struct ReadingMaterial reading_material_table[TOTAL_READING_MATERIALS] = {
 
     /* REMIX3 ("Lyrics - Honey Sweet Angel of Love") */ {
         /* TITLE ---------------------------------------------------------- */
-            "Lyrics Card ②",
+            "歌词卡片②",
         /* BODY ----------------------------------------------------------- */
-            "Honey Sweet Angel of Love\n"
-            "\n"
-            "English Vocals: Bellajenna\n"
-            "Japanese Vocals: Ami Tokito\n"
-            "Lyrics/Music: Tsunku♂\n"
-            "Arrangement: Hideyuki \"Daichi\" Suzuki\n"
-            "Translation: castIeRook, Mizuka Lover\n"
-            "\n"
-            "(This song appears in Remix 3.)\n"
-            "Love has a charming flow\n"
-            "Love has mysterious glow\n"
-            "Love's many shapes and degrees\n"
-            "Love's many small subtleties\n"
-            "\n"
-            "My honey sweet angel\n"
-            "\n"
-            "\n"
-            "\n"
-            "Whenever I hear you say\n"
-            "\"I love you\" everyday,\n"
-            "Sometimes I can't tell what you mean\n"
-            "\n"
-            "If I read into what you say,\n"
-            "Put it another way,\n"
-            "Somehow it's like you mean it now\n"
-            "You know?\n"
-            "\n"
-            "Love that tastes of raspberry\n"
-            "Sweet and sour too\n"
-            "\n"
-            "That's just like how we are together, don't you see?\n"
-            "\n"
-            "I love you!\n"
-            "\n"
-            "\n"
-            "\n"
-            "Love has a charming flow\n"
-            "Love has mysterious glow\n"
-            "Love's many shapes and degrees\n"
-            "Love's many small subtleties\n"
-            "\n"
-            "My honey sweet angel",
+            "恋爱的Honey Sweet～Angel\n演唱：時東ぁみ\n作词/作曲：淳君\n编曲：鈴木Daichi秀行\n是爱情的魅力 是爱情不思议\n是爱情形式不移 是爱的nuance\nHoney Sweet～Angel\n反过来说的话 「温情」是什么呀！\n我可 是完全 不 明白 啊\n而且另一方面 再换一个说法\n温情 好像是 简单的 喜欢把\n酸酸甜甜像品味 草莓牛奶滋味\n就那种感觉过后 在我们之间\nI LOVE YOU\n是爱情的魅力 是爱情不思议\n是爱情形式不移 是爱的nuance\nHoney Sweet～Angel",
         /* STYLE ---------------------------------------------------------- */
             /* GFX */ reading_style_sea_gfx_table,
             /* BGM */ &reading_style_sea_bgm
@@ -479,7 +331,7 @@ struct ReadingMaterial reading_material_table[TOTAL_READING_MATERIALS] = {
 
     /* REMIX5 ("Lyrics - WISH Can't Wait For You") */ {
         /* TITLE ---------------------------------------------------------- */
-            "Lyrics Card ③",
+            "歌词卡片③",
         /* BODY ----------------------------------------------------------- */
             "WISH - Can't Wait for You\n"
             "\n"
@@ -545,7 +397,7 @@ struct ReadingMaterial reading_material_table[TOTAL_READING_MATERIALS] = {
 
     /* REMIX8 ("The Final Letter") */ {
         /* TITLE ---------------------------------------------------------- */
-            "Final Words",
+            "最后的通告",
         /* BODY ----------------------------------------------------------- */
             "You received these final words from\n"
             "the Rhythm League.\n"
@@ -597,39 +449,9 @@ struct ReadingMaterial reading_material_table[TOTAL_READING_MATERIALS] = {
 
     /* NINJA_BODYGUARD ("The Ninja Scroll") */ {
         /* TITLE ---------------------------------------------------------- */
-            "Ninja Scroll",
+            "忍者卷轴",
         /* BODY ----------------------------------------------------------- */
-            "I'm Tanaka. It's nice to meet you.\n"
-            "So, the other day I found a bizarre scroll in the back of our storage.\n"
-            "Written was the following:\n"
-            "\n"
-            "\"To you who reads this: you did not come across\n"
-            "this scroll by chance."
-            "\nI used the powers of ninjutsu to ensure that it would reach you. Do you understand?\n"
-            "Indeed, the writer of this scroll is not only a ninja,\n"
-            "but your ancestor.\n"
-            "\n"
-            "The other day, I protected my lord from a storm\n"
-            "of arrows. I risked my life for him.\n"
-            "\n"
-            "The night following this daunting task, a dream came\n"
-            "to me. I saw a young man. A discontented young man\n"
-            "with his back against the world.\n"
-            "According to our fortune teller, that young man is you.\n"
-            "\n"
-            "Much like me, you risk your life to protect someone.\n"
-            "A young woman.\n"
-            "She too is said to be a descendant of my lord.\n"
-            "\n"
-            "I know not if you can comprehend this scroll, but\n"
-            "if so, I ask only that you continue to protect her.\"\n"
-            "\n"
-            "Now, there actually is a woman in my heart.\n"
-            "The other day, I saved her from a slingshot attack.\n"
-            "I put my life on the line for her.\n"
-            "\n"
-            "Who knows what could happen next?\n"
-            "My ancestor's ninjutsu might just help in a pinch one day.",
+            "各位，初次见面。我叫田中。前阵子，我在后头的仓库里找到了一卷古老的卷轴。上面是这么写的。\n“看到这卷轴的你啊。你并不是偶然找到它的。为了让它一定会被你找到，我早已施下了忍术。明白吗？没错，写下这些话的我是一名忍者，同时也是你的祖先。\n前些日子，我从箭雨之中保护了我的主人，也就是主公。当然，是拼了命去守护。完成那桩大事的那一夜，我做了一个梦。梦里有个年轻男子。那是个背离世俗、桀骜不驯的年轻人。根据算命婆婆所说，那个年轻人，似乎就是你。而且你也像我一样，为了守护某个人而拼上性命。是个女性。据说，那位女性正是主公的后代。你忽然看到这样的卷轴，可能一时半会儿也没什么真实感，但我还是希望，你能一直守护着那位女性。”\n如今，我心里确实有这样一位女性。她就是前些天差点遭人用弹弓瞄准射击，被我拼命救下的那位。虽说我和她今后未必会怎么样，不过这次，我倒想乖乖中一回祖先的忍术……",
         /* STYLE ---------------------------------------------------------- */
             /* GFX */ reading_style_cherry_gfx_table,
             /* BGM */ &reading_style_cherry_bgm
@@ -638,7 +460,7 @@ struct ReadingMaterial reading_material_table[TOTAL_READING_MATERIALS] = {
 
     /* TOSS_BOYS ("Rhythm Stand-Up") */ {
         /* TITLE ---------------------------------------------------------- */
-            "Rhythm Stand-Up",
+            "节奏漫才",
         /* BODY ----------------------------------------------------------- */
             "Yellow: Hello, I'm Yellow!\n"
             "Blue: Hello, I'm Blue!\n"
@@ -707,7 +529,7 @@ struct ReadingMaterial reading_material_table[TOTAL_READING_MATERIALS] = {
 
     /* FAN_MAIL ("Fan Mailbag") */ {
         /* TITLE ---------------------------------------------------------- */
-            "Voices of Joy",
+            "喜悦来信",
         /* BODY ----------------------------------------------------------- */
             "We've received many letters from satisfied\n"
             #ifdef PARADISE
@@ -757,7 +579,7 @@ struct ReadingMaterial reading_material_table[TOTAL_READING_MATERIALS] = {
 
     /* RHYTHM_FORMULA ("The Rhythm Formula") */ {
         /* TITLE ---------------------------------------------------------- */
-            "Understanding Rhythm",
+            "一看就懂！节奏公式",
         /* BODY ----------------------------------------------------------- */
             "\001C" "\0032" "\001m" "\n"
             "\n"
@@ -792,7 +614,7 @@ struct ReadingMaterial reading_material_table[TOTAL_READING_MATERIALS] = {
 
     /* RHYTHM_DIAGNOSIS ("Rhythm Diagnosis") */ {
         /* TITLE ---------------------------------------------------------- */
-            "Rhythm Type Diagnosis",
+            "节奏感类型测试",
         /* BODY ----------------------------------------------------------- */
             "\001C" "\0031" "\001m" "Rhythm Diagnosis\n"
             "\0030" "\001s" "\n"
@@ -1009,7 +831,7 @@ struct ReadingMaterial reading_material_table[TOTAL_READING_MATERIALS] = {
 
     /* RHYTHM_POEM ("Rhythm Poem Digest") */ {
         /* TITLE ---------------------------------------------------------- */
-            "Rhythm Poem Collection",
+            "节奏诗集",
         /* BODY ----------------------------------------------------------- */
             "\001C" "\0031" "\001m" "To Nurture\n"
             "\n"
@@ -1045,7 +867,7 @@ struct ReadingMaterial reading_material_table[TOTAL_READING_MATERIALS] = {
 
     /* RHYTHM_HAIKU ("Rhythm Haiku Folio") */ {
         /* TITLE ---------------------------------------------------------- */
-            "Rhythm Haiku Collection",
+            "节奏俳句集",
         /* BODY ----------------------------------------------------------- */
             "\n"
             "\001L" "\0030" "\001s" "Let us exercise\n"

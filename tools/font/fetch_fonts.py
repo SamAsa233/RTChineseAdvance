@@ -14,9 +14,12 @@ import subprocess
 
 ROOT = Path(__file__).resolve().parent / "third_party"
 SOURCES = {
-    "fusion-10.zip": "https://github.com/TakWolf/fusion-pixel-font/releases/download/2026.09.01/fusion-pixel-font-10px-proportional-bdf-v2026.09.01.zip",
-    "fusion-12.zip": "https://github.com/TakWolf/fusion-pixel-font/releases/download/2026.09.01/fusion-pixel-font-12px-proportional-bdf-v2026.09.01.zip",
-    "unifont.hex.gz": "https://unifoundry.com/pub/unifont/unifont-17.0.05/font-builds/unifont-17.0.05.hex.gz",
+    "fusion-10.zip": ("https://github.com/TakWolf/fusion-pixel-font/releases/download/2026.09.01/fusion-pixel-font-10px-proportional-bdf-v2026.09.01.zip",
+                      "5aa9d46e5ddb0d11d0406426a47922d45bf119edf819cbf2dab5438006990705"),
+    "fusion-12.zip": ("https://github.com/TakWolf/fusion-pixel-font/releases/download/2026.09.01/fusion-pixel-font-12px-proportional-bdf-v2026.09.01.zip",
+                      "f5a2e2326857eded4159f361de7f85dffc31384c20bdeb7e4d41d91e4043c563"),
+    "unifont.hex.gz": ("https://unifoundry.com/pub/unifont/unifont-17.0.05/font-builds/unifont-17.0.05.hex.gz",
+                       "2ae5311c8e123e9e85f5331cd012aa99757071df23243f1487fdbf8f3acd86be"),
 }
 
 
@@ -27,22 +30,37 @@ def atomic_bytes(path: Path, data: bytes) -> None:
     os.replace(temp, path)
 
 
+def fetch_verified(path: Path, url: str, digest: str) -> None:
+    if path.exists() and hashlib.sha256(path.read_bytes()).hexdigest() == digest:
+        return
+    try:
+        with urlopen(url, timeout=120) as response:
+            data = response.read()
+        if hashlib.sha256(data).hexdigest() != digest:
+            raise ValueError('download checksum mismatch')
+    except (OSError, ValueError):
+        temp = path.with_name(path.name + '.download')
+        try:
+            subprocess.run(['curl', '--fail', '--location', '--silent', '--show-error',
+                            url, '--output', str(temp)], check=True)
+            data = temp.read_bytes()
+        finally:
+            temp.unlink(missing_ok=True)
+        if hashlib.sha256(data).hexdigest() != digest:
+            raise ValueError(f'checksum mismatch for {path.name}')
+    atomic_bytes(path, data)
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--dir", type=Path, default=ROOT)
     args = parser.parse_args()
     root = args.dir
     root.mkdir(parents=True, exist_ok=True)
-    for name, url in SOURCES.items():
+    for name, (url, digest) in SOURCES.items():
         path = root / name
-        if not path.exists() or (name.endswith('.gz') and path.read_bytes()[:2] != b'\x1f\x8b'):
-            with urlopen(url, timeout=120) as response:
-                atomic_bytes(path, response.read())
-        if name.endswith('.gz') and path.read_bytes()[:2] != b'\x1f\x8b':
-            subprocess.run(["curl", "--fail", "--location", "--silent", "--show-error", url, "--output", str(path)], check=True)
-            if path.read_bytes()[:2] != b'\x1f\x8b':
-                raise ValueError(f"invalid gzip download: {url}")
-        print(name, len(path.read_bytes()), hashlib.sha256(path.read_bytes()).hexdigest())
+        fetch_verified(path, url, digest)
+        print(name, len(path.read_bytes()), digest)
     for pixel_size in (10, 12):
         with ZipFile(root / f"fusion-{pixel_size}.zip") as archive:
             names = archive.namelist()

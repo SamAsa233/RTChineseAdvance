@@ -171,6 +171,25 @@ def build(size, required, fusion, unifont, out, report, keep):
     print(size, dict(counts), "bbox", bbox.most_common(1), "width", width_hist.most_common(1))
 
 
+def add_em_dash(size, fusion, out):
+    """Fill U+2014, absent from the pre-existing general punctuation font."""
+    height = 16 if size == 'large' else 12
+    if size == 'large':
+        rows = [[int(y == 8 and x < 15) for x in range(16)] for y in range(height)]
+        width = 15
+    else:
+        rows, width = bdf_canvas(fusion[0x2014], height, 9)
+    index = 0x2014 - 0x2000
+    base = out / size / f'{size}_general_punctuation_2000_206F.bin'
+    spacing = out / size / f'{size}_spacing_general_punctuation_2000_206F.bin'
+    glyphs = bytearray(base.read_bytes())
+    widths = bytearray(spacing.read_bytes())
+    glyphs[index * height * 2:(index + 1) * height * 2] = encode_glyph(rows)
+    widths[index] = width
+    atomic_write(base, glyphs)
+    atomic_write(spacing, widths)
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--size", choices=("small", "medium", "large", "all"), default="all")
@@ -185,6 +204,7 @@ def main():
     for size in (("small", "medium", "large") if args.size == "all" else (args.size,)):
         fusion = read_bdf(THIRD / f"fusion-{10 if size == 'small' else 12}.bdf")
         build(size, required, fusion, unifont, args.out, args.report, args.keep_existing)
+        add_em_dash(size, fusion, args.out)
 
 
 if __name__ == "__main__":

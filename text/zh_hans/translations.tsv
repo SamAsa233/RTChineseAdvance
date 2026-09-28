@@ -169,16 +169,16 @@ data/scenes/cafe/dialogue.c:cafe_dialogue_rhythm_test[4]	data/scenes/cafe/dialog
 "	final	
 data/scenes/cafe/dialogue.c:cafe_dialogue_rhythm_test[8]	data/scenes/cafe/dialogue.c	cafe_dialogue_rhythm_test[8]	\nThat second test gives me quite\na bit of trouble.\n\n	"那个第二项测试呀，
 我怎么也做不好呢。"	final	
-data/scenes/cafe/dialogue.c:cafe_dialogue_shouts_cheer[0]	data/scenes/cafe/dialogue.c	cafe_dialogue_shouts_cheer[0]	\0032\001l\0051\0015\n\nGo for it!\0030\001s\0054\0018	加油啊！	final	control codes need review
-data/scenes/cafe/dialogue.c:cafe_dialogue_shouts_cheer[16]	data/scenes/cafe/dialogue.c	cafe_dialogue_shouts_cheer[16]	\0032\001l\0051\0015\n\nGive it your all!\0030\001s\0054\0018	冲呀！	final	control codes need review
-data/scenes/cafe/dialogue.c:cafe_dialogue_shouts_cheer[27]	data/scenes/cafe/dialogue.c	cafe_dialogue_shouts_cheer[27]	\0032\001l\0051\0015\n\nKeep going!\0030\001s\0054\0018	上啊上啊！	final	control codes need review
-data/scenes/cafe/dialogue.c:cafe_dialogue_shouts_cheer[38]	data/scenes/cafe/dialogue.c	cafe_dialogue_shouts_cheer[38]	\0032\001l\0051\0015\n\nGood luck!\0030\001s\0054\0018	祝你好运！	final	control codes need review
-data/scenes/cafe/dialogue.c:cafe_dialogue_shouts_cheer[49]	data/scenes/cafe/dialogue.c	cafe_dialogue_shouts_cheer[49]	\0032\001l\0051\0015\n\nI'm impressed!\0030\001s\0054\0018	太让人感动啦！	final	control codes need review
-data/scenes/cafe/dialogue.c:cafe_dialogue_shouts_praise[0]	data/scenes/cafe/dialogue.c	cafe_dialogue_shouts_praise[0]	\0032\001l\0051\0015\n\nThat's great!\0030\001s\0054\0018	这也太厉害了吧!!	final	control codes need review
-data/scenes/cafe/dialogue.c:cafe_dialogue_shouts_praise[16]	data/scenes/cafe/dialogue.c	cafe_dialogue_shouts_praise[16]	\0032\001l\0051\0015\n\nAmazing!\0030\001s\0054\0018	挺有本事的嘛!!	final	control codes need review
-data/scenes/cafe/dialogue.c:cafe_dialogue_shouts_praise[27]	data/scenes/cafe/dialogue.c	cafe_dialogue_shouts_praise[27]	\0032\001l\0051\0015\n\nCongratulations!\0030\001s\0054\0018	恭喜啦!!	final	control codes need review
-data/scenes/cafe/dialogue.c:cafe_dialogue_shouts_praise[38]	data/scenes/cafe/dialogue.c	cafe_dialogue_shouts_praise[38]	\0032\001l\0051\0015\n\nGreat job!\0030\001s\0054\0018	干得漂亮!!	final	control codes need review
-data/scenes/cafe/dialogue.c:cafe_dialogue_shouts_praise[49]	data/scenes/cafe/dialogue.c	cafe_dialogue_shouts_praise[49]	\0032\001l\0051\0015\n\nI can't believe it!\0030\001s\0054\0018	难以置信!!	final	control codes need review
+data/scenes/cafe/dialogue.c:cafe_dialogue_shouts_cheer[0]	data/scenes/cafe/dialogue.c	cafe_dialogue_shouts_cheer[0]	\0032\001l\0051\0015\n\nGo for it!\0030\001s\0054\0018	\0032\001l\0051\0015加油啊！\0030\001s\0054\0018	final	
+data/scenes/cafe/dialogue.c:cafe_dialogue_shouts_cheer[16]	data/scenes/cafe/dialogue.c	cafe_dialogue_shouts_cheer[16]	\0032\001l\0051\0015\n\nGive it your all!\0030\001s\0054\0018	\0032\001l\0051\0015冲呀！\0030\001s\0054\0018	final	
+data/scenes/cafe/dialogue.c:cafe_dialogue_shouts_cheer[27]	data/scenes/cafe/dialogue.c	cafe_dialogue_shouts_cheer[27]	\0032\001l\0051\0015\n\nKeep going!\0030\001s\0054\0018	\0032\001l\0051\0015上啊上啊！\0030\001s\0054\0018	final	
+data/scenes/cafe/dialogue.c:cafe_dialogue_shouts_cheer[38]	data/scenes/cafe/dialogue.c	cafe_dialogue_shouts_cheer[38]	\0032\001l\0051\0015\n\nGood luck!\0030\001s\0054\0018	\0032\001l\0051\0015祝你好运！\0030\001s\0054\0018	final	
+data/scenes/cafe/dialogue.c:cafe_dialogue_shouts_cheer[49]	data/scenes/cafe/dialogue.c	cafe_dialogue_shouts_cheer[49]	\0032\001l\0051\0015\n\nI'm impressed!\0030\001s\0054\0018	\0032\001l\0051\0015太让人感动啦！\0030\001s\0054\0018	final	
+data/scenes/cafe/dialogue.c:cafe_dialogue_shouts_praise[0]	data/scenes/cafe/dialogue.c	cafe_dialogue_shouts_praise[0]	\0032\001l\0051\0015\n\nThat's great!\0030\001s\0054\0018	\0032\001l\0051\0015这也太厉害了吧!!\0030\001s\0054\0018	final	
+data/scenes/cafe/dialogue.c:cafe_dialogue_shouts_praise[16]	data/scenes/cafe/dialogue.c	cafe_dialogue_shouts_praise[16]	\0032\001l\0051\0015\n\nAmazing!\0030\001s\0054\0018	\0032\001l\0051\0015挺有本事的嘛!!\0030\001s\0054\0018	final	
+data/scenes/cafe/dialogue.c:cafe_dialogue_shouts_praise[27]	data/scenes/cafe/dialogue.c	cafe_dialogue_shouts_praise[27]	\0032\001l\0051\0015\n\nCongratulations!\0030\001s\0054\0018	\0032\001l\0051\0015恭喜啦!!\0030\001s\0054\0018	final	
+data/scenes/cafe/dialogue.c:cafe_dialogue_shouts_praise[38]	data/scenes/cafe/dialogue.c	cafe_dialogue_shouts_praise[38]	\0032\001l\0051\0015\n\nGreat job!\0030\001s\0054\0018	\0032\001l\0051\0015干得漂亮!!\0030\001s\0054\0018	final	
+data/scenes/cafe/dialogue.c:cafe_dialogue_shouts_praise[49]	data/scenes/cafe/dialogue.c	cafe_dialogue_shouts_praise[49]	\0032\001l\0051\0015\n\nI can't believe it!\0030\001s\0054\0018	\0032\001l\0051\0015难以置信!!\0030\001s\0054\0018	final	
 data/scenes/cafe/dialogue.c:cafe_dialogue_speaking_with_music[0]	data/scenes/cafe/dialogue.c	cafe_dialogue_speaking_with_music[0]	\nI heard you can hold a conversation\nwith only rhythm.\n\n	"说起来，
 你知道节奏也能拿来对话吗？
 "	final	
@@ -195,6 +195,221 @@ data/scenes/cafe/dialogue.c:cafe_dialogue_speaking_with_music[4]	data/scenes/caf
 data/scenes/cafe/dialogue.c:cafe_dialogue_speaking_with_music[7]	data/scenes/cafe/dialogue.c	cafe_dialogue_speaking_with_music[7]	\nLike, bang out a message into one\nof those taiko drums, and you could\ncommunicate acres apart.	"听说他们会用响亮的鼓声
 打出节奏，跟远处的人
 交流哦。"	final	
+data/scenes/data_room/reading_material.inc.c:reading_air_batter	data/scenes/data_room/reading_material.inc.c	reading_air_batter	Spaceball Report	空中击球手快报	final	
+data/scenes/data_room/reading_material.inc.c:reading_air_batter_story	data/scenes/data_room/reading_material.inc.c	reading_air_batter_story	We're here in outer space for an exclusive interview\nwith the spacefaring baseball player, the\nSpace Batter!\n\nQ. How is this season looking so far?\nA. I've been eating rice balls, so it's right on the mark!\n\nQ. What would you say your goal is?\nA. To not miss any rice balls!\nQ. You have a girlfriend, right?\nA. Yes, I do.\n\nQ. What would you say is her best trait?\nA. She makes a mean rice ball!\n\nQ. Why do you wear masks in the middle of games?\nA. Hm? What do you mean?\n\nQ. Like that rabbit uniform you wore, for instance?\nA. I have no idea what you're talking about.\n\nQ. Please answer the question!\nA. I'll have to take my leave now. Excuse me.\n\nHe's just left his seat!\nIt seems there's more to this than he's letting on.\nThat concludes this interstellar interview.	"我们现在来采访一下正在宇宙空间活跃中的空中击球手先生！
+Q．这个赛季状态怎么样？
+A．因为我一直都在吃饭团，状态好极了！
+Q．目标是什么？
+A．绝不能断了饭团！就是这个。
+Q．有女朋友吗？
+A．有。
+Q．她最拿手的料理是什么？
+A．饭团！
+Q．为什么在游戏里要戴那种头套呢？
+A．你在说什么？
+Q．那为什么会穿兔子之类的服装呢？
+A．不知道。
+Q．请正面回答问题！
+A．时间到了，先失陪了。
+说完这些，空中击球手先生就离席了。看来其中似乎另有隐情。以上，就是来自宇宙空间的报道。"	final	
+data/scenes/data_room/reading_material.inc.c:reading_cafe_owner	data/scenes/data_room/reading_material.inc.c	reading_cafe_owner	From the Barista	听店长讲讲	final	
+data/scenes/data_room/reading_material.inc.c:reading_cafe_story	data/scenes/data_room/reading_material.inc.c	reading_cafe_story	I own and operate a café.\nI guess you could call me the Barista.\nAnyway, it's going well, thanks to the regulars.\nAnd, well, just to let you know, I'm a dog.\n\nMany of my customers love listening to music.\nA lot of them have especially good rhythm,\nand a few have even achieved a full set of Perfects!\nI'm always amazed by them!\nI may look all professional when I run my café,\nbut I'll be honest, I'm really putting on a front.\n\nSee, it's a little embarrassing, but when I'm off the\nclock, I'm always jamming out with these little\ndog-sized headphones!\n\nWhat can I say? I need a little flow wherever I go.\nIt's complicated. Haha...\nI do go out from time to time, so if you happen to\nrun into me... please pet me!\n\nSee you around!	"我经营着一家咖啡店。嗯，简单来说，就是这家店的老板。店里的生意嘛，托老顾客们的福，还算过得去。啊，对了，有件事得先说清楚，我是一只狗。
+来我们店里的客人，多半都很喜欢音乐呢。尤其是不少人对节奏特别讲究。甚至还有客人完成过好多次“完美挑战”，真是让人吃惊哦！
+不过嘛，平时我虽然像这样经营着咖啡店，其实这只是我的伪装。本来的我嘛……说出来怪不好意思的，其实是戴着狗狗专用耳机，到处撒欢的那种！果然啊，少了那股劲头，日子就过不下去呢。真是拿自己没办法。哈哈哈。
+我也常常会去各种地方玩，如果你看到我，记得摸摸我哦～！
+那，下回见。"	final	
+data/scenes/data_room/reading_material.inc.c:reading_diagnosis	data/scenes/data_room/reading_material.inc.c	reading_diagnosis	\001C\0031\001mRhythm Diagnosis\n\0030\001s\nLet's diagnose your sense of rhythm.\nChoose the ones that apply to you!\n\nI think that I have a good sense of rhythm.\nYes - Go to Page 2!\nNo - Go to Page 3!\n-1-\n\nBetween Rock and Pop music, I like...\n\n\n\nRock - Go to Page 4!\nPop - Go to Page 5!\n\n-2-\n\nBetween Jazz and Classical music, I like...\n\n\n\nJazz - Go to Page 6!\nClassical - Go to Page 7!\n\n-3-\n\nI think you need a good sense of rhythm to dance well.\n\n\n\nYes - Go to Page 8!\nNo - Go to Page 9!\n\n-4-\n\nI think that if you can hear good rhythm,\nthen you can express it.\n\n\nYes - Go to Page 10!\nNo - Go to Page 11!\n\n-5-\n\nI don't think anyone has a sense of rhythm at all.\n\n\n\nYes - Go to Page 9!\nNo - Go to Page 8!\n\n-6-\n\nI think that a sense of rhythm is inherent,\nmeaning you can't improve it with training.\n\n\nYes - Go to Page 10!\nNo - Go to Page 11!\n\n-7-\n\nI think that your sense of rhythm is cooler\nwhen you have flow.\n\n\nYes - Go to Page 12!\nNo - Go to Page 13!\n\n-8-\n\nI think that a sense of rhythm and\nflow are just about the same thing.\n\n\nYes - Go to Page 14!\nNo - Go to Page 15!\n\n-9-\n\nI don't think you can become popular just by\nhaving a good sense of rhythm.\n\n\nYes - Go to Page 16!\nNo - Go to Page 17!\n\n-10-\n\nI think that having a good sense of rhythm\nmakes it easy to mask being tone deaf.\n\n\nYes - Go to Page 18!\nNo - Go to Page 19!\n\n-11-\n\nI think that a good sense of rhythm is easier\nto acquire at a young age.\n\n\nYes - Go to Page 23!\nNo - Go to Page 21!\n\n-12-\n\nI don't think you can improve your\nsense of rhythm after becoming an adult.\n\n\nYes - Go to Page 21!\nNo - Go to Page 22!\n\n-13-\n\nI think that rhythm and\neveryday life are unrelated.\n\n\nYes - Go to Page 23!\nNo - Go to Page 22!\n\n-14-\n\nI think that even a sense of rhythm that you've had\nfor over three years can quickly be lost\nif you're not mindful of it.\n\nYes - Go to Page 23!\nNo - Go to Page 20!\n\n-15-\n\nI think that your sense of rhythm will\nimprove if you train long and hard.\n\n\nYes - Go to Page 23!\nNo - Go to Page 22!\n\n-16-\n\nI think that your sense of rhythm can improve\nin just 30 seconds if you stay mindful of it.\n\n\nYes - Go to Page 22!\nNo - Go to Page 23!\n\n-17-\n\nI don't think it's a good thing to\nalways feel a sense of rhythm.\n\n\nYes - Go to Page 23!\nNo - Go to Page 20!\n\n-18-\n\nI think that a good sense of rhythm is\nacquired by repetition, not theory.\n\n\nYes - Go to Page 23!\nNo - Go to Page 21!\n\n-19-\n\001CYour Sense of Rhythm:\n\0031\001mFlow Type\0030\001s\n\n\001CYou have a good attitude about your sense of rhythm.\nYou might not have confidence in your\nsense of rhythm quite yet, but you could probably\nuse rhythm to lead an enjoyable life.\nEnjoy getting into the flow!\n\001C-20-\n\001CYour Sense of Rhythm:\n\0031\001mShy Type\0030\001s\n\n\001CYou're nervous about your sense of rhythm, huh?\nEveryone has a sense of rhythm.\nIf you live life being mindful of the rhythms\naround you, your sense of rhythm can only grow.\nMake sure to relax.\n\001C-21-\n\001CYour Sense of Rhythm:\n\0031\001mCarefree Type\0030\001s\n\n\001CYou should learn the difference between a sense\nof rhythm and flow. A good flow can only go so far\nif your sense of rhythm is poor.\nSteady your sense of rhythm and\nyour flow could improve everyone's mood.\n\001C-22-\n\001CYour Sense of Rhythm:\n\0031\001mCatchy Type\0030\001s\n\n\001CYou may have a hard time grasping rhythm.\nIf you find ways to incorporate your sense of rhythm\ninto your daily routine,\nperhaps it can grow and improve.\nIt might even make things more fun that way!\n\001C-23-\n	"来测一测你的节奏感类型。
+请选择符合你的选项！
+你觉得自己算是有节奏感的人。
+YES 前往第 2 页！
+NO 前往第 3 页！
+-1-
+摇滚和流行乐，你更喜欢…
+摇滚 前往第 4 页！
+流行乐 前往第 5 页！
+-2-
+爵士和古典，你更喜欢…
+爵士 前往第 6 页！
+古典 前往第 7 页！
+-3-
+你觉得没有节奏感就跳不了舞。
+YES 前往第 8 页！
+NO 前往第 9 页！
+-4-
+你觉得只要听得出节奏感，就能表现出来。
+YES 前往第 10 页！
+NO 前往第 11 页！
+-5-
+你觉得世上不存在完全没有节奏感的人。
+YES 前往第 9 页！
+NO 前往第 8 页！
+-6-
+你觉得节奏感是天生的，
+无法靠训练成长。
+YES 前往第 10 页！
+NO 前往第 11 页！
+-7-
+你觉得节奏感这东西，越有感觉越帅。
+YES 前往第 12 页！
+NO 前往第 13 页！
+-8-
+你觉得节奏感和“有感觉”，几乎是同一回事。
+YES 前往第 14 页！
+NO 前往第 15 页！
+-9-
+你觉得就算节奏感好，也不会受欢迎。
+YES 前往第 16 页！
+NO 前往第 17 页！
+-10-
+你觉得只要节奏感好，
+听起来就不太容易跑调。
+YES 前往第 18 页！
+NO 前往第 19 页！
+-11-
+你觉得节奏感在年轻时更容易养成。
+YES 前往第 23 页！
+NO 前往第 21 页！
+-12-
+你觉得成年以后就没法再提升节奏感了。
+YES 前往第 21 页！
+NO 前往第 22 页！
+-13-
+你觉得节奏感和日常生活毫无关系。
+YES 前往第 23 页！
+NO 前往第 22 页！
+-14-
+你觉得即使花了三年以上培养出的节奏感，
+只要不持续去留意它，很快也会忘掉。
+YES 前往第 23 页！
+NO 前往第 20 页！
+-15-
+你觉得节奏感还是要靠刻意而严格的
+训练，才比较学得扎实。
+YES 前往第 23 页！
+NO 前往第 22 页！
+-16-
+你觉得只要有意识地去练，
+哪怕只有 30 分钟，节奏感也会变好。
+YES 前往第 22 页！
+NO 前往第 23 页！
+-17-
+你觉得节奏感这东西，
+一直去感受反而不好。
+YES 前往第 23 页！
+NO 前往第 20 页！
+-18-
+你觉得节奏感不是靠理解理论，
+而是靠反复练习掌握的。
+YES 前往第 23 页！
+NO 前往第 21 页！
+-19-
+你的节奏感类型
+律动十足型
+你对节奏感的看法很不错。就算现在还不太有自信，今后也一定能和节奏一起过上快乐的人生。尽情享受吧！
+-20-
+你的节奏感类型
+害羞型
+你是不是有点太怕“节奏感”这回事了呢？节奏感是每个人都拥有的东西。只要一边享受，一边一点点去留意节奏，节奏感会逐渐提升。放心吧。
+-21-
+你的节奏感类型
+容易来劲型
+如果你能更清楚地区分节奏感和“有感觉”之间的区别，那就更好了。就算再有感觉，要是最关键的节奏感不行，那股劲也只会白白空转，很可惜。只要把节奏感练扎实，你那股活力说不定能让大家都更开心哦！？
+-22-
+你的节奏感类型
+一板一眼型
+你可能把“节奏感”这件事看得太难了。试着更轻松地和节奏相处，让它自然融进日常生活里，说不定节奏感就会慢慢变好。那样一定也会更开心！
+-23-"	final	control codes need review
+data/scenes/data_room/reading_material.inc.c:reading_diagnosis_title	data/scenes/data_room/reading_material.inc.c	reading_diagnosis_title	Rhythm Type Diagnosis	节奏感类型测试	final	
+data/scenes/data_room/reading_material.inc.c:reading_final_notice	data/scenes/data_room/reading_material.inc.c	reading_final_notice	Final Words	最后的通告	final	
+data/scenes/data_room/reading_material.inc.c:reading_formula	data/scenes/data_room/reading_material.inc.c	reading_formula	Understanding Rhythm	一看就懂！节奏公式	final	
+data/scenes/data_room/reading_material.inc.c:reading_formula_content	data/scenes/data_room/reading_material.inc.c	reading_formula_content	\001C\0032\001m\n\nSense of rhythm ⊃ Flow\n\nSense of rhythm ≠ Flow\n\001L\0030\001s\n\001CExplanation: Flow is an element included in anyone's\nsense of rhythm, but not a sense of rhythm itself.\n\001C\0032\001m\n\n\n\nRhythm ≠ Sense of rhythm\n\n\001C\0030\001s\nExplanation: Rhythm is what ticks at a steady pace.\nA sense of rhythm is how you maintain that pace,\nexpressed naturally by way of flow.\n\001C\0031\001m\n\n\nGood dancing ≠ Good sense of rhythm\n\001C\0030\001s\nExplanation: Someone who's a good dancer does not\ninherently have a good sense of rhythm.	"节奏感 ⊃ 律动
+节奏感 ≠ 律动
+解说：“律动”是构成节奏感的要素之一，并不等同于节奏感本身。  
+节奏 ≠ 节奏感
+解说：节奏是用来划分时间的；节奏感则是通过律动来表现、感受，或自然而然流露出来的东西。  
+舞跳得好 ≠ 节奏感好
+解说：舞跳得好的人，并不一定就代表“节奏感很好”。"	final	control codes need review
+data/scenes/data_room/reading_material.inc.c:reading_haiku_title	data/scenes/data_room/reading_material.inc.c	reading_haiku_title	Rhythm Haiku Collection	节奏俳句集	final	
+data/scenes/data_room/reading_material.inc.c:reading_hair_plucking	data/scenes/data_room/reading_material.inc.c	reading_hair_plucking	Plucking Letter	拔毛来稿	final	
+data/scenes/data_room/reading_material.inc.c:reading_hair_story	data/scenes/data_room/reading_material.inc.c	reading_hair_story	I'm an old gentleman who maintains a vegetable\nfarm.\n\nSo, one day, all my vegetables just started\ngrowing hair!\nIt was so creepy! I couldn't sell them like that!\n\nI tried plucking the hairs, but I just couldn't get them\nall nice and smooth like a vegetable ought to be.\nWell, to lighten up the mood, I put on some music.\nBefore I knew it, I found myself plucking to the beat.\nAnd... I plucked them clean! It's even a little fun!\n\nThe power of music is really something else!\nYou've got to try plucking hairs off of your\nvegetables!\nI can't recommend it enough!	我是个种菜的大叔。最近啊，我家的蔬菜居然开始长胡子了！又诡异又吓人，这样根本卖不出去，所以我就想把它们的胡子拔掉，可怎么拔都拔不干净。我正发愁的时候，想着换换心情，就一边听音乐一边跟着节奏给蔬菜拔毛。结果居然！拔得干干净净！而且还莫名有点开心！音乐的力量真是太厉害了。大家也一定要试试看给蔬菜拔毛哦！	final	
+data/scenes/data_room/reading_material.inc.c:reading_horse_machine	data/scenes/data_room/reading_material.inc.c	reading_horse_machine	Horse Machine's Story	骑马机开发秘闻	final	
+data/scenes/data_room/reading_material.inc.c:reading_how_to_play	data/scenes/data_room/reading_material.inc.c	reading_how_to_play	How to play the game:\n\nWell, this is a pretty straightforward game.\nWhat can I really say...?\nOh, right, the idea is to play along to the music,\nso try to feel the flow when you play.\nThat's my advice!\n\nAnd that's about it. Pleasure to meet you, by the way!	"这款游戏的玩法
+该怎么说呢，这其实不是那种非得写上一大堆说明的复杂游戏哦～。所以，这里其实也没什么好写的啦。
+啊，对了，重点是要跟着音乐一起摇摆，所以放开来玩会更好！强烈推荐！
+差不多就是这样。请多关照～。"	final	
+data/scenes/data_room/reading_material.inc.c:reading_lyrics_1	data/scenes/data_room/reading_material.inc.c	reading_lyrics_1	The☆Bon Odori\n\nVocals: Ami Tokito\nLyrics/Music: Tsunku♂\nArrangement: Koichi Yuasa (The☆Bon Odori) /\nKaoru Okubo (The☆Bon Dance)\nTranslation: castIeRook, Mizuka Lover\n\n(This song appears in The☆Bon Odori.)\nHaa~\n            Hanabi agare ba~\nHaa~ Ah~\n            Kansei agaru~\n\nHaa~\n            Ninki agare ba~\nHaa~ Ah~\n            Kyuuryou agaru~\nMatsuri da wasshoi!\nNippon chuu ga wasshoi!\n\nSore hikkuri kaette Dondo pan pan\nHaa~ Bon Odori~\n\nHaa~\n            Ame ga agare ba~\n\nHaa~ Ah~\n            Yagura ni agaru~\n\nHora! Matsuri da wasshoi!\nKorezo made in JaPAN\n\nSore hikkuri kaette Dondo pan pan\nHaa~ Bon Odori~\n----------------------------------------------\nHaa~\n            Oh when the fireworks fly~\nHaa~ Ah~\n            Let's send our cheers to the sky~\n\nHaa~\n            If we perform for more eyes~\nHaa~ Ah~\n            We'll know our profits will rise~\nTime for celebration!\nAll throughout the nation!\n\nSo let's all turn around and Dondo pan pan\nHaa~ Bon Odori~\n\nHaa~\n            Oh when the rain clears away~\n\nHaa~ Ah~\n            Walk up the platform and play~\n\nCome on! Let's all cheer for Obon!\nThe one and only, that's made in JaPAN\n\nSo let's all turn around and Dondo pan pan\nHaa~ Bon Odori~\n	"The☆盂兰盆舞
+演唱：時東ぁみ
+作词/作曲：淳君
+哈～ 如果烟花绽放啦～
+哈～啊～ 大家都欢声笑语～
+哈～ 如果人气兴旺啊～
+哈～啊～ 大家有更多工资～
+整个日本 哇—咻—！
+在节日中 哇—咻—！
+嗖嘞 让我们转起圈来 咚咚嗙嗙
+哈～ 跳这盂兰盆舞～
+哈～ 如果雨停了的话～
+哈～啊～ 登上塔楼去眺望～
+看啊！盛大节日 哇—咻—！
+这就是 Made in Japan
+嗖嘞 让我们转起圈来 咚咚嗙嗙
+哈～ 跳这盂兰盆舞～"	draft	
+data/scenes/data_room/reading_material.inc.c:reading_lyrics_1_title	data/scenes/data_room/reading_material.inc.c	reading_lyrics_1_title	Lyrics Card ①	歌词卡片①	final	
+data/scenes/data_room/reading_material.inc.c:reading_lyrics_2	data/scenes/data_room/reading_material.inc.c	reading_lyrics_2	"Honey Sweet Angel of Love\n\nEnglish Vocals: Bellajenna\nJapanese Vocals: Ami Tokito\nLyrics/Music: Tsunku♂\nArrangement: Hideyuki \""Daichi\"" Suzuki\nTranslation: castIeRook, Mizuka Lover\n\n(This song appears in Remix 3.)\nLove has a charming flow\nLove has mysterious glow\nLove's many shapes and degrees\nLove's many small subtleties\n\nMy honey sweet angel\n\n\n\nWhenever I hear you say\n\""I love you\"" everyday,\nSometimes I can't tell what you mean\n\nIf I read into what you say,\nPut it another way,\nSomehow it's like you mean it now\nYou know?\n\nLove that tastes of raspberry\nSweet and sour too\n\nThat's just like how we are together, don't you see?\n\nI love you!\n\n\n\nLove has a charming flow\nLove has mysterious glow\nLove's many shapes and degrees\nLove's many small subtleties\n\nMy honey sweet angel"	"恋爱的Honey Sweet～Angel
+演唱：時東ぁみ
+作词/作曲：淳君
+编曲：鈴木Daichi秀行
+是爱情的魅力 是爱情不思议
+是爱情形式不移 是爱的nuance
+Honey Sweet～Angel
+反过来说的话 「温情」是什么呀！
+我可 是完全 不 明白 啊
+而且另一方面 再换一个说法
+温情 好像是 简单的 喜欢把
+酸酸甜甜像品味 草莓牛奶滋味
+就那种感觉过后 在我们之间
+I LOVE YOU
+是爱情的魅力 是爱情不思议
+是爱情形式不移 是爱的nuance
+Honey Sweet～Angel"	final	
+data/scenes/data_room/reading_material.inc.c:reading_lyrics_2_title	data/scenes/data_room/reading_material.inc.c	reading_lyrics_2_title	Lyrics Card ②	歌词卡片②	final	
+data/scenes/data_room/reading_material.inc.c:reading_lyrics_3_title	data/scenes/data_room/reading_material.inc.c	reading_lyrics_3_title	Lyrics Card ③	歌词卡片③	final	
+data/scenes/data_room/reading_material.inc.c:reading_manual	data/scenes/data_room/reading_material.inc.c	reading_manual	How to Play	使用说明书	final	
+data/scenes/data_room/reading_material.inc.c:reading_manzai	data/scenes/data_room/reading_material.inc.c	reading_manzai	Rhythm Stand-Up	节奏漫才	final	
+data/scenes/data_room/reading_material.inc.c:reading_marcha	data/scenes/data_room/reading_material.inc.c	reading_marcha	Squadmate Activity Log	行军活动记录	final	
+data/scenes/data_room/reading_material.inc.c:reading_marcha_story	data/scenes/data_room/reading_material.inc.c	reading_marcha_story	"April 16:\nI've enlisted in the Marcher group!\nI'm gonna give it my all and help everybody I can!\n\nApril 20:\nToday I marched out of line with the others.\nSarge gave me an earful for that one...\n\n\nApril 28:\nToday we were assigned to clean the front\nof the station. This pleasant old lady came by and\noffered me some candy for my hard work.\nThat made my whole day!\n\n\n\n\nMay 4:\nI've been pretty sluggish lately.\nIs this what they mean by \""spring fever\""?\nIf I don't shape up soon, I might get shipped out...\n\nMay 8:\nSomething's up with Sarge...\nYesterday, he told us that he's been dancing with\nsome rabbits up in outer space. Is he... okay?\nMay 16:\nRecently, I've been coming across other people\nwho look just like him...\nIt's got to be my imagination, right?\n\nMay 22:\nYou'll never believe it! Sarge was...\n\n\nThe log ends here.\nJust what could've been happening with Sarge?"	"4 月 16 日 今天正式入队！我要努力帮上大家的忙！
+4 月 20 日 今天踏步没跟大家踩齐，被队长骂了。
+4 月 28 日 今天在车站前打扫卫生。一位不认识的老奶奶说“谢谢你们打扫得这么干净”，还给了我糖。好开心！
+5 月 4 日 最近总觉得没精神。这就是所谓的五月病吗？再不打起精神，怕是要被大家落下了…
+5 月 8 日 队长有点不对劲…他说昨天在宇宙里跟兔子玩。真的没事吗…？
+5 月 16 日 最近总能看见跟队长一模一样的人。
+是我看错了吗？
+5 月 22 日 我看见了。队长他…
+活动记录到这里就结束了。
+队长身上究竟发生了什么！？"	final	
+data/scenes/data_room/reading_material.inc.c:reading_night_walk	data/scenes/data_room/reading_material.inc.c	reading_night_walk	Night Walk Information	夜空漫步情报	final	
+data/scenes/data_room/reading_material.inc.c:reading_ninja_scroll	data/scenes/data_room/reading_material.inc.c	reading_ninja_scroll	Ninja Scroll	忍者卷轴	final	
+data/scenes/data_room/reading_material.inc.c:reading_ninja_story	data/scenes/data_room/reading_material.inc.c	reading_ninja_story	"I'm Tanaka. It's nice to meet you.\nSo, the other day I found a bizarre scroll in the back of our storage.\nWritten was the following:\n\n\""To you who reads this: you did not come across\nthis scroll by chance.\nI used the powers of ninjutsu to ensure that it would reach you. Do you understand?\nIndeed, the writer of this scroll is not only a ninja,\nbut your ancestor.\n\nThe other day, I protected my lord from a storm\nof arrows. I risked my life for him.\n\nThe night following this daunting task, a dream came\nto me. I saw a young man. A discontented young man\nwith his back against the world.\nAccording to our fortune teller, that young man is you.\n\nMuch like me, you risk your life to protect someone.\nA young woman.\nShe too is said to be a descendant of my lord.\n\nI know not if you can comprehend this scroll, but\nif so, I ask only that you continue to protect her.\""\n\nNow, there actually is a woman in my heart.\nThe other day, I saved her from a slingshot attack.\nI put my life on the line for her.\n\nWho knows what could happen next?\nMy ancestor's ninjutsu might just help in a pinch one day."	"各位，初次见面。我叫田中。前阵子，我在后头的仓库里找到了一卷古老的卷轴。上面是这么写的。
+“看到这卷轴的你啊。你并不是偶然找到它的。为了让它一定会被你找到，我早已施下了忍术。明白吗？没错，写下这些话的我是一名忍者，同时也是你的祖先。
+前些日子，我从箭雨之中保护了我的主人，也就是主公。当然，是拼了命去守护。完成那桩大事的那一夜，我做了一个梦。梦里有个年轻男子。那是个背离世俗、桀骜不驯的年轻人。根据算命婆婆所说，那个年轻人，似乎就是你。而且你也像我一样，为了守护某个人而拼上性命。是个女性。据说，那位女性正是主公的后代。你忽然看到这样的卷轴，可能一时半会儿也没什么真实感，但我还是希望，你能一直守护着那位女性。”
+如今，我心里确实有这样一位女性。她就是前些天差点遭人用弹弓瞄准射击，被我拼命救下的那位。虽说我和她今后未必会怎么样，不过这次，我倒想乖乖中一回祖先的忍术……"	final	
+data/scenes/data_room/reading_material.inc.c:reading_poem	data/scenes/data_room/reading_material.inc.c	reading_poem	\001C\0031\001mTo Nurture\n\n\001C\0030\001sI have nurtured it,\nFor the day when it will learn to use its wings.\nIn the wake of a casual, everyday life,\nNaturally,\nEnjoyably,\nThat which is now only very, very small,\nMy sense of rhythm...\n\001C\0031\001mKarate Rhythm\n\001C\0030\001s\nHey! Baby! How's it going?\nThis beat is non-stop.\nHey! Baby! Listen to my phrase.\nI can give you\nthe sense of rhythm.\nOh, yeah.\nAwake, baby! Trust me!\nThis beat is non-stop!\nNew groove in your soul.\nOh, yeah!\nThis beat!\nYou are growing up well.\nHey, baby!\nHold onto your ambition.\nHey! Oh, yeah!\n	"《培养》
+我正在培养它。
+为了有朝一日，它能振翅高飞。
+在平淡无奇的日常生活之中，
+更自然地，
+更快乐地。
+如今还很渺小的，
+我的节奏感…
+Hey! Baby! How's it going?
+Oh, Yeah.
+Oh, Yeah!
+Hey, Baby!
+Hey! Oh, Yeah!"	final	control codes need review
+data/scenes/data_room/reading_material.inc.c:reading_poems_title	data/scenes/data_room/reading_material.inc.c	reading_poems_title	Rhythm Poem Collection	节奏诗集	final	
+data/scenes/data_room/reading_material.inc.c:reading_praise	data/scenes/data_room/reading_material.inc.c	reading_praise	Voices of Joy	喜悦来信	final	
+data/scenes/data_room/reading_material.inc.c:reading_radio	data/scenes/data_room/reading_material.inc.c	reading_radio	A Certain Radio Station	某个电台节目	final	
+data/scenes/data_room/reading_material.inc.c:reading_welcome	data/scenes/data_room/reading_material.inc.c	reading_welcome	Greetings!	欢迎来到节奏天国！	final	
 data/scenes/game_select/levels.inc.c:level_air_batter_1	data/scenes/game_select/levels.inc.c	level_air_batter_1	Spaceball	空中击球手	final	
 data/scenes/game_select/levels.inc.c:level_air_batter_1_desc	data/scenes/game_select/levels.inc.c	level_air_batter_1_desc	Ignore the camera's\nzooms! Make the ball\nzoom away! Don't blink!\nDon't wipe your tears!	"别在意镜头缩放！
 用心去击球！
@@ -710,6 +925,52 @@ data/scenes/results/score_results.c:score_results_default_comments[1]	data/scene
 data/scenes/results/score_results.c:score_results_default_comments[2]	data/scenes/results/score_results.c	score_results_default_comments[2]	Fairly average.	一般水平。	final	
 data/scenes/results/score_results.c:score_results_default_comments[3]	data/scenes/results/score_results.c	score_results_default_comments[3]	Getting there...	还差一点。	final	
 data/scenes/results/score_results.c:score_results_default_comments[4]	data/scenes/results/score_results.c	score_results_default_comments[4]	Hmm...Hm...	唔〜…	final	
+data/scenes/studio/songs.inc.c:song_air_batter	data/scenes/studio/songs.inc.c	song_air_batter	Spaceball	空中击球手	final	
+data/scenes/studio/songs.inc.c:song_baikin_hakase	data/scenes/studio/songs.inc.c	song_baikin_hakase	Sick Beats	细菌博士	final	
+data/scenes/studio/songs.inc.c:song_bari_bari_sannin_shu	data/scenes/studio/songs.inc.c	song_bari_bari_sannin_shu	The Snappy Trio	帅气帅气三人组	final	
+data/scenes/studio/songs.inc.c:song_bon_dance	data/scenes/studio/songs.inc.c	song_bon_dance	The☆Bon Dance	盆舞	final	
+data/scenes/studio/songs.inc.c:song_bon_odori	data/scenes/studio/songs.inc.c	song_bon_odori	The☆Bon Odori	The☆盂兰盆舞	final	
+data/scenes/studio/songs.inc.c:song_cosmo_dance	data/scenes/studio/songs.inc.c	song_cosmo_dance	Cosmic Dance	宇宙之舞	final	
+data/scenes/studio/songs.inc.c:song_game_select	data/scenes/studio/songs.inc.c	song_game_select	Game Select	游戏选择	final	
+data/scenes/studio/songs.inc.c:song_game_select_2	data/scenes/studio/songs.inc.c	song_game_select_2	Game Select 2	游戏选择２	final	
+data/scenes/studio/songs.inc.c:song_hanabi	data/scenes/studio/songs.inc.c	song_hanabi	Fireworks	烟火	final	
+data/scenes/studio/songs.inc.c:song_heibon	data/scenes/studio/songs.inc.c	song_heibon	OK	平凡	final	
+data/scenes/studio/songs.inc.c:song_high_level	data/scenes/studio/songs.inc.c	song_high_level	Superb	高水准	final	
+data/scenes/studio/songs.inc.c:song_hopping_road	data/scenes/studio/songs.inc.c	song_hopping_road	Bouncy Road	跳杆之路	final	
+data/scenes/studio/songs.inc.c:song_iai_giri	data/scenes/studio/songs.inc.c	song_iai_giri	Samurai Slice	居合斩	final	
+data/scenes/studio/songs.inc.c:song_karate_ie	data/scenes/studio/songs.inc.c	song_karate_ie	Karate Man	空手道家	final	
+data/scenes/studio/songs.inc.c:song_koi_no_honey_short	data/scenes/studio/songs.inc.c	song_koi_no_honey_short	Honey Sweet Angel...	恋爱的Honey Sweet〜…	final	
+data/scenes/studio/songs.inc.c:song_koi_no_honey_sweet_angel	data/scenes/studio/songs.inc.c	song_koi_no_honey_sweet_angel	Honey Sweet Angel of Love	恋爱的Honey Sweet〜Angel	final	
+data/scenes/studio/songs.inc.c:song_kossori_ratt	data/scenes/studio/songs.inc.c	song_kossori_ratt	Rat Race	蹑鼠蹑脚	final	
+data/scenes/studio/songs.inc.c:song_mahoutsukai	data/scenes/studio/songs.inc.c	song_mahoutsukai	Wizard's Waltz	魔法使	final	
+data/scenes/studio/songs.inc.c:song_marcha	data/scenes/studio/songs.inc.c	song_marcha	Marching Orders	行军	final	
+data/scenes/studio/songs.inc.c:song_menu	data/scenes/studio/songs.inc.c	song_menu	Menu	主菜单	final	
+data/scenes/studio/songs.inc.c:song_night_walk	data/scenes/studio/songs.inc.c	song_night_walk	Night Walk	夜空漫步	final	
+data/scenes/studio/songs.inc.c:song_opening	data/scenes/studio/songs.inc.c	song_opening	Opening	开场	final	
+data/scenes/studio/songs.inc.c:song_pachi_pachi_sannin_shu	data/scenes/studio/songs.inc.c	song_pachi_pachi_sannin_shu	The Clappy Trio	啪叽啪叽三人组	final	
+data/scenes/studio/songs.inc.c:song_perfect	data/scenes/studio/songs.inc.c	song_perfect	Perfect	完美通关	final	
+data/scenes/studio/songs.inc.c:song_polyrhythm	data/scenes/studio/songs.inc.c	song_polyrhythm	Polyrhythm	复合节奏	final	
+data/scenes/studio/songs.inc.c:song_quiz	data/scenes/studio/songs.inc.c	song_quiz	Quiz Show Opening	节奏问答	final	
+data/scenes/studio/songs.inc.c:song_remix_6	data/scenes/studio/songs.inc.c	song_remix_6	Remix 6	Remix６	final	
+data/scenes/studio/songs.inc.c:song_remix_7	data/scenes/studio/songs.inc.c	song_remix_7	Remix 7	Remix７	final	
+data/scenes/studio/songs.inc.c:song_remix_8	data/scenes/studio/songs.inc.c	song_remix_8	Remix 8	Remix８	final	
+data/scenes/studio/songs.inc.c:song_rhythm_datsumou	data/scenes/studio/songs.inc.c	song_rhythm_datsumou	Rhythm Tweezers	节奏脱毛	final	
+data/scenes/studio/songs.inc.c:song_rhythm_oshuji	data/scenes/studio/songs.inc.c	song_rhythm_oshuji	Power Calligraphy	节奏书法	final	
+data/scenes/studio/songs.inc.c:song_rhythm_shiryoshitsu	data/scenes/studio/songs.inc.c	song_rhythm_shiryoshitsu	Rhythm Archives	节奏资料室	final	
+data/scenes/studio/songs.inc.c:song_shiroi_obake	data/scenes/studio/songs.inc.c	song_shiroi_obake	Sneaky Spirits	白色的鬼	final	
+data/scenes/studio/songs.inc.c:song_showtime	data/scenes/studio/songs.inc.c	song_showtime	Showtime	表演时间	final	
+data/scenes/studio/songs.inc.c:song_silent	data/scenes/studio/songs.inc.c	song_silent	Silence	无声	final	
+data/scenes/studio/songs.inc.c:song_space_dance	data/scenes/studio/songs.inc.c	song_space_dance	Space Dance	太空之舞	final	
+data/scenes/studio/songs.inc.c:song_staff_credit	data/scenes/studio/songs.inc.c	song_staff_credit	Staff Credits	制作人员名单	final	
+data/scenes/studio/songs.inc.c:song_super_tap	data/scenes/studio/songs.inc.c	song_super_tap	Tap Trial 2	超级踢踏舞	final	
+data/scenes/studio/songs.inc.c:song_tap_dance	data/scenes/studio/songs.inc.c	song_tap_dance	Tap Trial	踢踏舞	final	
+data/scenes/studio/songs.inc.c:song_title	data/scenes/studio/songs.inc.c	song_title	Title	标题	final	
+data/scenes/studio/songs.inc.c:song_toran_to_porin	data/scenes/studio/songs.inc.c	song_toran_to_porin	Tram & Pauline	小蹦与小床	final	
+data/scenes/studio/songs.inc.c:song_toss_boys	data/scenes/studio/songs.inc.c	song_toss_boys	Toss Team	传球少年	final	
+data/scenes/studio/songs.inc.c:song_usagi_tobi	data/scenes/studio/songs.inc.c	song_usagi_tobi	Bunny Hop	跃兔	final	
+data/scenes/studio/songs.inc.c:song_wish	data/scenes/studio/songs.inc.c	song_wish	WISH - Can't Wait for You	WISH 我多想再为你等待	draft	
+data/scenes/studio/songs.inc.c:song_wish_short	data/scenes/studio/songs.inc.c	song_wish_short	WISH - Can't Wait...	WISH 我多想再…	draft	
+data/scenes/studio/songs.inc.c:song_yarinaoshi	data/scenes/studio/songs.inc.c	song_yarinaoshi	Try Again	再试一次吧	final	
 games/bon_odori/bon_dance_text.c:D_0806a384	games/bon_odori/bon_dance_text.c	D_0806a384	The first half was kinda rough...	前半段还差一点啊。	draft	
 games/bon_odori/bon_dance_text.c:D_0806a3a4	games/bon_odori/bon_dance_text.c	D_0806a3a4	The first half was pretty good!	前半段很稳嘛！	draft	
 games/bon_odori/bon_dance_text.c:D_0806a3bc	games/bon_odori/bon_dance_text.c	D_0806a3bc	The second half was rather dreary.	后半段气氛有点冷下来了啊。	final	
@@ -1962,17 +2223,17 @@ games/spaceball/spaceball_text.c:D_0805c074	games/spaceball/spaceball_text.c	D_0
 games/spaceball/spaceball_text.c:D_0805c090	games/spaceball/spaceball_text.c	D_0805c090	The speed tripped you up.	速度一快就招架不住了啊。	final	
 games/spaceball/spaceball_text.c:D_0805c0ac	games/spaceball/spaceball_text.c	D_0805c0ac	You did well during the fast part!	快节奏很完美！	final	
 games/spaceball/spaceball_text.c:D_0805c0c4	games/spaceball/spaceball_text.c	D_0805c0c4	Scorecard	评价	final	
-games/staff_credit/staff_credit_text.c:D_08069a48	games/staff_credit/staff_credit_text.c	D_08069a48	\0023Staff Credits	制作人员	final	control codes need review
-games/staff_credit/staff_credit_text.c:D_08069a58	games/staff_credit/staff_credit_text.c	D_08069a58	\0023Producers	制作人	final	control codes need review
+games/staff_credit/staff_credit_text.c:D_08069a48	games/staff_credit/staff_credit_text.c	D_08069a48	\0023Staff Credits	\0023制作人员	final	
+games/staff_credit/staff_credit_text.c:D_08069a58	games/staff_credit/staff_credit_text.c	D_08069a58	\0023Producers	\0023制作人	final	
 games/staff_credit/staff_credit_text.c:D_08069a64	games/staff_credit/staff_credit_text.c	D_08069a64	Tsunku♂	つんく♂	final	
 games/staff_credit/staff_credit_text.c:D_08069a70	games/staff_credit/staff_credit_text.c	D_08069a70	Y. Sakamoto	坂本 賀勇	final	
-games/staff_credit/staff_credit_text.c:D_08069a7c	games/staff_credit/staff_credit_text.c	D_08069a7c	\0023Supervisors	监修	final	control codes need review
+games/staff_credit/staff_credit_text.c:D_08069a7c	games/staff_credit/staff_credit_text.c	D_08069a7c	\0023Supervisors	\0023监修	final	
 games/staff_credit/staff_credit_text.c:D_08069a88	games/staff_credit/staff_credit_text.c	D_08069a88	K. Yamano	山野 勝也	final	
 games/staff_credit/staff_credit_text.c:D_08069a94	games/staff_credit/staff_credit_text.c	D_08069a94	H. Iida	飯田 寛	final	
 games/staff_credit/staff_credit_text.c:D_08069a9c	games/staff_credit/staff_credit_text.c	D_08069a9c	N. Umemoto	梅本 のぶやす	final	
-games/staff_credit/staff_credit_text.c:D_08069aa8	games/staff_credit/staff_credit_text.c	D_08069aa8	\0023Chief Director	总监	final	control codes need review
+games/staff_credit/staff_credit_text.c:D_08069aa8	games/staff_credit/staff_credit_text.c	D_08069aa8	\0023Chief Director	\0023总监	final	
 games/staff_credit/staff_credit_text.c:D_08069ab8	games/staff_credit/staff_credit_text.c	D_08069ab8	K. Osawa	大澤 和義	final	
-games/staff_credit/staff_credit_text.c:D_08069ac0	games/staff_credit/staff_credit_text.c	D_08069ac0	\0023Game Design	游戏设计	final	control codes need review
+games/staff_credit/staff_credit_text.c:D_08069ac0	games/staff_credit/staff_credit_text.c	D_08069ac0	\0023Game Design	\0023游戏设计	final	
 games/staff_credit/staff_credit_text.c:D_08069acc	games/staff_credit/staff_credit_text.c	D_08069acc	K. Takeuchi	竹内 高	final	
 games/staff_credit/staff_credit_text.c:D_08069ad8	games/staff_credit/staff_credit_text.c	D_08069ad8	M. Yone	米 政美	final	
 games/staff_credit/staff_credit_text.c:D_08069ae0	games/staff_credit/staff_credit_text.c	D_08069ae0	S. Ikeo	池尾 佐知子	final	
@@ -1980,29 +2241,29 @@ games/staff_credit/staff_credit_text.c:D_08069ae8	games/staff_credit/staff_credi
 games/staff_credit/staff_credit_text.c:D_08069af4	games/staff_credit/staff_credit_text.c	D_08069af4	R. Takahashi	高橋 龍太郎	final	
 games/staff_credit/staff_credit_text.c:D_08069b00	games/staff_credit/staff_credit_text.c	D_08069b00	Y. Takeuchi	竹内 康貴	final	
 games/staff_credit/staff_credit_text.c:D_08069b0c	games/staff_credit/staff_credit_text.c	D_08069b0c	M. Kawano	河野 正博	final	
-games/staff_credit/staff_credit_text.c:D_08069b18	games/staff_credit/staff_credit_text.c	D_08069b18	\0023Program Director	程序总监	final	control codes need review
-games/staff_credit/staff_credit_text.c:D_08069b2c	games/staff_credit/staff_credit_text.c	D_08069b2c	\0023Programming	程序	final	control codes need review
-games/staff_credit/staff_credit_text.c:D_08069b38	games/staff_credit/staff_credit_text.c	D_08069b38	\0023Design Director	美术总监	final	control codes need review
-games/staff_credit/staff_credit_text.c:D_08069b48	games/staff_credit/staff_credit_text.c	D_08069b48	\0023Design	美术	final	control codes need review
+games/staff_credit/staff_credit_text.c:D_08069b18	games/staff_credit/staff_credit_text.c	D_08069b18	\0023Program Director	\0023程序总监	final	
+games/staff_credit/staff_credit_text.c:D_08069b2c	games/staff_credit/staff_credit_text.c	D_08069b2c	\0023Programming	\0023程序	final	
+games/staff_credit/staff_credit_text.c:D_08069b38	games/staff_credit/staff_credit_text.c	D_08069b38	\0023Design Director	\0023美术总监	final	
+games/staff_credit/staff_credit_text.c:D_08069b48	games/staff_credit/staff_credit_text.c	D_08069b48	\0023Design	\0023美术	final	
 games/staff_credit/staff_credit_text.c:D_08069b50	games/staff_credit/staff_credit_text.c	D_08069b50	F. Miyamoto	宮本 文子	final	
-games/staff_credit/staff_credit_text.c:D_08069b5c	games/staff_credit/staff_credit_text.c	D_08069b5c	\0023Sound Directors	音频总监	final	control codes need review
+games/staff_credit/staff_credit_text.c:D_08069b5c	games/staff_credit/staff_credit_text.c	D_08069b5c	\0023Sound Directors	\0023音频总监	final	
 games/staff_credit/staff_credit_text.c:D_08069b6c	games/staff_credit/staff_credit_text.c	D_08069b6c	H. Oguro	小黒 薫輝	final	
 games/staff_credit/staff_credit_text.c:D_08069b74	games/staff_credit/staff_credit_text.c	D_08069b74	K. Kamada	鎌田 浩二	final	
-games/staff_credit/staff_credit_text.c:D_08069b80	games/staff_credit/staff_credit_text.c	D_08069b80	\0023Music	音乐	final	control codes need review
-games/staff_credit/staff_credit_text.c:D_08069b88	games/staff_credit/staff_credit_text.c	D_08069b88	\0023Music Arrangement	编曲	final	control codes need review
+games/staff_credit/staff_credit_text.c:D_08069b80	games/staff_credit/staff_credit_text.c	D_08069b80	\0023Music	\0023音乐	final	
+games/staff_credit/staff_credit_text.c:D_08069b88	games/staff_credit/staff_credit_text.c	D_08069b88	\0023Music Arrangement	\0023编曲	final	
 games/staff_credit/staff_credit_text.c:D_08069b9c	games/staff_credit/staff_credit_text.c	D_08069b9c	K. Yuasa	湯浅 公一	final	
 games/staff_credit/staff_credit_text.c:D_08069ba4	games/staff_credit/staff_credit_text.c	D_08069ba4	H. D. Suzuki	鈴木 DAICHI 秀行	final	
 games/staff_credit/staff_credit_text.c:D_08069bb0	games/staff_credit/staff_credit_text.c	D_08069bb0	K. Okubo	大久保 薫	final	
 games/staff_credit/staff_credit_text.c:D_08069bb8	games/staff_credit/staff_credit_text.c	D_08069bb8	D. Shiiba	椎葉 大翼	final	
-games/staff_credit/staff_credit_text.c:D_08069bc4	games/staff_credit/staff_credit_text.c	D_08069bc4	\0023Sound Effects	音效	final	control codes need review
+games/staff_credit/staff_credit_text.c:D_08069bc4	games/staff_credit/staff_credit_text.c	D_08069bc4	\0023Sound Effects	\0023音效	final	
 games/staff_credit/staff_credit_text.c:D_08069bd4	games/staff_credit/staff_credit_text.c	D_08069bd4	T. Fujii	藤井 貴矢	final	
-games/staff_credit/staff_credit_text.c:D_08069bdc	games/staff_credit/staff_credit_text.c	D_08069bdc	\0023Singers	演唱	final	control codes need review
+games/staff_credit/staff_credit_text.c:D_08069bdc	games/staff_credit/staff_credit_text.c	D_08069bdc	\0023Singers	\0023演唱	final	
 games/staff_credit/staff_credit_text.c:D_08069be4	games/staff_credit/staff_credit_text.c	D_08069be4	Ami Tokito	時東　ぁみ	final	
 games/staff_credit/staff_credit_text.c:D_08069bf0	games/staff_credit/staff_credit_text.c	D_08069bf0	Soshi Tanaka	田中　総史	final	
-games/staff_credit/staff_credit_text.c:D_08069bfc	games/staff_credit/staff_credit_text.c	D_08069bfc	\0023Voice	配音	final	control codes need review
+games/staff_credit/staff_credit_text.c:D_08069bfc	games/staff_credit/staff_credit_text.c	D_08069bfc	\0023Voice	\0023配音	final	
 games/staff_credit/staff_credit_text.c:D_08069c04	games/staff_credit/staff_credit_text.c	D_08069c04	N. Kitamura	北村 典子	final	
 games/staff_credit/staff_credit_text.c:D_08069c10	games/staff_credit/staff_credit_text.c	D_08069c10	M. Nomura	野村 真穂	final	
-games/staff_credit/staff_credit_text.c:D_08069c1c	games/staff_credit/staff_credit_text.c	D_08069c1c	\0023Debug	测试	final	control codes need review
+games/staff_credit/staff_credit_text.c:D_08069c1c	games/staff_credit/staff_credit_text.c	D_08069c1c	\0023Debug	\0023测试	final	
 games/staff_credit/staff_credit_text.c:D_08069c24	games/staff_credit/staff_credit_text.c	D_08069c24	Y. Adachi	安達 悠平	final	
 games/staff_credit/staff_credit_text.c:D_08069c30	games/staff_credit/staff_credit_text.c	D_08069c30	N. Hashida	橋田 直樹	final	
 games/staff_credit/staff_credit_text.c:D_08069c3c	games/staff_credit/staff_credit_text.c	D_08069c3c	S. Takada	髙田 成雄	final	
@@ -2021,7 +2282,7 @@ games/staff_credit/staff_credit_text.c:D_08069cc0	games/staff_credit/staff_credi
 games/staff_credit/staff_credit_text.c:D_08069cc8	games/staff_credit/staff_credit_text.c	D_08069cc8	J. Terai	寺井 准	final	
 games/staff_credit/staff_credit_text.c:D_08069cd0	games/staff_credit/staff_credit_text.c	D_08069cd0	A. Shimizubata	清水端 しみずばた	draft	
 games/staff_credit/staff_credit_text.c:D_08069ce0	games/staff_credit/staff_credit_text.c	D_08069ce0	Y. Yamashita	山下 やました	draft	
-games/staff_credit/staff_credit_text.c:D_08069cec	games/staff_credit/staff_credit_text.c	D_08069cec	\0023Special Thanks	特别鸣谢	final	control codes need review
+games/staff_credit/staff_credit_text.c:D_08069cec	games/staff_credit/staff_credit_text.c	D_08069cec	\0023Special Thanks	\0023特别鸣谢	final	
 games/staff_credit/staff_credit_text.c:D_08069cfc	games/staff_credit/staff_credit_text.c	D_08069cfc	Y. Kuratsune	鞍常 くらつね	draft	
 games/staff_credit/staff_credit_text.c:D_08069d08	games/staff_credit/staff_credit_text.c	D_08069d08	R. Kaimoto	改元 竜太	final	
 games/staff_credit/staff_credit_text.c:D_08069d14	games/staff_credit/staff_credit_text.c	D_08069d14	H. Sakagami	坂上 博樹	final	
@@ -2032,9 +2293,9 @@ games/staff_credit/staff_credit_text.c:D_08069d40	games/staff_credit/staff_credi
 games/staff_credit/staff_credit_text.c:D_08069d4c	games/staff_credit/staff_credit_text.c	D_08069d4c	M. Mitsubach	みつばち　まき	final	
 games/staff_credit/staff_credit_text.c:D_08069d5c	games/staff_credit/staff_credit_text.c	D_08069d5c	A. Kenmochi	剣持 あゆち	final	
 games/staff_credit/staff_credit_text.c:D_08069d68	games/staff_credit/staff_credit_text.c	D_08069d68	H. Nakano	中野 ひとみ	final	
-games/staff_credit/staff_credit_text.c:D_08069d74	games/staff_credit/staff_credit_text.c	D_08069d74	\0023You!	还有你	final	control codes need review
+games/staff_credit/staff_credit_text.c:D_08069d74	games/staff_credit/staff_credit_text.c	D_08069d74	\0023You!	\0023还有你	final	
 games/staff_credit/staff_credit_text.c:D_08069d7c	games/staff_credit/staff_credit_text.c	D_08069d7c	\0023	执行	final	control codes need review
-games/staff_credit/staff_credit_text.c:D_08069d88	games/staff_credit/staff_credit_text.c	D_08069d88	\0023Executive Producers	制作人	final	control codes need review
+games/staff_credit/staff_credit_text.c:D_08069d88	games/staff_credit/staff_credit_text.c	D_08069d88	\0023Executive Producers	\0023制作人	final	
 games/staff_credit/staff_credit_text.c:D_08069d98	games/staff_credit/staff_credit_text.c	D_08069d98	S. Iwata	岩田 聡	final	
 games/staff_credit/staff_credit_text.c:D_08069da0	games/staff_credit/staff_credit_text.c	D_08069da0	S. Terai	寺井 てらい	draft	
 games/staff_credit/staff_credit_text.c:D_08069dac	games/staff_credit/staff_credit_text.c	D_08069dac	(C) 2006 Nintendo / J.P ROOM	(C)2006 Nintendo/J.P.ROOM	final	
@@ -2171,3 +2432,172 @@ games/wizards_waltz/wizards_waltz_text.c:D_0805c9c8	games/wizards_waltz/wizards_
 games/wizards_waltz/wizards_waltz_text.c:D_0805c9e4	games/wizards_waltz/wizards_waltz_text.c	D_0805c9e4	Don't count on your eyes for everything.	你太依赖眼睛了哦。	final	
 games/wizards_waltz/wizards_waltz_text.c:D_0805c9fc	games/wizards_waltz/wizards_waltz_text.c	D_0805c9fc	Your pauses were perfect!	间隔把握得很准！	final	
 games/wizards_waltz/wizards_waltz_text.c:D_0805ca20	games/wizards_waltz/wizards_waltz_text.c	D_0805ca20	The Great Sorcerer's Revelations	大魔导师的启示	final	
+src/scenes/debug_menu_table.c:debug_menu_1	src/scenes/debug_menu_table.c	debug_menu_1	R-IQ (Title)	Ｒ－ＩＱ　（标题）	final	
+src/scenes/debug_menu_table.c:debug_menu_10	src/scenes/debug_menu_table.c	debug_menu_10	R-IQ (Result 4)	Ｒ－ＩＱ　（结果　４）	final	
+src/scenes/debug_menu_table.c:debug_menu_100	src/scenes/debug_menu_table.c	debug_menu_100	Toss Team 2	传球少年　２	final	
+src/scenes/debug_menu_table.c:debug_menu_101	src/scenes/debug_menu_table.c	debug_menu_101	Fireworks	烟火	final	
+src/scenes/debug_menu_table.c:debug_menu_102	src/scenes/debug_menu_table.c	debug_menu_102	Tap Trial	踢踏舞	final	
+src/scenes/debug_menu_table.c:debug_menu_103	src/scenes/debug_menu_table.c	debug_menu_103	Tap Trial 2	超级踢踏舞	final	
+src/scenes/debug_menu_table.c:debug_menu_104	src/scenes/debug_menu_table.c	debug_menu_104	Remix 1	Ｒｅｍｉｘ　１	final	
+src/scenes/debug_menu_table.c:debug_menu_105	src/scenes/debug_menu_table.c	debug_menu_105	Remix 2	Ｒｅｍｉｘ　２	final	
+src/scenes/debug_menu_table.c:debug_menu_106	src/scenes/debug_menu_table.c	debug_menu_106	Remix 3	Ｒｅｍｉｘ　３	final	
+src/scenes/debug_menu_table.c:debug_menu_107	src/scenes/debug_menu_table.c	debug_menu_107	Remix 4	Ｒｅｍｉｘ　４	final	
+src/scenes/debug_menu_table.c:debug_menu_108	src/scenes/debug_menu_table.c	debug_menu_108	Remix 5	Ｒｅｍｉｘ　５	final	
+src/scenes/debug_menu_table.c:debug_menu_109	src/scenes/debug_menu_table.c	debug_menu_109	Remix 6	Ｒｅｍｉｘ　６	final	
+src/scenes/debug_menu_table.c:debug_menu_11	src/scenes/debug_menu_table.c	debug_menu_11	R-IQ (Email)	Ｒ－ＩＱ　（获得信件）	final	
+src/scenes/debug_menu_table.c:debug_menu_110	src/scenes/debug_menu_table.c	debug_menu_110	Remix 7	Ｒｅｍｉｘ　７	final	
+src/scenes/debug_menu_table.c:debug_menu_111	src/scenes/debug_menu_table.c	debug_menu_111	Remix 8	Ｒｅｍｉｘ　８	final	
+src/scenes/debug_menu_table.c:debug_menu_112	src/scenes/debug_menu_table.c	debug_menu_112	Remix 1 (Extra) WIP	Ｒｅｍｉｘ　１　（额外）　ＷＩＰ	final	
+src/scenes/debug_menu_table.c:debug_menu_113	src/scenes/debug_menu_table.c	debug_menu_113	Drum Intro (Unused)	击鼓课程　（未使用）	final	
+src/scenes/debug_menu_table.c:debug_menu_114	src/scenes/debug_menu_table.c	debug_menu_114	Drum Intro (Unused 2)	击鼓课程　（未使用　２）	final	
+src/scenes/debug_menu_table.c:debug_menu_115	src/scenes/debug_menu_table.c	debug_menu_115	Drum Intro (Unused 3)	击鼓课程　（未使用　３）	final	
+src/scenes/debug_menu_table.c:debug_menu_116	src/scenes/debug_menu_table.c	debug_menu_116	Tanuki and Monkey (Unused)	狸猫与猴子　（未使用）	final	
+src/scenes/debug_menu_table.c:debug_menu_117	src/scenes/debug_menu_table.c	debug_menu_117	Metronome (Unused)	节拍器　（未使用）	final	
+src/scenes/debug_menu_table.c:debug_menu_118	src/scenes/debug_menu_table.c	debug_menu_118	Drum Girls (Unused)	Ｄｒｕｍ　Ｇｉｒｌｓ　（未使用）	final	
+src/scenes/debug_menu_table.c:debug_menu_119	src/scenes/debug_menu_table.c	debug_menu_119	Horse Machine (Unused)	骑马机　（未使用）	final	
+src/scenes/debug_menu_table.c:debug_menu_12	src/scenes/debug_menu_table.c	debug_menu_12	R-IQ (Perfect)	Ｒ－ＩＱ　（完美）	final	
+src/scenes/debug_menu_table.c:debug_menu_120	src/scenes/debug_menu_table.c	debug_menu_120	Marching Orders (Unused)	行军　（未使用）	final	
+src/scenes/debug_menu_table.c:debug_menu_121	src/scenes/debug_menu_table.c	debug_menu_121	Spaceball (Unused)	空中击球手　（未使用）	final	
+src/scenes/debug_menu_table.c:debug_menu_122	src/scenes/debug_menu_table.c	debug_menu_122	Spaceball (Unused 2)	空中击球手　（未使用　２）	final	
+src/scenes/debug_menu_table.c:debug_menu_123	src/scenes/debug_menu_table.c	debug_menu_123	The Snappy Trio (Unused)	帅气帅气三人组　（未使用）	final	
+src/scenes/debug_menu_table.c:debug_menu_124	src/scenes/debug_menu_table.c	debug_menu_124	RAPWOMEN (by KAZU)	饶舌女　（大泽和义版）	final	
+src/scenes/debug_menu_table.c:debug_menu_125	src/scenes/debug_menu_table.c	debug_menu_125	Bouncy Road (Unused)	跳杆之路　（未使用）	final	
+src/scenes/debug_menu_table.c:debug_menu_126	src/scenes/debug_menu_table.c	debug_menu_126	Bouncy Road (Unused 2)	跳杆之路　（未使用　２）	final	
+src/scenes/debug_menu_table.c:debug_menu_127	src/scenes/debug_menu_table.c	debug_menu_127	Tap Trial (Unused)	踢踏舞　（未使用）	final	
+src/scenes/debug_menu_table.c:debug_menu_128	src/scenes/debug_menu_table.c	debug_menu_128	Dance Lesson 1 (Unused)	舞蹈课　１　（未使用）	final	
+src/scenes/debug_menu_table.c:debug_menu_129	src/scenes/debug_menu_table.c	debug_menu_129	R-IQ Data Check	Ｒ－ＩＱ　数据查看	final	
+src/scenes/debug_menu_table.c:debug_menu_13	src/scenes/debug_menu_table.c	debug_menu_13	R-IQ (Endless Games)	Ｒ－ＩＱ　（无尽游戏）	final	
+src/scenes/debug_menu_table.c:debug_menu_130	src/scenes/debug_menu_table.c	debug_menu_130	Asset Test	素材测试	final	
+src/scenes/debug_menu_table.c:debug_menu_131	src/scenes/debug_menu_table.c	debug_menu_131	Flash Memory Test	闪存测试	final	
+src/scenes/debug_menu_table.c:debug_menu_132	src/scenes/debug_menu_table.c	debug_menu_132	Read Error	读取错误	final	
+src/scenes/debug_menu_table.c:debug_menu_133	src/scenes/debug_menu_table.c	debug_menu_133	Template Scene	场景模板	final	
+src/scenes/debug_menu_table.c:debug_menu_134	src/scenes/debug_menu_table.c	debug_menu_134	Save Data Clear	数据清除	final	
+src/scenes/debug_menu_table.c:debug_menu_135	src/scenes/debug_menu_table.c	debug_menu_135	R-IQ Save Editor	Ｒ－ＩＱ　存档编辑器	final	
+src/scenes/debug_menu_table.c:debug_menu_136	src/scenes/debug_menu_table.c	debug_menu_136	Sequence Player	序列播放器	final	
+src/scenes/debug_menu_table.c:debug_menu_137	src/scenes/debug_menu_table.c	debug_menu_137	Debug Menu	调试菜单	final	
+src/scenes/debug_menu_table.c:debug_menu_14	src/scenes/debug_menu_table.c	debug_menu_14	R-IQ (Drum Lessons)	Ｒ－ＩＱ　（击鼓课程）	final	
+src/scenes/debug_menu_table.c:debug_menu_15	src/scenes/debug_menu_table.c	debug_menu_15	R-IQ (Rhythm Toys)	Ｒ－ＩＱ　（节奏玩具）	final	
+src/scenes/debug_menu_table.c:debug_menu_16	src/scenes/debug_menu_table.c	debug_menu_16	R-IQ (Cafe Counselling)	Ｒ－ＩＱ　（咖啡谈心）	final	
+src/scenes/debug_menu_table.c:debug_menu_17	src/scenes/debug_menu_table.c	debug_menu_17	Warning	警告	final	
+src/scenes/debug_menu_table.c:debug_menu_18	src/scenes/debug_menu_table.c	debug_menu_18	GBP Handshake	ＧＢＰ　手柄震动	final	
+src/scenes/debug_menu_table.c:debug_menu_19	src/scenes/debug_menu_table.c	debug_menu_19	Disclaimer	声明	final	
+src/scenes/debug_menu_table.c:debug_menu_2	src/scenes/debug_menu_table.c	debug_menu_2	R-IQ (Menu)	Ｒ－ＩＱ　（菜单）	final	
+src/scenes/debug_menu_table.c:debug_menu_20	src/scenes/debug_menu_table.c	debug_menu_20	Opening (Type A)	开场　（类型A）	final	
+src/scenes/debug_menu_table.c:debug_menu_21	src/scenes/debug_menu_table.c	debug_menu_21	Opening (Type B)	开场　（类型B）	final	
+src/scenes/debug_menu_table.c:debug_menu_22	src/scenes/debug_menu_table.c	debug_menu_22	Rhythm Test (Opening)	节奏感测试　（开场）	final	
+src/scenes/debug_menu_table.c:debug_menu_23	src/scenes/debug_menu_table.c	debug_menu_23	Rhythm Test (Click)	节奏感测试　（点击）	final	
+src/scenes/debug_menu_table.c:debug_menu_24	src/scenes/debug_menu_table.c	debug_menu_24	Rhythm Test (Cue)	节奏感测试　（数拍）	final	
+src/scenes/debug_menu_table.c:debug_menu_25	src/scenes/debug_menu_table.c	debug_menu_25	Rhythm Test (Trick)	节奏感测试　（棘手）	final	
+src/scenes/debug_menu_table.c:debug_menu_26	src/scenes/debug_menu_table.c	debug_menu_26	Email	信件	final	
+src/scenes/debug_menu_table.c:debug_menu_27	src/scenes/debug_menu_table.c	debug_menu_27	Studio Drums (Ver. 0)	录音室打鼓　（Ｖｅｒ．　０）	final	
+src/scenes/debug_menu_table.c:debug_menu_28	src/scenes/debug_menu_table.c	debug_menu_28	Studio Drums (Ver. 2)	录音室打鼓　（Ｖｅｒ．　２）	final	
+src/scenes/debug_menu_table.c:debug_menu_29	src/scenes/debug_menu_table.c	debug_menu_29	Concert	现场演出	final	
+src/scenes/debug_menu_table.c:debug_menu_3	src/scenes/debug_menu_table.c	debug_menu_3	R-IQ (Game)	Ｒ－ＩＱ　（游戏）	final	
+src/scenes/debug_menu_table.c:debug_menu_30	src/scenes/debug_menu_table.c	debug_menu_30	Ending (Game Cleared)	结尾　（通关）	final	
+src/scenes/debug_menu_table.c:debug_menu_31	src/scenes/debug_menu_table.c	debug_menu_31	Ending (Extra Viewings)	结尾　（再次观看）	final	
+src/scenes/debug_menu_table.c:debug_menu_32	src/scenes/debug_menu_table.c	debug_menu_32	Lesson (Intro 1)	课程 （入门　１）	final	
+src/scenes/debug_menu_table.c:debug_menu_33	src/scenes/debug_menu_table.c	debug_menu_33	Lesson (Intro 2)	课程 （入门　２）	final	
+src/scenes/debug_menu_table.c:debug_menu_34	src/scenes/debug_menu_table.c	debug_menu_34	Lesson (Basic 1)	课程 （基础　１）	final	
+src/scenes/debug_menu_table.c:debug_menu_35	src/scenes/debug_menu_table.c	debug_menu_35	Lesson (Basic 2)	课程 （基础　２）	final	
+src/scenes/debug_menu_table.c:debug_menu_36	src/scenes/debug_menu_table.c	debug_menu_36	Lesson (Basic 3)	课程 （基础　３）	final	
+src/scenes/debug_menu_table.c:debug_menu_37	src/scenes/debug_menu_table.c	debug_menu_37	Lesson (Basic 4)	课程 （基础　４）	final	
+src/scenes/debug_menu_table.c:debug_menu_38	src/scenes/debug_menu_table.c	debug_menu_38	Lesson (Basic 5)	课程 （基础　５）	final	
+src/scenes/debug_menu_table.c:debug_menu_39	src/scenes/debug_menu_table.c	debug_menu_39	Lesson (Basic 6)	课程 （基础　６）	final	
+src/scenes/debug_menu_table.c:debug_menu_4	src/scenes/debug_menu_table.c	debug_menu_4	R-IQ (Letter)	Ｒ－ＩＱ　（资料室）	final	
+src/scenes/debug_menu_table.c:debug_menu_40	src/scenes/debug_menu_table.c	debug_menu_40	Lesson (Basic 7)	课程 （基础　７）	final	
+src/scenes/debug_menu_table.c:debug_menu_41	src/scenes/debug_menu_table.c	debug_menu_41	Lesson (Basic 8)	课程 （基础　８）	final	
+src/scenes/debug_menu_table.c:debug_menu_42	src/scenes/debug_menu_table.c	debug_menu_42	Lesson (Basic 9)	课程 （基础　９）	final	
+src/scenes/debug_menu_table.c:debug_menu_43	src/scenes/debug_menu_table.c	debug_menu_43	Lesson (Advanced 1)	课程 （进阶　１）	final	
+src/scenes/debug_menu_table.c:debug_menu_44	src/scenes/debug_menu_table.c	debug_menu_44	Lesson (Advanced 2)	课程 （进阶　２）	final	
+src/scenes/debug_menu_table.c:debug_menu_45	src/scenes/debug_menu_table.c	debug_menu_45	Lesson (Advanced 3)	课程 （进阶　３）	final	
+src/scenes/debug_menu_table.c:debug_menu_46	src/scenes/debug_menu_table.c	debug_menu_46	Lesson (Advanced 4)	课程 （进阶　４）	final	
+src/scenes/debug_menu_table.c:debug_menu_47	src/scenes/debug_menu_table.c	debug_menu_47	Lesson (Advanced 5)	课程 （进阶　５）	final	
+src/scenes/debug_menu_table.c:debug_menu_48	src/scenes/debug_menu_table.c	debug_menu_48	Lesson (Advanced 6)	课程 （进阶　６）	final	
+src/scenes/debug_menu_table.c:debug_menu_49	src/scenes/debug_menu_table.c	debug_menu_49	Lesson (Technical 1)	课程 （技巧　１）	final	
+src/scenes/debug_menu_table.c:debug_menu_5	src/scenes/debug_menu_table.c	debug_menu_5	R-IQ (Studio)	Ｒ－ＩＱ　（录音室）	final	
+src/scenes/debug_menu_table.c:debug_menu_50	src/scenes/debug_menu_table.c	debug_menu_50	Lesson (Technical 2)	课程 （技巧　２）	final	
+src/scenes/debug_menu_table.c:debug_menu_51	src/scenes/debug_menu_table.c	debug_menu_51	Mr Upbeat	反拍男	final	
+src/scenes/debug_menu_table.c:debug_menu_53	src/scenes/debug_menu_table.c	debug_menu_53	Quiz Show Special	节奏问答　特别篇	final	
+src/scenes/debug_menu_table.c:debug_menu_54	src/scenes/debug_menu_table.c	debug_menu_54	Mannequin Factory	头模工厂	final	
+src/scenes/debug_menu_table.c:debug_menu_55	src/scenes/debug_menu_table.c	debug_menu_55	Cat Machine	猫咪发声机	final	
+src/scenes/debug_menu_table.c:debug_menu_56	src/scenes/debug_menu_table.c	debug_menu_56	Horse Machine	骑马机	final	
+src/scenes/debug_menu_table.c:debug_menu_57	src/scenes/debug_menu_table.c	debug_menu_57	Love Machine	告白机	final	
+src/scenes/debug_menu_table.c:debug_menu_58	src/scenes/debug_menu_table.c	debug_menu_58	Rap Machine	饶舌发声机	final	
+src/scenes/debug_menu_table.c:debug_menu_59	src/scenes/debug_menu_table.c	debug_menu_59	Karate Man	空手道家	final	
+src/scenes/debug_menu_table.c:debug_menu_6	src/scenes/debug_menu_table.c	debug_menu_6	R-IQ (Options)	Ｒ－ＩＱ　（选项）	final	
+src/scenes/debug_menu_table.c:debug_menu_60	src/scenes/debug_menu_table.c	debug_menu_60	Karate Man 2	空手道家　２	final	
+src/scenes/debug_menu_table.c:debug_menu_61	src/scenes/debug_menu_table.c	debug_menu_61	Karate Man (Extra) WIP	空手道家　（额外）　ＷＩＰ	final	
+src/scenes/debug_menu_table.c:debug_menu_62	src/scenes/debug_menu_table.c	debug_menu_62	Rhythm Tweezers	节奏脱毛	final	
+src/scenes/debug_menu_table.c:debug_menu_63	src/scenes/debug_menu_table.c	debug_menu_63	Rhythm Tweezers 2	节奏脱毛　２	final	
+src/scenes/debug_menu_table.c:debug_menu_64	src/scenes/debug_menu_table.c	debug_menu_64	Rhythm Tweezers (Extra)	节奏脱毛　（额外）	final	
+src/scenes/debug_menu_table.c:debug_menu_65	src/scenes/debug_menu_table.c	debug_menu_65	Marching Orders	行军	final	
+src/scenes/debug_menu_table.c:debug_menu_66	src/scenes/debug_menu_table.c	debug_menu_66	Marching Orders 2	行军　２	final	
+src/scenes/debug_menu_table.c:debug_menu_67	src/scenes/debug_menu_table.c	debug_menu_67	Marching Orders (Extra)	行军　（额外）	final	
+src/scenes/debug_menu_table.c:debug_menu_68	src/scenes/debug_menu_table.c	debug_menu_68	Spaceball	空中击球手	final	
+src/scenes/debug_menu_table.c:debug_menu_69	src/scenes/debug_menu_table.c	debug_menu_69	Spaceball 2	空中击球手　２	final	
+src/scenes/debug_menu_table.c:debug_menu_7	src/scenes/debug_menu_table.c	debug_menu_7	R-IQ (Result)	Ｒ－ＩＱ　（结果）	final	
+src/scenes/debug_menu_table.c:debug_menu_70	src/scenes/debug_menu_table.c	debug_menu_70	Spaceball (Extra)	空中击球手　（额外）	final	
+src/scenes/debug_menu_table.c:debug_menu_71	src/scenes/debug_menu_table.c	debug_menu_71	The Clappy Trio	啪叽啪叽三人组	final	
+src/scenes/debug_menu_table.c:debug_menu_72	src/scenes/debug_menu_table.c	debug_menu_72	The Snappy Trio	帅气帅气三人组	final	
+src/scenes/debug_menu_table.c:debug_menu_73	src/scenes/debug_menu_table.c	debug_menu_73	The Clappy Trio (Extra) WIP	啪叽啪叽三人组　（额外）　ＷＩＰ	final	
+src/scenes/debug_menu_table.c:debug_menu_74	src/scenes/debug_menu_table.c	debug_menu_74	Sneaky Spirits	白色的鬼	final	
+src/scenes/debug_menu_table.c:debug_menu_75	src/scenes/debug_menu_table.c	debug_menu_75	Sneaky Spirits 2	白色的鬼　２	final	
+src/scenes/debug_menu_table.c:debug_menu_76	src/scenes/debug_menu_table.c	debug_menu_76	Samurai Slice	居合斩	final	
+src/scenes/debug_menu_table.c:debug_menu_77	src/scenes/debug_menu_table.c	debug_menu_77	Rat Race	蹑鼠蹑脚	final	
+src/scenes/debug_menu_table.c:debug_menu_78	src/scenes/debug_menu_table.c	debug_menu_78	Sick Beats	细菌博士	final	
+src/scenes/debug_menu_table.c:debug_menu_79	src/scenes/debug_menu_table.c	debug_menu_79	The Bon Odori	Ｔｈｅ　盂兰盆舞	final	
+src/scenes/debug_menu_table.c:debug_menu_8	src/scenes/debug_menu_table.c	debug_menu_8	R-IQ (Result 2)	Ｒ－ＩＱ　（结果　２）	final	
+src/scenes/debug_menu_table.c:debug_menu_80	src/scenes/debug_menu_table.c	debug_menu_80	The Bon Dance	盆舞	final	
+src/scenes/debug_menu_table.c:debug_menu_81	src/scenes/debug_menu_table.c	debug_menu_81	Wizard's Waltz	魔法使	final	
+src/scenes/debug_menu_table.c:debug_menu_82	src/scenes/debug_menu_table.c	debug_menu_82	Showtime	表演时间	final	
+src/scenes/debug_menu_table.c:debug_menu_83	src/scenes/debug_menu_table.c	debug_menu_83	Bunny Hop	跃兔	final	
+src/scenes/debug_menu_table.c:debug_menu_84	src/scenes/debug_menu_table.c	debug_menu_84	Tram & Pauline	小蹦与小床	final	
+src/scenes/debug_menu_table.c:debug_menu_85	src/scenes/debug_menu_table.c	debug_menu_85	Space Dance	太空之舞	final	
+src/scenes/debug_menu_table.c:debug_menu_86	src/scenes/debug_menu_table.c	debug_menu_86	Cosmic Dance	宇宙之舞	final	
+src/scenes/debug_menu_table.c:debug_menu_87	src/scenes/debug_menu_table.c	debug_menu_87	Quiz Show	节奏问答	final	
+src/scenes/debug_menu_table.c:debug_menu_88	src/scenes/debug_menu_table.c	debug_menu_88	Night Walk	夜间漫步	final	
+src/scenes/debug_menu_table.c:debug_menu_89	src/scenes/debug_menu_table.c	debug_menu_89	Night Walk 2	夜间漫步　２	final	
+src/scenes/debug_menu_table.c:debug_menu_9	src/scenes/debug_menu_table.c	debug_menu_9	R-IQ (Result 3)	Ｒ－ＩＱ　（结果　３）	final	
+src/scenes/debug_menu_table.c:debug_menu_90	src/scenes/debug_menu_table.c	debug_menu_90	Power Calligraphy	节奏书法	final	
+src/scenes/debug_menu_table.c:debug_menu_91	src/scenes/debug_menu_table.c	debug_menu_91	Polyrhythm	复合节奏	final	
+src/scenes/debug_menu_table.c:debug_menu_92	src/scenes/debug_menu_table.c	debug_menu_92	Polyrhythm 2	复合节奏　２	final	
+src/scenes/debug_menu_table.c:debug_menu_93	src/scenes/debug_menu_table.c	debug_menu_93	RAPMEN	饶舌男	final	
+src/scenes/debug_menu_table.c:debug_menu_94	src/scenes/debug_menu_table.c	debug_menu_94	RAPWOMEN (by YONE)	饶舌女　（米政美版）	final	
+src/scenes/debug_menu_table.c:debug_menu_95	src/scenes/debug_menu_table.c	debug_menu_95	Bouncy Road	跳杆之路	final	
+src/scenes/debug_menu_table.c:debug_menu_96	src/scenes/debug_menu_table.c	debug_menu_96	Bouncy Road 2	跳杆之路　２	final	
+src/scenes/debug_menu_table.c:debug_menu_97	src/scenes/debug_menu_table.c	debug_menu_97	Ninja Bodyguard	忍者	final	
+src/scenes/debug_menu_table.c:debug_menu_98	src/scenes/debug_menu_table.c	debug_menu_98	Ninja Descendant	忍者的后代	final	
+src/scenes/debug_menu_table.c:debug_menu_99	src/scenes/debug_menu_table.c	debug_menu_99	Toss Team	传球少年	final	
+src/scenes/studio_drums.c:studio_drums_1	src/scenes/studio_drums.c	studio_drums_1	Standard Drum	普通鼓组	final	
+src/scenes/studio_drums.c:studio_drums_10	src/scenes/studio_drums.c	studio_drums_10	Heel Drop Drum 1	脚跟技巧鼓组 1	final	
+src/scenes/studio_drums.c:studio_drums_11	src/scenes/studio_drums.c	studio_drums_11	Heel Drop Drum 2	脚跟技巧鼓组 2	final	
+src/scenes/studio_drums.c:studio_drums_12	src/scenes/studio_drums.c	studio_drums_12	Sound FX Drum	音效鼓组	final	
+src/scenes/studio_drums.c:studio_drums_13	src/scenes/studio_drums.c	studio_drums_13	Tap Drum	踢踏鼓组	final	
+src/scenes/studio_drums.c:studio_drums_14	src/scenes/studio_drums.c	studio_drums_14	Swift Drum	疾风鼓组	final	
+src/scenes/studio_drums.c:studio_drums_15	src/scenes/studio_drums.c	studio_drums_15	Samurai Drum	武士鼓组	final	
+src/scenes/studio_drums.c:studio_drums_2	src/scenes/studio_drums.c	studio_drums_2	Dry Drum	干音鼓组	final	
+src/scenes/studio_drums.c:studio_drums_3	src/scenes/studio_drums.c	studio_drums_3	Power Drum	强力鼓组	final	
+src/scenes/studio_drums.c:studio_drums_4	src/scenes/studio_drums.c	studio_drums_4	Techno Drum	电子鼓组	final	
+src/scenes/studio_drums.c:studio_drums_5	src/scenes/studio_drums.c	studio_drums_5	Matte Drum	沉稳鼓组	final	
+src/scenes/studio_drums.c:studio_drums_6	src/scenes/studio_drums.c	studio_drums_6	Asian Drum	亚洲风鼓组	final	
+src/scenes/studio_drums.c:studio_drums_7	src/scenes/studio_drums.c	studio_drums_7	Light Drum	轻盈鼓组	final	
+src/scenes/studio_drums.c:studio_drums_8	src/scenes/studio_drums.c	studio_drums_8	Heavy Drum	硬派鼓组	final	
+src/scenes/studio_drums.c:studio_drums_9	src/scenes/studio_drums.c	studio_drums_9	Hi-Hat Drum	踩镲技巧鼓组	final	
+src/scenes/studio_drums.c:studio_drums_limit	src/scenes/studio_drums.c	studio_drums_limit	There's no more room for\nsaving. Perform anyway?	"演奏数据最多只能保留 10 份。
+本次演奏将无法保存，还要继续吗？"	final	
+src/scenes/studio_drums.c:studio_drums_low_memory	src/scenes/studio_drums.c	studio_drums_low_memory	Save memory is running low.\nDo you want to perform anyway?	"存储空间快满了。
+还要继续演奏吗？"	final	
+src/scenes/studio_drums.c:studio_drums_memory_full	src/scenes/studio_drums.c	studio_drums_memory_full	Your memory is full.\nPerform anyway?	"存储空间已满。
+本次演奏将无法保存，还要继续吗？"	final	
+src/scenes/studio_options.c:studio_options_check	src/scenes/studio_options.c	studio_options_check	Bookmark	勾选	final	
+src/scenes/studio_options.c:studio_options_check_2	src/scenes/studio_options.c	studio_options_check_2	Bookmark	勾选	final	
+src/scenes/studio_options.c:studio_options_delete	src/scenes/studio_options.c	studio_options_delete	Erase Data	删除数据	final	
+src/scenes/studio_options.c:studio_options_delete_confirm	src/scenes/studio_options.c	studio_options_delete_confirm	Delete this drum performance!\nAre you sure?	"要删除这份演奏数据哦！
+真的要删吗？"	final	
+src/scenes/studio_options.c:studio_options_drumming	src/scenes/studio_options.c	studio_options_drumming	Drum	击鼓	final	
+src/scenes/studio_options.c:studio_options_listening	src/scenes/studio_options.c	studio_options_listening	Play	试听	final	
+src/scenes/studio_options.c:studio_options_listening_2	src/scenes/studio_options.c	studio_options_listening_2	Play	试听	final	
+src/scenes/studio_options.c:studio_options_listening_confirm	src/scenes/studio_options.c	studio_options_listening_confirm	Only selected songs will be played.\nIs that OK?	试听模式只会播放已勾选的曲子。要继续吗？	final	
+src/scenes/studio_options.c:studio_options_no_checks	src/scenes/studio_options.c	studio_options_no_checks	There are currently\nno songs selected.	还没有勾选任何曲子。	final	
+src/scenes/studio_options.c:studio_options_reorder	src/scenes/studio_options.c	studio_options_reorder	Sort	重新排序	final	
+src/scenes/studio_options.c:studio_options_reorder_2	src/scenes/studio_options.c	studio_options_reorder_2	Sort	重新排序	final	
