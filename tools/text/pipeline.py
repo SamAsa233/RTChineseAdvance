@@ -176,6 +176,42 @@ def debug_menu_mapping():
 
 def ordinal_slot(text, path, key):
     name = path.relative_to(ROOT).as_posix()
+    if name == 'src/scenes/data_check.c':
+        # 统计页译文是同一个函数里依次 strcat 的片段，不是同名数组。
+        # 按调用顺序定位，并核对阶段 5 译文；顺序变了就留在 TODO。
+        rows = json.loads((ARCHIVE / 'src/data_check.json').read_text(encoding='utf-8'))
+        translated = {row['key']: row for row in rows}
+        if key not in translated or translated[key]['stage'] != 5:
+            return None
+        if key == 'data_check_title':
+            title = re.search(r'data_check_print_line\(0,\s*1,\s*("(?:\\.|[^"\\])*")', text)
+            group = title
+            offset = 0
+        else:
+            positions = {
+                'data_check_avg_score': 2, 'data_check_avg_score_suffix': 3,
+                'data_check_play_count': 4, 'data_check_play_count_suffix': 5,
+                'data_check_first_pass': 6, 'data_check_not_yet_1': 7,
+                'data_check_count_1': 8, 'data_check_first_great_pass': 9,
+                'data_check_not_yet_2': 10, 'data_check_count_2': 11,
+            }
+            start = text.find('void data_check_print_page(s32 id) {')
+            end = text.find('// Scene Stop', start)
+            if key not in positions or start < 0 or end < 0:
+                return None
+            literals = list(re.finditer(
+                r'strcat\(string,\s*("(?:\\.|[^"\\])*")\s*\)', text[start:end]))
+            index = positions[key]
+            if index >= len(literals):
+                return None
+            group = literals[index]
+            offset = start
+        if group is None:
+            return None
+        quoted = group.group(1)
+        if quoted != json.dumps(translated[key]['translation'], ensure_ascii=False):
+            return None
+        return [(offset + group.start(1), offset + group.end(1), quoted[1:-1])]
     if name == 'src/scenes/studio_drums.c':
         rows = json.loads((ARCHIVE / 'src/studio_drums.json').read_text(encoding='utf-8'))
         keys = [row['key'] for row in rows]

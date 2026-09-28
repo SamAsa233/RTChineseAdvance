@@ -186,28 +186,31 @@ void data_check_print_page(s32 id) {
     strcat(string, "游玩次数：");
     strint(number, totalPlays);
     strcat(string, number);
+    // 原代码漏掉译文包中的“次”；补上后页面才显示完整单位。
+    strcat(string, "次");
     data_check_print_line(4, 0, string);
 
     if (totalPlays > 0) {
         memcpy(string, "  ", 3);
-        strcat(string, "（首次通关：第 ");
+        // 阶段 5 译文没有“第”和额外空格，按已校对片段直接拼接。
+        strcat(string, "（首次通关：");
 
         if (firstOK == 0) {
             strcat(string, "尚未");
         } else {
             strint(number, firstOK);
             strcat(string, number);
-            strcat(string, " 次");
+            strcat(string, "次");
         }
 
-        strcat(string, "     首次高水准：第 ");
+        strcat(string, "  首次高水准：");
 
         if (firstSuperb == 0) {
             strcat(string, "尚未）");
         } else {
             strint(number, firstSuperb);
             strcat(string, number);
-            strcat(string, " 次）");
+            strcat(string, "次）");
         }
 
         data_check_print_line(5, 0, string);
