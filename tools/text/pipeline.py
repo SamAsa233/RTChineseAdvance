@@ -322,6 +322,13 @@ def extract():
             unresolved = [item for item in unresolved
                           if not item.startswith(f'{json_path.relative_to(ARCHIVE)}:{base}:')]
             continue
+        # The karate opening line has two source spelling branches but one
+        # reviewed Chinese sentence; both branches are updated manually.
+        if (json_path.relative_to(ARCHIVE).as_posix() == 'games/karate_man/karate_man_text.json'
+                and base == 'D_0805ad80'):
+            unresolved = [item for item in unresolved
+                          if not item.startswith(f'{json_path.relative_to(ARCHIVE)}:{base}:')]
+            continue
         if base == 'perfect_gift_directive_text' and len(members) == 1:
             # The source JSON contains three reward-type messages in one row,
             # while the English port stores them in three array entries.

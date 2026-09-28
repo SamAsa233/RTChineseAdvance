@@ -1,6 +1,7 @@
 /* 中文文本：本文件采用译文包中 stage 5 的已校对条目。
  * 字符串中的 \n 是游戏画面换行；相邻引号只是方便阅读源码。
  * 未校对或未定位的条目见 text/zh_hans/TODO_未校对.md。 */
+/* 汉化：正式开始提示的两个地区拼写分支统一使用阶段 5 已校对文本。 */
 #include "global.h"
 #include "text.h"
 
@@ -56,7 +57,7 @@ const char D_0805ad38[] =
 const char D_0805ad80[] =
     "\n"
     #ifdef PARADISE
-    "Ready, steady, punch!";
+    "正式开始！！";
     #else
-    "Ready, set, punch!";
+    "正式开始！！";
     #endif

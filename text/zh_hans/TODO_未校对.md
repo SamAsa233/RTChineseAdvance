@@ -280,7 +280,6 @@
 - TODO 未校对 games\drum_live\drum_live_menu_engine.json:drum_live_menu_poster_desc[61]: 3 source entries vs 13 translations
 - TODO 未校对 games\drum_live\drum_live_menu_engine.json:drum_live_menu_poster_desc[66]: 3 source entries vs 13 translations
 - TODO 未校对 games\drum_live\drum_live_menu_engine.json:drum_live_menu_poster_desc[71]: 3 source entries vs 13 translations
-- TODO 未校对 games\karate_man\karate_man_text.json:D_0805ad80: key not found
 - TODO 未校对 src\arrival.json:arrival_title: key not found
 - TODO 未校对 src\arrival.json:arrival_message_template: key not found
 - TODO 未校对 src\cafe.json:cafe_line_1: key not found
