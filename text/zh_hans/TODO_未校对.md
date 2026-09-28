@@ -228,8 +228,6 @@
 ## 尚未安全定位
 
 - TODO 未校对 data\cafe\dialogue.json:cafe_dialogue_rhythm_sense[7]: conditional branches need review
-- TODO 未校对 data\data_room\reading.json:reading_material_error_1: key not found
-- TODO 未校对 data\data_room\reading.json:reading_material_error_2: key not found
 - TODO 未校对 data\data_room\reading_material.inc.json:reading_greeting: key not found
 - TODO 未校对 data\data_room\reading_material.inc.json:reading_night_walk_story: key not found
 - TODO 未校对 data\data_room\reading_material.inc.json:reading_horse_machine_story: key not found
@@ -259,13 +257,6 @@
 - TODO 未校对 data\game_select\levels.inc.json:level_quiz_1_result_2: key not found
 - TODO 未校对 data\game_select\levels.inc.json:level_cafe_counsel: key not found
 - TODO 未校对 data\medal_corner\endless_menu.inc.json:endless_ura_otoko: key not found
-- TODO 未校对 data\medal_corner\endless_menu.inc.json:endless_baikin_hakase_sp: key not found
-- TODO 未校对 data\medal_corner\endless_menu.inc.json:endless_quiz_special: key not found
-- TODO 未校对 data\medal_corner\endless_menu.inc.json:endless_manekin_factory: key not found
-- TODO 未校对 data\medal_corner\toys_menu.inc.json:toy_neko_machine: key not found
-- TODO 未校对 data\medal_corner\toys_menu.inc.json:toy_uma_machine: key not found
-- TODO 未校对 data\medal_corner\toys_menu.inc.json:toy_kokuhaku_machine: key not found
-- TODO 未校对 data\medal_corner\toys_menu.inc.json:toy_rap_machine: key not found
 - TODO 未校对 games\drum_live\drum_live_menu_engine.json:drum_live_menu_poster_desc[42]: TODO 未校对（阶段 2）
 - TODO 未校对 src\arrival.json:arrival_title: key not found
 - TODO 未校对 src\arrival.json:arrival_message_template: key not found

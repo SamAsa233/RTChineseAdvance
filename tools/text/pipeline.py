@@ -307,10 +307,37 @@ def grouped_archive():
 def extract():
     output, unresolved = [], []
     previous = {}
+    # 这些条目已手动写在源码中，归档键却不等于 C 数组名。按实际数组槽位
+    # 逐条核对阶段 5 译文后才跳过，防止源码变化时误报“已完成”。
+    manual_slots = {
+        'data/data_room/reading.json': ('reading_material_error', {
+            'reading_material_error_1': 0, 'reading_material_error_2': 1,
+        }),
+        'data/medal_corner/toys_menu.inc.json': ('toys_menu_levels', {
+            'toy_neko_machine': 0, 'toy_uma_machine': 1,
+            'toy_kokuhaku_machine': 2, 'toy_rap_machine': 3,
+        }),
+        'data/medal_corner/endless_menu.inc.json': ('endless_menu_levels', {
+            # 第一个条目有两个条件编译分支，尚未接入，仍须保留 TODO。
+            'endless_baikin_hakase_sp': 0, 'endless_quiz_special': 1,
+            'endless_manekin_factory': 2,
+        }),
+    }
     if TABLE.exists():
         with TABLE.open(encoding='utf-8', newline='') as stream:
             previous = {row['id']: row for row in csv.DictReader(stream, delimiter='\t')}
     for (json_path, path, base), members in grouped_archive().items():
+        archive_name = json_path.relative_to(ARCHIVE).as_posix()
+        if archive_name in manual_slots and path is not None and len(members) == 1:
+            initializer, positions = manual_slots[archive_name]
+            key, row = members[0]
+            position = positions.get(key)
+            groups = c_initializer(path.read_text(encoding='utf-8'), initializer)
+            if (position is not None and row['stage'] == 5 and groups
+                    and position < len(groups) and groups[position]
+                    and groups[position][2].endswith(row['translation'])):
+                # 只有对应槽位确实包含已校对中文时，才消除误报。
+                continue
         # These reviewed fragments are composed at runtime in perfect_scene_start;
         # they intentionally have no standalone source literal to replace.
         if json_path.relative_to(ARCHIVE).as_posix() == 'src/perfect.json':

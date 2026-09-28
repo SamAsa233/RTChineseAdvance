@@ -1,4 +1,6 @@
-// 汉化：接入阶段 5 已校对的无尽模式菜单标题；Mr Upbeat 的双分支仍待复核。
+// 汉化：接入阶段 5 已校对的无尽模式菜单标题。
+// TODO 未校对：Mr Upbeat 有 PARADISE 和非 PARADISE 两种写法，
+// 译文包只有一条中文；确认两个版本的菜单宽度后再同时替换。
 // [D_089dd548] Endless Games Menu - Levels
 struct MedalCornerLevel endless_menu_levels[] = {
     /* MR_UPBEAT */ {
