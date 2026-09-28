@@ -229,11 +229,7 @@
 
 - TODO 未校对 data\cafe\dialogue.json:cafe_dialogue_rhythm_sense[7]: conditional branches need review
 - TODO 未校对 data\data_room\reading_material.inc.json:reading_night_walk_story: key not found
-- TODO 未校对 data\data_room\reading_material.inc.json:reading_horse_machine_story: key not found
-- TODO 未校对 data\data_room\reading_material.inc.json:reading_radio_story: key not found
 - TODO 未校对 data\data_room\reading_material.inc.json:reading_lyrics_3: key not found
-- TODO 未校对 data\data_room\reading_material.inc.json:reading_final_story: key not found
-- TODO 未校对 data\data_room\reading_material.inc.json:reading_manzai_story: key not found
 - TODO 未校对 data\data_room\reading_material.inc.json:reading_praise_story: key not found
 - TODO 未校对 data\data_room\reading_material.inc.json:reading_haiku_1: key not found
 - TODO 未校对 data\data_room\reading_material.inc.json:reading_haiku_2: key not found

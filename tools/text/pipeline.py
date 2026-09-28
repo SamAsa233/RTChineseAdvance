@@ -578,6 +578,48 @@ def conditional_level_translation_installed(text, key, translation):
     return len(values) == count and all(value == expected for value in values)
 
 
+def reading_story_installed(text, key, translation):
+    """核对资料室长文两种地区路径的实际显示字串。"""
+    specs = {
+        'reading_horse_machine_story': ('MECHANICAL_HORSE', 1),
+        'reading_radio_story': ('RAP_MEN', 1),
+        'reading_final_story': ('REMIX8', 1),
+        'reading_manzai_story': ('TOSS_BOYS', 3),
+    }
+    if key not in specs:
+        return False
+    marker, count = specs[key]
+    entry = re.search(r'/\* ' + marker + r' \(', text)
+    if not entry:
+        return False
+    next_entry = re.search(r'(?m)^    /\* [A-Z][A-Z0-9_]+ ', text[entry.end():])
+    if not next_entry:
+        return False
+    section = text[entry.end():entry.end() + next_entry.start()]
+    start = '/* BODY ----------------------------------------------------------- */'
+    stop = '/* STYLE ---------------------------------------------------------- */'
+    if start not in section or stop not in section:
+        return False
+    body = section.split(start, 1)[1].split(stop, 1)[0]
+    branches = re.compile(r'#ifdef\s+PARADISE(.*?)#else(.*?)#endif', re.S)
+    if len(branches.findall(body)) != count:
+        return False
+
+    def visible(source, paradise):
+        # 英文地区分支可以不同；按同一地区连续拼接所有相邻 C 字面量。
+        selected = branches.sub(lambda match: match.group(1 if paradise else 2), source)
+        joined = ''.join(literal[1:-1] for literal in LITERAL.findall(remove_comments(selected)))
+        controls = CONTROL_TOKEN.findall(joined)
+        expected_controls = [r'\001R'] if key == 'reading_final_story' else []
+        if controls != expected_controls:
+            return None
+        return CONTROL_TOKEN.sub('', joined).replace(r'\n', '\n').replace(r'\"', '"')
+
+    expected = ''.join(char for char in translation if not char.isspace())
+    return all(value is not None and ''.join(char for char in value if not char.isspace()) == expected
+               for value in (visible(body, True), visible(body, False)))
+
+
 def extract():
     output, unresolved = [], []
     previous = {}
@@ -602,6 +644,13 @@ def extract():
             previous = {row['id']: row for row in csv.DictReader(stream, delimiter='\t')}
     for (json_path, path, base), members in grouped_archive().items():
         archive_name = json_path.relative_to(ARCHIVE).as_posix()
+        if (archive_name == 'data/data_room/reading_material.inc.json'
+                and path is not None and len(members) == 1):
+            key, row = members[0]
+            # 为什么手工校验：长文有条件编译，普通定位器会拒绝修改整篇。
+            if (row['stage'] == 5 and reading_story_installed(
+                    path.read_text(encoding='utf-8'), key, row['translation'])):
+                continue
         if (archive_name in ('src/arrival.json', 'src/game_select.json')
                 and path is not None and len(members) == 1):
             key, row = members[0]
