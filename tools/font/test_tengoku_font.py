@@ -21,6 +21,12 @@ def main() -> None:
             rebuilt = b"".join(encode_glyph(decode_glyph(data[i:i + height * 2], height)) for i in range(0, len(data), height * 2))
             assert rebuilt == data, path
             count += 1
+    # A 16-to-9 OR reduction previously filled almost all of 蹑 (U+8E51).
+    path = root / 'small/small_cjk_unified_ideographs_4E00_9FFF.bin'
+    offset = (0x8E51 - 0x4E00) * 24
+    glyph = decode_glyph(path.read_bytes()[offset:offset + 24], 12)
+    ink = sum(sum(row[:9]) for row in glyph)
+    assert 20 <= ink < 60, f'U+8E51 is unreadably dense: {ink}/81 pixels'
     print(f"{count} font files round-tripped")
 
 

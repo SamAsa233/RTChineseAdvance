@@ -95,6 +95,22 @@ def shrink(source, target, height, top):
     return rows
 
 
+def shrink_nearest(source, target, height, top):
+    """Sample bitmap centers without OR-merging every source stroke."""
+    points = [(x, y) for y, row in enumerate(source) for x, bit in enumerate(row) if bit]
+    rows = [[0] * 16 for _ in range(height)]
+    if not points:
+        return rows
+    left, right = min(x for x, _ in points), max(x for x, _ in points) + 1
+    upper, lower = min(y for _, y in points), max(y for _, y in points) + 1
+    for dy in range(target):
+        sy = upper + (2 * dy + 1) * (lower - upper) // (2 * target)
+        for dx in range(target):
+            sx = left + (2 * dx + 1) * (right - left) // (2 * target)
+            rows[top + dy][dx] = source[sy][sx]
+    return rows
+
+
 def square(height, top, width):
     rows = [[0] * 16 for _ in range(height)]
     for y in range(top, top + width):
@@ -116,7 +132,8 @@ def required_chars(extra):
     return chars
 
 
-def build(size, required, fusion, unifont, out, report, keep):
+def build(size, required, fusion, unifont, out, report, keep, small_fallback=None):
+    small_fallback = small_fallback or {}
     height = 16 if size == "large" else 12
     target = 15 if size == "large" else (9 if size == "small" else 11)
     top = 2 if size == "small" else 0
@@ -137,6 +154,11 @@ def build(size, required, fusion, unifont, out, report, keep):
         if size != "large" and cp in fusion:
             rows, width = bdf_canvas(fusion[cp], height, 9)
             counts["fusion"] += 1
+        elif size == 'small' and cp in small_fallback:
+            original, _ = bdf_canvas(small_fallback[cp], 12, 9)
+            rows, width = shrink_nearest(original, target, height, top), target
+            review.append(cp)
+            counts['fusion12_downsample'] += 1
         elif cp in unifont:
             if size == "large":
                 rows = shrink(unifont[cp], 15, 16, 0)
@@ -145,7 +167,7 @@ def build(size, required, fusion, unifont, out, report, keep):
                     clipped.append(cp)
                 counts["unifont"] += 1
             else:
-                rows, width = shrink(unifont[cp], target, height, top), target
+                rows, width = shrink_nearest(unifont[cp], target, height, top), target
                 review.append(cp)
                 counts["unifont_downsample"] += 1
         elif size == "large" and cp in fusion:
@@ -201,9 +223,10 @@ def main():
     required = required_chars(args.charset)
     print("GB2312 plus translation", len(required))
     unifont = read_unifont(THIRD / "unifont.hex")
+    small_fallback = read_bdf(THIRD / 'fusion-12.bdf')
     for size in (("small", "medium", "large") if args.size == "all" else (args.size,)):
         fusion = read_bdf(THIRD / f"fusion-{10 if size == 'small' else 12}.bdf")
-        build(size, required, fusion, unifont, args.out, args.report, args.keep_existing)
+        build(size, required, fusion, unifont, args.out, args.report, args.keep_existing, small_fallback)
         add_em_dash(size, fusion, args.out)
 
 

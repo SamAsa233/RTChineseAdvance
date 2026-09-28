@@ -305,6 +305,14 @@ def extract():
         with TABLE.open(encoding='utf-8', newline='') as stream:
             previous = {row['id']: row for row in csv.DictReader(stream, delimiter='\t')}
     for (json_path, path, base), members in grouped_archive().items():
+        if base == 'perfect_gift_directive_text' and len(members) == 1:
+            # The source JSON contains three reward-type messages in one row,
+            # while the English port stores them in three array entries.
+            original = members[0][1]
+            parts = original['translation'].splitlines(keepends=True)
+            if len(parts) == 3:
+                members = [(f'perfect_gift_directive_text[{index}]',
+                            {**original, 'translation': part}) for index, part in enumerate(parts)]
         if path is None:
             unresolved.extend(f"{json_path.relative_to(ARCHIVE)}:{key}: no source file" for key, _ in members)
             continue
@@ -337,7 +345,7 @@ def extract():
                     note = 'control codes need review'
             relative = path.relative_to(ROOT).as_posix()
             record = dict(id=f"{relative}:{key}", file=relative, key=key, source=source, target=target, status='final' if row['stage'] == 5 else 'draft', note=note)
-            output.append(previous.get(record['id'], record))
+            output.append(record if base == 'perfect_gift_directive_text' else previous.get(record['id'], record))
     # Supplemental *_add.json entries override the same key from the base file.
     output = list({row['id']: row for row in output}.values())
     output.sort(key=lambda row: row['id'])
