@@ -330,9 +330,10 @@ void cafe_print_dialogue(void) {
             if (D_030046a8->data.unk294[CAFE_CLEAR_DIALOGUE_MAIN_PENDING]) {
                 // Oh! You're here, you're here!
                 // I've been waiting, you know!!
+                // 阶段 5 已校对 cafe_line_1；首尾空行是原版文本框的垂直留白。
                 string = "\n"
-                         "Oh! You're finally here!\n"
-                         "I've been waiting for you!\n"
+                         "哦，来啦来啦！\n"
+                         "等你好久啦〜！！\n"
                          "\n";
                 cafe_session_remove_perfect_levels();
                 D_030046a8->data.unk294[CAFE_CLEAR_DIALOGUE_MAIN_PENDING] = FALSE;
@@ -365,26 +366,27 @@ void cafe_print_dialogue(void) {
             }
 
             playtime = gCafe->totalPlayTime;
+            // 阶段 5 已校对 cafe_line_2～5；只换显示文字，保留分支和留白。
             if (playtime <= 20) {
                 // Are you making progress?
                 // Please do your best!
                 string = "\n"
-                         "Are you enjoying those rhythm\n"
-                         "games? Keep up the good work!\n"
+                         "游戏玩得怎么样啦？\n"
+                         "要加油哦〜。\n"
                          "\n";
             } else if (playtime <= 60) {
                 // Aren't you getting tired?
                 // Don't forget to rest now and then.
                 string = "\n"
-                         "Are you getting tired? It's a good\n"
-                         "idea to take a break once in a while.\n"
+                         "你是不是已经很累啦？\n"
+                         "偶尔还是歇一歇比较好哦。\n"
                          "\n";
             } else {
                 // You've been at this a while,
                 // haven't you? Please rest a little.
                 string = "\n"
-                         "You've been keeping busy, haven't you?\n"
-                         "Wouldn't you like to take a break?\n"
+                         "你已经玩得很上头了呢。\n"
+                         "也稍微休息一下吧。\n"
                          "\n";
             }
             dialogueTask = CAFE_EV_START_TOPIC;
@@ -442,6 +444,9 @@ void cafe_print_dialogue(void) {
                 }
             }
 
+            // 阶段 5 已校对 cafe_line_6～9、11：只替换关卡名两侧的文字。
+            // \0051/\0015 和 \0054/\0018 仍负责高亮动态关卡名。
+            // TODO 未校对：关卡名长短不一，合并后的换行需在游戏里核验。
             switch (topic) {
                 case CAFE_TOPIC_CAMPAIGN_CLEAR:
                     // Was that you on [...]?
@@ -449,10 +454,10 @@ void cafe_print_dialogue(void) {
                     s = gCafe->string;
                     memcpy(s, "", 1);
                     strcat(s, "\n");
-                    strcat(s, "So hey, I hear you got a Perfect rank in ");
+                    strcat(s, "对了对了，听说你在 ");
                     strcat(s, "\0051" "\0015");
                     strcat(s, levelName);
-                    strcat(s, "\0054" "\0018" "!\n");
+                    strcat(s, "\0054" "\0018" "\n完美通关啦！？\n");
                     string = s;
                     activity->levelID = LEVEL_NULL;
                     dialogueTask = CAFE_EV_CAMPAIGN_CLEAR_00;
@@ -464,10 +469,10 @@ void cafe_print_dialogue(void) {
                     s = gCafe->string;
                     memcpy(s, "", 1);
                     strcat(s, "\n");
-                    strcat(s, "Has ");
+                    strcat(s, "话说回来，\n你是不是卡在 ");
                     strcat(s, "\0051" "\0015");
                     strcat(s, levelName);
-                    strcat(s, "\0054" "\0018" "\nbeen giving you some trouble?\n" "\n");
+                    strcat(s, "\0054" "\0018" " 了呀？\n" "\n");
                     string = s;
                     gCafe->levelToClear = activity->levelID;
                     activity->levelID = LEVEL_NULL;
@@ -479,11 +484,10 @@ void cafe_print_dialogue(void) {
                     s = gCafe->string;
                     memcpy(s, "", 1);
                     strcat(s, "\n");
-                    strcat(s, "Hm... about ");
+                    strcat(s, "唔〜嗯…\n ");
                     strcat(s, "\0051" "\0015");
                     strcat(s, levelName);
-                    strcat(s, "\0054" "\0018" "...\n");
-                    strcat(s, "Has the medal been giving you some\ntrouble?\n");
+                    strcat(s, "\0054" "\0018" " 让你费了不少劲呢。\n");
                     string = s;
                     dialogue = cafe_dialogue_keep_trying;
                     activity->levelID = LEVEL_NULL;
@@ -495,12 +499,10 @@ void cafe_print_dialogue(void) {
                     s = gCafe->string;
                     memcpy(s, "", 1);
                     strcat(s, "\n");
-                    strcat(s, "So... ");
+                    strcat(s, "听说你最近\n一直在玩 ");
                     strcat(s, "\0051" "\0015");
                     strcat(s, levelName);
-                    strcat(s, "\0054" "\0018" "\n");
-                    strcat(s, "has been keeping you busy, huh?\n"
-                              "Can't stop playing it?");
+                    strcat(s, "\0054" "\0018" " 呢");
                     string = s;
                     activity->levelID = LEVEL_NULL;
                     dialogueTask = CAFE_EV_CAMPAIGN_ADVICE_00;
@@ -509,9 +511,10 @@ void cafe_print_dialogue(void) {
                 case CAFE_TOPIC_REMEMBERING:
                     activity->timeOfLastPlay = gCafe->totalPlayTime;
                     // Ah! Wait, I remember!
+                    // 阶段 5 已校对 cafe_line_10；两侧空行仍用于文本框定位。
                     string = "\n"
                              "\n"
-                             "Hey, I just remembered something!\n"
+                             "啊，我突然想起来一点事！\n"
                              "\n";
                     break;
 
@@ -519,11 +522,11 @@ void cafe_print_dialogue(void) {
                     // Hey, here's a tip! Soon [...] is going to be having a perfect campaign.
                     s = gCafe->string;
                     memcpy(s, "", 1);
-                    strcat(s, "\nSay, I heard that there's a chance\n"
-                              "for a Perfect on ");
+                    strcat(s, "\n对了对了，\n"
+                              "听说 ");
                     strcat(s, "\0051" "\0015");
                     strcat(s, levelName);
-                    strcat(s, "\0054" "\0018" ".\n\n");
+                    strcat(s, "\0054" "\0018" " 很快\n就要举办完美挑战了哦。\n\n");
                     string = s;
                     dialogueTask = CAFE_EV_UPCOMING_CAMPAIGN_00;
                     D_030046a8->data.unk291 = TRUE;
@@ -545,9 +548,10 @@ void cafe_print_dialogue(void) {
         case CAFE_EV_CAMPAIGN_CLEAR_01:
             // Please keep on working hard.
             // I'll be here rooting for you~!
+            // 阶段 5 已校对 cafe_line_12；保留对话结束时的空行。
             string = "\n"
-                     "Keep working hard out there.\n"
-                     "I'm rooting for you!\n"
+                     "今后也要继续加油哦。\n"
+                     "我会为你打气的〜！\n"
                      "\n";
             dialogueExhausted = TRUE;
             break;
@@ -558,11 +562,14 @@ void cafe_print_dialogue(void) {
             //
             // "Please skip it."
             // "No, thank you."
-            string = "Because I can make it so you\n"
-                     "can just ""\0051" "\0015" "skip that game\n"
-                     """\0051" "\0015""altogether. ""\0054" "\0018" "What do you say?\n"
-                     "              Please!\n"
-                     "              No, thanks.";
+            // 阶段 5 已校对 cafe_line_13；仅翻译可见文字，保留强调控制码和两项选择顺序。
+            // 中文句子比英文短，正文两行后接选项，仍在打印器的六行容量内。
+            // TODO 未校对：选项缩进和光标位置需要在咖啡馆实机核验。
+            string = "嗯〜，要是你愿意，\n"
+                     "我可以帮你" "\0051" "\0015" "通过"
+                     "\0051" "\0015" "这一关" "\0054" "\0018" "，怎么样…？\n"
+                     "              「那就拜托你了」\n"
+                     "              「还是不必了」";
             gCafe->queryEnabled = TRUE;
             gCafe->queryResult = CAFE_OPT_YES;
             dialogueTask++;
@@ -571,9 +578,10 @@ void cafe_print_dialogue(void) {
         case CAFE_EV_OFFER_CLEAR_01:
             if (gCafe->queryResult == CAFE_OPT_YES) {
                 // <Leave it to me!>
+                // 阶段 5 已校对 cafe_line_14；只换强调文字，不移动前后控制码。
                 string = "\n"
                          "\n"
-                         "\0032" "\001l" "\0051" "\0015" "Leave it to me!" "\0030" "\001s" "\0054" "\0018";
+                         "\0032" "\001l" "\0051" "\0015" "包在我身上！" "\0030" "\001s" "\0054" "\0018";
                 gCafe->textAdvHold = 3;
                 gCafe->bgEvent = CAFE_BG_EV_HELPING;
                 dialogueTask = CAFE_EV_OFFER_CLEAR_02_Y;
@@ -589,10 +597,13 @@ void cafe_print_dialogue(void) {
                 // You're determined to beat
                 // it with your own strength.
                 // Excellent!
+                // 阶段 5 已校对 cafe_line_15；四行译文加一个首空行，小于打印器六行上限。
+                // TODO 未校对：仍需在选择“还是不必了”后确认实际折行与垂直位置。
                 string = "\n"
-                         "That's the spirit! Stay\n"
-                         "confident, and stick\n"
-                         "to it!";
+                         "这样啊。\n"
+                         "你想靠自己的力量\n"
+                         "继续努力，对吧。\n"
+                         "真了不起！！";
                 dialogueTask = CAFE_EV_OFFER_CLEAR_02_N;
             }
             break;
@@ -601,19 +612,19 @@ void cafe_print_dialogue(void) {
             // I hope the next game will go
             // much better for you.
             // Tell me about it next time.
-            string = "...And that's done. Wonder what the\n"
-                     "next game will be like?\n"
-                     "Hope it goes better!\n"
-                     "See you later.";
+            // 阶段 5 已校对 cafe_line_16；换行沿用译文的三个短句。
+            string = "下一个游戏会是什么样的呢？\n"
+                     "希望你能顺利完成呀〜。\n"
+                     "那，下回见。";
             dialogueExhausted = TRUE;
             break;
 
         case CAFE_EV_OFFER_CLEAR_02_N:
             // Well then, please
             // do your best!
+            // 阶段 5 已校对 cafe_line_17；首尾空行仍用于垂直定位。
             string = "\n"
-                     "Do your best,\n"
-                     "I'm rooting for you!\n"
+                     "那就继续加油哦〜。\n"
                      "\n";
             dialogueExhausted = TRUE;
             break;
@@ -624,15 +635,18 @@ void cafe_print_dialogue(void) {
             //
             //         "That's right."
             //         "Not right now."
+            // 阶段 5 已校对 cafe_line_18；保留两个地区编译分支和原来的强调控制码顺序。
+            // 中文两侧相同，是因为英式/美式拼写差异在中文译文中不存在。
+            // TODO 未校对：菜单缩进与光标相对位置仍需实机确认。
             #ifdef PARADISE
-            string = "\0054" "\0018" "Are you just practising so\n"
+            string = "\0054" "\0018" "你是在为"
             #else
-            string = "\0054" "\0018" "Are you just practicing so\n"
+            string = "\0054" "\0018" "你是在为"
             #endif
-                     "\0054" "\0018" "you can have a go " "\0051" "\0015" "at\n"
-                     "\0051" "\0015" "getting a Perfect?" "\0054" "\0018" "\n"
-                     "             That's right!\n"
-                     "             Not really.";
+                     "\0054" "\0018" "\0051" "\0015" "完美"
+                     "\0051" "\0015" "挑战" "\0054" "\0018" "练习吗？\n"
+                     "              「没错」\n"
+                     "              「不是哦」";
             gCafe->queryEnabled = TRUE;
             gCafe->queryResult = CAFE_OPT_YES;
             dialogueTask++;
@@ -652,10 +666,10 @@ void cafe_print_dialogue(void) {
         case CAFE_EV_UPCOMING_CAMPAIGN_00:
             // Just try your best and
             // go get that Perfect!
+            // 阶段 5 已校对 cafe_line_19；保留原版开头的空行。
             string = "\n"
-                     "I think you've got a good\n"
-                     "chance of clearing it.\n"
-                     "I'll be rooting for you!\n";
+                     "加把劲，\n"
+                     "争取完美通关吧！\n";
             dialogueExhausted = TRUE;
             break;
 
@@ -663,26 +677,29 @@ void cafe_print_dialogue(void) {
             // At long last...
             // You have completed
             // the Perfect Campaign!
+            // 阶段 5 已校对 cafe_line_20；原版开头空行继续保留。
             string = "\n"
-                     "Word on the wind is that you finally\n"
-                     "got all Perfects!\n"
-                     "...Is that true?";
+                     "听说你终于\n"
+                     "把所有完美挑战\n"
+                     "都完成了！？";
             dialogueTask++;
             break;
 
         case CAFE_EV_ALL_CAMPAIGNS_CLEAR_01:
             // Crazy awesome!!
+            // 阶段 5 已校对 cafe_line_21；高亮与字号控制码保持原位。
             string = "\0032" "\001l" "\0051" "\0015" "\n"
-                     "Now,\n"
-                     "that's perfect!" "\0030" "\001s" "\0054" "\0018";
+                     "也太厉害啦!!" "\0030" "\001s" "\0054" "\0018";
             gCafe->bgEvent = CAFE_BG_EV_CHEER_02;
             gCafe->textAdvHold = 4;
             dialogue = cafe_dialogue_all_perfects_clear;
             break;
 
         case CAFE_EV_EXTRA_CAMPAIGNS_CLEAR_00:
+            // 阶段 5 已校对 cafe_line_extra_1～3；保留各完成状态分支。
+            // TODO 未校对：额外关卡的较长中文仍需在对应版本实机看宽度。
             string = "\0032" "\001l" "\0051" "\0015" "\n"
-                     "woohoo extra!" "\0030" "\001s" "\0054" "\0018";
+                     "天呐！所有的额外关卡！" "\0030" "\001s" "\0054" "\0018";
             gCafe->bgEvent = CAFE_BG_EV_CHEER_02;
             gCafe->textAdvHold = 4;
             dialogue = cafe_dialogue_extra_perfects_clear;
@@ -690,14 +707,14 @@ void cafe_print_dialogue(void) {
 
         case CAFE_EV_ALL_CAMPAIGNS_BIG_CLEAR_00:
             string = "\n"
-                     "woohoo main & extra!\n"
+                     "天呐！所有的主关卡和额外关卡！"
                      "\n";
             dialogueTask++;
             break;
 
         case CAFE_EV_ALL_CAMPAIGNS_BIG_CLEAR_01:
             string = "\0032" "\001l" "\0051" "\0015" "\n"
-                     "woohoo you beat the game!" "\0030" "\001s" "\0054" "\0018";
+                     "哇哦，你通关啦！" "\0030" "\001s" "\0054" "\0018";
             gCafe->bgEvent = CAFE_BG_EV_CHEER_02;
             gCafe->textAdvHold = 4;
             dialogue = cafe_dialogue_all_perfects_clear_big;

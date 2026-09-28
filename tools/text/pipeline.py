@@ -381,6 +381,113 @@ def grouped_archive():
     return grouped
 
 
+def cafe_translation_installed(text, key, translation):
+    """逐个检查咖啡馆译文所在剧情分支，避免只凭搜索到中文就删除 TODO。
+
+    归档键不是 C 变量名；中文断行可不同于英文，但可见文字、两个地区
+    分支和控制码必须与已校对译文及原版显示逻辑相符。
+    """
+    event_cases = {
+        'cafe_line_1': ('CAFE_EV_INIT_DIALOGUE', 0),
+        'cafe_line_2': ('CAFE_EV_INIT_DIALOGUE', 3),
+        'cafe_line_3': ('CAFE_EV_INIT_DIALOGUE', 4),
+        'cafe_line_4': ('CAFE_EV_INIT_DIALOGUE', 5),
+        'cafe_line_5': ('CAFE_EV_INIT_DIALOGUE', 5),
+        'cafe_line_12': ('CAFE_EV_CAMPAIGN_CLEAR_01', 0),
+        'cafe_line_13': ('CAFE_EV_OFFER_CLEAR_00', 0),
+        'cafe_line_14': ('CAFE_EV_OFFER_CLEAR_01', 0),
+        'cafe_line_15': ('CAFE_EV_OFFER_CLEAR_01', 1),
+        'cafe_line_16': ('CAFE_EV_OFFER_CLEAR_02_Y', 0),
+        'cafe_line_17': ('CAFE_EV_OFFER_CLEAR_02_N', 0),
+        'cafe_line_19': ('CAFE_EV_UPCOMING_CAMPAIGN_00', 0),
+        'cafe_line_20': ('CAFE_EV_ALL_CAMPAIGNS_CLEAR_00', 0),
+        'cafe_line_21': ('CAFE_EV_ALL_CAMPAIGNS_CLEAR_01', 0),
+        'cafe_line_extra_1': ('CAFE_EV_EXTRA_CAMPAIGNS_CLEAR_00', 0),
+        'cafe_line_extra_2': ('CAFE_EV_ALL_CAMPAIGNS_BIG_CLEAR_00', 0),
+        'cafe_line_extra_3': ('CAFE_EV_ALL_CAMPAIGNS_BIG_CLEAR_01', 0),
+    }
+    topic_cases = {
+        'cafe_line_6': 'CAFE_TOPIC_CAMPAIGN_CLEAR',
+        'cafe_line_7': 'CAFE_TOPIC_TROUBLE_CLEARING_LEVEL',
+        'cafe_line_8': 'CAFE_TOPIC_TROUBLE_GETTING_MEDAL',
+        'cafe_line_9': 'CAFE_TOPIC_TROUBLE_CLEARING_CAMPAIGN',
+        'cafe_line_10': 'CAFE_TOPIC_REMEMBERING',
+        'cafe_line_11': 'CAFE_TOPIC_UPCOMING_CAMPAIGN',
+    }
+    # 为什么核对控制码：它们会切换高亮和字号，只对上可见文字仍可能显示错。
+    highlight = [r'\0051', r'\0015', r'\0054', r'\0018']
+    emphasis = [r'\0032', r'\001l'] + highlight[:2] + [r'\0030', r'\001s'] + highlight[2:]
+    control_sequences = {
+        **{name: highlight for name in ('cafe_line_6', 'cafe_line_7',
+                                        'cafe_line_8', 'cafe_line_9', 'cafe_line_11')},
+        'cafe_line_13': highlight[:2] * 2 + highlight[2:],
+        'cafe_line_14': emphasis,
+        'cafe_line_18': highlight[2:] * 2 + highlight[:2] * 2 + highlight[2:],
+        'cafe_line_21': emphasis,
+        'cafe_line_extra_1': emphasis,
+        'cafe_line_extra_3': emphasis,
+    }
+
+    def case_body(name, kind):
+        indent = '                ' if kind == 'topic' else '        '
+        pattern = rf'(?m)^{indent}case {re.escape(name)}:'
+        match = re.search(pattern, text)
+        if not match:
+            return None
+        next_case = re.search(r'(?m)^' + indent + r'(?:case|default)\b',
+                              text[match.end():])
+        return text[match.end():match.end() + next_case.start()] if next_case else None
+
+    def literals(expression):
+        return ''.join(literal[1:-1] for literal in LITERAL.findall(remove_comments(expression)))
+
+    def visible(value):
+        return CONTROL_TOKEN.sub('', value).replace(r'\n', '\n')
+
+    def compact(value):
+        return ''.join(char for char in visible(value) if not char.isspace())
+
+    if key in topic_cases:
+        section = case_body(topic_cases[key], 'topic')
+        if section is None:
+            return False
+        if key == 'cafe_line_10':
+            assignments = re.findall(r'\bstring\s*=\s*(.*?);', section, re.S)
+            values = [literals(assignments[0])] if assignments else []
+        else:
+            if len(re.findall(r'strcat\(s,\s*levelName\s*\)', section)) != 1:
+                return False
+            fragments = re.findall(r'strcat\(s,\s*(.*?)\);', section, re.S)
+            values = [''.join(literals(fragment) for fragment in fragments)]
+    elif key == 'cafe_line_18':
+        section = case_body('CAFE_EV_CAMPAIGN_ADVICE_00', 'event')
+        if section is None:
+            return False
+        branches = re.search(r'#ifdef\s+PARADISE\s*string\s*=\s*(.*?)'
+                             r'#else\s*string\s*=\s*(.*?)#endif\s*(.*?);', section, re.S)
+        values = ([literals(branches.group(side) + branches.group(3)) for side in (1, 2)]
+                  if branches else [])
+    elif key in event_cases:
+        case, index = event_cases[key]
+        section = case_body(case, 'event')
+        assignments = re.findall(r'\bstring\s*=\s*(.*?);', section or '', re.S)
+        values = [literals(assignments[index])] if len(assignments) > index else []
+    else:
+        return False
+
+    if key in ('cafe_line_4', 'cafe_line_5'):
+        # 为什么合并核对：游玩时间最长的分支把归档第 4、5 句放在同一字符串。
+        rows = json.loads((ARCHIVE / 'src/cafe.json').read_text(encoding='utf-8'))
+        parts = {row['key']: row['translation'] for row in rows}
+        translation = parts['cafe_line_4'] + parts['cafe_line_5']
+    expected = compact(translation)
+    controls = control_sequences.get(key, [])
+    return bool(values and all(compact(value) == expected
+                               and CONTROL_TOKEN.findall(value) == controls
+                               and len(visible(value).splitlines()) <= 6
+                               for value in values))
+
+
 def extract():
     output, unresolved = [], []
     previous = {}
@@ -405,6 +512,14 @@ def extract():
             previous = {row['id']: row for row in csv.DictReader(stream, delimiter='\t')}
     for (json_path, path, base), members in grouped_archive().items():
         archive_name = json_path.relative_to(ARCHIVE).as_posix()
+        if (archive_name in ('src/cafe.json', 'src/cafe_add.json')
+                and path is not None and len(members) == 1):
+            key, row = members[0]
+            # 为什么单独核对：动态关卡名和手工断行的对话没有同名 C 数组。
+            # 只有对应剧情分支真的显示已校对文字，才从未定位清单移除。
+            if (row['stage'] == 5 and cafe_translation_installed(
+                    path.read_text(encoding='utf-8'), key, row['translation'])):
+                continue
         if (archive_name == 'data/data_room/reading_material.inc.json'
                 and base == 'reading_greeting' and path is not None
                 and len(members) == 1):
