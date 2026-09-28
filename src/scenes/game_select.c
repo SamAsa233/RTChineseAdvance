@@ -282,19 +282,20 @@ void start_campaign_notice(s32 id) {
     notice->y = campaign_gifts_table[id].y;
     level = get_level_data_from_grid_xy(notice->x, notice->y);
     string = notice->text;
-    memcpy(string, "在「", 11); // [Right now]
+    memcpy(string, "\001C" "在「", 45); // [Right now]
     strcat(string, level->name); // "<game_name>"
-    strcat(string, "」达成完美通关的话，"); // Get a perfect on this
-    if (!isSpecialSong) {
-        strcat(string, "即可获赠"); // game, and you'll receive
+    strcat(string, "」\n达成完美通关的话，\n "); // Get a perfect on this
+    //
+    if (giftType == CAMPAIGN_GIFT_DRUM_KIT || giftType == CAMPAIGN_GIFT_READING_MATERIAL) {
+        strcat(string, "即可获赠：\n");
+        strcat(string, get_campaign_gift_title(id, FALSE)); // received as a present!!
     }
-    strcat(string, "「"); // "
-    strcat(string, get_campaign_gift_title(id, FALSE)); // "<gift>"
-    strcat(string, "」"); // "
-    if (isStandardSong) {
-        strcat(string, "的音乐"); // 's song
-    }
-    strcat(string, "就送给你！"); // received as a present!!
+    
+    if(isSong) {
+        strcat(string, get_campaign_gift_title(id, FALSE));
+        strcat(string, "的音乐\n");
+        strcat(string, "就送给你！\n");
+    } 
     text_printer_set_string(notice->printer, string);
 
     sprite_set_visible(gSpriteHandler, gGameSelect->selectionBorderSprite, FALSE);
