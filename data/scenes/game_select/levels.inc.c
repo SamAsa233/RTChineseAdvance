@@ -977,6 +977,7 @@ struct LevelData level_data_table[] = {
             /* TRY_AGAIN */ "毛长得太快了啊…",
             /* OK        */ "还真是挺难对付的毛啊",
             /* SUPERB    */ "嗯——清爽了！去看看花吧！",
+        },
         /* Level Flags   */ LEVEL_DATA_FLAG_IS_EXTRA | LEVEL_DATA_FLAG_NO_PRACTICE
     },
     /* MARCHING_ORDERS */ {
