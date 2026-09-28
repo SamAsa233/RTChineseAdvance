@@ -1,0 +1,1 @@
+# One U+XXXX codepoint per line. When present here, pixels from the existing PNG are retained.

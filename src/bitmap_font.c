@@ -16,7 +16,7 @@ static u32 sBgFontStyle; // BitmapFontBG - Font/Style
 
 struct BitmapFontGlyph {
     const struct BitmapFontRange* glyphSet;
-    u8 glyphID;
+    u16 glyphID;
 };
 
 extern s32 (*math_sqrt)(s32);
@@ -47,13 +47,33 @@ static s32 bmp_font_is_control_code(const char *string, char cmd) {
 
 static s32 bmp_font_codepoint_to_glyph(const struct BitmapFontData *font, u32 codepoint, struct BitmapFontGlyph *glyphReq) {
     const struct BitmapFontRange *glyphRange;
+    u32 low, high, middle, glyphID;
 
     glyphRange = font->glyphRanges;
     while (glyphRange->glyphTextures != NULL) {
         if ((codepoint >= glyphRange->utf8Start) && (codepoint <= glyphRange->utf8End)) {
+            if (glyphRange->codepointList != NULL) {
+                low = 0;
+                high = glyphRange->glyphCount;
+                while (low < high) {
+                    middle = low + (high - low) / 2;
+                    if (glyphRange->codepointList[middle] < codepoint) {
+                        low = middle + 1;
+                    } else {
+                        high = middle;
+                    }
+                }
+                if (low >= glyphRange->glyphCount || glyphRange->codepointList[low] != codepoint) {
+                    glyphRange++;
+                    continue;
+                }
+                glyphID = low;
+            } else {
+                glyphID = codepoint - glyphRange->utf8Start;
+            }
             if (glyphReq != NULL) {
                 glyphReq->glyphSet = glyphRange;
-                glyphReq->glyphID = (u8)(codepoint - glyphRange->utf8Start);
+                glyphReq->glyphID = glyphID;
             }
             return TRUE;
         }
@@ -155,7 +175,7 @@ struct BitmapFontOBJ *create_new_bmp_font_obj(u16 memID, const struct BitmapFont
     textObj->fonts = fonts;
     textObj->baseTileNum = baseTileNum;
     textObj->maxAllocatedTileRows = maxTileRows;
-    textObj->printedGlyphs = mem_heap_alloc_id(memID, maxTileRows * 16 * sizeof(u16));
+    textObj->printedGlyphs = mem_heap_alloc_id(memID, maxTileRows * 16 * sizeof(u32));
     textObj->printedGlyphCounts = mem_heap_alloc_id(memID, maxTileRows * 16 * sizeof(u8));
     textObj->parseString = NULL;
     textObj->parsedOutput = NULL;
@@ -184,7 +204,7 @@ void bmp_font_obj_set_format_parser(struct BitmapFontOBJ *textObj, void *stringP
 
 
 // Set BitmapFontOBJ data.
-void bmp_font_obj_set_data(struct BitmapFontOBJ *textObj, const struct BitmapFontData *fonts, u16 baseTileNum, u8 maxTileRows, u32 unused1, u32 unused2, u16 *printedGlyphs, u8 *printedGlyphCounts) {
+void bmp_font_obj_set_data(struct BitmapFontOBJ *textObj, const struct BitmapFontData *fonts, u16 baseTileNum, u8 maxTileRows, u32 unused1, u32 unused2, u32 *printedGlyphs, u8 *printedGlyphCounts) {
     textObj->fonts = fonts;
     textObj->baseTileNum = baseTileNum;
     textObj->maxAllocatedTileRows = maxTileRows;
@@ -324,14 +344,13 @@ u16 bmp_font_obj_print_glyph(struct BitmapFontOBJ *textObj, const char *string, 
     u16 *address;
     u32 width;
     struct BitmapFontGlyph glyph;
-    u8 glyphDataB0, glyphDataB1;
-    u32 tileX, tileY, tileID, glyphSet;
-    u8 *printed;
+    u32 tileX, tileY, tileID, glyphSet, glyphKey;
+    u32 *printed;
     u32 i, j;
     const struct BitmapFontData *font = &textObj->fonts[sObjFontStyle];
 
     tileX = 99;
-    printed = (u8 *)textObj->printedGlyphs;
+    printed = textObj->printedGlyphs;
 
     if (!bmp_font_get_glyph_info(font, string, &glyph, NULL)) {
         *widthReq = 0;
@@ -339,21 +358,20 @@ u16 bmp_font_obj_print_glyph(struct BitmapFontOBJ *textObj, const char *string, 
     }
 
     glyphSet = glyph.glyphSet - font->glyphRanges;
-    glyphDataB0 = (sObjFontStyle << 4) | glyphSet;
-    glyphDataB1 = glyph.glyphID;
+    glyphKey = 1 + (sObjFontStyle << 24) + (glyphSet << 16) + glyph.glyphID;
 
     for (i = 0; i < textObj->maxAllocatedTileRows; i++) {
         for (j = 0; j < 16; j++) {
-            if ((glyphDataB0 == printed[0]) && (glyphDataB1 == printed[1])) {
+            if (glyphKey == *printed) {
                 *widthReq = bmp_font_obj_get_glyph_width(font, string);
                 textObj->printedGlyphCounts[j + (i * 16)]++;
                 return textObj->baseTileNum + (j * 2) + ((i * 32) * 2);
             }
-            if ((tileX == 99) && (printed[0] == 0) && (printed[1] == 0)) {
+            if ((tileX == 99) && (*printed == 0)) {
                 tileX = j;
                 tileY = i;
             }
-            printed += 2;
+            printed++;
         }
     }
 
@@ -375,9 +393,7 @@ u16 bmp_font_obj_print_glyph(struct BitmapFontOBJ *textObj, const char *string, 
     *widthReq = width;
 
     i = tileX + (tileY * 16);
-    printed = (u8 *)&textObj->printedGlyphs[i];
-    printed[0] = glyphDataB0;
-    printed[1] = glyphDataB1;
+    textObj->printedGlyphs[i] = glyphKey;
     textObj->printedGlyphCounts[i] = 1;
 
     return tileID;
@@ -457,7 +473,13 @@ struct PrintedTextAnim *bmp_font_obj_print_text(struct BitmapFontOBJ *textObj, c
 
         tileNum = bmp_font_obj_print_glyph(textObj, string, &glyphWidth);
         if (tileNum == (u16)-1) {
-            break;
+#ifdef PLAYTEST
+            tileNum = bmp_font_obj_print_glyph(textObj, "□", &glyphWidth);
+#endif
+            if (tileNum == (u16)-1) {
+                string = utf8_get_next_char_ptr(string);
+                continue;
+            }
         }
 
         if (bmp_font_obj_get_latin_glyph_type(string)) {
@@ -840,7 +862,7 @@ struct BitmapFontBG *create_new_bmp_font_bg(u16 memID, const struct BitmapFontDa
     textObj->tilesetID = bgTilesetID;
     textObj->baseTileNum = baseTileNum;
     textObj->maxAllocatedTileRows = maxTileRows;
-    textObj->printedGlyphs = mem_heap_alloc_id(memID, maxTileRows * 16 * sizeof(u16));
+    textObj->printedGlyphs = mem_heap_alloc_id(memID, maxTileRows * 16 * sizeof(u32));
     textObj->printedGlyphCounts = mem_heap_alloc_id(memID, maxTileRows * 16 * sizeof(u8));
     bmp_font_bg_clear_print_data(textObj);
 
@@ -857,7 +879,7 @@ void delete_bmp_font_bg(struct BitmapFontBG *textObj) {
 
 
 // Set BitmapFontBG data.
-void bmp_font_bg_set_data(struct BitmapFontBG *textObj, const struct BitmapFontData *fonts, u8 bgTilesetID, u16 baseTileNum, u8 maxTileRows, u16 *printedGlyphs, u8 *printedGlyphCounts) {
+void bmp_font_bg_set_data(struct BitmapFontBG *textObj, const struct BitmapFontData *fonts, u8 bgTilesetID, u16 baseTileNum, u8 maxTileRows, u32 *printedGlyphs, u8 *printedGlyphCounts) {
     textObj->fonts = fonts;
     textObj->tilesetID = bgTilesetID;
     textObj->baseTileNum = baseTileNum;
@@ -890,9 +912,8 @@ u16 bmp_font_bg_print_glyph(struct BitmapFontBG *textObj, const char *string) {
     const u16 *texture;
     u16 *address;
     struct BitmapFontGlyph glyph;
-    u8 glyphByte0, glyphByte1;
-    u32 tileX, tileY, tileID, glyphSet;
-    u8 *printed;
+    u32 tileX, tileY, tileID, glyphSet, glyphKey;
+    u32 *printed;
     u32 i, j;
     const struct BitmapFontData *font = &textObj->fonts[sBgFontStyle];
 
@@ -905,22 +926,21 @@ u16 bmp_font_bg_print_glyph(struct BitmapFontBG *textObj, const char *string) {
     }
 
     glyphSet = glyph.glyphSet - font->glyphRanges;
-    glyphByte0 = (sBgFontStyle << 4) | glyphSet;
-    glyphByte1 = glyph.glyphID;
+    glyphKey = 1 + (sBgFontStyle << 24) + (glyphSet << 16) + glyph.glyphID;
     tileX = 99;
-    printed = (u8 *)textObj->printedGlyphs;
+    printed = textObj->printedGlyphs;
 
     for (i = 0; i < textObj->maxAllocatedTileRows; i++) {
         for (j = 0; j < 16; j++) {
-            if ((glyphByte0 == printed[0]) && (glyphByte1 == printed[1])) {
+            if (glyphKey == *printed) {
                 textObj->printedGlyphCounts[j + (i * 16)]++;
                 return textObj->baseTileNum + (j * 2) + ((i * 16) * 2);
             }
-            if ((printed[0] == 0) && (printed[1] == 0)) {
+            if (*printed == 0) {
                 tileX = j;
                 tileY = i;
             }
-            printed += 2;
+            printed++;
         }
     }
 
@@ -938,9 +958,7 @@ u16 bmp_font_bg_print_glyph(struct BitmapFontBG *textObj, const char *string) {
     bmp_font_bg_write_glyph(texture, address);
 
     i = tileX + (tileY * 16);
-    printed = (u8 *)&textObj->printedGlyphs[i];
-    printed[0] = glyphByte0;
-    printed[1] = glyphByte1;
+    textObj->printedGlyphs[i] = glyphKey;
     textObj->printedGlyphCounts[i] = 1;
 
     return tileID;
@@ -1013,9 +1031,8 @@ void bmp_font_bg_print_text(struct BitmapFontBG *textObj, u16 *bgMap, u32 mapWid
 void bmp_font_bg_delete_printed_data(struct BitmapFontBG *textObj, const char *string) {
     struct BitmapFontGlyph glyph;
     const char *nextString;
-    u8 glyphByte0, glyphByte1;
-    u8 *printed;
-    u32 fontStyle, glyphSet;
+    u32 *printed;
+    u32 fontStyle, glyphSet, glyphKey;
     u32 i;
     const struct BitmapFontData* font;
 
@@ -1041,18 +1058,17 @@ void bmp_font_bg_delete_printed_data(struct BitmapFontBG *textObj, const char *s
         font = &textObj->fonts[fontStyle];
         if (bmp_font_get_glyph_info(font, string, &glyph, &nextString)) {
             glyphSet = glyph.glyphSet - font->glyphRanges;
-            glyphByte0 = (fontStyle << 4) | glyphSet;
-            glyphByte1 = glyph.glyphID;
-            printed = (u8 *)textObj->printedGlyphs;
+            glyphKey = 1 + (fontStyle << 24) + (glyphSet << 16) + glyph.glyphID;
+            printed = textObj->printedGlyphs;
 
             for (i = 0; i < (textObj->maxAllocatedTileRows * 16); i++) {
-                if ((printed[0] == glyphByte0) && (printed[1] == glyphByte1)) {
+                if (*printed == glyphKey) {
                     if (--textObj->printedGlyphCounts[i] == 0) {
-                        printed[0] = printed[1] = 0;
+                        *printed = 0;
                     }
                     break;
                 }
-                printed += 2;
+                printed++;
             }
 
             string = nextString;

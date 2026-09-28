@@ -10,7 +10,11 @@ struct BitmapFontRange {
     const u8 *glyphWidths;
     u16 utf8Start;
     u16 utf8End;
+    const u16 *codepointList; // NULL for an ordinary contiguous range.
+    u16 glyphCount;
 };
+
+#define BITMAP_FONT_END_OF_RANGE { NULL, NULL, 0, 0, NULL, 0 }
 
 // Definition of a Bitmap Font.
 struct BitmapFontData {
@@ -33,7 +37,7 @@ struct BitmapFontOBJ {
     const struct BitmapFontData *fonts;
     u16 baseTileNum;
     u8 maxAllocatedTileRows;
-    u16 *printedGlyphs;
+    u32 *printedGlyphs;
     u8 *printedGlyphCounts;
     void (*parseString)(char *, const char *);
     char *parsedOutput;
@@ -45,7 +49,7 @@ struct BitmapFontBG {
     u16 baseTileNum;
     u8 tilesetID;
     u8 maxAllocatedTileRows;
-    u16 *printedGlyphs;
+    u32 *printedGlyphs;
     u8 *printedGlyphCounts;
 };
 
@@ -95,7 +99,7 @@ extern struct BitmapFontOBJ *create_new_bmp_font_obj_alt(u16 memID, const struct
 extern struct BitmapFontOBJ *create_new_bmp_font_obj(u16 memID, const struct BitmapFontData *fonts, u16 baseTileNum, u8 maxTileRows);
 extern void delete_bmp_font_obj(struct BitmapFontOBJ *textObj);
 extern void bmp_font_obj_set_format_parser(struct BitmapFontOBJ *textObj, void *stringParserFunc, u32 maxOutputLength);
-extern void bmp_font_obj_set_data(struct BitmapFontOBJ *textObj, const struct BitmapFontData *fonts, u16 baseTileNum, u8 maxTileRows, u32, u32, u16 *printedGlyphs, u8 *printedGlyphCounts);
+extern void bmp_font_obj_set_data(struct BitmapFontOBJ *textObj, const struct BitmapFontData *fonts, u16 baseTileNum, u8 maxTileRows, u32, u32, u32 *printedGlyphs, u8 *printedGlyphCounts);
 extern void bmp_font_obj_clear_print_data(struct BitmapFontOBJ *textObj);
 extern u32 bmp_font_obj_get_anim_total(const char *string);
 extern u32 bmp_font_obj_get_glyph_width(const struct BitmapFontData *font, const char *string);
@@ -128,7 +132,7 @@ extern void bmp_font_obj_move_anim_xy(struct Animation *anim, s16 x, s16 y);
 
 extern struct BitmapFontBG *create_new_bmp_font_bg(u16 memID, const struct BitmapFontData *fonts, u8 bgTilesetID, u16 baseTileNum, u8 maxTileRows);
 extern void delete_bmp_font_bg(struct BitmapFontBG *textObj);
-extern void bmp_font_bg_set_data(struct BitmapFontBG *textObj, const struct BitmapFontData *fonts, u8 bgTilesetID, u16 baseTileNum, u8 maxTileRows, u16 *printedGlyphs, u8 *printedGlyphCounts);
+extern void bmp_font_bg_set_data(struct BitmapFontBG *textObj, const struct BitmapFontData *fonts, u8 bgTilesetID, u16 baseTileNum, u8 maxTileRows, u32 *printedGlyphs, u8 *printedGlyphCounts);
 extern void bmp_font_bg_clear_print_data(struct BitmapFontBG *textObj);
 extern void bmp_font_bg_write_glyph(const u16 *texture, u16 *dest);
 extern u16 bmp_font_bg_print_glyph(struct BitmapFontBG *textObj, const char *string);
