@@ -263,25 +263,42 @@ const char *get_campaign_gift_title(s32 id, s32 shortenSongTitle) {
 // Start Perfect Campaign Notice
 void start_campaign_notice(s32 id) {
     struct CampaignNotice *notice = &gGameSelect->campaignNotice;
+    u32 isSpecialSong = FALSE;
+    u32 isSong = FALSE;
     u32 giftType = campaign_gifts_table[id].type;
+    u32 giftID = campaign_gifts_table[id].id;
     struct LevelData *level;
-    const char *giftTitle;
-    const char *giftKind;
+    char *string;
+
+    if (giftType == CAMPAIGN_GIFT_SONG) {
+        isSong = TRUE;
+        switch (giftID) {
+            case STUDIO_SONG_WISH:
+            case STUDIO_SONG_HONEY_SWEET_ANGEL:
+                isSpecialSong = TRUE;
+                break;
+        }
+    }
 
     notice->x = campaign_gifts_table[id].x;
     notice->y = campaign_gifts_table[id].y;
     level = get_level_data_from_grid_xy(notice->x, notice->y);
-    giftTitle = get_campaign_gift_title(id, FALSE);
-    giftKind = (giftType == CAMPAIGN_GIFT_SONG) ? "的音乐" : "";
-    // 中文是按 game_select.json 中阶段 5 的片段重组的；保留 \001C
-    // 文本控制码和换行。旧 memcpy 固定拷贝 45 字节，随后 strcat 会越界；
-    // snprintf 按缓冲区实际容量写入并保证结尾有 NUL。
-    // 实机核验：2026-09-29 分别检查长歌名、长资料名和长鼓组名奖励；
-    // 最长组合自动折为五行，未碰到通知边框或底部确认图标。
-    snprintf(notice->text, sizeof(notice->text),
-             "\001C在「%s」达成完美通关的话，\n即可获赠\n %s%s就送给你！\n",
-             level->name, giftTitle, giftKind);
-    text_printer_set_string(notice->printer, notice->text);
+    string = notice->text;
+    memcpy(string, "\001C" "在「", 45); // [Right now]
+    strcat(string, level->name); // "<game_name>"
+    strcat(string, "」\n达成完美通关的话，\n "); // Get a perfect on this
+    //
+    if (giftType == CAMPAIGN_GIFT_DRUM_KIT || giftType == CAMPAIGN_GIFT_READING_MATERIAL) {
+        strcat(string, "即可获赠：\n");
+        strcat(string, get_campaign_gift_title(id, FALSE)); // received as a present!!
+    }
+    
+    if(isSong) {
+        strcat(string, get_campaign_gift_title(id, FALSE));
+        strcat(string, "的音乐\n");
+        strcat(string, "就送给你！\n");
+    } 
+    text_printer_set_string(notice->printer, string);
 
     sprite_set_visible(gSpriteHandler, gGameSelect->selectionBorderSprite, FALSE);
     notice->textAdvDelay = 10;
