@@ -1,6 +1,6 @@
 # 字库生成与检查
 
-正文三档字体使用 Unicode U+4E00–U+9FFF 槽位，不改变 UTF-8 编码。每次从固定版本和 SHA-256 校验的 Fusion Pixel v2026.09.01 与 GNU Unifont 17.0.05 生成。压缩包与解压后的字体文件保存在忽略的 tools/font/third_party/；Fusion Pixel 的 OFL 许可文本保存在 third_party/LICENSES/。Unifont 的许可应随发行包一同核对。
+正文三档字体使用 Unicode U+4E00–U+9FFF 槽位，不改变 UTF-8 编码。每次从固定版本和 SHA-256 校验的 Fusion Pixel v2026.09.01 与 GNU Unifont 17.0.05 生成。压缩包与解压后的字体文件保存在忽略的 tools/font/third_party/；Fusion Pixel 的 OFL 与 Unifont 17.0.05 的 `COPYING`、OFL 1.1 文本均固定保存在 third_party/LICENSES/；fetch_fonts.py 会校验这些许可文件，发布包应一并保留。
 
 ## 实际用了哪些字体
 

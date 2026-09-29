@@ -14,8 +14,10 @@ import gzip
 import hashlib
 import os
 import subprocess
+import tarfile
 
 ROOT = Path(__file__).resolve().parent / "third_party"
+# 正文字模文件使用精简 hex 包；Unifont 许可从同版本 GNU 官方源码包提取。
 SOURCES = {
     "fusion-10.zip": ("https://github.com/TakWolf/fusion-pixel-font/releases/download/2026.09.01/fusion-pixel-font-10px-proportional-bdf-v2026.09.01.zip",
                       "5aa9d46e5ddb0d11d0406426a47922d45bf119edf819cbf2dab5438006990705"),
@@ -23,6 +25,16 @@ SOURCES = {
                       "f5a2e2326857eded4159f361de7f85dffc31384c20bdeb7e4d41d91e4043c563"),
     "unifont.hex.gz": ("https://unifoundry.com/pub/unifont/unifont-17.0.05/font-builds/unifont-17.0.05.hex.gz",
                        "2ae5311c8e123e9e85f5331cd012aa99757071df23243f1487fdbf8f3acd86be"),
+}
+UNIFONT_LICENSE_ARCHIVE = (
+    "https://ftp.gnu.org/gnu/unifont/unifont-17.0.05/unifont-17.0.05.tar.gz",
+    "f287cffb26e22723aa36e6684869b0f3ff3bfb822c4b01008bd847911ec1b631",
+)
+UNIFONT_LICENSES = {
+    "Unifont-COPYING.txt": ("unifont-17.0.05/COPYING",
+                             "cd2785c2b8e0a01d203560265b2d2d47cdb1401d2707d25918ac5531bcDBA947".lower()),
+    "Unifont-OFL-1.1.txt": ("unifont-17.0.05/OFL-1.1.txt",
+                             "869692af094c57fb7258c57fe26820c759319603321d0ffeb278de3651763ded"),
 }
 
 
@@ -54,6 +66,26 @@ def fetch_verified(path: Path, url: str, digest: str) -> None:
     atomic_bytes(path, data)
 
 
+def ensure_unifont_licenses(root: Path) -> None:
+    """保存并校验生成 Unifont 字模时适用的双许可文本。"""
+    license_dir = root / "LICENSES"
+    if all((license_dir / name).exists()
+           and hashlib.sha256((license_dir / name).read_bytes()).hexdigest() == digest
+           for name, (_, digest) in UNIFONT_LICENSES.items()):
+        return
+    archive_path = root / "unifont-17.0.05.tar.gz"
+    fetch_verified(archive_path, *UNIFONT_LICENSE_ARCHIVE)
+    with tarfile.open(archive_path, "r:gz") as archive:
+        for output_name, (member_name, digest) in UNIFONT_LICENSES.items():
+            source = archive.extractfile(member_name)
+            if source is None:
+                raise ValueError(f"missing {member_name} in Unifont source archive")
+            data = source.read()
+            if hashlib.sha256(data).hexdigest() != digest:
+                raise ValueError(f"license checksum mismatch for {output_name}")
+            atomic_bytes(license_dir / output_name, data)
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--dir", type=Path, default=ROOT)
@@ -74,6 +106,8 @@ def main() -> None:
                 atomic_bytes(root / "LICENSES" / "FusionPixel-OFL.txt", archive.read(licenses[0]))
     with gzip.open(root / "unifont.hex.gz", "rb") as source:
         atomic_bytes(root / "unifont.hex", source.read())
+    # 为什么随工具保存许可：ROM 内嵌了生成后的 Unifont 字形，发布时必须能追溯其授权来源。
+    ensure_unifont_licenses(root)
 
 
 if __name__ == "__main__":
