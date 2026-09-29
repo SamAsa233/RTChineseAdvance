@@ -416,6 +416,80 @@ def grouped_archive():
     return grouped
 
 
+def reviewed_target_audit(rows):
+    """核对普通 final 的可见文字仍来自阶段 5 归档，并输出换行差异报告。
+
+    控制码、按钮宏和源码物理分行不属于译文字词；允许只调整空白与画面换行。
+    若确实改写了可见文字，必须保留“TODO 未校对”，避免旧 TSV 掩盖归档更新。
+    """
+    archive = {}
+    for (json_path, path, _), members in grouped_archive().items():
+        if path is None:
+            continue
+        relative = path.relative_to(ROOT).as_posix()
+        for key, row in members:
+            # *_add.json 按扫描顺序覆盖基础归档，与 extract 最终按 id 去重的规则一致。
+            archive[(relative, key)] = (json_path.relative_to(ARCHIVE).as_posix(), row)
+
+    def visible(value):
+        # 只剥离不会显示成文字的字节；标点和汉字仍逐字参与比较。
+        value = C_HEX_ESCAPE.sub('', CONTROL_TOKEN.sub('', value))
+        return value.replace(r'\n', '\n').replace(r'\"', '"')
+
+    exact, layout, changed_todo, special, problems = [], [], [], [], []
+    for output in rows:
+        if output['status'] != 'final':
+            continue
+        archived = archive.get((output['file'], output['key']))
+        if not archived or int(archived[1]['stage']) != 5:
+            continue
+        _, archived_row = archived
+        key = output['key']
+        # 这些键会拆成多个源码槽位、复用整篇正文或保留未收录英文，已有专用核对器。
+        if (key.split('[', 1)[0] == 'perfect_gift_directive_text'
+                or (output['file'] == 'data/scenes/data_room/reading_material.inc.c'
+                    and key in ('reading_formula_content', 'reading_diagnosis', 'reading_poem'))):
+            special.append(output['id'])
+            continue
+        current = visible(output['target'])
+        expected = visible(archived_row['translation'])
+        if current == expected:
+            exact.append(output['id'])
+        elif ''.join(current.split()) == ''.join(expected.split()):
+            # 把“为什么与归档换行不同”写进报告，方便新手直接判断是否只是排版。
+            if current.strip('\n') == expected.strip('\n'):
+                reason = '仅首尾空行'
+            elif current.replace('\n', '') == expected.replace('\n', ''):
+                reason = '内部换行调整'
+            else:
+                reason = '空格与换行调整'
+            layout.append((output['id'], reason))
+        elif 'TODO 未校对' in output['note']:
+            changed_todo.append(output['id'])
+        else:
+            problems.append(output['id'] + ': 阶段 5 可见文字被改写但未标 TODO 未校对')
+
+    REPORT.mkdir(parents=True, exist_ok=True)
+    layout_reasons = Counter(reason for _, reason in layout)
+    report = [
+        f'阶段5普通final={len(exact) + len(layout) + len(changed_todo) + len(problems)}',
+        f'可见文字及换行一致={len(exact)}',
+        f'仅空白或换行布局不同={len(layout)}',
+        f'可见文字改写且保留TODO={len(changed_todo)}',
+        f'专用规则另行核对={len(special)}',
+        f'可见文字改写但缺少TODO={len(problems)}',
+        '', '布局差异类型：',
+        *(f'{reason}={layout_reasons[reason]}' for reason in
+          ('仅首尾空行', '内部换行调整', '空格与换行调整')),
+        '', '仅布局不同：', *(f'{entry}\t{reason}' for entry, reason in layout),
+        '', '改写并保留TODO：', *changed_todo,
+        '', '专用规则：', *special,
+        '', '错误：', *problems,
+    ]
+    atomic_text(REPORT / 'reviewed_target_audit.txt', '\n'.join(report) + '\n')
+    return problems
+
+
 def cafe_translation_installed(text, key, translation):
     """逐个检查咖啡馆译文所在剧情分支，避免只凭搜索到中文就删除 TODO。
 
@@ -1286,9 +1360,13 @@ def extract():
                     row['translation'], archive_name, key):
                 relative = path.relative_to(ROOT).as_posix()
                 saved = previous[f'{relative}:{key}']
-                # 已校对译文与原版控制码都匹配，才从控制码待办中移除；画面 TODO 保留在源码。
+                # 已校对译文与原版控制码都匹配，才从控制码待办中移除。
+                # “按钮”改成两个原版图标会改变可见文字，因此必须在 TSV 继续保留 TODO。
+                note = ('TODO 未校对：为保留原版 A 键和十字键图标，将“按钮”改成图标选择，需实机复核'
+                        if archive_name == 'games/rhythm_tweezers/rhythm_tweezers_text.json'
+                        and key == 'D_0805b590' else '')
                 output.append(dict(id=f'{relative}:{key}', file=relative, key=key,
-                                   source=saved['source'], target=source, status='final', note=''))
+                                   source=saved['source'], target=source, status='final', note=note))
                 continue
             if (archive_name in ('games/rap_men/rap_men_lyrics.json',
                                  'games/rap_men/rap_women_lyrics.json')
@@ -1370,6 +1448,8 @@ def extract():
     writer.writerows(output)
     atomic_text(TABLE, stream.getvalue())
     REPORT.mkdir(parents=True, exist_ok=True)
+    # 为什么单独审计：旧 TSV 的 target 会被保留，必须再证明它没有悄悄偏离阶段 5 归档。
+    audit_problems = reviewed_target_audit(output)
     atomic_text(REPORT / 'unresolved.txt', '\n'.join(unresolved) + '\n')
     # 把所有未完成键写进版本库；即使条件编译代码无法安全插注释，也能用 Ctrl+F 找到。
     todo = ['# TODO 未校对', '',
@@ -1427,6 +1507,8 @@ def extract():
         *(f'{name}:{key}\tstage={stage}' for name, _, key, stage in unaccounted),
     ]
     atomic_text(REPORT / 'coverage.txt', '\n'.join(coverage) + '\n')
+    if audit_problems:
+        raise RuntimeError(f'有 {len(audit_problems)} 条阶段 5 可见文字改写后未标 TODO 未校对')
     if unaccounted_stages[5]:
         raise RuntimeError(f'仍有 {unaccounted_stages[5]} 条阶段 5 译文未计入覆盖统计')
     print(f"mapped={len(output)}, unresolved={len(unresolved)}, final={sum(row['status']=='final' for row in output)}")
@@ -1485,16 +1567,22 @@ def import_text(check, only_final):
         if only_final and row['status'] != 'final':
             continue
         files[row['file']].append(row)
-    changed, problems, skipped = 0, [], 0
+    # check/import 都先核对 TSV 与阶段 5 归档，避免“源码等于旧 TSV”形成假通过。
+    changed, problems, skipped = 0, reviewed_target_audit(rows), 0
     for filename, members in files.items():
         path = ROOT / filename
         text = path.read_text(encoding='utf-8')
         edits = []
         for row in members:
+            key = row['key']
             if row['note']:
+                # 带 TODO 的图标改写仍要核对源码字节；TODO 只表示未校对，不等于放弃自动检查。
+                if filename == 'games/rhythm_tweezers/rhythm_tweezers_text.c' and key == 'D_0805b590':
+                    groups = locate(text, path, key)
+                    if not groups or len(groups) != 1 or groups[0][2] != row['target']:
+                        problems.append(row['id'] + ': TODO 图标文本或控制字节发生变化')
                 skipped += 1
                 continue
-            key = row['key']
             if ((filename == 'games/night_walk/night_walk_text.c' and key in NIGHT_WALK_PROMPTS)
                     or (filename == 'games/remix_3/remix_3_text.c' and key in REMIX3_CREDIT_PREFIXES)
                     or (filename == 'games/remix_5/remix_5_text.c' and key in REMIX5_CREDIT_PREFIXES)
