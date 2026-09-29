@@ -725,8 +725,9 @@ def drum_live_poster_installed(text, members):
     # 分别确认阶段 2 的 WISH 和两行自行中文化标题旁仍留有可搜索 TODO，
     # 避免文件中无关 TODO 恰好让计数通过。
     wish_todo = 'TODO 未校对：WISH 条目仅有阶段 2 译文，暂留英文。' in text
-    custom_todo = ('TODO 未校对：阶段 5 译文仍是英文标题，这两行是自行中文化，'
-                   '需实机确认字宽和语气。') in text
+    custom_todo = ('TODO 未校对：阶段 5 译文仍是英文标题，这两行是自行中文化；'
+                   '2026-09-29 已用 mGBA 实机帧确认两行标题未截断且无重叠，'
+                   '标题措辞仍待人工校对。') in text
     return wish_todo and custom_todo
 
 
@@ -1268,7 +1269,9 @@ def extract():
             unresolved = [item for item in unresolved
                           if not item.startswith(f'{json_path.relative_to(ARCHIVE)}:{base}:')]
             manual_todos.append(
-                f'{archive_name}:{key}: 阶段 5 仍为拼音英语，源码采用自行中文化；需实机确认语气和断行')
+                f'{archive_name}:{key}: 阶段 5 仍为拼音英语，源码采用自行中文化；'
+                '2026-09-29 mGBA 实机帧已确认两行断行和字宽无重叠；'
+                '语气及 funky 的保留方式仍待人工校对')
             continue
         # 13 个海报键在源码中拼成 3 个字符串；逐行核对可见文字，并保留控制码和 TODO。
         if (json_path.relative_to(ARCHIVE).as_posix() == 'games/drum_live/drum_live_menu_engine.json'
@@ -1285,7 +1288,9 @@ def extract():
             record_manual(archive_name, exact, '鼓组海报三段字符串专用核对')
             for key in DRUM_LIVE_CUSTOM_TEXT:
                 manual_todos.append(
-                    f'{archive_name}:{key}: 阶段 5 仍为英文标题，源码采用自行中文化；需实机确认字宽和语气')
+                    f'{archive_name}:{key}: 阶段 5 仍为英文标题，源码采用自行中文化；'
+                    '2026-09-29 mGBA 实机帧已确认两行标题未截断且无重叠；'
+                    '标题措辞仍待人工校对')
             continue
         if base == 'perfect_gift_directive_text' and len(members) == 1:
             # 译文包把三种奖励说明放在一条记录里，英文移植版则拆成三个数组槽位。
@@ -1364,7 +1369,7 @@ def extract():
                 saved = previous[f'{relative}:{key}']
                 # 已校对译文与原版控制码都匹配，才从控制码待办中移除。
                 # “按钮”改成两个原版图标会改变可见文字，因此必须在 TSV 继续保留 TODO。
-                note = ('TODO 未校对：为保留原版 A 键和十字键图标，将“按钮”改成图标选择；静态宽度已通过 240 像素检查，仍需实机复核图标辨识和字距'
+                note = ('TODO 未校对：为保留原版 A 键和十字键图标，将“按钮”改成图标选择；静态宽度为 176/240 像素，2026-09-29 mGBA 实机帧已确认图标清晰、整句单行且字距无重叠；因可见文字仍属适配改写而保留待校对标记'
                         if archive_name == 'games/rhythm_tweezers/rhythm_tweezers_text.json'
                         and key == 'D_0805b590' else '')
                 output.append(dict(id=f'{relative}:{key}', file=relative, key=key,

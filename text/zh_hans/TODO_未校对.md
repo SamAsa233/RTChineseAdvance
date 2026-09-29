@@ -143,9 +143,9 @@
 
 ## 阶段 5 原文仍非中文，采用自行中文化
 
-- TODO 未校对 games/drum_intro/drum_samurai_cutscene_text.json:D_0805df4c: 阶段 5 仍为拼音英语，源码采用自行中文化；需实机确认语气和断行
-- TODO 未校对 games/drum_live/drum_live_menu_engine.json:drum_live_menu_poster_desc[48]: 阶段 5 仍为英文标题，源码采用自行中文化；需实机确认字宽和语气
-- TODO 未校对 games/drum_live/drum_live_menu_engine.json:drum_live_menu_poster_desc[54]: 阶段 5 仍为英文标题，源码采用自行中文化；需实机确认字宽和语气
+- TODO 未校对 games/drum_intro/drum_samurai_cutscene_text.json:D_0805df4c: 阶段 5 仍为拼音英语，源码采用自行中文化；2026-09-29 mGBA 实机帧已确认两行断行和字宽无重叠；语气及 funky 的保留方式仍待人工校对
+- TODO 未校对 games/drum_live/drum_live_menu_engine.json:drum_live_menu_poster_desc[48]: 阶段 5 仍为英文标题，源码采用自行中文化；2026-09-29 mGBA 实机帧已确认两行标题未截断且无重叠；标题措辞仍待人工校对
+- TODO 未校对 games/drum_live/drum_live_menu_engine.json:drum_live_menu_poster_desc[54]: 阶段 5 仍为英文标题，源码采用自行中文化；2026-09-29 mGBA 实机帧已确认两行标题未截断且无重叠；标题措辞仍待人工校对
 
 ## 尚未安全定位
 
