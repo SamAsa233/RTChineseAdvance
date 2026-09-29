@@ -56,6 +56,7 @@ REMIX_SYLLABLE_KEYS = frozenset({'D_08067f90', 'D_08067fcc', 'D_0806a920', 'D_08
 RAP_TUTORIAL_KEYS = frozenset({'D_0805eb3c', 'D_0805eb6c', 'D_0805ebc4', 'D_0805ec24'})
 TOSS_TECHNIQUE_KEYS = frozenset({'D_0805d7cc', 'D_0805d818', 'D_0805d86c'})
 RHYTHM_TWEEZERS_KEYS = frozenset({'D_0805b580', 'D_0805b590', 'D_0805b5c8', 'D_0805b5f4'})
+OPTIONS_KEYS = frozenset({'options_data_clear_confirm_text', 'options_desc_text[0]', 'options_desc_text[1]'})
 
 
 def atomic_text(path, data):
@@ -810,13 +811,19 @@ def reviewed_inline_controls_installed(source, original, translation, archive_na
         if key not in RHYTHM_TWEEZERS_KEYS:
             return False
         # A 键和十字键是源码宏，不在译文包的可见文字里；控制字节和宏都要保留。
-        source_visible = CONTROL.sub('', source)
+        source_visible = re.sub(r'\\x[0-9a-fA-F]{2}', '', source)
         source_visible = re.sub(r'CHAR_A_BUTTON_UTF8|CHAR_DPAD_UTF8', '', source_visible)
-        original_visible = CONTROL.sub('', original)
+        original_visible = re.sub(r'\\x[0-9a-fA-F]{2}', '', original)
         original_visible = re.sub(r'CHAR_A_BUTTON_UTF8|CHAR_DPAD_UTF8', '', original_visible)
-        return (CONTROL.findall(source) == CONTROL.findall(original)
-                and source_visible == translation
+        expected_visible = translation.replace('按钮', '或') if key == 'D_0805b590' else translation
+        return (re.findall(r'\\x[0-9a-fA-F]{2}', source)
+                == re.findall(r'\\x[0-9a-fA-F]{2}', original)
+                and source_visible == expected_visible
                 and original_visible != translation)
+    if archive_name == 'data/options/data.json' and key in OPTIONS_KEYS:
+        # 选项菜单的宏会在 literal_group 中隐藏；这里逐项核对可见中文和控制字节。
+        return (CONTROL_TOKEN.findall(source) == CONTROL_TOKEN.findall(original)
+                and CONTROL_TOKEN.sub('', source).replace(r'\n', '\n') == translation)
     return False
     return False
 
@@ -1208,6 +1215,12 @@ def import_text(check, only_final):
                 groups = locate(text, path, key)
                 if not groups or len(groups) != 1 or groups[0][2] != row['target']:
                     problems.append(row['id'] + ': reviewed prefix or text changed')
+                continue
+            if filename == 'data/scenes/options/data.c' and key in OPTIONS_KEYS:
+                groups = locate(text, path, key)
+                index = int(re.search(r'\[(\d+)\]$', key).group(1)) if '[' in key else 0
+                if not groups or index >= len(groups) or groups[index] is None or groups[index][2] != row['target']:
+                    problems.append(row['id'] + ': reviewed option text changed')
                 continue
             if ((filename == 'games/fireworks/fireworks_text.c' and key == 'D_0805cda0')
                     or (filename == 'games/rap_men/rap_men_text.c' and key == 'D_0805eb14')):

@@ -963,15 +963,9 @@ data/scenes/options/data.c:advance_options_desc_text[3]	data/scenes/options/data
 data/scenes/options/data.c:advance_options_desc_text[4]	data/scenes/options/data.c	advance_options_desc_text[4]	\0023\0013\001CGame Select Music\n\0024\0011\001LNormal    \0021Use Game Select 2 after the credits.\n\0024\0011\001LSwapped   \0021Use Game Select 1 after the credits.	"游戏选择菜单音乐
 启用切换   二周目将切换新音乐
 禁用切换   二周目仍播放旧音乐"	draft	TODO 未校对; control codes need review
-data/scenes/options/data.c:options_data_clear_confirm_text	data/scenes/options/data.c	options_data_clear_confirm_text	\0023\0013\001CAre you sure?\n\0021\0011\001C       Yes\n     No	"真的要删掉吗？
-　　　　　　　确认
-　　　　　　　取消"	final	control codes need review
-data/scenes/options/data.c:options_desc_text[0]	data/scenes/options/data.c	options_desc_text[0]	\0023\0013\001CSound Mode\n\0024\0011\001LStereo   For dual-speaker systems. (DS, etc.)\n\0024\0011\001LMono   For single-speaker systems. (GBA, etc.)	"声音模式
-立体声　　戴耳机就选这个！推荐！
-单声道　　用主机喇叭就选这个。"	final	control codes need review
-data/scenes/options/data.c:options_desc_text[1]	data/scenes/options/data.c	options_desc_text[1]	\0023\0013\001CClear Data\n\0021\0011\001CThis will delete all of your save data and start\nyou over from the beginning. Be careful!	"清除数据
-会把至今为止的记录全部删掉，然后从头开始。
-要想清楚哦！"	final	control codes need review
+data/scenes/options/data.c:options_data_clear_confirm_text	data/scenes/options/data.c	options_data_clear_confirm_text	\0023\0013\001CAre you sure?\n\0021\0011\001C       Yes\n     No	\0023\0013\001C真的要删掉吗？\n\0021\0011\001C　　　　　　　确认\n　　　　　　　取消	final	
+data/scenes/options/data.c:options_desc_text[0]	data/scenes/options/data.c	options_desc_text[0]	\0023\0013\001CSound Mode\n\0024\0011\001LStereo   For dual-speaker systems. (DS, etc.)\n\0024\0011\001LMono   For single-speaker systems. (GBA, etc.)	\0023\0013\001C声音模式\n\0024\0011\001L立体声　　戴耳机就选这个！推荐！\n\0024\0011\001L单声道　　用主机喇叭就选这个。	final	
+data/scenes/options/data.c:options_desc_text[1]	data/scenes/options/data.c	options_desc_text[1]	\0023\0013\001CClear Data\n\0021\0011\001CThis will delete all of your save data and start\nyou over from the beginning. Be careful!	\0023\0013\001C清除数据\n\0021\0011\001C会把至今为止的记录全部删掉，然后从头开始。\n要想清楚哦！	final	
 data/scenes/perfect/data.c:perfect_gift_directive_text[0]	data/scenes/perfect/data.c	perfect_gift_directive_text[0]	（可在录音室试听）\n	"（可在录音室试听）
 "	final	
 data/scenes/perfect/data.c:perfect_gift_directive_text[1]	data/scenes/perfect/data.c	perfect_gift_directive_text[1]	（可在录音室演奏）\n	"（可在录音室演奏）
@@ -2216,7 +2210,7 @@ games/rhythm_tweezers/rhythm_tweezers_text.c:D_0805b530	games/rhythm_tweezers/rh
 games/rhythm_tweezers/rhythm_tweezers_text.c:D_0805b544	games/rhythm_tweezers/rhythm_tweezers_text.c	D_0805b544	Hello!	欢迎光临。	final	
 games/rhythm_tweezers/rhythm_tweezers_text.c:D_0805b550	games/rhythm_tweezers/rhythm_tweezers_text.c	D_0805b550	Press  or  to pluck the hair at the right time.	用 A 键或十字键拔毛哦！	final	
 games/rhythm_tweezers/rhythm_tweezers_text.c:D_0805b580	games/rhythm_tweezers/rhythm_tweezers_text.c	D_0805b580	\x05\x30\x01\x34\x03\x31\x01\x6dOK!	\x05\x30\x01\x34\x03\x31\x01\x6dOK	final	
-games/rhythm_tweezers/rhythm_tweezers_text.c:D_0805b590	games/rhythm_tweezers/rhythm_tweezers_text.c	D_0805b590	\x05\x34\x01\x38\x03\x30\x01\x73For the curly hairs, hold  or  until it's plucked.	那些卷的毛要长按按钮，把它拽出来哦。	final	control codes need review
+games/rhythm_tweezers/rhythm_tweezers_text.c:D_0805b590	games/rhythm_tweezers/rhythm_tweezers_text.c	D_0805b590	\x05\x34\x01\x38\x03\x30\x01\x73For the curly hairs, hold  or  until it's plucked.	\x05\x34\x01\x38\x03\x30\x01\x73那些卷的毛要长按或，把它拽出来哦。	final	
 games/rhythm_tweezers/rhythm_tweezers_text.c:D_0805b5c8	games/rhythm_tweezers/rhythm_tweezers_text.c	D_0805b5c8	\x05\x34\x01\x38\x03\x30\x01\x73When there's a lot, using both hands might help!	\x05\x34\x01\x38\x03\x30\x01\x73毛太多的时候，两只手一起上会轻松些哦。	final	
 games/rhythm_tweezers/rhythm_tweezers_text.c:D_0805b5f4	games/rhythm_tweezers/rhythm_tweezers_text.c	D_0805b5f4	\x05\x34\x01\x38\x03\x30\x01\x73It's time for the real thing. Make me proud.	\x05\x34\x01\x38\x03\x30\x01\x73那么，正式开始。	final	
 games/rhythm_tweezers/rhythm_tweezers_text.c:D_0805b614	games/rhythm_tweezers/rhythm_tweezers_text.c	D_0805b614	Plucking practice is prescribed.	要好好拔干净哦。	final	

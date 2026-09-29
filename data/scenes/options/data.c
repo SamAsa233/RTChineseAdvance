@@ -45,20 +45,22 @@ struct CompressedData *options_buffered_textures[] = {
     END_OF_BUFFERED_TEXTURES_LIST
 };
 
+// 阶段 5 已校对：保留确认框的三行控制字节和原有居中留白，只替换可见文字。
+// TODO 未校对：中文全角空格的实际光标位置仍需在选项画面核验。
 const char options_data_clear_confirm_text[] =
-        "\0023" "\0013" "\001C" "Are you sure?\n"
-        "\0021" "\0011" "\001C" "       Yes\n"
-        "     No";
+        "\0023" "\0013" "\001C" "真的要删掉吗？\n"
+        "\0021" "\0011" "\001C" "　　　　　　　确认\n"
+        "　　　　　　　取消";
 
 const char *options_desc_text[] = {
     /* SOUND MODE ------------------------------------- */
-        "\0023" "\0013" "\001C" "Sound Mode\n"
-        "\0024" "\0011" "\001L" "Stereo  " TEXT_COLOR_1 " For dual-speaker systems. (DS, etc.)\n"
-        "\0024" "\0011" "\001L" "Mono   " CHAR_1_PIXEL_GAP_UTF8 TEXT_COLOR_1 "For single-speaker systems. (GBA, etc.)",
+        "\0023" "\0013" "\001C" "声音模式\n"
+        "\0024" "\0011" "\001L" "立体声　　" TEXT_COLOR_1 "戴耳机就选这个！推荐！\n"
+        "\0024" "\0011" "\001L" "单声道　　" CHAR_1_PIXEL_GAP_UTF8 TEXT_COLOR_1 "用主机喇叭就选这个。",
     /* DATA CLEAR ------------------------------------- */
-        "\0023" "\0013" "\001C" "Clear Data\n"
-        "\0021" "\0011" "\001C" "This will delete " TEXT_COLOR_2 "all " TEXT_COLOR_1 "of your save data and start\n"
-        "you over from the beginning." TEXT_COLOR_2 " Be careful!"
+        "\0023" "\0013" "\001C" "清除数据\n"
+        "\0021" "\0011" "\001C" "会把至今为止的记录" TEXT_COLOR_2 "全部" TEXT_COLOR_1 "删掉，然后从头开始。\n"
+        "要想清楚哦！"
     /* ------------------------------------------------ */
 };
 

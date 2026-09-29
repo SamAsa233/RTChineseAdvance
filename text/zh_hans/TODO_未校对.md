@@ -145,10 +145,6 @@
 - TODO 未校对 data/scenes/data_room/reading_material.inc.c:reading_diagnosis: control codes need review
 - TODO 未校对 data/scenes/data_room/reading_material.inc.c:reading_formula_content: control codes need review
 - TODO 未校对 data/scenes/data_room/reading_material.inc.c:reading_poem: control codes need review
-- TODO 未校对 data/scenes/options/data.c:options_data_clear_confirm_text: control codes need review
-- TODO 未校对 data/scenes/options/data.c:options_desc_text[0]: control codes need review
-- TODO 未校对 data/scenes/options/data.c:options_desc_text[1]: control codes need review
-- TODO 未校对 games/rhythm_tweezers/rhythm_tweezers_text.c:D_0805b590: control codes need review
 
 ## 尚未安全定位
 
