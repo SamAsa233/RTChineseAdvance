@@ -1891,9 +1891,9 @@ games/night_walk/night_walk_text.c:D_0805b1a4	games/night_walk/night_walk_text.c
 games/night_walk/night_walk_text.c:D_0805b1bc	games/night_walk/night_walk_text.c	D_0805b1bc	You missed quite a few jumps.	有几处关键节拍没踩准呢。	final	
 games/night_walk/night_walk_text.c:D_0805b1dc	games/night_walk/night_walk_text.c	D_0805b1dc	Your jumps were right on the money!	关键节拍踩得真准！	final	
 games/night_walk/night_walk_text.c:D_0805b1f4	games/night_walk/night_walk_text.c	D_0805b1f4	The stars say...	星星的声音	final	
-games/night_walk/night_walk_text.c:D_0805b1fc	games/night_walk/night_walk_text.c	D_0805b1fc	\x05\x31\x01\x35Jump in time with the music!	跟着音乐跳起来哦！	final	control codes need review
-games/night_walk/night_walk_text.c:D_0805b220	games/night_walk/night_walk_text.c	D_0805b220	\x05\x31\x01\x35Let's reach the stars before the music ends!	要在音乐结束前，让画面铺满星星哦！	final	control codes need review
-games/night_walk/night_walk_text.c:D_0805b250	games/night_walk/night_walk_text.c	D_0805b250	\x05\x31\x01\x35Almost there!	快结束啦！	final	control codes need review
+games/night_walk/night_walk_text.c:D_0805b1fc	games/night_walk/night_walk_text.c	D_0805b1fc	\x05\x31\x01\x35跟着音乐跳起来哦！	\x05\x31\x01\x35跟着音乐跳起来哦！	final	
+games/night_walk/night_walk_text.c:D_0805b220	games/night_walk/night_walk_text.c	D_0805b220	\x05\x31\x01\x35要在音乐结束前，让画面铺满星星哦！	\x05\x31\x01\x35要在音乐结束前，让画面铺满星星哦！	final	
+games/night_walk/night_walk_text.c:D_0805b250	games/night_walk/night_walk_text.c	D_0805b250	\x05\x31\x01\x35快结束啦！	\x05\x31\x01\x35快结束啦！	final	
 games/night_walk/night_walk_text.c:D_0805b26c	games/night_walk/night_walk_text.c	D_0805b26c	You fell in a hole.	掉下去啦…	final	
 games/night_walk/night_walk_text.c:D_0805b288	games/night_walk/night_walk_text.c	D_0805b288	You made it to the end!	顺利到终点啦！！	final	
 games/night_walk/night_walk_text.c:D_0805b2a0	games/night_walk/night_walk_text.c	D_0805b2a0	Your rhythm was off.	节奏有点乱了啊…	final	
@@ -1901,10 +1901,10 @@ games/night_walk/night_walk_text.c:D_0805b2b8	games/night_walk/night_walk_text.c
 games/night_walk/night_walk_text.c:D_0805b2d0	games/night_walk/night_walk_text.c	D_0805b2d0	You missed quite a few jumps.	有几处关键节拍没踩准呢。	final	
 games/night_walk/night_walk_text.c:D_0805b2f0	games/night_walk/night_walk_text.c	D_0805b2f0	Your jumps were right on the money!	关键节拍踩得真准！	final	
 games/night_walk/night_walk_text.c:D_0805b308	games/night_walk/night_walk_text.c	D_0805b308	The stars say...	星星的声音	final	
-games/night_walk/night_walk_text.c:D_0805b310	games/night_walk/night_walk_text.c	D_0805b310	\x05\x31\x01\x35Jump in time with the music!	跟着音乐跳起来哦！	final	control codes need review
-games/night_walk/night_walk_text.c:D_0805b334	games/night_walk/night_walk_text.c	D_0805b334	\x05\x31\x01\x35Keep an eye out for electric fish!	别撞到电击鱼哦！	final	control codes need review
-games/night_walk/night_walk_text.c:D_0805b35c	games/night_walk/night_walk_text.c	D_0805b35c	\x05\x31\x01\x35Let's reach the stars before the music ends!	要在音乐结束前，让画面铺满星星哦！	final	control codes need review
-games/night_walk/night_walk_text.c:D_0805b38c	games/night_walk/night_walk_text.c	D_0805b38c	\x05\x31\x01\x35Almost there!	快结束啦！	final	control codes need review
+games/night_walk/night_walk_text.c:D_0805b310	games/night_walk/night_walk_text.c	D_0805b310	\x05\x31\x01\x35跟着音乐跳起来哦！	\x05\x31\x01\x35跟着音乐跳起来哦！	final	
+games/night_walk/night_walk_text.c:D_0805b334	games/night_walk/night_walk_text.c	D_0805b334	\x05\x31\x01\x35别撞到电击鱼哦！	\x05\x31\x01\x35别撞到电击鱼哦！	final	
+games/night_walk/night_walk_text.c:D_0805b35c	games/night_walk/night_walk_text.c	D_0805b35c	\x05\x31\x01\x35要在音乐结束前，让画面铺满星星哦！	\x05\x31\x01\x35要在音乐结束前，让画面铺满星星哦！	final	
+games/night_walk/night_walk_text.c:D_0805b38c	games/night_walk/night_walk_text.c	D_0805b38c	\x05\x31\x01\x35快结束啦！	\x05\x31\x01\x35快结束啦！	final	
 games/ninja_bodyguard/ninja_bodyguard_text.c:D_0805b8e0	games/ninja_bodyguard/ninja_bodyguard_text.c	D_0805b8e0	I hired you to protect me.	可要好好保护我哦…	final	
 games/ninja_bodyguard/ninja_bodyguard_text.c:D_0805b8fc	games/ninja_bodyguard/ninja_bodyguard_text.c	D_0805b8fc	Your swordplay skills were lacking.	这手快剑还不够利落。	final	
 games/ninja_bodyguard/ninja_bodyguard_text.c:D_0805b924	games/ninja_bodyguard/ninja_bodyguard_text.c	D_0805b924	You're quite nimble with a sword!	这手快剑挺漂亮！	final	

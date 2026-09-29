@@ -26,6 +26,12 @@ LITERAL = re.compile(r'"(?:\\.|[^"\\])*"', re.S)
 CONTROL = re.compile(r'\\(?:[0-7]{1,3}|x[0-9a-fA-F]+)|[.:][0-9a-fA-F]')
 CONTROL_TOKEN = re.compile(r'\\(?:004|4)[0-9]+\.|\\(?:00[1235]|[1235])[0-9A-Za-z\[\]]|[.:][0-9a-fA-F]')
 FIELDS = ("id", "file", "key", "source", "target", "status", "note")
+# 这七句在脚本里单独显示，均有同一组前置控制字节；只对这些已校对键做定点核验。
+NIGHT_WALK_PROMPTS = frozenset({
+    'D_0805b1fc', 'D_0805b220', 'D_0805b250',
+    'D_0805b310', 'D_0805b334', 'D_0805b35c', 'D_0805b38c',
+})
+NIGHT_WALK_PREFIX = r'\x05\x31\x01\x35'
 
 
 def atomic_text(path, data):
@@ -896,6 +902,15 @@ def extract():
                     output.append(old)
                 continue
             source = groups[index][2]
+            # 夜间漫步的这七句都以相同的四个显示控制字节开头。只有源码文字与
+            # 阶段 5 译文逐字相同、前缀也未变时，才解除“控制码待复核”并交给常规检查。
+            if (archive_name == 'games/night_walk/night_walk_text.json'
+                    and key in NIGHT_WALK_PROMPTS and row['stage'] == 5
+                    and source == NIGHT_WALK_PREFIX + json.dumps(row['translation'], ensure_ascii=False)[1:-1]):
+                relative = path.relative_to(ROOT).as_posix()
+                output.append(dict(id=f'{relative}:{key}', file=relative, key=key,
+                                   source=source, target=source, status='final', note=''))
+                continue
             target = row['translation']
             controls = CONTROL.findall(source)
             bitmap = any(token.startswith('.') or token.startswith(':') for token in controls)
@@ -1022,6 +1037,24 @@ def import_text(check, only_final):
                 skipped += 1
                 continue
             key = row['key']
+            if filename == 'games/night_walk/night_walk_text.c' and key in NIGHT_WALK_PROMPTS:
+                # TSV 中的反斜杠是源码原样的控制码；通用 JSON 转义会把它加倍，
+                # 因此这里只核对 C 字面量拼接结果，不把正确的前缀重新写成可见文本。
+                groups = locate(text, path, key)
+                if not groups or len(groups) != 1 or groups[0][2] != row['target']:
+                    problems.append(row['id'] + ': reviewed prefix or text changed')
+                continue
+            if filename == 'games/fireworks/fireworks_text.c' and key == 'D_0805cda0':
+                # 同名变量有两个地区定义；普通定位器只看到第一个，故逐分支核对译文。
+                marker = 'const char D_0805cda0[]'
+                first = text.find(marker)
+                start = text.rfind('#ifdef PARADISE', 0, first)
+                end = text.find('#endif', first)
+                section = text[start:end] if first >= 0 and start >= 0 and end >= 0 else ''
+                values = re.findall(r'const char D_0805cda0\[\]\s*=\s*("(?:\\.|[^"\\])*")', section)
+                if '#else' not in section or values != [json.dumps(row['target'], ensure_ascii=False)] * 2:
+                    problems.append(row['id'] + ': conditional branches differ')
+                continue
             if filename == 'src/scenes/debug_menu_table.c' and key == 'debug_menu_51':
                 # 导入器原先只看到 PARADISE 一侧；校验两侧译名，
                 # 防止另一种地区版本悄悄保留英文。
