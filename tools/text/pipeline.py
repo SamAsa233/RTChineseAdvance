@@ -1318,13 +1318,15 @@ def extract():
         for (key, row), index in zip(members, assigned):
             if groups[index] is None:
                 saved = previous.get(f"{path.relative_to(ROOT).as_posix()}:{key}")
-                # 双地区台词已接入时保留表内 TODO，继续复核语气；其他条件分支仍报未定位。
+                # 归档只有一条阶段 5 定稿；两地区分支逐字相同即可清除旧语气 TODO。
                 if (archive_name == 'data/cafe/dialogue.json'
                         and key == 'cafe_dialogue_rhythm_sense[7]' and row['stage'] == 5
                         and saved and saved['status'] == 'final'
                         and saved['target'] == '\n' + row['translation']
                         and cafe_rhythm_sense_installed(text, row['translation'])):
-                    output.append(saved)
+                    output.append(dict(id=saved['id'], file=saved['file'], key=saved['key'],
+                                       source=saved['source'], target=saved['target'],
+                                       status='final', note=''))
                     continue
                 unresolved.append(f"{json_path.relative_to(ARCHIVE)}:{key}: conditional branches need review")
                 old = previous.get(f"{path.relative_to(ROOT).as_posix()}:{key}")
@@ -1575,6 +1577,12 @@ def import_text(check, only_final):
         edits = []
         for row in members:
             key = row['key']
+            if filename == 'data/scenes/cafe/dialogue.c' and key == 'cafe_dialogue_rhythm_sense[7]':
+                # 通用定位器看不穿 #ifdef；沿用提取时的专用函数逐分支核对阶段 5 中文。
+                translation = row['target'].lstrip('\n')
+                if not cafe_rhythm_sense_installed(text, translation):
+                    problems.append(row['id'] + ': PARADISE 两侧未保持同一阶段 5 译文')
+                continue
             if row['note']:
                 # 带 TODO 的图标改写仍要核对源码字节；TODO 只表示未校对，不等于放弃自动检查。
                 if filename == 'games/rhythm_tweezers/rhythm_tweezers_text.c' and key == 'D_0805b590':

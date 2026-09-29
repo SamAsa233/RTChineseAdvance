@@ -222,7 +222,7 @@ data/scenes/cafe/dialogue.c:cafe_dialogue_rhythm_sense[3]	data/scenes/cafe/dialo
 "	final	
 data/scenes/cafe/dialogue.c:cafe_dialogue_rhythm_sense[7]	data/scenes/cafe/dialogue.c	cafe_dialogue_rhythm_sense[7]	\nWhen your sense of rhythm\nimproves... that has to be\nimproves... that's gotta be\neuphoric, huh?	"
 不过，节奏感变好了的话，
-人应该也会稍微开心一点吧。"	final	TODO 未校对：PARADISE 双分支的语气待分别核验
+人应该也会稍微开心一点吧。"	final	
 data/scenes/cafe/dialogue.c:cafe_dialogue_rhythm_test[0]	data/scenes/cafe/dialogue.c	cafe_dialogue_rhythm_test[0]	\nSay, have you tried doing the\nRhythm Test again?\n\n	"
 说起来，
 你最近有做“节奏感测试”吗？
