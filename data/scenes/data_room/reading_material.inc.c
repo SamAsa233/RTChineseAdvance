@@ -551,31 +551,29 @@ struct ReadingMaterial reading_material_table[TOTAL_READING_MATERIALS] = {
         /* TITLE ---------------------------------------------------------- */
             "一看就懂！节奏公式",
         /* BODY ----------------------------------------------------------- */
+            // 汉化改动：阶段 5 译文覆盖整篇；保留原字号、对齐控制码和段落空行。
+            // TODO 未校对：中文长句的自动折行、分页及居中位置仍需实机确认。
             "\001C" "\0032" "\001m" "\n"
             "\n"
-            "Sense of rhythm ⊃ Flow\n"
+            "节奏感 ⊃ 律动\n"
             "\n"
-            "Sense of rhythm ≠ Flow\n"
+            "节奏感 ≠ 律动\n"
             "\001L" "\0030" "\001s" "\n"
-            "\001C" "Explanation: Flow is an element included in anyone's\n"
-            "sense of rhythm, but not a sense of rhythm itself.\n"
+            "\001C" "解说：“律动”是构成节奏感的要素之一，并不等同于节奏感本身。  \n"
             "\001C" "\0032" "\001m" "\n"
             "\n"
             "\n"
             "\n"
-            "Rhythm ≠ Sense of rhythm\n"
+            "节奏 ≠ 节奏感\n"
             "\n"
             "\001C" "\0030" "\001s" "\n"
-            "Explanation: Rhythm is what ticks at a steady pace.\n"
-            "A sense of rhythm is how you maintain that pace,\n"
-            "expressed naturally by way of flow.\n"
+            "解说：节奏是用来划分时间的；节奏感则是通过律动来表现、感受，或自然而然流露出来的东西。  \n"
             "\001C" "\0031" "\001m" "\n"
             "\n"
             "\n"
-            "Good dancing ≠ Good sense of rhythm\n"
+            "舞跳得好 ≠ 节奏感好\n"
             "\001C" "\0030" "\001s" "\n"
-            "Explanation: Someone who's a good dancer does not\n"
-            "inherently have a good sense of rhythm.",
+            "解说：舞跳得好的人，并不一定就代表“节奏感很好”。",
         /* STYLE ---------------------------------------------------------- */
             /* GFX */ reading_style_classroom_gfx_table,
             /* BGM */ &reading_style_classroom_bgm
@@ -803,15 +801,17 @@ struct ReadingMaterial reading_material_table[TOTAL_READING_MATERIALS] = {
         /* TITLE ---------------------------------------------------------- */
             "节奏诗集",
         /* BODY ----------------------------------------------------------- */
-            "\001C" "\0031" "\001m" "To Nurture\n"
+            // 汉化改动：阶段 5 译文只覆盖《培养》和第二首中的五句英文，其余英文原样保留。
+            // TODO 未校对：中文诗句的分页、字号切换及第二首混排效果仍需实机确认。
+            "\001C" "\0031" "\001m" "《培养》\n"
             "\n"
-            "\001C" "\0030" "\001s" "I have nurtured it,\n"
-            "For the day when it will learn to use its wings.\n"
-            "In the wake of a casual, everyday life,\n"
-            "Naturally,\n"
-            "Enjoyably,\n"
-            "That which is now only very, very small,\n"
-            "My sense of rhythm...\n"
+            "\001C" "\0030" "\001s" "我正在培养它。\n"
+            "为了有朝一日，它能振翅高飞。\n"
+            "在平淡无奇的日常生活之中，\n"
+            "更自然地，\n"
+            "更快乐地。\n"
+            "如今还很渺小的，\n"
+            "我的节奏感…\n"
             "\001C" "\0031" "\001m" "Karate Rhythm\n"
             "\001C" "\0030" "\001s" "\n"
             "Hey! Baby! How's it going?\n"
@@ -819,16 +819,16 @@ struct ReadingMaterial reading_material_table[TOTAL_READING_MATERIALS] = {
             "Hey! Baby! Listen to my phrase.\n"
             "I can give you\n"
             "the sense of rhythm.\n"
-            "Oh, yeah.\n"
+            "Oh, Yeah.\n"
             "Awake, baby! Trust me!\n"
             "This beat is non-stop!\n"
             "New groove in your soul.\n"
-            "Oh, yeah!\n"
+            "Oh, Yeah!\n"
             "This beat!\n"
             "You are growing up well.\n"
-            "Hey, baby!\n"
+            "Hey, Baby!\n"
             "Hold onto your ambition.\n"
-            "Hey! Oh, yeah!\n",
+            "Hey! Oh, Yeah!\n",
         /* STYLE ---------------------------------------------------------- */
             /* GFX */ reading_style_sea_gfx_table,
             /* BGM */ &reading_style_sea_bgm

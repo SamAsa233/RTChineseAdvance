@@ -842,6 +842,54 @@ def cafe_first_visit_installed(text, key, translation):
                 r'\n只要有我帮得上忙的地方，\n\0051\0015'
                 + '我都会尽力的哦。' + r'\0054\0018')
     return current == expected
+
+
+def reading_body(text, key):
+    """按文章枚举名读取没有同名 C 变量的资料室 BODY。"""
+    markers = {
+        'reading_formula_content': 'RHYTHM_FORMULA',
+        'reading_poem': 'RHYTHM_POEM',
+    }
+    marker = markers.get(key)
+    if not marker:
+        return None
+    start = text.find('/* ' + marker)
+    body_start = text.find('/* BODY', start)
+    body_end = text.find('/* STYLE', body_start)
+    if start < 0 or body_start < 0 or body_end < 0:
+        return None
+    return ''.join(literal[1:-1] for literal in LITERAL.findall(text[body_start:body_end]))
+
+
+def reading_body_installed(text, key, original, translation):
+    """核对资料室正文的控制码顺序，并允许中文调整源码中的可读分段。"""
+    current = reading_body(text, key)
+    if current is None:
+        return False
+    current_controls = CONTROL_TOKEN.findall(current)
+    baseline_controls = CONTROL_TOKEN.findall(original)
+    if current_controls != baseline_controls:
+        return False
+    visible_lines = lambda raw: [line.strip() for line in
+                                 CONTROL_TOKEN.sub('', raw).replace(r'\n', '\n').splitlines()
+                                 if line.strip()]
+    current_lines = visible_lines(current)
+    translated_lines = visible_lines(translation)
+    if key == 'reading_formula_content':
+        # 公式译文覆盖整篇；忽略排版空行和行尾空格后应逐行完全一致。
+        return current_lines == translated_lines
+    if key == 'reading_poem':
+        # 译文包只收录第一首诗和第二首中的五句英文；其余英文必须保留。
+        poem_lines = translated_lines[:8]
+        if current_lines[:len(poem_lines)] != poem_lines:
+            return False
+        position = len(poem_lines)
+        for expected in translated_lines[len(poem_lines):]:
+            try:
+                position = current_lines.index(expected, position) + 1
+            except ValueError:
+                return False
+        return True
     return False
 
 
@@ -1011,7 +1059,12 @@ def extract():
             unresolved.extend(f"{json_path.relative_to(ARCHIVE)}:{key}: no source file" for key, _ in members)
             continue
         text = path.read_text(encoding='utf-8')
-        groups = locate(text, path, members[0][0])
+        if (archive_name == 'data/data_room/reading_material.inc.json'
+                and members[0][0] in ('reading_formula_content', 'reading_poem')):
+            # 资料室正文没有同名 C 变量；专用核对器按文章标记读取 BODY。
+            groups = [(0, 0, '')]
+        else:
+            groups = locate(text, path, members[0][0])
         if not groups:
             unresolved.extend(f"{json_path.relative_to(ARCHIVE)}:{key}: key not found" for key, _ in members)
             continue
@@ -1040,6 +1093,18 @@ def extract():
                     output.append(old)
                 continue
             source = groups[index][2]
+            if (archive_name == 'data/data_room/reading_material.inc.json'
+                    and key in ('reading_formula_content', 'reading_poem')
+                    and row['stage'] == 5):
+                relative = path.relative_to(ROOT).as_posix()
+                saved = previous.get(f'{relative}:{key}')
+                if saved and reading_body_installed(text, key, saved['source'], row['translation']):
+                    # 只在控制码顺序和去空白后的可见文字都一致时解除资料室正文 TODO。
+                    current_body = reading_body(text, key)
+                    output.append(dict(id=f'{relative}:{key}', file=relative, key=key,
+                                       source=saved['source'], target=current_body,
+                                       status='final', note=''))
+                    continue
             if (archive_name == 'data/cafe/dialogue.json'
                     and key in CAFE_FIRST_VISIT_KEYS and row['stage'] == 5
                     and cafe_first_visit_installed(text, key, row['translation'])):
@@ -1264,6 +1329,12 @@ def import_text(check, only_final):
                 index = int(re.search(r'\[(\d+)\]$', key).group(1)) if '[' in key else 0
                 if not groups or index >= len(groups) or groups[index] is None or groups[index][2] != row['target']:
                     problems.append(row['id'] + ': reviewed option text changed')
+                continue
+            if (filename == 'data/scenes/data_room/reading_material.inc.c'
+                    and key in ('reading_formula_content', 'reading_poem')):
+                # 这两篇正文没有同名 C 变量，按文章标记核对，避免通用导入器误改相邻文章。
+                if not reading_body_installed(text, key, row['source'], row['target']):
+                    problems.append(row['id'] + ': reviewed reading body changed')
                 continue
             if ((filename == 'games/fireworks/fireworks_text.c' and key == 'D_0805cda0')
                     or (filename == 'games/rap_men/rap_men_text.c' and key == 'D_0805eb14')):

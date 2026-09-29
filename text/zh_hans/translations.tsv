@@ -406,13 +406,7 @@ NO 前往第 21 页！
 data/scenes/data_room/reading_material.inc.c:reading_diagnosis_title	data/scenes/data_room/reading_material.inc.c	reading_diagnosis_title	Rhythm Type Diagnosis	节奏感类型测试	final	
 data/scenes/data_room/reading_material.inc.c:reading_final_notice	data/scenes/data_room/reading_material.inc.c	reading_final_notice	Final Words	最后的通告	final	
 data/scenes/data_room/reading_material.inc.c:reading_formula	data/scenes/data_room/reading_material.inc.c	reading_formula	Understanding Rhythm	一看就懂！节奏公式	final	
-data/scenes/data_room/reading_material.inc.c:reading_formula_content	data/scenes/data_room/reading_material.inc.c	reading_formula_content	\001C\0032\001m\n\nSense of rhythm ⊃ Flow\n\nSense of rhythm ≠ Flow\n\001L\0030\001s\n\001CExplanation: Flow is an element included in anyone's\nsense of rhythm, but not a sense of rhythm itself.\n\001C\0032\001m\n\n\n\nRhythm ≠ Sense of rhythm\n\n\001C\0030\001s\nExplanation: Rhythm is what ticks at a steady pace.\nA sense of rhythm is how you maintain that pace,\nexpressed naturally by way of flow.\n\001C\0031\001m\n\n\nGood dancing ≠ Good sense of rhythm\n\001C\0030\001s\nExplanation: Someone who's a good dancer does not\ninherently have a good sense of rhythm.	"节奏感 ⊃ 律动
-节奏感 ≠ 律动
-解说：“律动”是构成节奏感的要素之一，并不等同于节奏感本身。  
-节奏 ≠ 节奏感
-解说：节奏是用来划分时间的；节奏感则是通过律动来表现、感受，或自然而然流露出来的东西。  
-舞跳得好 ≠ 节奏感好
-解说：舞跳得好的人，并不一定就代表“节奏感很好”。"	final	control codes need review
+data/scenes/data_room/reading_material.inc.c:reading_formula_content	data/scenes/data_room/reading_material.inc.c	reading_formula_content	\001C\0032\001m\n\nSense of rhythm ⊃ Flow\n\nSense of rhythm ≠ Flow\n\001L\0030\001s\n\001CExplanation: Flow is an element included in anyone's\nsense of rhythm, but not a sense of rhythm itself.\n\001C\0032\001m\n\n\n\nRhythm ≠ Sense of rhythm\n\n\001C\0030\001s\nExplanation: Rhythm is what ticks at a steady pace.\nA sense of rhythm is how you maintain that pace,\nexpressed naturally by way of flow.\n\001C\0031\001m\n\n\nGood dancing ≠ Good sense of rhythm\n\001C\0030\001s\nExplanation: Someone who's a good dancer does not\ninherently have a good sense of rhythm.	\001C\0032\001m\n\n节奏感 ⊃ 律动\n\n节奏感 ≠ 律动\n\001L\0030\001s\n\001C解说：“律动”是构成节奏感的要素之一，并不等同于节奏感本身。  \n\001C\0032\001m\n\n\n\n节奏 ≠ 节奏感\n\n\001C\0030\001s\n解说：节奏是用来划分时间的；节奏感则是通过律动来表现、感受，或自然而然流露出来的东西。  \n\001C\0031\001m\n\n\n舞跳得好 ≠ 节奏感好\n\001C\0030\001s\n解说：舞跳得好的人，并不一定就代表“节奏感很好”。	final	
 data/scenes/data_room/reading_material.inc.c:reading_haiku_title	data/scenes/data_room/reading_material.inc.c	reading_haiku_title	Rhythm Haiku Collection	节奏俳句集	final	
 data/scenes/data_room/reading_material.inc.c:reading_hair_plucking	data/scenes/data_room/reading_material.inc.c	reading_hair_plucking	Plucking Letter	拔毛来稿	final	
 data/scenes/data_room/reading_material.inc.c:reading_hair_story	data/scenes/data_room/reading_material.inc.c	reading_hair_story	I'm an old gentleman who maintains a vegetable\nfarm.\n\nSo, one day, all my vegetables just started\ngrowing hair!\nIt was so creepy! I couldn't sell them like that!\n\nI tried plucking the hairs, but I just couldn't get them\nall nice and smooth like a vegetable ought to be.\nWell, to lighten up the mood, I put on some music.\nBefore I knew it, I found myself plucking to the beat.\nAnd... I plucked them clean! It's even a little fun!\n\nThe power of music is really something else!\nYou've got to try plucking hairs off of your\nvegetables!\nI can't recommend it enough!	我是个种菜的大叔。最近啊，我家的蔬菜居然开始长胡子了！又诡异又吓人，这样根本卖不出去，所以我就想把它们的胡子拔掉，可怎么拔都拔不干净。我正发愁的时候，想着换换心情，就一边听音乐一边跟着节奏给蔬菜拔毛。结果居然！拔得干干净净！而且还莫名有点开心！音乐的力量真是太厉害了。大家也一定要试试看给蔬菜拔毛哦！	final	
@@ -477,19 +471,7 @@ data/scenes/data_room/reading_material.inc.c:reading_ninja_story	data/scenes/dat
 “看到这卷轴的你啊。你并不是偶然找到它的。为了让它一定会被你找到，我早已施下了忍术。明白吗？没错，写下这些话的我是一名忍者，同时也是你的祖先。
 前些日子，我从箭雨之中保护了我的主人，也就是主公。当然，是拼了命去守护。完成那桩大事的那一夜，我做了一个梦。梦里有个年轻男子。那是个背离世俗、桀骜不驯的年轻人。根据算命婆婆所说，那个年轻人，似乎就是你。而且你也像我一样，为了守护某个人而拼上性命。是个女性。据说，那位女性正是主公的后代。你忽然看到这样的卷轴，可能一时半会儿也没什么真实感，但我还是希望，你能一直守护着那位女性。”
 如今，我心里确实有这样一位女性。她就是前些天差点遭人用弹弓瞄准射击，被我拼命救下的那位。虽说我和她今后未必会怎么样，不过这次，我倒想乖乖中一回祖先的忍术……"	final	
-data/scenes/data_room/reading_material.inc.c:reading_poem	data/scenes/data_room/reading_material.inc.c	reading_poem	\001C\0031\001mTo Nurture\n\n\001C\0030\001sI have nurtured it,\nFor the day when it will learn to use its wings.\nIn the wake of a casual, everyday life,\nNaturally,\nEnjoyably,\nThat which is now only very, very small,\nMy sense of rhythm...\n\001C\0031\001mKarate Rhythm\n\001C\0030\001s\nHey! Baby! How's it going?\nThis beat is non-stop.\nHey! Baby! Listen to my phrase.\nI can give you\nthe sense of rhythm.\nOh, yeah.\nAwake, baby! Trust me!\nThis beat is non-stop!\nNew groove in your soul.\nOh, yeah!\nThis beat!\nYou are growing up well.\nHey, baby!\nHold onto your ambition.\nHey! Oh, yeah!\n	"《培养》
-我正在培养它。
-为了有朝一日，它能振翅高飞。
-在平淡无奇的日常生活之中，
-更自然地，
-更快乐地。
-如今还很渺小的，
-我的节奏感…
-Hey! Baby! How's it going?
-Oh, Yeah.
-Oh, Yeah!
-Hey, Baby!
-Hey! Oh, Yeah!"	final	control codes need review
+data/scenes/data_room/reading_material.inc.c:reading_poem	data/scenes/data_room/reading_material.inc.c	reading_poem	\001C\0031\001mTo Nurture\n\n\001C\0030\001sI have nurtured it,\nFor the day when it will learn to use its wings.\nIn the wake of a casual, everyday life,\nNaturally,\nEnjoyably,\nThat which is now only very, very small,\nMy sense of rhythm...\n\001C\0031\001mKarate Rhythm\n\001C\0030\001s\nHey! Baby! How's it going?\nThis beat is non-stop.\nHey! Baby! Listen to my phrase.\nI can give you\nthe sense of rhythm.\nOh, yeah.\nAwake, baby! Trust me!\nThis beat is non-stop!\nNew groove in your soul.\nOh, yeah!\nThis beat!\nYou are growing up well.\nHey, baby!\nHold onto your ambition.\nHey! Oh, yeah!\n	\001C\0031\001m《培养》\n\n\001C\0030\001s我正在培养它。\n为了有朝一日，它能振翅高飞。\n在平淡无奇的日常生活之中，\n更自然地，\n更快乐地。\n如今还很渺小的，\n我的节奏感…\n\001C\0031\001mKarate Rhythm\n\001C\0030\001s\nHey! Baby! How's it going?\nThis beat is non-stop.\nHey! Baby! Listen to my phrase.\nI can give you\nthe sense of rhythm.\nOh, Yeah.\nAwake, baby! Trust me!\nThis beat is non-stop!\nNew groove in your soul.\nOh, Yeah!\nThis beat!\nYou are growing up well.\nHey, Baby!\nHold onto your ambition.\nHey! Oh, Yeah!\n	final	
 data/scenes/data_room/reading_material.inc.c:reading_poems_title	data/scenes/data_room/reading_material.inc.c	reading_poems_title	Rhythm Poem Collection	节奏诗集	final	
 data/scenes/data_room/reading_material.inc.c:reading_praise	data/scenes/data_room/reading_material.inc.c	reading_praise	Voices of Joy	喜悦来信	final	
 data/scenes/data_room/reading_material.inc.c:reading_radio	data/scenes/data_room/reading_material.inc.c	reading_radio	A Certain Radio Station	某个电台节目	final	
