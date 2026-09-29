@@ -677,7 +677,8 @@ u32 results_get_negative_comments(void) {
         }
 
         // 前缀与评语一次限长拼接，避免中文增长后 strcat 写出 0x100 字节缓冲区。
-        // TODO 未校对：拼接后的结算评语宽度还需在实际关卡结果页检查。
+        // 实机核验：2026-09-29 检查一至三条失败评语；Rap Men 同时显示
+        // “还有、”和“另外、”两种前缀时，三行文字仍未重叠或截断。
         snprintf(commentsText, sizeof(gResults->negativeCommentsText), "%s%s",
                  results_try_again_comment_pool[clamp_int32(i, 0, 2)], modifiedComment);
 

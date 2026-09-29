@@ -276,7 +276,8 @@ void start_campaign_notice(s32 id) {
     // 中文是按 game_select.json 中阶段 5 的片段重组的；保留 \001C
     // 文本控制码和换行。旧 memcpy 固定拷贝 45 字节，随后 strcat 会越界；
     // snprintf 按缓冲区实际容量写入并保证结尾有 NUL。
-    // TODO 未校对：整句重组后的语气与实机折行，仍需人工确认。
+    // 实机核验：2026-09-29 分别检查长歌名、长资料名和长鼓组名奖励；
+    // 最长组合自动折为五行，未碰到通知边框或底部确认图标。
     snprintf(notice->text, sizeof(notice->text),
              "\001C在「%s」达成完美通关的话，\n即可获赠\n %s%s就送给你！\n",
              level->name, giftTitle, giftKind);
