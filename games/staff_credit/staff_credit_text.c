@@ -8,15 +8,17 @@
 /* Script Data - Staff Credits */
 
 
-const char D_08069a48[] = "\\0023制作人员";
+/* 汉化修复：\002 是片尾打印控制字节，后面的 3 是样式参数；
+ * 这些职务标题保持单反斜杠，并用相邻字面量拼接中文，不能写成 \\0023。 */
+const char D_08069a48[] = "\0023" "制作人员";
 
-const char D_08069a58[] = "\\0023制作人";
+const char D_08069a58[] = "\0023" "制作人";
 
 const char D_08069a64[] = "つんく♂";
 
 const char D_08069a70[] = "坂本 賀勇";
 
-const char D_08069a7c[] = "\\0023监修";
+const char D_08069a7c[] = "\0023" "监修";
 
 const char D_08069a88[] = "山野 勝也";
 
@@ -24,11 +26,11 @@ const char D_08069a94[] = "飯田 寛";
 
 const char D_08069a9c[] = "梅本 のぶやす";
 
-const char D_08069aa8[] = "\\0023总监";
+const char D_08069aa8[] = "\0023" "总监";
 
 const char D_08069ab8[] = "大澤 和義";
 
-const char D_08069ac0[] = "\\0023游戏设计";
+const char D_08069ac0[] = "\0023" "游戏设计";
 
 const char D_08069acc[] = "竹内 高";
 
@@ -44,25 +46,25 @@ const char D_08069b00[] = "竹内 康貴";
 
 const char D_08069b0c[] = "河野 正博";
 
-const char D_08069b18[] = "\\0023程序总监";
+const char D_08069b18[] = "\0023" "程序总监";
 
-const char D_08069b2c[] = "\\0023程序";
+const char D_08069b2c[] = "\0023" "程序";
 
-const char D_08069b38[] = "\\0023美术总监";
+const char D_08069b38[] = "\0023" "美术总监";
 
-const char D_08069b48[] = "\\0023美术";
+const char D_08069b48[] = "\0023" "美术";
 
 const char D_08069b50[] = "宮本 文子";
 
-const char D_08069b5c[] = "\\0023音频总监";
+const char D_08069b5c[] = "\0023" "音频总监";
 
 const char D_08069b6c[] = "小黒 薫輝";
 
 const char D_08069b74[] = "鎌田 浩二";
 
-const char D_08069b80[] = "\\0023音乐";
+const char D_08069b80[] = "\0023" "音乐";
 
-const char D_08069b88[] = "\\0023编曲";
+const char D_08069b88[] = "\0023" "编曲";
 
 const char D_08069b9c[] = "湯浅 公一";
 
@@ -72,23 +74,23 @@ const char D_08069bb0[] = "大久保 薫";
 
 const char D_08069bb8[] = "椎葉 大翼";
 
-const char D_08069bc4[] = "\\0023音效";
+const char D_08069bc4[] = "\0023" "音效";
 
 const char D_08069bd4[] = "藤井 貴矢";
 
-const char D_08069bdc[] = "\\0023演唱";
+const char D_08069bdc[] = "\0023" "演唱";
 
 const char D_08069be4[] = "時東　ぁみ";
 
 const char D_08069bf0[] = "田中　総史";
 
-const char D_08069bfc[] = "\\0023配音";
+const char D_08069bfc[] = "\0023" "配音";
 
 const char D_08069c04[] = "北村 典子";
 
 const char D_08069c10[] = "野村 真穂";
 
-const char D_08069c1c[] = "\\0023测试";
+const char D_08069c1c[] = "\0023" "测试";
 
 const char D_08069c24[] = "安達 悠平";
 
@@ -136,7 +138,7 @@ const char D_08069cd0[] = "A. Shimizubata";
 // TODO 未校对：D_08069ce0 译文包未到 stage 5，暂留原文。
 const char D_08069ce0[] = "Y. Yamashita";
 
-const char D_08069cec[] = "\\0023特别鸣谢";
+const char D_08069cec[] = "\0023" "特别鸣谢";
 
 // TODO 未校对：D_08069cfc 译文包未到 stage 5，暂留原文。
 const char D_08069cfc[] = "Y. Kuratsune";
@@ -159,13 +161,13 @@ const char D_08069d5c[] = "剣持 あゆち";
 
 const char D_08069d68[] = "中野 ひとみ";
 
-const char D_08069d74[] = "\\0023还有你";
+const char D_08069d74[] = "\0023" "还有你";
 
 // 阶段 5 已校对：原版职务标题的显示前缀不动，补回空缺的“执行”。
 // TODO 未校对：与下一行“制作人”的片尾职务布局仍需实机核验。
 const char D_08069d7c[] = "\0023" "执行";
 
-const char D_08069d88[] = "\\0023制作人";
+const char D_08069d88[] = "\0023" "制作人";
 
 const char D_08069d98[] = "岩田 聡";
 

@@ -248,16 +248,16 @@ data/scenes/cafe/dialogue.c:cafe_dialogue_rhythm_test[8]	data/scenes/cafe/dialog
 我怎么也做不好呢。
 
 "	final	
-data/scenes/cafe/dialogue.c:cafe_dialogue_shouts_cheer[0]	data/scenes/cafe/dialogue.c	cafe_dialogue_shouts_cheer[0]	\0032\001l\0051\0015\n\nGo for it!\0030\001s\0054\0018	\0032\001l\0051\0015加油啊！\0030\001s\0054\0018	final	
-data/scenes/cafe/dialogue.c:cafe_dialogue_shouts_cheer[16]	data/scenes/cafe/dialogue.c	cafe_dialogue_shouts_cheer[16]	\0032\001l\0051\0015\n\nGive it your all!\0030\001s\0054\0018	\0032\001l\0051\0015冲呀！\0030\001s\0054\0018	final	
-data/scenes/cafe/dialogue.c:cafe_dialogue_shouts_cheer[27]	data/scenes/cafe/dialogue.c	cafe_dialogue_shouts_cheer[27]	\0032\001l\0051\0015\n\nKeep going!\0030\001s\0054\0018	\0032\001l\0051\0015上啊上啊！\0030\001s\0054\0018	final	
-data/scenes/cafe/dialogue.c:cafe_dialogue_shouts_cheer[38]	data/scenes/cafe/dialogue.c	cafe_dialogue_shouts_cheer[38]	\0032\001l\0051\0015\n\nGood luck!\0030\001s\0054\0018	\0032\001l\0051\0015祝你好运！\0030\001s\0054\0018	final	
-data/scenes/cafe/dialogue.c:cafe_dialogue_shouts_cheer[49]	data/scenes/cafe/dialogue.c	cafe_dialogue_shouts_cheer[49]	\0032\001l\0051\0015\n\nI'm impressed!\0030\001s\0054\0018	\0032\001l\0051\0015太让人感动啦！\0030\001s\0054\0018	final	
-data/scenes/cafe/dialogue.c:cafe_dialogue_shouts_praise[0]	data/scenes/cafe/dialogue.c	cafe_dialogue_shouts_praise[0]	\0032\001l\0051\0015\n\nThat's great!\0030\001s\0054\0018	\0032\001l\0051\0015这也太厉害了吧!!\0030\001s\0054\0018	final	
-data/scenes/cafe/dialogue.c:cafe_dialogue_shouts_praise[16]	data/scenes/cafe/dialogue.c	cafe_dialogue_shouts_praise[16]	\0032\001l\0051\0015\n\nAmazing!\0030\001s\0054\0018	\0032\001l\0051\0015挺有本事的嘛!!\0030\001s\0054\0018	final	
-data/scenes/cafe/dialogue.c:cafe_dialogue_shouts_praise[27]	data/scenes/cafe/dialogue.c	cafe_dialogue_shouts_praise[27]	\0032\001l\0051\0015\n\nCongratulations!\0030\001s\0054\0018	\0032\001l\0051\0015恭喜啦!!\0030\001s\0054\0018	final	
-data/scenes/cafe/dialogue.c:cafe_dialogue_shouts_praise[38]	data/scenes/cafe/dialogue.c	cafe_dialogue_shouts_praise[38]	\0032\001l\0051\0015\n\nGreat job!\0030\001s\0054\0018	\0032\001l\0051\0015干得漂亮!!\0030\001s\0054\0018	final	
-data/scenes/cafe/dialogue.c:cafe_dialogue_shouts_praise[49]	data/scenes/cafe/dialogue.c	cafe_dialogue_shouts_praise[49]	\0032\001l\0051\0015\n\nI can't believe it!\0030\001s\0054\0018	\0032\001l\0051\0015难以置信!!\0030\001s\0054\0018	final	
+data/scenes/cafe/dialogue.c:cafe_dialogue_shouts_cheer[0]	data/scenes/cafe/dialogue.c	cafe_dialogue_shouts_cheer[0]	\0032\001l\0051\0015\n\nGo for it!\0030\001s\0054\0018	\0032\001l\0051\0015\n\n加油啊！\0030\001s\0054\0018	final	
+data/scenes/cafe/dialogue.c:cafe_dialogue_shouts_cheer[16]	data/scenes/cafe/dialogue.c	cafe_dialogue_shouts_cheer[16]	\0032\001l\0051\0015\n\nGive it your all!\0030\001s\0054\0018	\0032\001l\0051\0015\n\n冲呀！\0030\001s\0054\0018	final	
+data/scenes/cafe/dialogue.c:cafe_dialogue_shouts_cheer[27]	data/scenes/cafe/dialogue.c	cafe_dialogue_shouts_cheer[27]	\0032\001l\0051\0015\n\nKeep going!\0030\001s\0054\0018	\0032\001l\0051\0015\n\n上啊上啊！\0030\001s\0054\0018	final	
+data/scenes/cafe/dialogue.c:cafe_dialogue_shouts_cheer[38]	data/scenes/cafe/dialogue.c	cafe_dialogue_shouts_cheer[38]	\0032\001l\0051\0015\n\nGood luck!\0030\001s\0054\0018	\0032\001l\0051\0015\n\n祝你好运！\0030\001s\0054\0018	final	
+data/scenes/cafe/dialogue.c:cafe_dialogue_shouts_cheer[49]	data/scenes/cafe/dialogue.c	cafe_dialogue_shouts_cheer[49]	\0032\001l\0051\0015\n\nI'm impressed!\0030\001s\0054\0018	\0032\001l\0051\0015\n\n太让人感动啦！\0030\001s\0054\0018	final	
+data/scenes/cafe/dialogue.c:cafe_dialogue_shouts_praise[0]	data/scenes/cafe/dialogue.c	cafe_dialogue_shouts_praise[0]	\0032\001l\0051\0015\n\nThat's great!\0030\001s\0054\0018	\0032\001l\0051\0015\n\n这也太厉害了吧!!\0030\001s\0054\0018	final	
+data/scenes/cafe/dialogue.c:cafe_dialogue_shouts_praise[16]	data/scenes/cafe/dialogue.c	cafe_dialogue_shouts_praise[16]	\0032\001l\0051\0015\n\nAmazing!\0030\001s\0054\0018	\0032\001l\0051\0015\n\n挺有本事的嘛!!\0030\001s\0054\0018	final	
+data/scenes/cafe/dialogue.c:cafe_dialogue_shouts_praise[27]	data/scenes/cafe/dialogue.c	cafe_dialogue_shouts_praise[27]	\0032\001l\0051\0015\n\nCongratulations!\0030\001s\0054\0018	\0032\001l\0051\0015\n\n恭喜啦!!\0030\001s\0054\0018	final	
+data/scenes/cafe/dialogue.c:cafe_dialogue_shouts_praise[38]	data/scenes/cafe/dialogue.c	cafe_dialogue_shouts_praise[38]	\0032\001l\0051\0015\n\nGreat job!\0030\001s\0054\0018	\0032\001l\0051\0015\n\n干得漂亮!!\0030\001s\0054\0018	final	
+data/scenes/cafe/dialogue.c:cafe_dialogue_shouts_praise[49]	data/scenes/cafe/dialogue.c	cafe_dialogue_shouts_praise[49]	\0032\001l\0051\0015\n\nI can't believe it!\0030\001s\0054\0018	\0032\001l\0051\0015\n\n难以置信!!\0030\001s\0054\0018	final	
 data/scenes/cafe/dialogue.c:cafe_dialogue_speaking_with_music[0]	data/scenes/cafe/dialogue.c	cafe_dialogue_speaking_with_music[0]	\nI heard you can hold a conversation\nwith only rhythm.\n\n	"
 说起来，
 你知道节奏也能拿来对话吗？

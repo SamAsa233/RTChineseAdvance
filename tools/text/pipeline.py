@@ -25,6 +25,11 @@ REPORT = ROOT / "build/text_report"
 LITERAL = re.compile(r'"(?:\\.|[^"\\])*"', re.S)
 CONTROL = re.compile(r'\\(?:[0-7]{1,3}|x[0-9a-fA-F]+)|[.:][0-9a-fA-F]')
 CONTROL_TOKEN = re.compile(r'\\(?:004|4)[0-9]+\.|\\(?:00[1235]|[1235])[0-9A-Za-z\[\]]|[.:][0-9a-fA-F]')
+# C 源码中的这些反斜杠序列会在编译时变成控制字节或换行；不能交给 JSON 再转义一次。
+C_RUNTIME_ESCAPE = re.compile(r'\\(?:[0-7]{1,3}|x[0-9a-fA-F]{2}|[nrt])')
+EDGE_CONTROL_TOKEN = re.compile(CONTROL_TOKEN.pattern + r'|\\x[0-9a-fA-F]{2}|\\[nrt]')
+# 只匹配源码字面量里“恰好两个反斜杠”的错误形式，避免把真正的控制码当普通文字链接进 ROM。
+DOUBLED_C_RUNTIME_ESCAPE = re.compile(r'(?<!\\)\\\\(?!\\)(?:[0-7]{1,3}|x[0-9a-fA-F]{2}|[nrt])')
 # 汉化审计：鼓组海报使用标准 C 十六进制转义表示排版控制字节；
 # 它们不是可见文字，只在核对显示内容时剥离，源码中的原始字节保持不动。
 C_HEX_ESCAPE = re.compile(r'\\x[0-9a-fA-F]{2}')
@@ -68,6 +73,32 @@ def atomic_text(path, data):
     temp = path.with_name(path.name + ".tmp")
     temp.write_text(data, encoding="utf-8", newline="")
     os.replace(temp, path)
+
+
+def quote_c_literal(value):
+    """生成 C 字符串，并让 TSV 中已有的控制转义保持单反斜杠。"""
+    matches = list(C_RUNTIME_ESCAPE.finditer(value))
+    if not matches:
+        return json.dumps(value, ensure_ascii=False)
+    parts = []
+    start = 0
+    for match in matches:
+        if match.start() > start:
+            parts.append(json.dumps(value[start:match.start()], ensure_ascii=False))
+        # 控制码单独放进相邻字面量，既防止 JSON 写成 \\，也防止 \x 转义吞掉后面的十六进制字符。
+        parts.append('"' + match.group() + '"')
+        start = match.end()
+    if start < len(value):
+        parts.append(json.dumps(value[start:], ensure_ascii=False))
+    return ' '.join(parts) if parts else '""'
+
+
+def doubled_control_escape_lines(text):
+    """返回把控制码误写成可见反斜杠文字的源码行号。"""
+    cleaned = remove_comments(text)
+    return sorted({cleaned.count('\n', 0, literal.start()) + 1
+                   for literal in LITERAL.finditer(cleaned)
+                   if DOUBLED_C_RUNTIME_ESCAPE.search(literal.group()[1:-1])})
 
 
 def remove_comments(text):
@@ -1522,15 +1553,15 @@ def extract():
 
 
 def preserve_edge_controls(source, target):
-    """Keep complete printer/bitmap control tokens enclosing translated text."""
-    tokens = list(CONTROL_TOKEN.finditer(source))
-    raw = list(CONTROL.finditer(source))
+    """保留译文两侧完整的打印控制码以及原版显式换行。"""
+    tokens = list(EDGE_CONTROL_TOKEN.finditer(source))
+    raw = list(re.finditer(CONTROL.pattern + r'|\\[nrt]', source))
     if not tokens or len(tokens) != len(raw) or any(a.start() != b.start() for a, b in zip(tokens, raw)):
         return None
     if CONTROL.search(target):
         return None
     prefix_end = 0
-    while match := CONTROL_TOKEN.match(source, prefix_end):
+    while match := EDGE_CONTROL_TOKEN.match(source, prefix_end):
         prefix_end = match.end()
     suffix_start = len(source)
     for token in reversed(tokens):
@@ -1679,20 +1710,27 @@ def import_text(check, only_final):
                 problems.append(row['id'] + ': conditional branches need review')
                 continue
             start, end, current = groups[index]
-            quoted = json.dumps(row['target'], ensure_ascii=False)
+            quoted = quote_c_literal(row['target'])
             target = ('    .asciz ' + quoted) if path.suffix == '.bs' else quoted
-            # Adjacent C string literals are one string at runtime. Accept
-            # their combined value so import never flattens hand-laid lines.
-            if text[start:end] == target or current == quoted[1:-1]:
+            # 把生成的相邻字面量重新拼成源码内容，兼容 TSV 真实换行与 C 源码 \n 的表示差异。
+            expected_current = ''.join(literal[1:-1] for literal in LITERAL.findall(quoted))
+            if text[start:end] == target or current == expected_current:
                 continue
-            if current != row['source'] and current != quoted[1:-1]:
+            # 旧导入器曾把单反斜杠控制码写成双反斜杠；只把这一种已知坏格式视为可自动修复。
+            legacy_escaped = (json.dumps(row['target'], ensure_ascii=False)[1:-1]
+                              if C_RUNTIME_ESCAPE.search(row['target']) else None)
+            if current != row['source'] and current != legacy_escaped:
                 problems.append(row['id'] + ': source changed')
                 continue
             edits.append((start, end, target))
+        # 先在内存中应用计划修改，再检查结果；这样 check 模式也能证明导入后不会重新产生双反斜杠控制码。
+        result_text = text
+        for start, end, replacement in sorted(edits, reverse=True):
+            result_text = result_text[:start] + replacement + result_text[end:]
+        for line in doubled_control_escape_lines(result_text):
+            problems.append(f'{filename}:{line}: 控制码被写成双反斜杠，运行时会变成可见文字')
         if edits and not check:
-            for start, end, replacement in sorted(edits, reverse=True):
-                text = text[:start] + replacement + text[end:]
-            atomic_text(path, text)
+            atomic_text(path, result_text)
         changed += len(edits)
     atomic_text(REPORT / 'import_problems.txt', '\n'.join(problems) + '\n')
     print(f"{'would import' if check else 'imported'}={changed}, control-review={skipped}, problems={len(problems)}")

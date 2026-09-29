@@ -10,7 +10,7 @@ import json
 from pathlib import Path
 import re
 
-from pipeline import ARCHIVE, CONTROL_TOKEN, ROOT, TABLE, atomic_text
+from pipeline import ARCHIVE, CONTROL_TOKEN, EDGE_CONTROL_TOKEN, ROOT, TABLE, atomic_text
 
 RANGE = re.compile(r'\{\s*\w+_bin,\s*(\w+)_bin,\s*0x([0-9a-fA-F]+),\s*0x([0-9a-fA-F]+)\s*\}')
 VISIBLE = re.compile(r'\\(?:[0-7]{1,3}|x[0-9a-fA-F]{2})')
@@ -182,6 +182,10 @@ def main():
                 source_tokens = [token for token in source_tokens if token != '.A']
             if Counter(source_tokens) != Counter(CONTROL_TOKEN.findall(row['target'])):
                 errors.append(f"{row['id']}: control tokens differ")
+            if row['key'].startswith(('cafe_dialogue_shouts_praise[', 'cafe_dialogue_shouts_cheer[')):
+                # 这十句依靠前置空行把喝彩文字放到气泡中央；只数打印码会漏掉被删掉的 \n。
+                if EDGE_CONTROL_TOKEN.findall(row['source']) != EDGE_CONTROL_TOKEN.findall(row['target']):
+                    errors.append(f"{row['id']}: cafe shout controls or line breaks differ")
         if row['key'] == 'reading_diagnosis' and not row['note']:
             # 该文章依靠固定九行分页；任何超宽自动折行都会使后续页码错位。
             errors.extend(diagnosis_page_errors(row, fonts))
