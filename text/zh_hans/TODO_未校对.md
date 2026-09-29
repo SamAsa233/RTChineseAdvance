@@ -141,6 +141,12 @@
 
 - TODO 未校对 data/scenes/cafe/dialogue.c:cafe_dialogue_rhythm_sense[7]: TODO 未校对：PARADISE 双分支的语气待分别核验
 
+## 阶段 5 原文仍非中文，采用自行中文化
+
+- TODO 未校对 games/drum_intro/drum_samurai_cutscene_text.json:D_0805df4c: 阶段 5 仍为拼音英语，源码采用自行中文化；需实机确认语气和断行
+- TODO 未校对 games/drum_live/drum_live_menu_engine.json:drum_live_menu_poster_desc[48]: 阶段 5 仍为英文标题，源码采用自行中文化；需实机确认字宽和语气
+- TODO 未校对 games/drum_live/drum_live_menu_engine.json:drum_live_menu_poster_desc[54]: 阶段 5 仍为英文标题，源码采用自行中文化；需实机确认字宽和语气
+
 ## 尚未安全定位
 
 - TODO 未校对 data\data_room\reading_material.inc.json:reading_lyrics_3: key not found

@@ -7,7 +7,7 @@ Examples:
 """
 
 import argparse
-from collections import defaultdict
+from collections import Counter, defaultdict
 import csv
 import difflib
 from functools import lru_cache
@@ -25,6 +25,9 @@ REPORT = ROOT / "build/text_report"
 LITERAL = re.compile(r'"(?:\\.|[^"\\])*"', re.S)
 CONTROL = re.compile(r'\\(?:[0-7]{1,3}|x[0-9a-fA-F]+)|[.:][0-9a-fA-F]')
 CONTROL_TOKEN = re.compile(r'\\(?:004|4)[0-9]+\.|\\(?:00[1235]|[1235])[0-9A-Za-z\[\]]|[.:][0-9a-fA-F]')
+# 汉化审计：鼓组海报使用标准 C 十六进制转义表示排版控制字节；
+# 它们不是可见文字，只在核对显示内容时剥离，源码中的原始字节保持不动。
+C_HEX_ESCAPE = re.compile(r'\\x[0-9a-fA-F]{2}')
 FIELDS = ("id", "file", "key", "source", "target", "status", "note")
 # 这七句在脚本里单独显示，均有同一组前置控制字节；只对这些已校对键做定点核验。
 NIGHT_WALK_PROMPTS = frozenset({
@@ -558,6 +561,101 @@ def notice_translation_installed(text, archive_name, key, translation):
                 and kind.group(1)[1:-1] == targets['game_select_gift_middle'])
 
 
+def perfect_translation_installed(text, key, translation):
+    """核对完美挑战奖励页在运行时拼接的五段已校对中文。"""
+    start = text.find('void perfect_scene_start(void *sVar, s32 dArg) {')
+    end = text.find('// Unlock Studio Songs', start)
+    if start < 0 or end < 0:
+        return False
+    section = remove_comments(text[start:end])
+    expected_keys = {
+        'perfect_gift_prefix', 'perfect_gift_suffix',
+        'perfect_remaining_prefix', 'perfect_remaining_suffix', 'perfect_complete',
+    }
+    if key not in expected_keys:
+        return False
+    # 这些片段位于 snprintf 格式串或 songSuffix 中。先拼接函数里的 C 字符串，
+    # 再仅为审计剥离显示控制码；这样“全部完成”两句即使中间插有颜色控制码，
+    # 仍可按原有换行逐字核对，而不会要求改动游戏实际排版字节。
+    visible = CONTROL_TOKEN.sub('', ''.join(literal[1:-1]
+                                             for literal in LITERAL.findall(section)))
+    expected = json.dumps(translation, ensure_ascii=False)[1:-1]
+    return expected in visible
+
+
+def studio_cafe_title_installed(text, translation):
+    """核对录音室“咖啡谈心”的两个地区分支。"""
+    if '/* CAFE */' not in text or '/* TRY_AGAIN */' not in text:
+        return False
+    section = text.split('/* CAFE */', 1)[1].split('/* TRY_AGAIN */', 1)[0]
+    titles = re.findall(r'/\*\s*Full Title\s*\*/\s*("(?:\\.|[^"\\])*")', section)
+    return titles == [json.dumps(translation, ensure_ascii=False)] * 2
+
+
+def karate_start_installed(text, translation):
+    """核对空手道正式开始提示的两个地区分支。"""
+    marker = 'const char D_0805ad80[] ='
+    start = text.find(marker)
+    end = text.find('#endif', start)
+    if start < 0 or end < 0:
+        return False
+    section = remove_comments(text[start:end])
+    values = LITERAL.findall(section)
+    expected = json.dumps(translation, ensure_ascii=False)
+    return '#ifdef PARADISE' in section and '#else' in section and values == ['"\\n"', expected, expected]
+
+
+DRUM_INTRO_CUSTOM_TEXT = '欢迎来到\\n这段 funky 的节奏世界！'
+DRUM_LIVE_CUSTOM_TEXT = {
+    'drum_live_menu_poster_desc[48]': "武士鼓手的\\n",
+    'drum_live_menu_poster_desc[54]': '乐队 LIVE！\\n',
+}
+
+
+def drum_intro_custom_installed(text):
+    """核对译文包仍为拼音英语时自行中文化的鼓教学开场。"""
+    groups = c_initializer(text, 'D_0805df4c')
+    return bool(groups and len(groups) == 1 and groups[0][2] == DRUM_INTRO_CUSTOM_TEXT
+                and 'TODO 未校对' in text[:groups[0][0]])
+
+
+def normalize_poster_line(text):
+    """忽略海报原有的全角/半角空白差异，只比较可见文字。"""
+    return re.sub(r'\s+', ' ', text).strip()
+
+
+def drum_live_poster_installed(text, members):
+    """核对三张海报的 13 行可见文字和两条 TODO 状态。"""
+    groups = c_initializer(text, 'drum_live_menu_poster_desc')
+    if not groups or len(groups) != 3:
+        return False
+    lines = []
+    for _, _, raw in groups:
+        # 海报的 \xNN 是字体、位置等控制字节，不属于玩家看到的文字。
+        visible = C_HEX_ESCAPE.sub('', CONTROL_TOKEN.sub('', raw)).replace(r'\n', '\n')
+        lines.extend(line for line in visible.splitlines() if line.strip())
+    if len(lines) != len(members):
+        return False
+    for current, (key, row) in zip(lines, members):
+        if key in DRUM_LIVE_CUSTOM_TEXT:
+            expected = DRUM_LIVE_CUSTOM_TEXT[key].replace(r'\n', '')
+        elif row['stage'] == 5:
+            expected = row['translation'].replace('\n', '')
+        elif key == 'drum_live_menu_poster_desc[42]':
+            # WISH 只有阶段 2，继续保留移植版英文，并要求源码旁有可搜索 TODO。
+            expected = "♪ WISH - Can't Wait for You"
+        else:
+            return False
+        if normalize_poster_line(current) != normalize_poster_line(expected):
+            return False
+    # 分别确认阶段 2 的 WISH 和两行自行中文化标题旁仍留有可搜索 TODO，
+    # 避免文件中无关 TODO 恰好让计数通过。
+    wish_todo = 'TODO 未校对：WISH 条目仅有阶段 2 译文，暂留英文。' in text
+    custom_todo = ('TODO 未校对：阶段 5 译文仍是英文标题，这两行是自行中文化，'
+                   '需实机确认字宽和语气。') in text
+    return wish_todo and custom_todo
+
+
 def conditional_level_translation_installed(text, key, translation):
     """核对关卡表的地区双分支：两侧都匹配阶段 5 译文才移除 TODO。"""
     specs = {
@@ -911,7 +1009,15 @@ def reading_body_installed(text, key, original, translation):
 
 def extract():
     output, unresolved = [], []
+    manual_verified, manual_todos = [], []
+    archive_records = []
     previous = {}
+
+    def record_manual(archive_name, members, reason):
+        """记录无法放进普通 TSV、但已由专用规则逐字核对的阶段 5 条目。"""
+        for key, row in members:
+            if row['stage'] == 5:
+                manual_verified.append(f'{archive_name}:{key}\t{reason}')
     # 这些条目已手动写在源码中，归档键却不等于 C 数组名。按实际数组槽位
     # 逐条核对阶段 5 译文后才跳过，防止源码变化时误报“已完成”。
     manual_slots = {
@@ -933,6 +1039,10 @@ def extract():
             previous = {row['id']: row for row in csv.DictReader(stream, delimiter='\t')}
     for (json_path, path, base), members in grouped_archive().items():
         archive_name = json_path.relative_to(ARCHIVE).as_posix()
+        archive_records.extend((archive_name,
+                                path.relative_to(ROOT).as_posix() if path is not None else None,
+                                key, int(row['stage']))
+                               for key, row in members)
         if (archive_name == 'data/data_room/reading_material.inc.json'
                 and path is not None and len(members) == 1):
             key, row = members[0]
@@ -941,6 +1051,7 @@ def extract():
             if (row['stage'] == 5 and
                     (reading_story_installed(source, key, row['translation'])
                      or reading_haiku_installed(source, key, row['translation']))):
+                record_manual(archive_name, members, '资料室长文或俳句专用核对')
                 continue
         if (archive_name in ('src/arrival.json', 'src/game_select.json')
                 and path is not None and len(members) == 1):
@@ -949,6 +1060,7 @@ def extract():
             if (row['stage'] == 5 and notice_translation_installed(
                     path.read_text(encoding='utf-8'), archive_name,
                     key, row['translation'])):
+                record_manual(archive_name, members, '运行时通知拼接专用核对')
                 continue
         if (archive_name == 'data/game_select/levels.inc.json'
                 and path is not None and len(members) == 1):
@@ -956,6 +1068,7 @@ def extract():
             # 为什么逐地区检查：自动定位器遇到 #ifdef 时不会猜哪一侧才正确。
             if (row['stage'] == 5 and conditional_level_translation_installed(
                     path.read_text(encoding='utf-8'), key, row['translation'])):
+                record_manual(archive_name, members, '关卡表双地区分支专用核对')
                 continue
         if (archive_name in ('src/cafe.json', 'src/cafe_add.json')
                 and path is not None and len(members) == 1):
@@ -964,6 +1077,7 @@ def extract():
             # 只有对应剧情分支真的显示已校对文字，才从未定位清单移除。
             if (row['stage'] == 5 and cafe_translation_installed(
                     path.read_text(encoding='utf-8'), key, row['translation'])):
+                record_manual(archive_name, members, '咖啡馆动态台词专用核对')
                 continue
         if (archive_name == 'data/data_room/reading_material.inc.json'
                 and base == 'reading_greeting' and path is not None
@@ -986,6 +1100,7 @@ def extract():
                         clean[:branches.start()] + branches.group(side) + clean[branches.end():]))
                         for side in (1, 2)]
                     if values == [expected, expected]:
+                        record_manual(archive_name, members, '资料室欢迎信双地区分支专用核对')
                         continue
         if (archive_name == 'src/debug_menu.json' and base == 'debug_menu_title'
                 and path is not None and len(members) == 1):
@@ -995,6 +1110,7 @@ def extract():
             call = r'bmp_font_obj_print_l\(\s*gDebugMenu->objFont,\s*'
             if (row['stage'] == 5 and re.search(
                     call + re.escape(json.dumps(row['translation'], ensure_ascii=False)), text)):
+                record_manual(archive_name, members, '调试菜单函数参数专用核对')
                 continue
         if (archive_name == 'src/debug_menu_table.json' and base == 'debug_menu_52'
                 and path is not None and len(members) == 1):
@@ -1006,6 +1122,7 @@ def extract():
                 section = text.split('/* Sick Beats Endless */', 1)[1].split('/* Quiz Show Endless */', 1)[0]
                 labels = re.findall(r'/\*\s*Label\s*\*/\s*("(?:\\.|[^"\\])*")', section)
                 if row['stage'] == 5 and labels == [json.dumps(row['translation'], ensure_ascii=False)]:
+                    record_manual(archive_name, members, '调试菜单错拼条目专用核对')
                     continue
         if (archive_name == 'data/medal_corner/endless_menu.inc.json'
                 and base == 'endless_ura_otoko' and path is not None
@@ -1018,6 +1135,7 @@ def extract():
                 section = text.split('/* MR_UPBEAT */', 1)[1].split('/* SICK_BEATS */', 1)[0]
                 titles = re.findall(r'/\*\s*Title\s*\*/\s*("(?:\\.|[^"\\])*")', section)
                 if row['stage'] == 5 and titles == [json.dumps(row['translation'], ensure_ascii=False)] * 2:
+                    record_manual(archive_name, members, '奖牌角标题双地区分支专用核对')
                     continue
         if archive_name in manual_slots and path is not None and len(members) == 1:
             initializer, positions = manual_slots[archive_name]
@@ -1028,44 +1146,75 @@ def extract():
                     and position < len(groups) and groups[position]
                     and groups[position][2].endswith(row['translation'])):
                 # 只有对应槽位确实包含已校对中文时，才消除误报。
+                record_manual(archive_name, members, '手工数组槽位专用核对')
                 continue
-        # These reviewed fragments are composed at runtime in perfect_scene_start;
-        # they intentionally have no standalone source literal to replace.
-        if json_path.relative_to(ARCHIVE).as_posix() == 'src/perfect.json':
-            continue
-        # Cafe Counselling has two spelling branches in the source; both are
-        # updated manually to one reviewed Chinese title.
+        # 完美挑战奖励文字由运行时格式串拼接，没有同名 C 数组；五段必须逐项存在。
+        if (archive_name == 'src/perfect.json' and path is not None
+                and len(members) == 1):
+            key, row = members[0]
+            if row['stage'] == 5 and perfect_translation_installed(
+                    path.read_text(encoding='utf-8'), key, row['translation']):
+                record_manual(archive_name, members, '完美挑战奖励运行时拼接专用核对')
+                continue
+        # “咖啡谈心”在源码中有两个拼写分支，只有两侧都等于已校对译名才算完成。
         if (json_path.relative_to(ARCHIVE).as_posix() == 'data/studio/songs.inc.json'
-                and base == 'song_cafe_counsel'):
+                and base == 'song_cafe_counsel' and path is not None
+                and len(members) == 1):
+            key, row = members[0]
+            if not (row['stage'] == 5 and studio_cafe_title_installed(
+                    path.read_text(encoding='utf-8'), row['translation'])):
+                unresolved.append(f'{archive_name}:{key}: conditional branches differ')
+                continue
             unresolved = [item for item in unresolved
                           if not item.startswith(f'{json_path.relative_to(ARCHIVE)}:{base}:')]
+            record_manual(archive_name, members, '录音室标题双地区分支专用核对')
             continue
-        # The karate opening line has two source spelling branches but one
-        # reviewed Chinese sentence; both branches are updated manually.
+        # 空手道开场提示有两个地区分支，逐侧核对同一条已校对中文。
         if (json_path.relative_to(ARCHIVE).as_posix() == 'games/karate_man/karate_man_text.json'
-                and base == 'D_0805ad80'):
+                and base == 'D_0805ad80' and path is not None
+                and len(members) == 1):
+            key, row = members[0]
+            if not (row['stage'] == 5 and karate_start_installed(
+                    path.read_text(encoding='utf-8'), row['translation'])):
+                unresolved.append(f'{archive_name}:{key}: conditional branches differ')
+                continue
             unresolved = [item for item in unresolved
                           if not item.startswith(f'{json_path.relative_to(ARCHIVE)}:{base}:')]
+            record_manual(archive_name, members, '空手道提示双地区分支专用核对')
             continue
-        # The opening drum demo title is one shared string with a regional
-        # name branch in the source; the reviewed Chinese text is manual.
+        # 译文包的鼓教学开场仍是拼音英语；源码采用自行中文化版本，因此保留 TODO。
         if (json_path.relative_to(ARCHIVE).as_posix() == 'games/drum_intro/drum_samurai_cutscene_text.json'
-                and base == 'D_0805df4c'):
+                and base == 'D_0805df4c' and path is not None
+                and len(members) == 1):
+            key, row = members[0]
+            if not (row['stage'] == 5 and drum_intro_custom_installed(
+                    path.read_text(encoding='utf-8'))):
+                unresolved.append(f'{archive_name}:{key}: custom Chinese text or TODO changed')
+                continue
             unresolved = [item for item in unresolved
                           if not item.startswith(f'{json_path.relative_to(ARCHIVE)}:{base}:')]
+            manual_todos.append(
+                f'{archive_name}:{key}: 阶段 5 仍为拼音英语，源码采用自行中文化；需实机确认语气和断行')
             continue
-        # The 13 keyed poster entries are three concatenated source strings;
-        # the groups are assembled manually so control-code boundaries stay
-        # intact and the non-stage-5 WISH translation remains TODO.
+        # 13 个海报键在源码中拼成 3 个字符串；逐行核对可见文字，并保留控制码和 TODO。
         if (json_path.relative_to(ARCHIVE).as_posix() == 'games/drum_live/drum_live_menu_engine.json'
-                and base == 'drum_live_menu_poster_desc'):
+                and base == 'drum_live_menu_poster_desc' and path is not None):
+            if not drum_live_poster_installed(path.read_text(encoding='utf-8'), members):
+                unresolved.extend(f'{archive_name}:{key}: poster text or TODO changed'
+                                  for key, _ in members)
+                continue
             unresolved = [item for item in unresolved if not item.startswith(
                 f'{json_path.relative_to(ARCHIVE)}:{base}[')]
             unresolved.append(f'{json_path.relative_to(ARCHIVE)}:{base}[42]: TODO 未校对（阶段 2）')
+            exact = [(key, row) for key, row in members
+                     if row['stage'] == 5 and key not in DRUM_LIVE_CUSTOM_TEXT]
+            record_manual(archive_name, exact, '鼓组海报三段字符串专用核对')
+            for key in DRUM_LIVE_CUSTOM_TEXT:
+                manual_todos.append(
+                    f'{archive_name}:{key}: 阶段 5 仍为英文标题，源码采用自行中文化；需实机确认字宽和语气')
             continue
         if base == 'perfect_gift_directive_text' and len(members) == 1:
-            # The source JSON contains three reward-type messages in one row,
-            # while the English port stores them in three array entries.
+            # 译文包把三种奖励说明放在一条记录里，英文移植版则拆成三个数组槽位。
             original = members[0][1]
             parts = original['translation'].splitlines(keepends=True)
             if len(parts) == 3:
@@ -1199,20 +1348,19 @@ def extract():
                     note = 'control codes need review'
             relative = path.relative_to(ROOT).as_posix()
             reviewed = row['stage'] == 5
-            # Only stage 5 in the supplied package is proof of review. Keep
-            # unfinished translations searchable without importing them.
+            # 只有译文包中的阶段 5 能证明文字已校对；其他阶段只保留可搜索记录，不导入源码。
             if not reviewed:
                 note = '; '.join(filter(None, ('TODO 未校对', note)))
             record = dict(id=f"{relative}:{key}", file=relative, key=key, source=source, target=target, status='final' if reviewed else 'draft', note=note)
             saved = previous.get(record['id'], record)
             if not reviewed:
                 saved['status'] = 'draft'
-                # Normalize repeated rerun markers so Ctrl+F shows one clear TODO.
+                # 统一重复运行产生的标记，让 Ctrl+F 只看到一条清晰 TODO。
                 old_notes = [part.strip() for part in saved['note'].split(';')
                              if part.strip() and part.strip() != 'TODO 未校对']
                 saved['note'] = '; '.join(['TODO 未校对'] + old_notes)
             output.append(record if base == 'perfect_gift_directive_text' else saved)
-    # Supplemental *_add.json entries override the same key from the base file.
+    # 补充的 *_add.json 会覆盖基础文件中的同名键。
     output = list({row['id']: row for row in output}.values())
     output.sort(key=lambda row: row['id'])
     from io import StringIO
@@ -1223,28 +1371,64 @@ def extract():
     atomic_text(TABLE, stream.getvalue())
     REPORT.mkdir(parents=True, exist_ok=True)
     atomic_text(REPORT / 'unresolved.txt', '\n'.join(unresolved) + '\n')
-    # Track every unfinished key in version control so Ctrl+F finds it even
-    # when conditional C code has no safe location for an inline comment.
+    # 把所有未完成键写进版本库；即使条件编译代码无法安全插注释，也能用 Ctrl+F 找到。
     todo = ['# TODO 未校对', '',
             '阶段 5 以外的译文尚未导入源码；未定位及控制码待复核的条目也在此列出。',
             '', '## 已定位但未校对']
     todo.extend(f"- TODO 未校对 {row['id']}" for row in output if row['status'] != 'final')
-    # Stage 5 proves wording was reviewed, not that printer control bytes or
-    # alternate compile-time branches can be moved safely. Keep these searchable
-    # until their source layout is checked in game and the import note is cleared.
+    # 阶段 5 只证明译文文字已校对，不代表控制字节和条件分支已经过实机排版核验。
     todo.extend(['', '## 已校对译文仍待控制码或分支复核', ''])
     todo.extend(f"- TODO 未校对 {row['id']}: {row['note']}"
                 for row in output if row['status'] == 'final' and row['note'])
+    todo.extend(['', '## 阶段 5 原文仍非中文，采用自行中文化', ''])
+    todo.extend(f'- TODO 未校对 {entry}' for entry in manual_todos)
     todo.extend(['', '## 尚未安全定位', ''])
     todo.extend(f'- TODO 未校对 {entry}' for entry in unresolved)
     atomic_text(ROOT / 'text/zh_hans/TODO_未校对.md', '\n'.join(todo) + '\n')
-    # Include unresolved translations so the font is ready when their mappings land.
+    # 未定位译文也纳入字符集，等映射完成时无需再追补字模。
     chars = sorted({ch for path in ARCHIVE.rglob('*.json')
                     for row in json.loads(path.read_text(encoding='utf-8'))
                     for ch in row['translation'] if 0x4E00 <= ord(ch) <= 0x9FFF})
     atomic_text(REPORT / 'charset.txt', ''.join(chars) + '\n')
     bitmap_rows = [row for row in output if row['file'].endswith('.bs') or 'results/data.inc.c' in row['file']]
     atomic_text(REPORT / 'bitmap_font_strings.txt', '\n'.join(row['id'] + '\t' + row['target'] for row in bitmap_rows) + '\n')
+
+    # 用归档逻辑条目而非 TSV 行数做覆盖审计：一个归档键可能拆成多个 TSV 槽位，
+    # 也可能被 *_add.json 的同名键覆盖，因此两边的原始行数不能直接相减。
+    output_pairs = {(row['file'], row['key']) for row in output}
+    manual_ids = {entry.split('\t', 1)[0] for entry in manual_verified}
+    manual_todo_ids = {entry.split(': ', 1)[0] for entry in manual_todos}
+    direct = [record for record in archive_records
+              if record[1] is not None and (record[1], record[2]) in output_pairs]
+    unaccounted = [record for record in archive_records
+                   if not (record[1] is not None and (record[1], record[2]) in output_pairs)
+                   and f'{record[0]}:{record[2]}' not in manual_ids
+                   and f'{record[0]}:{record[2]}' not in manual_todo_ids]
+    direct_stages = Counter(record[3] for record in direct)
+    unaccounted_stages = Counter(record[3] for record in unaccounted)
+    archive_stages = Counter(record[3] for record in archive_records)
+    archive_pairs = {(record[1], record[2]) for record in archive_records if record[1] is not None}
+    table_only = sorted(output_pairs - archive_pairs)
+    coverage = [
+        f'译文包总条目={len(archive_records)}',
+        f'阶段5总条目={archive_stages[5]}',
+        f'阶段5普通映射={direct_stages[5]}',
+        f'阶段5专用规则逐字核对={len(manual_verified)}',
+        f'阶段5自行中文化并保留TODO={len(manual_todos)}',
+        f'非阶段5总条目={len(archive_records) - archive_stages[5]}',
+        f'非阶段5普通映射草稿={len(direct) - direct_stages[5]}',
+        f'尚未安全定位={len(unaccounted)}',
+        f'TSV输出行={len(output)}',
+        f'TSV拆分新增槽位={len(table_only)}',
+        f'归档同源同键覆盖={len(archive_records) - len(archive_pairs)}',
+        '', '专用规则逐字核对明细：', *manual_verified,
+        '', '自行中文化TODO明细：', *manual_todos,
+        '', '尚未安全定位明细:',
+        *(f'{name}:{key}\tstage={stage}' for name, _, key, stage in unaccounted),
+    ]
+    atomic_text(REPORT / 'coverage.txt', '\n'.join(coverage) + '\n')
+    if unaccounted_stages[5]:
+        raise RuntimeError(f'仍有 {unaccounted_stages[5]} 条阶段 5 译文未计入覆盖统计')
     print(f"mapped={len(output)}, unresolved={len(unresolved)}, final={sum(row['status']=='final' for row in output)}")
 
 

@@ -51,6 +51,7 @@ const char *drum_live_menu_poster_desc[] = {
     "\n",
 
     /* DRUM BAND  */
+    // TODO 未校对：阶段 5 译文仍是英文标题，这两行是自行中文化，需实机确认字宽和语气。
     "\x03\x31" "\x01\x6d" "\x05\x30" "\x01\x34" "武士鼓手的\n"
     "\x03\x31" "\x01\x6d" "\x05\x30" "\x01\x34" "\x01\x52" "乐队 LIVE！\n"
     "\n"
