@@ -12,7 +12,7 @@ import os
 from pathlib import Path
 import re
 
-from build_text_font import ROOT, THIRD, bdf_canvas, read_bdf, read_unifont, shrink
+from build_text_font import SMALL_MANUAL, ROOT, THIRD, bdf_canvas, read_bdf, read_unifont, shrink
 from dump_4bpp import encode_glyph
 
 BEGIN = '/* BEGIN GENERATED CJK */'
@@ -43,6 +43,9 @@ def skeleton(cp, size, fusion, unifont):
     if cp == 0x25A1:
         rows = [[int(y in (0, target - 1) or x in (0, target - 1)) for x in range(target)] for y in range(target)]
         return rows, 'square'
+    if size == 'small' and cp in SMALL_MANUAL:
+        # 汉化字模修正：小号标题的“蹑”复用正文手工骨架，避免 Unifont 缩成 9×9 后接近实心块。
+        return [[pixel == '#' for pixel in row] for row in SMALL_MANUAL[cp]], 'manual'
     if cp in fusion:
         canvas, _ = bdf_canvas(fusion[cp], 16 if size == 'large' else 12, 9)
         top = 0 if size == 'large' else 2
@@ -54,12 +57,14 @@ def skeleton(cp, size, fusion, unifont):
     return rows, 'missing box'
 
 
-def outline(source, size):
+def outline(source, size, diagonal=True):
     rows = [[0] * 16 for _ in range(16)]
     left = 2 if size == 'large' else 3
     top = 3 if size == 'large' else 5
     points = {(left + x, top + y) for y, row in enumerate(source) for x, bit in enumerate(row) if bit}
-    border = {(x + dx, y + dy) for x, y in points for dy in (-1, 0, 1) for dx in (-1, 0, 1) if 0 <= x + dx < 16 and 0 <= y + dy < 16}
+    offsets = tuple((dx, dy) for dy in (-1, 0, 1) for dx in (-1, 0, 1)) if diagonal else (
+        (0, 0), (-1, 0), (1, 0), (0, -1), (0, 1))
+    border = {(x + dx, y + dy) for x, y in points for dx, dy in offsets if 0 <= x + dx < 16 and 0 <= y + dy < 16}
     for x, y in border:
         if y + 1 < 16 and (x, y + 1) not in border:
             rows[y + 1][x] = 9  # lower cast shadow
@@ -175,7 +180,12 @@ def main():
         glyphs, sources = [], {}
         for cp in codepoints:
             source, origin = skeleton(cp, size, fusion, unifont)
-            glyphs.append(manual.get(cp, outline(source, size)))
+            # 汉化字模修正：“蹑”的 9×9 骨架笔画密集，八方向描边会把内部空隙全部填满；
+            # 这里只对该字使用四方向薄描边，其他标题字继续沿用原来的完整描边风格。
+            thin_outline = size == 'small' and cp == 0x8E51
+            glyphs.append(manual.get(cp, outline(source, size, diagonal=not thin_outline)))
+            if thin_outline:
+                origin += ' thin outline'
             sources[origin] = sources.get(origin, 0) + 1
         widths[size] = [14 if size == 'large' else 12 for _ in codepoints]
         atomic_write(texture_path, b''.join(encode_glyph(glyph) for glyph in glyphs))
