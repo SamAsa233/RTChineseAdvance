@@ -32,6 +32,20 @@ NIGHT_WALK_PROMPTS = frozenset({
     'D_0805b310', 'D_0805b334', 'D_0805b35c', 'D_0805b38c',
 })
 NIGHT_WALK_PREFIX = r'\x05\x31\x01\x35'
+# Remix 3 的前四行多一个原版缩进；最后一行先换行再居中，不能当普通正文覆盖。
+REMIX3_CREDIT_PREFIXES = {
+    'D_0806a0d4': NIGHT_WALK_PREFIX + ' ',
+    'D_0806a0fc': NIGHT_WALK_PREFIX + ' ',
+    'D_0806a118': NIGHT_WALK_PREFIX + ' ',
+    'D_0806a134': NIGHT_WALK_PREFIX + ' ',
+    'D_0806a154': r'\n' + NIGHT_WALK_PREFIX + r'\x01\x43',
+}
+# Remix 5 只核验三条已校对署名；阶段 2 歌名保持原文与 TODO。
+REMIX5_CREDIT_PREFIXES = {
+    'D_0806a314': r'\x01\x4c ',
+    'D_0806a32c': r'\x01\x4c ',
+    'D_0806a370': r'\x01\x43',
+}
 
 
 def atomic_text(path, data):
@@ -911,6 +925,22 @@ def extract():
                 output.append(dict(id=f'{relative}:{key}', file=relative, key=key,
                                    source=source, target=source, status='final', note=''))
                 continue
+            # 混音 3 的五行字幕只有前导排版码，不改变正文内部节奏；按每行原前缀逐字核对。
+            if (archive_name == 'games/remix_3/remix_3_text.json'
+                    and key in REMIX3_CREDIT_PREFIXES and row['stage'] == 5
+                    and source == REMIX3_CREDIT_PREFIXES[key] + json.dumps(row['translation'], ensure_ascii=False)[1:-1]):
+                relative = path.relative_to(ROOT).as_posix()
+                output.append(dict(id=f'{relative}:{key}', file=relative, key=key,
+                                   source=source, target=source, status='final', note=''))
+                continue
+            # 混音 5 的中段有三个原有 \n；要求译文逐字匹配，避免压掉歌曲字幕的行距。
+            if (archive_name == 'games/remix_5/remix_5_text.json'
+                    and key in REMIX5_CREDIT_PREFIXES and row['stage'] == 5
+                    and source == REMIX5_CREDIT_PREFIXES[key] + json.dumps(row['translation'], ensure_ascii=False)[1:-1]):
+                relative = path.relative_to(ROOT).as_posix()
+                output.append(dict(id=f'{relative}:{key}', file=relative, key=key,
+                                   source=source, target=source, status='final', note=''))
+                continue
             target = row['translation']
             controls = CONTROL.findall(source)
             bitmap = any(token.startswith('.') or token.startswith(':') for token in controls)
@@ -1037,21 +1067,24 @@ def import_text(check, only_final):
                 skipped += 1
                 continue
             key = row['key']
-            if filename == 'games/night_walk/night_walk_text.c' and key in NIGHT_WALK_PROMPTS:
+            if ((filename == 'games/night_walk/night_walk_text.c' and key in NIGHT_WALK_PROMPTS)
+                    or (filename == 'games/remix_3/remix_3_text.c' and key in REMIX3_CREDIT_PREFIXES)
+                    or (filename == 'games/remix_5/remix_5_text.c' and key in REMIX5_CREDIT_PREFIXES)):
                 # TSV 中的反斜杠是源码原样的控制码；通用 JSON 转义会把它加倍，
-                # 因此这里只核对 C 字面量拼接结果，不把正确的前缀重新写成可见文本。
+                # 因此这几组只核对 C 字面量拼接结果，不把正确的前缀重新写成可见文本。
                 groups = locate(text, path, key)
                 if not groups or len(groups) != 1 or groups[0][2] != row['target']:
                     problems.append(row['id'] + ': reviewed prefix or text changed')
                 continue
-            if filename == 'games/fireworks/fireworks_text.c' and key == 'D_0805cda0':
+            if ((filename == 'games/fireworks/fireworks_text.c' and key == 'D_0805cda0')
+                    or (filename == 'games/rap_men/rap_men_text.c' and key == 'D_0805eb14')):
                 # 同名变量有两个地区定义；普通定位器只看到第一个，故逐分支核对译文。
-                marker = 'const char D_0805cda0[]'
+                marker = f'const char {key}[]'
                 first = text.find(marker)
                 start = text.rfind('#ifdef PARADISE', 0, first)
                 end = text.find('#endif', first)
                 section = text[start:end] if first >= 0 and start >= 0 and end >= 0 else ''
-                values = re.findall(r'const char D_0805cda0\[\]\s*=\s*("(?:\\.|[^"\\])*")', section)
+                values = re.findall(r'const char ' + re.escape(key) + r'\[\]\s*=\s*("(?:\\.|[^"\\])*")', section)
                 if '#else' not in section or values != [json.dumps(row['target'], ensure_ascii=False)] * 2:
                     problems.append(row['id'] + ': conditional branches differ')
                 continue

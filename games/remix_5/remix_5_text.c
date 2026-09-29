@@ -26,14 +26,16 @@ const char D_0806a2f4[] =
     // TODO 未校对：D_0806a2f4 译文包未到 stage 5，暂留原文。
     "\x01\x52" "\x05\x31" "\x01\x35" "♪ WISH - Can't Wait for You ";
 
+// 以下三条署名已有阶段 5 译文；保留左/中对齐码、首行缩进及原有三处画面换行。
+// TODO 未校对：长署名在实际画面中的对齐与行距仍需模拟器或实机复核。
 const char D_0806a314[] =
-    "\x01\x4c" " Vocals:  Sohshi Tanaka";
+    "\x01\x4c" " 演唱　　田中　総史";
 
 const char D_0806a32c[] =
-    "\x01\x4c" " Music:\n"
-    "        Tsunku♂\n"
-    " Arrangement:\n"
-    "        Koichi Yuasa";
+    "\x01\x4c" " 作词　作曲\n"
+    "　　　　　　　　淳君\n"
+    "编曲\n"
+    "　　　　　　　　湯浅　公一";
 
 const char D_0806a370[] =
-    "\x01\x43" "Managed by J.P ROOM";
+    "\x01\x43" "歌曲提供　　J.P.ROOM";

@@ -44,10 +44,11 @@ const char D_0805eae8[] = "加把劲啊";
 
 const char D_0805eaf8[] = "就是“嗯”那一下哦〜";
 
+// 阶段 5 已校对 D_0805eb14：原地区分支措辞不同，中文译文相同；两侧都要更新，避免默认版仍显示英文。
 #ifdef PARADISE
 const char D_0805eb14[] = "都说了是“嗯”那一下啦";
 #else
-const char D_0805eb14[] = "You gotta press "CHAR_A_BUTTON_UTF8" at the \"Uh!\"";
+const char D_0805eb14[] = "都说了是“嗯”那一下啦";
 #endif
 
 const char D_0805eb34[] = "OK！";

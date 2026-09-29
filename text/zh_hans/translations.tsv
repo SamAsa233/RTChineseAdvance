@@ -2116,11 +2116,11 @@ games/remix_3/remix_3_text.c:D_0806a060	games/remix_3/remix_3_text.c	D_0806a060	
 games/remix_3/remix_3_text.c:D_0806a084	games/remix_3/remix_3_text.c	D_0806a084	Your technique needs work.	再好好磨练一下吧。	final	
 games/remix_3/remix_3_text.c:D_0806a0a0	games/remix_3/remix_3_text.c	D_0806a0a0	Your technique is solid!	技术不错啊！	final	
 games/remix_3/remix_3_text.c:D_0806a0b8	games/remix_3/remix_3_text.c	D_0806a0b8	Rhythm League notes:	来自神秘节奏组织的通告	final	
-games/remix_3/remix_3_text.c:D_0806a0d4	games/remix_3/remix_3_text.c	D_0806a0d4	\x05\x31\x01\x35 ♪ Honey Sweet Angel of Love	♪　恋爱的Honey Sweet〜Angel	final	control codes need review
-games/remix_3/remix_3_text.c:D_0806a0fc	games/remix_3/remix_3_text.c	D_0806a0fc	\x05\x31\x01\x35 Vocals:  Ami Tokito	演唱　　時東　ぁみ	final	control codes need review
-games/remix_3/remix_3_text.c:D_0806a118	games/remix_3/remix_3_text.c	D_0806a118	\x05\x31\x01\x35 Music:  Tsunku♂	作词　作曲　　淳君♂	final	control codes need review
-games/remix_3/remix_3_text.c:D_0806a134	games/remix_3/remix_3_text.c	D_0806a134	\x05\x31\x01\x35 Arrangement: H. D. Suzuki	编曲　　鈴木Daichi秀行	final	control codes need review
-games/remix_3/remix_3_text.c:D_0806a154	games/remix_3/remix_3_text.c	D_0806a154	\n\x05\x31\x01\x35\x01\x43Managed by J.P ROOM	歌曲提供　　J.P.ROOM	final	control codes need review
+games/remix_3/remix_3_text.c:D_0806a0d4	games/remix_3/remix_3_text.c	D_0806a0d4	\x05\x31\x01\x35 ♪　恋爱的Honey Sweet〜Angel	\x05\x31\x01\x35 ♪　恋爱的Honey Sweet〜Angel	final	
+games/remix_3/remix_3_text.c:D_0806a0fc	games/remix_3/remix_3_text.c	D_0806a0fc	\x05\x31\x01\x35 演唱　　時東　ぁみ	\x05\x31\x01\x35 演唱　　時東　ぁみ	final	
+games/remix_3/remix_3_text.c:D_0806a118	games/remix_3/remix_3_text.c	D_0806a118	\x05\x31\x01\x35 作词　作曲　　淳君♂	\x05\x31\x01\x35 作词　作曲　　淳君♂	final	
+games/remix_3/remix_3_text.c:D_0806a134	games/remix_3/remix_3_text.c	D_0806a134	\x05\x31\x01\x35 编曲　　鈴木Daichi秀行	\x05\x31\x01\x35 编曲　　鈴木Daichi秀行	final	
+games/remix_3/remix_3_text.c:D_0806a154	games/remix_3/remix_3_text.c	D_0806a154	\n\x05\x31\x01\x35\x01\x43歌曲提供　　J.P.ROOM	\n\x05\x31\x01\x35\x01\x43歌曲提供　　J.P.ROOM	final	
 games/remix_4/remix_4_text.c:D_0806802c	games/remix_4/remix_4_text.c	D_0806802c	Try a little harder.	还得继续努力。	final	
 games/remix_4/remix_4_text.c:D_0806803c	games/remix_4/remix_4_text.c	D_0806803c	That was really great!	简直太棒啦！！	final	
 games/remix_4/remix_4_text.c:D_08068058	games/remix_4/remix_4_text.c	D_08068058	Your decisions took too long.	判断还差点火候。	final	
@@ -2144,12 +2144,9 @@ games/remix_5/remix_5_text.c:D_0806a2a4	games/remix_5/remix_5_text.c	D_0806a2a4	
 games/remix_5/remix_5_text.c:D_0806a2c0	games/remix_5/remix_5_text.c	D_0806a2c0	Your technique is solid!	技术不错啊！	final	
 games/remix_5/remix_5_text.c:D_0806a2d8	games/remix_5/remix_5_text.c	D_0806a2d8	Rhythm League notes:	来自神秘节奏组织的通告	final	
 games/remix_5/remix_5_text.c:D_0806a2f4	games/remix_5/remix_5_text.c	D_0806a2f4	\x01\x52\x05\x31\x01\x35♪ WISH - Can't Wait for You 	♪ WISH 我多想再为你等待	draft	TODO 未校对; control codes need review
-games/remix_5/remix_5_text.c:D_0806a314	games/remix_5/remix_5_text.c	D_0806a314	\x01\x4c Vocals:  Sohshi Tanaka	演唱　　田中　総史	final	control codes need review
-games/remix_5/remix_5_text.c:D_0806a32c	games/remix_5/remix_5_text.c	D_0806a32c	\x01\x4c Music:\n        Tsunku♂\n Arrangement:\n        Koichi Yuasa	"作词　作曲
-　　　　　　　　淳君
-编曲
-　　　　　　　　湯浅　公一"	final	control codes need review
-games/remix_5/remix_5_text.c:D_0806a370	games/remix_5/remix_5_text.c	D_0806a370	\x01\x43Managed by J.P ROOM	歌曲提供　　J.P.ROOM	final	control codes need review
+games/remix_5/remix_5_text.c:D_0806a314	games/remix_5/remix_5_text.c	D_0806a314	\x01\x4c 演唱　　田中　総史	\x01\x4c 演唱　　田中　総史	final	
+games/remix_5/remix_5_text.c:D_0806a32c	games/remix_5/remix_5_text.c	D_0806a32c	\x01\x4c 作词　作曲\n　　　　　　　　淳君\n编曲\n　　　　　　　　湯浅　公一	\x01\x4c 作词　作曲\n　　　　　　　　淳君\n编曲\n　　　　　　　　湯浅　公一	final	
+games/remix_5/remix_5_text.c:D_0806a370	games/remix_5/remix_5_text.c	D_0806a370	\x01\x43歌曲提供　　J.P.ROOM	\x01\x43歌曲提供　　J.P.ROOM	final	
 games/remix_6/remix_6.bs:text_remix_6_honto_desu_ka	games/remix_6/remix_6.bs	text_remix_6_honto_desu_ka	.b:1Maybe so, .b:0huh?.8:1	真的这样吗？	draft	TODO 未校对; control codes need review
 games/remix_6/remix_6.bs:text_remix_6_kimi_tte_saikou	games/remix_6/remix_6.bs	text_remix_6_kimi_tte_saikou	.a:1You are .a:0so AWESOME!.8:0	你真的太棒啦—！！	draft	TODO 未校对; control codes need review
 games/remix_6/remix_6_text.c:D_0806a7a8	games/remix_6/remix_6_text.c	D_0806a7a8	Try a little harder.	还差一点。	final	
