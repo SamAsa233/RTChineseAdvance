@@ -1747,25 +1747,25 @@ games/fireworks/fireworks_text.c:D_0805cde0	games/fireworks/fireworks_text.c	D_0
 games/fireworks/fireworks_text.c:D_0805ce00	games/fireworks/fireworks_text.c	D_0805ce00	...let's have a crash course!	特训开始！	final	
 games/fireworks/fireworks_text.c:D_0805ce10	games/fireworks/fireworks_text.c	D_0805ce10	"When you hear \""Go!\"" press "	听到“嘿！”这个信号时就按 A 键	final	
 games/fireworks/fireworks_text.c:D_0805ce34	games/fireworks/fireworks_text.c	D_0805ce34	First of all, normal fireworks.	首先是“普通的烟火”	final	
-games/fireworks/fireworks_text.c:D_0805ce5c	games/fireworks/fireworks_text.c	D_0805ce5c	.bOne .bTwo .bThree .bGo!	一　二　三　　嘿！	final	control codes need review
-games/fireworks/fireworks_text.c:D_0805ce80	games/fireworks/fireworks_text.c	D_0805ce80	.dOne .bTwo .bThree .bGo!	一　二　三　　嘿！	final	control codes need review
-games/fireworks/fireworks_text.c:D_0805cea4	games/fireworks/fireworks_text.c	D_0805cea4	.dOne .dTwo .bThree .bGo!	一　二　三　　嘿！	final	control codes need review
-games/fireworks/fireworks_text.c:D_0805cec8	games/fireworks/fireworks_text.c	D_0805cec8	.dOne .dTwo .dThree .bGo!	一　二　三　　嘿！	final	control codes need review
-games/fireworks/fireworks_text.c:D_0805ceec	games/fireworks/fireworks_text.c	D_0805ceec	.cOne .cTwo .cThree .c:0Go!	一　二　三　嘿！	final	control codes need review
+games/fireworks/fireworks_text.c:D_0805ce5c	games/fireworks/fireworks_text.c	D_0805ce5c	.bOne .bTwo .bThree .bGo!	.b一　.b二　.b三　　.b嘿！	final	
+games/fireworks/fireworks_text.c:D_0805ce80	games/fireworks/fireworks_text.c	D_0805ce80	.dOne .bTwo .bThree .bGo!	.d一　.b二　.b三　　.b嘿！	final	
+games/fireworks/fireworks_text.c:D_0805cea4	games/fireworks/fireworks_text.c	D_0805cea4	.dOne .dTwo .bThree .bGo!	.d一　.d二　.b三　　.b嘿！	final	
+games/fireworks/fireworks_text.c:D_0805cec8	games/fireworks/fireworks_text.c	D_0805cec8	.dOne .dTwo .dThree .bGo!	.d一　.d二　.d三　　.b嘿！	final	
+games/fireworks/fireworks_text.c:D_0805ceec	games/fireworks/fireworks_text.c	D_0805ceec	.cOne .cTwo .cThree .c:0Go!	.c一　.c二　.c三　.c:0嘿！	final	
 games/fireworks/fireworks_text.c:D_0805cf10	games/fireworks/fireworks_text.c	D_0805cf10	Next up, our Spirit Rockets!	“有气势的烟火”	final	
-games/fireworks/fireworks_text.c:D_0805cf2c	games/fireworks/fireworks_text.c	D_0805cf2c	.bHi.bya.bh.b! .bGo!	嘿咿！　　嘿！	final	control codes need review
-games/fireworks/fireworks_text.c:D_0805cf4c	games/fireworks/fireworks_text.c	D_0805cf4c	.dHi.bya.bh.b! .bGo!	嘿咿！　　嘿！	final	control codes need review
-games/fireworks/fireworks_text.c:D_0805cf6c	games/fireworks/fireworks_text.c	D_0805cf6c	.dHi.dya.bh.b! .bGo!	嘿咿！　　嘿！	final	control codes need review
-games/fireworks/fireworks_text.c:D_0805cf8c	games/fireworks/fireworks_text.c	D_0805cf8c	.dHi.dya.dh.b! .bGo!	嘿咿！　　嘿！	final	control codes need review
-games/fireworks/fireworks_text.c:D_0805cfac	games/fireworks/fireworks_text.c	D_0805cfac	.dHi.dya.dh.d! .bGo!	嘿咿！　　嘿！	final	control codes need review
-games/fireworks/fireworks_text.c:D_0805cfcc	games/fireworks/fireworks_text.c	D_0805cfcc	.cHi.cya.ch.c! .c:0Go!	嘿咿！　嘿！	final	control codes need review
+games/fireworks/fireworks_text.c:D_0805cf2c	games/fireworks/fireworks_text.c	D_0805cf2c	.bHi.bya.bh.b! .bGo!	.b嘿.b咿.b！.b　　.b嘿！	final	
+games/fireworks/fireworks_text.c:D_0805cf4c	games/fireworks/fireworks_text.c	D_0805cf4c	.dHi.bya.bh.b! .bGo!	.d嘿.b咿.b！.b　　.b嘿！	final	
+games/fireworks/fireworks_text.c:D_0805cf6c	games/fireworks/fireworks_text.c	D_0805cf6c	.dHi.dya.bh.b! .bGo!	.d嘿.d咿.b！.b　　.b嘿！	final	
+games/fireworks/fireworks_text.c:D_0805cf8c	games/fireworks/fireworks_text.c	D_0805cf8c	.dHi.dya.dh.b! .bGo!	.d嘿.d咿.d！.b　　.b嘿！	final	
+games/fireworks/fireworks_text.c:D_0805cfac	games/fireworks/fireworks_text.c	D_0805cfac	.dHi.dya.dh.d! .bGo!	.d嘿.d咿.d！.d　　.b嘿！	final	
+games/fireworks/fireworks_text.c:D_0805cfcc	games/fireworks/fireworks_text.c	D_0805cfcc	.cHi.cya.ch.c! .c:0Go!	.c嘿.c咿.c！.c　.c:0嘿！	final	
 games/fireworks/fireworks_text.c:D_0805cfec	games/fireworks/fireworks_text.c	D_0805cfec	Finally, our Drummer's Bomb!	“压轴的太鼓爆破”	final	
-games/fireworks/fireworks_text.c:D_0805d010	games/fireworks/fireworks_text.c	D_0805d010	.bHere .bit .bcomes! .bGo!	玉屋〜　　嘿！	final	control codes need review
-games/fireworks/fireworks_text.c:D_0805d030	games/fireworks/fireworks_text.c	D_0805d030	.dHere .bit .bcomes.b! .bGo!	玉屋〜　　嘿！	final	control codes need review
-games/fireworks/fireworks_text.c:D_0805d050	games/fireworks/fireworks_text.c	D_0805d050	.dHere .dit .bcomes.b! .bGo!	玉屋〜　　嘿！	final	control codes need review
-games/fireworks/fireworks_text.c:D_0805d070	games/fireworks/fireworks_text.c	D_0805d070	.dHere .dit .dcomes.b! .bGo!	玉屋〜　　嘿！	final	control codes need review
-games/fireworks/fireworks_text.c:D_0805d090	games/fireworks/fireworks_text.c	D_0805d090	.dHere .dit .dcomes.d! .bGo!	玉屋〜　　嘿！	final	control codes need review
-games/fireworks/fireworks_text.c:D_0805d0b0	games/fireworks/fireworks_text.c	D_0805d0b0	.cHere .cit .ccomes.c! .c:0Go!	玉屋〜　嘿！	final	control codes need review
+games/fireworks/fireworks_text.c:D_0805d010	games/fireworks/fireworks_text.c	D_0805d010	.bHere .bit .bcomes! .bGo!	.b玉.b屋.b〜　　.b嘿！	final	
+games/fireworks/fireworks_text.c:D_0805d030	games/fireworks/fireworks_text.c	D_0805d030	.dHere .bit .bcomes.b! .bGo!	.d玉.b屋.b〜.b　　.b嘿！	final	
+games/fireworks/fireworks_text.c:D_0805d050	games/fireworks/fireworks_text.c	D_0805d050	.dHere .dit .bcomes.b! .bGo!	.d玉.d屋.b〜.b　　.b嘿！	final	
+games/fireworks/fireworks_text.c:D_0805d070	games/fireworks/fireworks_text.c	D_0805d070	.dHere .dit .dcomes.b! .bGo!	.d玉.d屋.d〜.b　　.b嘿！	final	
+games/fireworks/fireworks_text.c:D_0805d090	games/fireworks/fireworks_text.c	D_0805d090	.dHere .dit .dcomes.d! .bGo!	.d玉.d屋.d〜.d　　.b嘿！	final	
+games/fireworks/fireworks_text.c:D_0805d0b0	games/fireworks/fireworks_text.c	D_0805d0b0	.cHere .cit .ccomes.c! .c:0Go!	.c玉.c屋.c〜.c　.c:0嘿！	final	
 games/fireworks/fireworks_text.c:D_0805d0d0	games/fireworks/fireworks_text.c	D_0805d0d0	Alright! Let the festival begin!	好，那就正式开始！	final	
 games/fireworks/fireworks_text.c:D_0805d0e8	games/fireworks/fireworks_text.c	D_0805d0e8	We won't count anymore... Good luck!	这次可没有信号哦…	final	
 games/karate_man/karate_man_2_text.c:D_0805b3a8	games/karate_man/karate_man_2_text.c	D_0805b3a8	You need to go over the basics again.	基本功还没做到位呢。	final	

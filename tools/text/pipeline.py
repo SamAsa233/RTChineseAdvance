@@ -46,6 +46,11 @@ REMIX5_CREDIT_PREFIXES = {
     'D_0806a32c': r'\x01\x4c ',
     'D_0806a370': r'\x01\x43',
 }
+# 烟火教学把同一句话分成逐拍变色版本；按组限定键，避免误改其他位图字串。
+FIREWORKS_COUNT_KEYS = ('D_0805ce5c', 'D_0805ce80', 'D_0805cea4', 'D_0805cec8', 'D_0805ceec')
+FIREWORKS_SHOUT_KEYS = ('D_0805cf2c', 'D_0805cf4c', 'D_0805cf6c', 'D_0805cf8c', 'D_0805cfac', 'D_0805cfcc')
+FIREWORKS_FINAL_KEYS = ('D_0805d010', 'D_0805d030', 'D_0805d050', 'D_0805d070', 'D_0805d090', 'D_0805d0b0')
+FIREWORKS_PACED_KEYS = frozenset(FIREWORKS_COUNT_KEYS + FIREWORKS_SHOUT_KEYS + FIREWORKS_FINAL_KEYS)
 
 
 def atomic_text(path, data):
@@ -721,6 +726,38 @@ def cafe_rhythm_sense_installed(text, translation):
     return True
 
 
+def fireworks_paced_text_installed(source, original, key, translation):
+    """逐拍核对烟火教学的可见中文和原版变色码顺序。"""
+    if key not in FIREWORKS_PACED_KEYS:
+        return False
+    if key in FIREWORKS_COUNT_KEYS:
+        gap = '　' if key == FIREWORKS_COUNT_KEYS[-1] else '　　'
+        expected = ('一　', '二　', '三' + gap, '嘿！')
+    elif key in FIREWORKS_SHOUT_KEYS:
+        gap = '　' if key == FIREWORKS_SHOUT_KEYS[-1] else '　　'
+        expected = ('嘿', '咿', '！', gap, '嘿！')
+    else:
+        gap = '　' if key == FIREWORKS_FINAL_KEYS[-1] else '　　'
+        expected = (('玉', '屋', '〜' + gap, '嘿！') if key == FIREWORKS_FINAL_KEYS[0]
+                    else ('玉', '屋', '〜', gap, '嘿！'))
+    if ''.join(expected) != translation:
+        return False
+
+    def paced_parts(raw):
+        # .b/.d/.c(:0) 是逐拍显示码；把每个码后面的文字单独取出核对。
+        markers = list(re.finditer(r'\.[bcd](?::0)?', raw))
+        if not markers or markers[0].start() != 0:
+            return None
+        return [(marker.group(), raw[marker.end():markers[index + 1].start()]
+                 if index + 1 < len(markers) else raw[marker.end():])
+                for index, marker in enumerate(markers)]
+
+    current, baseline = paced_parts(source), paced_parts(original)
+    return (current is not None and baseline is not None
+            and [control for control, _ in current] == [control for control, _ in baseline]
+            and tuple(part for _, part in current) == expected)
+
+
 def extract():
     output, unresolved = [], []
     previous = {}
@@ -916,6 +953,15 @@ def extract():
                     output.append(old)
                 continue
             source = groups[index][2]
+            if (archive_name == 'games/fireworks/fireworks_text.json'
+                    and key in FIREWORKS_PACED_KEYS and row['stage'] == 5):
+                relative = path.relative_to(ROOT).as_posix()
+                saved = previous.get(f'{relative}:{key}')
+                # 只有译文、逐拍分段与原变色码顺序都相符，才解除这行的控制码 TODO。
+                if saved and fireworks_paced_text_installed(source, saved['source'], key, row['translation']):
+                    output.append(dict(id=f'{relative}:{key}', file=relative, key=key,
+                                       source=saved['source'], target=source, status='final', note=''))
+                    continue
             # 夜间漫步的这七句都以相同的四个显示控制字节开头。只有源码文字与
             # 阶段 5 译文逐字相同、前缀也未变时，才解除“控制码待复核”并交给常规检查。
             if (archive_name == 'games/night_walk/night_walk_text.json'
