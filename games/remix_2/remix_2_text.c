@@ -22,9 +22,11 @@ const char D_08067f5c[] = "技术不错啊！";
 
 const char D_08067f74[] = "来自神秘节奏组织的通告";
 
-const char D_08067f90[] = ".1:0Do-n do-n .2:0pa-n pan";
+// 阶段 5 已校对：两段拟声词仍由原版 .1:0/.2:0 分别控制，避免打乱字幕变色。
+// TODO 未校对：两段中文的实际显示宽度与节拍需在 Remix 2 画面核验。
+const char D_08067f90[] = ".1:0咚ーん　咚ーん　.2:0啪ーん　啪";
 
-const char D_08067fcc[] = ".1:0Dondo .2:0pa-n pan";
+const char D_08067fcc[] = ".1:0咚咚 .2:0啪ー 啪";
 
 const char D_08067ff8[] = "恋爱了吗？";
 

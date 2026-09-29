@@ -51,6 +51,11 @@ FIREWORKS_COUNT_KEYS = ('D_0805ce5c', 'D_0805ce80', 'D_0805cea4', 'D_0805cec8', 
 FIREWORKS_SHOUT_KEYS = ('D_0805cf2c', 'D_0805cf4c', 'D_0805cf6c', 'D_0805cf8c', 'D_0805cfac', 'D_0805cfcc')
 FIREWORKS_FINAL_KEYS = ('D_0805d010', 'D_0805d030', 'D_0805d050', 'D_0805d070', 'D_0805d090', 'D_0805d0b0')
 FIREWORKS_PACED_KEYS = frozenset(FIREWORKS_COUNT_KEYS + FIREWORKS_SHOUT_KEYS + FIREWORKS_FINAL_KEYS)
+# 以下键各有内嵌显示码或明确换行；限定键集合，防止把其他特殊格式误判为安全。
+REMIX_SYLLABLE_KEYS = frozenset({'D_08067f90', 'D_08067fcc', 'D_0806a920', 'D_0806a944'})
+RAP_TUTORIAL_KEYS = frozenset({'D_0805eb3c', 'D_0805eb6c', 'D_0805ebc4', 'D_0805ec24'})
+TOSS_TECHNIQUE_KEYS = frozenset({'D_0805d7cc', 'D_0805d818', 'D_0805d86c'})
+RHYTHM_TWEEZERS_KEYS = frozenset({'D_0805b580', 'D_0805b590', 'D_0805b5c8', 'D_0805b5f4'})
 
 
 def atomic_text(path, data):
@@ -768,6 +773,54 @@ def rap_lyrics_installed(source, original, translation):
             and controls.sub('', source) == translation)
 
 
+def reviewed_inline_controls_installed(source, original, translation, archive_name, key):
+    """只对指定的阶段 5 文本核对原显示码、画面换行及可见中文。"""
+    if archive_name in ('games/remix_2/remix_2_text.json', 'games/remix_6/remix_6_text.json'):
+        if key not in REMIX_SYLLABLE_KEYS:
+            return False
+        markers = re.compile(r'\.[12]:0')
+        return (markers.findall(source) == markers.findall(original) == ['.1:0', '.2:0']
+                and CONTROL.findall(source) == CONTROL.findall(original)
+                and markers.sub('', source) == translation)
+    if archive_name == 'games/rap_men/rap_men_text.json':
+        if key not in RAP_TUTORIAL_KEYS:
+            return False
+        markers = re.compile(r'\.[89ab]')
+        return (len(markers.findall(original)) == 2
+                and markers.findall(source) == markers.findall(original)
+                and CONTROL.findall(source) == CONTROL.findall(original)
+                and markers.sub('', source) == translation)
+    if archive_name == 'games/toss_boys/toss_boys_text.json':
+        if key not in TOSS_TECHNIQUE_KEYS:
+            return False
+        # C 相邻字面量会拼接；\x34 后面的 AB 在另一段字面量中，不能贪婪地读成 \x34AB。
+        # 英文标题和译文标题各有一个真正的画面换行；前后各八个控制字节不能丢。
+        bytes_ = re.compile(r'\\x[0-9a-fA-F]{2}')
+        return (source.count(r'\n') == original.count(r'\n') == 1
+                and len(bytes_.findall(original)) == 16
+                and bytes_.findall(source) == bytes_.findall(original)
+                and bytes_.sub('', source).replace(r'\n', '\n') == translation)
+    if archive_name == 'games/drum_intro/drum_intro_unused_2_text.json' and key == 'D_0805d928':
+        # 备用教学的顶端空行来自英文版排版，中文沿用而不把它当作译文字词。
+        return original.startswith(r'\n') and source == r'\n' + translation
+    if archive_name == 'games/staff_credit/staff_credit_text.json' and key == 'D_08069d7c':
+        # 职务前缀负责片尾样式；原英文移植版在此前缀后留空。
+        return original == r'\0023' and source == original + translation
+    if archive_name == 'games/rhythm_tweezers/rhythm_tweezers_text.json':
+        if key not in RHYTHM_TWEEZERS_KEYS:
+            return False
+        # A 键和十字键是源码宏，不在译文包的可见文字里；控制字节和宏都要保留。
+        source_visible = CONTROL.sub('', source)
+        source_visible = re.sub(r'CHAR_A_BUTTON_UTF8|CHAR_DPAD_UTF8', '', source_visible)
+        original_visible = CONTROL.sub('', original)
+        original_visible = re.sub(r'CHAR_A_BUTTON_UTF8|CHAR_DPAD_UTF8', '', original_visible)
+        return (CONTROL.findall(source) == CONTROL.findall(original)
+                and source_visible == translation
+                and original_visible != translation)
+    return False
+    return False
+
+
 def extract():
     output, unresolved = [], []
     previous = {}
@@ -963,6 +1016,15 @@ def extract():
                     output.append(old)
                 continue
             source = groups[index][2]
+            if row['stage'] == 5 and reviewed_inline_controls_installed(
+                    source, previous.get(f'{path.relative_to(ROOT).as_posix()}:{key}', {}).get('source', ''),
+                    row['translation'], archive_name, key):
+                relative = path.relative_to(ROOT).as_posix()
+                saved = previous[f'{relative}:{key}']
+                # 已校对译文与原版控制码都匹配，才从控制码待办中移除；画面 TODO 保留在源码。
+                output.append(dict(id=f'{relative}:{key}', file=relative, key=key,
+                                   source=saved['source'], target=source, status='final', note=''))
+                continue
             if (archive_name in ('games/rap_men/rap_men_lyrics.json',
                                  'games/rap_men/rap_women_lyrics.json')
                     and path.suffix == '.bs' and row['stage'] == 5):
@@ -1135,7 +1197,12 @@ def import_text(check, only_final):
             key = row['key']
             if ((filename == 'games/night_walk/night_walk_text.c' and key in NIGHT_WALK_PROMPTS)
                     or (filename == 'games/remix_3/remix_3_text.c' and key in REMIX3_CREDIT_PREFIXES)
-                    or (filename == 'games/remix_5/remix_5_text.c' and key in REMIX5_CREDIT_PREFIXES)):
+                    or (filename == 'games/remix_5/remix_5_text.c' and key in REMIX5_CREDIT_PREFIXES)
+                    or (filename == 'games/toss_boys/toss_boys_text.c' and key in TOSS_TECHNIQUE_KEYS)
+                    or (filename == 'games/rhythm_tweezers/rhythm_tweezers_text.c'
+                        and key in RHYTHM_TWEEZERS_KEYS)
+                    or (filename == 'games/drum_intro/drum_intro_unused_2_text.c' and key == 'D_0805d928')
+                    or (filename == 'games/staff_credit/staff_credit_text.c' and key == 'D_08069d7c')):
                 # TSV 中的反斜杠是源码原样的控制码；通用 JSON 转义会把它加倍，
                 # 因此这几组只核对 C 字面量拼接结果，不把正确的前缀重新写成可见文本。
                 groups = locate(text, path, key)

@@ -26,13 +26,15 @@ const char D_0805b544[] = "欢迎光临。";
 
 const char D_0805b550[] = "用 A 键或十字键拔毛哦！";
 
-const char D_0805b580[] = "\x05\x30" "\x01\x34" "\x03\x31" "\x01\x6d" "OK!";
+// 阶段 5 已校对：保留四个原版显示控制字节，只把提示词换成中文。
+// TODO 未校对：提示文字的字号与毛发检查画面位置仍需实机确认。
+const char D_0805b580[] = "\x05\x30" "\x01\x34" "\x03\x31" "\x01\x6d" "OK";
 
-const char D_0805b590[] = "\x05\x34" "\x01\x38" "\x03\x30" "\x01\x73" "For the curly hairs, hold "CHAR_A_BUTTON_UTF8" or "CHAR_DPAD_UTF8" until it's plucked.";
+const char D_0805b590[] = "\x05\x34" "\x01\x38" "\x03\x30" "\x01\x73" "那些卷的毛要长按"CHAR_A_BUTTON_UTF8"或"CHAR_DPAD_UTF8"，把它拽出来哦。";
 
-const char D_0805b5c8[] = "\x05\x34" "\x01\x38" "\x03\x30" "\x01\x73" "When there's a lot, using both hands might help!";
+const char D_0805b5c8[] = "\x05\x34" "\x01\x38" "\x03\x30" "\x01\x73" "毛太多的时候，两只手一起上会轻松些哦。";
 
-const char D_0805b5f4[] = "\x05\x34" "\x01\x38" "\x03\x30" "\x01\x73" "It's time for the real thing. Make me proud.";
+const char D_0805b5f4[] = "\x05\x34" "\x01\x38" "\x03\x30" "\x01\x73" "那么，正式开始。";
 
 const char D_0805b614[] = "要好好拔干净哦。";
 

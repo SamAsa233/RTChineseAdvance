@@ -69,9 +69,11 @@ const char D_0805d7a8[] =
 const char D_0805d7b4[] =
     "好伙伴一起练习中";
 
+// 阶段 5 已校对：标题的画面换行与第二行前后八个显示控制字节都保留。
+// TODO 未校对：三种必杀技名称在练习画面的第二行宽度仍需实机检查。
 const char D_0805d7cc[] =
-    "Toss Technique 1:\n"
-    "\x03\x31" "\x01\x6d" "\x05\x30" "\x01\x34" "Red's A-B Pass-Toss" "\x03\x30" "\x01\x73" "\x05\x34" "\x01\x38";
+    "必杀技 1\n"
+    "\x03\x31" "\x01\x6d" "\x05\x30" "\x01\x34" "AB 来回传球" "\x03\x30" "\x01\x73" "\x05\x34" "\x01\x38";
 
 const char D_0805d7fc[] =
     "再来一次";
@@ -86,8 +88,8 @@ const char D_0805d80c[] =
 #endif
 
 const char D_0805d818[] =
-    "Toss Technique 2:\n"
-    "\x03\x31" "\x01\x6d" "\x05\x30" "\x01\x34" "Blue's Bounce-Toss" "\x03\x30" "\x01\x73" "\x05\x34" "\x01\x38";
+    "必杀技 2\n"
+    "\x03\x31" "\x01\x6d" "\x05\x30" "\x01\x34" "蓝色自传球" "\x03\x30" "\x01\x73" "\x05\x34" "\x01\x38";
 
 const char D_0805d848[] =
     "再来一次〜";
@@ -96,8 +98,8 @@ const char D_0805d85c[] =
     "对对对！！";
 
 const char D_0805d86c[] =
-    "Toss Technique 3:\n"
-    "\x03\x31" "\x01\x6d" "\x05\x30" "\x01\x34" "Yellow's Quick-Toss" "\x03\x30" "\x01\x73" "\x05\x34" "\x01\x38";
+    "必杀技 3\n"
+    "\x03\x31" "\x01\x6d" "\x05\x30" "\x01\x34" "黄色快传" "\x03\x30" "\x01\x73" "\x05\x34" "\x01\x38";
 
 const char D_0805d8a0[] =
     "再来一次";

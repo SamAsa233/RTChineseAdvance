@@ -93,8 +93,13 @@ def main():
                 errors.append(f"{row['id']}: U+{ord(ch):04X} {ch} missing in outline font")
         if row['note']:
             warnings.append(f"{row['id']}: {row['note']}")
-        elif Counter(CONTROL_TOKEN.findall(row['source'])) != Counter(CONTROL_TOKEN.findall(row['target'])):
-            errors.append(f"{row['id']}: control tokens differ")
+        else:
+            source_tokens = CONTROL_TOKEN.findall(row['source'])
+            if row['id'] == 'games/drum_intro/drum_intro_unused_2_text.c:D_0805d928':
+                # 英文「...And」中的 .A 是普通字母，不是显示控制码；只排除这一处误识别。
+                source_tokens = [token for token in source_tokens if token != '.A']
+            if Counter(source_tokens) != Counter(CONTROL_TOKEN.findall(row['target'])):
+                errors.append(f"{row['id']}: control tokens differ")
         bounds = layout(row)
         if bounds and not row['note']:
             width, max_lines, size = bounds

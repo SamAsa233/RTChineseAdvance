@@ -148,23 +148,7 @@
 - TODO 未校对 data/scenes/options/data.c:options_data_clear_confirm_text: control codes need review
 - TODO 未校对 data/scenes/options/data.c:options_desc_text[0]: control codes need review
 - TODO 未校对 data/scenes/options/data.c:options_desc_text[1]: control codes need review
-- TODO 未校对 games/drum_intro/drum_intro_unused_2_text.c:D_0805d928: control codes need review
-- TODO 未校对 games/rap_men/rap_men_text.c:D_0805eb3c: control codes need review
-- TODO 未校对 games/rap_men/rap_men_text.c:D_0805eb6c: control codes need review
-- TODO 未校对 games/rap_men/rap_men_text.c:D_0805ebc4: control codes need review
-- TODO 未校对 games/rap_men/rap_men_text.c:D_0805ec24: control codes need review
-- TODO 未校对 games/remix_2/remix_2_text.c:D_08067f90: control codes need review
-- TODO 未校对 games/remix_2/remix_2_text.c:D_08067fcc: control codes need review
-- TODO 未校对 games/remix_6/remix_6_text.c:D_0806a920: control codes need review
-- TODO 未校对 games/remix_6/remix_6_text.c:D_0806a944: control codes need review
-- TODO 未校对 games/rhythm_tweezers/rhythm_tweezers_text.c:D_0805b580: control codes need review
 - TODO 未校对 games/rhythm_tweezers/rhythm_tweezers_text.c:D_0805b590: control codes need review
-- TODO 未校对 games/rhythm_tweezers/rhythm_tweezers_text.c:D_0805b5c8: control codes need review
-- TODO 未校对 games/rhythm_tweezers/rhythm_tweezers_text.c:D_0805b5f4: control codes need review
-- TODO 未校对 games/staff_credit/staff_credit_text.c:D_08069d7c: control codes need review
-- TODO 未校对 games/toss_boys/toss_boys_text.c:D_0805d7cc: control codes need review
-- TODO 未校对 games/toss_boys/toss_boys_text.c:D_0805d818: control codes need review
-- TODO 未校对 games/toss_boys/toss_boys_text.c:D_0805d86c: control codes need review
 
 ## 尚未安全定位
 

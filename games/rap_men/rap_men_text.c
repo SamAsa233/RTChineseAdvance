@@ -53,18 +53,20 @@ const char D_0805eb14[] = "都说了是“嗯”那一下啦";
 
 const char D_0805eb34[] = "OK！";
 
-const char D_0805eb3c[] = "That was a \".bhuh?.8\" line.";
+// 阶段 5 已校对：把原版变色码留在引号内的节奏名两侧，仅替换可见文字。
+// TODO 未校对：中文提示中彩色词的高亮范围仍需在 Rap Men 教学画面核验。
+const char D_0805eb3c[] = "刚才练的，就是“" ".b……吗？.8" "”这种节奏。";
 
-const char D_0805eb6c[] = "Now let's try the \".9ya feel me?.8\" line.";
+const char D_0805eb6c[] = "接下来是“" ".9……吧.8" "”这种节奏。";
 
 const char D_0805eb94[] = "先听一遍吧";
 
 const char D_0805ebac[] = "那就，来吧";
 
-const char D_0805ebc4[] = "All that's left is our \".aAWESOME!.8\" line.";
+const char D_0805ebc4[] = "最后一种，是“" ".a……最棒啦！.8" "”的节奏";
 
 const char D_0805ebf4[] = "这个也先听一遍吧";
 
 const char D_0805ec0c[] = "好，来吧";
 
-const char D_0805ec24[] = "OK! You're pretty \".aawesome.8\" at this!";
+const char D_0805ec24[] = "OK！真是" ".a棒极啦！.8";

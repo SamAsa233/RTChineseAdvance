@@ -1197,7 +1197,7 @@ games/drum_intro/drum_intro_unused_2_text.c:D_0805d8d8	games/drum_intro/drum_int
 games/drum_intro/drum_intro_unused_2_text.c:D_0805d8ec	games/drum_intro/drum_intro_unused_2_text.c	D_0805d8ec	\nOnto the next one!	下一段，开始。	final	
 games/drum_intro/drum_intro_unused_2_text.c:D_0805d900	games/drum_intro/drum_intro_unused_2_text.c	D_0805d900	\nThis one's a short waltz!	接下来是 3 拍子。	final	
 games/drum_intro/drum_intro_unused_2_text.c:D_0805d914	games/drum_intro/drum_intro_unused_2_text.c	D_0805d914	\nNow for the last one!	好，那就是最后啦。	final	
-games/drum_intro/drum_intro_unused_2_text.c:D_0805d928	games/drum_intro/drum_intro_unused_2_text.c	D_0805d928	\n...And that's it!	以上就是这些。	final	control codes need review
+games/drum_intro/drum_intro_unused_2_text.c:D_0805d928	games/drum_intro/drum_intro_unused_2_text.c	D_0805d928	\n...And that's it!	\n以上就是这些。	final	
 games/drum_intro/drum_intro_unused_2_text.c:D_0805d934	games/drum_intro/drum_intro_unused_2_text.c	D_0805d934	That was some good practice.\nHow'd you like it?\nKeep it in the back of your\nmind for later!	"刚才这段开头练习，
 感觉怎么样？
 以后演奏的时候，
@@ -2012,14 +2012,14 @@ games/rap_men/rap_men_text.c:D_0805eae8	games/rap_men/rap_men_text.c	D_0805eae8	
 games/rap_men/rap_men_text.c:D_0805eaf8	games/rap_men/rap_men_text.c	D_0805eaf8	"It's at the \""Uh!\"""	就是“嗯”那一下哦〜	final	
 games/rap_men/rap_men_text.c:D_0805eb14	games/rap_men/rap_men_text.c	D_0805eb14	"You have to press  at the \""Uh!\"""	都说了是“嗯”那一下啦	final	
 games/rap_men/rap_men_text.c:D_0805eb34	games/rap_men/rap_men_text.c	D_0805eb34	OK! You've got it!	OK！	final	
-games/rap_men/rap_men_text.c:D_0805eb3c	games/rap_men/rap_men_text.c	D_0805eb3c	"That was a \"".bhuh?.8\"" line."	刚才练的，就是“……吗？”这种节奏。	final	control codes need review
-games/rap_men/rap_men_text.c:D_0805eb6c	games/rap_men/rap_men_text.c	D_0805eb6c	"Now let's try the \"".9ya feel me?.8\"" line."	接下来是“……吧”这种节奏。	final	control codes need review
+games/rap_men/rap_men_text.c:D_0805eb3c	games/rap_men/rap_men_text.c	D_0805eb3c	"That was a \"".bhuh?.8\"" line."	刚才练的，就是“.b……吗？.8”这种节奏。	final	
+games/rap_men/rap_men_text.c:D_0805eb6c	games/rap_men/rap_men_text.c	D_0805eb6c	"Now let's try the \"".9ya feel me?.8\"" line."	接下来是“.9……吧.8”这种节奏。	final	
 games/rap_men/rap_men_text.c:D_0805eb94	games/rap_men/rap_men_text.c	D_0805eb94	Take a listen.	先听一遍吧	final	
 games/rap_men/rap_men_text.c:D_0805ebac	games/rap_men/rap_men_text.c	D_0805ebac	You got this!	那就，来吧	final	
-games/rap_men/rap_men_text.c:D_0805ebc4	games/rap_men/rap_men_text.c	D_0805ebc4	"All that's left is our \"".aAWESOME!.8\"" line."	最后一种，是“……最棒啦！”的节奏	final	control codes need review
+games/rap_men/rap_men_text.c:D_0805ebc4	games/rap_men/rap_men_text.c	D_0805ebc4	"All that's left is our \"".aAWESOME!.8\"" line."	最后一种，是“.a……最棒啦！.8”的节奏	final	
 games/rap_men/rap_men_text.c:D_0805ebf4	games/rap_men/rap_men_text.c	D_0805ebf4	Give it a listen...	这个也先听一遍吧	final	
 games/rap_men/rap_men_text.c:D_0805ec0c	games/rap_men/rap_men_text.c	D_0805ec0c	Now follow it up!	好，来吧	final	
-games/rap_men/rap_men_text.c:D_0805ec24	games/rap_men/rap_men_text.c	D_0805ec24	"OK! You're pretty \"".aawesome.8\"" at this!"	OK！真是棒极啦！	final	control codes need review
+games/rap_men/rap_men_text.c:D_0805ec24	games/rap_men/rap_men_text.c	D_0805ec24	"OK! You're pretty \"".aawesome.8\"" at this!"	OK！真是.a棒极啦！.8	final	
 games/rap_men/rap_women.bs:text_rap_women_aketeii_kamo_ne	games/rap_men/rap_women.bs	text_rap_women_aketeii_kamo_ne	.9:1Open 'em up, .9:0ya feel me?.8:1	.9:1也许可以打开.9:0吧.8:1	final	
 games/rap_men/rap_women.bs:text_rap_women_amakute_saikou	games/rap_men/rap_women.bs	text_rap_women_amakute_saikou	.a:1Sweets are .a:0so AWESOME!.8:1	.a:1甜甜的，.a:0最棒啦——！！.8:1	final	
 games/rap_men/rap_women.bs:text_rap_women_betsubara_saikou	games/rap_men/rap_women.bs	text_rap_women_betsubara_saikou	.a:1Cakes are .a:0so AWESOME!.8:1	.a:1甜点胃.a:0最棒啦——！！.8:1	final	
@@ -2099,8 +2099,8 @@ games/remix_2/remix_2_text.c:D_08067f1c	games/remix_2/remix_2_text.c	D_08067f1c	
 games/remix_2/remix_2_text.c:D_08067f40	games/remix_2/remix_2_text.c	D_08067f40	Your technique needs work.	再好好磨练一下吧。	final	
 games/remix_2/remix_2_text.c:D_08067f5c	games/remix_2/remix_2_text.c	D_08067f5c	Your technique is solid!	技术不错啊！	final	
 games/remix_2/remix_2_text.c:D_08067f74	games/remix_2/remix_2_text.c	D_08067f74	Rhythm League notes:	来自神秘节奏组织的通告	final	
-games/remix_2/remix_2_text.c:D_08067f90	games/remix_2/remix_2_text.c	D_08067f90	.1:0Do-n do-n .2:0pa-n pan	咚ーん　咚ーん　啪ーん　啪	final	control codes need review
-games/remix_2/remix_2_text.c:D_08067fcc	games/remix_2/remix_2_text.c	D_08067fcc	.1:0Dondo .2:0pa-n pan	咚咚 啪ー 啪	final	control codes need review
+games/remix_2/remix_2_text.c:D_08067f90	games/remix_2/remix_2_text.c	D_08067f90	.1:0Do-n do-n .2:0pa-n pan	.1:0咚ーん　咚ーん　.2:0啪ーん　啪	final	
+games/remix_2/remix_2_text.c:D_08067fcc	games/remix_2/remix_2_text.c	D_08067fcc	.1:0Dondo .2:0pa-n pan	.1:0咚咚 .2:0啪ー 啪	final	
 games/remix_2/remix_2_text.c:D_08067ff8	games/remix_2/remix_2_text.c	D_08067ff8	Are you lovestruck?	恋爱了吗？	final	
 games/remix_2/remix_2_text.c:D_08068008	games/remix_2/remix_2_text.c	D_08068008	Don't fall back!	好紧张啊！！	final	
 games/remix_2/remix_2_text.c:D_08068018	games/remix_2/remix_2_text.c	D_08068018	Keep up the pace!	加油啊〜！	final	
@@ -2164,8 +2164,8 @@ games/remix_6/remix_6_text.c:D_0806a8e4	games/remix_6/remix_6_text.c	D_0806a8e4	
 games/remix_6/remix_6_text.c:D_0806a8f0	games/remix_6/remix_6_text.c	D_0806a8f0	\nAaaand stop!	到此为止！！	final	
 games/remix_6/remix_6_text.c:D_0806a900	games/remix_6/remix_6_text.c	D_0806a900	\nAww, too bad!	可惜！！	final	
 games/remix_6/remix_6_text.c:D_0806a910	games/remix_6/remix_6_text.c	D_0806a910	\nImpressive!	漂亮！！	final	
-games/remix_6/remix_6_text.c:D_0806a920	games/remix_6/remix_6_text.c	D_0806a920	.1:0Dondo .2:0panpa	咚咚 啪啪	final	control codes need review
-games/remix_6/remix_6_text.c:D_0806a944	games/remix_6/remix_6_text.c	D_0806a944	.1:0Do-n .2:0pa-n pan	咚ー 啪ー 啪	final	control codes need review
+games/remix_6/remix_6_text.c:D_0806a920	games/remix_6/remix_6_text.c	D_0806a920	.1:0Dondo .2:0panpa	.1:0咚咚 .2:0啪啪	final	
+games/remix_6/remix_6_text.c:D_0806a944	games/remix_6/remix_6_text.c	D_0806a944	.1:0Do-n .2:0pa-n pan	.1:0咚ー .2:0啪ー 啪	final	
 games/remix_6/remix_6_text.c:D_0806a970	games/remix_6/remix_6_text.c	D_0806a970	The end!	结束！	final	
 games/remix_7/remix_7_text.c:D_0806a16c	games/remix_7/remix_7_text.c	D_0806a16c	Try a little harder.	还得继续努力。	final	
 games/remix_7/remix_7_text.c:D_0806a17c	games/remix_7/remix_7_text.c	D_0806a17c	That was really great!	简直太棒啦！！	final	
@@ -2215,10 +2215,10 @@ games/rhythm_tweezers/rhythm_tweezers_text.c:D_0805b510	games/rhythm_tweezers/rh
 games/rhythm_tweezers/rhythm_tweezers_text.c:D_0805b530	games/rhythm_tweezers/rhythm_tweezers_text.c	D_0805b530	Unwanted-hair check:	多余毛发检查	final	
 games/rhythm_tweezers/rhythm_tweezers_text.c:D_0805b544	games/rhythm_tweezers/rhythm_tweezers_text.c	D_0805b544	Hello!	欢迎光临。	final	
 games/rhythm_tweezers/rhythm_tweezers_text.c:D_0805b550	games/rhythm_tweezers/rhythm_tweezers_text.c	D_0805b550	Press  or  to pluck the hair at the right time.	用 A 键或十字键拔毛哦！	final	
-games/rhythm_tweezers/rhythm_tweezers_text.c:D_0805b580	games/rhythm_tweezers/rhythm_tweezers_text.c	D_0805b580	\x05\x30\x01\x34\x03\x31\x01\x6dOK!	OK	final	control codes need review
+games/rhythm_tweezers/rhythm_tweezers_text.c:D_0805b580	games/rhythm_tweezers/rhythm_tweezers_text.c	D_0805b580	\x05\x30\x01\x34\x03\x31\x01\x6dOK!	\x05\x30\x01\x34\x03\x31\x01\x6dOK	final	
 games/rhythm_tweezers/rhythm_tweezers_text.c:D_0805b590	games/rhythm_tweezers/rhythm_tweezers_text.c	D_0805b590	\x05\x34\x01\x38\x03\x30\x01\x73For the curly hairs, hold  or  until it's plucked.	那些卷的毛要长按按钮，把它拽出来哦。	final	control codes need review
-games/rhythm_tweezers/rhythm_tweezers_text.c:D_0805b5c8	games/rhythm_tweezers/rhythm_tweezers_text.c	D_0805b5c8	\x05\x34\x01\x38\x03\x30\x01\x73When there's a lot, using both hands might help!	毛太多的时候，两只手一起上会轻松些哦。	final	control codes need review
-games/rhythm_tweezers/rhythm_tweezers_text.c:D_0805b5f4	games/rhythm_tweezers/rhythm_tweezers_text.c	D_0805b5f4	\x05\x34\x01\x38\x03\x30\x01\x73It's time for the real thing. Make me proud.	那么，正式开始。	final	control codes need review
+games/rhythm_tweezers/rhythm_tweezers_text.c:D_0805b5c8	games/rhythm_tweezers/rhythm_tweezers_text.c	D_0805b5c8	\x05\x34\x01\x38\x03\x30\x01\x73When there's a lot, using both hands might help!	\x05\x34\x01\x38\x03\x30\x01\x73毛太多的时候，两只手一起上会轻松些哦。	final	
+games/rhythm_tweezers/rhythm_tweezers_text.c:D_0805b5f4	games/rhythm_tweezers/rhythm_tweezers_text.c	D_0805b5f4	\x05\x34\x01\x38\x03\x30\x01\x73It's time for the real thing. Make me proud.	\x05\x34\x01\x38\x03\x30\x01\x73那么，正式开始。	final	
 games/rhythm_tweezers/rhythm_tweezers_text.c:D_0805b614	games/rhythm_tweezers/rhythm_tweezers_text.c	D_0805b614	Plucking practice is prescribed.	要好好拔干净哦。	final	
 games/rhythm_tweezers/rhythm_tweezers_text.c:D_0805b634	games/rhythm_tweezers/rhythm_tweezers_text.c	D_0805b634	The curly ones were tough for you.	卷毛还没拔干净。	final	
 games/rhythm_tweezers/rhythm_tweezers_text.c:D_0805b654	games/rhythm_tweezers/rhythm_tweezers_text.c	D_0805b654	Good work on the curly ones!	卷毛拔得挺干净！	final	
@@ -2404,7 +2404,7 @@ games/staff_credit/staff_credit_text.c:D_08069d4c	games/staff_credit/staff_credi
 games/staff_credit/staff_credit_text.c:D_08069d5c	games/staff_credit/staff_credit_text.c	D_08069d5c	A. Kenmochi	剣持 あゆち	final	
 games/staff_credit/staff_credit_text.c:D_08069d68	games/staff_credit/staff_credit_text.c	D_08069d68	H. Nakano	中野 ひとみ	final	
 games/staff_credit/staff_credit_text.c:D_08069d74	games/staff_credit/staff_credit_text.c	D_08069d74	\0023You!	\0023还有你	final	
-games/staff_credit/staff_credit_text.c:D_08069d7c	games/staff_credit/staff_credit_text.c	D_08069d7c	\0023	执行	final	control codes need review
+games/staff_credit/staff_credit_text.c:D_08069d7c	games/staff_credit/staff_credit_text.c	D_08069d7c	\0023	\0023执行	final	
 games/staff_credit/staff_credit_text.c:D_08069d88	games/staff_credit/staff_credit_text.c	D_08069d88	\0023Executive Producers	\0023制作人	final	
 games/staff_credit/staff_credit_text.c:D_08069d98	games/staff_credit/staff_credit_text.c	D_08069d98	S. Iwata	岩田 聡	final	
 games/staff_credit/staff_credit_text.c:D_08069da0	games/staff_credit/staff_credit_text.c	D_08069da0	S. Terai	寺井 てらい	draft	TODO 未校对
@@ -2505,16 +2505,13 @@ games/toss_boys/toss_boys_text.c:D_0805d778	games/toss_boys/toss_boys_text.c	D_0
 games/toss_boys/toss_boys_text.c:D_0805d78c	games/toss_boys/toss_boys_text.c	D_0805d78c	\nLet's try out our routine!	正式来咯——！	final	
 games/toss_boys/toss_boys_text.c:D_0805d7a8	games/toss_boys/toss_boys_text.c	D_0805d7a8	\nThat's a wrap!	结束啦。	final	
 games/toss_boys/toss_boys_text.c:D_0805d7b4	games/toss_boys/toss_boys_text.c	D_0805d7b4	\nAlright! Let's get some practice in!	好伙伴一起练习中	final	
-games/toss_boys/toss_boys_text.c:D_0805d7cc	games/toss_boys/toss_boys_text.c	D_0805d7cc	Toss Technique 1:\n\x03\x31\x01\x6d\x05\x30\x01\x34Red's A-B Pass-Toss\x03\x30\x01\x73\x05\x34\x01\x38	"必杀技 1
-AB 来回传球"	final	control codes need review
+games/toss_boys/toss_boys_text.c:D_0805d7cc	games/toss_boys/toss_boys_text.c	D_0805d7cc	Toss Technique 1:\n\x03\x31\x01\x6d\x05\x30\x01\x34Red's A-B Pass-Toss\x03\x30\x01\x73\x05\x34\x01\x38	必杀技 1\n\x03\x31\x01\x6d\x05\x30\x01\x34AB 来回传球\x03\x30\x01\x73\x05\x34\x01\x38	final	
 games/toss_boys/toss_boys_text.c:D_0805d7fc	games/toss_boys/toss_boys_text.c	D_0805d7fc	\nLet's do it one more time!	再来一次	final	
 games/toss_boys/toss_boys_text.c:D_0805d80c	games/toss_boys/toss_boys_text.c	D_0805d80c	\nGreat throwing!	不错哦！	final	
-games/toss_boys/toss_boys_text.c:D_0805d818	games/toss_boys/toss_boys_text.c	D_0805d818	Toss Technique 2:\n\x03\x31\x01\x6d\x05\x30\x01\x34Blue's Bounce-Toss\x03\x30\x01\x73\x05\x34\x01\x38	"必杀技 2
-蓝色自传球"	final	control codes need review
+games/toss_boys/toss_boys_text.c:D_0805d818	games/toss_boys/toss_boys_text.c	D_0805d818	Toss Technique 2:\n\x03\x31\x01\x6d\x05\x30\x01\x34Blue's Bounce-Toss\x03\x30\x01\x73\x05\x34\x01\x38	必杀技 2\n\x03\x31\x01\x6d\x05\x30\x01\x34蓝色自传球\x03\x30\x01\x73\x05\x34\x01\x38	final	
 games/toss_boys/toss_boys_text.c:D_0805d848	games/toss_boys/toss_boys_text.c	D_0805d848	\nOnce again!	再来一次〜	final	
 games/toss_boys/toss_boys_text.c:D_0805d85c	games/toss_boys/toss_boys_text.c	D_0805d85c	\nGood job!	对对对！！	final	
-games/toss_boys/toss_boys_text.c:D_0805d86c	games/toss_boys/toss_boys_text.c	D_0805d86c	Toss Technique 3:\n\x03\x31\x01\x6d\x05\x30\x01\x34Yellow's Quick-Toss\x03\x30\x01\x73\x05\x34\x01\x38	"必杀技 3
-黄色快传"	final	control codes need review
+games/toss_boys/toss_boys_text.c:D_0805d86c	games/toss_boys/toss_boys_text.c	D_0805d86c	Toss Technique 3:\n\x03\x31\x01\x6d\x05\x30\x01\x34Yellow's Quick-Toss\x03\x30\x01\x73\x05\x34\x01\x38	必杀技 3\n\x03\x31\x01\x6d\x05\x30\x01\x34黄色快传\x03\x30\x01\x73\x05\x34\x01\x38	final	
 games/toss_boys/toss_boys_text.c:D_0805d8a0	games/toss_boys/toss_boys_text.c	D_0805d8a0	\nOnce more for good measure!	再来一次	final	
 games/toss_boys/toss_boys_text.c:D_0805d8b0	games/toss_boys/toss_boys_text.c	D_0805d8b0	\nOkay!	OK	final	
 games/toss_boys/toss_boys_text.c:D_0805d8bc	games/toss_boys/toss_boys_text.c	D_0805d8bc	\nWe've made good time on practice...	感觉已经挺不错了，	final	
