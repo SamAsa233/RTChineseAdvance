@@ -71,6 +71,41 @@ def layout(row):
     return None
 
 
+
+
+def rhythm_tweezers_icon_prompt_errors(fonts):
+    """按实际按钮宏展开卷毛提示，并核对单行 240 像素文本框。"""
+    source = (ROOT / 'games/rhythm_tweezers/rhythm_tweezers_text.c').read_text(encoding='utf-8')
+    match = re.search(r'const char D_0805b590\[\]\s*=\s*(.*?);', source, re.S)
+    if not match:
+        return ['D_0805b590: initializer not found'], '', 0
+    tokens = re.findall(r'"(?:\\.|[^"\\])*"|CHAR_A_BUTTON_UTF8|CHAR_DPAD_UTF8', match.group(1))
+    macros = [token for token in tokens if token.startswith('CHAR_')]
+    errors = []
+    if macros != ['CHAR_A_BUTTON_UTF8', 'CHAR_DPAD_UTF8']:
+        errors.append('D_0805b590: A 键或十字键宏缺失、重复或顺序变化')
+    pieces = []
+    for token in tokens:
+        if token == 'CHAR_A_BUTTON_UTF8':
+            pieces.append(chr(0xE006))
+        elif token == 'CHAR_DPAD_UTF8':
+            pieces.append(chr(0xE005))
+        else:
+            pieces.append(token[1:-1])
+    shown = display_text(''.join(pieces))
+    if '\n' in shown:
+        errors.append('D_0805b590: 单行提示中出现了画面换行')
+    widths = [glyph_width(fonts['small'], ord(ch)) for ch in shown]
+    missing = [f'U+{ord(ch):04X}' for ch, width in zip(shown, widths)
+               if not ch.isspace() and not width]
+    if missing:
+        errors.append('D_0805b590: 缺少字形 ' + ','.join(missing))
+    width = sum(widths) + max(0, len(shown) - 1) * SPACING['small']
+    if width > 240:
+        errors.append(f'D_0805b590: 图标提示宽度 {width}/240px')
+    return errors, shown, width
+
+
 def diagnosis_page_errors(row, fonts):
     """确认 23 页诊断正文不会因断行改变页码位置。"""
     raw_lines = row['target'].split(r'\n')
@@ -123,6 +158,9 @@ def main():
     outline = definitions.split('bitmap_font_warioware_outline_cjk_codepoints[] = {', 1)[1].split('};', 1)[0]
     outline_codes = {int(value, 16) for value in re.findall(r'0x([0-9a-fA-F]+)', outline)}
     errors, warnings = [], []
+    # Rhythm Tweezers 这句的按钮是源码宏，TSV 看不到；单独按实际 PUA 图标宽度核对。
+    icon_errors, icon_text, icon_width = rhythm_tweezers_icon_prompt_errors(fonts)
+    errors.extend(icon_errors)
     for row in rows:
         if row['status'] != 'final':
             continue
@@ -156,6 +194,9 @@ def main():
     report = ROOT / 'build/text_report'
     atomic_text(report / 'validation.txt', '\n'.join(errors) + ('\n' if errors else ''))
     atomic_text(report / 'layout_warnings.txt', '\n'.join(warnings) + ('\n' if warnings else ''))
+    # 记录精确宽度，方便在无法截图时仍能证明它不会自动换行或越过文本框。
+    atomic_text(report / 'rhythm_tweezers_icon_prompt.txt',
+                f'text={icon_text}\nwidth={icon_width}/240px\nstatus={"pass" if not icon_errors else "error"}\n')
     print(f'final={sum(row["status"] == "final" for row in rows)}, errors={len(errors)}, warnings={len(warnings)}')
     if errors:
         raise SystemExit(1)

@@ -139,7 +139,7 @@
 
 ## 已校对译文仍待控制码或分支复核
 
-- TODO 未校对 games/rhythm_tweezers/rhythm_tweezers_text.c:D_0805b590: TODO 未校对：为保留原版 A 键和十字键图标，将“按钮”改成图标选择，需实机复核
+- TODO 未校对 games/rhythm_tweezers/rhythm_tweezers_text.c:D_0805b590: TODO 未校对：为保留原版 A 键和十字键图标，将“按钮”改成图标选择；静态宽度已通过 240 像素检查，仍需实机复核图标辨识和字距
 
 ## 阶段 5 原文仍非中文，采用自行中文化
 

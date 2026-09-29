@@ -1364,7 +1364,7 @@ def extract():
                 saved = previous[f'{relative}:{key}']
                 # 已校对译文与原版控制码都匹配，才从控制码待办中移除。
                 # “按钮”改成两个原版图标会改变可见文字，因此必须在 TSV 继续保留 TODO。
-                note = ('TODO 未校对：为保留原版 A 键和十字键图标，将“按钮”改成图标选择，需实机复核'
+                note = ('TODO 未校对：为保留原版 A 键和十字键图标，将“按钮”改成图标选择；静态宽度已通过 240 像素检查，仍需实机复核图标辨识和字距'
                         if archive_name == 'games/rhythm_tweezers/rhythm_tweezers_text.json'
                         and key == 'D_0805b590' else '')
                 output.append(dict(id=f'{relative}:{key}', file=relative, key=key,
