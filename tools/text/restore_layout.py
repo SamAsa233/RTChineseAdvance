@@ -4,6 +4,9 @@ The imported Chinese may need different *internal* line breaks to fit the
 screen. The café's leading/trailing blanks, however, place text vertically;
 they must follow the original port. Physical C string lines are only source
 formatting and do not introduce extra in-game line breaks.
+
+汉化改动：中文句长与英文不同，句子内部可以重新安排画面换行；咖啡馆首尾的空行负责垂直定位，必须按原版恢复。
+这个脚本还会保留 C 源码中相邻字符串的排版，因为源码物理换行本身不会在游戏画面中产生换行。
 """
 
 from collections import defaultdict

@@ -1,5 +1,8 @@
 """Decode or round-trip WarioWare 16x16 OBJ glyph textures.
 
+汉化改动：把标题的 4bpp 字模解码后再编码，确认转换前后的字节完全一致；
+需要时还可输出预览图，方便检查描边、阴影和复杂汉字有没有粘连。
+
 Example: python tools/font/dump_4bpp.py graphics/font/outline/large/bitmap_font_warioware_outline_large_hiragana_3040_309F.raw.4bpp --limit 96
 """
 

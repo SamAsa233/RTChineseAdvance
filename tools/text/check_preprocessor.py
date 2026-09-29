@@ -1,5 +1,8 @@
 """Report unmatched C preprocessor branches in edited files.
 
+汉化改动：检查翻译时碰到的 #if、#else 和 #endif 是否仍然成对。
+PARADISE 与默认地区经常各有一份文本，少一个分支符号会导致某个版本无法编译或显示错误文字。
+
 Example: python tools/text/check_preprocessor.py
 """
 

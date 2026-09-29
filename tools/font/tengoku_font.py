@@ -1,5 +1,8 @@
 """Encode and decode text_printer 16-column 1bpp glyphs.
 
+汉化改动：按原游戏 text_printer 的位排列读写正文点阵，并用往返编码检查生成文件。
+如果读出后再写回的字节不同，说明字模排列有误，ROM 中就可能出现错位或乱码。
+
 Example: python tools/font/tengoku_font.py bin/font/small/small_ascii_0000_007F.bin 24
 """
 

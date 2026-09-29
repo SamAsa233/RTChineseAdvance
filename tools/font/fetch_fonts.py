@@ -1,5 +1,8 @@
 """Fetch pinned open-source bitmap fonts into third_party.
 
+汉化改动：下载固定版本的 Fusion Pixel 和 GNU Unifont，并用 SHA-256 校验文件。
+固定版本和校验值可以避免不同电脑或不同日期生成出不一样的中文字模。
+
 Example: python tools/font/fetch_fonts.py
 """
 

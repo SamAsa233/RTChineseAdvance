@@ -1,5 +1,8 @@
 """Build sparse 16x16 outlined OBJ glyphs for every supplied translation.
 
+汉化改动：只为译文实际出现的汉字生成 16x16 标题字模，并补上原版标题使用的描边和阴影。
+这样既能让标题显示中文，也不用把两万多个 CJK 汉字全部放进 ROM。
+
 Example: python tools/font/build_outline_font.py --extra 节奏天国
 """
 
