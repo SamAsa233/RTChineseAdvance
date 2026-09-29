@@ -86,6 +86,8 @@ void arrival_scene_start(void *sVar, s32 dArg) {
     printer = text_printer_create_new(get_current_mem_id(), 1, 240, 28);
     text_printer_set_x_y(printer, 0, 72);
     text_printer_center_by_content(printer, TRUE);
+    // 实机核验：2026-09-29 用当前最长资料标题“欢迎来到节奏天国！”检查，
+    // 引号、居中标题、上下固定文案和两个选项光标均未重叠或截断。
     text_printer_set_string(printer, message);
     text_printer_update(printer);
     text_printer_update(printer);

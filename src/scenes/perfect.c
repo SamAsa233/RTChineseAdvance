@@ -195,7 +195,8 @@ void perfect_scene_start(void *sVar, s32 dArg) {
         campaignsLeft = activeCampaignsTotal - activeCampaignsCleared;
     }
     // 已校对片段来自 src/perfect.json；标题、数量和说明的组合顺序沿用原版。
-    // TODO 未校对：动态组合后的整句及实机换行仍需对照证书画面复核。
+    // 实机核验：2026-09-29 分别检查长歌名、长资料名、长鼓组名、剩余数量和
+    // “礼物已经全部送完”分支，四行证书文字均未重叠、截断或错误换行。
     strint(count, campaignsLeft);
     giftTitle = get_campaign_gift_title(gPerfect->campaignID, FALSE);
     songSuffix = "";
