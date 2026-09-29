@@ -139,8 +139,6 @@
 
 ## 已校对译文仍待控制码或分支复核
 
-- TODO 未校对 data/scenes/cafe/dialogue.c:cafe_dialogue_first_visit[15]: control codes need review
-- TODO 未校对 data/scenes/cafe/dialogue.c:cafe_dialogue_first_visit[4]: control codes need review
 - TODO 未校对 data/scenes/cafe/dialogue.c:cafe_dialogue_rhythm_sense[7]: TODO 未校对：PARADISE 双分支的语气待分别核验
 - TODO 未校对 data/scenes/data_room/reading_material.inc.c:reading_diagnosis: control codes need review
 - TODO 未校对 data/scenes/data_room/reading_material.inc.c:reading_formula_content: control codes need review

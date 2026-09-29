@@ -57,6 +57,7 @@ RAP_TUTORIAL_KEYS = frozenset({'D_0805eb3c', 'D_0805eb6c', 'D_0805ebc4', 'D_0805
 TOSS_TECHNIQUE_KEYS = frozenset({'D_0805d7cc', 'D_0805d818', 'D_0805d86c'})
 RHYTHM_TWEEZERS_KEYS = frozenset({'D_0805b580', 'D_0805b590', 'D_0805b5c8', 'D_0805b5f4'})
 OPTIONS_KEYS = frozenset({'options_data_clear_confirm_text', 'options_desc_text[0]', 'options_desc_text[1]'})
+CAFE_FIRST_VISIT_KEYS = frozenset({'cafe_dialogue_first_visit[4]', 'cafe_dialogue_first_visit[15]'})
 
 
 def atomic_text(path, data):
@@ -825,6 +826,22 @@ def reviewed_inline_controls_installed(source, original, translation, archive_na
         return (CONTROL_TOKEN.findall(source) == CONTROL_TOKEN.findall(original)
                 and CONTROL_TOKEN.sub('', source).replace(r'\n', '\n') == translation)
     return False
+
+
+def cafe_first_visit_installed(text, key, translation):
+    """按实际数组槽位核对咖啡馆初次来访的两句控制码台词。"""
+    groups = c_initializer(text, 'cafe_dialogue_first_visit')
+    index = 1 if key.endswith('[4]') else 2
+    if not groups or index >= len(groups) or not groups[index]:
+        return False
+    current = groups[index][2]
+    expected = (r'\n这里嘛，就是所谓的咖啡店啦。\n游戏打得不太顺的时候，\n'
+                r'\0051\0015' + '或者累了的时候，都可以来坐坐哦。'
+                r'\0054\0018'
+                if key.endswith('[4]') else
+                r'\n只要有我帮得上忙的地方，\n\0051\0015'
+                + '我都会尽力的哦。' + r'\0054\0018')
+    return current == expected
     return False
 
 
@@ -1023,6 +1040,17 @@ def extract():
                     output.append(old)
                 continue
             source = groups[index][2]
+            if (archive_name == 'data/cafe/dialogue.json'
+                    and key in CAFE_FIRST_VISIT_KEYS and row['stage'] == 5
+                    and cafe_first_visit_installed(text, key, row['translation'])):
+                relative = path.relative_to(ROOT).as_posix()
+                saved = previous.get(f'{relative}:{key}')
+                if saved:
+                    # 只清除这两句的控制码待办；同数组其他条目继续走普通映射。
+                    output.append(dict(id=f'{relative}:{key}', file=relative, key=key,
+                                       source=saved['source'], target=source,
+                                       status='final', note=''))
+                    continue
             if row['stage'] == 5 and reviewed_inline_controls_installed(
                     source, previous.get(f'{path.relative_to(ROOT).as_posix()}:{key}', {}).get('source', ''),
                     row['translation'], archive_name, key):
@@ -1216,6 +1244,21 @@ def import_text(check, only_final):
                 if not groups or len(groups) != 1 or groups[0][2] != row['target']:
                     problems.append(row['id'] + ': reviewed prefix or text changed')
                 continue
+            if filename == 'data/scenes/cafe/dialogue.c' and key.startswith('cafe_dialogue_first_visit['):
+                source_index = {'cafe_dialogue_first_visit[0]': 0,
+                                'cafe_dialogue_first_visit[4]': 1,
+                                'cafe_dialogue_first_visit[15]': 2,
+                                'cafe_dialogue_first_visit[23]': 3,
+                                'cafe_dialogue_first_visit[27]': 4}
+                index = source_index[key]
+                groups = locate(text, path, key)
+                current = groups[index][2] if groups and index < len(groups) and groups[index] else ''
+                # 初次来访数组的三句普通中文沿用原顶部空行；两句强调台词还要核对控制码分段。
+                accepted = (current.replace(r'\n', '\n').strip('\n') == row['target'].replace(r'\n', '\n').strip('\n')
+                            or (key in CAFE_FIRST_VISIT_KEYS
+                                and cafe_first_visit_installed(text, key, row['target'])))
+                if accepted:
+                    continue
             if filename == 'data/scenes/options/data.c' and key in OPTIONS_KEYS:
                 groups = locate(text, path, key)
                 index = int(re.search(r'\[(\d+)\]$', key).group(1)) if '[' in key else 0

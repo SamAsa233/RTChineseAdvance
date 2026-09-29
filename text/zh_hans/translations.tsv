@@ -103,25 +103,16 @@ data/scenes/cafe/dialogue.c:cafe_dialogue_drum_lessons[8]	data/scenes/cafe/dialo
 不用勉强自己。话虽如此——"	final	
 data/scenes/cafe/dialogue.c:cafe_dialogue_extra_perfects_clear[0]	data/scenes/cafe/dialogue.c	cafe_dialogue_extra_perfects_clear[0]	\nblabla you finished the extra campaign!\n\n	你完美了额外关卡！	draft	TODO 未校对
 data/scenes/cafe/dialogue.c:cafe_dialogue_extra_perfects_clear[1]	data/scenes/cafe/dialogue.c	cafe_dialogue_extra_perfects_clear[1]	\nit's so AWESOME!!\n\n	这太棒了！	draft	TODO 未校对
-data/scenes/cafe/dialogue.c:cafe_dialogue_first_visit[0]	data/scenes/cafe/dialogue.c	cafe_dialogue_first_visit[0]	\nWelcome to the café.\nThis your first time here?\n\n	"
-欢迎光临。
+data/scenes/cafe/dialogue.c:cafe_dialogue_first_visit[0]	data/scenes/cafe/dialogue.c	cafe_dialogue_first_visit[0]	\nWelcome to the café.\nThis your first time here?\n\n	"欢迎光临。
 你是第一次来这里吧？
-
 "	final	
-data/scenes/cafe/dialogue.c:cafe_dialogue_first_visit[15]	data/scenes/cafe/dialogue.c	cafe_dialogue_first_visit[15]	\nIf there's anything I can\ndo to help, well, \0051\0015that's\nwhat I'm here for.\0054\0018	"只要有我帮得上忙的地方，
-我都会尽力的哦。
-"	final	control codes need review
-data/scenes/cafe/dialogue.c:cafe_dialogue_first_visit[23]	data/scenes/cafe/dialogue.c	cafe_dialogue_first_visit[23]	\nI'm a little busy right now,\nsince I only just opened for the\nday, but we'll talk more later.	"
-我现在正在准备点东西，
+data/scenes/cafe/dialogue.c:cafe_dialogue_first_visit[15]	data/scenes/cafe/dialogue.c	cafe_dialogue_first_visit[15]	\nIf there's anything I can\ndo to help, well, \0051\0015that's\nwhat I'm here for.\0054\0018	\n只要有我帮得上忙的地方，\n\0051\0015我都会尽力的哦。\0054\0018	final	
+data/scenes/cafe/dialogue.c:cafe_dialogue_first_visit[23]	data/scenes/cafe/dialogue.c	cafe_dialogue_first_visit[23]	\nI'm a little busy right now,\nsince I only just opened for the\nday, but we'll talk more later.	"我现在正在准备点东西，
 请你晚点再来哦。
 "	final	
-data/scenes/cafe/dialogue.c:cafe_dialogue_first_visit[27]	data/scenes/cafe/dialogue.c	cafe_dialogue_first_visit[27]	\nCome back soon!\n\n	"
-那，下回见哦。
-
+data/scenes/cafe/dialogue.c:cafe_dialogue_first_visit[27]	data/scenes/cafe/dialogue.c	cafe_dialogue_first_visit[27]	\nCome back soon!\n\n	"那，下回见哦。
 "	final	
-data/scenes/cafe/dialogue.c:cafe_dialogue_first_visit[4]	data/scenes/cafe/dialogue.c	cafe_dialogue_first_visit[4]	\nFeel free to come on by anytime you\nfind the games \0051\0015too hard to play \0054\0018or\nyou just need to take a break.	"这里嘛，就是所谓的咖啡店啦。
-游戏打得不太顺的时候，
-或者累了的时候，都可以来坐坐哦。"	final	control codes need review
+data/scenes/cafe/dialogue.c:cafe_dialogue_first_visit[4]	data/scenes/cafe/dialogue.c	cafe_dialogue_first_visit[4]	\nFeel free to come on by anytime you\nfind the games \0051\0015too hard to play \0054\0018or\nyou just need to take a break.	\n这里嘛，就是所谓的咖啡店啦。\n游戏打得不太顺的时候，\n\0051\0015或者累了的时候，都可以来坐坐哦。\0054\0018	final	
 data/scenes/cafe/dialogue.c:cafe_dialogue_healing_with_music[0]	data/scenes/cafe/dialogue.c	cafe_dialogue_healing_with_music[0]	\nSo, when you're sad, what do\nyou do to cheer yourself up?\nMe, I listen to music.	"
 说起来，难过的时候
 你会做什么呢？
