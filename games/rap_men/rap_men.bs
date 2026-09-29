@@ -74,65 +74,67 @@ return
 
 .section .script.main
 @ Rap Men - Text
+@ 阶段 5 已校对：逐句保留原有的两次变色和结尾控制码，只替换其间的可见文字。
+@ TODO 未校对：中文强调范围、字宽和台词节拍仍需在 Rap Men 实机画面核验。
 
 text text_rap_men_sanji_desu_ka
-    .asciz ".b:1It's 3 PM, .b:0huh?.8:1"
+    .asciz ".b:1下午三点了.b:0吗？.8:1"
 endtext
 
 text text_rap_men_oyatsu_desu_ka
-    .asciz ".b:1It's snack time, .b:0huh?.8:1"
+    .asciz ".b:1该吃点心了.b:0吗？.8:1"
 endtext
 
 text text_rap_men_honto_desu_ka
-    .asciz ".b:1Maybe so, .b:0huh?.8:1"
+    .asciz ".b:1真的.b:0吗？.8:1"
 endtext
 
 text text_rap_men_wakarimasu_ka
-    .asciz ".b:1You get it now, .b:0huh?.8:1"
+    .asciz ".b:1明白了.b:0吗？.8:1"
 endtext
 
 text text_rap_men_oishii_kamo_ne
-    .asciz ".9:1Tasty snacks, .9:0ya feel me?.8:1"
+    .asciz ".9:1也许很好吃.9:0吧.8:1"
 endtext
 
 text text_rap_men_herushii_kamo_ne
-    .asciz ".9:1Healthy snacks, .9:0ya feel me?.8:1"
+    .asciz ".9:1也许很健康.9:0吧.8:1"
 endtext
 
 text text_rap_men_ore_no_sei_kamo_ne
-    .asciz ".9:1Might've been us, .9:0ya feel me?.8:1"
+    .asciz ".9:1也许是我的错.9:0吧.8:1"
 endtext
 
 text text_rap_men_sore_mo_sou_kamo_ne
-    .asciz ".9:1That's how it be, .9:0ya feel me?.8:1"
+    .asciz ".9:1也许真是那样.9:0吧.8:1"
 endtext
 
 text text_rap_men_tanoshii_kamo_ne
-    .asciz ".9:1Havin' fun, .9:0ya feel me?.8:1"
+    .asciz ".9:1也许会很开心.9:0吧.8:1"
 endtext
 
 text text_rap_men_oyatsu_wa_saikou
-    .asciz ".a:1Snacking is .a:0so AWESOME!.8:1"
+    .asciz ".a:1点心.a:0最棒啦——！！.8:1"
 endtext
 
 text text_rap_men_kibun_wa_saikou
-    .asciz ".a:1I feel .a:0so AWESOME!.8:1"
+    .asciz ".a:1心情.a:0最棒啦——！！.8:1"
 endtext
 
 text text_rap_men_ore_tte_saikou
-    .asciz ".a:1We are .a:0so AWESOME!.8:1"
+    .asciz ".a:1我.a:0最棒啦——！！.8:1"
 endtext
 
 text text_rap_men_kimi_tte_saikou
-    .asciz ".a:1You are .a:0so AWESOME!.8:0"
+    .asciz ".a:1你.a:0最棒啦——！！.8:0"
 endtext
 
 text text_rap_men_oyatsu_ga_nai_yo
-    .asciz ".a:1Wait a sec, we .a:0LOST SOME!.8:1"
+    .asciz ".a:1点心.a:0不见啦——！！.8:1"
 endtext
 
 text text_rap_men_ore_shiranai_yo
-    .asciz ".a:1Guess it's how we .a:0LOST SOME!.8:1"
+    .asciz ".a:1我.a:0不知道啦——！！.8:1"
 endtext
 
 

@@ -1977,21 +1977,21 @@ games/quiz_show/quiz_show_text.c:D_0805ee34	games/quiz_show/quiz_show_text.c	D_0
 games/quiz_show/quiz_show_text.c:D_0805ee5c	games/quiz_show/quiz_show_text.c	D_0805ee5c	When I say to, hit\nyour buttons to\nmatch my total.	在“请开始”之后，请敲出相同的次数。	final	
 games/quiz_show/quiz_show_text.c:D_0805ee8c	games/quiz_show/quiz_show_text.c	D_0805ee8c	 or , it doesn't\nmatter. Just focus\non the final total!\n	A 键和十字键，按哪个都 OK。	final	
 games/quiz_show/quiz_show_text.c:D_0805eebc	games/quiz_show/quiz_show_text.c	D_0805eebc	\nLet's begin.\n\n	那么，就来试试看吧。	final	
-games/rap_men/rap_men.bs:text_rap_men_herushii_kamo_ne	games/rap_men/rap_men.bs	text_rap_men_herushii_kamo_ne	.9:1Healthy snacks, .9:0ya feel me?.8:1	也许很健康吧	final	control codes need review
-games/rap_men/rap_men.bs:text_rap_men_honto_desu_ka	games/rap_men/rap_men.bs	text_rap_men_honto_desu_ka	.b:1Maybe so, .b:0huh?.8:1	真的吗？	final	control codes need review
-games/rap_men/rap_men.bs:text_rap_men_kibun_wa_saikou	games/rap_men/rap_men.bs	text_rap_men_kibun_wa_saikou	.a:1I feel .a:0so AWESOME!.8:1	心情最棒啦——！！	final	control codes need review
-games/rap_men/rap_men.bs:text_rap_men_kimi_tte_saikou	games/rap_men/rap_men.bs	text_rap_men_kimi_tte_saikou	.a:1You are .a:0so AWESOME!.8:0	你最棒啦——！！	final	control codes need review
-games/rap_men/rap_men.bs:text_rap_men_oishii_kamo_ne	games/rap_men/rap_men.bs	text_rap_men_oishii_kamo_ne	.9:1Tasty snacks, .9:0ya feel me?.8:1	也许很好吃吧	final	control codes need review
-games/rap_men/rap_men.bs:text_rap_men_ore_no_sei_kamo_ne	games/rap_men/rap_men.bs	text_rap_men_ore_no_sei_kamo_ne	.9:1Might've been us, .9:0ya feel me?.8:1	也许是我的错吧	final	control codes need review
-games/rap_men/rap_men.bs:text_rap_men_ore_shiranai_yo	games/rap_men/rap_men.bs	text_rap_men_ore_shiranai_yo	.a:1Guess it's how we .a:0LOST SOME!.8:1	我不知道啦——！！	final	control codes need review
-games/rap_men/rap_men.bs:text_rap_men_ore_tte_saikou	games/rap_men/rap_men.bs	text_rap_men_ore_tte_saikou	.a:1We are .a:0so AWESOME!.8:1	我最棒啦——！！	final	control codes need review
-games/rap_men/rap_men.bs:text_rap_men_oyatsu_desu_ka	games/rap_men/rap_men.bs	text_rap_men_oyatsu_desu_ka	.b:1It's snack time, .b:0huh?.8:1	该吃点心了吗？	final	control codes need review
-games/rap_men/rap_men.bs:text_rap_men_oyatsu_ga_nai_yo	games/rap_men/rap_men.bs	text_rap_men_oyatsu_ga_nai_yo	.a:1Wait a sec, we .a:0LOST SOME!.8:1	点心不见啦——！！	final	control codes need review
-games/rap_men/rap_men.bs:text_rap_men_oyatsu_wa_saikou	games/rap_men/rap_men.bs	text_rap_men_oyatsu_wa_saikou	.a:1Snacking is .a:0so AWESOME!.8:1	点心最棒啦——！！	final	control codes need review
-games/rap_men/rap_men.bs:text_rap_men_sanji_desu_ka	games/rap_men/rap_men.bs	text_rap_men_sanji_desu_ka	.b:1It's 3 PM, .b:0huh?.8:1	下午三点了吗？	final	control codes need review
-games/rap_men/rap_men.bs:text_rap_men_sore_mo_sou_kamo_ne	games/rap_men/rap_men.bs	text_rap_men_sore_mo_sou_kamo_ne	.9:1That's how it be, .9:0ya feel me?.8:1	也许真是那样吧	final	control codes need review
-games/rap_men/rap_men.bs:text_rap_men_tanoshii_kamo_ne	games/rap_men/rap_men.bs	text_rap_men_tanoshii_kamo_ne	.9:1Havin' fun, .9:0ya feel me?.8:1	也许会很开心吧	final	control codes need review
-games/rap_men/rap_men.bs:text_rap_men_wakarimasu_ka	games/rap_men/rap_men.bs	text_rap_men_wakarimasu_ka	.b:1You get it now, .b:0huh?.8:1	明白了吗？	final	control codes need review
+games/rap_men/rap_men.bs:text_rap_men_herushii_kamo_ne	games/rap_men/rap_men.bs	text_rap_men_herushii_kamo_ne	.9:1Healthy snacks, .9:0ya feel me?.8:1	.9:1也许很健康.9:0吧.8:1	final	
+games/rap_men/rap_men.bs:text_rap_men_honto_desu_ka	games/rap_men/rap_men.bs	text_rap_men_honto_desu_ka	.b:1Maybe so, .b:0huh?.8:1	.b:1真的.b:0吗？.8:1	final	
+games/rap_men/rap_men.bs:text_rap_men_kibun_wa_saikou	games/rap_men/rap_men.bs	text_rap_men_kibun_wa_saikou	.a:1I feel .a:0so AWESOME!.8:1	.a:1心情.a:0最棒啦——！！.8:1	final	
+games/rap_men/rap_men.bs:text_rap_men_kimi_tte_saikou	games/rap_men/rap_men.bs	text_rap_men_kimi_tte_saikou	.a:1You are .a:0so AWESOME!.8:0	.a:1你.a:0最棒啦——！！.8:0	final	
+games/rap_men/rap_men.bs:text_rap_men_oishii_kamo_ne	games/rap_men/rap_men.bs	text_rap_men_oishii_kamo_ne	.9:1Tasty snacks, .9:0ya feel me?.8:1	.9:1也许很好吃.9:0吧.8:1	final	
+games/rap_men/rap_men.bs:text_rap_men_ore_no_sei_kamo_ne	games/rap_men/rap_men.bs	text_rap_men_ore_no_sei_kamo_ne	.9:1Might've been us, .9:0ya feel me?.8:1	.9:1也许是我的错.9:0吧.8:1	final	
+games/rap_men/rap_men.bs:text_rap_men_ore_shiranai_yo	games/rap_men/rap_men.bs	text_rap_men_ore_shiranai_yo	.a:1Guess it's how we .a:0LOST SOME!.8:1	.a:1我.a:0不知道啦——！！.8:1	final	
+games/rap_men/rap_men.bs:text_rap_men_ore_tte_saikou	games/rap_men/rap_men.bs	text_rap_men_ore_tte_saikou	.a:1We are .a:0so AWESOME!.8:1	.a:1我.a:0最棒啦——！！.8:1	final	
+games/rap_men/rap_men.bs:text_rap_men_oyatsu_desu_ka	games/rap_men/rap_men.bs	text_rap_men_oyatsu_desu_ka	.b:1It's snack time, .b:0huh?.8:1	.b:1该吃点心了.b:0吗？.8:1	final	
+games/rap_men/rap_men.bs:text_rap_men_oyatsu_ga_nai_yo	games/rap_men/rap_men.bs	text_rap_men_oyatsu_ga_nai_yo	.a:1Wait a sec, we .a:0LOST SOME!.8:1	.a:1点心.a:0不见啦——！！.8:1	final	
+games/rap_men/rap_men.bs:text_rap_men_oyatsu_wa_saikou	games/rap_men/rap_men.bs	text_rap_men_oyatsu_wa_saikou	.a:1Snacking is .a:0so AWESOME!.8:1	.a:1点心.a:0最棒啦——！！.8:1	final	
+games/rap_men/rap_men.bs:text_rap_men_sanji_desu_ka	games/rap_men/rap_men.bs	text_rap_men_sanji_desu_ka	.b:1It's 3 PM, .b:0huh?.8:1	.b:1下午三点了.b:0吗？.8:1	final	
+games/rap_men/rap_men.bs:text_rap_men_sore_mo_sou_kamo_ne	games/rap_men/rap_men.bs	text_rap_men_sore_mo_sou_kamo_ne	.9:1That's how it be, .9:0ya feel me?.8:1	.9:1也许真是那样.9:0吧.8:1	final	
+games/rap_men/rap_men.bs:text_rap_men_tanoshii_kamo_ne	games/rap_men/rap_men.bs	text_rap_men_tanoshii_kamo_ne	.9:1Havin' fun, .9:0ya feel me?.8:1	.9:1也许会很开心.9:0吧.8:1	final	
+games/rap_men/rap_men.bs:text_rap_men_wakarimasu_ka	games/rap_men/rap_men.bs	text_rap_men_wakarimasu_ka	.b:1You get it now, .b:0huh?.8:1	.b:1明白了.b:0吗？.8:1	final	
 games/rap_men/rap_men_text.c:D_0805e914	games/rap_men/rap_men_text.c	D_0805e914	"The \""huh?\"" lines were just confusing."	“……吗？”这段节奏还没跟上。	final	
 games/rap_men/rap_men_text.c:D_0805e938	games/rap_men/rap_men_text.c	D_0805e938	"The \""huh?\"" lines had some real groove!"	“……吗？”这段节奏跟得真准！	final	
 games/rap_men/rap_men_text.c:D_0805e960	games/rap_men/rap_men_text.c	D_0805e960	"I \""feel\"" like we could've done better."	“……吧”这段还有点生硬。	final	
@@ -2020,18 +2020,18 @@ games/rap_men/rap_men_text.c:D_0805ebc4	games/rap_men/rap_men_text.c	D_0805ebc4	
 games/rap_men/rap_men_text.c:D_0805ebf4	games/rap_men/rap_men_text.c	D_0805ebf4	Give it a listen...	这个也先听一遍吧	final	
 games/rap_men/rap_men_text.c:D_0805ec0c	games/rap_men/rap_men_text.c	D_0805ec0c	Now follow it up!	好，来吧	final	
 games/rap_men/rap_men_text.c:D_0805ec24	games/rap_men/rap_men_text.c	D_0805ec24	"OK! You're pretty \"".aawesome.8\"" at this!"	OK！真是棒极啦！	final	control codes need review
-games/rap_men/rap_women.bs:text_rap_women_aketeii_kamo_ne	games/rap_men/rap_women.bs	text_rap_women_aketeii_kamo_ne	.9:1Open 'em up, .9:0ya feel me?.8:1	也许可以打开吧	final	control codes need review
-games/rap_men/rap_women.bs:text_rap_women_amakute_saikou	games/rap_men/rap_women.bs	text_rap_women_amakute_saikou	.a:1Sweets are .a:0so AWESOME!.8:1	甜甜的，最棒啦——！！	final	control codes need review
-games/rap_men/rap_women.bs:text_rap_women_betsubara_saikou	games/rap_men/rap_women.bs	text_rap_women_betsubara_saikou	.a:1Cakes are .a:0so AWESOME!.8:1	甜点胃最棒啦——！！	final	control codes need review
-games/rap_men/rap_women.bs:text_rap_women_dare_ni_mo_naisho	games/rap_men/rap_women.bs	text_rap_women_dare_ni_mo_naisho	.a:1Tell 'em we are .a:0LOATHSOME!.8:1	谁都别告诉呀——！！	final	control codes need review
-games/rap_men/rap_women.bs:text_rap_women_juji_desu_ka	games/rap_men/rap_women.bs	text_rap_women_juji_desu_ka	.b:1It's 10 AM, .b:0huh?.8:1	上午十点了吗？	final	control codes need review
-games/rap_men/rap_women.bs:text_rap_women_kare_ni_wa_naisho	games/rap_men/rap_women.bs	text_rap_women_kare_ni_wa_naisho	.a:1Clueless that we .a:0STOLE 'EM!.8:1	别告诉他呀——！！	final	control codes need review
-games/rap_men/rap_women.bs:text_rap_women_kare_no_oyatsu_da_ne	games/rap_men/rap_women.bs	text_rap_women_kare_no_oyatsu_da_ne	.9:1These are all their snacks,.9:0 ya see?.8:1	那是他的点心吧	final	control codes need review
-games/rap_men/rap_women.bs:text_rap_women_kibun_wa_saikou	games/rap_men/rap_women.bs	text_rap_women_kibun_wa_saikou	.a:1I feel .a:0so AWESOME!.8:1	心情最棒啦——！！	final	control codes need review
-games/rap_men/rap_women.bs:text_rap_women_naisho_desu_ka	games/rap_men/rap_women.bs	text_rap_women_naisho_desu_ka	.b:1Who's to know, .b:0huh?.8:1	要保密吗？	final	control codes need review
-games/rap_men/rap_women.bs:text_rap_women_oyatsu_desu_ka	games/rap_men/rap_women.bs	text_rap_women_oyatsu_desu_ka	.b:1It's snack time, .b:0huh?.8:1	该吃点心了吗？	final	control codes need review
-games/rap_men/rap_women.bs:text_rap_women_oyatsu_wa_saikou	games/rap_men/rap_women.bs	text_rap_women_oyatsu_wa_saikou	.a:1Snacking is .a:0so AWESOME!.8:1	点心最棒啦——！！	final	control codes need review
-games/rap_men/rap_women.bs:text_rap_women_tabeteii_kamo_ne	games/rap_men/rap_women.bs	text_rap_women_tabeteii_kamo_ne	.9:1Eat 'em all up, .9:0ya feel me?.8:1	也许可以吃吧	final	control codes need review
+games/rap_men/rap_women.bs:text_rap_women_aketeii_kamo_ne	games/rap_men/rap_women.bs	text_rap_women_aketeii_kamo_ne	.9:1Open 'em up, .9:0ya feel me?.8:1	.9:1也许可以打开.9:0吧.8:1	final	
+games/rap_men/rap_women.bs:text_rap_women_amakute_saikou	games/rap_men/rap_women.bs	text_rap_women_amakute_saikou	.a:1Sweets are .a:0so AWESOME!.8:1	.a:1甜甜的，.a:0最棒啦——！！.8:1	final	
+games/rap_men/rap_women.bs:text_rap_women_betsubara_saikou	games/rap_men/rap_women.bs	text_rap_women_betsubara_saikou	.a:1Cakes are .a:0so AWESOME!.8:1	.a:1甜点胃.a:0最棒啦——！！.8:1	final	
+games/rap_men/rap_women.bs:text_rap_women_dare_ni_mo_naisho	games/rap_men/rap_women.bs	text_rap_women_dare_ni_mo_naisho	.a:1Tell 'em we are .a:0LOATHSOME!.8:1	.a:1谁都别告诉.a:0呀——！！.8:1	final	
+games/rap_men/rap_women.bs:text_rap_women_juji_desu_ka	games/rap_men/rap_women.bs	text_rap_women_juji_desu_ka	.b:1It's 10 AM, .b:0huh?.8:1	.b:1上午十点了.b:0吗？.8:1	final	
+games/rap_men/rap_women.bs:text_rap_women_kare_ni_wa_naisho	games/rap_men/rap_women.bs	text_rap_women_kare_ni_wa_naisho	.a:1Clueless that we .a:0STOLE 'EM!.8:1	.a:1别告诉他.a:0呀——！！.8:1	final	
+games/rap_men/rap_women.bs:text_rap_women_kare_no_oyatsu_da_ne	games/rap_men/rap_women.bs	text_rap_women_kare_no_oyatsu_da_ne	.9:1These are all their snacks,.9:0 ya see?.8:1	.9:1那是他的点心.9:0吧.8:1	final	
+games/rap_men/rap_women.bs:text_rap_women_kibun_wa_saikou	games/rap_men/rap_women.bs	text_rap_women_kibun_wa_saikou	.a:1I feel .a:0so AWESOME!.8:1	.a:1心情.a:0最棒啦——！！.8:1	final	
+games/rap_men/rap_women.bs:text_rap_women_naisho_desu_ka	games/rap_men/rap_women.bs	text_rap_women_naisho_desu_ka	.b:1Who's to know, .b:0huh?.8:1	.b:1要保密.b:0吗？.8:1	final	
+games/rap_men/rap_women.bs:text_rap_women_oyatsu_desu_ka	games/rap_men/rap_women.bs	text_rap_women_oyatsu_desu_ka	.b:1It's snack time, .b:0huh?.8:1	.b:1该吃点心了.b:0吗？.8:1	final	
+games/rap_men/rap_women.bs:text_rap_women_oyatsu_wa_saikou	games/rap_men/rap_women.bs	text_rap_women_oyatsu_wa_saikou	.a:1Snacking is .a:0so AWESOME!.8:1	.a:1点心.a:0最棒啦——！！.8:1	final	
+games/rap_men/rap_women.bs:text_rap_women_tabeteii_kamo_ne	games/rap_men/rap_women.bs	text_rap_women_tabeteii_kamo_ne	.9:1Eat 'em all up, .9:0ya feel me?.8:1	.9:1也许可以吃.9:0吧.8:1	final	
 games/rap_men/rap_women_text.c:D_08067c80	games/rap_men/rap_women_text.c	D_08067c80	"The \""huh?\"" lines were baffling."	“……吗？”这段节奏还没跟上。	final	
 games/rap_men/rap_women_text.c:D_08067ca4	games/rap_men/rap_women_text.c	D_08067ca4	"The \""huh?\"" lines were really rhythmical!"	“……吗？”这段节奏跟得真准！	final	
 games/rap_men/rap_women_text.c:D_08067ccc	games/rap_men/rap_women_text.c	D_08067ccc	"Your \""feel\"" for this is subpar."	“……吧”这段还有点生硬。	final	

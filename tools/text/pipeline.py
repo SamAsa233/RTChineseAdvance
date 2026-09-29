@@ -758,6 +758,16 @@ def fireworks_paced_text_installed(source, original, key, translation):
             and tuple(part for _, part in current) == expected)
 
 
+def rap_lyrics_installed(source, original, translation):
+    """按原版变色码核对说唱歌词，并逐字核对已校对的可见中文。"""
+    # 每句只有起始色、强调色和结尾状态三组码；顺序错了会改变逐拍高亮。
+    controls = re.compile(r'\.[89ab]:[01]')
+    baseline = controls.findall(original)
+    return (len(baseline) == 3 and controls.findall(source) == baseline
+            and CONTROL.findall(source) == CONTROL.findall(original)
+            and controls.sub('', source) == translation)
+
+
 def extract():
     output, unresolved = [], []
     previous = {}
@@ -953,6 +963,16 @@ def extract():
                     output.append(old)
                 continue
             source = groups[index][2]
+            if (archive_name in ('games/rap_men/rap_men_lyrics.json',
+                                 'games/rap_men/rap_women_lyrics.json')
+                    and path.suffix == '.bs' and row['stage'] == 5):
+                relative = path.relative_to(ROOT).as_posix()
+                saved = previous.get(f'{relative}:{key}')
+                # 只在三组原版变色码仍齐全且可见中文等于阶段 5 译文时解除控制码待办。
+                if saved and rap_lyrics_installed(source, saved['source'], row['translation']):
+                    output.append(dict(id=f'{relative}:{key}', file=relative, key=key,
+                                       source=saved['source'], target=source, status='final', note=''))
+                    continue
             if (archive_name == 'games/fireworks/fireworks_text.json'
                     and key in FIREWORKS_PACED_KEYS and row['stage'] == 5):
                 relative = path.relative_to(ROOT).as_posix()

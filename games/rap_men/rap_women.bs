@@ -53,53 +53,55 @@ return
 
 .section .script.main
 @ Rap Women - Text
+@ 阶段 5 已校对：逐句保留原有的两次变色和结尾控制码，只替换其间的可见文字。
+@ TODO 未校对：中文强调范围、字宽和台词节拍仍需在 Rap Women 实机画面核验。
 
 text text_rap_women_juji_desu_ka
-    .asciz ".b:1It's 10 AM, .b:0huh?.8:1"
+    .asciz ".b:1上午十点了.b:0吗？.8:1"
 endtext
 
 text text_rap_women_oyatsu_desu_ka
-    .asciz ".b:1It's snack time, .b:0huh?.8:1"
+    .asciz ".b:1该吃点心了.b:0吗？.8:1"
 endtext
 
 text text_rap_women_naisho_desu_ka
-    .asciz ".b:1Who's to know, .b:0huh?.8:1"
+    .asciz ".b:1要保密.b:0吗？.8:1"
 endtext
 
 text text_rap_women_kare_no_oyatsu_da_ne
-    .asciz ".9:1These are all their snacks,.9:0 ya see?.8:1"
+    .asciz ".9:1那是他的点心.9:0吧.8:1"
 endtext
 
 text text_rap_women_tabeteii_kamo_ne
-    .asciz ".9:1Eat 'em all up, .9:0ya feel me?.8:1"
+    .asciz ".9:1也许可以吃.9:0吧.8:1"
 endtext
 
 text text_rap_women_aketeii_kamo_ne
-    .asciz ".9:1Open 'em up, .9:0ya feel me?.8:1"
+    .asciz ".9:1也许可以打开.9:0吧.8:1"
 endtext
 
 text text_rap_women_oyatsu_wa_saikou
-    .asciz ".a:1Snacking is .a:0so AWESOME!.8:1"
+    .asciz ".a:1点心.a:0最棒啦——！！.8:1"
 endtext
 
 text text_rap_women_kibun_wa_saikou
-    .asciz ".a:1I feel .a:0so AWESOME!.8:1"
+    .asciz ".a:1心情.a:0最棒啦——！！.8:1"
 endtext
 
 text text_rap_women_amakute_saikou
-    .asciz ".a:1Sweets are .a:0so AWESOME!.8:1"
+    .asciz ".a:1甜甜的，.a:0最棒啦——！！.8:1"
 endtext
 
 text text_rap_women_betsubara_saikou
-    .asciz ".a:1Cakes are .a:0so AWESOME!.8:1"
+    .asciz ".a:1甜点胃.a:0最棒啦——！！.8:1"
 endtext
 
 text text_rap_women_kare_ni_wa_naisho
-    .asciz ".a:1Clueless that we .a:0STOLE 'EM!.8:1"
+    .asciz ".a:1别告诉他.a:0呀——！！.8:1"
 endtext
 
 text text_rap_women_dare_ni_mo_naisho
-    .asciz ".a:1Tell 'em we are .a:0LOATHSOME!.8:1"
+    .asciz ".a:1谁都别告诉.a:0呀——！！.8:1"
 endtext
 
 
