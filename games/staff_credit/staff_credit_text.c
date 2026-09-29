@@ -8,8 +8,6 @@
 /* Script Data - Staff Credits */
 
 
-/* 汉化修复：\002 是片尾打印控制字节，后面的 3 是样式参数；
- * 这些职务标题保持单反斜杠，并用相邻字面量拼接中文，不能写成 \\0023。 */
 const char D_08069a48[] = "\0023" "制作人员";
 
 const char D_08069a58[] = "\0023" "制作人";
@@ -100,48 +98,37 @@ const char D_08069c3c[] = "髙田 成雄";
 
 const char D_08069c48[] = "西川 大輔";
 
-// TODO 未校对：D_08069c54 译文包未到 stage 5，暂留原文。
-const char D_08069c54[] = "R. Sugo";
+const char D_08069c54[] = "西郷 すご";
 
 const char D_08069c5c[] = "足立 真吾";
 
-// TODO 未校对：D_08069c68 译文包未到 stage 5，暂留原文。
-const char D_08069c68[] = "H. Sakaguchi";
+const char D_08069c68[] = "坂口 さかぐち";
 
 const char D_08069c74[] = "渡辺 紀之";
 
-// TODO 未校对：D_08069c80 译文包未到 stage 5，暂留原文。
-const char D_08069c80[] = "H. Matsuda";
+const char D_08069c80[] = "松田 まつだ";
 
-// TODO 未校对：D_08069c8c 译文包未到 stage 5，暂留原文。
-const char D_08069c8c[] = "D. Morita";
+const char D_08069c8c[] = "森田 もりた";
 
-// TODO 未校对：D_08069c98 译文包未到 stage 5，暂留原文。
-const char D_08069c98[] = "K. Umeda";
+const char D_08069c98[] = "梅田 うめだ";
 
-// TODO 未校对：D_08069ca0 译文包未到 stage 5，暂留原文。
-const char D_08069ca0[] = "Y. Nakai";
+const char D_08069ca0[] = "中井 なかい";
 
 const char D_08069ca8[] = "藤川 容子";
 
-// TODO 未校对：D_08069cb4 译文包未到 stage 5，暂留原文。
-const char D_08069cb4[] = "K. Nishimoto";
+const char D_08069cb4[] = "西本 にしもと";
 
-// TODO 未校对：D_08069cc0 译文包未到 stage 5，暂留原文。
-const char D_08069cc0[] = "T. Akiho";
+const char D_08069cc0[] = "海保 あきほ";
 
 const char D_08069cc8[] = "寺井 准";
 
-// TODO 未校对：D_08069cd0 译文包未到 stage 5，暂留原文。
-const char D_08069cd0[] = "A. Shimizubata";
+const char D_08069cd0[] = "清水端 しみずばた";
 
-// TODO 未校对：D_08069ce0 译文包未到 stage 5，暂留原文。
-const char D_08069ce0[] = "Y. Yamashita";
+const char D_08069ce0[] = "山下 やました";
 
 const char D_08069cec[] = "\0023" "特别鸣谢";
 
-// TODO 未校对：D_08069cfc 译文包未到 stage 5，暂留原文。
-const char D_08069cfc[] = "Y. Kuratsune";
+const char D_08069cfc[] = "鞍常 くらつね";
 
 const char D_08069d08[] = "改元 竜太";
 
@@ -161,30 +148,31 @@ const char D_08069d5c[] = "剣持 あゆち";
 
 const char D_08069d68[] = "中野 ひとみ";
 
-const char D_08069d74[] = "\0023" "还有你";
+const char D_08069d74[] = "\0023" "还有你！";
 
 // 阶段 5 已校对：原版职务标题的显示前缀不动，补回空缺的“执行”。
 // TODO 未校对：与下一行“制作人”的片尾职务布局仍需实机核验。
-const char D_08069d7c[] = "\0023" "执行";
+const char D_08069d7c[] = "";
 
-const char D_08069d88[] = "\0023" "制作人";
+const char D_08069d88[] = "\0023" "执行制作人";
 
 const char D_08069d98[] = "岩田 聡";
 
-// TODO 未校对：D_08069da0 译文包未到 stage 5，暂留原文。
-const char D_08069da0[] = "S. Terai";
+const char D_08069da0[] = "寺井 てらい";
 
 const char D_08069da8[] = "";
 
 const char D_08069dac[] = "(C)2006 Nintendo/J.P.ROOM";
 
 const char D_08069dc8[] =
+    "\n"    
     "辛苦了。";
 
 const char D_08069ddc[] =
     "你真的很努力呢！\n"
     "你的节奏感要是\n"
-    "变得更好了，我会很开心的。\n";
+    "变得更好了，\n"
+    "我会很开心的。";
 
 const char D_08069e24[] =
     "已经通关的游戏，\n"
@@ -199,15 +187,18 @@ const char D_08069e78[] =
     "制作人员吧。";
 
 const char D_08069ed4[] =
+    "\n"
     "那么，请看吧〜！";
 
 const char D_08069ee8[] =
+    "\n"
     "你好呀！";
 
 const char D_08069ef8[] =
     "还在加油吗？\n"
     "你的节奏感要是\n"
-    "变得更好了，我会很开心的。\n";
+    "变得更好了，\n"
+    "我会很开心的。";
 
 const char D_08069f40[] =
     "已经通关的游戏，\n"
@@ -222,5 +213,6 @@ const char D_08069f90[] =
     "又在做什么游戏呢…";
 
 const char D_08069fe4[] =
+    "\n"
     "好了，先不说这个。\n"
     "那么，请看吧〜！";
