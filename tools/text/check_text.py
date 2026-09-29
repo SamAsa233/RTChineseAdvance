@@ -71,6 +71,50 @@ def layout(row):
     return None
 
 
+def diagnosis_page_errors(row, fonts):
+    """确认 23 页诊断正文不会因断行改变页码位置。"""
+    raw_lines = row['target'].split(r'\n')
+    if raw_lines and raw_lines[-1] == '':
+        raw_lines.pop()
+    problems = []
+    if len(raw_lines) != 23 * 9:
+        return [f"{row['id']}: expected 207 explicit lines, got {len(raw_lines)}"]
+    footers = [display_text(line).strip() for line in raw_lines[8::9]]
+    expected = [f'-{page}-' for page in range(1, 24)]
+    if footers != expected:
+        problems.append(f"{row['id']}: page footers are not on every ninth line")
+
+    # 控制码会在同一行中切换字号；逐段计算，避免用单一字号低估标题宽度。
+    font_size = 'small'
+    for line_number, raw_line in enumerate(raw_lines, 1):
+        width = 0
+        last = 0
+        has_glyph = False
+        for match in CONTROL_TOKEN.finditer(raw_line):
+            segment = display_text(raw_line[last:match.start()])
+            for ch in segment:
+                width += glyph_width(fonts[font_size], ord(ch))
+                if has_glyph:
+                    width += SPACING[font_size]
+                has_glyph = True
+            token = match.group(0)
+            if token == r'\001s':
+                font_size = 'small'
+            elif token == r'\001m':
+                font_size = 'medium'
+            elif token == r'\001l':
+                font_size = 'large'
+            last = match.end()
+        for ch in display_text(raw_line[last:]):
+            width += glyph_width(fonts[font_size], ord(ch))
+            if has_glyph:
+                width += SPACING[font_size]
+            has_glyph = True
+        if width > 230:
+            problems.append(f"{row['id']}: explicit line {line_number} is {width}/230px")
+    return problems
+
+
 def main():
     with TABLE.open(encoding='utf-8', newline='') as stream:
         rows = list(csv.DictReader(stream, delimiter='\t'))
@@ -100,6 +144,9 @@ def main():
                 source_tokens = [token for token in source_tokens if token != '.A']
             if Counter(source_tokens) != Counter(CONTROL_TOKEN.findall(row['target'])):
                 errors.append(f"{row['id']}: control tokens differ")
+        if row['key'] == 'reading_diagnosis' and not row['note']:
+            # 该文章依靠固定九行分页；任何超宽自动折行都会使后续页码错位。
+            errors.extend(diagnosis_page_errors(row, fonts))
         bounds = layout(row)
         if bounds and not row['note']:
             width, max_lines, size = bounds

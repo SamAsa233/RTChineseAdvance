@@ -848,6 +848,7 @@ def reading_body(text, key):
     """按文章枚举名读取没有同名 C 变量的资料室 BODY。"""
     markers = {
         'reading_formula_content': 'RHYTHM_FORMULA',
+        'reading_diagnosis': 'RHYTHM_DIAGNOSIS',
         'reading_poem': 'RHYTHM_POEM',
     }
     marker = markers.get(key)
@@ -870,11 +871,26 @@ def reading_body_installed(text, key, original, translation):
     baseline_controls = CONTROL_TOKEN.findall(original)
     if current_controls != baseline_controls:
         return False
-    visible_lines = lambda raw: [line.strip() for line in
-                                 CONTROL_TOKEN.sub('', raw).replace(r'\n', '\n').splitlines()
+    if translation == current:
+        # extract 已把带控制码的完整 BODY 写回译文表；后续 check 应逐字确认正文没有再被改动。
+        return True
+    visible_text = lambda raw: CONTROL_TOKEN.sub('', raw).replace(r'\n', '\n')
+    all_current_lines = visible_text(current).splitlines()
+    visible_lines = lambda raw: [line.strip() for line in visible_text(raw).splitlines()
                                  if line.strip()]
     current_lines = visible_lines(current)
     translated_lines = visible_lines(translation)
+    if key == 'reading_diagnosis':
+        # 阅读器固定每页 9 行；页码必须继续落在第 9 行，否则后续题号会整体错页。
+        if (len(all_current_lines) != 23 * 9
+                or [line.strip() for line in all_current_lines[8::9]]
+                != [f'-{page}-' for page in range(1, 24)]):
+            return False
+        if not current_lines or current_lines[0] != '节奏感类型测试':
+            return False
+        # 正文标题复用已校对标题键；其余文字允许为适配 230 像素宽度重新断行。
+        compact = lambda lines: re.sub(r'\s+', '', ''.join(lines))
+        return compact(current_lines[1:]) == compact(translated_lines)
     if key == 'reading_formula_content':
         # 公式译文覆盖整篇；忽略排版空行和行尾空格后应逐行完全一致。
         return current_lines == translated_lines
@@ -1060,7 +1076,7 @@ def extract():
             continue
         text = path.read_text(encoding='utf-8')
         if (archive_name == 'data/data_room/reading_material.inc.json'
-                and members[0][0] in ('reading_formula_content', 'reading_poem')):
+                and members[0][0] in ('reading_formula_content', 'reading_diagnosis', 'reading_poem')):
             # 资料室正文没有同名 C 变量；专用核对器按文章标记读取 BODY。
             groups = [(0, 0, '')]
         else:
@@ -1094,7 +1110,7 @@ def extract():
                 continue
             source = groups[index][2]
             if (archive_name == 'data/data_room/reading_material.inc.json'
-                    and key in ('reading_formula_content', 'reading_poem')
+                    and key in ('reading_formula_content', 'reading_diagnosis', 'reading_poem')
                     and row['stage'] == 5):
                 relative = path.relative_to(ROOT).as_posix()
                 saved = previous.get(f'{relative}:{key}')
@@ -1331,8 +1347,8 @@ def import_text(check, only_final):
                     problems.append(row['id'] + ': reviewed option text changed')
                 continue
             if (filename == 'data/scenes/data_room/reading_material.inc.c'
-                    and key in ('reading_formula_content', 'reading_poem')):
-                # 这两篇正文没有同名 C 变量，按文章标记核对，避免通用导入器误改相邻文章。
+                    and key in ('reading_formula_content', 'reading_diagnosis', 'reading_poem')):
+                # 这三篇正文没有同名 C 变量，按文章标记核对，避免通用导入器误改相邻文章。
                 if not reading_body_installed(text, key, row['source'], row['target']):
                     problems.append(row['id'] + ': reviewed reading body changed')
                 continue
