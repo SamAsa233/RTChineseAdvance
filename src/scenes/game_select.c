@@ -292,12 +292,20 @@ void start_campaign_notice(s32 id) {
         strcat(string, "即可获赠：\n");
         strcat(string, get_campaign_gift_title(id, FALSE)); // received as a present!!
     }
-    
-    if(isSong) {
-        strcat(string, get_campaign_gift_title(id, FALSE));
-        strcat(string, "的音乐\n");
-        strcat(string, "就送给你！\n");
+    else if(isSong) {
+        if(isSpecialSong) {
+            strcat(string, "歌曲「");
+            strcat(string, get_campaign_gift_title(id, FALSE));
+            strcat(string, "」就送给你！");
+        }
+        else {
+            strcat(string, "「");
+            strcat(string, get_campaign_gift_title(id, FALSE));
+            strcat(string, "」的音乐\n");
+            strcat(string, "就送给你！");
+        }
     } 
+
     text_printer_set_string(notice->printer, string);
 
     sprite_set_visible(gSpriteHandler, gGameSelect->selectionBorderSprite, FALSE);
