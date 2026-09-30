@@ -7,7 +7,7 @@ struct LevelData level_data_table[] = {
         /* Entry Scene   */ &scene_karate_man,
         /* Level Name    */ "空手道家",
         /* Level Desc.   */ "向飞来的东西\n"
-                            "按" CHAR_A_BUTTON_UTF8 "出拳\n"
+                            "按"CHAR_A_BUTTON_UTF8"出拳\n"
                             "很常见的游戏？\n"
                             "……也许吧。",
         /* Level Icon    */ 8,
@@ -23,7 +23,7 @@ struct LevelData level_data_table[] = {
         /* Entry Scene   */ &scene_karate_man_2,
         /* Level Name    */ "空手道家 2",
         /* Level Desc.   */ "向飞来的东西\n"
-                            "按" CHAR_A_BUTTON_UTF8 "出拳！\n"
+                            "按"CHAR_A_BUTTON_UTF8"出拳！\n"
                             "不过，这速度\n"
                             "有点古怪哦。",
         /* Level Icon    */ 0,
@@ -385,7 +385,7 @@ struct LevelData level_data_table[] = {
         /* Level Desc.   */ "现在开始行进。\n"
                             "擅自行动可是会\n"
                             "毁掉整个队伍的！\n"
-                            "好好努力吧。",
+							"好好努力吧。",
         /* Level Icon    */ 21,
         /* Level Type    */ LEVEL_TYPE_GAME,
         /* Epilogue GFX  */ epilogue_marching_orders_gfx_tables,
@@ -397,7 +397,7 @@ struct LevelData level_data_table[] = {
     },
     /* MARCHING_ORDERS_2 */ {
         /* Entry Scene   */ &scene_marching_orders_2,
-        /* Level Name    */ "行军２",
+        /* Level Name    */ "行军 2",
         /* Level Desc.   */ "现在开始行进。\n"
                             "这次的动作\n"
                             "有点复杂！\n"
@@ -424,7 +424,7 @@ struct LevelData level_data_table[] = {
         /* Epilogue Text */ {
             /* TRY_AGAIN */ "这种我不要啦〜，好可怕呀〜！",
             /* OK        */ "要是能开出更多花，我会更开心呀〜。",
-            /* SUPERB    */ "哇ー！我已经不寂寞啦！"
+            /* SUPERB    */ "哇——！我已经不寂寞啦！"
         }
     },
     /* BUNNY_HOP */ {
@@ -447,7 +447,6 @@ struct LevelData level_data_table[] = {
     /* FIREWORKS */ {
         /* Entry Scene   */ &scene_fireworks,
         /* Level Name    */ "烟火",
-        // 阶段 5 已校对 level_hanabi_1_desc；四行均小于 104 像素并保留地区分支。
         /* Level Desc.   */ "说到夏天嘛，\n"
                             "果然还是烟火吧？\n"
                             "就让它绚丽多彩地\n"
@@ -482,10 +481,11 @@ struct LevelData level_data_table[] = {
     },
     /* POWER_CALLIGRAPHY_2 */ { // this still kills me lmao
         /* Entry Scene   */ &scene_power_calligraphy,
-        /* Level Name    */ "节奏书法２",
-        /* Level Desc.   */ "要用毛笔来写日文。\n"
-                            "而你负责的，\n"
-                            "只有最精彩的部分。",
+        /* Level Name    */ "节奏书法 2",
+        /* Level Desc.   */ "被捣蛋鬼偷走了\n"
+                            "\n"
+                            "\n"
+                            "",
         /* Level Icon    */ 28,
         /* Level Type    */ LEVEL_TYPE_GAME,
         /* Epilogue GFX  */ epilogue_power_calligraphy_2_gfx_tables,
@@ -499,7 +499,6 @@ struct LevelData level_data_table[] = {
     /* TOSS_BOYS */ {
         /* Entry Scene   */ &scene_toss_boys,
         /* Level Name    */ "传球少年",
-        // 阶段 5 已校对 level_toss_boys_1_desc；原版把第二行分为英式/美式拼写。
         /* Level Desc.   */ "感情超好的三人组，\n"
                             #ifdef PARADISE
                             "一边互相喊话，\n"
@@ -517,7 +516,6 @@ struct LevelData level_data_table[] = {
             #else
             /* TRY_AGAIN */ "完全不行啦〜！",
             #endif
-            // 阶段 5 已校对 level_toss_boys_1_result_1～3；地区双分支都要替换。
             /* OK        */ "你肯定还能做得更好！",
             #ifdef PARADISE
             /* SUPERB    */ "目标是拿下传球世界锦标赛冠军——！！"
@@ -528,8 +526,7 @@ struct LevelData level_data_table[] = {
     },
     /* TOSS_BOYS_2 */ {
         /* Entry Scene   */ &scene_toss_boys_2,
-        /* Level Name    */ "传球少年２",
-        // 阶段 5 已校对 level_toss_boys_2_desc；日文原文与第一关相同，沿用同一译文。
+        /* Level Name    */ "传球少年 2",
         /* Level Desc.   */ "感情超好的三人组，\n"
                             #ifdef PARADISE
                             "一边互相喊话，\n"
@@ -544,7 +541,6 @@ struct LevelData level_data_table[] = {
         /* Epilogue Text */ {
             /* TRY_AGAIN */ "惨兮兮啦〜！",
             /* OK        */ "怎么能在这里结束！",
-            // 阶段 5 已校对 level_toss_boys_2_result_2/3；保留双地区完成评价分支。
             #ifdef PARADISE
             /* SUPERB    */ "最强阵容诞生啦ー！！"
             #else
@@ -597,7 +593,7 @@ struct LevelData level_data_table[] = {
         /* Epilogue Text */ {
             /* TRY_AGAIN */ "客人们都生气了呢…",
             /* OK        */ "我们可不是只有这点水平…",
-            /* SUPERB    */ "太好啦！！ 客人们玩得很开心耶ー！！"
+            /* SUPERB    */ "太好啦！！ 客人们玩得很开心耶——！！"
         }
     },
     /* SPACE_DANCE */ {
@@ -610,7 +606,7 @@ struct LevelData level_data_table[] = {
         /* Level Type    */ LEVEL_TYPE_GAME,
         /* Epilogue GFX  */ epilogue_space_dance_gfx_tables,
         /* Epilogue Text */ {
-            /* TRY_AGAIN */ "黑、黑洞来啦ー！！",
+            /* TRY_AGAIN */ "黑、黑洞来啦——！！",
             /* OK        */ "真想像那颗星星一样闪闪发亮呀…",
             /* SUPERB    */ "我们就是太空超级巨星！！"
         }
@@ -626,7 +622,7 @@ struct LevelData level_data_table[] = {
         /* Level Type    */ LEVEL_TYPE_GAME,
         /* Epilogue GFX  */ epilogue_cosmic_dance_gfx_tables,
         /* Epilogue Text */ {
-            /* TRY_AGAIN */ "完、完蛋啦ー！！",
+            /* TRY_AGAIN */ "完、完蛋啦——！！",
             /* OK        */ "你们就只有这点本事吗？",
             /* SUPERB    */ "我们可是超级宇宙明星啊！！"
         },
@@ -637,7 +633,7 @@ struct LevelData level_data_table[] = {
         /* Level Name    */ "饶舌男",
         /* Level Desc.   */ "一对超酷的搭档\n"
                             "登场啦！\n"
-                            "火热的 Rap\n"
+                            "火热的\n"
                             "让人兴奋到不行！",
         /* Level Icon    */ 42,
         /* Level Type    */ LEVEL_TYPE_GAME,
@@ -645,7 +641,7 @@ struct LevelData level_data_table[] = {
         /* Epilogue Text */ {
             /* TRY_AGAIN */ "我们这样也太土了吧…",
             /* OK        */ "啧。总觉得状态不太对啊。",
-            /* SUPERB    */ "以后也请多多关照啦ー！！"
+            /* SUPERB    */ "以后也请多多关照啦——！！"
         }
     },
     /* RAP_WOMEN */ {
@@ -661,7 +657,7 @@ struct LevelData level_data_table[] = {
         /* Epilogue Text */ {
             /* TRY_AGAIN */ "不是这种感觉啦…",
             /* OK        */ "总觉得还是差了那么一点点…！",
-            /* SUPERB    */ "对对对，就是这个就是这个啦ー！！耶ー咿！"
+            /* SUPERB    */ "对对对，就是这个就是这个啦——！！耶——咿！"
         },
         /* Level Flags   */ LEVEL_DATA_FLAG_NO_PRACTICE
     },
@@ -676,7 +672,6 @@ struct LevelData level_data_table[] = {
         /* Level Type    */ LEVEL_TYPE_GAME,
         /* Epilogue GFX  */ epilogue_quiz_show_gfx_tables,
         /* Epilogue Text */ {
-            // 阶段 5 已校对 level_quiz_1_result_1/2；英文地区差异不改变中文译文。
             /* TRY_AGAIN */ "嘛，也就这样吧。",
             #ifdef PARADISE
             /* OK        */ "为了下次，学习、学习……Zzz",
@@ -721,7 +716,7 @@ struct LevelData level_data_table[] = {
     },
     /* REMIX_1 */ {
         /* Entry Scene   */ &scene_remix_1,
-        /* Level Name    */ "Remix１",
+        /* Level Name    */ "Remix 1",
         /* Level Desc.   */ "想检验一下\n"
                             "你的实力吗？\n"
                             "让之前的经验\n"
@@ -738,7 +733,7 @@ struct LevelData level_data_table[] = {
     },
     /* REMIX_2 */ {
         /* Entry Scene   */ &scene_remix_2,
-        /* Level Name    */ "Remix２",
+        /* Level Name    */ "Remix 2",
         /* Level Desc.   */ "想检验一下\n"
                             "你的实力吗？\n"
                             "让之前的经验\n"
@@ -755,7 +750,7 @@ struct LevelData level_data_table[] = {
     },
     /* REMIX_3 */ {
         /* Entry Scene   */ &scene_remix_3,
-        /* Level Name    */ "Remix３",
+        /* Level Name    */ "Remix 3",
         /* Level Desc.   */ "想检验一下\n"
                             "你的实力吗？\n"
                             "让之前的经验\n"
@@ -766,13 +761,13 @@ struct LevelData level_data_table[] = {
         /* Epilogue Text */ {
             /* TRY_AGAIN */ "本次的爱意 ： 好像已经心碎了…",
             /* OK        */ "本次的爱意 ： 非常友好的感觉呢♪",
-            /* SUPERB    */ "本次的爱意 ： 甜甜蜜蜜—！！"
+            /* SUPERB    */ "本次的爱意 ： 甜甜蜜蜜——！！"
         },
         /* Level Flags   */ LEVEL_DATA_FLAG_NO_PRACTICE
     },
     /* REMIX_4 */ {
         /* Entry Scene   */ &scene_remix_4,
-        /* Level Name    */ "Remix４",
+        /* Level Name    */ "Remix 4",
         /* Level Desc.   */ "想检验一下\n"
                             "你的实力吗？\n"
                             "让之前的经验\n"
@@ -789,7 +784,7 @@ struct LevelData level_data_table[] = {
     },
     /* REMIX_5 */ {
         /* Entry Scene   */ &scene_remix_5,
-        /* Level Name    */ "Remix５",
+        /* Level Name    */ "Remix 5",
         /* Level Desc.   */ "想检验一下\n"
                             "你的实力吗？\n"
                             "让之前的经验\n"
@@ -806,7 +801,7 @@ struct LevelData level_data_table[] = {
     },
     /* REMIX_6 */ {
         /* Entry Scene   */ &scene_remix_6,
-        /* Level Name    */ "Remix６",
+        /* Level Name    */ "Remix 6",
         /* Level Desc.   */ "想检验一下\n"
                             "你的实力吗？\n"
                             "让之前的经验\n"
@@ -823,7 +818,7 @@ struct LevelData level_data_table[] = {
     },
     /* REMIX_7 */ {
         /* Entry Scene   */ &scene_remix_7,
-        /* Level Name    */ "Remix７",
+        /* Level Name    */ "Remix 7",
         /* Level Desc.   */ "想检验一下\n"
                             "你的实力吗？\n"
                             "让之前的经验\n"
@@ -840,7 +835,7 @@ struct LevelData level_data_table[] = {
     },
     /* REMIX_8 */ {
         /* Entry Scene   */ &scene_remix_8,
-        /* Level Name    */ "Remix８",
+        /* Level Name    */ "Remix 8",
         /* Level Desc.   */ "想检验一下\n"
                             "你的实力吗？\n"
                             "让之前的经验\n"
@@ -943,7 +938,7 @@ struct LevelData level_data_table[] = {
         /* Level Desc.   */ "要登台演出啦！\n"
                             "我觉得你的节奏感\n"
                             "已经很不错了，\n"
-                            "放轻松就好～ ",
+                            "放轻松就好～",
         /* Level Icon    */ 44,
         /* Level Type    */ LEVEL_TYPE_BONUS,
         /* Epilogue GFX  */ epilogue_drum_live_gfx_tables,
@@ -955,110 +950,87 @@ struct LevelData level_data_table[] = {
     },
     /* KARATE_MAN */ {
         /* Entry Scene   */ &scene_karate_man_extra,
-        // TODO 未校对：level_karate_extra 译文包未到 stage 5，暂留原文。
-        /* Level Name    */ "Karate Man",
-        // TODO 未校对：level_karate_extra_desc 译文包未到 stage 5，暂留原文。
-        /* Level Desc.   */ "We've increased the\n"
-                            "speed! Do your best,\n"
-                            "as we throw some more\n"
-                            "stuff for you to punch.",
+        /* Level Name    */ "空手道家",
+        /* Level Desc.   */ "向飞来的东西\n"
+                            "按"CHAR_A_BUTTON_UTF8"出拳！\n"
+                            "用干劲和气势\n"
+                            "把它们打飞吧！",
         /* Level Icon    */ 54,
         /* Level Type    */ LEVEL_TYPE_GAME,
         /* Epilogue GFX  */ epilogue_karate_man_extra_gfx_tables,
         /* Epilogue Text */ {
-            // TODO 未校对：level_karate_extra_result_1 译文包未到 stage 5，暂留原文。
-            /* TRY_AGAIN */ "The tournament didn't go so well...",
-            // TODO 未校对：level_karate_extra_result_2 译文包未到 stage 5，暂留原文。
-            /* OK        */ "I may not have won, but I did really well!",
-            // TODO 未校对：level_karate_extra_result_3 译文包未到 stage 5，暂留原文。
-            /* SUPERB    */ "I won the tournament and took home the gold!"
+            /* TRY_AGAIN */ "比赛当天表现不太行。",
+            /* OK        */ "比赛当天，感觉还挺不错的！",
+            /* SUPERB    */ "比赛当天夺冠了！！"
         },
         /* Level Flags   */ LEVEL_DATA_FLAG_IS_EXTRA | LEVEL_DATA_FLAG_NO_PRACTICE
     },
     /* RHYTHM_TWEEZERS */ {
         /* Entry Scene   */ &scene_rhythm_tweezers_extra,
-        // TODO 未校对：level_rhythm_datsu_extra 译文包未到 stage 5，暂留原文。
-        /* Level Name    */ "Rhythm Tweezers",
-        // TODO 未校对：level_rhythm_datsu_extra_desc 译文包未到 stage 5，暂留原文。
-        /* Level Desc.   */ "My roots are showing!\n"
-                            "Don't let the speed trip\n"
-                            "you up! Pluck them off!\n",
+        /* Level Name    */ "节奏脱毛",
+        /* Level Desc.   */ "那讨厌的“毛”\n"
+                            "总是不停地长出来！\n"
+                            "不要被速度迷惑了\n"
+                            "拔掉它，\n"
+                            "拔掉它！",
+
         /* Level Icon    */ 55,
         /* Level Type    */ LEVEL_TYPE_GAME,
         /* Epilogue GFX  */ epilogue_rhythm_tweezers_extra_gfx_tables,
         /* Epilogue Text */ {
-            // TODO 未校对：level_rhythm_datsu_extra_result_1 译文包未到 stage 5，暂留原文。
-            /* TRY_AGAIN */ "I can't pluck anything at this speed!",
-            // TODO 未校对：level_rhythm_datsu_extra_result_2 译文包未到 stage 5，暂留原文。
-            /* OK        */ "These hairs are pretty tough to pluck.",
-            // TODO 未校对：level_rhythm_datsu_extra_result_3 译文包未到 stage 5，暂留原文。
-            /* SUPERB    */ "Look at those flowers! They're so relaxing..."
+            /* TRY_AGAIN */ "毛长得太快了啊…",
+            /* OK        */ "还真是挺难对付的毛啊",
+            /* SUPERB    */ "嗯——清爽了！去看看花吧！"
         },
         /* Level Flags   */ LEVEL_DATA_FLAG_IS_EXTRA | LEVEL_DATA_FLAG_NO_PRACTICE
     },
     /* MARCHING_ORDERS */ {
         /* Entry Scene   */ &scene_marching_orders_extra,
-        // TODO 未校对：level_marcha_extra 译文包未到 stage 5，暂留原文。
-        /* Level Name    */ "Marching Orders",
-        // TODO 未校对：level_marcha_extra_desc 译文包未到 stage 5，暂留原文。
-        /* Level Desc.   */ "Ready, march!\n"
-                            "This mission will require\n"
-                            "quick marching, so stay\n"
-							"focused!",
+        /* Level Name    */ "行军",
+        /* Level Desc.   */ "现在开始行进。\n"
+                            "这次需要非常迅速地\n"
+                            "做出判断。\n"
+							"好好努力吧。",
         /* Level Icon    */ 56,
         /* Level Type    */ LEVEL_TYPE_GAME,
         /* Epilogue GFX  */ epilogue_marching_orders_extra_gfx_tables,
         /* Epilogue Text */ {
-            // TODO 未校对：level_marcha_extra_result_1 译文包未到 stage 5，暂留原文。
-            /* TRY_AGAIN */ "MONSTER! Retreat! Retreat!",
-            // TODO 未校对：level_marcha_extra_result_2 译文包未到 stage 5，暂留原文。
-            /* OK        */ "Ah, there's the lost puppy!",
-            // TODO 未校对：level_marcha_extra_result_3 译文包未到 stage 5，暂留原文。
-            /* SUPERB    */ "We rescued the lost puppy! Hooray!"
+            /* TRY_AGAIN */ "撤退！撤退啦！！",
+            /* OK        */ "啊，发现走失的小朋友了！",
+            /* SUPERB    */ "救到走失的小朋友啦！太好了！！"
         },
         /* Level Flags   */ LEVEL_DATA_FLAG_IS_EXTRA | LEVEL_DATA_FLAG_NO_PRACTICE
     },
     /* SPACEBALL */ {
         /* Entry Scene   */ &scene_spaceball_extra,
-        // TODO 未校对：level_air_batter_extra 译文包未到 stage 5，暂留原文。
-        /* Level Name    */ "Spaceball",
-        // TODO 未校对：level_air_batter_extra_desc 译文包未到 stage 5，暂留原文。
-        /* Level Desc.   */ "Ignore the camera's\n"
-                            "zooms! Make the ball\n"
-                            "zoom away! Don't fall\n"
-                            "behind! Let it fly!",
+        /* Level Name    */ "空中击球手",
+        /* Level Desc.   */ "别在意镜头缩放！\n"
+                            "用心去击球！\n"
+                            "不要依赖视觉，\n"
+                            "把球打飞吧～！",
         /* Level Icon    */ 57,
         /* Level Type    */ LEVEL_TYPE_GAME,
         /* Epilogue GFX  */ epilogue_spaceball_extra_gfx_tables,
         /* Epilogue Text */ {
-            // TODO 未校对：level_air_batter_extra_result_1 译文包未到 stage 5，暂留原文。
-            /* TRY_AGAIN */ "Ahhh! Nooooooo!",
-            // TODO 未校对：level_air_batter_extra_result_2 译文包未到 stage 5，暂留原文。
-            /* OK        */ "Graaaah!",
-            // TODO 未校对：level_air_batter_extra_result_3 译文包未到 stage 5，暂留原文。
-            /* SUPERB    */ "A home run! I did it!"
+            /* TRY_AGAIN */ "哇，不行啊～！",
+            /* OK        */ "耶。",
+            /* SUPERB    */ "成功啦——！！"
         },
         /* Level Flags   */ LEVEL_DATA_FLAG_IS_EXTRA | LEVEL_DATA_FLAG_NO_PRACTICE
     },
     /* CLAPPY_TRIO */ {
         /* Entry Scene   */ &scene_clappy_trio_extra,
-        // TODO 未校对：level_pachi_extra 译文包未到 stage 5，暂留原文。
-        /* Level Name    */ "The Clappy Trio",
-        // TODO 未校对：level_pachi_extra_desc 译文包未到 stage 5，暂留原文。
-        /* Level Desc.   */ "Clap your hands in\n"
-                            "order! You're the third\n"
-                            "clapper. Watch out\n"
-							"for your fast friends!",
+        /* Level Name    */ "啪叽啪叽三人组",
+        /* Level Desc.   */ "我们要依次拍手哦！\n"
+                            "你排在第３个。\n"
+                            "仔细看好前面两人再拍哦！",
         /* Level Icon    */ 58,
         /* Level Type    */ LEVEL_TYPE_GAME,
         /* Epilogue GFX  */ epilogue_clappy_trio_extra_gfx_tables,
         /* Epilogue Text */ {
-            // TODO 未校对：level_pachi_extra_result_1 译文包未到 stage 5，暂留原文。
-            /* TRY_AGAIN */ "Wait! Don't leave without us!",
-            // TODO 未校对：level_pachi_extra_result_2 译文包未到 stage 5，暂留原文。
-            /* OK        */ "This is one nice space cruise!",
-            // TODO 未校对：level_pachi_extra_result_3 译文包未到 stage 5，暂留原文。
-            /* SUPERB    */ "I've discovered a new planet! Stellar!"
+            /* TRY_AGAIN */ "哦～！",
+            /* OK        */ "愉快的太空巡航。",
+            /* SUPERB    */ "第一个到达未知星球！伟业！！"
         },
         /* Level Flags   */ LEVEL_DATA_FLAG_IS_EXTRA | LEVEL_DATA_FLAG_NO_PRACTICE
     },
@@ -1066,21 +1038,17 @@ struct LevelData level_data_table[] = {
         /* Entry Scene   */ &scene_remix_1_extra,
         // TODO 未校对：level_remix_extra 译文包未到 stage 5，暂留原文。
         /* Level Name    */ "Extra Remix",
-        // TODO 未校对：level_remix_extra_desc 译文包未到 stage 5，暂留原文。
-        /* Level Desc.   */ "Let's test your skills!\n"
-                            "This remix is faster\n"
-                            "than ever!\n"
-                            "Think you can beat it?",
+        /* Level Desc.   */ "这是额外关卡的Remix哦。\n"
+                            "能跟上这个速度吗？\n"
+                            "到最后都要\n"
+                            "尽情享受哦！",
         /* Level Icon    */ 59,
         /* Level Type    */ LEVEL_TYPE_REMIX,
         /* Epilogue GFX  */ epilogue_remix1_extra_gfx_tables,
         /* Epilogue Text */ {
-            // TODO 未校对：level_remix_extra_result_1 译文包未到 stage 5，暂留原文。
-            /* TRY_AGAIN */ "This is going to take a while...",
-            // TODO 未校对：level_remix_extra_result_2 译文包未到 stage 5，暂留原文。
-            /* OK        */ "Just a normal chick. Cheep-Cheep!",
-            // TODO 未校对：level_remix_extra_result_3 译文包未到 stage 5，暂留原文。
-            /* SUPERB    */ "You've grown splendidly! You look downright dignified!"
+            /* TRY_AGAIN */ "还有很长的路要走呢。",
+            /* OK        */ "很普通呢～。啾啾。",
+            /* SUPERB    */ "成长得很出色呢！好厉害！！"
         },
         /* Level Flags   */ LEVEL_DATA_FLAG_IS_EXTRA | LEVEL_DATA_FLAG_NO_PRACTICE
     }
