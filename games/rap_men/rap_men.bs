@@ -222,7 +222,13 @@ script script_rap_men_main
     rest 24
     rest 24
     beat_anim
-    rest 24
+    rest 12
+    if_localized
+    play_sfx_vol s_rap_yeah_en_seqData, 80
+    else
+    play_sfx_vol s_rap_yeah_seqData, 80
+    end_if
+    rest 12
     rest 24
     beat_anim
     rest 24
@@ -251,7 +257,7 @@ script script_rap_men_main
     rest 24
     set_marking_criteria 0
     print_text_f text_rap_men_sanji_desu_ka
-    play_sfx s_rap_15ji_desuka_seqData
+    play_sfx_localized s_rap_15ji_desuka_seqData, s_rap_15ji_desuka_en_seqData
     rap_men_animate_rapper ANIM_DESUKA
     beat_anim
     rest 24
@@ -283,7 +289,7 @@ script script_rap_men_main
     rest 24
     set_marking_criteria 0
     print_text_f text_rap_men_oyatsu_desu_ka
-    play_sfx s_rap_oyatu_desuka_seqData
+    play_sfx_localized s_rap_oyatu_desuka_seqData, s_rap_oyatu_desuka_en_seqData
     rap_men_animate_rapper ANIM_DESUKA
     beat_anim
     rest 24
@@ -315,7 +321,7 @@ script script_rap_men_main
     rest 24
     set_marking_criteria 0
     print_text_f text_rap_men_sanji_desu_ka
-    play_sfx s_rap_15ji_desuka_seqData
+    play_sfx_localized s_rap_15ji_desuka_seqData, s_rap_15ji_desuka_en_seqData
     rap_men_animate_rapper ANIM_DESUKA
     beat_anim
     rest 24
@@ -334,7 +340,7 @@ script script_rap_men_main
     rest 24
     rest 8
     rest 8
-    play_sfx s_rap_honto_desuka_seqData
+    play_sfx_localized s_rap_honto_desuka_seqData, s_rap_honto_desuka_en_seqData
     rap_men_animate_rapper ANIM_HONTO
     rest 8
     print_text_f text_rap_men_honto_desu_ka
@@ -356,15 +362,27 @@ script script_rap_men_main
     beat_anim
     rest 24
     rap_men_animate_rapper ANIM_DESUKA
+    if_localized
+    play_sfx_vol s_rap_oyatu_desuka_en_seqData, 160
+    rest 24
+    run stop_sound, s_rap_oyatu_desuka_en_seqData
+    else
     play_sfx_vol s_rap_oyatu_desuka_seqData, 160
     rest 24
     run stop_sound, s_rap_oyatu_desuka_seqData
+    end_if
     beat_anim
     rest 24
     rap_men_animate_rapper ANIM_DESUKA
+    if_localized
+    play_sfx_vol s_rap_oyatu_desuka_en_seqData, 160
+    rest 24
+    run stop_sound, s_rap_oyatu_desuka_en_seqData
+    else
     play_sfx_vol s_rap_oyatu_desuka_seqData, 160
     rest 24
     run stop_sound, s_rap_oyatu_desuka_seqData
+    end_if
     beat_anim
     rest 24
     rest 24
@@ -373,7 +391,7 @@ script script_rap_men_main
     rest 24
     set_marking_criteria 1
     print_text_f text_rap_men_oishii_kamo_ne
-    play_sfx s_rap_oisi_kamone_seqData
+    play_sfx_localized s_rap_oisi_kamone_seqData, s_rap_oisi_kamone_en_seqData
     rap_men_animate_rapper ANIM_HONTO
     beat_anim
     rest 24
@@ -394,15 +412,27 @@ script script_rap_men_main
     beat_anim
     rest 24
     rap_men_animate_rapper ANIM_DESUKA
+    if_localized
+    play_sfx_vol s_rap_oyatu_desuka_en_seqData, 160
+    rest 24
+    run stop_sound, s_rap_oyatu_desuka_en_seqData
+    else
     play_sfx_vol s_rap_oyatu_desuka_seqData, 160
     rest 24
     run stop_sound, s_rap_oyatu_desuka_seqData
+    end_if
     beat_anim
     rest 24
     rap_men_animate_rapper ANIM_DESUKA
+    if_localized
+    play_sfx_vol s_rap_oyatu_desuka_en_seqData, 160
+    rest 24
+    run stop_sound, s_rap_oyatu_desuka_en_seqData
+    else
     play_sfx_vol s_rap_oyatu_desuka_seqData, 160
     rest 24
     run stop_sound, s_rap_oyatu_desuka_seqData
+    end_if
     beat_anim
     rest 24
     rest 24
@@ -411,7 +441,7 @@ script script_rap_men_main
     rest 24
     set_marking_criteria 1
     print_text_f text_rap_men_herushii_kamo_ne
-    play_sfx s_rap_herusi_kamone_seqData
+    play_sfx_localized s_rap_herusi_kamone_seqData, s_rap_herusi_kamone_en_seqData
     rap_men_animate_rapper ANIM_HONTO
     beat_anim
     rest 24
@@ -432,30 +462,56 @@ script script_rap_men_main
     beat_anim
     rest 24
     rap_men_animate_rapper ANIM_DESUKA
+    if_localized
+    play_sfx_vol s_rap_oyatu_desuka_en_seqData, 160
+    rest 24
+    run stop_sound, s_rap_oyatu_desuka_en_seqData
+    else
+    if_localized
+    play_sfx_vol s_rap_oyatu_desuka_en_seqData, 160
+    rest 24
+    run stop_sound, s_rap_oyatu_desuka_en_seqData
+    else
     play_sfx_vol s_rap_oyatu_desuka_seqData, 160
     rest 24
     run stop_sound, s_rap_oyatu_desuka_seqData
+    end_if
     beat_anim
     rest 24
     rap_men_animate_rapper ANIM_DESUKA
+    if_localized
+    play_sfx_vol s_rap_oyatu_desuka_en_seqData, 160
+    rest 24
+    run stop_sound, s_rap_oyatu_desuka_en_seqData
+    else
     play_sfx_vol s_rap_oyatu_desuka_seqData, 160
     rest 24
     run stop_sound, s_rap_oyatu_desuka_seqData
+    end_if
     beat_anim
     rest 12
     rest 6
+    if_localized
+    play_sfx_vol s_rap_oyatu_desuka_en_seqData, 160
+    rest 6
+    rap_men_animate_rapper ANIM_DESUKA
+    play_sfx_vol s_rap_oyatu_desuka_en_seqData, 160
+    rest 24
+    run stop_sound, s_rap_oyatu_desuka_en_seqData
+    else
     play_sfx_vol s_rap_oyatu_desuka_seqData, 160
     rest 6
     rap_men_animate_rapper ANIM_DESUKA
     play_sfx_vol s_rap_oyatu_desuka_seqData, 160
     rest 24
     run stop_sound, s_rap_oyatu_desuka_seqData
+    end_if
     beat_anim
     rest 24
     rest 24
     set_marking_criteria 0
     print_text_f text_rap_men_oyatsu_desu_ka
-    play_sfx s_rap_oyatu_desuka_seqData
+    play_sfx_localized s_rap_oyatu_desuka_seqData, s_rap_oyatu_desuka_en_seqData
     rap_men_animate_rapper ANIM_DESUKA
     beat_anim
     rest 24
@@ -475,7 +531,7 @@ script script_rap_men_main
     rest 24
     set_marking_criteria 1
     print_text_f text_rap_men_oishii_kamo_ne
-    play_sfx s_rap_oisi_kamone_seqData
+    play_sfx_localized s_rap_oisi_kamone_seqData, s_rap_oisi_kamone_en_seqData
     rap_men_animate_rapper ANIM_HONTO
     beat_anim
     rest 24
@@ -494,7 +550,7 @@ script script_rap_men_main
     rest 24
     rest 8
     rest 8
-    play_sfx s_rap_honto_desuka_seqData
+    play_sfx_localized s_rap_honto_desuka_seqData, s_rap_honto_desuka_en_seqData
     rap_men_animate_rapper ANIM_HONTO
     rest 8
     print_text_f text_rap_men_honto_desu_ka
@@ -514,11 +570,11 @@ script script_rap_men_main
     rest 24
     rest 12
     rest 6
-    play_sfx s_rap_herusi_kamone_seqData
+    play_sfx_localized s_rap_herusi_kamone_seqData, s_rap_herusi_kamone_en_seqData
     rest 6
     set_marking_criteria 1
     print_text_f text_rap_men_herushii_kamo_ne
-    play_sfx s_rap_herusi_kamone_seqData
+    play_sfx_localized s_rap_herusi_kamone_seqData, s_rap_herusi_kamone_en_seqData
     rap_men_animate_rapper ANIM_HONTO
     beat_anim
     rest 24
@@ -538,7 +594,7 @@ script script_rap_men_main
     rest 24
     set_marking_criteria 2
     print_text_f text_rap_men_oyatsu_wa_saikou
-    play_sfx s_rap_oyatuha_saiko_seqData
+    play_sfx_localized s_rap_oyatuha_saiko_seqData, s_rap_oyatuha_saiko_en_seqData
     rap_men_animate_rapper ANIM_SAIKO
     beat_anim
     rest 24
@@ -558,7 +614,7 @@ script script_rap_men_main
     rest 24
     set_marking_criteria 2
     print_text_f text_rap_men_kibun_wa_saikou
-    play_sfx s_rap_kibunha_saiko_seqData
+    play_sfx_localized s_rap_kibunha_saiko_seqData, s_rap_kibunha_saiko_en_seqData
     rap_men_animate_rapper ANIM_SAIKO
     beat_anim
     rest 24
@@ -578,7 +634,7 @@ script script_rap_men_main
     rest 24
     set_marking_criteria 2
     print_text_f text_rap_men_ore_tte_saikou
-    play_sfx s_rap_orette_saiko_seqData
+    play_sfx_localized s_rap_orette_saiko_seqData, s_rap_orette_saiko_en_seqData
     rap_men_animate_rapper ANIM_SAIKO
     beat_anim
     rest 24
@@ -597,7 +653,7 @@ script script_rap_men_main
     rest 24
     rest 8
     rest 8
-    play_sfx s_rap_honto_desuka_seqData
+    play_sfx_localized s_rap_honto_desuka_seqData, s_rap_honto_desuka_en_seqData
     rap_men_animate_rapper ANIM_HONTO
     rest 8
     print_text_f text_rap_men_honto_desu_ka
@@ -618,7 +674,7 @@ script script_rap_men_main
     rest 24
     set_marking_criteria 2
     print_text_f text_rap_men_kimi_tte_saikou
-    play_sfx s_rap_kimitte_saiko_seqData
+    play_sfx_localized s_rap_kimitte_saiko_seqData, s_rap_kimitte_saiko_en_seqData
     rap_men_animate_rapper ANIM_SAIKO
     beat_anim
     rest 24
@@ -650,7 +706,7 @@ script script_rap_men_main
     rest 24
     set_marking_criteria 2
     print_text_f text_rap_men_kimi_tte_saikou
-    play_sfx s_rap_kimitte_saiko_seqData
+    play_sfx_localized s_rap_kimitte_saiko_seqData, s_rap_kimitte_saiko_en_seqData
     rap_men_animate_rapper ANIM_SAIKO
     beat_anim
     rest 24
@@ -682,7 +738,7 @@ script script_rap_men_main
     rest 24
     set_marking_criteria 2
     print_text_f text_rap_men_oyatsu_ga_nai_yo
-    play_sfx s_rap_oyatuga_naiyo_seqData
+    play_sfx_localized s_rap_oyatuga_naiyo_seqData, s_rap_oyatuga_naiyo_en_seqData
     rap_men_animate_rapper ANIM_DESUKA
     beat_anim
     rest 24
@@ -702,7 +758,7 @@ script script_rap_men_main
     rest 24
     set_marking_criteria 1
     print_text_f text_rap_men_ore_no_sei_kamo_ne
-    play_sfx s_rap_orenosei_kamone_seqData
+    play_sfx_localized s_rap_orenosei_kamone_seqData, s_rap_orenosei_kamone_en_seqData
     rap_men_animate_rapper ANIM_HONTO
     beat_anim
     rest 24
@@ -722,7 +778,7 @@ script script_rap_men_main
     rest 24
     set_marking_criteria 2
     print_text_f text_rap_men_ore_shiranai_yo
-    play_sfx s_rap_oresira_naiyo_seqData
+    play_sfx_localized s_rap_oresira_naiyo_seqData, s_rap_oresira_naiyo_en_seqData
     rap_men_animate_rapper ANIM_DESUKA
     beat_anim
     rest 24
@@ -742,7 +798,7 @@ script script_rap_men_main
     rest 24
     set_marking_criteria 1
     print_text_f text_rap_men_sore_mo_sou_kamo_ne
-    play_sfx s_rap_soremoso_kamone_seqData
+    play_sfx_localized s_rap_soremoso_kamone_seqData, s_rap_soremoso_kamone_en_seqData
     rap_men_animate_rapper ANIM_HONTO
     beat_anim
     rest 24
@@ -762,7 +818,7 @@ script script_rap_men_main
     rest 24
     beat_anim
     rest 24
-    play_sfx s_rap_yeah_seqData
+    play_sfx_localized s_rap_yeah_en_seqData, s_rap_yeah_seqData
     rap_men_animate_rapper ANIM_KAMONE
     rest 24
     beat_anim
@@ -892,7 +948,7 @@ script script_rap_men_practice
     #ifdef PLUS
     print_text_f text_rap_men_wakarimasu_ka
     #endif
-    play_sfx s_rap_wakari_desuka_seqData
+    play_sfx_localized s_rap_wakari_desuka_seqData, s_rap_wakari_desuka_en_seqData
     rap_men_animate_rapper ANIM_DESUKA
     beat_anim
     rest 24
@@ -914,7 +970,7 @@ script script_rap_men_practice
     #ifdef PLUS
     print_text_f text_rap_men_wakarimasu_ka
     #endif
-    play_sfx s_rap_wakari_desuka_seqData
+    play_sfx_localized s_rap_wakari_desuka_seqData, s_rap_wakari_desuka_en_seqData
     rap_men_animate_rapper ANIM_DESUKA
     beat_anim
     rest 24
@@ -981,7 +1037,7 @@ script script_rap_men_practice
         #ifdef PLUS
         print_text_f text_rap_men_wakarimasu_ka
         #endif
-        play_sfx s_rap_wakari_desuka_seqData
+        play_sfx_localized s_rap_wakari_desuka_seqData, s_rap_wakari_desuka_en_seqData
         rap_men_animate_rapper ANIM_DESUKA
         beat_anim
         rest 24
@@ -1004,7 +1060,7 @@ script script_rap_men_practice
         #ifdef PLUS
         print_text_f text_rap_men_wakarimasu_ka
         #endif
-        play_sfx s_rap_wakari_desuka_seqData
+        play_sfx_localized s_rap_wakari_desuka_seqData, s_rap_wakari_desuka_en_seqData
         rap_men_animate_rapper ANIM_DESUKA
         beat_anim
         rest 24
@@ -1027,7 +1083,7 @@ script script_rap_men_practice
         #ifdef PLUS
         print_text_f text_rap_men_wakarimasu_ka
         #endif
-        play_sfx s_rap_wakari_desuka_seqData
+        play_sfx_localized s_rap_wakari_desuka_seqData, s_rap_wakari_desuka_en_seqData
         rap_men_animate_rapper ANIM_DESUKA
         beat_anim
         rest 24
@@ -1135,7 +1191,7 @@ script script_rap_men_practice
         #ifdef PLUS
         print_text_f text_rap_men_tanoshii_kamo_ne
         #endif
-        play_sfx s_rap_tanosi_kamone_seqData
+        play_sfx_localized s_rap_tanosi_kamone_seqData, s_rap_tanosi_kamone_en_seqData
         rap_men_animate_rapper ANIM_HONTO
         beat_anim
         rest 24
@@ -1158,7 +1214,7 @@ script script_rap_men_practice
         #ifdef PLUS
         print_text_f text_rap_men_tanoshii_kamo_ne
         #endif
-        play_sfx s_rap_tanosi_kamone_seqData
+        play_sfx_localized s_rap_tanosi_kamone_seqData, s_rap_tanosi_kamone_en_seqData
         rap_men_animate_rapper ANIM_HONTO
         beat_anim
         rest 24
@@ -1181,7 +1237,7 @@ script script_rap_men_practice
         #ifdef PLUS
         print_text_f text_rap_men_tanoshii_kamo_ne
         #endif
-        play_sfx s_rap_tanosi_kamone_seqData
+        play_sfx_localized s_rap_tanosi_kamone_seqData, s_rap_tanosi_kamone_en_seqData
         rap_men_animate_rapper ANIM_HONTO
         beat_anim
         rest 24
@@ -1264,7 +1320,7 @@ script script_rap_men_practice
         #ifdef PLUS
         print_text_f text_rap_men_kimi_tte_saikou
         #endif
-        play_sfx s_rap_kimitte_saiko_seqData
+        play_sfx_localized s_rap_kimitte_saiko_seqData, s_rap_kimitte_saiko_en_seqData
         rap_men_animate_rapper ANIM_SAIKO
         beat_anim
         rest 24
@@ -1287,7 +1343,7 @@ script script_rap_men_practice
         #ifdef PLUS
         print_text_f text_rap_men_kimi_tte_saikou
         #endif
-        play_sfx s_rap_kimitte_saiko_seqData
+        play_sfx_localized s_rap_kimitte_saiko_seqData, s_rap_kimitte_saiko_en_seqData
         rap_men_animate_rapper ANIM_SAIKO
         beat_anim
         rest 24
@@ -1310,7 +1366,7 @@ script script_rap_men_practice
         #ifdef PLUS
         print_text_f text_rap_men_kimi_tte_saikou
         #endif
-        play_sfx s_rap_kimitte_saiko_seqData
+        play_sfx_localized s_rap_kimitte_saiko_seqData, s_rap_kimitte_saiko_en_seqData
         rap_men_animate_rapper ANIM_SAIKO
         beat_anim
         rest 24
