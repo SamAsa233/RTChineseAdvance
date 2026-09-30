@@ -24,28 +24,28 @@ const char D_0805db94[] = "团长的激励";
 
 const char D_0805dba0[] = "小蹦和";
 
-const char D_0805dbb0[] = "小床，";
+const char D_0805dbb0[] = "小床,";
 
-const char D_0805dbc0[] = "一起蹦起来！";
+const char D_0805dbc0[] = "一起蹦起来!";
 
-const char D_0805dbd8[] = "在跳到最高点的时候，";
+const char D_0805dbd8[] = "在跳到最高点的时候,";
 
-const char D_0805dbf4[] = "我用十字键，";
+const char D_0805dbf4[] = "我用十字键,";
 
-const char D_0805dc0c[] = "我用 A 键，";
+const char D_0805dc0c[] = "我用 A 键.";
 
-const char D_0805dc24[] = "就能变身哦！";
+const char D_0805dc24[] = "就能变身哦!";
 
 #ifdef PARADISE
-const char D_0805dc38[] = "先来练习一下吧！";
-#else
 const char D_0805dc38[] = "Let's practice for a bit!";
+#else
+const char D_0805dc38[] = "先来练习一下吧!";
 #endif
 
-const char D_0805dc58[] = "连续跳跃！";
+const char D_0805dc58[] = "连续跳跃!";
 
-const char D_0805dc70[] = "两个人轮流来！";
+const char D_0805dc70[] = "两个人轮流来!";
 
-const char D_0805dc88[] = "两个人同时来！";
+const char D_0805dc88[] = "两个人同时来!";
 
-const char D_0805dc9c[] = "好，正式来咯！";
+const char D_0805dc9c[] = "好，正式来咯!";

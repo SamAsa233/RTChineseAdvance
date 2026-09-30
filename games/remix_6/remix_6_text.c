@@ -8,28 +8,28 @@
 /* Game Text - Remix 6 */
 
 
-const char D_0806a7a8[] = "还差一点。";
+const char D_0806a7a8[] = "还差一点.";
 
-const char D_0806a7b8[] = "简直太棒啦！！";
+const char D_0806a7b8[] = "简直太棒啦!!";
 
-const char D_0806a7d4[] = "判断还差点火候。";
+const char D_0806a7d4[] = "判断还差点火候.";
 
-const char D_0806a7f8[] = "判断真漂亮！";
+const char D_0806a7f8[] = "判断真漂亮!";
 
-const char D_0806a81c[] = "再好好磨练一下吧。";
+const char D_0806a81c[] = "再好好磨练一下吧.";
 
-const char D_0806a838[] = "技术不错啊！";
+const char D_0806a838[] = "技术不错啊!";
 
 const char D_0806a850[] = "来自神秘节奏组织的通告";
 
-const char D_0806a86c[] = "那么，就从这里开始复习吧！";
+const char D_0806a86c[] = "那么，就从这里开始复习吧!";
 
-const char D_0806a898[] = "先说在前头，这关其实挺简单的！！";
+const char D_0806a898[] = "先说在前头，这关其实挺简单的!!";
 
-const char D_0806a8c8[] = "好好享受哦！";
+const char D_0806a8c8[] = "好好享受哦!";
 
 const char D_0806a8d8[] =
-    "要上啦！";
+    "要上啦!";
 
 const char D_0806a8e4[] =
     "请开始。";
@@ -49,4 +49,4 @@ const char D_0806a920[] = ".1:0" "咚咚 " ".2:0" "啪啪";
 
 const char D_0806a944[] = ".1:0" "咚ー " ".2:0" "啪ー 啪";
 
-const char D_0806a970[] = "结束！";
+const char D_0806a970[] = "结束!";

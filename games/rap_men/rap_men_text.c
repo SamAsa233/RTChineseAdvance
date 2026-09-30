@@ -26,9 +26,9 @@ const char D_0805ea18[] = "那就正式上吧";
 
 const char D_0805ea34[] = "下次再一起玩啊";
 
-const char D_0805ea44[] = "哟！";
+const char D_0805ea44[] = "哟!";
 
-const char D_0805ea50[] = "来，跟我们一起嗨吧";
+const char D_0805ea50[] = "来,跟我们一起嗨吧";
 
 const char D_0805ea6c[] = "我们来教你怎么跟上节奏";
 

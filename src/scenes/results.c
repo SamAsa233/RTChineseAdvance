@@ -550,7 +550,7 @@ void results_render_skill_screen(void) {
     char numString[0x20];
     u32 badInputScore, score, level;
 
-    textAnim = bmp_font_obj_print_c(gResults->objFont, ":1" "****" ":0" "  Grade  " ":1" "****", 0, 7);
+    textAnim = bmp_font_obj_print_c(gResults->objFont, ":1" "****" ":0" "  评价  " ":1" "****", 0, 7);
     sprite_create(gSpriteHandler, textAnim->frames, 0, 120, 16, 0x4800, 1, 0, 0);
 
     results_tracker_calculate_skill_averages();

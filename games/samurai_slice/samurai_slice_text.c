@@ -22,12 +22,12 @@ const char D_0805bd30[] = "快节奏抓得很好！";
 
 const char D_0805bd50[] = "慢拍处理得漂亮！";
 
-const char D_0805bd68[] = "把敌人斩掉！";
+const char D_0805bd68[] = "把敌人斩掉!";
 
 const char D_0805bd7c[] = "唔…";
 
 const char D_0805bd88[] = "起雾了啊…";
 
-const char D_0805bda4[] = "两只…！？";
+const char D_0805bda4[] = "两只…!?";
 
 const char D_0805bdb8[] = "围观者的话";

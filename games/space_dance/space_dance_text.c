@@ -26,24 +26,24 @@ const char D_0805e344[] = "进副歌前那段卡得很漂亮哦！";
 
 const char D_0805e364[] = "太空大叔的点评";
 
-const char D_0805e37c[] = "Let's Go！";
+const char D_0805e37c[] = "Let's Go!";
 
-const char D_0805e38c[] = "大家一起来跳舞吧！";
+const char D_0805e38c[] = "大家一起来跳舞吧!";
 
-const char D_0805e3a8[] = "首先，要记住 3 个动作。";
+const char D_0805e3a8[] = "首先，要记住 3 个动作.";
 
-const char D_0805e3d8[] = "那么，第 1 个。";
+const char D_0805e3d8[] = "那么，第 1 个.";
 
 const char D_0805e3ec[] = "跟着做！";
 
-const char D_0805e3fc[] = "OK！";
+const char D_0805e3fc[] = "OK!";
 
-const char D_0805e3fd[] = "下蹲动作合格！";
+const char D_0805e3fd[] = "下蹲动作合格!";
 
-const char D_0805e3fe[] = "出拳动作达标！";
+const char D_0805e3fe[] = "出拳动作达标!";
 
-const char D_0805e404[] = "下一个。";
+const char D_0805e404[] = "下一个.";
 
-const char D_0805e40c[] = "最后一个。";
+const char D_0805e40c[] = "最后一个.";
 
-const char D_0805e414[] = "那么，正式开始！";
+const char D_0805e414[] = "那么，正式开始!";
