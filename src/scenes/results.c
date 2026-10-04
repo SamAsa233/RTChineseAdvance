@@ -829,7 +829,7 @@ const char *results_ok_comment_pool[] = {
     "就算可以吧。",
     "暂且……",
     "算是一般般吧。",
-    #ifdef PARADISE
+    #ifdef BRIT
     // 两个地区原来的英文感叹词不同，中文共用同一条已校对译文。
     "唔〜嗯……"
     #else

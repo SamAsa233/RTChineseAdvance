@@ -13,7 +13,7 @@ const char D_0805cd60[] = "再放得华丽一点吧！";
 const char D_0805cd7c[] = "这烟火放得真漂亮！！";
 
 // 阶段 5 已校对 D_0805cda0：原版英美地区措辞不同；两个分支都要接入同一句中文，不能只校第一侧。
-#ifdef PARADISE
+#ifdef BRIT
 const char D_0805cda0[] = "反应太慢啦！";
 #else
 const char D_0805cda0[] = "反应太慢啦！";

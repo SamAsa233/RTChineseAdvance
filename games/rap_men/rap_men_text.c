@@ -45,7 +45,7 @@ const char D_0805eae8[] = "加把劲啊";
 const char D_0805eaf8[] = "就是“嗯”那一下哦〜";
 
 // 阶段 5 已校对 D_0805eb14：原地区分支措辞不同，中文译文相同；两侧都要更新，避免默认版仍显示英文。
-#ifdef PARADISE
+#ifdef BRIT
 const char D_0805eb14[] = "都说了是“嗯”那一下啦";
 #else
 const char D_0805eb14[] = "都说了是“嗯”那一下啦";

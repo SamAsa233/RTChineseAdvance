@@ -32,7 +32,7 @@ const char D_0805c1a8[] = "辛苦你啦.";
 
 const char D_0805c1bc[] = "来踢踏吧!";
 
-#ifdef PARADISE
+#ifdef BRIT
 const char D_0805c1d0[] = "Practice first!";
 #else
 const char D_0805c1d0[] = "先来练习.";
@@ -74,7 +74,7 @@ const char D_0805c334[] = "辛苦你啦.";
 
 const char D_0805c348[] = "来踢踏吧!";
 
-#ifdef PARADISE
+#ifdef BRIT
 const char D_0805c35c[] = "Practice first!";
 #else
 const char D_0805c35c[] = "先来练习.";

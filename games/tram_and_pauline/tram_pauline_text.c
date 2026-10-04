@@ -36,7 +36,7 @@ const char D_0805dc0c[] = "我用 A 键.";
 
 const char D_0805dc24[] = "就能变身哦!";
 
-#ifdef PARADISE
+#ifdef BRIT
 const char D_0805dc38[] = "Let's practice for a bit!";
 #else
 const char D_0805dc38[] = "先来练习一下吧!";

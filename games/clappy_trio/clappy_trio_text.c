@@ -48,10 +48,10 @@ const char D_0805af30[] = "我们要一下一下均匀地拍手哦。";
 
 const char D_0805af48[] = "你负责第 3 下";
 
-#ifdef PARADISE
-const char D_0805af60[] = "那，先来练练吧";
+#ifdef BRIT
+const char D_0805af60[] = "";
 #else
-const char D_0805af60[] = "Let's practice!";
+const char D_0805af60[] = "那，先来练练吧！";
 #endif
 
 const char D_0805af7c[] = "（用 A 键拍第 3 下哦）";

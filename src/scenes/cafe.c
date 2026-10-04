@@ -640,7 +640,7 @@ void cafe_print_dialogue(void) {
             // 阶段 5 已校对 cafe_line_18；保留两个地区编译分支和原来的强调控制码顺序。
             // 中文两侧相同，是因为英式/美式拼写差异在中文译文中不存在。
             // TODO 未校对：菜单缩进与光标相对位置仍需实机确认。
-            #ifdef PARADISE
+            #ifdef BRIT
             string = "\0054" "\0018" "你是在为"
             #else
             string = "\0054" "\0018" "你是在为"

@@ -16,7 +16,7 @@ const char D_0805e1a8[] = "企鹅的反应";
 
 const char D_0805e1bc[] = "正式开始！";
 
-#ifdef PARADISE
+#ifdef BRIT
 const char D_0805e1d4[] = "Let's practice our penguin routine.";
 #else
 const char D_0805e1d4[] = "要和企鹅们一起表演.";

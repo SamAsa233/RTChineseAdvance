@@ -8,7 +8,7 @@
 /* Game Text - Toss Boys */
 
 
-#ifdef PARADISE
+#ifdef BRIT
 const char D_0805d618[] = "看来还没练出成果啊。";
 
 const char D_0805d634[] = "基本功很扎实！";
@@ -28,7 +28,7 @@ const char D_0805d694[] = "这速度你已经跟得很稳啦！！";
 
 const char D_0805d6b0[] = "教练的话";
 
-#ifdef PARADISE
+#ifdef BRIT
 const char D_0805d6c4[] =
     "要上咯——！";
 #else
@@ -40,7 +40,7 @@ const char D_0805d6c4[] =
 const char D_0805d6d4[] =
     "结束啦。";
 
-#ifdef PARADISE
+#ifdef BRIT
 const char D_0805d6e0[] = "看来还没练出成果啊。";
 
 const char D_0805d6fc[] = "基本功很扎实！";
@@ -78,7 +78,7 @@ const char D_0805d7cc[] =
 const char D_0805d7fc[] =
     "再来一次";
 
-#ifdef PARADISE
+#ifdef BRIT
 const char D_0805d80c[] =
     "不错哦！";
 #else

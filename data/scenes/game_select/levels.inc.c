@@ -64,7 +64,7 @@ struct LevelData level_data_table[] = {
         /* Epilogue Text */ {
             /* TRY_AGAIN */ "呀啊！饶了我吧！！",
             /* OK        */ "就差那么一点点了呢…",
-            #ifdef PARADISE
+            #ifdef BRIT
             /* SUPERB    */ "配合十分默契！ 耶ー！"
             #else
             /* SUPERB    */ "配合十分默契！ 耶——！"
@@ -179,7 +179,7 @@ struct LevelData level_data_table[] = {
         /* Level Desc.   */ "\0023" "来自助手的通报\n"
                             "“不好了！\n"
                             "细菌爆发啦！！\n"
-                            #ifdef PARADISE
+                            #ifdef BRIT
                             "博士，快来救命啊～”",
                             #else
                             "博士，快来救命啊～”",
@@ -353,7 +353,7 @@ struct LevelData level_data_table[] = {
         /* Level Type    */ LEVEL_TYPE_GAME,
         /* Epilogue GFX  */ epilogue_tap_trial_gfx_tables,
         /* Epilogue Text */ {
-            #ifdef PARADISE
+            #ifdef BRIT
             /* TRY_AGAIN */ "真不甘心呀。",
             #else
             /* TRY_AGAIN */ "真不甘心呀。",
@@ -450,7 +450,7 @@ struct LevelData level_data_table[] = {
         /* Level Desc.   */ "说到夏天嘛，\n"
                             "果然还是烟火吧？\n"
                             "就让它绚丽多彩地\n"
-                            #ifdef PARADISE
+                            #ifdef BRIT
                             "升上夜空吧！",
                             #else
                             "升上夜空吧！",
@@ -500,7 +500,7 @@ struct LevelData level_data_table[] = {
         /* Entry Scene   */ &scene_toss_boys,
         /* Level Name    */ "传球少年",
         /* Level Desc.   */ "感情超好的三人组，\n"
-                            #ifdef PARADISE
+                            #ifdef BRIT
                             "一边互相喊话，\n"
                             #else
                             "一边互相喊话，\n"
@@ -511,13 +511,13 @@ struct LevelData level_data_table[] = {
         /* Level Type    */ LEVEL_TYPE_GAME,
         /* Epilogue GFX  */ epilogue_toss_boys_gfx_tables,
         /* Epilogue Text */ {
-            #ifdef PARADISE
+            #ifdef BRIT
             /* TRY_AGAIN */ "完全不行啦〜！",
             #else
             /* TRY_AGAIN */ "完全不行啦〜！",
             #endif
             /* OK        */ "你肯定还能做得更好！",
-            #ifdef PARADISE
+            #ifdef BRIT
             /* SUPERB    */ "目标是拿下传球世界锦标赛冠军——！！"
             #else
             /* SUPERB    */ "目标是拿下传球世界锦标赛冠军——！！"
@@ -528,7 +528,7 @@ struct LevelData level_data_table[] = {
         /* Entry Scene   */ &scene_toss_boys_2,
         /* Level Name    */ "传球少年 2",
         /* Level Desc.   */ "感情超好的三人组，\n"
-                            #ifdef PARADISE
+                            #ifdef BRIT
                             "一边互相喊话，\n"
                             #else
                             "一边互相喊话，\n"
@@ -541,7 +541,7 @@ struct LevelData level_data_table[] = {
         /* Epilogue Text */ {
             /* TRY_AGAIN */ "惨兮兮啦〜！",
             /* OK        */ "怎么能在这里结束！",
-            #ifdef PARADISE
+            #ifdef BRIT
             /* SUPERB    */ "最强阵容诞生啦ー！！"
             #else
             /* SUPERB    */ "最强阵容诞生啦ー！！"
@@ -673,7 +673,7 @@ struct LevelData level_data_table[] = {
         /* Epilogue GFX  */ epilogue_quiz_show_gfx_tables,
         /* Epilogue Text */ {
             /* TRY_AGAIN */ "嘛，也就这样吧。",
-            #ifdef PARADISE
+            #ifdef BRIT
             /* OK        */ "为了下次，学习、学习……Zzz",
             #else
             /* OK        */ "为了下次，学习、学习……Zzz",
@@ -853,7 +853,7 @@ struct LevelData level_data_table[] = {
     /* CAFE */ {
         /* Entry Scene   */ &scene_cafe,
         // 阶段 5 已校对 level_cafe_counsel；两个地区原文拼写不同，中文同为“咖啡谈心”。
-        #ifdef PARADISE
+        #ifdef BRIT
         /* Level Name    */ "咖啡谈心",
         #else
         /* Level Name    */ "咖啡谈心",

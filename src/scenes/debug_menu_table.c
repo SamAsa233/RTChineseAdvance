@@ -87,10 +87,10 @@ struct DebugMenuEntry debug_menu_entry_table[] = {
     },
     /* R-IQ (Cafe) */ {
         /* Scene */ &scene_cafe,
-        #ifdef PARADISE
-        /* Label */ "R-IQ (咖啡谈心)", // shoutout to british people
+        #ifdef BRIT
+        /* Label */ "", // shoutout to british people
         #else
-        /* Label */ "R-IQ (Cafe Counseling)",
+        /* Label */ "R-IQ (咖啡谈心)",
         #endif
         /* Epil. */ FALSE
     },
@@ -263,7 +263,7 @@ struct DebugMenuEntry debug_menu_entry_table[] = {
     // 阶段 5 已校对:两种地区拼写共用"反拍男",但仍保留原 #ifdef 结构.
     /* Mr. Upbeat */ {
         /* Scene */ &scene_mr_upbeat,
-        #ifdef PARADISE
+        #ifdef BRIT
         /* Label */ "反拍男",
         #else
         /* Label */ "反拍男",

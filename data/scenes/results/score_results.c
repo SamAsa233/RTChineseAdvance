@@ -55,7 +55,7 @@ const char *score_results_default_comments[] = {
     /* HIGH */ "相当不错！",
     /* MID  */ "一般水平。",
     /* LOW  */ "还差一点。",
-    #ifdef PARADISE
+    #ifdef BRIT
     /* FAIL */ "Hmm..."
     #else
     /* FAIL */ "唔〜…"

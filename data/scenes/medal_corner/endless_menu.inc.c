@@ -5,7 +5,7 @@
 struct MedalCornerLevel endless_menu_levels[] = {
     /* MR_UPBEAT */ {
         /* Scene  */ &scene_mr_upbeat,	
-        #ifdef PARADISE
+        #ifdef BRIT
         /* Title  */ "反拍男",
         #else
         /* Title  */ "反拍男",
