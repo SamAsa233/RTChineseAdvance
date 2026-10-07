@@ -19,3 +19,10 @@ ctx.c
 # my handy graphics tool
 bitesthedust.py
 /text_normal_font
+
+tools/font/third_party/*.zip
+tools/font/third_party/*.gz
+tools/font/third_party/*.bdf
+tools/font/third_party/*.hex
+__pycache__/
+*.pyc

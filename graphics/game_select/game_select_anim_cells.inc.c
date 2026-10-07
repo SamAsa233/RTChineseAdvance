@@ -1071,7 +1071,7 @@ AnimationCel game_select_cel125[] = {
 
 AnimationCel game_select_cel126[] = {
     /* Len */ 1,
-    /* 000 */ 0x00f8, 0x41f8, 0x010c
+    /* 000 */ 0x00f8, 0x4006, 0x010c
 };
 
 AnimationCel game_select_cel127[] = {

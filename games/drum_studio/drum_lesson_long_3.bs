@@ -1,3 +1,5 @@
+@ 中文文本：本文件采用译文包中 stage 5 的已校对条目。
+@ 字符串中的 \n 是游戏画面换行；未校对项见 text/zh_hans/TODO_未校对.md。
 .include "include/beatscript.inc"
 .include "games/drum_studio/macros.inc"
 
@@ -30,10 +32,7 @@ define_gameplay_scene scene_drum_lesson_long_3, script_drum_lesson_long_3_entry
 @ Drum Lesson (Long 3) - Data
 
 text D_08063308
-    .ascii "Listen to my pattern, then\n"
-    .ascii "repeat when you're ready.\n"
-    .ascii "I'll show it to you again\n"
-    .asciz "if you stop playing."
+    .asciz "仔细听好再照着做哦。\n想什么时候开始都可以。\n停下演奏的话，\n还能再听一遍示范哦！"
 endtext
 
 
@@ -62,10 +61,7 @@ return
 
 
 text D_08063438
-    .ascii "\n"
-    .ascii "Let's keep the bass going,\n"
-    .ascii "and add snares to the mix!\n"
-    .asciz "Things are getting groovy!"
+    .asciz "我会把军鼓叠进去哦！\n这下就带劲啦！"
 endtext
 
 
@@ -92,10 +88,7 @@ return
 
 
 text D_0806354c
-    .ascii "\n"
-    .ascii "Let's spice things up, and\n"
-    .ascii "hit the crash! We're still\n"
-    .asciz "just warming up, y'know?"
+    .asciz "用镲把收尾稳稳收住哦！\n这个你应该办得到吧？"
 endtext
 
 
@@ -107,10 +100,7 @@ return
 
 
 text D_080635bc
-    .ascii "\n"
-    .ascii "Alright, time to switch up\n"
-    .ascii "the end with some snares.\n"
-    .asciz "It's starting to take shape!\n"
+    .asciz "我会稍微改一下军鼓的花样。\n打出来的话一定会很过瘾哦！\n真的。"
 endtext
 
 
@@ -140,10 +130,7 @@ return
 
 
 text D_08063708
-    .ascii "Let's add one more beat\n"
-    .ascii "on top of the last part.\n"
-    .ascii "Yes, it's a bit tricky, but\n"
-    .asciz "I'm sure you've got this!\n"
+    .asciz "会多一个音哦。\n意外地还挺难！！\n加油哦！"
 endtext
 
 
@@ -176,10 +163,7 @@ return
 
 
 text D_08063870
-    .ascii "Okay, last change!\n"
-    .ascii "If you can pull this off,\n"
-    .ascii "you're basically a full-on\n"
-    .asciz "pro drummer in my eyes!"
+    .asciz "又会再多一个音哦！\n打出来可就太帅啦！"
 endtext
 
 

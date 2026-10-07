@@ -1,3 +1,6 @@
+/* 中文文本：本文件采用译文包中 stage 5 的已校对条目。
+ * 字符串中的 \n 是游戏画面换行；相邻引号只是方便阅读源码。
+ * 未校对或未定位的条目见 text/zh_hans/TODO_未校对.md。 */
 #include "global.h"
 #include "text.h"
 
@@ -5,30 +8,30 @@
 /* Game Text - Remix 8 */
 
 
-const char D_0806a97c[] = "Try a little harder.";
+const char D_0806a97c[] = "还得继续努力。";
 
-const char D_0806a98c[] = "That was really great!";
+const char D_0806a98c[] = "简直太棒啦！！";
 
-const char D_0806a9a8[] = "Your decisions took too long.";
+const char D_0806a9a8[] = "判断还差点火候。";
 
-const char D_0806a9cc[] = "You thought on the spot well!";
+const char D_0806a9cc[] = "判断真漂亮！";
 
-const char D_0806a9f0[] = "Your technique needs work.";
+const char D_0806a9f0[] = "再好好磨练一下吧。";
 
-const char D_0806aa0c[] = "Your technique is solid!";
+const char D_0806aa0c[] = "技术不错啊！";
 
-const char D_0806aa24[] = "Rhythm League notes:";
+const char D_0806aa24[] = "来自神秘节奏组织的通告";
 
-const char D_0806aa40[] = "For you it is possible!";
+const char D_0806aa40[] = "你一定能做到！";
 
-const char D_0806aa50[] = "Keep it up!";
+const char D_0806aa50[] = "可得撑住啊——！！";
 
 const char D_0806aa51[] = "Right!";
 
-const char D_0806aa64[] = "Give it your all!";
+const char D_0806aa64[] = "冲啊！！";
 
-const char D_0806aa74[] = "It's the final push!";
+const char D_0806aa74[] = "再加把劲！！";
 
-const char D_0806aa8c[] = "It's almost over!";
+const char D_0806aa8c[] = "下一个就结束啦，吱！";
 
 const char D_0806aaa8[] = "";

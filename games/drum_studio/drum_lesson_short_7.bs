@@ -1,3 +1,5 @@
+@ 中文文本：本文件采用译文包中 stage 5 的已校对条目。
+@ 字符串中的 \n 是游戏画面换行；未校对项见 text/zh_hans/TODO_未校对.md。
 .include "include/beatscript.inc"
 .include "games/drum_studio/macros.inc"
 
@@ -30,10 +32,7 @@ define_gameplay_scene scene_drum_lesson_short_7, script_drum_lesson_short_7_entr
 @ Drum Lesson (Short 7) - Data
 
 text D_08060310
-    .ascii "Listen to my pattern, then\n"
-    .ascii "repeat when you're ready.\n"
-    .ascii "I'll show it to you again\n"
-    .asciz "if you stop playing."
+    .asciz "仔细听好再照着做哦。\n想什么时候开始都可以。\n停下演奏的话，\n还能再听一遍示范哦！"
 endtext
 
 
@@ -55,10 +54,7 @@ return
 
 
 text D_080603ec
-    .ascii "\n"
-    .ascii "Next up, hit the crash\n"
-    .ascii "with  at the same\n"
-    .asciz "time as the bass!"
+    .asciz "有一处会多一个音哦！\n听得出来吗？\n提示：R 键"
 endtext
 
 
@@ -70,10 +66,7 @@ return
 
 
 text D_08060454
-    .ascii "\n"
-    .ascii "Now let's add more snares!\n"
-    .ascii "By now, this should be a\n"
-    .asciz "piece of cake for you!"
+    .asciz "还会再多一处哦！\n听得出来吗？"
 endtext
 
 
@@ -90,10 +83,7 @@ return
 
 
 text D_080604f0
-    .ascii "\n"
-    .ascii "Lets add another bass beat!\n"
-    .ascii "This shouldn't be a problem\n"
-    .asciz "for you, either."
+    .asciz "又会再多一处哦！\n听得出来吗？"
 endtext
 
 
@@ -107,10 +97,7 @@ return
 
 
 text D_08060568
-    .ascii "Would you look at that?\n"
-    .ascii "Yet another bass beat!\n"
-    .ascii "Careful, though, things\n"
-    .asciz "are getting trickier!"
+    .asciz "然后居然又多一处哦！\n听得出来吗？"
 endtext
 
 
@@ -129,9 +116,7 @@ return
 
 
 text D_08060628
-    .ascii "\n"
-    .ascii "One more beat on that bass!\n"
-    .asciz "You're doing great, keep it up!"
+    .asciz "这回居然也多一处哦！\n听得出来吗？"
 endtext
 
 
@@ -152,10 +137,7 @@ return
 
 
 text D_08060700
-    .ascii "\n"
-    .ascii "And another one!\n"
-    .ascii "If you keep this pace,\n"
-    .asciz "you'll be done in no time!"
+    .asciz "又来了！！\n又会多一处哦！\n听得出来吗？"
 endtext
 
 
@@ -178,10 +160,7 @@ return
 
 
 text D_080607f0
-    .ascii "Time for the final beat!\n"
-    .ascii "Just add one last snare!\n"
-    .ascii "You'll definitely need both\n"
-    .asciz "hands for this one!\n"
+    .asciz "这就是最后一个了！！\n会多一处音哦！\n听得出来吗？\n提示：双手一起"
 endtext
 
 

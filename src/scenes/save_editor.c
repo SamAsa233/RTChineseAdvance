@@ -1,3 +1,4 @@
+/* 汉化改动：编辑存档时先用临时副本，退出时仅在指定按键组合下写回，避免试玩误改正式存档。 */
 #include "global.h"
 #include "save_editor.h"
 #include "src/scenes/game_select.h"
@@ -99,7 +100,7 @@ struct SaveEditorMember gSaveEditorMembers[SE_MBR_COUNT] = {
     /* SE_MBR_UNK_291 */
     { "unk291",                              SE_KIND_U8,    0,  -1, -1, NULL,   8, NULL,               0 },
     /* SE_MBR_HIGH_SCORE_MR_UPBEAT */
-    #ifdef PARADISE
+    #ifdef BRIT
 	{ "High Score Mr Upbeat",               SE_KIND_U32,         0,  -1, -1, NULL,          0, NULL,               0 },     
     #else
     { "High Score Mr. Upbeat",               SE_KIND_U32,         0,  -1, -1, NULL,          0, NULL,               0 },     
@@ -162,6 +163,7 @@ void save_editor_scene_start(void *sVar, s32 dArg) {
 
     gSaveEditor->bgFont       = create_new_bmp_font_bg(get_current_mem_id(), bitmap_font_warioware_body, 0, 0x340, 6);
     gSaveEditor->objFont      = scene_create_obj_font_printer(0x300, 4);
+    // 调试编辑器先改副本；试玩字库时不会立即改坏玩家存档。
     gSaveEditor->saveData = (struct TengokuSaveData *)mem_heap_alloc(sizeof(struct TengokuSaveData));
     memcpy(gSaveEditor->saveData, &D_030046a8->data, sizeof(struct TengokuSaveData));
     gSaveEditor->inputsEnabled = FALSE;

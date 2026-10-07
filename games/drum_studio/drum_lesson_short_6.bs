@@ -1,3 +1,5 @@
+@ 中文文本：本文件采用译文包中 stage 5 的已校对条目。
+@ 字符串中的 \n 是游戏画面换行；未校对项见 text/zh_hans/TODO_未校对.md。
 .include "include/beatscript.inc"
 .include "games/drum_studio/macros.inc"
 
@@ -30,10 +32,7 @@ define_gameplay_scene scene_drum_lesson_short_6, script_drum_lesson_short_6_entr
 @ Drum Lesson (Short 6) - Data
 
 text D_08060fa0
-    .ascii "Listen to my pattern, then\n"
-    .ascii "repeat when you're ready.\n"
-    .ascii "I'll show it to you again\n"
-    .asciz "if you stop playing."
+    .asciz "仔细听好再照着做哦。\n想什么时候开始都可以。\n停下演奏的话，\n还能再听一遍示范哦！"
 endtext
 
 
@@ -54,10 +53,7 @@ return
 
 
 text D_08061070
-    .ascii "Now, let's add a snare\n"
-    .ascii "right at the very end.\n"
-    .ascii "Keep the bass pattern\n"
-    .asciz "the same, though!"
+    .asciz "有一处会多一个音哦！\n听得出来吗？\n提示：底鼓和刚才一样"
 endtext
 
 
@@ -73,10 +69,7 @@ return
 
 
 text D_08061110
-    .ascii "Let's add another snare,\n"
-    .ascii "this time on the 2nd beat.\n"
-    .ascii "Same as before, keep\n"
-    .asciz "the bass as it is!\n"
+    .asciz "还会再多一处哦！\n听得出来吗？\n提示：底鼓和刚才一样"
 endtext
 
 
@@ -93,10 +86,7 @@ return
 
 
 text D_080611c0
-    .ascii "\n"
-    .ascii "Let's keep this going!\n"
-    .ascii "This time, a hi-hat.\n"
-    .asciz "Press Up on  for it!\n"
+    .asciz "又会再多一处哦！\n听得出来吗？\n提示：十字键上"
 endtext
 
 
@@ -115,10 +105,7 @@ return
 
 
 text D_08061288
-    .ascii "Now for a surprise...\n"
-    .ascii "It's another hi-hat!\n"
-    .ascii "Don't mix up your left\n"
-    .asciz "and right hand, here!"
+    .asciz "然后居然又多一处哦！\n听得出来吗？"
 endtext
 
 
@@ -131,10 +118,7 @@ return
 
 
 text D_08061300
-    .ascii "\n"
-    .ascii "One last surprise!\n"
-    .ascii "Just one more hi-hat!\n"
-    .asciz "That's a groovy beat!\n"
+    .asciz "这回节奏很带劲哦！\n能打出来吗？"
 endtext
 
 

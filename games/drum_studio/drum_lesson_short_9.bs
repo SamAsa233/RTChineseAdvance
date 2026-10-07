@@ -1,3 +1,5 @@
+@ 中文文本：本文件采用译文包中 stage 5 的已校对条目。
+@ 字符串中的 \n 是游戏画面换行；未校对项见 text/zh_hans/TODO_未校对.md。
 .include "include/beatscript.inc"
 .include "games/drum_studio/macros.inc"
 
@@ -30,10 +32,7 @@ define_gameplay_scene scene_drum_lesson_short_9, script_drum_lesson_short_9_entr
 @ Drum Lesson (Short 9) - Data
 
 text D_0806090c
-    .ascii "Listen to my pattern, then\n"
-    .ascii "repeat when you're ready.\n"
-    .ascii "I'll show it to you again\n"
-    .asciz "if you stop playing."
+    .asciz "仔细听好再照着打。\n想什么时候开始都可以。\n停下演奏的话，\n还能再听一遍示范哦！"
 endtext
 
 
@@ -54,10 +53,7 @@ return
 
 
 text D_080609dc
-    .ascii "\n"
-    .ascii "Kick each bass twice!\n"
-    .ascii "Think you've got this?\n"
-    .asciz "I'd suggest only using ."
+    .asciz "底鼓每次要踩两下哦！\n能打出来吗？\n要点：只用 B 键"
 endtext
 
 
@@ -86,10 +82,7 @@ return
 
 
 text D_08060af4
-    .ascii "Now let's do a new snare\n"
-    .ascii "beat, right before the end.\n"
-    .ascii "Careful though, the bass\n"
-    .asciz "is still the same as before!"
+    .asciz "还会再多一处哦！\n听得出来吗？\n提示：底鼓和刚才一样"
 endtext
 
 
@@ -111,10 +104,7 @@ return
 
 
 text D_08060be0
-    .ascii "\n"
-    .ascii "Let's add another snare\n"
-    .ascii "right after the last one.\n"
-    .asciz "The bass still hasn't changed!"
+    .asciz "又会再多一处哦！\n听得出来吗？"
 endtext
 
 
@@ -138,10 +128,7 @@ return
 
 
 text D_08060cd0
-    .ascii "Okay, let's add a bit more\n"
-    .ascii "snare at the beginning.\n"
-    .ascii "Listen carefully and keep\n"
-    .asciz "the beat steady!"
+    .asciz "然后居然又多一处哦！\n听得出来吗？"
 endtext
 
 
@@ -167,10 +154,7 @@ return
 
 
 text D_08060de4
-    .ascii "\n"
-    .ascii "Another snare beat! It's a\n"
-    .ascii "simple change, but it makes\n"
-    .asciz "things a lot more difficult."
+    .asciz "这回居然也多一处哦！\n听得出来吗？"
 endtext
 
 
@@ -198,10 +182,7 @@ return
 
 
 text D_08060f10
-    .ascii "You're almost done! Now\n"
-    .ascii "another one, at the start.\n"
-    .ascii "It's pretty tricky, but it\n"
-    .asciz "makes it sound great!\n"
+    .asciz "又来了！！\n又会多一处哦！\n听得出来吗？"
 endtext
 
 

@@ -1,0 +1,32 @@
+[
+  {
+    "key": "advance_options_desc_text[0]",
+    "original": "Sound Effects\nEnglish   Use the localized sound effects.\nJapanese  Use the original sound effects.",
+    "translation": "音效\n中文   使用中文翻配音效\n日语   使用原版日语音效",
+    "stage": 1
+  },
+  {
+    "key": "advance_options_desc_text[1]",
+    "original": "Music\nEnglish   Use the localized music.\nJapanese  Use the original music.",
+    "translation": "音乐\n中文翻唱   使用中文翻唱音乐\n日语原唱   使用原版日语音乐",
+    "stage": 1
+  },
+  {
+    "key": "advance_options_desc_text[2]",
+    "original": "Rumble\nOn        Rumble is active during gameplay.\nOff       Rumble is disabled.",
+    "translation": "震动\n开       游玩时设备将会震动\n关       游玩时震动将被禁用",
+    "stage": 1
+  },
+  {
+    "key": "advance_options_desc_text[3]",
+    "original": "Show Disclaimer\nShow      Show the disclaimer at startup.\nSkip      Skip the disclaimer at startup.",
+    "translation": "汉化声明\n展示      游戏启动时展示汉化声明\n跳过      启动时不再展示汉化声明",
+    "stage": 1
+  },
+  {
+    "key": "advance_options_desc_text[4]",
+    "original": "Game Select Music\nNormal    Use Game Select 2 after the credits.\nSwapped   Use Game Select 1 after the credits.",
+    "translation": "游戏选择菜单音乐\n启用切换   二周目将切换新音乐\n禁用切换   二周目仍播放旧音乐",
+    "stage": 1
+  }
+]

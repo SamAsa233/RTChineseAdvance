@@ -1,3 +1,6 @@
+/* 中文文本：本文件采用译文包中 stage 5 的已校对条目。
+ * 字符串中的 \n 是游戏画面换行；相邻引号只是方便阅读源码。
+ * 未校对或未定位的条目见 text/zh_hans/TODO_未校对.md。 */
 #include "global.h"
 #include "text.h"
 
@@ -147,7 +150,9 @@ const char D_08069d68[] = "中野 ひとみ";
 
 const char D_08069d74[] = "\0023" "还有你！";
 
-const char D_08069d7c[] = "\0023" "";
+// 阶段 5 已校对：原版职务标题的显示前缀不动，补回空缺的“执行”。
+// TODO 未校对：与下一行“制作人”的片尾职务布局仍需实机核验。
+const char D_08069d7c[] = "";
 
 const char D_08069d88[] = "\0023" "执行制作人";
 
@@ -157,7 +162,7 @@ const char D_08069da0[] = "寺井 てらい";
 
 const char D_08069da8[] = "";
 
-const char D_08069dac[] = "(C) 2006 Nintendo / J.P ROOM";
+const char D_08069dac[] = "(C)2006 Nintendo/J.P.ROOM";
 
 const char D_08069dc8[] =
     "\n"    

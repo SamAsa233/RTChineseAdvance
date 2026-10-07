@@ -1,3 +1,4 @@
+/* 汉化改动：声明标题实际用到的中文字模和查找表，避免把整套两万多个 CJK 字形全部放进 ROM。 */
 #pragma once
 
 #include "global.h"
@@ -13,6 +14,7 @@ extern const u8 bitmap_font_warioware_outline_large_cjk_symbols_and_punctuation_
 extern const u8 bitmap_font_warioware_outline_large_hiragana_3040_309F_raw_4bpp[];
 extern const u8 bitmap_font_warioware_outline_large_katakana_30A0_30FF_raw_4bpp[];
 extern const u8 bitmap_font_warioware_outline_large_pua_E000_E020_raw_4bpp[];
+extern const u8 bitmap_font_warioware_outline_large_cjk_used_raw_4bpp[];
 
 extern const u8 bitmap_font_warioware_outline_small_ascii_0000_007F_raw_4bpp[];
 extern const u8 bitmap_font_warioware_outline_small_latin_1_supplement_0080_00FF_raw_4bpp[];
@@ -22,6 +24,7 @@ extern const u8 bitmap_font_warioware_outline_small_cjk_symbols_and_punctuation_
 extern const u8 bitmap_font_warioware_outline_small_hiragana_3040_309F_raw_4bpp[];
 extern const u8 bitmap_font_warioware_outline_small_katakana_30A0_30FF_raw_4bpp[];
 extern const u8 bitmap_font_warioware_outline_small_pua_E000_E020_raw_4bpp[];
+extern const u8 bitmap_font_warioware_outline_small_cjk_used_raw_4bpp[];
 
 extern const u8 bitmap_font_warioware_body_text_ascii_0000_007F_raw_4bpp[];
 extern const u8 bitmap_font_warioware_body_icon_ascii_0000_007F_raw_4bpp[];

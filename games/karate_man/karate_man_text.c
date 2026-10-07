@@ -1,3 +1,7 @@
+/* 中文文本：本文件采用译文包中 stage 5 的已校对条目。
+ * 字符串中的 \n 是游戏画面换行；相邻引号只是方便阅读源码。
+ * 未校对或未定位的条目见 text/zh_hans/TODO_未校对.md。 */
+/* 汉化：正式开始提示的两个地区拼写分支统一使用阶段 5 已校对文本。 */
 #include "global.h"
 #include "text.h"
 
@@ -5,59 +9,55 @@
 /* Game Text - Karate Man */
 
 
-const char D_0805ab50[] = "You needed to focus on the basics.";
+const char D_0805ab50[] = "基本功还不够。";
 
 const char D_0805ab68[] = "";
 
-const char D_0805ab6c[] = "Your consecutive punches were poor.";
+const char D_0805ab6c[] = "看来你不太擅长连续出手呢。";
 
-const char D_0805ab90[] = "Your consecutive punches were precise!";
+const char D_0805ab90[] = "连续拳很有劲道！";
 
-const char D_0805abb0[] = "You nailed the ending!";
+const char D_0805abb0[] = "最后一下很到位！";
 
 const char D_0805abc4[] =
-    "\n"
-    "Remember to feel the flow!";
+    "别忘了跟着音乐动起来哦！";
 
-const char D_0805abdc[] = "The Master speaks...";
+const char D_0805abdc[] = "师父的话";
 
 const char D_0805abec[] =
-    "Welcome to karate \n"
-    "training!";
+    "欢迎来到\n"
+    "空手道家的游戏！";
 
 const char D_0805ac0c[] = 
-    "Watch out for flying\n"
-    "objects, and press "CHAR_A_BUTTON_UTF8"\n"
-    "to punch them!\n"
-    "The timing's a little tricky!";
+    "这个游戏只要用 A 键\n把“东西”打飞，\n不过出拳时机可得抓得很准。";
 
 const char D_0805ac60[] =
-    "Here, why don't you give\n"
-    "it a shot?";
+    "先试着把飞过来的\n"
+    "“东西”一拳打飞吧。";
 
 const char D_0805aca0[] =
-    "See?\n"
-    "The timing is pretty\n"
-    "strict, isn't it?";
+    "怎么样？\n"
+    "这下知道出拳时机\n"
+    "有多讲究了吧？";
 
 const char D_0805acd8[] =
-    "Now try punching to\n"
-    "the beat of some music!";
+    "接下来，试着跟着音乐\n"
+    "出拳看看吧！";
 
 const char D_0805ad04[] =
-    "How was that?\n"
-    "Much easier with the\n"
-    "music, right?";
+    "感觉怎么样？\n"
+    "跟着音乐动起来的话，\n"
+    "是不是更容易一点？";
 
 const char D_0805ad38[] =
-    "Well, there you have it!\n"
-    "Just flow with the music\n"
-    "and punch away!";
+    "那么，就照这个感觉，\n"
+    "跟着音乐的节奏，\n"
+    "把那些“东西”统统打飞吧！";
 
 const char D_0805ad80[] =
     "\n"
-    #ifdef PARADISE
-    "Ready, steady, punch!";
+    #ifdef BRIT
+    "正式开始！！";
     #else
-    "Ready, set, punch!";
+    "正式开始！！";
     #endif

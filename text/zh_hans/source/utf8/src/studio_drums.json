@@ -1,0 +1,110 @@
+[
+  {
+    "key": "studio_drums_1",
+    "original": "フツーなドラム",
+    "translation": "普通鼓组",
+    "stage": 5
+  },
+  {
+    "key": "studio_drums_2",
+    "original": "ドライなドラム",
+    "translation": "干音鼓组",
+    "stage": 5
+  },
+  {
+    "key": "studio_drums_3",
+    "original": "パワーなドラム",
+    "translation": "强力鼓组",
+    "stage": 5
+  },
+  {
+    "key": "studio_drums_4",
+    "original": "テクノなドラム",
+    "translation": "电子鼓组",
+    "stage": 5
+  },
+  {
+    "key": "studio_drums_5",
+    "original": "マットなドラム",
+    "translation": "沉稳鼓组",
+    "stage": 5
+  },
+  {
+    "key": "studio_drums_6",
+    "original": "アジアなドラム",
+    "translation": "亚洲风鼓组",
+    "stage": 5
+  },
+  {
+    "key": "studio_drums_7",
+    "original": "ライトなドラム",
+    "translation": "轻盈鼓组",
+    "stage": 5
+  },
+  {
+    "key": "studio_drums_8",
+    "original": "ハードなドラム",
+    "translation": "硬派鼓组",
+    "stage": 5
+  },
+  {
+    "key": "studio_drums_9",
+    "original": "ハットテクなドラム",
+    "translation": "踩镲技巧鼓组",
+    "stage": 5
+  },
+  {
+    "key": "studio_drums_10",
+    "original": "カカトテクなドラム １",
+    "translation": "脚跟技巧鼓组 1",
+    "stage": 5
+  },
+  {
+    "key": "studio_drums_11",
+    "original": "カカトテクなドラム ２",
+    "translation": "脚跟技巧鼓组 2",
+    "stage": 5
+  },
+  {
+    "key": "studio_drums_12",
+    "original": "音効なドラム",
+    "translation": "音效鼓组",
+    "stage": 5
+  },
+  {
+    "key": "studio_drums_13",
+    "original": "タップなドラム",
+    "translation": "踢踏鼓组",
+    "stage": 5
+  },
+  {
+    "key": "studio_drums_14",
+    "original": "風切るドラム",
+    "translation": "疾风鼓组",
+    "stage": 5
+  },
+  {
+    "key": "studio_drums_15",
+    "original": "さむらいドラム",
+    "translation": "武士鼓组",
+    "stage": 5
+  },
+  {
+    "key": "studio_drums_memory_full",
+    "original": "メモリがいっぱいです。\nデータは残らないけど演奏する？",
+    "translation": "存储空间已满。\n本次演奏将无法保存，还要继续吗？",
+    "stage": 5
+  },
+  {
+    "key": "studio_drums_limit",
+    "original": "演奏データは10コしか残せません。\nデータは残らないけど演奏する？",
+    "translation": "演奏数据最多只能保留 10 份。\n本次演奏将无法保存，还要继续吗？",
+    "stage": 5
+  },
+  {
+    "key": "studio_drums_low_memory",
+    "original": "メモリが少なくなってきてます。\nこのまま演奏する？",
+    "translation": "存储空间快满了。\n还要继续演奏吗？",
+    "stage": 5
+  }
+]

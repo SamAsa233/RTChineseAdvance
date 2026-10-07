@@ -67,23 +67,27 @@ void arrival_scene_start(void *sVar, s32 dArg) {
 
     printer = text_printer_create_new(get_current_mem_id(), 1, 240, 32);
     text_printer_set_x_y(printer, 24, 48);
-    text_printer_set_string(printer, "        节奏资料室通知："); // "Notification from the Rhythm Reference Room"
+    // 阶段 5 已校对：标题使用“节奏资料室通知”；冒号和左侧空格沿用原界面排版。
+    text_printer_set_string(printer, "        节奏资料室通知：");
     text_printer_update(printer);
     text_printer_update(printer);
 
     printer = text_printer_create_new(get_current_mem_id(), 1, 240, 30);
     text_printer_set_x_y(printer, 24, 96);
-    text_printer_set_string(printer, "                            现已入库。"); // "You have received [_______]."
+    // 阶段 5 已校对：物品标题由下一行动态插入，这一行只显示固定结尾。
+    text_printer_set_string(printer, "                            现已入库。");
     text_printer_update(printer);
     text_printer_update(printer);
 
-    memcpy(message, "\"", 5);
-    strcat(message, title);
-    strcat(message, "\"");
+    // 原代码从只有 2 字节的引号字符串读取 5 字节，可能读到无关内存。
+    // 汉字标题占更多字节；按上面分配的 0x100 字节限长拼接并补 NUL。
+    snprintf(message, 0x100, "\"%s\"", title);
 
     printer = text_printer_create_new(get_current_mem_id(), 1, 240, 28);
     text_printer_set_x_y(printer, 0, 72);
     text_printer_center_by_content(printer, TRUE);
+    // 实机核验：2026-09-29 用当前最长资料标题“欢迎来到节奏天国！”检查，
+    // 引号、居中标题、上下固定文案和两个选项光标均未重叠或截断。
     text_printer_set_string(printer, message);
     text_printer_update(printer);
     text_printer_update(printer);

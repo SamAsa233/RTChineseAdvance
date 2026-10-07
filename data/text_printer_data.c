@@ -1,3 +1,4 @@
+/* 汉化改动：增补正文汉字范围与中文禁则标点表，让 UTF-8 字符能显示并正确折行。 */
 #include "global.h"
 #include "text.h"
 #include "text_printer_data.h"
@@ -103,3 +104,8 @@ u8 D_08938258[] = { 32, 16, 10, 8, 4 };
 
 // [D_0893825d]
 u8 D_0893825d[] = { 1, 2, 3, 4, 8 };
+
+// 禁止行首：中文句读、右括号/右引号、省略号、破折号、波浪号、间隔号与半角句读。
+const char gTextLineStartForbidden[] = "，。、；：？！”’）》〉】』」…—～·!?,.;:)]}";
+// 禁止行尾：中文左引号、左括号及半角左括号。
+const char gTextLineEndForbidden[] = "“‘（《〈【『「([{";

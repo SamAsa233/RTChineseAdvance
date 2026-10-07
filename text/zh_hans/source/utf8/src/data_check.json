@@ -1,0 +1,68 @@
+[
+  {
+    "key": "data_check_title",
+    "original": "ゲームプレイ履歴",
+    "translation": "游戏记录",
+    "stage": 5
+  },
+  {
+    "key": "data_check_avg_score",
+    "original": "平均点 ",
+    "translation": "平均分：",
+    "stage": 5
+  },
+  {
+    "key": "data_check_avg_score_suffix",
+    "original": " (1000点満点)",
+    "translation": "（满分 1000 分）",
+    "stage": 5
+  },
+  {
+    "key": "data_check_play_count",
+    "original": "遊んだ回数 ",
+    "translation": "游玩次数：",
+    "stage": 5
+  },
+  {
+    "key": "data_check_play_count_suffix",
+    "original": "回",
+    "translation": "次",
+    "stage": 5
+  },
+  {
+    "key": "data_check_first_pass",
+    "original": "  ( 初合格: ",
+    "translation": "（首次通关：",
+    "stage": 5
+  },
+  {
+    "key": "data_check_not_yet_1",
+    "original": "まだ",
+    "translation": "尚未",
+    "stage": 5
+  },
+  {
+    "key": "data_check_count_1",
+    "original": "回目",
+    "translation": "次",
+    "stage": 5
+  },
+  {
+    "key": "data_check_first_great_pass",
+    "original": "  初大合格: ",
+    "translation": "  首次高水准：",
+    "stage": 5
+  },
+  {
+    "key": "data_check_not_yet_2",
+    "original": "まだ )",
+    "translation": "尚未）",
+    "stage": 5
+  },
+  {
+    "key": "data_check_count_2",
+    "original": "回目 )",
+    "translation": "次）",
+    "stage": 5
+  }
+]

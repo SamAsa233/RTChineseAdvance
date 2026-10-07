@@ -1,0 +1,56 @@
+[
+  {
+    "key": "drum_lesson_short_4_D_0805f560",
+    "original": "よくきいてマネしてね。\n好きなタイミングでどうぞ。\n演奏を止めると、\nお手本がきけるヨ！",
+    "translation": "仔细听好再照着做哦。\n想什么时候开始都可以。\n停下演奏的话，\n还能再听一遍示范哦！",
+    "stage": 5
+  },
+  {
+    "key": "drum_lesson_short_4_D_0805f648",
+    "original": "１カ所、音がふえるヨ！\nわかるかな？",
+    "translation": "有一处会多一个音哦！\n听得出来吗？",
+    "stage": 5
+  },
+  {
+    "key": "drum_lesson_short_4_D_0805f6ac",
+    "original": "さらに１つ、\n音がふえるヨ！\nわかるかな？\nヒント：十字ボタン上",
+    "translation": "还会再多一个音哦！\n听得出来吗？\n提示：十字键上",
+    "stage": 5
+  },
+  {
+    "key": "drum_lesson_short_4_D_0805f740",
+    "original": "またまた１カ所、\n音がふえるヨ！\nわかるかな？",
+    "translation": "又会再多一处哦！\n听得出来吗？",
+    "stage": 5
+  },
+  {
+    "key": "drum_lesson_short_4_D_0805f7f4",
+    "original": "そしてまたなんと！\n１カ所、音がふえるヨ！\nわかるかな？\nヒント：十字ボタン右",
+    "translation": "然后居然又多一处哦！\n听得出来吗？\n提示：十字键右",
+    "stage": 5
+  },
+  {
+    "key": "drum_lesson_short_4_D_0805f8dc",
+    "original": "これまたなんと！！\n１カ所、音がふえるヨ！\nわかるかな？",
+    "translation": "这回居然也多一处哦！\n听得出来吗？",
+    "stage": 5
+  },
+  {
+    "key": "drum_lesson_short_4_D_0805f9cc",
+    "original": "十字ボタンの上で\nたたいたパーツは\nハイハットっていう\nシンバルです。",
+    "translation": "刚才用十字键上敲的那个部件，\n是叫作“踩镲”的一种镲片。",
+    "stage": 5
+  },
+  {
+    "key": "drum_lesson_short_4_D_0805fa10",
+    "original": "ドラムセットによって\n十字ボタンの上は\nハイハットだったり\nロールだったりします。",
+    "translation": "会根据鼓组不同，\n十字键上有时是踩镲，\n有时则是滚奏。",
+    "stage": 5
+  },
+  {
+    "key": "drum_lesson_short_4_D_0805fa60",
+    "original": "では、つぎ行きまーす！",
+    "translation": "好，接着下一段！",
+    "stage": 5
+  }
+]

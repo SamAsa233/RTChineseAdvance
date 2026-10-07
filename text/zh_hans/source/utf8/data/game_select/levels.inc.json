@@ -1,0 +1,1562 @@
+[
+  {
+    "key": "level_karate_1",
+    "original": "カラテ家",
+    "translation": "空手道家",
+    "stage": 5
+  },
+  {
+    "key": "level_karate_1_desc",
+    "original": "とんでくるモノを\nAボタンでパンチ！\nよくあるゲーム？\n…かもね。",
+    "translation": "向飞来的东西\n按A键出拳！\n很常见的游戏？\n……也许吧。",
+    "stage": 5
+  },
+  {
+    "key": "level_karate_1_result_1",
+    "original": "明日が あるさ。",
+    "translation": "没关系，还有明天。",
+    "stage": 5
+  },
+  {
+    "key": "level_karate_1_result_2",
+    "original": "とりあえず、ごはん 食べとこう！",
+    "translation": "总之，先吃饭吧！",
+    "stage": 5
+  },
+  {
+    "key": "level_karate_1_result_3",
+    "original": "こんなに ブッとばしちゃった！！",
+    "translation": "居然打飞了这么多！！",
+    "stage": 5
+  },
+  {
+    "key": "level_karate_2",
+    "original": "カラテ家 ２",
+    "translation": "空手道家２",
+    "stage": 5
+  },
+  {
+    "key": "level_karate_2_desc",
+    "original": "とんでくるモノを\nAボタンでパンチ！\nでも、 スピードが\nヘンテコだヨ。",
+    "translation": "向飞来的东西\n按A键出拳！\n不过，这速度\n有点古怪哦。",
+    "stage": 5
+  },
+  {
+    "key": "level_karate_2_result_1",
+    "original": "テンポが なんだー！！",
+    "translation": "这节奏是什么鬼啊—！！",
+    "stage": 5
+  },
+  {
+    "key": "level_karate_2_result_2",
+    "original": "ま、さておき。 ごはん 食べよう！",
+    "translation": "嘛，先不管那些。来吃饭吧！",
+    "stage": 5
+  },
+  {
+    "key": "level_karate_2_result_3",
+    "original": "ざっと こんなモンだぜー！！",
+    "translation": "差不多就是这样啦——！！",
+    "stage": 5
+  },
+  {
+    "key": "level_pachi_1",
+    "original": "パチパチ三人衆",
+    "translation": "啪叽啪叽三人组",
+    "stage": 5
+  },
+  {
+    "key": "level_pachi_1_desc",
+    "original": "順番に拍手をするヨ！\nあなたは３番目。\n前の2人をよく見てネ！",
+    "translation": "我们要依次拍手哦！\n你排在第３个。\n仔细看好前面两人！",
+    "stage": 5
+  },
+  {
+    "key": "level_pachi_1_result_1",
+    "original": "仲間が帰っちゃった！",
+    "translation": "同伴都走啦！",
+    "stage": 5
+  },
+  {
+    "key": "level_pachi_1_result_2",
+    "original": "満足するのは まだ早いかもね。",
+    "translation": "现在就满足，可能还早了点呢。",
+    "stage": 5
+  },
+  {
+    "key": "level_pachi_1_result_3",
+    "original": "この三人衆、 息ピッタリだ！！",
+    "translation": "这三人组，配合也太默契啦！！",
+    "stage": 5
+  },
+  {
+    "key": "level_bari_1",
+    "original": "バリバリ三人衆",
+    "translation": "帅气帅气三人组",
+    "stage": 5
+  },
+  {
+    "key": "level_bari_1_desc",
+    "original": "ラフだった彼らが\nバリっとスーツを\n着てきたヨ！\nカッコイイ！！",
+    "translation": "原本穿着随意的他们\n这次换上了\n一身笔挺西装！\n太帅了！！",
+    "stage": 5
+  },
+  {
+    "key": "level_bari_1_result_1",
+    "original": "キャー！ ゆるしてー！！",
+    "translation": "呀啊！饶了我吧！！",
+    "stage": 5
+  },
+  {
+    "key": "level_bari_1_result_2",
+    "original": "あとチョットなんだけどね…",
+    "translation": "就差那么一点点了呢…",
+    "stage": 5
+  },
+  {
+    "key": "level_bari_1_result_3",
+    "original": "息ピッタリでーす！ イェーイ！",
+    "translation": "配合十分默契！ 耶ー！",
+    "stage": 5
+  },
+  {
+    "key": "level_poly_1",
+    "original": "ポリリズム",
+    "translation": "复合节奏",
+    "stage": 5
+  },
+  {
+    "key": "level_poly_1_desc",
+    "original": "十字ボタンとＡボタンの同時押しをマスターだ！けっこうカンタンだ。たぶん…",
+    "translation": "掌握十字键与A键同时按下的诀窍！\n其实挺简单的。大概吧……",
+    "stage": 5
+  },
+  {
+    "key": "level_poly_1_result_1",
+    "original": "赤いモノ、量産は たいへんだなぁ…",
+    "translation": "这红色小东西，想实现大规模量产真是相当困难啊…",
+    "stage": 5
+  },
+  {
+    "key": "level_poly_1_result_2",
+    "original": "どんどん 赤いモノを 生産だ！",
+    "translation": "源源不断地生产红色小东西吧！",
+    "stage": 5
+  },
+  {
+    "key": "level_poly_1_result_3",
+    "original": "赤いモノを 生産しまくりだネ！！",
+    "translation": "可真是一个劲儿地猛造红色小东西啊！！",
+    "stage": 5
+  },
+  {
+    "key": "level_poly_2",
+    "original": "ポリリズム ２",
+    "translation": "复合节奏２",
+    "stage": 5
+  },
+  {
+    "key": "level_poly_2_desc",
+    "original": "これぞ左右独立！\nテンポよく こなして\nレッツ ポリリズム！\nイェーイ！",
+    "translation": "这就是左右分控！\n跟着节奏完成操作，\n来吧，复合节奏！\n耶——！",
+    "stage": 5
+  },
+  {
+    "key": "level_poly_2_result_1",
+    "original": "赤いモノ、もっと生産しなきゃ…",
+    "translation": "红色小东西，还得再多生产点才行…",
+    "stage": 5
+  },
+  {
+    "key": "level_poly_2_result_2",
+    "original": "もっともっと 赤いモノを 生産だ！",
+    "translation": "再多一点 再多一点，继续生产红色小东西！",
+    "stage": 5
+  },
+  {
+    "key": "level_poly_2_result_3",
+    "original": "赤いモノを じゃんじゃん生産しちゃうヨ！！",
+    "translation": "红色小东西要铺天盖地大规模量产咯！！",
+    "stage": 5
+  },
+  {
+    "key": "level_night_1",
+    "original": "ナイトウォーク",
+    "translation": "夜空漫步",
+    "stage": 5
+  },
+  {
+    "key": "level_night_1_desc",
+    "original": "音楽にあわせて\nジャンプしてネ！\n星たちが あつまって\nあなたも夜空へ…",
+    "translation": "跟着音乐一起\n尽情跳起来！\n星星聚集，\n你也奔向夜空…",
+    "stage": 5
+  },
+  {
+    "key": "level_night_1_result_1",
+    "original": "つぎは もっと がんばってネ…",
+    "translation": "下一次可要再加把劲喔…",
+    "stage": 5
+  },
+  {
+    "key": "level_night_1_result_2",
+    "original": "夜空の おさんぽ、 たのしいな。",
+    "translation": "在夜空下散步，真开心呀。",
+    "stage": 5
+  },
+  {
+    "key": "level_night_1_result_3",
+    "original": "星たちが かんげいしてるヨ！",
+    "translation": "星星们正在欢迎你哦！",
+    "stage": 5
+  },
+  {
+    "key": "level_night_2",
+    "original": "ナイトウォーク ２",
+    "translation": "夜空漫步２",
+    "stage": 5
+  },
+  {
+    "key": "level_night_2_desc",
+    "original": "音楽にあわせて\nジャンプしてネ！\nビリビリウオに\n気をつけよう。",
+    "translation": "跟着音乐节拍\n尽情跳起来！\n遇到电击鱼\n可要小心哦。",
+    "stage": 5
+  },
+  {
+    "key": "level_night_2_result_1",
+    "original": "うひゃー！ しっぱいしちゃった！！",
+    "translation": "哇呀——！失败了！！",
+    "stage": 5
+  },
+  {
+    "key": "level_night_2_result_2",
+    "original": "夜風が とっても きもちいいな。",
+    "translation": "夜晚的风吹起来可真舒服呀。",
+    "stage": 5
+  },
+  {
+    "key": "level_night_2_result_3",
+    "original": "星たちと おともだちだヨ！",
+    "translation": "你已经跟星星们成好朋友啦！",
+    "stage": 5
+  },
+  {
+    "key": "level_rhythm_datsu_1",
+    "original": "リズム脱毛",
+    "translation": "节奏脱毛",
+    "stage": 5
+  },
+  {
+    "key": "level_rhythm_datsu_1_desc",
+    "original": "どんどん生えてくる\nうっとうしい「毛」！\nぬいちゃえ、 \nぬいちゃえ！",
+    "translation": "那讨厌的“毛”\n总是不停地长出来！\n拔掉它，\n拔掉它！",
+    "stage": 5
+  },
+  {
+    "key": "level_rhythm_datsu_1_result_1",
+    "original": "これじゃ 売りものに ならん！",
+    "translation": "这样可根本卖不出去啊！",
+    "stage": 5
+  },
+  {
+    "key": "level_rhythm_datsu_1_result_2",
+    "original": "なんで うちのヤサイは 毛がはえるんだ？",
+    "translation": "为啥俺家的蔬菜会长毛啊？",
+    "stage": 5
+  },
+  {
+    "key": "level_rhythm_datsu_1_result_3",
+    "original": "スッキリそうかい！ 空気がうまい！！",
+    "translation": "一身轻松！空气真新鲜！！",
+    "stage": 5
+  },
+  {
+    "key": "level_rhythm_datsu_2",
+    "original": "リズム脱毛 ２",
+    "translation": "节奏脱毛２",
+    "stage": 5
+  },
+  {
+    "key": "level_rhythm_datsu_2_desc",
+    "original": "またしても生えてくる\nうっとうしい「毛」！\nぬいちゃえ、 \nぬいちゃえ！",
+    "translation": "那讨厌的“毛”\n居然又长出来了！\n拔掉它，\n拔掉它！",
+    "stage": 5
+  },
+  {
+    "key": "level_rhythm_datsu_2_result_1",
+    "original": "なんで 毛が はえるんだー！？",
+    "translation": "为什么会长毛啊ー！？",
+    "stage": 5
+  },
+  {
+    "key": "level_rhythm_datsu_2_result_2",
+    "original": "しかしなんで うちのヤサイだけに 毛が…？",
+    "translation": "为啥偏偏只有俺家的蔬菜会长毛…？",
+    "stage": 5
+  },
+  {
+    "key": "level_rhythm_datsu_2_result_3",
+    "original": "スッキリそうかい！ 空気がうますぎ！！",
+    "translation": "一身轻松！空气好得不得了！！",
+    "stage": 5
+  },
+  {
+    "key": "level_baikin_1",
+    "original": "バイキン はかせ",
+    "translation": "细菌博士",
+    "stage": 5
+  },
+  {
+    "key": "level_baikin_1_desc",
+    "original": "助手からの知らせ\n「大変です！\nバイキン発生です！！\n先生、たすけて〜」",
+    "translation": "来自助手的通报\n“不好了！\n细菌爆发啦！！\n博士，快来救命啊～”",
+    "stage": 5
+  },
+  {
+    "key": "level_baikin_1_result_1",
+    "original": "研究は失敗だ。",
+    "translation": "研究失败了。",
+    "stage": 5
+  },
+  {
+    "key": "level_baikin_1_result_2",
+    "original": "失敗は成功のもとカモ！",
+    "translation": "或许失败乃成功之母呢！",
+    "stage": 5
+  },
+  {
+    "key": "level_baikin_1_result_3",
+    "original": "ものすごいクスリができた！！",
+    "translation": "研制出了超级厉害的药剂！！",
+    "stage": 5
+  },
+  {
+    "key": "level_hopping_1",
+    "original": "ホッピングロード",
+    "translation": "跳杆之路",
+    "stage": 5
+  },
+  {
+    "key": "level_hopping_1_desc",
+    "original": "とんでくる丸い玉。\nあれはイイやつです。\n落とさないでネ！",
+    "translation": "飞过来的圆球，\n那可是好东西，\n千万别漏接哦！",
+    "stage": 5
+  },
+  {
+    "key": "level_hopping_1_result_1",
+    "original": "なかなか ムズカシー！",
+    "translation": "还挺有难度啊ー！",
+    "stage": 5
+  },
+  {
+    "key": "level_hopping_1_result_2",
+    "original": "けっこうな コンビネーションだったネ！",
+    "translation": "刚才这些配合还挺厉害呢！",
+    "stage": 5
+  },
+  {
+    "key": "level_hopping_1_result_3",
+    "original": "かんたん かんたん♪",
+    "translation": "简单 简单♪",
+    "stage": 5
+  },
+  {
+    "key": "level_hopping_2",
+    "original": "ホッピングロード２",
+    "translation": "跳杆之路２",
+    "stage": 5
+  },
+  {
+    "key": "level_hopping_2_desc",
+    "original": "とんでくる丸い玉。\nほんとにイイやつ\nなんですヨ〜。\n落とさないでネ！",
+    "translation": "飞过来的圆球。\n那真的是个\n好东西哟～。\n可别漏接哦！",
+    "stage": 5
+  },
+  {
+    "key": "level_hopping_2_result_1",
+    "original": "エーン！ しっぱい！！",
+    "translation": "呜哇！搞砸了！！",
+    "stage": 5
+  },
+  {
+    "key": "level_hopping_2_result_2",
+    "original": "なかなか がんばっていたネ！",
+    "translation": "你刚才已经相当努力了呢！",
+    "stage": 5
+  },
+  {
+    "key": "level_hopping_2_result_3",
+    "original": "らくちん らくちん♪",
+    "translation": "轻松 轻松♪",
+    "stage": 5
+  },
+  {
+    "key": "level_ninja_1",
+    "original": "忍者",
+    "translation": "忍者",
+    "stage": 5
+  },
+  {
+    "key": "level_ninja_1_desc",
+    "original": "敵襲(てきしゅう)だ！\n十字ボタンとAボタンで応戦(おうせん)だ！\nフジヤマ（ふじさん）！！",
+    "translation": "敌人来袭！\n用十字键与 A 键迎战！\n富士山！！",
+    "stage": 5
+  },
+  {
+    "key": "level_ninja_1_result_1",
+    "original": "ゲッ！ トノが きぜつしてる！！",
+    "translation": "啊呀！主公昏倒了！！",
+    "stage": 5
+  },
+  {
+    "key": "level_ninja_1_result_2",
+    "original": "トノ！ ごめんなさ〜い。",
+    "translation": "主公！对不起啊〜。",
+    "stage": 5
+  },
+  {
+    "key": "level_ninja_1_result_3",
+    "original": "アッパレって 言われちゃったゼ！！",
+    "translation": "被人夸干得漂亮啦！！",
+    "stage": 5
+  },
+  {
+    "key": "level_ninja_2",
+    "original": "忍者の子孫",
+    "translation": "忍者的后代",
+    "stage": 5
+  },
+  {
+    "key": "level_ninja_2_desc",
+    "original": "オレのじいちゃんの\nじいちゃんの\nじいちゃんは\n忍者なんだぜ。",
+    "translation": "我爷爷的\n爷爷的\n爷爷啊，\n可是忍者呢。",
+    "stage": 5
+  },
+  {
+    "key": "level_ninja_2_result_1",
+    "original": "まけるな！ おまえが頼りなのだー！！",
+    "translation": "别输啊！就指望你了ー！！",
+    "stage": 5
+  },
+  {
+    "key": "level_ninja_2_result_2",
+    "original": "うむ、スジは良いな。がんばれ！",
+    "translation": "嗯，底子不错嘛。加油！",
+    "stage": 5
+  },
+  {
+    "key": "level_ninja_2_result_3",
+    "original": "オヌシは強い。お幸せに…！",
+    "translation": "你很强。祝你幸福…！",
+    "stage": 5
+  },
+  {
+    "key": "level_white_ghost_1",
+    "original": "しろいおばけ",
+    "translation": "白色的鬼",
+    "stage": 5
+  },
+  {
+    "key": "level_white_ghost_1_desc",
+    "original": "白いヤツが こちらを\nバカにしている！\nムキーッ！！\nこらしめちゃおう！",
+    "translation": "那个白色的家伙\n在小瞧咱们！\n气死我啦——！！\n得狠狠教训它！",
+    "stage": 5
+  },
+  {
+    "key": "level_white_ghost_1_result_1",
+    "original": "逃げたヤツにイタズラされた！",
+    "translation": "竟被逃掉的家伙捉弄了！",
+    "stage": 5
+  },
+  {
+    "key": "level_white_ghost_1_result_2",
+    "original": "しとめた！",
+    "translation": "拿下！",
+    "stage": 5
+  },
+  {
+    "key": "level_white_ghost_1_result_3",
+    "original": "いっぱい しとめた！！",
+    "translation": "干掉一大堆！！",
+    "stage": 5
+  },
+  {
+    "key": "level_white_ghost_2",
+    "original": "しろいおばけ ２",
+    "translation": "白色的鬼２",
+    "stage": 5
+  },
+  {
+    "key": "level_white_ghost_2_desc",
+    "original": "白いヤツが こちらを\nナメきっている！\nムカムカーッ！！\nこらしめちゃおう！",
+    "translation": "那个白色的家伙\n完全不把咱们放在眼里！\n可恶可恶！！\n得狠狠教训它一顿！",
+    "stage": 5
+  },
+  {
+    "key": "level_white_ghost_2_result_1",
+    "original": "うわー！ やられほうだいだ！",
+    "translation": "哇啊！被耍得毫无还手之力！",
+    "stage": 5
+  },
+  {
+    "key": "level_white_ghost_2_result_2",
+    "original": "おばけ「ナ、ナンダヨ〜」",
+    "translation": "鬼：“什、什么呀～”",
+    "stage": 5
+  },
+  {
+    "key": "level_white_ghost_2_result_3",
+    "original": "みんな、反省してネ！",
+    "translation": "你们，都给我好好反省！",
+    "stage": 5
+  },
+  {
+    "key": "level_iai_1",
+    "original": "ゐあひ斬り",
+    "translation": "居合斩",
+    "stage": 5
+  },
+  {
+    "key": "level_iai_1_desc",
+    "original": "そこのけ そこのけ\n奴らが通る。\nおぬしは サムライ、\n斬り捨て 御免！",
+    "translation": "闪开 闪开，\n那群家伙来了。\n你身为武士，\n格杀勿论！",
+    "stage": 5
+  },
+  {
+    "key": "level_iai_1_result_1",
+    "original": "刃こぼれしちまった！",
+    "translation": "刀刃崩口了！",
+    "stage": 5
+  },
+  {
+    "key": "level_iai_1_result_2",
+    "original": "さらに精進（しょうじん）すべし！",
+    "translation": "仍需继续磨练！",
+    "stage": 5
+  },
+  {
+    "key": "level_iai_1_result_3",
+    "original": "切れあじ、 サイコーだ！！",
+    "translation": "这锋利度，简直棒极了！！",
+    "stage": 5
+  },
+  {
+    "key": "level_air_batter_1",
+    "original": "エアーバッター",
+    "translation": "空中击球手",
+    "stage": 5
+  },
+  {
+    "key": "level_air_batter_1_desc",
+    "original": "ズームをきにするな！\n心でボールを打て！\n視覚に頼るな！\nどんと行け〜！",
+    "translation": "别在意镜头缩放！\n用心去击球！\n不要依赖视觉！\n大胆上吧～！",
+    "stage": 5
+  },
+  {
+    "key": "level_air_batter_1_result_1",
+    "original": "これで ゆるしてください。",
+    "translation": "就这样，请饶了我吧。",
+    "stage": 5
+  },
+  {
+    "key": "level_air_batter_1_result_2",
+    "original": "さらに上を目指して練習だ！",
+    "translation": "朝着更高处继续练吧！",
+    "stage": 5
+  },
+  {
+    "key": "level_air_batter_1_result_3",
+    "original": "こんなの もらっちゃったー！",
+    "translation": "我居然拿到这个啦ー！",
+    "stage": 5
+  },
+  {
+    "key": "level_air_batter_2",
+    "original": "エアーバッター ２",
+    "translation": "空中击球手２",
+    "stage": 5
+  },
+  {
+    "key": "level_air_batter_2_desc",
+    "original": "ズームをきにするな！\n心でボールを打て！\n視覚に頼るな！\n涙もふくな〜！",
+    "translation": "别在意镜头缩放！\n用心去击球！\n不要依赖视觉！\n眼泪也别擦啦～！",
+    "stage": 5
+  },
+  {
+    "key": "level_air_batter_2_result_1",
+    "original": "ナニスルノデスカー！",
+    "translation": "你在干什么啦！",
+    "stage": 5
+  },
+  {
+    "key": "level_air_batter_2_result_2",
+    "original": "こんなところで 終われない！",
+    "translation": "怎么能在这里结束！",
+    "stage": 5
+  },
+  {
+    "key": "level_air_batter_2_result_3",
+    "original": "みんな、見て見てー！",
+    "translation": "大家快看快看ー！",
+    "stage": 5
+  },
+  {
+    "key": "level_tap_dance_1",
+    "original": "タップダンズ",
+    "translation": "踢踏舞",
+    "stage": 5
+  },
+  {
+    "key": "level_tap_dance_1_desc",
+    "original": "あなたは女の子。\nとなりのサルたちに\n合わせてタップを\nきざむッス！",
+    "translation": "你是个女孩子。\n要跟着旁边那群猴子\n一起踩出踢踏节奏哦！",
+    "stage": 5
+  },
+  {
+    "key": "level_tap_dance_1_result_1",
+    "original": "無念だわ。",
+    "translation": "真不甘心呀。",
+    "stage": 5
+  },
+  {
+    "key": "level_tap_dance_1_result_2",
+    "original": "ちょっと、 ヘンなトコあったけどネ！",
+    "translation": "虽然有几处怪怪的啦！",
+    "stage": 5
+  },
+  {
+    "key": "level_tap_dance_1_result_3",
+    "original": "気分は もう、サイコー！！",
+    "translation": "心情已经嗨到顶了！！",
+    "stage": 5
+  },
+  {
+    "key": "level_super_tap_1",
+    "original": "スーパータップ",
+    "translation": "超级踢踏舞",
+    "stage": 5
+  },
+  {
+    "key": "level_super_tap_1_desc",
+    "original": "サルがパワーアップ！\nあなたは かれらに\nついていけるか！？\nまけるな〜！",
+    "translation": "猴子们强化啦！\n你还能不能\n跟上他们呢！？\n别输呀〜！",
+    "stage": 5
+  },
+  {
+    "key": "level_super_tap_1_result_1",
+    "original": "ガーン！",
+    "translation": "不会吧——！",
+    "stage": 5
+  },
+  {
+    "key": "level_super_tap_1_result_2",
+    "original": "う〜ん… すこし ちがうカンジ…",
+    "translation": "嗯〜… 感觉还差了那么一点…",
+    "stage": 5
+  },
+  {
+    "key": "level_super_tap_1_result_3",
+    "original": "この気持ち、とまらなーい！",
+    "translation": "这股感觉，根本停不下来啦！",
+    "stage": 5
+  },
+  {
+    "key": "level_marcha_1",
+    "original": "マーチャ",
+    "translation": "行军",
+    "stage": 5
+  },
+  {
+    "key": "level_marcha_1_desc",
+    "original": "行進をするのだ。\nかってな行動はチームをダメにする！\nがんばりたまえ。",
+    "translation": "现在开始行进。\n擅自行动可是会\n毁掉整个队伍的！\n好好努力吧。",
+    "stage": 5
+  },
+  {
+    "key": "level_marcha_1_result_1",
+    "original": "わぁっ！おいてけぼりされた！",
+    "translation": "哇啊！被丢下啦！",
+    "stage": 5
+  },
+  {
+    "key": "level_marcha_1_result_2",
+    "original": "今日の任務は、おそうじでーす♪",
+    "translation": "今天的任务，是打扫卫生哦♪",
+    "stage": 5
+  },
+  {
+    "key": "level_marcha_1_result_3",
+    "original": "宇宙人の救出、大成功！！",
+    "translation": "拯救外星人大成功！！",
+    "stage": 5
+  },
+  {
+    "key": "level_marcha_2",
+    "original": "マーチャ ２",
+    "translation": "行军２",
+    "stage": 5
+  },
+  {
+    "key": "level_marcha_2_desc",
+    "original": "行進をするのだ。\nこんどのは ちょっと\nテクニカルだ！\nがんばりたまえ。",
+    "translation": "现在开始行进。\n这次的动作\n有点复杂！\n好好努力吧。",
+    "stage": 5
+  },
+  {
+    "key": "level_marcha_2_result_1",
+    "original": "こ、これでは、イカン！う〜む…",
+    "translation": "这、这样可不行！唔〜嗯…",
+    "stage": 5
+  },
+  {
+    "key": "level_marcha_2_result_2",
+    "original": "ぐっ！ もっとカッコよくおどらなければ！",
+    "translation": "唔！舞步还得更帅才行！",
+    "stage": 5
+  },
+  {
+    "key": "level_marcha_2_result_3",
+    "original": "ごほうびに、こんなのもらってしまった！！",
+    "translation": "我居然还拿到了这种奖励！！",
+    "stage": 5
+  },
+  {
+    "key": "level_mahoutsukai_1",
+    "original": "まほうつかい",
+    "translation": "魔法使",
+    "stage": 5
+  },
+  {
+    "key": "level_mahoutsukai_1_desc",
+    "original": "あなたはまほう使い。\nさみしがりやの\nおじょうちゃんに花を\nプレゼントしよう。",
+    "translation": "你是一位魔法使。\n给那个怕寂寞的\n小姑娘送上一朵花吧。",
+    "stage": 5
+  },
+  {
+    "key": "level_mahoutsukai_1_result_1",
+    "original": "こんなのヤダ〜、 こわいヨ〜！",
+    "translation": "这种我不要啦〜，好可怕呀〜！",
+    "stage": 5
+  },
+  {
+    "key": "level_mahoutsukai_1_result_2",
+    "original": "もっと 花がさくと うれしいな〜。",
+    "translation": "要是能开出更多花，我会更开心呀〜。",
+    "stage": 5
+  },
+  {
+    "key": "level_mahoutsukai_1_result_3",
+    "original": "わーい、 わたし もう さみしくないヨ！",
+    "translation": "哇ー！我已经不寂寞啦！",
+    "stage": 5
+  },
+  {
+    "key": "level_usagi_1",
+    "original": "ウサギとび",
+    "translation": "跃兔",
+    "stage": 5
+  },
+  {
+    "key": "level_usagi_1_desc",
+    "original": "ジャンプが得意な\n白いウサギさん。\nビートにのって\n海をわたろう！",
+    "translation": "这只小白兔\n最擅长跳跃啦。\n踩着节拍，\n一起渡过大海吧！",
+    "stage": 5
+  },
+  {
+    "key": "level_usagi_1_result_1",
+    "original": "月に帰りた〜い！",
+    "translation": "我想回月亮上去〜！",
+    "stage": 5
+  },
+  {
+    "key": "level_usagi_1_result_2",
+    "original": "着地は失敗しちゃった…",
+    "translation": "落地失败啦…",
+    "stage": 5
+  },
+  {
+    "key": "level_usagi_1_result_3",
+    "original": "まん点！！",
+    "translation": "满分！！",
+    "stage": 5
+  },
+  {
+    "key": "level_hanabi_1",
+    "original": "花火",
+    "translation": "烟火",
+    "stage": 5
+  },
+  {
+    "key": "level_hanabi_1_desc",
+    "original": "夏といえばさ、\nやっぱ花火かな？\n色あざやかに\n打ち上げよう！",
+    "translation": "说到夏天嘛，\n果然还是烟火吧？\n就让它绚丽多彩地\n升上夜空吧！",
+    "stage": 5
+  },
+  {
+    "key": "level_hanabi_1_result_1",
+    "original": "ゲホゲホッ… 失敗。",
+    "translation": "咳咳咳… 失败。",
+    "stage": 5
+  },
+  {
+    "key": "level_hanabi_1_result_2",
+    "original": "なかなかのデキだぜ！",
+    "translation": "做得相当不错嘛！",
+    "stage": 5
+  },
+  {
+    "key": "level_hanabi_1_result_3",
+    "original": "花火のことならオレにまかせろ！！",
+    "translation": "说到烟火就交给我吧！！",
+    "stage": 5
+  },
+  {
+    "key": "level_shuji_1",
+    "original": "リズムお習字",
+    "translation": "节奏书法",
+    "stage": 5
+  },
+  {
+    "key": "level_shuji_1_desc",
+    "original": "筆を使って日本語を\n書きます。\nあなたがするのは\nオイシイとこだけ。",
+    "translation": "要用毛笔来写日文。\n而你负责的，\n只有最精彩的部分。",
+    "stage": 5
+  },
+  {
+    "key": "level_shuji_1_result_1",
+    "original": "ふ〜…  アカンわ。",
+    "translation": "呼〜… 不行呀。",
+    "stage": 5
+  },
+  {
+    "key": "level_shuji_1_result_2",
+    "original": "お習字を もっと楽しもう！",
+    "translation": "再多享受一些书法的乐趣吧！",
+    "stage": 5
+  },
+  {
+    "key": "level_shuji_1_result_3",
+    "original": "お習字って ノリノリだネ！！",
+    "translation": "书法这玩意儿也太带感啦！！",
+    "stage": 5
+  },
+  {
+    "key": "level_shuji_2",
+    "original": "リズムお習字 ２",
+    "translation": "节奏书法２",
+    "stage": 5
+  },
+  {
+    "key": "level_shuji_2_desc",
+    "original": "筆を使って日本語を\n書きます。\nあなたがするのは\nオイシイとこだけ。",
+    "translation": "要用毛笔来写日文。\n而你负责的，\n只有最精彩的部分。",
+    "stage": 5
+  },
+  {
+    "key": "level_shuji_2_result_1",
+    "original": "ふ〜…  アカンわ。",
+    "translation": "呼〜… 不行呀。",
+    "stage": 5
+  },
+  {
+    "key": "level_shuji_2_result_2",
+    "original": "お習字を もっと楽しもう！",
+    "translation": "再多享受一些书法的乐趣吧！",
+    "stage": 5
+  },
+  {
+    "key": "level_shuji_2_result_3",
+    "original": "お習字って ノリノリだネ！！",
+    "translation": "书法这玩意儿也太带感啦！！",
+    "stage": 5
+  },
+  {
+    "key": "level_toss_boys_1",
+    "original": "トスボーイズ",
+    "translation": "传球少年",
+    "stage": 5
+  },
+  {
+    "key": "level_toss_boys_1_desc",
+    "original": "なかよし３人組、\n声をかけあいながら\nいつも楽しくトスの\n練習してます。",
+    "translation": "感情超好的三人组，\n一边互相喊话，\n一边总是开心地\n练习传球呢。",
+    "stage": 5
+  },
+  {
+    "key": "level_toss_boys_1_result_1",
+    "original": "ダメダメだァ〜！",
+    "translation": "完全不行啦〜！",
+    "stage": 5
+  },
+  {
+    "key": "level_toss_boys_1_result_2",
+    "original": "まだまだもっと上手にできるはず！",
+    "translation": "你肯定还能做得更好！",
+    "stage": 5
+  },
+  {
+    "key": "level_toss_boys_1_result_3",
+    "original": "目標は、 トス世界選手権 優勝だー！！",
+    "translation": "目标是拿下传球世界锦标赛冠军——！！",
+    "stage": 5
+  },
+  {
+    "key": "level_toss_boys_2",
+    "original": "トスボーイズ ２",
+    "translation": "传球少年２",
+    "stage": 5
+  },
+  {
+    "key": "level_toss_boys_2_desc",
+    "original": "なかよし３人組、\n声をかけあいながら\nいつも楽しくトスの\n練習してます。",
+    "translation": "感情超好的三人组，\n一边互相喊话，\n一边总是开心地\n练习传球呢。",
+    "stage": 5
+  },
+  {
+    "key": "level_toss_boys_2_result_1",
+    "original": "ボロボロだァ〜！",
+    "translation": "惨兮兮啦〜！",
+    "stage": 5
+  },
+  {
+    "key": "level_toss_boys_2_result_2",
+    "original": "こんなところで 終われない！",
+    "translation": "怎么能在这里结束！",
+    "stage": 5
+  },
+  {
+    "key": "level_toss_boys_2_result_3",
+    "original": "最強メンバーのたんじょうだー！！",
+    "translation": "最强阵容诞生啦ー！！",
+    "stage": 5
+  },
+  {
+    "key": "level_ratt_1",
+    "original": "こっそり ラット",
+    "translation": "蹑鼠蹑脚",
+    "stage": 5
+  },
+  {
+    "key": "level_ratt_1_desc",
+    "original": "あなたはネズミ。\n大スキなチーズを\nめざして\nストップ＆ゴー！！",
+    "translation": "你是一只老鼠。\n朝着最爱的奶酪\n前进吧，\nStop & Go！！",
+    "stage": 5
+  },
+  {
+    "key": "level_ratt_1_result_1",
+    "original": "チーズ 食べたいよ〜…",
+    "translation": "我想吃奶酪呀～…",
+    "stage": 5
+  },
+  {
+    "key": "level_ratt_1_result_2",
+    "original": "チーズ おいしいね。",
+    "translation": "奶酪真好吃呀。",
+    "stage": 5
+  },
+  {
+    "key": "level_ratt_1_result_3",
+    "original": "みんな、 よかったネ！",
+    "translation": "大家都吃到了，太好啦！",
+    "stage": 5
+  },
+  {
+    "key": "level_toran_porin_1",
+    "original": "トランとポリン",
+    "translation": "小蹦与小床",
+    "stage": 5
+  },
+  {
+    "key": "level_toran_porin_1_desc",
+    "original": "こぎつねトラン、\nそしてポリンの\nアクロバティックショーがはじまるヨ！",
+    "translation": "小狐狸小蹦，\n再加上小床的\n杂技秀就要开始啦！",
+    "stage": 5
+  },
+  {
+    "key": "level_toran_porin_1_result_1",
+    "original": "大しっぱいだ〜！！",
+    "translation": "大失败啦〜！！",
+    "stage": 5
+  },
+  {
+    "key": "level_toran_porin_1_result_2",
+    "original": "ちゅうとハンパでした…",
+    "translation": "有点不上不下呀…",
+    "stage": 5
+  },
+  {
+    "key": "level_toran_porin_1_result_3",
+    "original": "コンビネーション バッチシ！！",
+    "translation": "配合得稳稳的！！",
+    "stage": 5
+  },
+  {
+    "key": "level_showtime_1",
+    "original": "ショータイム",
+    "translation": "表演时间",
+    "stage": 5
+  },
+  {
+    "key": "level_showtime_1_desc",
+    "original": "ペンギン君たちの\nショータイムが\nはじまるヨ！\nわーいわーい！",
+    "translation": "企鹅小子们的\n表演时间\n要开始啦！\n好耶好耶！",
+    "stage": 5
+  },
+  {
+    "key": "level_showtime_1_result_1",
+    "original": "お客さん、 おこってたネ…",
+    "translation": "客人们都生气了呢…",
+    "stage": 5
+  },
+  {
+    "key": "level_showtime_1_result_2",
+    "original": "ボクたち こんなもんじゃないはず…",
+    "translation": "我们可不是只有这点水平…",
+    "stage": 5
+  },
+  {
+    "key": "level_showtime_1_result_3",
+    "original": "やった！！ お客さん 楽しんでくれたー！！",
+    "translation": "太好啦！！ 客人们玩得很开心耶ー！！",
+    "stage": 5
+  },
+  {
+    "key": "level_space_dance_1",
+    "original": "スペースダンス",
+    "translation": "太空之舞",
+    "stage": 5
+  },
+  {
+    "key": "level_space_dance_1_desc",
+    "original": "ここは無重力の宇宙。\nでも、 おどろうヨ！\nレッツスペースダンス！",
+    "translation": "这里是失重宇宙。\n不过，还是来跳舞吧！\nLet's Space Dance！",
+    "stage": 5
+  },
+  {
+    "key": "level_space_dance_1_result_1",
+    "original": "ブ、 ブラックホールだー！！",
+    "translation": "黑、黑洞来啦ー！！",
+    "stage": 5
+  },
+  {
+    "key": "level_space_dance_1_result_2",
+    "original": "あの星のように かがやきたいな…",
+    "translation": "真想像那颗星星一样闪闪发亮呀…",
+    "stage": 5
+  },
+  {
+    "key": "level_space_dance_1_result_3",
+    "original": "ボクたちは スペーススーパースター！！",
+    "translation": "我们就是太空超级巨星！！",
+    "stage": 5
+  },
+  {
+    "key": "level_cosmo_dance_1",
+    "original": "コスモダンス",
+    "translation": "宇宙之舞",
+    "stage": 5
+  },
+  {
+    "key": "level_cosmo_dance_1_desc",
+    "original": "宇宙を代表する\nダンサーたち！\nキレた動きに\nくぎづけです！！",
+    "translation": "代表宇宙的\n舞者们！\n那种利落动作\n让人完全移不开眼呀！！",
+    "stage": 5
+  },
+  {
+    "key": "level_cosmo_dance_1_result_1",
+    "original": "お、おわりだー！！",
+    "translation": "完、完蛋啦ー！！",
+    "stage": 5
+  },
+  {
+    "key": "level_cosmo_dance_1_result_2",
+    "original": "あなたたちって こんなものなの？",
+    "translation": "你们就只有这点本事吗？",
+    "stage": 5
+  },
+  {
+    "key": "level_cosmo_dance_1_result_3",
+    "original": "ボクたちは スーパーコスモスターさ！！",
+    "translation": "我们可是超级宇宙明星啊！！",
+    "stage": 5
+  },
+  {
+    "key": "level_rap_men_1",
+    "original": "ラップメン",
+    "translation": "饶舌男",
+    "stage": 5
+  },
+  {
+    "key": "level_rap_men_1_desc",
+    "original": "クールなふたり組が\nやってきた！\nアツいラップで\n大コーフンだぜ！",
+    "translation": "一对超酷的搭档\n登场啦！\n火热的 Rap\n让人兴奋到不行！",
+    "stage": 5
+  },
+  {
+    "key": "level_rap_men_1_result_1",
+    "original": "オレたち、 ダサいやん…",
+    "translation": "我们这样也太土了吧…",
+    "stage": 5
+  },
+  {
+    "key": "level_rap_men_1_result_2",
+    "original": "チェッ。 なんか 調子わるいわぁ。",
+    "translation": "啧。总觉得状态不太对啊。",
+    "stage": 5
+  },
+  {
+    "key": "level_rap_men_1_result_3",
+    "original": "これからも よろしく たのんまっせー！！",
+    "translation": "以后也请多多关照啦ー！！",
+    "stage": 5
+  },
+  {
+    "key": "level_rap_women_1",
+    "original": "ラップウイメン",
+    "translation": "饶舌女",
+    "stage": 5
+  },
+  {
+    "key": "level_rap_women_1_desc",
+    "original": "あのラップメンに\nライバルが登場だ！\nキュートなボイスに\nもう メロメロ！",
+    "translation": "那群饶舌男的\n对手登场啦！\n这可爱嗓音\n简直让人神魂颠倒！",
+    "stage": 5
+  },
+  {
+    "key": "level_rap_women_1_result_1",
+    "original": "こんなん ちゃうわぁ…",
+    "translation": "不是这种感觉啦…",
+    "stage": 5
+  },
+  {
+    "key": "level_rap_women_1_result_2",
+    "original": "なんか ちょっと イマイチかも…！",
+    "translation": "总觉得还是差了那么一点点…！",
+    "stage": 5
+  },
+  {
+    "key": "level_rap_women_1_result_3",
+    "original": "そうそう コレコレ、これやわー！！イェーイ！",
+    "translation": "对对对，就是这个就是这个啦ー！！耶ー咿！",
+    "stage": 5
+  },
+  {
+    "key": "level_quiz_1",
+    "original": "クイズ",
+    "translation": "节奏问答",
+    "stage": 5
+  },
+  {
+    "key": "level_quiz_1_desc",
+    "original": "司会者の、\n「たたいた回数」を\n当てるカンタンな\nクイズです。",
+    "translation": "这是个很简单的问答，\n只要猜中主持人\n“敲了几下”\n就可以啦。",
+    "stage": 5
+  },
+  {
+    "key": "level_quiz_1_result_1",
+    "original": "ま、 こんなものさ。",
+    "translation": "嘛，也就这样吧。",
+    "stage": 5
+  },
+  {
+    "key": "level_quiz_1_result_2",
+    "original": "次回に向けて 勉強、勉強…Zzz",
+    "translation": "为了下次，学习、学习……Zzz",
+    "stage": 5
+  },
+  {
+    "key": "level_quiz_1_result_3",
+    "original": "世界旅行 もらっちゃった！",
+    "translation": "我居然赢得了环球旅行！",
+    "stage": 5
+  },
+  {
+    "key": "level_bon_odori_1",
+    "original": "ザ☆ぼんおどり",
+    "translation": "The☆盂兰盆舞",
+    "stage": 5
+  },
+  {
+    "key": "level_bon_odori_1_desc",
+    "original": "ぼんおどりの\nうたに あわせて\nパンッと 手を\nたたきましょう。",
+    "translation": "跟着盂兰盆舞的\n歌声，\n“啪”地\n拍手吧。",
+    "stage": 5
+  },
+  {
+    "key": "level_bon_odori_1_result_1",
+    "original": "さむいわ…",
+    "translation": "变冷了呢…",
+    "stage": 5
+  },
+  {
+    "key": "level_bon_odori_1_result_2",
+    "original": "せんこう花火って、せつないね。",
+    "translation": "手持烟花，总让人有点伤感呢。",
+    "stage": 5
+  },
+  {
+    "key": "level_bon_odori_1_result_3",
+    "original": "あー、楽しかった！",
+    "translation": "啊，太有趣了！",
+    "stage": 5
+  },
+  {
+    "key": "level_bon_dance_1",
+    "original": "ボンダンス",
+    "translation": "盆舞",
+    "stage": 5
+  },
+  {
+    "key": "level_bon_dance_1_desc",
+    "original": "これが いまどきの\nぼんおどり！\nノリノリだヨ！\nイェーイ！",
+    "translation": "这是现代版的\n盂兰盆舞！\n超带感哦！\n耶！",
+    "stage": 5
+  },
+  {
+    "key": "level_bon_dance_1_result_1",
+    "original": "もういや…",
+    "translation": "别再跳了…",
+    "stage": 5
+  },
+  {
+    "key": "level_bon_dance_1_result_2",
+    "original": "うーん、雨がふってきちゃった。",
+    "translation": "嗯，开始下雨了。",
+    "stage": 5
+  },
+  {
+    "key": "level_bon_dance_1_result_3",
+    "original": "ボンダンスって すごく楽しいよネー！",
+    "translation": "盆舞真的太有意思了！",
+    "stage": 5
+  },
+  {
+    "key": "level_remix_1",
+    "original": "リミックス １",
+    "translation": "Remix１",
+    "stage": 5
+  },
+  {
+    "key": "level_remix_1_desc",
+    "original": "キミの実力を\n試してみてみる？\nこれまでの経験が\nモノを言うヨ〜！",
+    "translation": "想检验一下\n你的实力吗？\n让之前的经验\n发挥作用吧！",
+    "stage": 5
+  },
+  {
+    "key": "level_remix_1_result_1",
+    "original": "今回のデキ ： 猫のおやつクラス",
+    "translation": "本次的表现 ：猫咪零食级",
+    "stage": 5
+  },
+  {
+    "key": "level_remix_1_result_2",
+    "original": "今回のデキ ： 朝食クラス",
+    "translation": "本次的表现 ：早餐级",
+    "stage": 5
+  },
+  {
+    "key": "level_remix_1_result_3",
+    "original": "今回のデキ ： なんと、 ディナークラス！！",
+    "translation": "本次的表现 ：竟然是晚餐级！！",
+    "stage": 5
+  },
+  {
+    "key": "level_remix_2",
+    "original": "リミックス ２",
+    "translation": "Remix２",
+    "stage": 5
+  },
+  {
+    "key": "level_remix_2_desc",
+    "original": "キミの実力を\n試してみてみる？\nこれまでの経験が\nモノを言うヨ〜！",
+    "translation": "想检验一下\n你的实力吗？\n让之前的经验\n发挥作用吧！",
+    "stage": 5
+  },
+  {
+    "key": "level_remix_2_result_1",
+    "original": "今回の熱気 ： ひとりで練習レベル",
+    "translation": "本次的热度 ：独自练习的程度",
+    "stage": 5
+  },
+  {
+    "key": "level_remix_2_result_2",
+    "original": "今回の熱気 ： 楽しくキャッチボールレベル",
+    "translation": "本次的热度 ：开心传接球的程度",
+    "stage": 5
+  },
+  {
+    "key": "level_remix_2_result_3",
+    "original": "今回の熱気 ： すごい大会レベル！！",
+    "translation": "本次的热度 ：精彩大赛的程度！！",
+    "stage": 5
+  },
+  {
+    "key": "level_remix_3",
+    "original": "リミックス ３",
+    "translation": "Remix３",
+    "stage": 5
+  },
+  {
+    "key": "level_remix_3_desc",
+    "original": "キミの実力を\n試してみてみる？\nこれまでの経験が\nモノを言うヨ〜！",
+    "translation": "想检验一下\n你的实力吗？\n让之前的经验\n发挥作用吧！",
+    "stage": 5
+  },
+  {
+    "key": "level_remix_3_result_1",
+    "original": "今回のラブ ： ブロークンハートかも…",
+    "translation": "本次的爱意 ： 好像已经心碎了…",
+    "stage": 5
+  },
+  {
+    "key": "level_remix_3_result_2",
+    "original": "今回のラブ ： とってもフレンドリーな感じ♪",
+    "translation": "本次的爱意 ： 非常友好的感觉呢♪",
+    "stage": 5
+  },
+  {
+    "key": "level_remix_3_result_3",
+    "original": "今回のラブ ： ラブラブでーす！！",
+    "translation": "本次的爱意 ： 甜甜蜜蜜—！！",
+    "stage": 5
+  },
+  {
+    "key": "level_remix_4",
+    "original": "リミックス ４",
+    "translation": "Remix４",
+    "stage": 5
+  },
+  {
+    "key": "level_remix_4_desc",
+    "original": "キミの実力を\n試してみてみる？\nこれまでの経験が\nモノを言うヨ〜！",
+    "translation": "想检验一下\n你的实力吗？\n让之前的经验\n发挥作用吧！",
+    "stage": 5
+  },
+  {
+    "key": "level_remix_4_result_1",
+    "original": "今回の天気 ： 雨",
+    "translation": "本次的天气 ： 雨",
+    "stage": 5
+  },
+  {
+    "key": "level_remix_4_result_2",
+    "original": "今回の天気 ： くもり",
+    "translation": "本次的天气 ： 多云",
+    "stage": 5
+  },
+  {
+    "key": "level_remix_4_result_3",
+    "original": "今回の天気 ： ハッピーな晴れ！！",
+    "translation": "本次的天气 ：快乐的大晴天！！",
+    "stage": 5
+  },
+  {
+    "key": "level_remix_5",
+    "original": "リミックス ５",
+    "translation": "Remix５",
+    "stage": 5
+  },
+  {
+    "key": "level_remix_5_desc",
+    "original": "キミの実力を\n試してみてみる？\nこれまでの経験が\nモノを言うヨ〜！",
+    "translation": "想检验一下\n你的实力吗？\n让之前的经验\n发挥作用吧！",
+    "stage": 5
+  },
+  {
+    "key": "level_remix_5_result_1",
+    "original": "今回のふたり ： ジャマされてしまった！",
+    "translation": "本次的二人 ：被人搅和了！",
+    "stage": 5
+  },
+  {
+    "key": "level_remix_5_result_2",
+    "original": "今回のふたり ： このさき、チョット不安かも…",
+    "translation": "本次的二人 ：今后可能有点不安……",
+    "stage": 5
+  },
+  {
+    "key": "level_remix_5_result_3",
+    "original": "今回のふたり ： 幸せになりました♪",
+    "translation": "本次的二人 ：过上幸福生活啦♪",
+    "stage": 5
+  },
+  {
+    "key": "level_remix_6",
+    "original": "リミックス ６",
+    "translation": "Remix６",
+    "stage": 5
+  },
+  {
+    "key": "level_remix_6_desc",
+    "original": "キミの実力を\n試してみてみる？\nこれまでの経験が\nモノを言うヨ〜！",
+    "translation": "想检验一下\n你的实力吗？\n让之前的经验\n发挥作用吧！",
+    "stage": 5
+  },
+  {
+    "key": "level_remix_6_result_1",
+    "original": "今回の内容 ： ややさみしいカンジ",
+    "translation": "本次的内容 ： 有些孤单的感觉",
+    "stage": 5
+  },
+  {
+    "key": "level_remix_6_result_2",
+    "original": "今回の内容 ： 意外なカンジ",
+    "translation": "本次的内容 ： 意外的感觉",
+    "stage": 5
+  },
+  {
+    "key": "level_remix_6_result_3",
+    "original": "今回の内容 ： アンビリーバボーなカンジ！！",
+    "translation": "本次的内容 ： 难以置信的感觉！！",
+    "stage": 5
+  },
+  {
+    "key": "level_remix_7",
+    "original": "リミックス ７",
+    "translation": "Remix７",
+    "stage": 5
+  },
+  {
+    "key": "level_remix_7_desc",
+    "original": "キミの実力を\n試してみてみる？\nこれまでの経験が\nモノを言うヨ〜！",
+    "translation": "想检验一下\n你的实力吗？\n让之前的经验\n发挥作用吧！",
+    "stage": 5
+  },
+  {
+    "key": "level_remix_7_result_1",
+    "original": "今回のきょうりゅう ： いじわる",
+    "translation": "本次的恐龙 ：有点坏心眼",
+    "stage": 5
+  },
+  {
+    "key": "level_remix_7_result_2",
+    "original": "今回のきょうりゅう ： ほのぼの",
+    "translation": "本次的恐龙 ： 暖呼呼的",
+    "stage": 5
+  },
+  {
+    "key": "level_remix_7_result_3",
+    "original": "今回のきょうりゅう ： 楽しすぎ〜！！",
+    "translation": "本次的恐龙 ： 太好玩了～！！",
+    "stage": 5
+  },
+  {
+    "key": "level_remix_8",
+    "original": "リミックス ８",
+    "translation": "Remix８",
+    "stage": 5
+  },
+  {
+    "key": "level_remix_8_desc",
+    "original": "キミの実力を\n試してみてみる？\nこれまでの経験が\nモノを言うヨ〜！",
+    "translation": "想检验一下\n你的实力吗？\n让之前的经验\n发挥作用吧！",
+    "stage": 5
+  },
+  {
+    "key": "level_remix_8_result_1",
+    "original": "今回のドライブ ： んもぅ…",
+    "translation": "本次的兜风 ：真是的…",
+    "stage": 5
+  },
+  {
+    "key": "level_remix_8_result_2",
+    "original": "今回のドライブ ： まだまだかかるなぁ",
+    "translation": "本次的兜风 ：看来还要开很久啊",
+    "stage": 5
+  },
+  {
+    "key": "level_remix_8_result_3",
+    "original": "今回のドライブ ： とっても爽快！！",
+    "translation": "本次的兜风 ： 太爽快了！！",
+    "stage": 5
+  },
+  {
+    "key": "level_cafe_counsel",
+    "original": "喫茶カウンセル",
+    "translation": "咖啡谈心",
+    "stage": 5
+  },
+  {
+    "key": "level_cafe_counsel_desc",
+    "original": "最近の調子 どう？\nなにか気になれば\n\nここで相談を\nしてみよう。",
+    "translation": "最近状态怎么样？\n要是有什么在意的事，\n\n就来这里\n聊一聊吧。",
+    "stage": 5
+  },
+  {
+    "key": "level_toys",
+    "original": "おもちゃ",
+    "translation": "节奏玩具",
+    "stage": 5
+  },
+  {
+    "key": "level_toys_desc",
+    "original": "メダルを あつめて\n音のでるおもちゃで\nあそんでみてネ！\nいくつかあるヨ。",
+    "translation": "收集奖牌，\n去玩玩那些会发声的玩具吧！\n有好几个哦。",
+    "stage": 5
+  },
+  {
+    "key": "level_games",
+    "original": "ゲーム",
+    "translation": "无尽游戏",
+    "stage": 5
+  },
+  {
+    "key": "level_games_desc",
+    "original": "メダルを あつめて\nとくべつなゲームに\n挑戦してみてネ！\nいくつかあるヨ。",
+    "translation": "收集奖牌，\n去挑战特别游戏吧！\n有好几个哦。",
+    "stage": 5
+  },
+  {
+    "key": "level_drum_lessons",
+    "original": "ドラムレッスン",
+    "translation": "击鼓课程",
+    "stage": 5
+  },
+  {
+    "key": "level_drum_lessons_desc",
+    "original": "メダルを あつめて\nドラムのレッスンを\nうけてみよう。\n上手になってネ！",
+    "translation": "收集奖牌，\n去上击鼓课程吧。\n要变得更厉害哦！",
+    "stage": 5
+  },
+  {
+    "key": "level_staff",
+    "original": "スタッフ",
+    "translation": "制作人员",
+    "stage": 5
+  },
+  {
+    "key": "level_staff_desc",
+    "original": "もし よかったら\n見てみてネ。\nこのゲームの\nスタッフたちです。",
+    "translation": "要是你愿意的话，\n也来看看吧。\n这里是这款游戏的\n制作人员哦。",
+    "stage": 5
+  },
+  {
+    "key": "level_live",
+    "original": "ライブ",
+    "translation": "现场演出",
+    "stage": 5
+  },
+  {
+    "key": "level_live_desc",
+    "original": "ライブに出演だ！\nキミのリズム感は\nよいと思うから\nどうぞお気楽に〜",
+    "translation": "要登台演出啦！\n我觉得你的节奏感\n已经很不错了，\n放轻松就好～ ",
+    "stage": 5
+  },
+  {
+    "key": "level_live_result_1",
+    "original": "おばちゃん「またつぎ、がんばりなよ！」",
+    "translation": "阿姨：“下次再加油呀！”",
+    "stage": 5
+  },
+  {
+    "key": "level_live_result_2",
+    "original": "オーナー「キミ、なかなか スジあるヨ」",
+    "translation": "老板：“你啊，还挺有天分哦”",
+    "stage": 5
+  },
+  {
+    "key": "level_live_result_3",
+    "original": "プロデューサー「うちで、ガンバってみない？」",
+    "translation": "制作人：“要不要来我们这边试试？”",
+    "stage": 5
+  }
+]

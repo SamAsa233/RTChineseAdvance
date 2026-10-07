@@ -1,3 +1,6 @@
+/* 中文文本：本文件采用译文包中 stage 5 的已校对条目。
+ * 字符串中的 \n 是游戏画面换行；相邻引号只是方便阅读源码。
+ * 未校对或未定位的条目见 text/zh_hans/TODO_未校对.md。 */
 #include "global.h"
 #include "graphics.h"
 #include "src/bitmap_font.h"
@@ -10,11 +13,11 @@
 
 // [D_089d7984] Letter Ranks
 const char *results_letter_ranks[] = {
-    ":1.1" "D",
-    ":1.5" "C",
-    ":1.4" "B",
-    ":1.6" "A",
-    ":1.2" "S"
+    ":1.1D",
+    ":1.5C",
+    ":1.4B",
+    ":1.6A",
+    ":1.2S"
 };
 
 

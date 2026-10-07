@@ -1,3 +1,6 @@
+/* 中文文本：本文件采用译文包中 stage 5 的已校对条目。
+ * 字符串中的 \n 是游戏画面换行；相邻引号只是方便阅读源码。
+ * 未校对或未定位的条目见 text/zh_hans/TODO_未校对.md。 */
 #include "global.h"
 #include "text.h"
 
@@ -5,117 +8,82 @@
 /* Game Text - Quiz Show */
 
 
-const char D_0805ec44[] = "Try harder next time.";
+const char D_0805ec44[] = "下次也要继续加油哦。";
 
-const char D_0805ec60[] = "You were so close!";
+const char D_0805ec60[] = "太可惜啦〜！";
 
 const char D_0805ec78[] = "";
 
-const char D_0805ec7c[] = "You won! Congratulations!";
+const char D_0805ec7c[] = "恭喜全部答对啦〜！";
 
 const char D_0805eca4[] =
-    "\n"
-    "Aww, too bad!\n"
-    "\n";
+    "可惜啦！！";
 
 const char D_0805ecb0[] =
-    "Come back and\n"
-    "try again\n"
-    "next week!\n";
+    "再来挑战吧。\n"
+    "再见啦。";
 
-const char D_0805ecd4[] = "A word from our sponsor:";
+const char D_0805ecd4[] = "主持人的一句话";
 
 const char D_0805ece8[] =
-    "Here's the\n"
-    "first question.\n"
-    "\n";
+    "这是第一题。";
 
 const char D_0805ecf8[] =
-    "Now, the second\n"
-    "question.\n"
-    "\n";
+    "那么，第 2 题。";
 
 const char D_0805ed08[] =
-    "Aaaand third\n"
-    "question.\n"
-    "\n";
+    "第 3 题。";
 
 const char D_0805ed14[] =
-    "Ready?\n"
-    "Question number\n"
-    "four!\n";
+    "来吧，第 4 题！";
 
 const char D_0805ed28[] =
-    "This is it!\n"
-    "There's no going\n"
-    "back now!\n";
+    "从这里开始，\n"
+    "才是真格的哦！";
 
 const char D_0805ed44[] =
-    "We have arrived\n"
-    "at question the\n"
-    "fifth!\n";
+    "终于来到，\n"
+    "第 5 题啦！！";
 
 const char D_0805ed60[] =
-    "Here it is:\n"
-    "the final question!\n"
-    "\n";
+    "最后一题啦！！";
 
 const char D_0805ed74[] =
-    "\n"
-    "Go ahead.\n"
-    "\n";
+    "请开始。";
 
 const char D_0805ed7c[] =
-    "\n"
-    "Aaaand stop!\n"\
-    "\n";
+    "到此为止！！";
 
 const char D_0805ed8c[] =
-    "And the correct\n"
-    "answer is...\n"
-    "\n";
+    "那么，正确答案是？";
 
 const char D_0805ed9c[] =
-    "\n"
-    "You are correct!\n"
-    "\n";
+    "正确！！";
 
 const char D_0805eda8[] =
-    "Amazing! You aced\n"
-    "the quiz! You score\n"
-    "a mojillion points!";
+    "太棒啦！\n"
+    "全部答对！！\n"
+    "奖金 100 万分！！";
 
 const char D_0805edd8[] =
-    "See you again\n"
-    "next week!\n"
-    "\n";
+    "那么下周再见，\n"
+    "再会啦。";
 
 const char D_0805edf4[] =
-    "Good day!\n"
-    "It's time to play\n"
-    "the quiz!\n";
+    "晚上好。\n"
+    "现在是《问答是什么呢！？》的时间。";
 
 const char D_0805ee20[] =
-    "The rules\n"
-    "are simple:\n"
-    "\n";
+    "规则很简单。";
 
 const char D_0805ee34[] = 
-    "Just count the\n"
-    "number of times I\n"
-    "hit these buttons.\n";
+    "只要猜中我敲了几下按钮就行。";
 
 const char D_0805ee5c[] = 
-    "When I say to, hit\n"
-    "your buttons to\n"
-    "match my total.";
+    "在“请开始”之后，请敲出相同的次数。";
 
 const char D_0805ee8c[] = 
-    ""CHAR_A_BUTTON_UTF8" or "CHAR_DPAD_UTF8", it doesn't\n"
-    "matter. Just focus\n"
-    "on the final total!\n";
+    "A 键和十字键，按哪个都 OK。";
 
 const char D_0805eebc[] = 
-    "\n"
-    "Let's begin.\n"
-    "\n";
+    "那么，就来试试看吧。";

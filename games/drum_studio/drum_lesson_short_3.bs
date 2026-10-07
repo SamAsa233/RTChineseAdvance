@@ -1,3 +1,5 @@
+@ 中文文本：本文件采用译文包中 stage 5 的已校对条目。
+@ 字符串中的 \n 是游戏画面换行；未校对项见 text/zh_hans/TODO_未校对.md。
 .include "include/beatscript.inc"
 .include "games/drum_studio/macros.inc"
 
@@ -30,10 +32,7 @@ define_gameplay_scene scene_drum_lesson_short_3, script_drum_lesson_short_3_entr
 @ Drum Lesson (Short 3) - Data
 
 text D_080622d8
-    .ascii "Listen to my pattern, then\n"
-    .ascii "repeat when you're ready.\n"
-    .ascii "I'll show it to you again\n"
-    .asciz "if you stop playing."
+    .asciz "仔细听好再照着做哦。\n想什么时候开始都可以。\n停下演奏的话，\n还能再听一遍示范哦！"
 endtext
 
 
@@ -56,10 +55,7 @@ return
 
 
 text D_080623c0
-    .ascii "\n"
-    .ascii "Here's a drum we haven't\n"
-    .ascii "given a try yet: the tom!\n"
-    .asciz "Hit it by pressing Right on !\n"
+    .asciz "这次来试试嗵鼓吧！\n按十字键右\n就能敲嗵鼓哦！"
 endtext
 
 
@@ -78,10 +74,7 @@ return
 
 
 text D_08062488
-    .ascii "\n"
-    .ascii "Next up, it's the same as\n"
-    .ascii "before but with a drum roll!\n"
-    .asciz "Do it with Up on !\n"
+    .asciz "把刚才打嗵鼓的那一下\n改成十字键上试试吧！\n（这个好像叫滚奏）"
 endtext
 
 
@@ -100,10 +93,7 @@ return
 
 
 text D_08062558
-    .ascii "\n"
-    .ascii "Let's work the tom back in,\n"
-    .ascii "but at the end instead.\n"
-    .asciz "Don't mix it up!\n"
+    .asciz "我会在和刚才不同的地方\n再加一个嗵鼓哦！\n听得出来吗？"
 endtext
 
 

@@ -1,65 +1,69 @@
+/* 中文文本：本文件采用译文包中 stage 5 的已校对条目。
+ * 字符串中的 \n 是游戏画面换行；相邻引号只是方便阅读源码。
+ * 未校对或未定位的条目见 text/zh_hans/TODO_未校对.md。 */
 #include "global.h"
 #include "text.h"
 
 
+/* 汉化：译文包的阶段 5 文本仍是拼音英语，因此这里自行改成中文欢迎词。 */
+/* TODO 未校对：2026-09-29 已用 mGBA 实机帧确认两行断行和字宽无重叠；
+ * “funky”的保留方式与整句语气仍待人工校对。 */
 /* Game Text - Drumming Demo */
 
 
 const char D_0805df4c[] =
-    "Welcome to the\n"
-    "funky world of\n"
-    #ifdef PARADISE
-    "Rhythm Paradise Advance!";
-    #else
-    "Rhythm Heaven Advance!";
-    #endif
+    "欢迎来到\n"
+    "这段 funky 的节奏世界！";
 
 const char D_0805df88[] =
-    "I hope you enjoy your time\n"
-    "with this game!";
+    "欢迎来到节奏天国！\n"
+    "请尽情享受\n"
+    "这段 funky 的时光吧！";
 
 const char D_0805dfcc[] =
-    "\n"
-    "Well, see you later!";
+    "那么，稍后\n"
+    "再见吧！\n"
+    "see you!";
 
 
 /* Game Text - Drumming Intro (Part 1) */
 
 
 const char D_0805e000[] =
-    "Everyone has a\n"
-    "sense of rhythm in\n"
-    "some form or fashion.";
+    "节奏感\n"
+    "是每个人都\n"
+    "潜在拥有的\n"
+    "一种感觉。";
 
 const char D_0805e03c[] =
-    "And if you pay attention to it,\n"
-    "that sense of rhythm can\n"
-    "be sharpened like any skill.";
+    "只要有意识地去体会，\n"
+    "节奏感\n"
+    "就会越来越好。";
 
 const char D_0805e070[] =
-    "Why don't we take a\n"
-    "quick look at your\n"
-    "sense of rhythm?";
+    "那么首先，\n"
+    "先来简单看看\n"
+    "你的节奏感怎么样吧。";
 
 
 /* Game Text - Drumming Intro (Part 2) */
 
 
 const char D_0805e0a8[] =
-    "How did you do? Did you get\n"
-    "a score you're happy with?\n"
-    "";
+    "怎么样？\n"
+    "有拿到让自己满意的\n"
+    "结果吗？";
 
 const char D_0805e0d8[] =
-    "Well, your sense of\n"
-    "rhythm can only grow\n"
-    "with some practice, so...";
+    "潜在的节奏感\n"
+    "是可以通过训练\n"
+    "成长起来的。";
 
 const char D_0805e10c[] =
-    "...how about trying out\n"
-    "some rhythm games? You\n"
-    "might find it getting\n"
-    "sharper and sharper!";
+    "接下来登场的\n"
+    "都是些很有节奏感的游戏。\n"
+    "请一边开心地玩，\n"
+    "一边磨练你的节奏感吧。";
 
 const char D_0805e15c[] =
-    "With that, I'll see you around!";
+    "那么，待会儿\n再见吧。";

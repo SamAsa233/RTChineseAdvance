@@ -1,0 +1,26 @@
+[
+  {
+    "key": "cafe_dialogue_extra_perfects_clear[0]",
+    "original": "blabla you finished the extra campaign!",
+    "translation": "你完美了额外关卡！",
+    "stage": 1
+  },
+  {
+    "key": "cafe_dialogue_extra_perfects_clear[1]",
+    "original": "it's so AWESOME!!",
+    "translation": "这太棒了！",
+    "stage": 1
+  },
+  {
+    "key": "cafe_dialogue_all_perfects_clear_big[0]",
+    "original": "woohoo main & extra!",
+    "translation": "天哪，主关卡和额外关卡",
+    "stage": 1
+  },
+  {
+    "key": "cafe_dialogue_all_perfects_clear_big[1]",
+    "original": "you finished the campaign!",
+    "translation": "你完成了所有的完美挑战！",
+    "stage": 1
+  }
+]

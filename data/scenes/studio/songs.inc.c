@@ -1,3 +1,7 @@
+/* 中文文本：本文件采用译文包中 stage 5 的已校对条目。
+ * 字符串中的 \n 是游戏画面换行；相邻引号只是方便阅读源码。
+ * 未校对或未定位的条目见 text/zh_hans/TODO_未校对.md。 */
+/* 汉化：Cafe Counselling 的两个英文拼写分支统一使用阶段 5 已校对曲名。 */
 extern const struct Beatscript script_studio_silence[];
 extern const struct Beatscript script_studio_karate_man[];
 extern const struct Beatscript script_studio_clappy_trio[];
@@ -198,17 +202,17 @@ struct StudioEntry studio_song_table[] = {
         /* Drum Script */ script_studio_fireworks
     },
     /* REMIX7 */ {
-        /* Full Title  */ "Remix 7",
+        /* Full Title  */ "Remix７",
         /* Short Title */ NULL,
         /* Drum Script */ script_studio_remix7
     },
     /* REMIX8 */ {
-        /* Full Title  */ "Remix 8",
+        /* Full Title  */ "Remix８",
         /* Short Title */ NULL,
         /* Drum Script */ script_studio_remix8
     },
     /* REMIX6 */ {
-        /* Full Title  */ "Remix 6",
+        /* Full Title  */ "Remix６",
         /* Short Title */ NULL,
         /* Drum Script */ script_studio_remix6
     },
@@ -248,8 +252,8 @@ struct StudioEntry studio_song_table[] = {
         /* Drum Script */ script_studio_game_select_2
     },
     /* CAFE */ {
-        #ifdef PARADISE
-        /* Full Title  */ "Café Counselling",
+        #ifdef BRIT
+        /* Full Title  */ "咖啡谈心",
         #else
         /* Full Title  */ "咖啡谈心",
         #endif

@@ -1,3 +1,6 @@
+/* 中文文本：本文件采用译文包中 stage 5 的已校对条目。
+ * 字符串中的 \n 是游戏画面换行；相邻引号只是方便阅读源码。
+ * 未校对或未定位的条目见 text/zh_hans/TODO_未校对.md。 */
 // [D_089dd5ec] Drum Lessons Menu - Levels
 struct MedalCornerLevel lessons_menu_levels[] = {
     /* BASIC_1 */ {
@@ -104,13 +107,13 @@ struct MedalCornerLevel lessons_menu_levels[] = {
     },
     /* HI_TECH_1 */ {
         /* Scene  */ &scene_drum_lesson_hi_tech_1,
-        /* Title  */ "长篇 1",
+        /* Title  */ "高阶篇 1",
         /* Anim   */ anim_lessons_menu_hi_tech_1_2,
         /* Medals */ 46
     },
     /* HI_TECH_2 */ {
         /* Scene  */ &scene_drum_lesson_hi_tech_2,
-        /* Title  */ "长篇 2",
+        /* Title  */ "高阶篇 2",
         /* Anim   */ anim_lessons_menu_hi_tech_1_2,
         /* Medals */ 48
     }

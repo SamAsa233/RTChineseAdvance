@@ -1,3 +1,4 @@
+// 汉化：接入阶段 5 已校对的节奏玩具菜单标题。
 // [D_089dd4a4] Rhythm Toys Menu - Levels
 struct MedalCornerLevel toys_menu_levels[] = {
     /* CAT_MACHINE */ {

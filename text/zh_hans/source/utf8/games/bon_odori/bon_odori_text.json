@@ -1,0 +1,212 @@
+[
+  {
+    "key": "D_080676b4",
+    "original": "前半が　いまひとつだったなぁ。",
+    "translation": "前半段还差一点啊。",
+    "stage": 1
+  },
+  {
+    "key": "D_080676d4",
+    "original": "前半、ばっちりだね！",
+    "translation": "前半段很稳嘛！",
+    "stage": 1
+  },
+  {
+    "key": "D_080676ec",
+    "original": "後半、もりさがっちゃってたなぁ。",
+    "translation": "后半段气氛有点冷下来了啊。",
+    "stage": 5
+  },
+  {
+    "key": "D_08067710",
+    "original": "後半で　もりあがったね〜！",
+    "translation": "后半段热起来啦〜！",
+    "stage": 1
+  },
+  {
+    "key": "D_08067730",
+    "original": "クライマックスが　きまってた！！",
+    "translation": "高潮部分很到位！！",
+    "stage": 1
+  },
+  {
+    "key": "D_08067754",
+    "original": "さいごに　ちゃんと　シメてたね！",
+    "translation": "最后收得很漂亮呢！",
+    "stage": 1
+  },
+  {
+    "key": "D_08067778",
+    "original": "まわりの評判",
+    "translation": "周围人的评价",
+    "stage": 1
+  },
+  {
+    "key": "text_bon_odori_ha",
+    "original": "ハァ〜",
+    "translation": "哈～",
+    "stage": 1
+  },
+  {
+    "key": "text_bon_odori_hanabi_agare_ba",
+    "original": "はなび　あがれば〜",
+    "translation": "如果烟花绽放啦～",
+    "stage": 1
+  },
+  {
+    "key": "text_bon_odori_don_don_pan_pan",
+    "original": "どーん　どーん　ぱーん　ぱーん",
+    "translation": "咚　咚　嗙　嗙",
+    "stage": 1
+  },
+  {
+    "key": "text_bon_odori_dondo_pan_pan",
+    "original": "どんど　ぱーん　ぱん",
+    "translation": "咚咚　嗙　嗙",
+    "stage": 1
+  },
+  {
+    "key": "text_bon_odori_haa",
+    "original": "ハァ〜　ア〜",
+    "translation": "哈～啊～",
+    "stage": 1
+  },
+  {
+    "key": "text_bon_odori_kansei_agaru",
+    "original": "かんせい　あがる〜",
+    "translation": "大家都欢声笑语～",
+    "stage": 1
+  },
+  {
+    "key": "text_bon_odori_ninki_agare_ba",
+    "original": "にんき　あがれば〜",
+    "translation": "如果人气兴旺啊～",
+    "stage": 1
+  },
+  {
+    "key": "text_bon_odori_kyuryo_agaru",
+    "original": "きゅうりょう　あがる〜",
+    "translation": "大家有更多工资～",
+    "stage": 1
+  },
+  {
+    "key": "text_bon_odori_matsuri_da_wasshoi",
+    "original": "まつりだ　わっしょい！",
+    "translation": "整个日本　哇—咻—！",
+    "stage": 1
+  },
+  {
+    "key": "text_bon_odori_dondo_panpa_dondo_panpa",
+    "original": "どんど　ぱんぱ　どんど　ぱんぱ",
+    "translation": "咚咚　嗙嗙　咚咚　嗙嗙",
+    "stage": 1
+  },
+  {
+    "key": "text_bon_odori_nippon_chu_ga_wasshoi",
+    "original": "にっぽんじゅうが　わっしょい！",
+    "translation": "在节日中　哇—咻—！",
+    "stage": 1
+  },
+  {
+    "key": "text_bon_odori_don_don_pan",
+    "original": "どーん　どーん　ぱん",
+    "translation": "咚　咚　嗙",
+    "stage": 1
+  },
+  {
+    "key": "text_bon_odori_sore_hikkuri_kaette",
+    "original": "ソレ　ひっくり　かえって",
+    "translation": "嗖嘞　让我们转起圈来",
+    "stage": 1
+  },
+  {
+    "key": "text_bon_odori_ha_bon_odori",
+    "original": "ハァ〜　ぼんおどり",
+    "translation": "哈～　跳这盂兰盆舞",
+    "stage": 1
+  },
+  {
+    "key": "text_bon_odori_dondo_panpa",
+    "original": "どんど　ぱんぱ",
+    "translation": "咚咚　嗙嗙",
+    "stage": 1
+  },
+  {
+    "key": "text_bon_odori_don_pan_pan",
+    "original": "どーん　ぱーん　ぱん",
+    "translation": "咚　嗙　嗙",
+    "stage": 1
+  },
+  {
+    "key": "text_bon_odori_ame_ga_agare_ba",
+    "original": "アメが　あがれば〜",
+    "translation": "如果雨停了的话～",
+    "stage": 1
+  },
+  {
+    "key": "text_bon_odori_yagura_ni_agaru",
+    "original": "やぐらに　あがる〜",
+    "translation": "登上塔楼去眺望～",
+    "stage": 1
+  },
+  {
+    "key": "text_bon_odori_hora_matsuri_da_wasshoi",
+    "original": "ほら！　まつりだ　わっしょい！",
+    "translation": "看啊！盛大节日 哇—咻—！",
+    "stage": 1
+  },
+  {
+    "key": "text_bon_odori_korezo",
+    "original": "これぞ",
+    "translation": "这就是",
+    "stage": 1
+  },
+  {
+    "key": "text_bon_odori_meido_in_japan",
+    "original": "メイド　イン　ジャパン",
+    "translation": "Ｍａｄｅ　ｉｎ　Ｊａｐａｎ",
+    "stage": 1
+  },
+  {
+    "key": "text_bon_odori_pan_pan",
+    "original": "ぱん　ぱん",
+    "translation": "嗙　嗙",
+    "stage": 1
+  },
+  {
+    "key": "text_bon_odori_don_don_pan_pan_2",
+    "original": "どーん　どーん　ぱーん　ぱん",
+    "translation": "咚　咚　嗙　嗙",
+    "stage": 1
+  },
+  {
+    "key": "D_08067a84",
+    "original": "ぼんおどり　しましょう！",
+    "translation": "来跳盆舞吧！",
+    "stage": 1
+  },
+  {
+    "key": "D_08067aa4",
+    "original": "みんなの　てびょうしを　まねしてネ。",
+    "translation": "照着大家的样子拍手哦。",
+    "stage": 5
+  },
+  {
+    "key": "D_08067ad0",
+    "original": "ＯＫ！",
+    "translation": "ＯＫ！",
+    "stage": 1
+  },
+  {
+    "key": "D_08067adc",
+    "original": "も〜いっちょ　いってみよう！",
+    "translation": "再来一遍吧〜！",
+    "stage": 1
+  },
+  {
+    "key": "D_08067b00",
+    "original": "では、　ほんばん　がんばってネ！",
+    "translation": "那么，正式上场可要加油哦！",
+    "stage": 1
+  }
+]

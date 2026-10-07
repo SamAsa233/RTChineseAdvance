@@ -1,3 +1,6 @@
+/* 中文文本：本文件采用译文包中 stage 5 的已校对条目。
+ * 字符串中的 \n 是游戏画面换行；相邻引号只是方便阅读源码。
+ * 未校对或未定位的条目见 text/zh_hans/TODO_未校对.md。 */
 #include "global.h"
 #include "text.h"
 
@@ -5,30 +8,29 @@
 /* Game Text - Toss Boys */
 
 
-#ifdef PARADISE
-const char D_0805d618[] = "You need to practise throwing more.";
+#ifdef BRIT
+const char D_0805d618[] = "看来还没练出成果啊。";
 
-const char D_0805d634[] = "Your throwing was impressive!";
+const char D_0805d634[] = "基本功很扎实！";
 #else
 const char D_0805d618[] = "You need to practice tossing more.";
 
 const char D_0805d634[] = "Your tossing was impressive!";
 #endif
 
-const char D_0805d64c[] = "You all seem a bit tense.";
+const char D_0805d64c[] = "是不是有点着急了？";
 
-const char D_0805d660[] = "You kept your cool throughout!";
+const char D_0805d660[] = "挺沉着的嘛！";
 
-const char D_0805d678[] = "You couldn't keep up to speed.";
+const char D_0805d678[] = "跟上这个速度。";
 
-const char D_0805d694[] = "Speed's no problem for you three!";
+const char D_0805d694[] = "这速度你已经跟得很稳啦！！";
 
-const char D_0805d6b0[] = "Tips from the referee:";
+const char D_0805d6b0[] = "教练的话";
 
-#ifdef PARADISE
+#ifdef BRIT
 const char D_0805d6c4[] =
-    "\n"
-    "Time to throw our best!";
+    "要上咯——！";
 #else
 const char D_0805d6c4[] =
     "\n"
@@ -36,53 +38,49 @@ const char D_0805d6c4[] =
 #endif
 
 const char D_0805d6d4[] =
-    "\n"
-    "That's a wrap!";
+    "结束啦。";
 
-#ifdef PARADISE
-const char D_0805d6e0[] = "You need to practise throwing more.";
+#ifdef BRIT
+const char D_0805d6e0[] = "看来还没练出成果啊。";
 
-const char D_0805d6fc[] = "Your throwing was impressive!";
+const char D_0805d6fc[] = "基本功很扎实！";
 #else
 const char D_0805d6e0[] = "You need to practice tossing more.";
 
 const char D_0805d6fc[] = "Your tossing was impressive!";
 #endif
 
-const char D_0805d714[] = "You all seem a bit tense.";
+const char D_0805d714[] = "是不是有点着急了？";
 
-const char D_0805d728[] = "You kept your cool throughout!";
+const char D_0805d728[] = "挺沉着的嘛！";
 
-const char D_0805d740[] = "You couldn't keep up to speed.";
+const char D_0805d740[] = "跟上这个速度。";
 
-const char D_0805d75c[] = "Speed's no problem for you three!";
+const char D_0805d75c[] = "这速度你已经跟得很稳啦！！";
 
-const char D_0805d778[] = "Tips from the referee:";
+const char D_0805d778[] = "教练的话";
 
 const char D_0805d78c[] =
-    "\n"
-    "Let's try out our routine!";
+    "正式来咯——！";
 
 const char D_0805d7a8[] =
-    "\n"
-    "That's a wrap!";
+    "结束啦。";
 
 const char D_0805d7b4[] =
-    "\n"
-    "Alright! Let's get some practice in!";
+    "好伙伴一起练习中";
 
+// 阶段 5 已校对：标题的画面换行与第二行前后八个显示控制字节都保留。
+// TODO 未校对：三种必杀技名称在练习画面的第二行宽度仍需实机检查。
 const char D_0805d7cc[] =
-    "Toss Technique 1:\n"
-    "\x03\x31" "\x01\x6d" "\x05\x30" "\x01\x34" "Red's A-B Pass-Toss" "\x03\x30" "\x01\x73" "\x05\x34" "\x01\x38";
+    "必杀技 1\n"
+    "\x03\x31" "\x01\x6d" "\x05\x30" "\x01\x34" "AB 来回传球" "\x03\x30" "\x01\x73" "\x05\x34" "\x01\x38";
 
 const char D_0805d7fc[] =
-    "\n"
-    "Let's do it one more time!";
+    "再来一次";
 
-#ifdef PARADISE
+#ifdef BRIT
 const char D_0805d80c[] =
-    "\n"
-    "Great throwing!";
+    "不错哦！";
 #else
 const char D_0805d80c[] =
     "\n"
@@ -90,29 +88,24 @@ const char D_0805d80c[] =
 #endif
 
 const char D_0805d818[] =
-    "Toss Technique 2:\n"
-    "\x03\x31" "\x01\x6d" "\x05\x30" "\x01\x34" "Blue's Bounce-Toss" "\x03\x30" "\x01\x73" "\x05\x34" "\x01\x38";
+    "必杀技 2\n"
+    "\x03\x31" "\x01\x6d" "\x05\x30" "\x01\x34" "蓝色自传球" "\x03\x30" "\x01\x73" "\x05\x34" "\x01\x38";
 
 const char D_0805d848[] =
-    "\n"
-    "Once again!";
+    "再来一次〜";
 
 const char D_0805d85c[] =
-    "\n"
-    "Good job!";
+    "对对对！！";
 
 const char D_0805d86c[] =
-    "Toss Technique 3:\n"
-    "\x03\x31" "\x01\x6d" "\x05\x30" "\x01\x34" "Yellow's Quick-Toss" "\x03\x30" "\x01\x73" "\x05\x34" "\x01\x38";
+    "必杀技 3\n"
+    "\x03\x31" "\x01\x6d" "\x05\x30" "\x01\x34" "黄色快传" "\x03\x30" "\x01\x73" "\x05\x34" "\x01\x38";
 
 const char D_0805d8a0[] =
-    "\n"
-    "Once more for good measure!";
+    "再来一次";
 
 const char D_0805d8b0[] =
-    "\n"
-    "Okay!";
+    "OK";
 
 const char D_0805d8bc[] =
-    "\n"
-    "We've made good time on practice...";
+    "感觉已经挺不错了，";

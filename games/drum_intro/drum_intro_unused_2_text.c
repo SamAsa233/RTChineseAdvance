@@ -1,3 +1,6 @@
+/* 中文文本：本文件采用译文包中 stage 5 的已校对条目。
+ * 字符串中的 \n 是游戏画面换行；相邻引号只是方便阅读源码。
+ * 未校对或未定位的条目见 text/zh_hans/TODO_未校对.md。 */
 #include "global.h"
 #include "text.h"
 
@@ -6,60 +9,51 @@
 
 
 const char D_0805d8d8[] =
-    "\n"
-    "With that, let's begin!";
+    "那么，开始吧。";
 
 const char D_0805d8ec[] =
-    "\n"
-    "Onto the next one!";
+    "下一段，开始。";
 
 const char D_0805d900[] =
-    "\n"
-    "This one's a short waltz!";
+    "接下来是 3 拍子。";
 
 const char D_0805d914[] =
-    "\n"
-    "Now for the last one!";
+    "好，那就是最后啦。";
 
+// 阶段 5 已校对：只替换原文，保留英文版用于垂直排版的开头换行。
+// TODO 未校对：该备用教学画面的首行留白仍需实机核验。
 const char D_0805d928[] =
     "\n"
-    "...And that's it!";
+    "以上就是这些。";
 
 const char D_0805d934[] =
-    "That was some good practice.\n"
-    "How'd you like it?\n"
-    "Keep it in the back of your\n"
-    "mind for later!";
+    "刚才这段开头练习，\n"
+    "感觉怎么样？\n"
+    "以后演奏的时候，\n"
+    "可要记住哦！";
 
 const char D_0805d97c[] =
-    "\n"
-    "I'll see you next time.\n"
-    "Untill then, bye!";
+    "那么，下次再见。\n"
+    "再会啦。";
 
 const char D_0805d9a8[] =
-    "\n"
-    "Oh, hello again.\n"
-    "I'm Samurai Drummer.";
+    "啊，你好。\n"
+    "我是鼓武士。";
 
 const char D_0805d9c8[] =
-    "Well...\n"
-    "I believe that this is\n"
-    "the second time we've met.\n"
-    "Nice to see you again!";
+    "呃…\n"
+    "这已经是第 2 次了呢。\n"
+    "能再见到你，我很高兴！";
 
 const char D_0805da00[] =
-    "The start is usually the most\n"
-    "important part in anything.\n"
-    "And I think the same thing\n"
-    "applies when playing music.";
+    "你看，很多事情里\n"
+    "最开始那一下往往都很关键，对吧？\n"
+    "演奏也是一样的，\n"
+    "不是吗？";
 
 const char D_0805da5c[] =
-    "Alright, lesson 2.\n"
-    "Let's practice the\n"
-    "\"start\" of the music.";
+    "课程 2 要练的，\n"
+    "就是曲子的开头。";
 
 const char D_0805da84[] =
-    "Let me count for you.\n"
-    "When the song starts,\n"
-    "press "CHAR_B_BUTTON_UTF8" and "CHAR_R_SHOULDER_BUTTON_UTF8" together\n"
-    "at the same time.";
+    "我来数拍，\n请在曲子开始时\n同时按下 B 键和\nR 键（肩键）。";

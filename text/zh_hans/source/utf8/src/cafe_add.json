@@ -1,0 +1,20 @@
+[
+  {
+    "key": "cafe_line_extra_1",
+    "original": "woohoo extra!",
+    "translation": "天呐！所有的额外关卡！",
+    "stage": 5
+  },
+  {
+    "key": "cafe_line_extra_2",
+    "original": "woohoo main & extra!",
+    "translation": "天呐！所有的主关卡和额外关卡！",
+    "stage": 5
+  },
+  {
+    "key": "cafe_line_extra_3",
+    "original": "woohoo you beat the game!",
+    "translation": "哇哦，你通关啦！",
+    "stage": 5
+  }
+]

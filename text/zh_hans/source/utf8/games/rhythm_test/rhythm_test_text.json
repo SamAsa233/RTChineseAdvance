@@ -1,0 +1,128 @@
+[
+  {
+    "key": "D_0805eed8",
+    "original": "音に合わせて、Ａボタンを押してください",
+    "translation": "请跟着声音按下 A 键。",
+    "stage": 5
+  },
+  {
+    "key": "D_0805ef00",
+    "original": "あと半分",
+    "translation": "还有一半",
+    "stage": 5
+  },
+  {
+    "key": "D_0805ef0c",
+    "original": "3",
+    "translation": "3",
+    "stage": 5
+  },
+  {
+    "key": "D_0805ef10",
+    "original": "2",
+    "translation": "2",
+    "stage": 5
+  },
+  {
+    "key": "D_0805ef14",
+    "original": "1",
+    "translation": "1",
+    "stage": 5
+  },
+  {
+    "key": "D_0805ef18",
+    "original": "「ゼロ」と同時に、Ａボタンを押してください",
+    "translation": "请在数到“零”的同时按下 A 键",
+    "stage": 5
+  },
+  {
+    "key": "D_0805ef44",
+    "original": "音が消えるところは、心でカウントしてください",
+    "translation": "声音消失时，请在心里继续数拍",
+    "stage": 5
+  },
+  {
+    "key": "D_0805ef74",
+    "original": "では、測定をはじめます",
+    "translation": "那么，开始测定",
+    "stage": 5
+  },
+  {
+    "key": "D_0805ef8c",
+    "original": "音に合わせて、Ａボタンを押してください",
+    "translation": "请跟着声音按下 A 键。",
+    "stage": 5
+  },
+  {
+    "key": "D_0805efb4",
+    "original": "そのまま、キープしつづけて下さい",
+    "translation": "就这样，继续保持节奏",
+    "stage": 5
+  },
+  {
+    "key": "D_0805efd8",
+    "original": "だいぶ、努力が必要かも…",
+    "translation": "看来还需要下不少功夫呢…",
+    "stage": 5
+  },
+  {
+    "key": "D_0805eff4",
+    "original": "もう少し、がんばりましょう。",
+    "translation": "再稍微加把劲吧。",
+    "stage": 5
+  },
+  {
+    "key": "D_0805f014",
+    "original": "人並みの正確さをお持ちです。",
+    "translation": "准确度算是一般。",
+    "stage": 5
+  },
+  {
+    "key": "D_0805f034",
+    "original": "正確な体内時計をお持ちです！",
+    "translation": "你的体内时钟相当准确！",
+    "stage": 5
+  },
+  {
+    "key": "D_0805f054",
+    "original": "すごい！　電波時計なみの正確さ！！",
+    "translation": "厉害！准得像电波钟一样！！",
+    "stage": 5
+  },
+  {
+    "key": "D_0805f078",
+    "original": "あなたのリズム感をしらべましょう",
+    "translation": "来测一测你的节奏感吧",
+    "stage": 5
+  },
+  {
+    "key": "D_0805f09c",
+    "original": "これから、３回のテストをします",
+    "translation": "接下来要做 3 次测试",
+    "stage": 5
+  },
+  {
+    "key": "D_0805f0bc",
+    "original": "では、１回目です",
+    "translation": "那么，第 1 次开始",
+    "stage": 5
+  },
+  {
+    "key": "D_0805f0d0",
+    "original": "２回目のテスト、いきます",
+    "translation": "第 2 次测试，开始咯",
+    "stage": 5
+  },
+  {
+    "key": "D_0805f0ec",
+    "original": "さいごのテストです",
+    "translation": "这是最后一次测试",
+    "stage": 5
+  },
+  {
+    "key": "D_0805f100",
+    "original": "さて、結果は…？",
+    "translation": "那么，结果会是…？",
+    "stage": 5
+  }
+]

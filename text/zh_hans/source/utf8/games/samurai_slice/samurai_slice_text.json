@@ -1,0 +1,68 @@
+[
+  {
+    "key": "D_0805bca8",
+    "original": "きほんが　できてませんな。",
+    "translation": "基本功还没到家啊。",
+    "stage": 5
+  },
+  {
+    "key": "D_0805bcc8",
+    "original": "てきが見えないと　ダメっぽい．．．",
+    "translation": "看不见敌人就不行了啊…",
+    "stage": 5
+  },
+  {
+    "key": "D_0805bcec",
+    "original": "てきが見えなくても　イイカンジ！",
+    "translation": "看不见敌人也打得不错！",
+    "stage": 5
+  },
+  {
+    "key": "D_0805bd10",
+    "original": "速いのが　ニガテみたい．．．",
+    "translation": "看来你不太擅长快节奏啊…",
+    "stage": 5
+  },
+  {
+    "key": "D_0805bd30",
+    "original": "速いテンポが　うまくとれてる！",
+    "translation": "快节奏抓得很好！",
+    "stage": 5
+  },
+  {
+    "key": "D_0805bd50",
+    "original": "スローが　おみごと！",
+    "translation": "慢拍处理得漂亮！",
+    "stage": 5
+  },
+  {
+    "key": "D_0805bd68",
+    "original": "てき　を　きれ！",
+    "translation": "把敌人斩掉！",
+    "stage": 5
+  },
+  {
+    "key": "D_0805bd7c",
+    "original": "ム．．．",
+    "translation": "唔…",
+    "stage": 5
+  },
+  {
+    "key": "D_0805bd88",
+    "original": "キリ　が　でてきたな．．．",
+    "translation": "起雾了啊…",
+    "stage": 5
+  },
+  {
+    "key": "D_0805bda4",
+    "original": "２ひき．．．！？",
+    "translation": "两只…！？",
+    "stage": 5
+  },
+  {
+    "key": "D_0805bdb8",
+    "original": "見物人のはなし",
+    "translation": "围观者的话",
+    "stage": 5
+  }
+]

@@ -1,3 +1,4 @@
+@ 汉化改动：把提示文本提前到原有 24 拍等待的第一拍；1+23 拍保持总时长不变，给中文提示留出显示时间。
 .include "include/beatscript.inc"
 .include "games/samurai_slice/macros.inc"
 .include "games/sick_beats/macros.inc"

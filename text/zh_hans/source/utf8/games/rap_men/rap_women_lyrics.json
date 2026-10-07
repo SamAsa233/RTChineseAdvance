@@ -1,0 +1,74 @@
+[
+  {
+    "key": "text text_rap_women_juji_desu_ka",
+    "original": "ＡＭ１０：００　ですか？",
+    "translation": "上午十点了吗？",
+    "stage": 5
+  },
+  {
+    "key": "text text_rap_women_oyatsu_desu_ka",
+    "original": "おやつ　ですか？",
+    "translation": "该吃点心了吗？",
+    "stage": 5
+  },
+  {
+    "key": "text text_rap_women_naisho_desu_ka",
+    "original": "ナイショですか？",
+    "translation": "要保密吗？",
+    "stage": 5
+  },
+  {
+    "key": "text text_rap_women_kare_no_oyatsu_da_ne",
+    "original": "カレのおやつ　だね",
+    "translation": "那是他的点心吧",
+    "stage": 5
+  },
+  {
+    "key": "text text_rap_women_tabeteii_kamo_ne",
+    "original": "たべていー　かもネ",
+    "translation": "也许可以吃吧",
+    "stage": 5
+  },
+  {
+    "key": "text text_rap_women_aketeii_kamo_ne",
+    "original": "あけていー　かもネ",
+    "translation": "也许可以打开吧",
+    "stage": 5
+  },
+  {
+    "key": "text text_rap_women_oyatsu_wa_saikou",
+    "original": "おやつは　サイコー！！",
+    "translation": "点心最棒啦——！！",
+    "stage": 5
+  },
+  {
+    "key": "text text_rap_women_kibun_wa_saikou",
+    "original": "きぶんは　サイコー！！",
+    "translation": "心情最棒啦——！！",
+    "stage": 5
+  },
+  {
+    "key": "text text_rap_women_amakute_saikou",
+    "original": "あまくて　サイコー！！",
+    "translation": "甜甜的，最棒啦——！！",
+    "stage": 5
+  },
+  {
+    "key": "text text_rap_women_betsubara_saikou",
+    "original": "べつばら　サイコー！！",
+    "translation": "甜点胃最棒啦——！！",
+    "stage": 5
+  },
+  {
+    "key": "text text_rap_women_kare_ni_wa_naisho",
+    "original": "カレには　ナイショー！！",
+    "translation": "别告诉他呀——！！",
+    "stage": 5
+  },
+  {
+    "key": "text text_rap_women_dare_ni_mo_naisho",
+    "original": "ダレにも　ナイショー！！",
+    "translation": "谁都别告诉呀——！！",
+    "stage": 5
+  }
+]

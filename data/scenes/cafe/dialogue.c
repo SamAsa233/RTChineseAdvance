@@ -1,3 +1,6 @@
+/* 中文文本：本文件采用译文包中 stage 5 的已校对条目。
+ * 字符串中的 \n 是游戏画面换行；相邻引号只是方便阅读源码。
+ * 未校对或未定位的条目见 text/zh_hans/TODO_未校对.md。 */
 #include "global.h"
 #include "graphics.h"
 #include "text.h"
@@ -39,27 +42,25 @@
 const char *cafe_dialogue_first_visit[] = {
     /* ------------------------------------------------ */
         "\n"
-        "Welcome to the café.\n"
-        "This your first time here?\n"
+        "欢迎光临。\n"
+        "你是第一次来这里吧？\n"
         "\n",
     /* ------------------------------------------------ */
         "\n"
-        "Feel free to come on by anytime you\n"
-        "find the games " "\0051" "\0015" "too hard to play " "\0054" "\0018" "or\n"
-        "you just need to take a break.",
+        "这里嘛，就是所谓的咖啡店啦。\n"
+        "游戏打得不太顺的时候，\n"
+        "\0051" "\0015" "或者累了的时候，都可以来坐坐哦。" "\0054" "\0018",
     /* ------------------------------------------------ */
         "\n"
-        "If there's anything I can\n"
-        "do to help, well, " "\0051" "\0015" "that's\n"
-        "what I'm here for." "\0054" "\0018" "",
+        "只要有我帮得上忙的地方，\n"
+        "\0051" "\0015" "我都会尽力的哦。" "\0054" "\0018",
     /* ------------------------------------------------ */
         "\n"
-        "I'm a little busy right now,\n"
-        "since I only just opened for the\n"
-        "day, but we'll talk more later.",
+        "我现在正在准备点东西，\n"
+        "请你晚点再来哦。\n",
     /* ------------------------------------------------ */
         "\n"
-        "Come back soon!\n"
+        "那，下回见哦。\n"
         "\n",
     /* ------------------------------------------------ */
     END_OF_DIALOGUE
@@ -77,8 +78,7 @@ const char *cafe_dialogue_first_visit[] = {
 const char *cafe_dialogue_come_back_later[] = {
     /* ------------------------------------------------ */
         "\n"
-        "Could you come back in a while?\n"
-        "I'm a bit busy.\n"
+        "过一会儿再来哦〜。\n"
         "\n",
     /* ------------------------------------------------ */
     END_OF_DIALOGUE
@@ -106,18 +106,17 @@ const char *cafe_dialogue_come_back_later[] = {
 const char *cafe_dialogue_keep_trying[] = {
     /* ------------------------------------------------ */
         "\n"
-        "Give it some practice and you'll do\n"
-        "fine. I'm sure of it!\n"
+        "多玩几次的话，\n"
+        "我想你会慢慢抓到诀窍的哦。\n"
         "\n",
     /* ------------------------------------------------ */
         "\n"
-        "I'm sure getting into the groove\n"
-        "of the music will be pretty\n"
-        "fun all its own.",
+        "同时呢，\n"
+        "你也会越来越享受跟着音乐律动的感觉。\n",
     /* ------------------------------------------------ */
         "\n"
-        "Try not to get all worked up out\n"
-        "there. Make sure to have a good time.\n"
+        "别太较劲啦，\n"
+        "开心玩就好…\n"
         "\n",
     /* ------------------------------------------------ */
     END_OF_DIALOGUE
@@ -140,13 +139,13 @@ const char *cafe_dialogue_keep_trying[] = {
 const char *cafe_dialogue_practicing_perfect[] = {
     /* ------------------------------------------------ */
         "\n"
-        "...Sorry for yelling. I just got a little\n"
-        "excited.\n"
+        "抱歉，刚才声音太大了。\n"
+        "我实在是太替你高兴了…\n"
         "\n",
     /* ------------------------------------------------ */
         "\n"
-        "Good luck on getting those Perfects!\n"
-        "See you around.\n"
+        "Perfect 也要继续加油哦。\n"
+        "那回头见。\n"
         "\n",
     /* ------------------------------------------------ */
     END_OF_DIALOGUE
@@ -169,13 +168,13 @@ const char *cafe_dialogue_practicing_perfect[] = {
 const char *cafe_dialogue_not_practicing_perfect[] = {
     /* ------------------------------------------------ */
         "\n"
-        "Is that so? My bad, then.\n"
-        "Guess that's why you shouldn't put\n"
-        "so much stock in a rumor.",
+        "这样呀。\n"
+        "还跟你聊了些传闻，\n"
+        "真是失礼啦。",
     /* ------------------------------------------------ */
         "\n"
-        "Enjoy the games at your own pace,\n"
-        "alright? See you around.\n"
+        "请继续享受游戏哦。\n"
+        "那回头见。\n"
         "\n",
     /* ------------------------------------------------ */
     END_OF_DIALOGUE
@@ -213,29 +212,29 @@ const char *cafe_dialogue_not_practicing_perfect[] = {
 const char *cafe_dialogue_all_perfects_clear[] = {
     /* ------------------------------------------------ */
         "\n"
-        "If you've made it this far, then your\n"
-        "sense of rhythm has just got to be\n"
-        "a step above the rest!",
+        "哎呀，都已经玩到这种地步了，\n"
+        "你的节奏感\n"
+        "肯定已经变得相当好了呢！",
     /* ------------------------------------------------ */
         "\n"
-        "I'm so proud of you.\n"
-        "Moved to tears, even!\n"
+        "我也高兴得\n"
+        "眼泪汪汪啦…\n"
         "\n",
     /* ------------------------------------------------ */
         "\n"
-        "I know it's not much of a gift,\n"
-        "but I've opened up more studio\n"
-        "songs for you.\n",
+        "对了对了，\n"
+        "作为庆祝，虽然只是小小心意，\n"
+        "我帮你往录音室里添了些曲子。\n",
     /* ------------------------------------------------ */
         "\n"
-        "So I guess that means you've\n"
-        "collected everything?\n"
-        "Impressive!",
+        "哎呀呀，这可真是不得了，\n"
+        "居然全部完成了呀。\n"
+        "真有你的〜。",
     /* ------------------------------------------------ */
         "\n"
-        "Good work out there, my friend.\n"
-        "You've really earned a break.\n"
-        "See you around!\n",
+        "你也累了吧？\n"
+        "稍微休息一下哦。\n"
+        "那，下回见。\n",
     /* ------------------------------------------------ */
     END_OF_DIALOGUE
 };
@@ -244,10 +243,12 @@ const char *cafe_dialogue_all_perfects_clear[] = {
 // Dialogue - Extra Perfects Cleared
 const char *cafe_dialogue_extra_perfects_clear[] = {
     /* ------------------------------------------------ */
+        // TODO 未校对：cafe_dialogue_extra_perfects_clear[0] 译文包未到 stage 5，暂留原文。
         "\n"
         "blabla you finished the extra campaign!\n"
         "\n",
     /* ------------------------------------------------ */
+        // TODO 未校对：cafe_dialogue_extra_perfects_clear[1] 译文包未到 stage 5，暂留原文。
         "\n"
         "it's so AWESOME!!\n"
         "\n",
@@ -259,10 +260,12 @@ const char *cafe_dialogue_extra_perfects_clear[] = {
 // Dialogue - All Perfects Cleared (Main + Extra)
 const char *cafe_dialogue_all_perfects_clear_big[] = {
     /* ------------------------------------------------ */
+        // TODO 未校对：cafe_dialogue_all_perfects_clear_big[0] 译文包未到 stage 5，暂留原文。
         "\n"
         "woohoo main & extra!\n"
         "\n",
     /* ------------------------------------------------ */
+        // TODO 未校对：cafe_dialogue_all_perfects_clear_big[1] 译文包未到 stage 5，暂留原文。
         "\n"
         "you finished the campaign!\n"
         "\n",
@@ -294,27 +297,29 @@ const char *cafe_dialogue_all_perfects_clear_big[] = {
         // Unbelievable!!
     /* -------------------------------- */
 
+/* 汉化修复：保留原版字号、居中和两个画面换行控制码；
+ * 相邻 C 字符串会在编译时拼接，中文只替换可见台词。 */
 const char *cafe_dialogue_shouts_praise[] = {
     /* ------------------------------------------------ */
     "\0032" "\001l" "\0051" "\0015" "\n"
     "\n"
-    "That's great!" "\0030" "\001s" "\0054" "\0018",
+    "这也太厉害了吧!!" "\0030" "\001s" "\0054" "\0018",
     /* ------------------------------------------------ */
     "\0032" "\001l" "\0051" "\0015" "\n"
     "\n"
-    "Amazing!" "\0030" "\001s" "\0054" "\0018",
+    "挺有本事的嘛!!" "\0030" "\001s" "\0054" "\0018",
     /* ------------------------------------------------ */
     "\0032" "\001l" "\0051" "\0015" "\n"
     "\n"
-    "Congratulations!" "\0030" "\001s" "\0054" "\0018",
+    "恭喜啦!!" "\0030" "\001s" "\0054" "\0018",
     /* ------------------------------------------------ */
     "\0032" "\001l" "\0051" "\0015" "\n"
     "\n"
-    "Great job!" "\0030" "\001s" "\0054" "\0018",
+    "干得漂亮!!" "\0030" "\001s" "\0054" "\0018",
     /* ------------------------------------------------ */
     "\0032" "\001l" "\0051" "\0015" "\n"
     "\n"
-    "I can't believe it!" "\0030" "\001s" "\0054" "\0018",
+    "难以置信!!" "\0030" "\001s" "\0054" "\0018",
     /* ------------------------------------------------ */
 };
 
@@ -342,27 +347,29 @@ const char *cafe_dialogue_shouts_praise[] = {
         // I was moved!
     /* -------------------------------- */
 
+/* 汉化修复：保留原版字号、居中和两个画面换行控制码；
+ * 相邻 C 字符串会在编译时拼接，中文只替换可见台词。 */
 const char *cafe_dialogue_shouts_cheer[] = {
     /* ------------------------------------------------ */
         "\0032" "\001l" "\0051" "\0015" "\n"
         "\n"
-        "Go for it!" "\0030" "\001s" "\0054" "\0018",
+        "加油啊！" "\0030" "\001s" "\0054" "\0018",
     /* ------------------------------------------------ */
         "\0032" "\001l" "\0051" "\0015" "\n"
         "\n"
-        "Give it your all!" "\0030" "\001s" "\0054" "\0018",
+        "冲呀！" "\0030" "\001s" "\0054" "\0018",
     /* ------------------------------------------------ */
         "\0032" "\001l" "\0051" "\0015" "\n"
         "\n"
-        "Keep going!" "\0030" "\001s" "\0054" "\0018",
+        "上啊上啊！" "\0030" "\001s" "\0054" "\0018",
     /* ------------------------------------------------ */
         "\0032" "\001l" "\0051" "\0015" "\n"
         "\n"
-        "Good luck!" "\0030" "\001s" "\0054" "\0018",
+        "祝你好运！" "\0030" "\001s" "\0054" "\0018",
     /* ------------------------------------------------ */
         "\0032" "\001l" "\0051" "\0015" "\n"
         "\n"
-        "I'm impressed!" "\0030" "\001s" "\0054" "\0018",
+        "太让人感动啦！" "\0030" "\001s" "\0054" "\0018",
     /* ------------------------------------------------ */
 };
 
@@ -393,27 +400,26 @@ const char *cafe_dialogue_shouts_cheer[] = {
 const char *cafe_dialogue_rhythm_sense[] = {
     /* ------------------------------------------------ */
         "\n"
-        "By the way, is a sense of rhythm any\n"
-        "different for humans?\n"
+        "说起来呀，节奏感这种东西，对人类来说究竟意味着什么呢。\n"
         "\n",
     /* ------------------------------------------------ */
         "\n"
-        "Well, not like my rhythm couldn't do with\n"
-        "a bit of work, but...\n"
+        "不过像我嘛，\n"
+        "平时倒也不怎么会特意去想这个啦。\n"
         "\n",
     /* ------------------------------------------------ */
         "\n"
-        "When your sense of rhythm\n"
-        #ifdef PARADISE
-        "improves... that has to be\n"
+        "不过，节奏感变好了的话，\n"
+        // 译文包只提供一条阶段 5 定稿；两个地区分支都使用该中文，同时保留原条件编译结构。
+        #ifdef BRIT
+        "人应该也会稍微开心一点吧。"
         #else
-        "improves... that's gotta be\n"
+        "人应该也会稍微开心一点吧。"
         #endif
-        "euphoric, huh?",
+        ,
     /* ------------------------------------------------ */
         "\n"
-        "Maybe I should try some of those\n"
-        "rhythm games myself...\n"
+        "我也来试着玩玩游戏好了…\n"
         "\n",
     /* ------------------------------------------------ */
     END_OF_DIALOGUE
@@ -451,29 +457,29 @@ const char *cafe_dialogue_rhythm_sense[] = {
 const char *cafe_dialogue_offbeats[] = {
     /* ------------------------------------------------ */
         "\n"
-        "You've probably heard of something\n"
-        "called an offbeat.\n"
-        "Do you know what that is?",
+        "说起来，这个世界里常听人说的\n"
+        "“反拍”到底是什么，\n"
+        "你知道吗？",
     /* ------------------------------------------------ */
         "\n"
-        "I'm no expert myself, but I think\n"
-        "I've got the jist of it.\n"
+        "不过嘛，我其实也没懂得那么多，\n"
+        "所以讲得可能不太靠谱哦。\n"
         "\n",
     /* ------------------------------------------------ */
         "\n"
-        "So, suppose you're clapping to\n"
-        "the beat of some music, right?\n"
+        "比如说，\n"
+        "你跟着音乐很自然地拍手，对吧。\n"
         "\n",
     /* ------------------------------------------------ */
         "\n"
-        "Well, the offbeat is supposed to be\n"
-        "the exact point right inbetween each\n"
-        "of your claps.",
+        "那每次拍手和拍手之间，\n"
+        "刚好正中间的那个时机，\n"
+        "听说就叫“反拍”。",
     /* ------------------------------------------------ */
         "\n"
-        "At least I think so. I'm not so great at\n"
-        "explaining this stuff, but I hope it helps.\n"
-        "See you around.",
+        "嗯，大概就是这么回事啦。\n"
+        "讲得随随便便的，真不好意思哦。\n"
+        "那，下回见。",
     /* ------------------------------------------------ */
     END_OF_DIALOGUE
 };
@@ -510,28 +516,28 @@ const char *cafe_dialogue_offbeats[] = {
 const char *cafe_dialogue_rhythm_test[] = {
     /* ------------------------------------------------ */
         "\n"
-        "Say, have you tried doing the\n"
-        "Rhythm Test again?\n"
+        "说起来，\n"
+        "你最近有做“节奏感测试”吗？\n"
         "\n",
     /* ------------------------------------------------ */
         "\n"
-        "I've been giving it a spin lately.\n"
-        "Seems like 65 points is my limit.\n"
+        "我偶尔也会去测，\n"
+        "不过，65 分左右就是我的极限啦……\n"
         "\n",
     /* ------------------------------------------------ */
         "\n"
-        "That second test gives me quite\n"
-        "a bit of trouble.\n"
+        "那个第二项测试呀，\n"
+        "我怎么也做不好呢。\n"
         "\n",
     /* ------------------------------------------------ */
         "\n"
-        "Counting those silent beats...\n"
-        "It's tricky, don't you think?\n"
+        "要去数空拍这种事，\n"
+        "还真是挺难的呢〜。\n"
         "\n",
     /* ------------------------------------------------ */
         "\n"
-        "Well, let's take it one step at a time.\n"
-        "See you around.\n"
+        "不过嘛，就慢慢来吧。\n"
+        "那，下回见。\n"
         "\n",
     /* ------------------------------------------------ */
     END_OF_DIALOGUE
@@ -569,29 +575,28 @@ const char *cafe_dialogue_rhythm_test[] = {
 const char *cafe_dialogue_drum_lessons[] = {
     /* ------------------------------------------------ */
         "\n"
-        "You ever check out the drum\n"
-        "lessons in the bonus corner?\n"
+        "说起来，奖励角里的击鼓课程，\n"
+        "你玩过吗？\n"
         "\n",
     /* ------------------------------------------------ */
         "\n"
-        "I've been taking lessons every week,\n"
-        "but I never seem to get any better.\n"
+        "我每周会去上一次课，\n"
+        "不过怎么也不见有多少长进呢。\n"
         "\n",
     /* ------------------------------------------------ */
         "\n"
-        "My teacher told me that I have a\n"
-        "bit of a problem pacing myself, that\n"
-        "I shouldn't push myself so much.",
+        "老师也说过啦，\n"
+        "这种事本来就各有所好，\n"
+        "不用勉强自己。话虽如此——",
     /* ------------------------------------------------ */
         "\n"
-        "But once you start getting into it,\n"
-        "it's hard to stop.\n"
+        "可一旦开始上课呀，\n"
+        "就还真有点停不下来呢〜。\n"
         "\n",
     /* ------------------------------------------------ */
         "\n"
-        "I guess no one can master the drums\n"
-        "in a day, though. We should take\n"
-        "our time with that stuff.",
+        "不过嘛，乐器这种东西本来就不是一下子能变厉害的，\n"
+        "还是耐下心来，慢慢练下去吧…",
     /* ------------------------------------------------ */
     END_OF_DIALOGUE
 };
@@ -623,24 +628,22 @@ const char *cafe_dialogue_drum_lessons[] = {
 const char *cafe_dialogue_adhd[] = {
     /* ------------------------------------------------ */
         "\n"
-        "I'm not sure why, but man, am I tired...\n"
-        "\n"
+        "说起来，我现在不知怎么的，\n"
+        "特别困呀…\n"
         "\n",
     /* ------------------------------------------------ */
         "\n"
-        "I was up last night playing until\n"
-        "who-knows-when...\n"
+        "毕竟昨晚玩到很晚嘛…\n"
         "\n",
     /* ------------------------------------------------ */
         "\n"
-        "Oops! Sorry.\n"
-        "I'm talking to myself again.\n"
-        "Don't mind me.\n",
+        "啊，不，没什么，这是我自己的事。\n"
+        "只是自言自语啦… 抱歉哦。\n",
     /* ------------------------------------------------ */
         "\n"
-        "Want to go for a drive with me, sometime?\n"
-        "If you want to, I mean...\n"
-        "Anyway, see you later.",
+        "下次要不要去兜个风呢？\n"
+        "不过，也得看你愿不愿意啦。\n"
+        "那，下回见。",
     /* ------------------------------------------------ */
     END_OF_DIALOGUE
 };
@@ -672,22 +675,18 @@ const char *cafe_dialogue_adhd[] = {
 const char *cafe_dialogue_coffee[] = {
     /* ------------------------------------------------ */
         "\n"
-        "So, I made you some coffee.\n"
+        "说起来，咖啡已经上好啦。\n"
         "\n",
     /* ------------------------------------------------ */
         "\n"
-        "Wait, you didn't order coffee?\n"
-        "Oh, this is from the person\n"
-        "sitting next to you. His treat.",
+        "咦？你说你没点？ 啊，这个嘛，是旁边那位请的啦…\n",
     /* ------------------------------------------------ */
         "\n"
-        "He's not much for words, but\n"
-        "he's pretty friendly, and I guess\n"
-        "generous too.",
+        "虽、虽然那位不太爱说话，\n"
+        "但大概也是想跟你交个朋友吧？\n",
     /* ------------------------------------------------ */
         "\n"
-        "Me? I can make coffee, but...\n"
-        "need to work on the rest. Heh...\n"
+        "我嘛，也就只会给人煮煮咖啡而已啦… 哈哈哈…\n"
         "\n",
     /* ------------------------------------------------ */
     END_OF_DIALOGUE
@@ -720,23 +719,23 @@ const char *cafe_dialogue_coffee[] = {
 const char *cafe_dialogue_dog_barista[] = {
     /* ------------------------------------------------ */
         "\n"
-        "By the way, I'm actually a dog.\n"
+        "说起来，其实啊，我是一只狗哦。\n"
         "\n",
     /* ------------------------------------------------ */
         "\n"
-        "I'm nine years old. Pretty spry\n"
-        "for my age, if I say so.\n"
+        "算起来我已经 9 岁了，\n"
+        "也算一把年纪啦。\n"
         "\n",
     /* ------------------------------------------------ */
         "\n"
-        "Time goes by pretty fast when you're\n"
-        "as old as I am.\n"
+        "哎呀呀，到了这个年纪，\n"
+        "时间过得可真快呢。\n"
         "\n",
     /* ------------------------------------------------ */
         "\n"
-        "You're a human, right? They say I'm\n"
-        "supposed to be your best friend.\n"
-        "We'd better get along then!",
+        "客人你是人类吧？\n"
+        "虽然我是只狗，不过今后\n"
+        "也请继续跟我好好相处哦〜。",
     /* ------------------------------------------------ */
     END_OF_DIALOGUE
 };
@@ -768,24 +767,23 @@ const char *cafe_dialogue_dog_barista[] = {
 const char *cafe_dialogue_healing_with_music[] = {
     /* ------------------------------------------------ */
         "\n"
-        "So, when you're sad, what do\n"
-        "you do to cheer yourself up?\n"
-        "Me, I listen to music.",
+        "说起来，难过的时候\n"
+        "你会做什么呢？\n"
+        "我呀，基本上就是听音乐呢。",
     /* ------------------------------------------------ */
         "\n"
-        "Dusting off a favorite record of mine\n"
-        "and taking a nostalgia trip...\n"
-        "That never fails to put me at ease.",
+        "把那些挺老的唱片翻出来，\n"
+        "一边听一边回想当时的事，\n"
+        "心里就会慢慢放松下来。",
     /* ------------------------------------------------ */
         "\n"
-        "Music's weird like that.\n"
-        "Why does it hold such power\n"
-        "over our feelings?",
+        "音乐真是很不可思议呢〜。\n"
+        "为什么它能那样\n"
+        "深深触动人的心呢。",
     /* ------------------------------------------------ */
         "\n"
-        "Maybe if I studied this stuff I'd know,\n"
-        "but I haven't!\n"
-        "Sorry! Heh.\n",
+        "不过嘛，那些详细道理\n"
+        "我也不懂就是啦。哈哈哈。\n",
     /* ------------------------------------------------ */
     END_OF_DIALOGUE
 };
@@ -822,29 +820,29 @@ const char *cafe_dialogue_healing_with_music[] = {
 const char *cafe_dialogue_speaking_with_music[] = {
     /* ------------------------------------------------ */
         "\n"
-        "I heard you can hold a conversation\n"
-        "with only rhythm.\n"
+        "说起来，\n"
+        "你知道节奏也能拿来对话吗？\n"
         "\n",
     /* ------------------------------------------------ */
         "\n"
-        "You can put words and meanings\n"
-        "behind different rhythms, like morse\n"
-        "code, and talk without speaking.",
+        "就是把不同的节奏型\n"
+        "对应成话语和含义，\n"
+        "然后用来交流的样子哦。",
     /* ------------------------------------------------ */
         "\n"
-        "Like, bang out a message into one\n"
-        "of those taiko drums, and you could\n"
-        "communicate acres apart.",
+        "听说他们会用响亮的鼓声\n"
+        "打出节奏，跟远处的人\n"
+        "交流哦。",
     /* ------------------------------------------------ */
         "\n"
-        "At least that's what a customer\n"
-        "once told me.\n"
-        "Doesn't that sound fun?",
+        "前阵子来店里的客人\n"
+        "告诉我这件事时，\n"
+        "我就觉得还挺有意思的，不是吗？",
     /* ------------------------------------------------ */
         "\n"
-        "But if you had percussive election\n"
-        "speeches or bongo arguments...\n"
-        "Expect a lot of noise. Hahaha!",
+        "不过要是拿鼓来做竞选演说，\n"
+        "或者夫妻俩拿邦戈鼓吵架的话，\n"
+        "感觉会吵得不得了呢。哈哈哈。",
     /* ------------------------------------------------ */
     END_OF_DIALOGUE
 };
@@ -881,29 +879,29 @@ const char *cafe_dialogue_speaking_with_music[] = {
 const char *cafe_dialogue_ranks_and_medals[] = {
     /* ------------------------------------------------ */
         "\n"
-        "By the way, have you ever gotten a\n"
-        "Superb rank on a game?\n"
+        "说起来，你有在游戏里拿过\n"
+        "“高水准”这个评价吗？\n"
         "\n",
     /* ------------------------------------------------ */
         "\n"
-        "There are three ranks you can get:\n"
-        "Try Again, OK, and Superb.\n"
+        "游戏成绩一共有\n"
+        "“再试一次吧”“平凡”“高水准”这三种哦。\n"
         "\n",
     /* ------------------------------------------------ */
         "\n"
-        "And, if you get a Superb,\n"
-        "you also get a medal.\n"
+        "然后呢，只要拿到“高水准”，\n"
+        "就能得到奖牌哦。\n"
         "\n",
     /* ------------------------------------------------ */
         "\n"
-        "Those medals let you unlock\n"
-        "some prizes. Sounds like it\n"
-        "would be worth your while.",
+        "收集奖牌之后，\n"
+        "就能玩到各种各样的\n"
+        "奖励内容，所以要加油收集哦。",
     /* ------------------------------------------------ */
         "\n"
-        "But you probably already knew that,\n"
-        "right? Sorry if I bored you.\n"
-        "See you around.",
+        "如果你本来就知道的话，\n"
+        "那我这番话可就有点无聊啦。\n"
+        "不好意思哦，那下回见。",
     /* ------------------------------------------------ */
     END_OF_DIALOGUE
 };

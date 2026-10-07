@@ -1,3 +1,6 @@
+/* 中文文本：本文件采用译文包中 stage 5 的已校对条目。
+ * 字符串中的 \n 是游戏画面换行；相邻引号只是方便阅读源码。
+ * 未校对或未定位的条目见 text/zh_hans/TODO_未校对.md。 */
 #include "global.h"
 #include "text.h"
 
@@ -6,45 +9,42 @@
 
 
 const char D_0805d438[] =
-    "\n"
-    "Oh, hi there.\n"
-    "I'm Samurai Drummer.";
+    "啊，你好。\n"
+    "我是鼓武士。";
 
 const char D_0805d458[] =
-    "Do you like drums?\n"
-    "I guess you don't hate them,\n"
-    "at least.\n"
-    "Want me to help you play?";
+    "你喜欢打鼓吗？\n"
+    "应该不讨厌吧。\n"
+    "那么，接下来\n"
+    "就让我来带你吧。";
 
 const char D_0805d4b4[] =
-    "Let me give you a lecture.\n"
-    "...Relax! Don't worry!\n"
-    "Just follow along,\n"
-    "it'll be a fun one!";
+    "我来给你做个\n"
+    "简单的讲解。\n"
+    "放轻松点，\n"
+    "陪我练一练吧。";
 
 const char D_0805d508[] =
-    "First off, lesson 1.\n"
-    "I'll play you a pattern,\n"
-    "and you copy after me.";
+    "那么，马上开始\n"
+    "课程 1。\n"
+    "我会先做示范，\n"
+    "你跟着学哦。";
 
 const char D_0805d554[] =
-    "\n"
-    "Okay! Here we go!";
+    "那么，开始吧。";
 
 const char D_0805d568[] =
-    "Give it a shot\n"
-    "When you're ready!";
+    "好，请吧。";
 
 const char D_0805d57c[] =
-    "Alright, I'm kidding!\n"
-    "Sorry about that.";
+    "刚才那是开玩笑的。\n"
+    "不好意思。";
 
 const char D_0805d5a4[] =
-    "I'll try to make sure you're\n"
-    "having a good time.\n"
-    "Just try your best.";
+    "不过，为了让你学会，\n"
+    "我会尽全力帮你，\n"
+    "你也加油试试看吧。";
 
 const char D_0805d5ec[] =
-    "\n"
-    "See you in the next lesson.\n"
-    "Goodbye!";
+    "那么，下次再见。\n"
+    "再会啦。";

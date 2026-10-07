@@ -1,3 +1,6 @@
+/* 中文文本：本文件采用译文包中 stage 5 的已校对条目。
+ * 字符串中的 \n 是游戏画面换行；相邻引号只是方便阅读源码。
+ * 未校对或未定位的条目见 text/zh_hans/TODO_未校对.md。 */
 #include "engines/tap_trial.h"
 
 
@@ -2202,11 +2205,11 @@ const char D_0805a8bc[] = "";
 
 // [D_089e8054] ?
 const char *D_089e8054[] = {
-    "Divine!",
-    "Dazzling!",
-    "So technical!",
-    "Sharp work!",
-    "I think I'm in love!",
+    "挺行嘛！！",
+    "真帅！！",
+    "技术真硬！",
+    "酷毙了！！",
+    "我都迷上你啦！！",
 };
 
 // [D_089e8068] ?

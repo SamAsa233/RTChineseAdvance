@@ -1,3 +1,4 @@
+/* 汉化改动：完美挑战奖励通知由已校对中文片段组成，并用有容量限制的 snprintf 写入缓冲区。 */
 #include "global.h"
 #include "game_select.h"
 #include "graphics/game_select/game_select_graphics.h"
@@ -253,7 +254,8 @@ const char *get_campaign_gift_title(s32 id, s32 shortenSongTitle) {
             return reading_material_table[giftID].title;
 
         case CAMPAIGN_GIFT_NEW_GAME:
-            return "新游戏"; // New Game
+            // 已校对的「新游戏」来自 game_select_new_game；用于奖励标题。
+            return "新游戏";
     }
 }
 
@@ -290,12 +292,20 @@ void start_campaign_notice(s32 id) {
         strcat(string, "即可获赠：\n");
         strcat(string, get_campaign_gift_title(id, FALSE)); // received as a present!!
     }
-    
-    if(isSong) {
-        strcat(string, get_campaign_gift_title(id, FALSE));
-        strcat(string, "的音乐\n");
-        strcat(string, "就送给你！\n");
+    else if(isSong) {
+        if(isSpecialSong) {
+            strcat(string, "歌曲「");
+            strcat(string, get_campaign_gift_title(id, FALSE));
+            strcat(string, "」就送给你！");
+        }
+        else {
+            strcat(string, "「");
+            strcat(string, get_campaign_gift_title(id, FALSE));
+            strcat(string, "」的音乐\n");
+            strcat(string, "就送给你！");
+        }
     } 
+
     text_printer_set_string(notice->printer, string);
 
     sprite_set_visible(gSpriteHandler, gGameSelect->selectionBorderSprite, FALSE);
@@ -2158,10 +2168,12 @@ void game_select_print_level_rank(s32 levelState) {
         levelState = LEVEL_STATE_OPEN;
     }
 
+    #ifdef PLUS
     // Check if the game has been perfected
     if (get_campaign_cleared(&D_030046a8->data, get_campaign_from_level_id(gGameSelect->infoPaneLevelID))) {
         levelState = LEVEL_STATE_PERFECT; // Use the new "perfect" rank
     }
+    #endif
 
 #ifdef PLUS
     hasNoPracticeIcon = (gGameSelect->infoPaneLevelData->flags & LEVEL_DATA_FLAG_NO_PRACTICE) != 0;

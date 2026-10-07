@@ -1,0 +1,20 @@
+[
+  {
+    "key": "D_0805a694",
+    "original": "音にあわせて、　Ａボタンを押しましょう。",
+    "translation": "跟着声音，按下 A 键吧。",
+    "stage": 5
+  },
+  {
+    "key": "D_0805a6c0",
+    "original": "計測中",
+    "translation": "测量中",
+    "stage": 5
+  },
+  {
+    "key": "D_0805a6c8",
+    "original": "計測おわり！ さて、 結果は…",
+    "translation": "测量结束！ 那么，结果是…",
+    "stage": 5
+  }
+]

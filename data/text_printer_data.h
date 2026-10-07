@@ -1,3 +1,4 @@
+/* 汉化改动：声明新增字形范围和中文行首、行尾禁则表，供正文排版器使用。 */
 #pragma once
 
 
@@ -28,6 +29,8 @@ extern struct FontGlyphRange font_glyph_range_large[];
 
 extern u8 D_08938258[];
 extern u8 D_0893825d[];
+extern const char gTextLineStartForbidden[];
+extern const char gTextLineEndForbidden[];
 
 /* Small font binaries (glyph data and spacing tables) */
 extern u8 small_ascii_0000_007F_bin[];

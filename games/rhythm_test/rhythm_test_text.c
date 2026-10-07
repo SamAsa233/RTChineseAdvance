@@ -1,3 +1,6 @@
+/* 中文文本：本文件采用译文包中 stage 5 的已校对条目。
+ * 字符串中的 \n 是游戏画面换行；相邻引号只是方便阅读源码。
+ * 未校对或未定位的条目见 text/zh_hans/TODO_未校对.md。 */
 #include "global.h"
 #include "text.h"
 
@@ -5,9 +8,9 @@
 /* Game Text - Rhythm Test */
 
 
-const char D_0805eed8[] = "Press "CHAR_A_BUTTON_UTF8" in time with the signal.";
+const char D_0805eed8[] = "请跟着声音按下 A 键。";
 
-const char D_0805ef00[] = "You're halfway there!";
+const char D_0805ef00[] = "还有一半";
 
 const char D_0805ef0c[] = "3";
 
@@ -15,34 +18,34 @@ const char D_0805ef10[] = "2";
 
 const char D_0805ef14[] = "1";
 
-const char D_0805ef18[] = "Press "CHAR_A_BUTTON_UTF8" when the timer hits 0.";
+const char D_0805ef18[] = "请在数到“零”的同时按下 A 键";
 
-const char D_0805ef44[] = "When there's no sound, count to yourself.";
+const char D_0805ef44[] = "声音消失时，请在心里继续数拍";
 
-const char D_0805ef74[] = "Now, let's start measuring.";
+const char D_0805ef74[] = "那么，开始测定";
 
-const char D_0805ef8c[] = "Press "CHAR_A_BUTTON_UTF8" in time with the signal.";
+const char D_0805ef8c[] = "请跟着声音按下 A 键。";
 
-const char D_0805efb4[] = "Keep it up like this!";
+const char D_0805efb4[] = "就这样，继续保持节奏";
 
-const char D_0805efd8[] = "You'll have to put in a lot of effort...";
+const char D_0805efd8[] = "看来还需要下不少功夫呢…";
 
-const char D_0805eff4[] = "You'll need to try a little harder.";
+const char D_0805eff4[] = "再稍微加把劲吧。";
 
-const char D_0805f014[] = "You're as accurate as any average guy.";
+const char D_0805f014[] = "准确度算是一般。";
 
-const char D_0805f034[] = "You have an accurate biological clock!";
+const char D_0805f034[] = "你的体内时钟相当准确！";
 
-const char D_0805f054[] = "Incredible! You're as precise as an atomic clock!";
+const char D_0805f054[] = "厉害！准得像电波钟一样！！";
 
-const char D_0805f078[] = "Let's find out how good your rhythm is.";
+const char D_0805f078[] = "来测一测你的节奏感吧";
 
-const char D_0805f09c[] = "We're going to do three tests.";
+const char D_0805f09c[] = "接下来要做 3 次测试";
 
-const char D_0805f0bc[] = "Here's the first rhythm test.";
+const char D_0805f0bc[] = "那么，第 1 次开始";
 
-const char D_0805f0d0[] = "Let's move on to the second test.";
+const char D_0805f0d0[] = "第 2 次测试，开始咯";
 
-const char D_0805f0ec[] = "This is the final test.";
+const char D_0805f0ec[] = "这是最后一次测试";
 
-const char D_0805f100[] = "";
+const char D_0805f100[] = "那么，结果会是…？";

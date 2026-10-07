@@ -1,0 +1,440 @@
+[
+  {
+    "key": "cafe_dialogue_first_visit[0]",
+    "original": "いらっしゃいませ。\nこちらに　来たのは　はじめてですね？\n",
+    "translation": "欢迎光临。\n你是第一次来这里吧？\n",
+    "stage": 5
+  },
+  {
+    "key": "cafe_dialogue_first_visit[4]",
+    "original": "ここは　いわゆる　キッサ店です。\nゲームが　うまくできないときや\nつかれたときにでも　おいで下さい。",
+    "translation": "这里嘛，就是所谓的咖啡店啦。\n游戏打得不太顺的时候，\n或者累了的时候，都可以来坐坐哦。",
+    "stage": 5
+  },
+  {
+    "key": "cafe_dialogue_first_visit[15]",
+    "original": "わたしに　できることが　あれば、\nちからに　なりますよ。\n",
+    "translation": "只要有我帮得上忙的地方，\n我都会尽力的哦。\n",
+    "stage": 5
+  },
+  {
+    "key": "cafe_dialogue_first_visit[23]",
+    "original": "いま　ちょっと　しこみ中なので\nまた　あとで　きてくださいね。\n",
+    "translation": "我现在正在准备点东西，\n请你晚点再来哦。\n",
+    "stage": 5
+  },
+  {
+    "key": "cafe_dialogue_first_visit[27]",
+    "original": "では　また。\n",
+    "translation": "那，下回见哦。\n",
+    "stage": 5
+  },
+  {
+    "key": "cafe_dialogue_come_back_later[0]",
+    "original": "しばらく　してから　きてね〜。\n",
+    "translation": "过一会儿再来哦〜。\n",
+    "stage": 5
+  },
+  {
+    "key": "cafe_dialogue_keep_trying[0]",
+    "original": "なんどか　やるうちに　コツが\nつかめると　思いますよ。\n",
+    "translation": "多玩几次的话，\n我想你会慢慢抓到诀窍的哦。\n",
+    "stage": 5
+  },
+  {
+    "key": "cafe_dialogue_keep_trying[4]",
+    "original": "それと同時に　音楽に　ノるのが\n楽しくなるとも思うんです。\n",
+    "translation": "同时呢，\n你也会越来越享受跟着音乐律动的感觉。\n",
+    "stage": 5
+  },
+  {
+    "key": "cafe_dialogue_keep_trying[8]",
+    "original": "あまり　ムキに　ならずに\n楽しんで下さいね…\n",
+    "translation": "别太较劲啦，\n开心玩就好…\n",
+    "stage": 5
+  },
+  {
+    "key": "cafe_dialogue_practicing_perfect[0]",
+    "original": "大きい声をだして　すみません。\nなんだか　うれしかったものですから…\n",
+    "translation": "抱歉，刚才声音太大了。\n我实在是太替你高兴了…\n",
+    "stage": 5
+  },
+  {
+    "key": "cafe_dialogue_practicing_perfect[4]",
+    "original": "パーフェクト　がんばってくださいね。\nではまた。\n",
+    "translation": "Perfect 也要继续加油哦。\n那回头见。\n",
+    "stage": 5
+  },
+  {
+    "key": "cafe_dialogue_not_practicing_perfect[0]",
+    "original": "そうですか。\nウワサ話なんて　してしまい\nしつれいしました。",
+    "translation": "这样呀。\n还跟你聊了些传闻，\n真是失礼啦。",
+    "stage": 5
+  },
+  {
+    "key": "cafe_dialogue_not_practicing_perfect[5]",
+    "original": "ゲーム　楽しんでくださいね。\nではまた。\n",
+    "translation": "请继续享受游戏哦。\n那回头见。\n",
+    "stage": 5
+  },
+  {
+    "key": "cafe_dialogue_all_perfects_clear[0]",
+    "original": "もう、そこまで　やりこんだら\nリズム感　かなり　良くなって\nいるでしょうネ！",
+    "translation": "哎呀，都已经玩到这种地步了，\n你的节奏感\n肯定已经变得相当好了呢！",
+    "stage": 5
+  },
+  {
+    "key": "cafe_dialogue_all_perfects_clear[5]",
+    "original": "なんだか　私も、すっごく\nうれしくって　ウルウルです…\n",
+    "translation": "我也高兴得\n眼泪汪汪啦…\n",
+    "stage": 5
+  },
+  {
+    "key": "cafe_dialogue_all_perfects_clear[8]",
+    "original": "そうそう、\nお祝いに　ささやかでは　ありますが\nスタジオの曲をふやしておきました。\n",
+    "translation": "对了对了，\n作为庆祝，虽然只是小小心意，\n我帮你往录音室里添了些曲子。\n",
+    "stage": 5
+  },
+  {
+    "key": "cafe_dialogue_all_perfects_clear[13]",
+    "original": "いやいや、しかし　なんと　まぁ\nコンプリートですか。\nやりますな〜。",
+    "translation": "哎呀呀，这可真是不得了，\n居然全部完成了呀。\n真有你的〜。",
+    "stage": 5
+  },
+  {
+    "key": "cafe_dialogue_all_perfects_clear[17]",
+    "original": "おつかれでしょう？\n少し　休んでくださいネ。\nでは　また。",
+    "translation": "你也累了吧？\n稍微休息一下哦。\n那，下回见。",
+    "stage": 5
+  },
+  {
+    "key": "cafe_dialogue_shouts_praise[0]",
+    "original": "すごいじゃなーい!!",
+    "translation": "这也太厉害了吧!!",
+    "stage": 5
+  },
+  {
+    "key": "cafe_dialogue_shouts_praise[16]",
+    "original": "やるじゃなーい!!",
+    "translation": "挺有本事的嘛!!",
+    "stage": 5
+  },
+  {
+    "key": "cafe_dialogue_shouts_praise[27]",
+    "original": "おめでとー!!",
+    "translation": "恭喜啦!!",
+    "stage": 5
+  },
+  {
+    "key": "cafe_dialogue_shouts_praise[38]",
+    "original": "グッド　ジョブ!!",
+    "translation": "干得漂亮!!",
+    "stage": 5
+  },
+  {
+    "key": "cafe_dialogue_shouts_praise[49]",
+    "original": "アンビリーバボー!!",
+    "translation": "难以置信!!",
+    "stage": 5
+  },
+  {
+    "key": "cafe_dialogue_shouts_cheer[0]",
+    "original": "がんばれー！",
+    "translation": "加油啊！",
+    "stage": 5
+  },
+  {
+    "key": "cafe_dialogue_shouts_cheer[16]",
+    "original": "ファイトー！",
+    "translation": "冲呀！",
+    "stage": 5
+  },
+  {
+    "key": "cafe_dialogue_shouts_cheer[27]",
+    "original": "イケイケー！",
+    "translation": "上啊上啊！",
+    "stage": 5
+  },
+  {
+    "key": "cafe_dialogue_shouts_cheer[38]",
+    "original": "グッド　ラック！",
+    "translation": "祝你好运！",
+    "stage": 5
+  },
+  {
+    "key": "cafe_dialogue_shouts_cheer[49]",
+    "original": "感動したー！",
+    "translation": "太让人感动啦！",
+    "stage": 5
+  },
+  {
+    "key": "cafe_dialogue_rhythm_sense[0]",
+    "original": "それはそうと、リズム感って　人間にとって　どういうものなんでしょうねぇ。\n",
+    "translation": "说起来呀，节奏感这种东西，对人类来说究竟意味着什么呢。\n",
+    "stage": 5
+  },
+  {
+    "key": "cafe_dialogue_rhythm_sense[3]",
+    "original": "ま、私なんかは　あんまり\nいしきすることも　ないんですがね。\n",
+    "translation": "不过像我嘛，\n平时倒也不怎么会特意去想这个啦。\n",
+    "stage": 5
+  },
+  {
+    "key": "cafe_dialogue_rhythm_sense[7]",
+    "original": "でも、リズム感が　よくなると　きっと　ちょっと　ハッピーに　なるんでしょうね。",
+    "translation": "不过，节奏感变好了的话，\n人应该也会稍微开心一点吧。",
+    "stage": 5
+  },
+  {
+    "key": "cafe_dialogue_rhythm_sense[10]",
+    "original": "私も　ゲーム　してみようかな…\n",
+    "translation": "我也来试着玩玩游戏好了…\n",
+    "stage": 5
+  },
+  {
+    "key": "cafe_dialogue_offbeats[0]",
+    "original": "それはそうと、この世界でよく聞く\n「ウラ」って　どういうものか\n知ってますか？",
+    "translation": "说起来，这个世界里常听人说的\n“反拍”到底是什么，\n你知道吗？",
+    "stage": 5
+  },
+  {
+    "key": "cafe_dialogue_offbeats[5]",
+    "original": "ま、私も　それほど　詳しくはないので　アレなんですけどネ。\n",
+    "translation": "不过嘛，我其实也没懂得那么多，\n所以讲得可能不太靠谱哦。\n",
+    "stage": 5
+  },
+  {
+    "key": "cafe_dialogue_offbeats[7]",
+    "original": "たとえば、音楽にあわせて\n自然に手をたたくとしますね。\n",
+    "translation": "比如说，\n你跟着音乐很自然地拍手，对吧。\n",
+    "stage": 5
+  },
+  {
+    "key": "cafe_dialogue_offbeats[11]",
+    "original": "その　手びょうしと手びょうしの\nちょうど　まん中のタイミングが\n「ウラ」なんだそうです。",
+    "translation": "那每次拍手和拍手之间，\n刚好正中间的那个时机，\n听说就叫“反拍”。",
+    "stage": 5
+  },
+  {
+    "key": "cafe_dialogue_offbeats[16]",
+    "original": "まぁ、そういうモン　らしいです。\nテキトーで　ごめんなさいネ。\nでは　また。",
+    "translation": "嗯，大概就是这么回事啦。\n讲得随随便便的，真不好意思哦。\n那，下回见。",
+    "stage": 5
+  },
+  {
+    "key": "cafe_dialogue_rhythm_test[0]",
+    "original": "それはそうと、\n最近　「リズム感測定」してます？\n",
+    "translation": "说起来，\n你最近有做“节奏感测试”吗？\n",
+    "stage": 5
+  },
+  {
+    "key": "cafe_dialogue_rhythm_test[4]",
+    "original": "私も　ときどき　やるんですけど\n点くらいが　限界なんですよねぇ…\n",
+    "translation": "我偶尔也会去测，\n不过，65 分左右就是我的极限啦……\n",
+    "stage": 5
+  },
+  {
+    "key": "cafe_dialogue_rhythm_test[8]",
+    "original": "なかなか　どうして　つめのテストが　うまく　できないんですヨ。\n",
+    "translation": "那个第二项测试呀，\n我怎么也做不好呢。",
+    "stage": 5
+  },
+  {
+    "key": "cafe_dialogue_rhythm_test[11]",
+    "original": "空白を　カウントするってのは\nムズいもんですね〜。\n",
+    "translation": "要去数空拍这种事，\n还真是挺难的呢〜。\n",
+    "stage": 5
+  },
+  {
+    "key": "cafe_dialogue_rhythm_test[15]",
+    "original": "ま、ぼちぼち　やっていきましょうネ。\nでは　また。\n",
+    "translation": "不过嘛，就慢慢来吧。\n那，下回见。\n",
+    "stage": 5
+  },
+  {
+    "key": "cafe_dialogue_drum_lessons[0]",
+    "original": "それはそうと、おまけコーナーの　ドラムレッスンって　やったことあります？\n",
+    "translation": "说起来，奖励角里的击鼓课程，\n你玩过吗？\n",
+    "stage": 5
+  },
+  {
+    "key": "cafe_dialogue_drum_lessons[3]",
+    "original": "私は　週に回だけ　レッスンを\nうけてるんですが、なかなか\n上達しませんねぇ。",
+    "translation": "我每周会去上一次课，\n不过怎么也不见\n有多少长进呢。",
+    "stage": 5
+  },
+  {
+    "key": "cafe_dialogue_drum_lessons[8]",
+    "original": "先生が、こういうのは　すききらいが\nあるから、ムリして　しないでネって\n言ってましたけど、",
+    "translation": "老师也说过啦，\n这种事本来就各有所好，\n不用勉强自己。话虽如此——",
+    "stage": 5
+  },
+  {
+    "key": "cafe_dialogue_drum_lessons[12]",
+    "original": "レッスンを　やりだすと　これが\nなかなか　やめられないんですよね〜。\n",
+    "translation": "可一旦开始上课呀，\n就还真有点停不下来呢〜。\n",
+    "stage": 5
+  },
+  {
+    "key": "cafe_dialogue_drum_lessons[15]",
+    "original": "ま、楽器は　すぐには　うまくならないでしょうし、じっくりと　つきあってみましょうかね…",
+    "translation": "不过嘛，乐器这种东西本来就不是一下子能变厉害的，\n还是耐下心来，慢慢练下去吧…",
+    "stage": 5
+  },
+  {
+    "key": "cafe_dialogue_adhd[0]",
+    "original": "それはそうと、\nなんだか　今　すごく　ねむいのです…\n",
+    "translation": "说起来，\n我现在不知怎么的，特别困呀…\n",
+    "stage": 5
+  },
+  {
+    "key": "cafe_dialogue_adhd[4]",
+    "original": "きのう　おそくまで　遊んでたからなぁ…\n",
+    "translation": "毕竟昨晚玩到很晚嘛…\n",
+    "stage": 5
+  },
+  {
+    "key": "cafe_dialogue_adhd[8]",
+    "original": "あ、いや、こっちの話です。\nひとりごとですので…　すみませんね。\n",
+    "translation": "啊，不，没什么，这是我自己的事。\n只是自言自语啦… 抱歉哦。\n",
+    "stage": 5
+  },
+  {
+    "key": "cafe_dialogue_adhd[12]",
+    "original": "こんど　ドライブでも　行きませんか？\nま、よかったら　ですけどネ。\nでは　また。",
+    "translation": "下次要不要去兜个风呢？\n不过，也得看你愿不愿意啦。\n那，下回见。",
+    "stage": 5
+  },
+  {
+    "key": "cafe_dialogue_coffee[0]",
+    "original": "それはそうと、\nコーヒー　入りましたヨ。\n",
+    "translation": "说起来，\n咖啡已经上好啦。\n",
+    "stage": 5
+  },
+  {
+    "key": "cafe_dialogue_coffee[4]",
+    "original": "え？　たのんでないって？　あぁ、これは　おとなりから　なんですが…\n",
+    "translation": "咦？你说你没点？ 啊，这个嘛，是旁边那位请的啦…\n",
+    "stage": 5
+  },
+  {
+    "key": "cafe_dialogue_coffee[7]",
+    "original": "ま、まぁ　無口な方ですが\nなかよくしたいんじゃないですか？\n",
+    "translation": "虽、虽然那位不太爱说话，\n但大概也是想跟你交个朋友吧？\n",
+    "stage": 5
+  },
+  {
+    "key": "cafe_dialogue_coffee[11]",
+    "original": "私は、コーヒーを　入れるだけしか\nできませんが…　ははは…\n",
+    "translation": "我嘛，也就只会给人煮煮咖啡而已啦… 哈哈哈…\n",
+    "stage": 5
+  },
+  {
+    "key": "cafe_dialogue_dog_barista[0]",
+    "original": "それはそうと、\n実は　私　犬なんですヨ。\n",
+    "translation": "说起来，\n其实啊，我是一只狗哦。\n",
+    "stage": 5
+  },
+  {
+    "key": "cafe_dialogue_dog_barista[4]",
+    "original": "かれこれ　才で　もう　けっこう\nいいトシなんです。\n",
+    "translation": "算起来我已经 9 岁了，\n也算一把年纪啦。",
+    "stage": 5
+  },
+  {
+    "key": "cafe_dialogue_dog_barista[8]",
+    "original": "いやはや、このトシになると\n時がたつのが　はやいですねぇ。\n",
+    "translation": "哎呀呀，到了这个年纪，\n时间过得可真快呢。\n",
+    "stage": 5
+  },
+  {
+    "key": "cafe_dialogue_dog_barista[12]",
+    "original": "お客さんは　人間ですよね？\nまぁ、私は　犬ですが　これからも\nなかよくしてくださいネ〜。",
+    "translation": "客人你是人类吧？\n虽然我是只狗，不过今后\n也请继续跟我好好相处哦〜。",
+    "stage": 5
+  },
+  {
+    "key": "cafe_dialogue_healing_with_music[0]",
+    "original": "それはそうと、悲しいときって\nどうしてますか？\n私は　もっぱら　音楽を　ききますねぇ。",
+    "translation": "说起来，难过的时候\n你会做什么呢？\n我呀，基本上就是听音乐呢。",
+    "stage": 5
+  },
+  {
+    "key": "cafe_dialogue_healing_with_music[5]",
+    "original": "けっこう古いレコードなんかを　出してきて　当時を　思い出したりすると、ホッとするんです。",
+    "translation": "把那些挺老的唱片翻出来，\n一边听一边回想当时的事，\n心里就会慢慢放松下来。",
+    "stage": 5
+  },
+  {
+    "key": "cafe_dialogue_healing_with_music[7]",
+    "original": "音楽って　フシギですよね〜。\nどうして　あんなにも　心を\nゆさぶるんでしょうね。",
+    "translation": "音乐真是很不可思议呢〜。\n为什么它能那样\n深深触动人的心呢。",
+    "stage": 5
+  },
+  {
+    "key": "cafe_dialogue_healing_with_music[11]",
+    "original": "まぁ、私には　詳しい理屈なんて\nわからないですけどネ。ははは。\n",
+    "translation": "不过嘛，那些详细道理\n我也不懂就是啦。哈哈哈。\n",
+    "stage": 5
+  },
+  {
+    "key": "cafe_dialogue_speaking_with_music[0]",
+    "original": "それはそうと、リズムで\n会話ができるって　知ってました？\n",
+    "translation": "说起来，\n你知道节奏也能拿来对话吗？\n",
+    "stage": 5
+  },
+  {
+    "key": "cafe_dialogue_speaking_with_music[4]",
+    "original": "リズムパターンに　言葉や　意味を　対応させて、会話をするんだそうです。\n",
+    "translation": "就是把不同的节奏型\n对应成话语和含义，\n然后用来交流的样子哦。\n",
+    "stage": 5
+  },
+  {
+    "key": "cafe_dialogue_speaking_with_music[7]",
+    "original": "タイコの大きな音で　リズムをきざんで\nはなれた人と　コミュニケーションを\nとるらしいんですヨ。",
+    "translation": "听说他们会用响亮的鼓声\n打出节奏，跟远处的人\n交流哦。",
+    "stage": 5
+  },
+  {
+    "key": "cafe_dialogue_speaking_with_music[12]",
+    "original": "このまえ　いらっしゃった　お客さんが\n教えてくれたんですけど、ちょっと\n面白そうじゃないですか？",
+    "translation": "前阵子来店里的客人\n告诉我这件事时，\n我就觉得还挺有意思的，不是吗？",
+    "stage": 5
+  },
+  {
+    "key": "cafe_dialogue_speaking_with_music[16]",
+    "original": "でも　もし、ドラムで　選挙演説とか\nボンゴで　夫婦ゲンカとかあったら\nやかましそうですネ。ははは。",
+    "translation": "不过要是拿鼓来做竞选演说，\n或者夫妻俩拿邦戈鼓吵架的话，\n感觉会吵得不得了呢。哈哈哈。",
+    "stage": 5
+  },
+  {
+    "key": "cafe_dialogue_ranks_and_medals[0]",
+    "original": "それはそうと、ゲームで\n「ハイレベル」っていう成績を\nとったことありますか？",
+    "translation": "说起来，\n你有在游戏里拿过\n“高水准”这个评价吗？",
+    "stage": 5
+  },
+  {
+    "key": "cafe_dialogue_ranks_and_medals[5]",
+    "original": "ゲームの成績は「やりなおし」「平凡」「ハイレベル」のつが、あるんですヨ。\n",
+    "translation": "游戏成绩一共有\n“再试一次吧”“平凡”“高水准”这三种哦。\n",
+    "stage": 5
+  },
+  {
+    "key": "cafe_dialogue_ranks_and_medals[7]",
+    "original": "で、「ハイレベル」をとると\nメダルが　もらえるんです。\n",
+    "translation": "然后呢，只要拿到“高水准”，\n就能得到奖牌哦。\n",
+    "stage": 5
+  },
+  {
+    "key": "cafe_dialogue_ranks_and_medals[11]",
+    "original": "メダルを　集めると　いろいろな\nおまけが　遊べるようになるので\nがんばって　集めてくださいネ。",
+    "translation": "收集奖牌之后，\n就能玩到各种各样的\n奖励内容，所以要加油收集哦。",
+    "stage": 5
+  },
+  {
+    "key": "cafe_dialogue_ranks_and_medals[16]",
+    "original": "ご存知でしたら　つまらない話でしたネ。\nすみません。ではまた。\n",
+    "translation": "如果你本来就知道的话，\n那我这番话可就有点无聊啦。\n不好意思哦，那下回见。\n",
+    "stage": 5
+  }
+]

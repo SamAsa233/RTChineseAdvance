@@ -1,0 +1,32 @@
+[
+  {
+    "key": "score_results_default_comments[0]",
+    "original": "最高レベルです！！",
+    "translation": "顶级水平！！",
+    "stage": 5
+  },
+  {
+    "key": "score_results_default_comments[1]",
+    "original": "かなり良いです！",
+    "translation": "相当不错！",
+    "stage": 5
+  },
+  {
+    "key": "score_results_default_comments[2]",
+    "original": "人並みです。",
+    "translation": "一般水平。",
+    "stage": 5
+  },
+  {
+    "key": "score_results_default_comments[3]",
+    "original": "もう一歩。",
+    "translation": "还差一点。",
+    "stage": 5
+  },
+  {
+    "key": "score_results_default_comments[4]",
+    "original": "う〜ん…",
+    "translation": "唔〜…",
+    "stage": 5
+  }
+]

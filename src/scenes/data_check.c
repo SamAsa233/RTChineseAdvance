@@ -1,3 +1,7 @@
+/* 中文文本：本文件采用译文包中 stage 5 的已校对条目。
+ * 字符串中的 \n 是游戏画面换行；相邻引号只是方便阅读源码。
+ * 未校对或未定位的条目见 text/zh_hans/TODO_未校对.md。 */
+/* 汉化改动：统计页数字改用 ASCII 输出，避免原全角数字转换与扩充字库发生偏差。 */
 #include "global.h"
 #include "data_check.h"
 #include "src/scenes/game_select.h"
@@ -53,7 +57,8 @@ void data_check_scene_start(void *sVar, s32 dArg) {
         gDataCheck->textLineSprites[i] = -1;
     }
 
-    data_check_print_line(0, 1, "游戏记录"); // Gameplay Logs
+    // 阶段 5 已校对：统计页标题。
+    data_check_print_line(0, 1, "游戏记录");
     gDataCheck->currentPage = 0;
     gDataCheck->totalPages = game_select_get_total_levels();
     data_check_print_page(gDataCheck->currentPage);
@@ -149,9 +154,10 @@ void data_check_print_page(s32 id) {
 
     strint(number, id);
     memcpy(string, "  ", 3);
-    strcat(string, "No. ");
+    // TODO 未校对：编号、首次评级等连接词为根据界面语义自拟，待实机复核。
+    strcat(string, "编号 ");
     strcat(string, number);
-    strcat(string, ":  ");
+    strcat(string, "：  ");
     strcat(string, game_select_get_level_name(id));
     data_check_print_line(2, 0, string);
 
@@ -164,11 +170,12 @@ void data_check_print_page(s32 id) {
     }
 
     memcpy(string, "  ", 3);
-    strcat(string, "平均分："); // Average Points:
+    // 阶段 5 已校对：平均分标签和满分说明。
+    strcat(string, "平均分：");
     strcat(string, number);
 
     if (avgPoints != DEFAULT_LEVEL_SCORE) {
-        strcat(string, "（满分 1000 分）"); // (Out of 1000 Points)
+        strcat(string, "（满分 1000 分）");
     }
 
     data_check_print_line(3, 0, string);
@@ -178,31 +185,35 @@ void data_check_print_page(s32 id) {
     firstSuperb = get_level_first_superb(saveData, id);
 
     memcpy(string, "  ", 3);
-    strcat(string, "游玩次数："); // Number of Times Played:
+    // 阶段 5 已校对：游玩次数标签和单位。
+    strcat(string, "游玩次数：");
     strint(number, totalPlays);
     strcat(string, number);
+    // 原代码漏掉译文包中的“次”；补上后页面才显示完整单位。
+    strcat(string, "次");
     data_check_print_line(4, 0, string);
 
     if (totalPlays > 0) {
         memcpy(string, "  ", 3);
-        strcat(string, "（首次通关："); // ( First OK:
+        // 阶段 5 译文没有“第”和额外空格，按已校对片段直接拼接。
+        strcat(string, "（首次通关：");
 
         if (firstOK == 0) {
-            strcat(string, "尚未"); // Not Yet
+            strcat(string, "尚未");
         } else {
             strint(number, firstOK);
             strcat(string, number);
-            strcat(string, "次"); // [x]th Time
+            strcat(string, "次");
         }
 
-        strcat(string, "     首次高水准："); // First Superb:
+        strcat(string, "  首次高水准：");
 
         if (firstSuperb == 0) {
-            strcat(string, "尚未）"); // Not Yet )
+            strcat(string, "尚未）");
         } else {
             strint(number, firstSuperb);
             strcat(string, number);
-            strcat(string, "次）"); // [x]th Time )
+            strcat(string, "次）");
         }
 
         data_check_print_line(5, 0, string);

@@ -1,3 +1,6 @@
+/* 中文文本：本文件采用译文包中 stage 5 的已校对条目。
+ * 字符串中的 \n 是游戏画面换行；相邻引号只是方便阅读源码。
+ * 未校对或未定位的条目见 text/zh_hans/TODO_未校对.md。 */
 // Level Entries Table
 struct LevelData level_data_table[] = {
     /* KARATE_MAN */ {
@@ -59,8 +62,8 @@ struct LevelData level_data_table[] = {
         /* Level Type    */ LEVEL_TYPE_GAME,
         /* Epilogue GFX  */ epilogue_snappy_trio_gfx_tables,
         /* Epilogue Text */ {
-            /* TRY_AGAIN */ "呀啊！饶了我吧！！",
-            /* OK        */ "就差那么一点点了呢…",
+            /* TRY_AGAIN */ "I spent everything I had on this outfit!",
+            /* OK        */ "We were so close...",
             #ifdef PARADISE
             /* SUPERB    */ "Perfect sync! It must be the outfits, right?"
             #else
@@ -172,10 +175,10 @@ struct LevelData level_data_table[] = {
     },
     /* SICK_BEATS */ {
         /* Entry Scene   */ &scene_sick_beats,
-        /* Level Name    */ "细菌博士",
-        /* Level Desc.   */ "\0023" "来自助手的通报\n"
-                            "“不好了！\n"
-                            "细菌爆发啦！！\n"
+        /* Level Name    */ "Sick Beats",
+        /* Level Desc.   */ "\0023" "Assistant's memo:\n"
+                            "We have an outbreak\n"
+                            "of an unknown virus!\n"
                             #ifdef PARADISE
                             "Help us, Dr Cutlery!",
                             #else
@@ -350,8 +353,8 @@ struct LevelData level_data_table[] = {
         /* Level Type    */ LEVEL_TYPE_GAME,
         /* Epilogue GFX  */ epilogue_tap_trial_gfx_tables,
         /* Epilogue Text */ {
-            #ifdef PARADISE
-            /* TRY_AGAIN */ "Better tap out.",
+            #ifdef BRIT
+            /* TRY_AGAIN */ "真不甘心呀。",
             #else
             /* TRY_AGAIN */ "真不甘心呀。",
             #endif
@@ -443,10 +446,10 @@ struct LevelData level_data_table[] = {
     },
     /* FIREWORKS */ {
         /* Entry Scene   */ &scene_fireworks,
-        /* Level Name    */ "烟火",
-        /* Level Desc.   */ "说到夏天嘛，\n"
-                            "果然还是烟火吧？\n"
-                            "就让它绚丽多彩地\n"
+        /* Level Name    */ "Fireworks",
+        /* Level Desc.   */ "It's not summertime\n"
+                            "without fireworks!\n"
+                            "Light them up to fill the\n"
                             #ifdef PARADISE
                             "sky with pretty colours!",
                             #else
@@ -463,10 +466,11 @@ struct LevelData level_data_table[] = {
     },
     /* POWER_CALLIGRAPHY */ {
         /* Entry Scene   */ &scene_power_calligraphy,
-        /* Level Name    */ "节奏书法",
-        /* Level Desc.   */ "要用毛笔来写日文。y\n"
-                            "而你负责的，\n"
-                            "只有最精彩的部分。",
+        /* Level Name    */ "Power Calligraphy",
+        /* Level Desc.   */ "Japanese calligraphy\n"
+                            "requires grace, finesse,\n"
+                            "and a shocking amount\n"
+                            "of upper body strength.",
         /* Level Icon    */ 28,
         /* Level Type    */ LEVEL_TYPE_GAME,
         /* Epilogue GFX  */ epilogue_power_power_calligraphy_gfx_tables,
@@ -487,16 +491,16 @@ struct LevelData level_data_table[] = {
         /* Level Type    */ LEVEL_TYPE_GAME,
         /* Epilogue GFX  */ epilogue_power_calligraphy_2_gfx_tables,
         /* Epilogue Text */ {
-            /* TRY_AGAIN */ "",
-            /* OK        */ "",
-            /* SUPERB    */ ""
+            /* TRY_AGAIN */ "呼〜… 不行呀。",
+            /* OK        */ "再多享受一些书法的乐趣吧！",
+            /* SUPERB    */ "书法这玩意儿也太带感啦！！"
         },
         /* Level Flags   */ LEVEL_DATA_FLAG_NO_PRACTICE
     },
     /* TOSS_BOYS */ {
         /* Entry Scene   */ &scene_toss_boys,
-        /* Level Name    */ "传球少年",
-        /* Level Desc.   */ "感情超好的三人组，\n"
+        /* Level Name    */ "Toss Team",
+        /* Level Desc.   */ "This trio of friends love\n"
                             #ifdef PARADISE
                             "practising volleyball.\n"
                             #else
@@ -508,12 +512,12 @@ struct LevelData level_data_table[] = {
         /* Level Type    */ LEVEL_TYPE_GAME,
         /* Epilogue GFX  */ epilogue_toss_boys_gfx_tables,
         /* Epilogue Text */ {
-            #ifdef PARADISE
-            /* TRY_AGAIN */ "We've been thrown out!",
+            #ifdef BRIT
+            /* TRY_AGAIN */ "完全不行啦〜！",
             #else
             /* TRY_AGAIN */ "完全不行啦〜！",
             #endif
-            /* OK        */ "你肯定还能做得更好！",
+            /* OK        */ "Next time, we'll toss better than the best!",
             #ifdef PARADISE
             /* SUPERB    */ "Chuck World Championship, here we come!"
             #else
@@ -523,8 +527,8 @@ struct LevelData level_data_table[] = {
     },
     /* TOSS_BOYS_2 */ {
         /* Entry Scene   */ &scene_toss_boys_2,
-        /* Level Name    */ "传球少年 2",
-        /* Level Desc.   */ "感情超好的三人组，\n"
+        /* Level Name    */ "Toss Team 2",
+        /* Level Desc.   */ "This trio of friends love\n"
                             #ifdef PARADISE
                             "practising volleyball.\n"
                             #else
@@ -536,8 +540,8 @@ struct LevelData level_data_table[] = {
         /* Level Type    */ LEVEL_TYPE_GAME,
         /* Epilogue GFX  */ epilogue_toss_boys_2_gfx_tables,
         /* Epilogue Text */ {
-            /* TRY_AGAIN */ "惨兮兮啦〜！",
-            /* OK        */ "怎么能在这里结束！",
+            /* TRY_AGAIN */ "Our spirits have been deflated...",
+            /* OK        */ "We still have a long way to go!",
             #ifdef PARADISE
             /* SUPERB    */ "Three cheers for our star thrower!"
             #else
@@ -564,10 +568,11 @@ struct LevelData level_data_table[] = {
     },
     /* TRAM_PAULINE */ {
         /* Entry Scene   */ &scene_tram_pauline,
-        /* Level Name    */ "小蹦与小床Tram & Pauline",
-        /* Level Desc.   */ "小狐狸小蹦，\n"
-                            "再加上小床的\n"
-                            "杂技秀就要开始啦！",
+        /* Level Name    */ "Tram & Pauline",
+        /* Level Desc.   */ "Gather round, one and\n"
+                            "all! Tram and Pauline's\n"
+                            "acrobatic magic show\n"
+							"is about to begin!",
         /* Level Icon    */ 32,
         /* Level Type    */ LEVEL_TYPE_GAME,
         /* Epilogue GFX  */ epilogue_tram_pauline_gfx_tables,
@@ -669,7 +674,7 @@ struct LevelData level_data_table[] = {
         /* Level Type    */ LEVEL_TYPE_GAME,
         /* Epilogue GFX  */ epilogue_quiz_show_gfx_tables,
         /* Epilogue Text */ {
-            /* TRY_AGAIN */ "嘛，也就这样吧。",
+            /* TRY_AGAIN */ "I can do better... I can do better...",
             #ifdef PARADISE
             /* OK        */ "Must study... for next time... Zzz...",
             #else
@@ -696,11 +701,11 @@ struct LevelData level_data_table[] = {
     },
     /* BON_DANCE */ {
         /* Entry Scene   */ &scene_bon_dance,
-        /* Level Name    */ "盆舞The☆Bon Dance",
-        /* Level Desc.   */ "这是现代版的\n"
-                            "盂兰盆舞！\n"
-                            "超带感哦！\n"
-                            "耶！",
+        /* Level Name    */ "The☆Bon Dance",
+        /* Level Desc.   */ "The Bon Festival has\n"
+                            "a modern-day style!\n"
+                            "Clap along to this\n"
+                            "new arrangement!",
         /* Level Icon    */ 17,
         /* Level Type    */ LEVEL_TYPE_GAME,
         /* Epilogue GFX  */ epilogue_bon_dance_gfx_tables,
@@ -849,8 +854,9 @@ struct LevelData level_data_table[] = {
     },
     /* CAFE */ {
         /* Entry Scene   */ &scene_cafe,
-        #ifdef PARADISE
-        /* Level Name    */ "Café Counselling",
+        // 阶段 5 已校对 level_cafe_counsel；两个地区原文拼写不同，中文同为“咖啡谈心”。
+        #ifdef BRIT
+        /* Level Name    */ "咖啡谈心",
         #else
         /* Level Name    */ "咖啡谈心",
         #endif
@@ -974,9 +980,9 @@ struct LevelData level_data_table[] = {
         /* Level Type    */ LEVEL_TYPE_GAME,
         /* Epilogue GFX  */ epilogue_rhythm_tweezers_extra_gfx_tables,
         /* Epilogue Text */ {
-            /* TRY_AGAIN */ "毛长得太快了啊…",
-            /* OK        */ "还真是挺难对付的毛啊",
-            /* SUPERB    */ "嗯——清爽了！去看看花吧！",
+            /* TRY_AGAIN */ "I can't pluck anything at this speed!",
+            /* OK        */ "These hairs are pretty tough to pluck.",
+            /* SUPERB    */ "Look at those flowers! They're so relaxing..."
         },
         /* Level Flags   */ LEVEL_DATA_FLAG_IS_EXTRA | LEVEL_DATA_FLAG_NO_PRACTICE
     },
@@ -1032,6 +1038,7 @@ struct LevelData level_data_table[] = {
     },
     /* REMIX_1 */ {
         /* Entry Scene   */ &scene_remix_1_extra,
+        // TODO 未校对：level_remix_extra 译文包未到 stage 5，暂留原文。
         /* Level Name    */ "Extra Remix",
         /* Level Desc.   */ "这是额外关卡的Remix哦。\n"
                             "能跟上这个速度吗？\n"

@@ -1,0 +1,194 @@
+[
+  {
+    "key": "D_0806a384",
+    "original": "前半が　いまひとつだったなぁ。",
+    "translation": "前半段还差一点啊。",
+    "stage": 1
+  },
+  {
+    "key": "D_0806a3a4",
+    "original": "前半、ばっちりだね！",
+    "translation": "前半段很稳嘛！",
+    "stage": 1
+  },
+  {
+    "key": "D_0806a3bc",
+    "original": "後半、もりさがっちゃってたなぁ。",
+    "translation": "后半段气氛有点冷下来了啊。",
+    "stage": 5
+  },
+  {
+    "key": "D_0806a3e0",
+    "original": "後半で　もりあがったね〜！",
+    "translation": "后半段热起来啦〜！",
+    "stage": 1
+  },
+  {
+    "key": "D_0806a400",
+    "original": "クライマックスが　きまってた！！",
+    "translation": "高潮部分很到位！！",
+    "stage": 1
+  },
+  {
+    "key": "D_0806a424",
+    "original": "さいごに　ちゃんと　シメてたね！",
+    "translation": "最后收得很漂亮呢！",
+    "stage": 1
+  },
+  {
+    "key": "D_0806a448",
+    "original": "まわりの評判",
+    "translation": "周围人的评价",
+    "stage": 1
+  },
+  {
+    "key": "text_bon_dance_ha",
+    "original": "ハァ〜",
+    "translation": "哈～",
+    "stage": 1
+  },
+  {
+    "key": "text_bon_dance_hanabi_agare_ba",
+    "original": "はなび　あがれば〜",
+    "translation": "如果烟花绽放啦～",
+    "stage": 1
+  },
+  {
+    "key": "text_bon_dance_don_don_pan_pan",
+    "original": "どーん　どーん　ぱーん　ぱーん",
+    "translation": "咚　咚　嗙　嗙",
+    "stage": 1
+  },
+  {
+    "key": "text_bon_dance_dondo_pan_pan",
+    "original": "どんど　ぱーん　ぱん",
+    "translation": "咚咚　嗙　嗙",
+    "stage": 1
+  },
+  {
+    "key": "text_bon_dance_haa",
+    "original": "ハァ〜　ア〜",
+    "translation": "哈～啊～",
+    "stage": 1
+  },
+  {
+    "key": "text_bon_dance_kansei_agaru",
+    "original": "かんせい　あがる〜",
+    "translation": "大家都欢声笑语～",
+    "stage": 1
+  },
+  {
+    "key": "text_bon_dance_pan_pan_dondo_don",
+    "original": "ぱーん　ぱーん　どんど　どーん",
+    "translation": "嗙　嗙　咚咚　咚",
+    "stage": 1
+  },
+  {
+    "key": "text_bon_dance_panpa_don_pan",
+    "original": "ぱんぱ　どーん　ぱん",
+    "translation": "嗙嗙　咚　嗙",
+    "stage": 1
+  },
+  {
+    "key": "text_bon_dance_ninki_agare_ba",
+    "original": "にんき　あがれば〜",
+    "translation": "如果人气兴旺啊～",
+    "stage": 1
+  },
+  {
+    "key": "text_bon_dance_kyuryo_agaru",
+    "original": "きゅうりょう　あがる〜",
+    "translation": "大家有更多工资～",
+    "stage": 1
+  },
+  {
+    "key": "text_bon_dance_matsuri_da_wasshoi",
+    "original": "まつりだ　わっしょい！",
+    "translation": "整个日本 哇—咻—！",
+    "stage": 1
+  },
+  {
+    "key": "text_bon_dance_dondo_panpa_dondo_panpa",
+    "original": "どんど　ぱんぱ　どんど　ぱんぱ",
+    "translation": "咚咚　嗙嗙　咚咚　嗙嗙",
+    "stage": 1
+  },
+  {
+    "key": "text_bon_dance_nippon_chu_ga_wasshoi",
+    "original": "にっぽんじゅうが　わっしょい！",
+    "translation": "在节日中 哇—咻—！",
+    "stage": 1
+  },
+  {
+    "key": "text_bon_dance_dondo_panpa_pan",
+    "original": "どんど　ぱんぱ　ぱん",
+    "translation": "咚咚　嗙嗙　嗙",
+    "stage": 1
+  },
+  {
+    "key": "text_bon_dance_sore_hikkuri_kaette",
+    "original": "ソレ　ひっくり　かえって",
+    "translation": "嗖嘞 让我们转起圈来",
+    "stage": 1
+  },
+  {
+    "key": "text_bon_dance_ha_bon_odori",
+    "original": "ハァ〜　ぼんおどり",
+    "translation": "哈～ 跳这盂兰盆舞",
+    "stage": 1
+  },
+  {
+    "key": "text_bon_dance_dondo_panpa",
+    "original": "どんど　ぱんぱ",
+    "translation": "咚咚　嗙嗙",
+    "stage": 1
+  },
+  {
+    "key": "text_bon_dance_panpa_dondo",
+    "original": "ぱんぱ　どんど",
+    "translation": "嗙嗙　咚咚",
+    "stage": 1
+  },
+  {
+    "key": "text_bon_dance_pan_panpa_pa",
+    "original": "ぱーん　ぱんぱ　ぱん",
+    "translation": "嗙　嗙嗙　嗙",
+    "stage": 1
+  },
+  {
+    "key": "text_bon_dance_ame_ga_agare_ba",
+    "original": "アメが　あがれば〜",
+    "translation": "如果雨停了的话～",
+    "stage": 1
+  },
+  {
+    "key": "text_bon_dance_yagura_ni_agaru",
+    "original": "やぐらに　あがる〜",
+    "translation": "登上塔楼去眺望～",
+    "stage": 1
+  },
+  {
+    "key": "text_bon_dance_hora_matsuri_da_wasshoi",
+    "original": "ほら！　まつりだ　わっしょい！",
+    "translation": "看啊！盛大节日 哇—咻—！",
+    "stage": 1
+  },
+  {
+    "key": "text_bon_dance_korezo",
+    "original": "これぞ",
+    "translation": "这就是",
+    "stage": 1
+  },
+  {
+    "key": "text_bon_dance_meido_in_japan",
+    "original": "メイド　イン　ジャパン",
+    "translation": "Made in Japan",
+    "stage": 1
+  },
+  {
+    "key": "text_bon_dance_pan",
+    "original": "ぱん",
+    "translation": "嗙",
+    "stage": 1
+  }
+]

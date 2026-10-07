@@ -1,3 +1,6 @@
+/* 中文文本：本文件采用译文包中 stage 5 的已校对条目。
+ * 字符串中的 \n 是游戏画面换行；相邻引号只是方便阅读源码。
+ * 未校对或未定位的条目见 text/zh_hans/TODO_未校对.md。 */
 #include "engines/metronome.h"
 #include "text.h"
 
@@ -99,11 +102,11 @@ struct CueDefinition *metronome_cue_index[] = {
     END_OF_CUE_INDEX
 };
 
-const char D_0805a694[] = "Press "CHAR_A_BUTTON_UTF8" in time with the signal.";
+const char D_0805a694[] = "跟着声音，按下 A 键吧。";
 
-const char D_0805a6c0[] = "Measuring...";
+const char D_0805a6c0[] = "测量中";
 
-const char D_0805a6c8[] = "Finished measuring! Your rhythm score is...";
+const char D_0805a6c8[] = "测量结束！ 那么，结果是…";
 
   //  //  //  GAME ENGINE DATA  //  //  //
 

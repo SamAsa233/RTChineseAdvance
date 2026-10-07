@@ -1,5 +1,7 @@
 #include "engines/drum_live_menu.h"
 
+// 汉化：海报文本按译文包阶段 5 的 3 个分组手动重组；WISH 条目未到 stage 5，保留原文。
+
 
   //  //  //  GRAPHICS DATA  //  //  //
 
@@ -34,26 +36,28 @@ const char *drum_live_menu_poster_desc[] = {
     /* DRUM GIRLS */
     "\x03\x31" "\x01\x6d" "\x05\x30" "\x01\x34" "Drum Girls LIVE!\n"
     "\n"
-    "\x03\x30" "\x01\x73" "\x05\x31" "\x01\x35" "♪ Night Walk\n"
-    "\x03\x30" "\x01\x73" "\x05\x31" "\x01\x35" "♪ Space Dance\n"
-    "\x03\x30" "\x01\x73" "\x05\x31" "\x01\x35" "♪ Honey Sweet Angel of Love\n"
+    "\x03\x30" "\x01\x73" "\x05\x31" "\x01\x35" "♪ 夜空漫步\n"
+    "\x03\x30" "\x01\x73" "\x05\x31" "\x01\x35" "♪ 太空之舞\n"
+    "\x03\x30" "\x01\x73" "\x05\x31" "\x01\x35" "♪ 恋爱的Honey Sweet〜Angel\n"
     "\n",
     
     /* DRUM BOYS  */
     "\x03\x31" "\x01\x6d" "\x05\x30" "\x01\x34" "Drum Boys LIVE!\n"
     "\n"
-    "\x03\x30" "\x01\x73" "\x05\x31" "\x01\x35" "♪ The Clappy Trio\n"
-    "\x03\x30" "\x01\x73" "\x05\x31" "\x01\x35" "♪ Tap Trial\n"
+    "\x03\x30" "\x01\x73" "\x05\x31" "\x01\x35" "♪ 啪叽啪叽三人组\n"
+    "\x03\x30" "\x01\x73" "\x05\x31" "\x01\x35" "♪ 踢踏舞\n"
+    // TODO 未校对：WISH 条目仅有阶段 2 译文，暂留英文。
     "\x03\x30" "\x01\x73" "\x05\x31" "\x01\x35" "♪ WISH - Can't Wait for You\n"
     "\n",
 
     /* DRUM BAND  */
-    "\x03\x31" "\x01\x6d" "\x05\x30" "\x01\x34" "Samurai Drummer's\n"
-    "\x03\x31" "\x01\x6d" "\x05\x30" "\x01\x34" "\x01\x52" "Band LIVE! \n"
+    // TODO 未校对：阶段 5 译文仍是英文标题，这两行是自行中文化；2026-09-29 已用 mGBA 实机帧确认两行标题未截断且无重叠，标题措辞仍待人工校对。
+    "\x03\x31" "\x01\x6d" "\x05\x30" "\x01\x34" "武士鼓手的\n"
+    "\x03\x31" "\x01\x6d" "\x05\x30" "\x01\x34" "\x01\x52" "乐队 LIVE！\n"
     "\n"
-    "\x03\x30" "\x01\x73" "\x05\x31" "\x01\x35" "\x01\x4c" "♪ Cosmic Dance\n"
-    "\x03\x30" "\x01\x73" "\x05\x31" "\x01\x35" "♪ The Snappy Trio\n"
-    "\x03\x30" "\x01\x73" "\x05\x31" "\x01\x35" "♪ Tap Trial 2\n"
+    "\x03\x30" "\x01\x73" "\x05\x31" "\x01\x35" "\x01\x4c" "♪ 宇宙之舞\n"
+    "\x03\x30" "\x01\x73" "\x05\x31" "\x01\x35" "♪ 帅气帅气三人组\n"
+    "\x03\x30" "\x01\x73" "\x05\x31" "\x01\x35" "♪ 超级踢踏舞\n"
     "\n"
 };
 

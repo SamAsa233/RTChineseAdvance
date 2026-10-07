@@ -1,9 +1,12 @@
+// 汉化：接入阶段 5 已校对的无尽模式菜单标题。
+// 阶段 5 已校对：Mr Upbeat 的两种地区写法共用译名“反拍男”。
+// 保留条件编译分支，方便以后继续比较两种版本的菜单布局。
 // [D_089dd548] Endless Games Menu - Levels
 struct MedalCornerLevel endless_menu_levels[] = {
     /* MR_UPBEAT */ {
         /* Scene  */ &scene_mr_upbeat,	
-        #ifdef PARADISE
-        /* Title  */ "Mr Upbeat",
+        #ifdef BRIT
+        /* Title  */ "反拍男",
         #else
         /* Title  */ "反拍男",
         #endif

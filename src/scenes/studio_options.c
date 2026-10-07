@@ -1,3 +1,6 @@
+/* 中文文本：本文件采用译文包中 stage 5 的已校对条目。
+ * 字符串中的 \n 是游戏画面换行；相邻引号只是方便阅读源码。
+ * 未校对或未定位的条目见 text/zh_hans/TODO_未校对.md。 */
 #include "global.h"
 #include "studio.h"
 #include "graphics/studio/studio_graphics.h"
@@ -183,8 +186,7 @@ void studio_option_list_update(void) {
                             STUDIO_WARNING_OPT_DISMISS,
                             // Not even one song has
                             // a check mark on it.
-                            "还没有勾选\n"
-                            "任何曲子。",
+                            "还没有勾选任何曲子。",
                             studio_option_list_warning_no_checks_result, 0,
                             &s_menu_kettei2_seqData);
                     play_sound_in_player(MUSIC_PLAYER_2, &s_menu_kettei2_seqData);
@@ -197,8 +199,7 @@ void studio_option_list_update(void) {
                                 STUDIO_WARNING_OPT_Y,
                                 // In listening mode, only the songs
                                 // with a check mark will be played.
-                                "试听模式只会播放已勾选的曲子。\n"
-                                "要继续吗？",
+                                "试听模式只会播放已勾选的曲子。要继续吗？",
                                 studio_option_list_warning_unchecked_result, 0,
                                 &s_menu_se24_seqData);
                         play_sound_in_player(MUSIC_PLAYER_2, &s_menu_kettei2_seqData);
