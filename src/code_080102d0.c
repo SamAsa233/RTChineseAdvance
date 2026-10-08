@@ -92,8 +92,8 @@ void reset_game_save_data(void) {
     data->readingMaterialUnlocked[READING_MATERIAL_MANUAL] = TRUE;
     data->readingMaterialUnlocked[READING_MATERIAL_CREDITS] = TRUE;
 
-    SET_ADVANCE_FLAG(data->advanceFlags, ADVANCE_FLAG_NON_JP_SFX);
-    SET_ADVANCE_FLAG(data->advanceFlags, ADVANCE_FLAG_NON_JP_MUSIC);
+    /*SET_ADVANCE_FLAG(data->advanceFlags, ADVANCE_FLAG_NON_JP_SFX);
+    SET_ADVANCE_FLAG(data->advanceFlags, ADVANCE_FLAG_NON_JP_MUSIC);*/ //暂时将默认音乐和音效设置为日语，所以先注释掉这两行，后续实装中文配音后再打开
 }
 
 
