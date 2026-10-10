@@ -1293,11 +1293,11 @@ struct ReadingMaterial reading_material_table[TOTAL_READING_MATERIALS] = {
 			"+ Lilynell\n"
 			"+ acerbt\n"
 			"+ Lemonici\n"
-            "+ Opera Zebb\n"
+            "+ Opra Zebb\n"
             "+ Kayyluhh\n"
             "+ Xx_Player25_xX\n"
-            "\n"
-            "\n"
+            "+ vibe\n"
+            "+ RoboNinja\n"
 			"Special Thanks:\n"
 			"+ The decomp folks again\n"
 			"+ Everyone in the Rhythm Heaven Advance Discord\n"
@@ -1305,7 +1305,7 @@ struct ReadingMaterial reading_material_table[TOTAL_READING_MATERIALS] = {
 			"\0031" "\001m" " ... and you!\n" "\0030" "\001s"
             "\n"
             "\001C" "Thank you all for your hard work!\n"
-            "And thank YOU for playing this patch!\n",
+            "And thank YOU for playing this patch!\n""\001L",
         /* STYLE ---------------------------------------------------------- */
             /* GFX */ reading_style_mail_gfx_table,
             /* BGM */ &reading_style_mail_bgm
