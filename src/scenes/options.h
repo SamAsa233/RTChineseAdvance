@@ -11,8 +11,10 @@ enum OptionsPageEnum {
 };
 
 enum OptionsBitmapEntryEnum {
+    /*
     OPTIONS_BITMAP_NON_JP_SFX,
     OPTIONS_BITMAP_NON_JP_MUSIC,
+    */
 #ifdef RUMBLE
     OPTIONS_BITMAP_RUMBLE,
 #endif
