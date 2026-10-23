@@ -22,4 +22,4 @@ const char D_080682d4[] = "进副歌前那段很到位哦！";
 
 const char D_080682f4[] = "太空大姐姐的点评";
 
-const char D_08068310[] = "Let's Go！";
+const char D_08068310[] = "Let's Go!";

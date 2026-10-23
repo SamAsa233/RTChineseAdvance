@@ -5,73 +5,73 @@
 struct MedalCornerLevel lessons_menu_levels[] = {
     /* BASIC_1 */ {
         /* Scene  */ &scene_drum_lesson_basic_1,
-        /* Title  */ "基础篇 １",
+        /* Title  */ "基础篇 1",
         /* Anim   */ anim_lessons_menu_basic_1,
         /* Medals */ 3
     },
     /* BASIC_2 */ {
         /* Scene  */ &scene_drum_lesson_basic_2,
-        /* Title  */ "基础篇 ２",
+        /* Title  */ "基础篇 2",
         /* Anim   */ anim_lessons_menu_basic_2,
         /* Medals */ 6
     },
     /* SHORT_1 */ {
         /* Scene  */ &scene_drum_lesson_short_1,
-        /* Title  */ "短篇  １",
+        /* Title  */ "短篇 1",
         /* Anim   */ anim_lessons_menu_short_1,
         /* Medals */ 9
     },
     /* SHORT_2 */ {
         /* Scene  */ &scene_drum_lesson_short_2,
-        /* Title  */ "短篇 ２",
+        /* Title  */ "短篇 2",
         /* Anim   */ anim_lessons_menu_short_2,
         /* Medals */ 12
     },
     /* SHORT_3 */ {
         /* Scene  */ &scene_drum_lesson_short_3,
-        /* Title  */ "短篇 ３",
+        /* Title  */ "短篇 3",
         /* Anim   */ anim_lessons_menu_short_3,
         /* Medals */ 15
     },
     /* SHORT_4 */ {
         /* Scene  */ &scene_drum_lesson_short_4,
-        /* Title  */ "短篇 ４",
+        /* Title  */ "短篇 4",
         /* Anim   */ anim_lessons_menu_short_4,
         /* Medals */ 18
     },
     /* SHORT_5 */ {
         /* Scene  */ &scene_drum_lesson_short_5,
-        /* Title  */ "短篇 ５",
+        /* Title  */ "短篇 5",
         /* Anim   */ anim_lessons_menu_short_5,
         /* Medals */ 21
     },
     /* SHORT_6 */ {
         /* Scene  */ &scene_drum_lesson_short_6,
-        /* Title  */ "短篇 ６",
+        /* Title  */ "短篇 6",
         /* Anim   */ anim_lessons_menu_short_6,
         /* Medals */ 24
     },
     /* SHORT_7 */ {
         /* Scene  */ &scene_drum_lesson_short_7,
-        /* Title  */ "短篇 ７",
+        /* Title  */ "短篇 7",
         /* Anim   */ anim_lessons_menu_short_7,
         /* Medals */ 27
     },
     /* SHORT_8 */ {
         /* Scene  */ &scene_drum_lesson_short_8,
-        /* Title  */ "短篇 ８",
+        /* Title  */ "短篇 8",
         /* Anim   */ anim_lessons_menu_short_8,
         /* Medals */ 30
     },
     /* SHORT_9 */ {
         /* Scene  */ &scene_drum_lesson_short_9,
-        /* Title  */ "短篇 ９",
+        /* Title  */ "短篇 9",
         /* Anim   */ anim_lessons_menu_short_9,
         /* Medals */ 32
     },
     /* LONG_1 */ {
         /* Scene  */ &scene_drum_lesson_long_1,
-        /* Title  */ "长篇 １",
+        /* Title  */ "长篇 1",
         /* Anim   */ anim_lessons_menu_long_1,
         /* Medals */ 34
     },
@@ -89,31 +89,31 @@ struct MedalCornerLevel lessons_menu_levels[] = {
     },
     /* LONG_4 */ {
         /* Scene  */ &scene_drum_lesson_long_4,
-        /* Title  */ "长篇 ４",
+        /* Title  */ "长篇 4",
         /* Anim   */ anim_lessons_menu_long_4,
         /* Medals */ 40
     },
     /* LONG_5 */ {
         /* Scene  */ &scene_drum_lesson_long_5,
-        /* Title  */ "长篇 ５",
+        /* Title  */ "长篇 5",
         /* Anim   */ anim_lessons_menu_long_5_6,
         /* Medals */ 42
     },
     /* LONG_6 */ {
         /* Scene  */ &scene_drum_lesson_long_6,
-        /* Title  */ "长篇 ６",
+        /* Title  */ "长篇 6",
         /* Anim   */ anim_lessons_menu_long_5_6,
         /* Medals */ 44
     },
     /* HI_TECH_1 */ {
         /* Scene  */ &scene_drum_lesson_hi_tech_1,
-        /* Title  */ "高阶篇 １",
+        /* Title  */ "高阶篇 1",
         /* Anim   */ anim_lessons_menu_hi_tech_1_2,
         /* Medals */ 46
     },
     /* HI_TECH_2 */ {
         /* Scene  */ &scene_drum_lesson_hi_tech_2,
-        /* Title  */ "高阶篇 ２",
+        /* Title  */ "高阶篇 2",
         /* Anim   */ anim_lessons_menu_hi_tech_1_2,
         /* Medals */ 48
     }

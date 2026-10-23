@@ -411,7 +411,7 @@ const char *cafe_dialogue_rhythm_sense[] = {
         "\n"
         "不过，节奏感变好了的话，\n"
         // 译文包只提供一条阶段 5 定稿；两个地区分支都使用该中文，同时保留原条件编译结构。
-        #ifdef PARADISE
+        #ifdef BRIT
         "人应该也会稍微开心一点吧。"
         #else
         "人应该也会稍微开心一点吧。"

@@ -40,8 +40,8 @@ const char D_0805cca4[] = "要空 8 拍哦";
 
 const char D_0805ccb4[] = "海中伙伴们的声音";
 
-const char D_0805ccb8[] = "　　　　　　　　　　　　　　　　　　　　跟着音乐按ゝ来跳跃吧！";
+const char D_0805ccb8[] = "　　　　　　　　　　　　　　　　　　　　跟着音乐按ゝ来跳跃吧!";
 
-const char D_0805ccb9[] = "那就跳起来吧！";
+const char D_0805ccb9[] = "那就跳起来吧!";
 
-const char D_0805ccc5[] = "准备好了吗？";
+const char D_0805ccc5[] = "准备好了吗?";

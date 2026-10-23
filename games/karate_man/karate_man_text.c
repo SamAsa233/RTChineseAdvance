@@ -56,7 +56,7 @@ const char D_0805ad38[] =
 
 const char D_0805ad80[] =
     "\n"
-    #ifdef PARADISE
+    #ifdef BRIT
     "正式开始！！";
     #else
     "正式开始！！";

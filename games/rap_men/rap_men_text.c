@@ -26,9 +26,9 @@ const char D_0805ea18[] = "那就正式上吧";
 
 const char D_0805ea34[] = "下次再一起玩啊";
 
-const char D_0805ea44[] = "哟！";
+const char D_0805ea44[] = "哟!";
 
-const char D_0805ea50[] = "来，跟我们一起嗨吧";
+const char D_0805ea50[] = "来,跟我们一起嗨吧";
 
 const char D_0805ea6c[] = "我们来教你怎么跟上节奏";
 
@@ -45,7 +45,7 @@ const char D_0805eae8[] = "加把劲啊";
 const char D_0805eaf8[] = "就是“嗯”那一下哦〜";
 
 // 阶段 5 已校对 D_0805eb14：原地区分支措辞不同，中文译文相同；两侧都要更新，避免默认版仍显示英文。
-#ifdef PARADISE
+#ifdef BRIT
 const char D_0805eb14[] = "都说了是“嗯”那一下啦";
 #else
 const char D_0805eb14[] = "都说了是“嗯”那一下啦";

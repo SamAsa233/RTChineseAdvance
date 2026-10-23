@@ -24,19 +24,19 @@ const char D_0805bb20[] = "就算速度超慢，也完成得很棒！";
 
 const char D_0805bb40[] = "把那个白色的家伙";
 
-const char D_0805bb58[] = "狠狠干掉吧！";
+const char D_0805bb58[] = "狠狠干掉吧!";
 
 const char D_0805bb68[] = "时机就是…";
 
-const char D_0805bb78[] = "这里！";
+const char D_0805bb78[] = "这里!";
 
-const char D_0805bb88[] = "要看仔细哦！";
+const char D_0805bb88[] = "要看仔细哦!";
 
 const char D_0805bb9c[] = "要来了…";
 
-const char D_0805bb9D[] = "Now!";
+const char D_0805bb9D[] = "射!";
 
-const char D_0805bba8[] = "那么，正式开始。";
+const char D_0805bba8[] = "那么，正式开始.";
 
 const char D_0805bbc8[] = "细雨呢喃";
 
