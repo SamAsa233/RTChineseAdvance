@@ -7,6 +7,7 @@ Example: python tools/font/build_outline_font.py --extra 节奏天国
 """
 
 import argparse
+import hashlib
 import json
 import os
 from pathlib import Path
@@ -38,18 +39,52 @@ def collect_chars(extra, char_file):
     return sorted(ord(ch) for ch in chars)
 
 
+def supplied_glyphs():
+    """按显式字符表取原图像素，不按译文排序猜测图块对应的汉字。"""
+    from PIL import Image
+    folder = ROOT / 'tools/font/supplied'
+    mapping = json.loads((folder / 'outline_large.charmap.json').read_text(encoding='utf-8'))
+    raw = (folder / 'outline_large.png').read_bytes()
+    if hashlib.sha256(raw).hexdigest() != mapping['sha256']:
+        raise ValueError('字模图已改变，必须重新核对字符表')
+    image = Image.open(folder / 'outline_large.png').convert('RGBA')
+    assert image.size == (mapping['columns'] * 16, len(mapping['rows']) * 16)
+    result = {}
+    palette = {0: 0, 136: 8, 153: 9, 170: 10, 187: 11}
+    for y, row in enumerate(mapping['rows']):
+        assert len(row) == mapping['columns']
+        for x, char in enumerate(row):
+            if char == '?':
+                continue
+            cp = ord(char)
+            assert cp not in result, f'重复字符：{char}'
+            glyph = []
+            for dy in range(16):
+                line = []
+                for dx in range(16):
+                    r, g, b, a = image.getpixel((x * 16 + dx, y * 16 + dy))
+                    assert r == g == b and a == 255 and r in palette
+                    line.append(palette[r])
+                glyph.append(line)
+            assert any(any(line) for line in glyph), f'空白字模：{char}'
+            result[cp] = glyph
+    return result
+
+
 def skeleton(cp, size, fusion, unifont):
     target = 11 if size == 'large' else 9
     if cp == 0x25A1:
         rows = [[int(y in (0, target - 1) or x in (0, target - 1)) for x in range(target)] for y in range(target)]
         return rows, 'square'
-    if size == 'small' and cp in SMALL_MANUAL:
+    if size == 'small' and cp not in fusion and cp in SMALL_MANUAL:
         # 汉化字模修正：小号标题的“蹑”复用正文手工骨架，避免 Unifont 缩成 9×9 后接近实心块。
         return [[pixel == '#' for pixel in row] for row in SMALL_MANUAL[cp]], 'manual'
     if cp in fusion:
         canvas, _ = bdf_canvas(fusion[cp], 16 if size == 'large' else 12, 9)
         top = 0 if size == 'large' else 2
-        return [row[:target] for row in canvas[top:top + target]], 'fusion'
+        # 粗像素 10px 汉字宽 10、高 9；保留第十列，避免右侧笔画被截断。
+        width = 10 if size == 'small' else target
+        return [row[:width] for row in canvas[top:top + target]], 'fusion bold 10px'
     if cp in unifont:
         canvas = shrink(unifont[cp], target, 16, 0)
         return [row[:target] for row in canvas[:target]], 'unifont downsample'
@@ -127,7 +162,7 @@ def update_definitions(path, codepoints, widths):
         c_array('bitmap_font_warioware_outline_large_cjk_widths', widths['large'], 'u8', 24),
         c_array('bitmap_font_warioware_outline_small_cjk_widths', widths['small'], 'u8', 24),
     ))
-    block = BEGIN + '\n' + generated + '\n' + END
+    block = BEGIN + '\n/* 十月字体更新：Unicode 稀疏索引与新字模同步；大号原图步进 16px，回退 14px，小号 12px。 */\n' + generated + '\n' + END
     if BEGIN in text:
         start = text.index(BEGIN)
         end = text.index(END, start) + len(END)
@@ -170,30 +205,38 @@ def main():
     args = parser.parse_args()
     codepoints = collect_chars(args.extra, args.chars)
     unifont = read_unifont(THIRD / 'unifont.hex')
+    supplied = supplied_glyphs()
     widths = {}
     reports = []
     for size in ('large', 'small'):
-        fusion = read_bdf(THIRD / f"fusion-{12 if size == 'large' else 10}.bdf")
+        # 小号使用粗像素；大号缺字直接从 Unifont 生成，不混入普通 Fusion。
+        fusion = read_bdf(THIRD / 'fusion-bold-10.bdf') if size == 'small' else {}
         texture_path = args.out / size / f'bitmap_font_warioware_outline_{size}_cjk_used.raw.4bpp'
         preview_path = args.out / size / f'bitmap_font_warioware_outline_{size}_cjk_used.png'
-        manual = manual_glyphs(preview_path, codepoints)
+        # 来源切换后不复用旧预览的位置索引，防止字符增减时错配字模。
         glyphs, sources = [], {}
         for cp in codepoints:
+            if size == 'large' and cp in supplied:
+                glyphs.append(supplied[cp])
+                sources['supplied atlas'] = sources.get('supplied atlas', 0) + 1
+                continue
             source, origin = skeleton(cp, size, fusion, unifont)
             # 汉化字模修正：“蹑”的 9×9 骨架笔画密集，八方向描边会把内部空隙全部填满；
             # 这里只对该字使用四方向薄描边，其他标题字继续沿用原来的完整描边风格。
             thin_outline = size == 'small' and cp == 0x8E51
-            glyphs.append(manual.get(cp, outline(source, size, diagonal=not thin_outline)))
+            glyphs.append(outline(source, size, diagonal=not thin_outline))
             if thin_outline:
                 origin += ' thin outline'
             sources[origin] = sources.get(origin, 0) + 1
-        widths[size] = [14 if size == 'large' else 12 for _ in codepoints]
+        # 用户图块使用整格 16px 步进，避免右侧描边与下个字符重叠。
+        widths[size] = [(16 if cp in supplied else 14) if size == 'large' else 12 for cp in codepoints]
         atomic_write(texture_path, b''.join(encode_glyph(glyph) for glyph in glyphs))
         save_preview(preview_path, glyphs)
         reports.append(f'{size}: {sources}; glyphs={len(glyphs)}')
+    reports.append('large Unifont fallback: ' + ''.join(chr(cp) for cp in codepoints if cp not in supplied and cp != 0x25A1))
     update_definitions(args.defs, codepoints, widths)
-    atomic_write(ROOT / 'build/font_report/outline.report.txt', ('Fusion Pixel v2026.09.01; Unifont 17.0.05\n' + '\n'.join(reports) + '\n').encode('utf-8'))
-    print('\n'.join(reports))
+    atomic_write(ROOT / 'build/font_report/outline.report.txt', ('Fusion Bold Pixel v2026.10.16; Unifont 17.0.05; user atlas\n' + '\n'.join(reports) + '\n').encode('utf-8'))
+    print('\n'.join(reports[:2]))
 
 
 if __name__ == '__main__':

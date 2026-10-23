@@ -318,20 +318,20 @@ data/scenes/data_room/reading_material.inc.c:reading_how_to_play	data/scenes/dat
 data/scenes/data_room/reading_material.inc.c:reading_lyrics_1	data/scenes/data_room/reading_material.inc.c	reading_lyrics_1	The☆Bon Odori\n\nVocals: Ami Tokito\nLyrics/Music: Tsunku♂\nArrangement: Koichi Yuasa (The☆Bon Odori) /\nKaoru Okubo (The☆Bon Dance)\nTranslation: castIeRook, Mizuka Lover\n\n(This song appears in The☆Bon Odori.)\nHaa~\n            Hanabi agare ba~\nHaa~ Ah~\n            Kansei agaru~\n\nHaa~\n            Ninki agare ba~\nHaa~ Ah~\n            Kyuuryou agaru~\nMatsuri da wasshoi!\nNippon chuu ga wasshoi!\n\nSore hikkuri kaette Dondo pan pan\nHaa~ Bon Odori~\n\nHaa~\n            Ame ga agare ba~\n\nHaa~ Ah~\n            Yagura ni agaru~\n\nHora! Matsuri da wasshoi!\nKorezo made in JaPAN\n\nSore hikkuri kaette Dondo pan pan\nHaa~ Bon Odori~\n----------------------------------------------\nHaa~\n            Oh when the fireworks fly~\nHaa~ Ah~\n            Let's send our cheers to the sky~\n\nHaa~\n            If we perform for more eyes~\nHaa~ Ah~\n            We'll know our profits will rise~\nTime for celebration!\nAll throughout the nation!\n\nSo let's all turn around and Dondo pan pan\nHaa~ Bon Odori~\n\nHaa~\n            Oh when the rain clears away~\n\nHaa~ Ah~\n            Walk up the platform and play~\n\nCome on! Let's all cheer for Obon!\nThe one and only, that's made in JaPAN\n\nSo let's all turn around and Dondo pan pan\nHaa~ Bon Odori~\n	"The☆盂兰盆舞
 演唱：時東ぁみ
 作词/作曲：淳君
-哈～ 如果烟花绽放啦～
+哈～当烟花飞上天啊～
 哈～啊～ 大家都欢声笑语～
-哈～ 如果人气兴旺啊～
+哈～人气上升的话～
 哈～啊～ 大家有更多工资～
 整个日本 哇—咻—！
 在节日中 哇—咻—！
-嗖嘞 让我们转起圈来 咚咚嗙嗙
+来吧 让我们转起圈来 咚咚啪啪
 哈～ 跳这盂兰盆舞～
-哈～ 如果雨停了的话～
+哈～当天上的雨停下～ 
 哈～啊～ 登上塔楼去眺望～
 看啊！盛大节日 哇—咻—！
-这就是 Made in Japan
-嗖嘞 让我们转起圈来 咚咚嗙嗙
-哈～ 跳这盂兰盆舞～"	draft	TODO 未校对
+这便是Made in Japan
+来吧 让我们转起圈来 咚咚啪啪
+哈～ 跳这盂兰盆舞～"	final	
 data/scenes/data_room/reading_material.inc.c:reading_lyrics_1_title	data/scenes/data_room/reading_material.inc.c	reading_lyrics_1_title	Lyrics Card ①	歌词卡片①	final	
 data/scenes/data_room/reading_material.inc.c:reading_lyrics_2	data/scenes/data_room/reading_material.inc.c	reading_lyrics_2	"Honey Sweet Angel of Love\n\nEnglish Vocals: Bellajenna\nJapanese Vocals: Ami Tokito\nLyrics/Music: Tsunku♂\nArrangement: Hideyuki \""Daichi\"" Suzuki\nTranslation: castIeRook, Mizuka Lover\n\n(This song appears in Remix 3.)\nLove has a charming flow\nLove has mysterious glow\nLove's many shapes and degrees\nLove's many small subtleties\n\nMy honey sweet angel\n\n\n\nWhenever I hear you say\n\""I love you\"" everyday,\nSometimes I can't tell what you mean\n\nIf I read into what you say,\nPut it another way,\nSomehow it's like you mean it now\nYou know?\n\nLove that tastes of raspberry\nSweet and sour too\n\nThat's just like how we are together, don't you see?\n\nI love you!\n\n\n\nLove has a charming flow\nLove has mysterious glow\nLove's many shapes and degrees\nLove's many small subtleties\n\nMy honey sweet angel"	"恋爱的Honey Sweet～Angel
 演唱：時東ぁみ
@@ -343,7 +343,7 @@ Honey Sweet～Angel
 反过来说的话 「温情」是什么呀！
 我可 是完全 不 明白 啊
 而且另一方面 再换一个说法
-温情 好像是 简单的 喜欢把
+温情 好像是 简单的 喜欢吧
 酸酸甜甜像品味 草莓牛奶滋味
 就那种感觉过后 在我们之间
 I LOVE YOU
@@ -932,73 +932,73 @@ data/scenes/studio/songs.inc.c:song_usagi_tobi	data/scenes/studio/songs.inc.c	so
 data/scenes/studio/songs.inc.c:song_wish	data/scenes/studio/songs.inc.c	song_wish	WISH - Can't Wait for You	WISH 我多想再为你等待	draft	TODO 未校对
 data/scenes/studio/songs.inc.c:song_wish_short	data/scenes/studio/songs.inc.c	song_wish_short	WISH - Can't Wait...	WISH 我多想再…	draft	TODO 未校对
 data/scenes/studio/songs.inc.c:song_yarinaoshi	data/scenes/studio/songs.inc.c	song_yarinaoshi	Try Again	再试一次吧	final	
-games/bon_odori/bon_dance_text.c:D_0806a384	games/bon_odori/bon_dance_text.c	D_0806a384	The first half was kinda rough...	前半段还差一点啊。	draft	TODO 未校对
-games/bon_odori/bon_dance_text.c:D_0806a3a4	games/bon_odori/bon_dance_text.c	D_0806a3a4	The first half was pretty good!	前半段很稳嘛！	draft	TODO 未校对
+games/bon_odori/bon_dance_text.c:D_0806a384	games/bon_odori/bon_dance_text.c	D_0806a384	The first half was kinda rough...	前半段还差一点啊。	final	
+games/bon_odori/bon_dance_text.c:D_0806a3a4	games/bon_odori/bon_dance_text.c	D_0806a3a4	The first half was pretty good!	前半段很稳嘛！	final	
 games/bon_odori/bon_dance_text.c:D_0806a3bc	games/bon_odori/bon_dance_text.c	D_0806a3bc	The second half was rather dreary.	后半段气氛有点冷下来了啊。	final	
-games/bon_odori/bon_dance_text.c:D_0806a3e0	games/bon_odori/bon_dance_text.c	D_0806a3e0	The second half was incredible!	后半段热起来啦〜！	draft	TODO 未校对
-games/bon_odori/bon_dance_text.c:D_0806a400	games/bon_odori/bon_dance_text.c	D_0806a400	It really ramped up near the end!	高潮部分很到位！！	draft	TODO 未校对
-games/bon_odori/bon_dance_text.c:D_0806a424	games/bon_odori/bon_dance_text.c	D_0806a424	The ending was pitch perfect!	最后收得很漂亮呢！	draft	TODO 未校对
-games/bon_odori/bon_dance_text.c:D_0806a448	games/bon_odori/bon_dance_text.c	D_0806a448	The audience says...	周围人的评价	draft	TODO 未校对
-games/bon_odori/bon_dance_text.c:text_bon_dance_ame_ga_agare_ba	games/bon_odori/bon_dance_text.c	text_bon_dance_ame_ga_agare_ba	.0:0Ame ga agare ba~	.0:0如果雨停了的话～	draft	TODO 未校对
-games/bon_odori/bon_dance_text.c:text_bon_dance_don_don_pan_pan	games/bon_odori/bon_dance_text.c	text_bon_dance_don_don_pan_pan	.1:0Do-n do-n .2:0pa-n pa-n	咚　咚　嗙　嗙	draft	TODO 未校对; control codes need review
-games/bon_odori/bon_dance_text.c:text_bon_dance_dondo_pan_pan	games/bon_odori/bon_dance_text.c	text_bon_dance_dondo_pan_pan	.1:0Dondo .2:0pa-n pan	咚咚　嗙　嗙	draft	TODO 未校对; control codes need review
-games/bon_odori/bon_dance_text.c:text_bon_dance_dondo_panpa	games/bon_odori/bon_dance_text.c	text_bon_dance_dondo_panpa	.1:0Dondo .2:0panpa	咚咚　嗙嗙	draft	TODO 未校对; control codes need review
-games/bon_odori/bon_dance_text.c:text_bon_dance_dondo_panpa_dondo_panpa	games/bon_odori/bon_dance_text.c	text_bon_dance_dondo_panpa_dondo_panpa	.1:0Dondo .2:0panpa .1:0dondo .2:0panpa	咚咚　嗙嗙　咚咚　嗙嗙	draft	TODO 未校对; control codes need review
-games/bon_odori/bon_dance_text.c:text_bon_dance_dondo_panpa_pan	games/bon_odori/bon_dance_text.c	text_bon_dance_dondo_panpa_pan	.1:0Dondo .2:0panpa pan	咚咚　嗙嗙　嗙	draft	TODO 未校对; control codes need review
-games/bon_odori/bon_dance_text.c:text_bon_dance_ha	games/bon_odori/bon_dance_text.c	text_bon_dance_ha	.0:0Haa~	.0:0哈～	draft	TODO 未校对
-games/bon_odori/bon_dance_text.c:text_bon_dance_ha_bon_odori	games/bon_odori/bon_dance_text.c	text_bon_dance_ha_bon_odori	.0:0Ha~ Bon Odori	.0:0哈～ 跳这盂兰盆舞	draft	TODO 未校对
-games/bon_odori/bon_dance_text.c:text_bon_dance_haa	games/bon_odori/bon_dance_text.c	text_bon_dance_haa	.0:0Ha~ Ah~	.0:0哈～啊～	draft	TODO 未校对
-games/bon_odori/bon_dance_text.c:text_bon_dance_hanabi_agare_ba	games/bon_odori/bon_dance_text.c	text_bon_dance_hanabi_agare_ba	.0:0Hanabi agare ba~	.0:0如果烟花绽放啦～	draft	TODO 未校对
-games/bon_odori/bon_dance_text.c:text_bon_dance_hora_matsuri_da_wasshoi	games/bon_odori/bon_dance_text.c	text_bon_dance_hora_matsuri_da_wasshoi	.0:0Hora! Matsuri da wasshoi!	.0:0看啊！盛大节日 哇—咻—！	draft	TODO 未校对
-games/bon_odori/bon_dance_text.c:text_bon_dance_kansei_agaru	games/bon_odori/bon_dance_text.c	text_bon_dance_kansei_agaru	.0:0Kansei agaru~	.0:0大家都欢声笑语～	draft	TODO 未校对
-games/bon_odori/bon_dance_text.c:text_bon_dance_korezo	games/bon_odori/bon_dance_text.c	text_bon_dance_korezo	.0:0Korezo	.0:0这就是	draft	TODO 未校对
-games/bon_odori/bon_dance_text.c:text_bon_dance_kyuryo_agaru	games/bon_odori/bon_dance_text.c	text_bon_dance_kyuryo_agaru	.0:0Kyuryou agaru~	.0:0大家有更多工资～	draft	TODO 未校对
-games/bon_odori/bon_dance_text.c:text_bon_dance_matsuri_da_wasshoi	games/bon_odori/bon_dance_text.c	text_bon_dance_matsuri_da_wasshoi	.0:0Matsuri da wasshoi!	.0:0整个日本 哇—咻—！	draft	TODO 未校对
-games/bon_odori/bon_dance_text.c:text_bon_dance_meido_in_japan	games/bon_odori/bon_dance_text.c	text_bon_dance_meido_in_japan	.0:0made in Ja.2PAN	Made in Japan	draft	TODO 未校对; control codes need review
-games/bon_odori/bon_dance_text.c:text_bon_dance_ninki_agare_ba	games/bon_odori/bon_dance_text.c	text_bon_dance_ninki_agare_ba	.0:0Ninki agare ba~	.0:0如果人气兴旺啊～	draft	TODO 未校对
-games/bon_odori/bon_dance_text.c:text_bon_dance_nippon_chu_ga_wasshoi	games/bon_odori/bon_dance_text.c	text_bon_dance_nippon_chu_ga_wasshoi	.0:0Nippon chuu ga wasshoi!	.0:0在节日中 哇—咻—！	draft	TODO 未校对
-games/bon_odori/bon_dance_text.c:text_bon_dance_pan	games/bon_odori/bon_dance_text.c	text_bon_dance_pan	.2:0Pan	.2:0嗙	draft	TODO 未校对
-games/bon_odori/bon_dance_text.c:text_bon_dance_pan_pan_dondo_don	games/bon_odori/bon_dance_text.c	text_bon_dance_pan_pan_dondo_don	.2:0Pan pan .1:0dondo don	嗙　嗙　咚咚　咚	draft	TODO 未校对; control codes need review
-games/bon_odori/bon_dance_text.c:text_bon_dance_pan_panpa_pa	games/bon_odori/bon_dance_text.c	text_bon_dance_pan_panpa_pa	.2:0Pa-n panpa pan	.2:0嗙　嗙嗙　嗙	draft	TODO 未校对
-games/bon_odori/bon_dance_text.c:text_bon_dance_panpa_don_pan	games/bon_odori/bon_dance_text.c	text_bon_dance_panpa_don_pan	.2:0Panpa .1:0do-n .2:0pan	嗙嗙　咚　嗙	draft	TODO 未校对; control codes need review
-games/bon_odori/bon_dance_text.c:text_bon_dance_panpa_dondo	games/bon_odori/bon_dance_text.c	text_bon_dance_panpa_dondo	.2:0Panpa .1:0dondo 	嗙嗙　咚咚	draft	TODO 未校对; control codes need review
-games/bon_odori/bon_dance_text.c:text_bon_dance_sore_hikkuri_kaette	games/bon_odori/bon_dance_text.c	text_bon_dance_sore_hikkuri_kaette	.0:0Sore hikkuri kaette	.0:0嗖嘞 让我们转起圈来	draft	TODO 未校对
-games/bon_odori/bon_dance_text.c:text_bon_dance_yagura_ni_agaru	games/bon_odori/bon_dance_text.c	text_bon_dance_yagura_ni_agaru	.0:0Yagura ni agaru~	.0:0登上塔楼去眺望～	draft	TODO 未校对
-games/bon_odori/bon_odori_text.c:D_080676b4	games/bon_odori/bon_odori_text.c	D_080676b4	The first half was kinda rough...	前半段还差一点啊。	draft	TODO 未校对
-games/bon_odori/bon_odori_text.c:D_080676d4	games/bon_odori/bon_odori_text.c	D_080676d4	The first half was really good!	前半段很稳嘛！	draft	TODO 未校对
+games/bon_odori/bon_dance_text.c:D_0806a3e0	games/bon_odori/bon_dance_text.c	D_0806a3e0	The second half was incredible!	后半段热起来啦〜！	final	
+games/bon_odori/bon_dance_text.c:D_0806a400	games/bon_odori/bon_dance_text.c	D_0806a400	It really ramped up near the end!	高潮部分很到位！！	final	
+games/bon_odori/bon_dance_text.c:D_0806a424	games/bon_odori/bon_dance_text.c	D_0806a424	The ending was pitch perfect!	最后收得很漂亮呢！	final	
+games/bon_odori/bon_dance_text.c:D_0806a448	games/bon_odori/bon_dance_text.c	D_0806a448	The audience says...	周围人的评价	final	
+games/bon_odori/bon_dance_text.c:text_bon_dance_ame_ga_agare_ba	games/bon_odori/bon_dance_text.c	text_bon_dance_ame_ga_agare_ba	.0:0Ame ga agare ba~	.0:0当天上的雨停下～ 	final	
+games/bon_odori/bon_dance_text.c:text_bon_dance_don_don_pan_pan	games/bon_odori/bon_dance_text.c	text_bon_dance_don_don_pan_pan	.1:0Do-n do-n .2:0pa-n pa-n	.1:0咚—咚—.2:0啪—啪—	final	
+games/bon_odori/bon_dance_text.c:text_bon_dance_dondo_pan_pan	games/bon_odori/bon_dance_text.c	text_bon_dance_dondo_pan_pan	.1:0Dondo .2:0pa-n pan	.1:0咚咚 .2:0啪—啪	final	
+games/bon_odori/bon_dance_text.c:text_bon_dance_dondo_panpa	games/bon_odori/bon_dance_text.c	text_bon_dance_dondo_panpa	.1:0Dondo .2:0panpa	.1:0咚咚 .2:0啪啪	final	
+games/bon_odori/bon_dance_text.c:text_bon_dance_dondo_panpa_dondo_panpa	games/bon_odori/bon_dance_text.c	text_bon_dance_dondo_panpa_dondo_panpa	.1:0Dondo .2:0panpa .1:0dondo .2:0panpa	.1:0咚咚 .2:0啪啪 .1:0咚咚 .2:0啪啪	final	
+games/bon_odori/bon_dance_text.c:text_bon_dance_dondo_panpa_pan	games/bon_odori/bon_dance_text.c	text_bon_dance_dondo_panpa_pan	.1:0Dondo .2:0panpa pan	.1:0咚咚 .2:0啪啪 啪	final	
+games/bon_odori/bon_dance_text.c:text_bon_dance_ha	games/bon_odori/bon_dance_text.c	text_bon_dance_ha	.0:0Haa~	.0:0哈～	final	
+games/bon_odori/bon_dance_text.c:text_bon_dance_ha_bon_odori	games/bon_odori/bon_dance_text.c	text_bon_dance_ha_bon_odori	.0:0Ha~ Bon Odori	.0:0哈～ 跳这盂兰盆舞	final	
+games/bon_odori/bon_dance_text.c:text_bon_dance_haa	games/bon_odori/bon_dance_text.c	text_bon_dance_haa	.0:0Ha~ Ah~	.0:0哈～啊～	final	
+games/bon_odori/bon_dance_text.c:text_bon_dance_hanabi_agare_ba	games/bon_odori/bon_dance_text.c	text_bon_dance_hanabi_agare_ba	.0:0Hanabi agare ba~	.0:0当烟花飞上天啊～	final	
+games/bon_odori/bon_dance_text.c:text_bon_dance_hora_matsuri_da_wasshoi	games/bon_odori/bon_dance_text.c	text_bon_dance_hora_matsuri_da_wasshoi	.0:0Hora! Matsuri da wasshoi!	.0:0看啊！盛大节日 哇—咻—！	final	
+games/bon_odori/bon_dance_text.c:text_bon_dance_kansei_agaru	games/bon_odori/bon_dance_text.c	text_bon_dance_kansei_agaru	.0:0Kansei agaru~	.0:0大家都欢声笑语～	final	
+games/bon_odori/bon_dance_text.c:text_bon_dance_korezo	games/bon_odori/bon_dance_text.c	text_bon_dance_korezo	.0:0Korezo	.0:0这就是	final	
+games/bon_odori/bon_dance_text.c:text_bon_dance_kyuryo_agaru	games/bon_odori/bon_dance_text.c	text_bon_dance_kyuryo_agaru	.0:0Kyuryou agaru~	.0:0大家有更多工资～	final	
+games/bon_odori/bon_dance_text.c:text_bon_dance_matsuri_da_wasshoi	games/bon_odori/bon_dance_text.c	text_bon_dance_matsuri_da_wasshoi	.0:0Matsuri da wasshoi!	.0:0整个日本 哇—咻—！	final	
+games/bon_odori/bon_dance_text.c:text_bon_dance_meido_in_japan	games/bon_odori/bon_dance_text.c	text_bon_dance_meido_in_japan	.0:0made in Ja.2PAN	.0:0Made in Ja.2pan	final	
+games/bon_odori/bon_dance_text.c:text_bon_dance_ninki_agare_ba	games/bon_odori/bon_dance_text.c	text_bon_dance_ninki_agare_ba	.0:0Ninki agare ba~	.0:0人气上升的话～	final	
+games/bon_odori/bon_dance_text.c:text_bon_dance_nippon_chu_ga_wasshoi	games/bon_odori/bon_dance_text.c	text_bon_dance_nippon_chu_ga_wasshoi	.0:0Nippon chuu ga wasshoi!	.0:0在节日中 哇—咻—！	final	
+games/bon_odori/bon_dance_text.c:text_bon_dance_pan	games/bon_odori/bon_dance_text.c	text_bon_dance_pan	.2:0Pan	.2:0啪	final	
+games/bon_odori/bon_dance_text.c:text_bon_dance_pan_pan_dondo_don	games/bon_odori/bon_dance_text.c	text_bon_dance_pan_pan_dondo_don	.2:0Pan pan .1:0dondo don	.2:0啪—啪—.1:0咚咚 咚—	final	
+games/bon_odori/bon_dance_text.c:text_bon_dance_pan_panpa_pa	games/bon_odori/bon_dance_text.c	text_bon_dance_pan_panpa_pa	.2:0Pa-n panpa pan	.2:0啪—啪啪 啪	final	
+games/bon_odori/bon_dance_text.c:text_bon_dance_panpa_don_pan	games/bon_odori/bon_dance_text.c	text_bon_dance_panpa_don_pan	.2:0Panpa .1:0do-n .2:0pan	.2:0啪啪 .1:0咚—.2:0啪	final	
+games/bon_odori/bon_dance_text.c:text_bon_dance_panpa_dondo	games/bon_odori/bon_dance_text.c	text_bon_dance_panpa_dondo	.2:0Panpa .1:0dondo 	.2:0啪啪 .1:0咚咚	final	
+games/bon_odori/bon_dance_text.c:text_bon_dance_sore_hikkuri_kaette	games/bon_odori/bon_dance_text.c	text_bon_dance_sore_hikkuri_kaette	.0:0Sore hikkuri kaette	.0:0来吧 让我们转起圈来	final	
+games/bon_odori/bon_dance_text.c:text_bon_dance_yagura_ni_agaru	games/bon_odori/bon_dance_text.c	text_bon_dance_yagura_ni_agaru	.0:0Yagura ni agaru~	.0:0登上塔楼去眺望～	final	
+games/bon_odori/bon_odori_text.c:D_080676b4	games/bon_odori/bon_odori_text.c	D_080676b4	The first half was kinda rough...	前半段还差一点啊。	final	
+games/bon_odori/bon_odori_text.c:D_080676d4	games/bon_odori/bon_odori_text.c	D_080676d4	The first half was really good!	前半段很稳嘛！	final	
 games/bon_odori/bon_odori_text.c:D_080676ec	games/bon_odori/bon_odori_text.c	D_080676ec	The second half was sorta sloppy.	后半段气氛有点冷下来了啊。	final	
-games/bon_odori/bon_odori_text.c:D_08067710	games/bon_odori/bon_odori_text.c	D_08067710	The second half was incredible!	后半段热起来啦〜！	draft	TODO 未校对
-games/bon_odori/bon_odori_text.c:D_08067730	games/bon_odori/bon_odori_text.c	D_08067730	It really ramped up near the end!	高潮部分很到位！！	draft	TODO 未校对
-games/bon_odori/bon_odori_text.c:D_08067754	games/bon_odori/bon_odori_text.c	D_08067754	The ending was pitch perfect!	最后收得很漂亮呢！	draft	TODO 未校对
-games/bon_odori/bon_odori_text.c:D_08067778	games/bon_odori/bon_odori_text.c	D_08067778	The audience says...	周围人的评价	draft	TODO 未校对
-games/bon_odori/bon_odori_text.c:D_08067a84	games/bon_odori/bon_odori_text.c	D_08067a84	.6:1Welcome to the Bon Festival!	.6:1来跳盆舞吧！	draft	TODO 未校对
+games/bon_odori/bon_odori_text.c:D_08067710	games/bon_odori/bon_odori_text.c	D_08067710	The second half was incredible!	后半段热起来啦〜！	final	
+games/bon_odori/bon_odori_text.c:D_08067730	games/bon_odori/bon_odori_text.c	D_08067730	It really ramped up near the end!	高潮部分很到位！！	final	
+games/bon_odori/bon_odori_text.c:D_08067754	games/bon_odori/bon_odori_text.c	D_08067754	The ending was pitch perfect!	最后收得很漂亮呢！	final	
+games/bon_odori/bon_odori_text.c:D_08067778	games/bon_odori/bon_odori_text.c	D_08067778	The audience says...	周围人的评价	final	
+games/bon_odori/bon_odori_text.c:D_08067a84	games/bon_odori/bon_odori_text.c	D_08067a84	.6:1Welcome to the Bon Festival!	.6:1来跳盆舞吧！	final	
 games/bon_odori/bon_odori_text.c:D_08067aa4	games/bon_odori/bon_odori_text.c	D_08067aa4	".6:1When we say \""Pan,\"" you clap!"	.6:1照着大家的样子拍手哦。	final	
-games/bon_odori/bon_odori_text.c:D_08067ad0	games/bon_odori/bon_odori_text.c	D_08067ad0	.6:0Nice clapping!	.6:0ＯＫ！	draft	TODO 未校对
-games/bon_odori/bon_odori_text.c:D_08067adc	games/bon_odori/bon_odori_text.c	D_08067adc	".6:1When we say \""Panpa,\"" clap twice!"	.6:1再来一遍吧〜！	draft	TODO 未校对
-games/bon_odori/bon_odori_text.c:D_08067b00	games/bon_odori/bon_odori_text.c	D_08067b00	.6:1Looks like you've got it!	.6:1那么，正式上场可要加油哦！	draft	TODO 未校对
-games/bon_odori/bon_odori_text.c:text_bon_odori_ame_ga_agare_ba	games/bon_odori/bon_odori_text.c	text_bon_odori_ame_ga_agare_ba	.0:0Ame ga agare ba~	.0:0如果雨停了的话～	draft	TODO 未校对
-games/bon_odori/bon_odori_text.c:text_bon_odori_don_don_pan	games/bon_odori/bon_odori_text.c	text_bon_odori_don_don_pan	.1:0Do-n do-n .2:0pan	咚　咚　嗙	draft	TODO 未校对; control codes need review
-games/bon_odori/bon_odori_text.c:text_bon_odori_don_don_pan_pan	games/bon_odori/bon_odori_text.c	text_bon_odori_don_don_pan_pan	.1:0Do-n do-n .2:0pa-n pa-n	咚　咚　嗙　嗙	draft	TODO 未校对; control codes need review
-games/bon_odori/bon_odori_text.c:text_bon_odori_don_don_pan_pan_2	games/bon_odori/bon_odori_text.c	text_bon_odori_don_don_pan_pan_2	.1:0Do-n do-n .2:0pa-n pan	咚　咚　嗙　嗙	draft	TODO 未校对; control codes need review
-games/bon_odori/bon_odori_text.c:text_bon_odori_don_pan_pan	games/bon_odori/bon_odori_text.c	text_bon_odori_don_pan_pan	.1:0Do-n .2:0pa-n pan	咚　嗙　嗙	draft	TODO 未校对; control codes need review
-games/bon_odori/bon_odori_text.c:text_bon_odori_dondo_pan_pan	games/bon_odori/bon_odori_text.c	text_bon_odori_dondo_pan_pan	.1:0Dondo .2:0pa-n pan	咚咚　嗙　嗙	draft	TODO 未校对; control codes need review
-games/bon_odori/bon_odori_text.c:text_bon_odori_dondo_panpa	games/bon_odori/bon_odori_text.c	text_bon_odori_dondo_panpa	.1:0Dondo .2:0panpa	咚咚　嗙嗙	draft	TODO 未校对; control codes need review
-games/bon_odori/bon_odori_text.c:text_bon_odori_dondo_panpa_dondo_panpa	games/bon_odori/bon_odori_text.c	text_bon_odori_dondo_panpa_dondo_panpa	.1:0Dondo .2:0panpa .1:0dondo .2:0panpa	咚咚　嗙嗙　咚咚　嗙嗙	draft	TODO 未校对; control codes need review
-games/bon_odori/bon_odori_text.c:text_bon_odori_ha	games/bon_odori/bon_odori_text.c	text_bon_odori_ha	.0:0Haa~	.0:0哈～	draft	TODO 未校对
-games/bon_odori/bon_odori_text.c:text_bon_odori_ha_bon_odori	games/bon_odori/bon_odori_text.c	text_bon_odori_ha_bon_odori	.0:0Ha~ Bon Odori	.0:0哈～　跳这盂兰盆舞	draft	TODO 未校对
-games/bon_odori/bon_odori_text.c:text_bon_odori_haa	games/bon_odori/bon_odori_text.c	text_bon_odori_haa	.0:0Ha~ Ah~	.0:0哈～啊～	draft	TODO 未校对
-games/bon_odori/bon_odori_text.c:text_bon_odori_hanabi_agare_ba	games/bon_odori/bon_odori_text.c	text_bon_odori_hanabi_agare_ba	.0:0Hanabi agare ba~	.0:0如果烟花绽放啦～	draft	TODO 未校对
-games/bon_odori/bon_odori_text.c:text_bon_odori_hora_matsuri_da_wasshoi	games/bon_odori/bon_odori_text.c	text_bon_odori_hora_matsuri_da_wasshoi	.0:0Hora! Matsuri da wasshoi!	.0:0看啊！盛大节日 哇—咻—！	draft	TODO 未校对
-games/bon_odori/bon_odori_text.c:text_bon_odori_kansei_agaru	games/bon_odori/bon_odori_text.c	text_bon_odori_kansei_agaru	.0:0Kansei agaru~	.0:0大家都欢声笑语～	draft	TODO 未校对
-games/bon_odori/bon_odori_text.c:text_bon_odori_korezo	games/bon_odori/bon_odori_text.c	text_bon_odori_korezo	.0:0Korezo	.0:0这就是	draft	TODO 未校对
-games/bon_odori/bon_odori_text.c:text_bon_odori_kyuryo_agaru	games/bon_odori/bon_odori_text.c	text_bon_odori_kyuryo_agaru	.0:0Kyuryou agaru~	.0:0大家有更多工资～	draft	TODO 未校对
-games/bon_odori/bon_odori_text.c:text_bon_odori_matsuri_da_wasshoi	games/bon_odori/bon_odori_text.c	text_bon_odori_matsuri_da_wasshoi	.0:0Matsuri da wasshoi!	.0:0整个日本　哇—咻—！	draft	TODO 未校对
-games/bon_odori/bon_odori_text.c:text_bon_odori_meido_in_japan	games/bon_odori/bon_odori_text.c	text_bon_odori_meido_in_japan	.0:0made in Ja.2PAN	Ｍａｄｅ　ｉｎ　Ｊａｐａｎ	draft	TODO 未校对; control codes need review
-games/bon_odori/bon_odori_text.c:text_bon_odori_ninki_agare_ba	games/bon_odori/bon_odori_text.c	text_bon_odori_ninki_agare_ba	.0:0Ninki agare ba~	.0:0如果人气兴旺啊～	draft	TODO 未校对
-games/bon_odori/bon_odori_text.c:text_bon_odori_nippon_chu_ga_wasshoi	games/bon_odori/bon_odori_text.c	text_bon_odori_nippon_chu_ga_wasshoi	.0:0Nippon chuu ga wasshoi!	.0:0在节日中　哇—咻—！	draft	TODO 未校对
-games/bon_odori/bon_odori_text.c:text_bon_odori_pan_pan	games/bon_odori/bon_odori_text.c	text_bon_odori_pan_pan	.2:0Pan pan	.2:0嗙　嗙	draft	TODO 未校对
-games/bon_odori/bon_odori_text.c:text_bon_odori_sore_hikkuri_kaette	games/bon_odori/bon_odori_text.c	text_bon_odori_sore_hikkuri_kaette	.0:0Sore hikkuri kaette	.0:0嗖嘞　让我们转起圈来	draft	TODO 未校对
-games/bon_odori/bon_odori_text.c:text_bon_odori_yagura_ni_agaru	games/bon_odori/bon_odori_text.c	text_bon_odori_yagura_ni_agaru	.0:0Yagura ni agaru~	.0:0登上塔楼去眺望～	draft	TODO 未校对
+games/bon_odori/bon_odori_text.c:D_08067ad0	games/bon_odori/bon_odori_text.c	D_08067ad0	.6:0Nice clapping!	.6:0OK!	final	
+games/bon_odori/bon_odori_text.c:D_08067adc	games/bon_odori/bon_odori_text.c	D_08067adc	".6:1When we say \""Panpa,\"" clap twice!"	.6:1再来一遍吧〜！	final	
+games/bon_odori/bon_odori_text.c:D_08067b00	games/bon_odori/bon_odori_text.c	D_08067b00	.6:1Looks like you've got it!	.6:1那么，正式上场可要加油哦！	final	
+games/bon_odori/bon_odori_text.c:text_bon_odori_ame_ga_agare_ba	games/bon_odori/bon_odori_text.c	text_bon_odori_ame_ga_agare_ba	.0:0Ame ga agare ba~	.0:0当天上的雨停下～ 	final	
+games/bon_odori/bon_odori_text.c:text_bon_odori_don_don_pan	games/bon_odori/bon_odori_text.c	text_bon_odori_don_don_pan	.1:0Do-n do-n .2:0pan	.1:0咚—咚—.2:0啪	final	
+games/bon_odori/bon_odori_text.c:text_bon_odori_don_don_pan_pan	games/bon_odori/bon_odori_text.c	text_bon_odori_don_don_pan_pan	.1:0Do-n do-n .2:0pa-n pa-n	.1:0咚—咚—.2:0啪—啪—	final	
+games/bon_odori/bon_odori_text.c:text_bon_odori_don_don_pan_pan_2	games/bon_odori/bon_odori_text.c	text_bon_odori_don_don_pan_pan_2	.1:0Do-n do-n .2:0pa-n pan	.1:0咚—咚—.2:0啪—啪	final	
+games/bon_odori/bon_odori_text.c:text_bon_odori_don_pan_pan	games/bon_odori/bon_odori_text.c	text_bon_odori_don_pan_pan	.1:0Do-n .2:0pa-n pan	.1:0咚—.2:0啪—啪	final	
+games/bon_odori/bon_odori_text.c:text_bon_odori_dondo_pan_pan	games/bon_odori/bon_odori_text.c	text_bon_odori_dondo_pan_pan	.1:0Dondo .2:0pa-n pan	.1:0咚咚 .2:0啪—啪	final	
+games/bon_odori/bon_odori_text.c:text_bon_odori_dondo_panpa	games/bon_odori/bon_odori_text.c	text_bon_odori_dondo_panpa	.1:0Dondo .2:0panpa	.1:0咚咚 .2:0啪啪	final	
+games/bon_odori/bon_odori_text.c:text_bon_odori_dondo_panpa_dondo_panpa	games/bon_odori/bon_odori_text.c	text_bon_odori_dondo_panpa_dondo_panpa	.1:0Dondo .2:0panpa .1:0dondo .2:0panpa	.1:0咚咚 .2:0啪啪 .1:0咚咚 .2:0啪啪	final	
+games/bon_odori/bon_odori_text.c:text_bon_odori_ha	games/bon_odori/bon_odori_text.c	text_bon_odori_ha	.0:0Haa~	.0:0哈～	final	
+games/bon_odori/bon_odori_text.c:text_bon_odori_ha_bon_odori	games/bon_odori/bon_odori_text.c	text_bon_odori_ha_bon_odori	.0:0Ha~ Bon Odori	.0:0哈～ 跳这盂兰盆舞	final	
+games/bon_odori/bon_odori_text.c:text_bon_odori_haa	games/bon_odori/bon_odori_text.c	text_bon_odori_haa	.0:0Ha~ Ah~	.0:0哈～啊～	final	
+games/bon_odori/bon_odori_text.c:text_bon_odori_hanabi_agare_ba	games/bon_odori/bon_odori_text.c	text_bon_odori_hanabi_agare_ba	.0:0Hanabi agare ba~	.0:0当烟花飞上天啊～	final	
+games/bon_odori/bon_odori_text.c:text_bon_odori_hora_matsuri_da_wasshoi	games/bon_odori/bon_odori_text.c	text_bon_odori_hora_matsuri_da_wasshoi	.0:0Hora! Matsuri da wasshoi!	.0:0看啊！盛大节日 哇—咻—！	final	
+games/bon_odori/bon_odori_text.c:text_bon_odori_kansei_agaru	games/bon_odori/bon_odori_text.c	text_bon_odori_kansei_agaru	.0:0Kansei agaru~	.0:0大家都欢声笑语～	final	
+games/bon_odori/bon_odori_text.c:text_bon_odori_korezo	games/bon_odori/bon_odori_text.c	text_bon_odori_korezo	.0:0Korezo	.0:0这便是	final	
+games/bon_odori/bon_odori_text.c:text_bon_odori_kyuryo_agaru	games/bon_odori/bon_odori_text.c	text_bon_odori_kyuryo_agaru	.0:0Kyuryou agaru~	.0:0大家有更多工资～	final	
+games/bon_odori/bon_odori_text.c:text_bon_odori_matsuri_da_wasshoi	games/bon_odori/bon_odori_text.c	text_bon_odori_matsuri_da_wasshoi	.0:0Matsuri da wasshoi!	.0:0整个日本 哇—咻—！	final	
+games/bon_odori/bon_odori_text.c:text_bon_odori_meido_in_japan	games/bon_odori/bon_odori_text.c	text_bon_odori_meido_in_japan	.0:0made in Ja.2PAN	.0:0Made in Ja.2pan	final	
+games/bon_odori/bon_odori_text.c:text_bon_odori_ninki_agare_ba	games/bon_odori/bon_odori_text.c	text_bon_odori_ninki_agare_ba	.0:0Ninki agare ba~	.0:0人气上升的话～	final	
+games/bon_odori/bon_odori_text.c:text_bon_odori_nippon_chu_ga_wasshoi	games/bon_odori/bon_odori_text.c	text_bon_odori_nippon_chu_ga_wasshoi	.0:0Nippon chuu ga wasshoi!	.0:0在节日中 哇—咻—！	final	
+games/bon_odori/bon_odori_text.c:text_bon_odori_pan_pan	games/bon_odori/bon_odori_text.c	text_bon_odori_pan_pan	.2:0Pan pan	.2:0啪 啪	final	
+games/bon_odori/bon_odori_text.c:text_bon_odori_sore_hikkuri_kaette	games/bon_odori/bon_odori_text.c	text_bon_odori_sore_hikkuri_kaette	.0:0Sore hikkuri kaette	.0:0来吧 让我们转起圈来	final	
+games/bon_odori/bon_odori_text.c:text_bon_odori_yagura_ni_agaru	games/bon_odori/bon_odori_text.c	text_bon_odori_yagura_ni_agaru	.0:0Yagura ni agaru~	.0:0登上塔楼去眺望～	final	
 games/bouncy_road/bouncy_road_text.c:D_0805b778	games/bouncy_road/bouncy_road_text.c	D_0805b778	Word on the Wind	风声传闻	final	
 games/bouncy_road/bouncy_road_text.c:D_0805b784	games/bouncy_road/bouncy_road_text.c	D_0805b784	Your basics need work.	基本功还不太行呢。	final	
 games/bouncy_road/bouncy_road_text.c:D_0805b7a4	games/bouncy_road/bouncy_road_text.c	D_0805b7a4	The consecutive spheres made you panic...	连续来球时，失误有点太多了呢。	final	

@@ -4,7 +4,7 @@ Example: python tools/font/test_tengoku_font.py
 """
 
 from pathlib import Path
-from build_outline_font import THIRD, collect_chars, outline, read_bdf, read_unifont, skeleton
+from build_outline_font import THIRD, supplied_glyphs, collect_chars, outline, read_bdf, read_unifont, skeleton
 from dump_4bpp import decode_glyph as decode_4bpp_glyph, encode_glyph as encode_4bpp_glyph
 from tengoku_font import decode_glyph, encode_glyph
 
@@ -39,12 +39,22 @@ def main() -> None:
     occupied = sum(pixel != 0 for row in outline_glyph for pixel in row)
     assert 30 <= body <= 50, f'U+8E51 title body is unreadably dense: {body} pixels'
     assert occupied < 125, f'U+8E51 title outline is unreadably dense: {occupied} pixels'
-    source, origin = skeleton(0x8E51, 'small', read_bdf(THIRD / 'fusion-10.bdf'),
+    source, origin = skeleton(0x8E51, 'small', read_bdf(THIRD / 'fusion-bold-10.bdf'),
                               read_unifont(THIRD / 'unifont.hex'))
     rebuilt = encode_4bpp_glyph(outline(source, 'small', diagonal=False))
     stored = outline_path.read_bytes()[index * 128:(index + 1) * 128]
     assert origin == 'manual' and rebuilt == stored, 'U+8E51 title glyph was not rebuilt from the manual skeleton'
-    print(f"{count} font files round-tripped")
+    # 原图像素必须逐字节保持；小号粗像素的最右列不得裁掉。
+    atlas = supplied_glyphs()
+    large = outline_path.parents[1] / 'large/bitmap_font_warioware_outline_large_cjk_used.raw.4bpp'
+    raw = large.read_bytes()
+    for i, cp in enumerate(codepoints):
+        if cp in atlas:
+            assert raw[i * 128:(i + 1) * 128] == encode_4bpp_glyph(atlas[cp]), chr(cp)
+    source, origin = skeleton(ord('国'), 'small', read_bdf(THIRD / 'fusion-bold-10.bdf'), {})
+    assert origin == 'fusion bold 10px' and len(source[0]) == 10
+    assert any(row[9] for row in source), '粗像素第十列丢失'
+    print(f"{count} font files round-tripped; atlas pixels and bold width verified")
 
 
 if __name__ == "__main__":

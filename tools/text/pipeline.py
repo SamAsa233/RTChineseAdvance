@@ -979,8 +979,42 @@ def rap_lyrics_installed(source, original, translation):
             and controls.sub('', source) == translation)
 
 
+# 十月盆舞更新：每段对应原脚本的鼓点/拍手颜色，拼接后必须逐字等于阶段 5 译文。
+BON_SEGMENTS = {
+    'don_don_pan_pan': ('咚—咚—', '啪—啪—'),
+    'dondo_pan_pan': ('咚咚 ', '啪—啪'),
+    'dondo_panpa_dondo_panpa': ('咚咚 ', '啪啪 ', '咚咚 ', '啪啪'),
+    'don_don_pan': ('咚—咚—', '啪'),
+    'dondo_panpa': ('咚咚 ', '啪啪'),
+    'don_pan_pan': ('咚—', '啪—啪'),
+    'don_don_pan_pan_2': ('咚—咚—', '啪—啪'),
+    'pan_pan_dondo_don': ('啪—啪—', '咚咚 咚—'),
+    'panpa_don_pan': ('啪啪 ', '咚—', '啪'),
+    'dondo_panpa_pan': ('咚咚 ', '啪啪 啪'),
+    'panpa_dondo': ('啪啪 ', '咚咚'),
+    'meido_in_japan': ('Made in Ja', 'pan'),
+}
+
+
+def bon_reviewed_target(key, original, translation):
+    """沿用原版颜色码顺序，只替换每段可见歌词；未知分段拒绝自动写入。"""
+    controls = CONTROL.findall(original)
+    suffix = re.sub(r'^text_bon_(?:odori|dance)_', '', key)
+    pieces = BON_SEGMENTS.get(suffix, (translation,))
+    if not controls:
+        return translation
+    if len(pieces) != len(re.findall(r'\.[0-9a-fA-F](?::[0-9a-fA-F])?', original)):
+        raise ValueError(f'{key}: 需要人工确认颜色分段')
+    markers = re.findall(r'\.[0-9a-fA-F](?::[0-9a-fA-F])?', original)
+    if ''.join(pieces) != translation:
+        raise ValueError(f'{key}: 分段与已校对译文不一致')
+    return ''.join(marker + piece for marker, piece in zip(markers, pieces))
+
+
 def reviewed_inline_controls_installed(source, original, translation, archive_name, key):
     """只对指定的阶段 5 文本核对原显示码、画面换行及可见中文。"""
+    if archive_name in ('games/bon_odori/bon_odori_text.json', 'games/bon_odori/bon_dance_text.json'):
+        return source == bon_reviewed_target(key, original, translation)
     if archive_name in ('games/remix_2/remix_2_text.json', 'games/remix_6/remix_6_text.json'):
         if key not in REMIX_SYLLABLE_KEYS:
             return False

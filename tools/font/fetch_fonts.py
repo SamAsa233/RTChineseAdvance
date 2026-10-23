@@ -19,6 +19,9 @@ import tarfile
 ROOT = Path(__file__).resolve().parent / "third_party"
 # 正文字模文件使用精简 hex 包；Unifont 许可从同版本 GNU 官方源码包提取。
 SOURCES = {
+    # 十月标题小字采用独立的 Fusion Bold Pixel 发布包，不能用普通字源加粗冒充。
+    "fusion-bold-10.zip": ("https://github.com/pixel-font-studio/fusion-bold-pixel-font/releases/download/2026.10.16/fusion-bold-pixel-font-10px-proportional-bdf-v2026.10.16.zip",
+                           "85b4fc6d5deba50fc5ff32d3f13e3c30fe74663b61b70c62328cdc927b3f8e1a"),
     "fusion-10.zip": ("https://github.com/TakWolf/fusion-pixel-font/releases/download/2026.09.01/fusion-pixel-font-10px-proportional-bdf-v2026.09.01.zip",
                       "5aa9d46e5ddb0d11d0406426a47922d45bf119edf819cbf2dab5438006990705"),
     "fusion-12.zip": ("https://github.com/TakWolf/fusion-pixel-font/releases/download/2026.09.01/fusion-pixel-font-12px-proportional-bdf-v2026.09.01.zip",
@@ -96,6 +99,11 @@ def main() -> None:
         path = root / name
         fetch_verified(path, url, digest)
         print(name, len(path.read_bytes()), digest)
+    with ZipFile(root / "fusion-bold-10.zip") as archive:
+        name = "fusion-bold-pixel-10px-proportional-zh_hans.bdf"
+        atomic_bytes(root / "fusion-bold-10.bdf", archive.read(name))
+        # 只选包根目录许可，避免误取其依赖字体子目录中的 OFL 文件。
+        atomic_bytes(root / "LICENSES" / "FusionBoldPixel-OFL.txt", archive.read("OFL.txt"))
     for pixel_size in (10, 12):
         with ZipFile(root / f"fusion-{pixel_size}.zip") as archive:
             names = archive.namelist()

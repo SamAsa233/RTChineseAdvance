@@ -1,3 +1,5 @@
+/* 十月更新：仅接入新版阶段 5，保留鼓点/拍手颜色码和原版先后顺序。
+ * TODO 未校对：中文歌词的宽度、颜色分界与节拍仍需实机核验。 */
 /* 中文文本：本文件采用译文包中 stage 5 的已校对条目。
  * 字符串中的 \n 是游戏画面换行；相邻引号只是方便阅读源码。
  * 未校对或未定位的条目见 text/zh_hans/TODO_未校对.md。 */
@@ -8,108 +10,75 @@
 /* Game Text - The Bon Odori */
 
 
-// TODO 未校对：D_080676b4 译文包未到 stage 5，暂留原文。
-const char D_080676b4[] = "The first half was kinda rough...";
+const char D_080676b4[] = "前半段还差一点啊。";
 
-// TODO 未校对：D_080676d4 译文包未到 stage 5，暂留原文。
-const char D_080676d4[] = "The first half was really good!";
+const char D_080676d4[] = "前半段很稳嘛！";
 
 const char D_080676ec[] = "后半段气氛有点冷下来了啊。";
 
-// TODO 未校对：D_08067710 译文包未到 stage 5，暂留原文。
-const char D_08067710[] = "The second half was incredible!";
+const char D_08067710[] = "后半段热起来啦〜！";
 
 const char D_0806772c[] = "";
 
-// TODO 未校对：D_08067730 译文包未到 stage 5，暂留原文。
-const char D_08067730[] = "It really ramped up near the end!";
+const char D_08067730[] = "高潮部分很到位！！";
 
-// TODO 未校对：D_08067754 译文包未到 stage 5，暂留原文。
-const char D_08067754[] = "The ending was pitch perfect!";
+const char D_08067754[] = "最后收得很漂亮呢！";
 
-// TODO 未校对：D_08067778 译文包未到 stage 5，暂留原文。
-const char D_08067778[] = "The audience says...";
+const char D_08067778[] = "周围人的评价";
 
-// TODO 未校对：text_bon_odori_ha 译文包未到 stage 5，暂留原文。
-const char text_bon_odori_ha[] = ".0:0" "Haa~";
+const char text_bon_odori_ha[] = ".0:0哈～";
 
-// TODO 未校对：text_bon_odori_hanabi_agare_ba 译文包未到 stage 5，暂留原文。
-const char text_bon_odori_hanabi_agare_ba[] = ".0:0" "Hanabi agare ba~";
+const char text_bon_odori_hanabi_agare_ba[] = ".0:0当烟花飞上天啊～";
 
-// TODO 未校对：text_bon_odori_don_don_pan_pan 译文包未到 stage 5，暂留原文。
-const char text_bon_odori_don_don_pan_pan[] = ".1:0" "Do-n do-n " ".2:0" "pa-n pa-n";
+const char text_bon_odori_don_don_pan_pan[] = ".1:0咚—咚—.2:0啪—啪—";
 
-// TODO 未校对：text_bon_odori_dondo_pan_pan 译文包未到 stage 5，暂留原文。
-const char text_bon_odori_dondo_pan_pan[] = ".1:0" "Dondo " ".2:0" "pa-n pan";
+const char text_bon_odori_dondo_pan_pan[] = ".1:0咚咚 .2:0啪—啪";
 
-// TODO 未校对：text_bon_odori_haa 译文包未到 stage 5，暂留原文。
-const char text_bon_odori_haa[] = ".0:0" "Ha~ Ah~";
+const char text_bon_odori_haa[] = ".0:0哈～啊～";
 
-// TODO 未校对：text_bon_odori_kansei_agaru 译文包未到 stage 5，暂留原文。
-const char text_bon_odori_kansei_agaru[] = ".0:0" "Kansei agaru~";
+const char text_bon_odori_kansei_agaru[] = ".0:0大家都欢声笑语～";
 
-// TODO 未校对：text_bon_odori_ninki_agare_ba 译文包未到 stage 5，暂留原文。
-const char text_bon_odori_ninki_agare_ba[] = ".0:0" "Ninki agare ba~";
+const char text_bon_odori_ninki_agare_ba[] = ".0:0人气上升的话～";
 
-// TODO 未校对：text_bon_odori_kyuryo_agaru 译文包未到 stage 5，暂留原文。
-const char text_bon_odori_kyuryo_agaru[] = ".0:0" "Kyuryou agaru~";
+const char text_bon_odori_kyuryo_agaru[] = ".0:0大家有更多工资～";
 
-// TODO 未校对：text_bon_odori_matsuri_da_wasshoi 译文包未到 stage 5，暂留原文。
-const char text_bon_odori_matsuri_da_wasshoi[] = ".0:0" "Matsuri da wasshoi!";
+const char text_bon_odori_matsuri_da_wasshoi[] = ".0:0整个日本 哇—咻—！";
 
-// TODO 未校对：text_bon_odori_dondo_panpa_dondo_panpa 译文包未到 stage 5，暂留原文。
-const char text_bon_odori_dondo_panpa_dondo_panpa[] = ".1:0" "Dondo " ".2:0" "panpa " ".1:0" "dondo " ".2:0" "panpa";
+const char text_bon_odori_dondo_panpa_dondo_panpa[] = ".1:0咚咚 .2:0啪啪 .1:0咚咚 .2:0啪啪";
 
-// TODO 未校对：text_bon_odori_nippon_chu_ga_wasshoi 译文包未到 stage 5，暂留原文。
-const char text_bon_odori_nippon_chu_ga_wasshoi[] = ".0:0" "Nippon chuu ga wasshoi!";
+const char text_bon_odori_nippon_chu_ga_wasshoi[] = ".0:0在节日中 哇—咻—！";
 
-// TODO 未校对：text_bon_odori_don_don_pan 译文包未到 stage 5，暂留原文。
-const char text_bon_odori_don_don_pan[] = ".1:0" "Do-n do-n " ".2:0" "pan";
+const char text_bon_odori_don_don_pan[] = ".1:0咚—咚—.2:0啪";
 
-// TODO 未校对：text_bon_odori_sore_hikkuri_kaette 译文包未到 stage 5，暂留原文。
-const char text_bon_odori_sore_hikkuri_kaette[] = ".0:0" "Sore hikkuri kaette";
+const char text_bon_odori_sore_hikkuri_kaette[] = ".0:0来吧 让我们转起圈来";
 
-// TODO 未校对：text_bon_odori_ha_bon_odori 译文包未到 stage 5，暂留原文。
-const char text_bon_odori_ha_bon_odori[] = ".0:0" "Ha~ Bon Odori";
+const char text_bon_odori_ha_bon_odori[] = ".0:0哈～ 跳这盂兰盆舞";
 
-// TODO 未校对：text_bon_odori_dondo_panpa 译文包未到 stage 5，暂留原文。
-const char text_bon_odori_dondo_panpa[] = ".1:0" "Dondo " ".2:0" "panpa";
+const char text_bon_odori_dondo_panpa[] = ".1:0咚咚 .2:0啪啪";
 
-// TODO 未校对：text_bon_odori_don_pan_pan 译文包未到 stage 5，暂留原文。
-const char text_bon_odori_don_pan_pan[] = ".1:0" "Do-n " ".2:0" "pa-n pan";
+const char text_bon_odori_don_pan_pan[] = ".1:0咚—.2:0啪—啪";
 
-// TODO 未校对：text_bon_odori_ame_ga_agare_ba 译文包未到 stage 5，暂留原文。
-const char text_bon_odori_ame_ga_agare_ba[] = ".0:0" "Ame ga agare ba~";
+const char text_bon_odori_ame_ga_agare_ba[] = ".0:0当天上的雨停下～ ";
 
-// TODO 未校对：text_bon_odori_yagura_ni_agaru 译文包未到 stage 5，暂留原文。
-const char text_bon_odori_yagura_ni_agaru[] = ".0:0" "Yagura ni agaru~";
+const char text_bon_odori_yagura_ni_agaru[] = ".0:0登上塔楼去眺望～";
 
-// TODO 未校对：text_bon_odori_hora_matsuri_da_wasshoi 译文包未到 stage 5，暂留原文。
-const char text_bon_odori_hora_matsuri_da_wasshoi[] = ".0:0" "Hora! Matsuri da wasshoi!";
+const char text_bon_odori_hora_matsuri_da_wasshoi[] = ".0:0看啊！盛大节日 哇—咻—！";
 
-// TODO 未校对：text_bon_odori_korezo 译文包未到 stage 5，暂留原文。
-const char text_bon_odori_korezo[] = ".0:0" "Korezo";
+const char text_bon_odori_korezo[] = ".0:0这便是";
 
-// TODO 未校对：text_bon_odori_meido_in_japan 译文包未到 stage 5，暂留原文。
-const char text_bon_odori_meido_in_japan[] = ".0:0" "made in Ja" ".2" "PAN";
+const char text_bon_odori_meido_in_japan[] = ".0:0Made in Ja.2pan";
 
-// TODO 未校对：text_bon_odori_pan_pan 译文包未到 stage 5，暂留原文。
-const char text_bon_odori_pan_pan[] = ".2:0" "Pan pan";
+const char text_bon_odori_pan_pan[] = ".2:0啪 啪";
 
-// TODO 未校对：text_bon_odori_don_don_pan_pan_2 译文包未到 stage 5，暂留原文。
-const char text_bon_odori_don_don_pan_pan_2[] = ".1:0" "Do-n do-n " ".2:0" "pa-n pan";
+const char text_bon_odori_don_don_pan_pan_2[] = ".1:0咚—咚—.2:0啪—啪";
 
-// TODO 未校对：D_08067a84 译文包未到 stage 5，暂留原文。
-const char D_08067a84[] = ".6:1" "Welcome to the Bon Festival!";
+const char D_08067a84[] = ".6:1来跳盆舞吧！";
 
 const char D_08067aa4[] = ".6:1照着大家的样子拍手哦。";
 
-// TODO 未校对：D_08067ad0 译文包未到 stage 5，暂留原文。
-const char D_08067ad0[] = ".6:0" "Nice clapping!";
+const char D_08067ad0[] = ".6:0OK!";
 
-// TODO 未校对：D_08067adc 译文包未到 stage 5，暂留原文。
-const char D_08067adc[] = ".6:1" "When we say \"Panpa,\" clap twice!";
+const char D_08067adc[] = ".6:1再来一遍吧〜！";
 
-// TODO 未校对：D_08067b00 译文包未到 stage 5，暂留原文。
-const char D_08067b00[] = ".6:1" "Looks like you've got it!";
+const char D_08067b00[] = ".6:1那么，正式上场可要加油哦！";
 

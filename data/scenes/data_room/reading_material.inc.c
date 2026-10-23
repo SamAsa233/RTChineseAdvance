@@ -1,3 +1,5 @@
+/* 十月更新：两张歌词卡采用新版 stage 5 的完整歌词和换行。
+ * TODO 未校对：新版歌词卡的分页与长句折行仍需实机核验。 */
 /* 中文文本：本文件采用译文包中 stage 5 的已校对条目。
  * 字符串中的 \n 是游戏画面换行；相邻引号只是方便阅读源码。
  * 未校对或未定位的条目见 text/zh_hans/TODO_未校对.md。 */
@@ -196,16 +198,17 @@ struct ReadingMaterial reading_material_table[TOTAL_READING_MATERIALS] = {
             "某个电台节目",
         /* BODY ----------------------------------------------------------- */
             // 阶段 5 已校对 reading_radio_story；第 19、20 句原是两种地区游戏名，中文两侧同为《节奏天国》。
-            // 实机核验：2026-09-29 mGBA 确认全文三页，对话引号、英文名称和末页“完”均完整显示。
+            // 十月更新：采用新版已校对的饶舌男/女名称，原地区分支与换行不动。
+            // TODO 未校对：新版电台采访改变字宽，需重新核验分页。
             "嗨大家好啊！我是 DJ SALU！\n"
-            "今天也请来了超棒的嘉宾。就是 Rap Men（RM）两位成员！请多关照啦～！\n"
-            "RM“啊，你好，我们是 Rap Men。”\n"
+            "今天也请来了超棒的嘉宾。就是 饶舌男（RSN）的两位成员！请多关照啦～！\n"
+            "RM“啊，你好，我们是 饶舌男。”\n"
             "DJ“新歌很不错嘛～！”\n"
             "RM“那可不～。你听得出来啊？”\n"
             "DJ“嗯嗯，太棒了！”\n"
             "RM“不过啊，我们有个烦恼。”\n"
             "DJ“诶！？那、那个… 是、是什么？”\n"
-            "RM“最近冒出来一群山寨货，叫什么 Rap Women。”\n"
+            "RM“最近冒出来一群山寨货，叫什么 饶舌女。”\n"
             "DJ“真的假的！？”\n"
             "RM“嗯。而且她们还偷偷吃掉了我们放在休息室里的零食。”\n"
             "DJ“诶ー！这也太受打击了…”\n"
@@ -234,69 +237,23 @@ struct ReadingMaterial reading_material_table[TOTAL_READING_MATERIALS] = {
         /* TITLE ---------------------------------------------------------- */
             "歌词卡片①",
         /* BODY ----------------------------------------------------------- */
-            // TODO 未校对：reading_lyrics_1 译文包未到 stage 5，暂留原文。
-            "The☆Bon Odori\n"
-            "\n"
-            "Vocals: Ami Tokito\n"
-            "Lyrics/Music: Tsunku♂\n"
-            "Arrangement: Koichi Yuasa (The☆Bon Odori) /\n"
-            "Kaoru Okubo (The☆Bon Dance)\n"
-            "Translation: castIeRook, Mizuka Lover\n"
-            "\n"
-            "(This song appears in The☆Bon Odori.)\n"
-            "Haa~\n"
-            "            Hanabi agare ba~\n"
-            "Haa~ Ah~\n"
-            "            Kansei agaru~\n"
-            "\n"
-            "Haa~\n"
-            "            Ninki agare ba~\n"
-            "Haa~ Ah~\n"
-            "            Kyuuryou agaru~\n"
-            "Matsuri da wasshoi!\n"
-            "Nippon chuu ga wasshoi!\n"
-            "\n"
-            "Sore hikkuri kaette Dondo pan pan\n"
-            "Haa~ Bon Odori~\n"
-            "\n"
-            "Haa~\n"
-            "            Ame ga agare ba~\n"
-            "\n"
-            "Haa~ Ah~\n"
-            "            Yagura ni agaru~\n"
-            "\n"
-            "Hora! Matsuri da wasshoi!\n"
-            "Korezo made in JaPAN\n"
-            "\n"
-            "Sore hikkuri kaette Dondo pan pan\n"
-            "Haa~ Bon Odori~\n"
-            "----------------------------------------------\n"
-            "Haa~\n"
-            "            Oh when the fireworks fly~\n"
-            "Haa~ Ah~\n"
-            "            Let's send our cheers to the sky~\n"
-            "\n"
-            "Haa~\n"
-            "            If we perform for more eyes~\n"
-            "Haa~ Ah~\n"
-            "            We'll know our profits will rise~\n"
-            "Time for celebration!\n"
-            "All throughout the nation!\n"
-            "\n"
-            "So let's all turn around and Dondo pan pan\n"
-            "Haa~ Bon Odori~\n"
-            "\n"
-            "Haa~\n"
-            "            Oh when the rain clears away~\n"
-            "\n"
-            "Haa~ Ah~\n"
-            "            Walk up the platform and play~\n"
-            "\n"
-            "Come on! Let's all cheer for Obon!\n"
-            "The one and only, that's made in JaPAN\n"
-            "\n"
-            "So let's all turn around and Dondo pan pan\n"
-            "Haa~ Bon Odori~\n",
+            "The☆盂兰盆舞\n"
+            "演唱：時東ぁみ\n"
+            "作词/作曲：淳君\n"
+            "哈～当烟花飞上天啊～\n"
+            "哈～啊～ 大家都欢声笑语～\n"
+            "哈～人气上升的话～\n"
+            "哈～啊～ 大家有更多工资～\n"
+            "整个日本 哇—咻—！\n"
+            "在节日中 哇—咻—！\n"
+            "来吧 让我们转起圈来 咚咚啪啪\n"
+            "哈～ 跳这盂兰盆舞～\n"
+            "哈～当天上的雨停下～ \n"
+            "哈～啊～ 登上塔楼去眺望～\n"
+            "看啊！盛大节日 哇—咻—！\n"
+            "这便是Made in Japan\n"
+            "来吧 让我们转起圈来 咚咚啪啪\n"
+            "哈～ 跳这盂兰盆舞～",
         /* STYLE ---------------------------------------------------------- */
             /* GFX */ reading_style_sea_gfx_table,
             /* BGM */ &reading_style_sea_bgm
@@ -317,7 +274,7 @@ struct ReadingMaterial reading_material_table[TOTAL_READING_MATERIALS] = {
             "反过来说的话 「温情」是什么呀！\n"
             "我可 是完全 不 明白 啊\n"
             "而且另一方面 再换一个说法\n"
-            "温情 好像是 简单的 喜欢把\n"
+            "温情 好像是 简单的 喜欢吧\n"
             "酸酸甜甜像品味 草莓牛奶滋味\n"
             "就那种感觉过后 在我们之间\n"
             "I LOVE YOU\n"
