@@ -59,7 +59,7 @@ def main():
                             source = source.replace(quoted, json.dumps(new, ensure_ascii=False), 1)
                     source = source.replace('// 实机核验：2026-09-29 mGBA 确认全文三页，对话引号、英文名称和末页“完”均完整显示。',
                         '// 十月更新：采用新版已校对的饶舌男/女名称，原地区分支与换行不动。\n'
-                        '            // TODO 未校对：新版电台采访改变字宽，需重新核验分页。')
+                        '            // 排版核验：2026-10-23 mGBA 确认新版电台采访 3 页，末尾“完”完整显示。')
                 else:
                     if not saved:
                         raise ValueError(f'{key}: 缺少既有 TSV 映射')
@@ -83,7 +83,7 @@ def main():
                     source = note + source
             else:
                 note = ('/* 十月更新：两张歌词卡采用新版 stage 5 的完整歌词和换行。\n'
-                        ' * TODO 未校对：新版歌词卡的分页与长句折行仍需实机核验。 */\n')
+                        ' * 排版核验：2026-10-23 mGBA 确认两张新版歌词卡各 2 页，文字与末页完整。 */\n')
                 if note not in source:
                     source = note + source
             writes[path] = source
