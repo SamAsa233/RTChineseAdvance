@@ -148,33 +148,17 @@ struct ReadingMaterial reading_material_table[TOTAL_READING_MATERIALS] = {
         /* TITLE ---------------------------------------------------------- */
             "骑马机开发秘闻",
         /* BODY ----------------------------------------------------------- */
-            	    #ifdef BRIT
-	    	"We were given the chance to interview Mr F,\n"
-            "inventor of the Horse Machine in the Rhythm Toys\n"
-            "section, about its development.\n"
-            "\n"
-            "\n"
-            "Mr F: The idea came about because I just really\n"
-            "wanted to share the joys of riding a horse. So\n"
-            "development sort of revolved around that idea.\n"
-            "\n"
-            "Mr F's comments were as simple as they were\n"
-            "passionate.\n"
-            "\n"
-            "Mr F: But in trying to make a game out of it, I found\n"
-            "myself losing sight of that end goal. I considered\n"
-            "giving up many times.\n"
-            "\n"
-            "It was a struggle for Mr F, who found it difficult to\n"
-            "express his vision within a standard framework.\n"
-            "Mr F: But thinking about the kinds of people who\n"
-            "use the Horse Machine and get even a little joy\n"
-            "out of it...\n"
-            "Well, the hardships sort of just drift away.\n"
-            "\n"
-            "Mr F, you are truly devoted to your craft.\n"
-            "We look forward to seeing your next creations.\n"
-            "Thank you!",
+            // 合并修正：恢复新版归档的阶段 5 中文；英美拼写选项沿用上游 BRIT。
+            // 阶段 5 已校对 reading_horse_machine_story；地区版原文整篇只差英文称谓，保留两个完整分支。
+            // 实机核验：2026-09-29 mGBA 确认全文两页，跨页长句和末页结尾均完整显示。
+            #ifdef BRIT
+            "我们采访了参与开发奖牌奖励“骑马机”的 F 先生，请他谈了谈开发时的故事。\n"
+            "F 先生：“开发是从一个念头开始的，就是想把让马奔跑起来时那种畅快感传达出去。”\n"
+            "虽然说得简单，却能听出 F 先生那股认真的热情。\n"
+            "F 先生：“不过，一旦想让它同时满足作为游戏的各种条件，就怎么也找不到方向，甚至也有过一度想放弃开发的时候。”\n"
+            "F 先生也经历过相当艰难的阶段。想在既定框架里做出自己真正想做的东西，果然不是件容易事。\n"
+            "F 先生：“但只要玩过的人哪怕只多开心那么一点点，之前那些辛苦也就全都值了！”\n"
+            "F 先生真是处处为玩家着想。我们也期待他今后的作品。非常感谢。",
             #else
             "我们采访了参与开发奖牌奖励“骑马机”的 F 先生，请他谈了谈开发时的故事。\n"
             "F 先生：“开发是从一个念头开始的，就是想把让马奔跑起来时那种畅快感传达出去。”\n"
@@ -308,6 +292,7 @@ struct ReadingMaterial reading_material_table[TOTAL_READING_MATERIALS] = {
         /* TITLE ---------------------------------------------------------- */
             "歌词卡片③",
         /* BODY ----------------------------------------------------------- */
+            // TODO 未校对：reading_lyrics_3 仍为阶段 2，保留上游英文歌词，不导入中文草稿。
             "WISH - Can't Wait for You\n"
             "\n"
             "English Vocals: Roxby\n"
@@ -374,17 +359,14 @@ struct ReadingMaterial reading_material_table[TOTAL_READING_MATERIALS] = {
         /* TITLE ---------------------------------------------------------- */
             "最后的通告",
         /* BODY ----------------------------------------------------------- */
+            // 合并修正：恢复新版归档的阶段 5 中文；英美拼写选项沿用上游 BRIT。
             // 阶段 5 已校对 reading_final_story；末尾两行英文署名合为一行中文，保留右对齐控制码。
             // 实机核验：2026-09-29 mGBA 确认全文两页，跨页段落和右对齐结尾均未截断。
             "来自神秘节奏组织的最后通告。\n"
             #ifdef BRIT
-            "Rhythm BRIT Advance.\n"
-            "\n"
-            "That much is undeniable, and we fully recognise it.\n"
+            "“恭喜你！！Remix 8 的完美达成，简直太棒了～！……不过，这种兴高采烈的祝贺还是先免了。你在《节奏天国》里，的确留下了非常出色的成绩。这是谁都无法否认的事实，我们也完全认可。你真的很厉害！简直厉害得不得了！！……虽然一高兴就想这么大声夸你，不过热热闹闹地称赞你这件事，也先放一放吧。\n"
             #else
-            "Rhythm Heaven Advance.\n"
-            "\n"
-            "That much is undeniable, and we fully recognize it.\n"
+            "“恭喜你！！Remix 8 的完美达成，简直太棒了～！……不过，这种兴高采烈的祝贺还是先免了。你在《节奏天国》里，的确留下了非常出色的成绩。这是谁都无法否认的事实，我们也完全认可。你真的很厉害！简直厉害得不得了！！……虽然一高兴就想这么大声夸你，不过热热闹闹地称赞你这件事，也先放一放吧。\n"
             #endif
             "这次你在这款游戏里体会到的节奏，其实还只是节奏界的一小部分而已。如果你因此对节奏产生了更大的兴趣，那就请借这个机会，尽情投入进去吧！因为一旦进入状态，感觉真的非常棒！！这点我可是强烈推荐！！……虽然我一兴奋又忍不住想这么说，不过这种兴冲冲的推荐，也还是先收住吧。\n"
             "我们是认真的。\n"
@@ -417,58 +399,49 @@ struct ReadingMaterial reading_material_table[TOTAL_READING_MATERIALS] = {
         /* TITLE ---------------------------------------------------------- */
             "节奏漫才",
         /* BODY ----------------------------------------------------------- */
-            "Yellow: Hello, I'm Yellow!\n"
-            "Blue: Hello, I'm Blue!\n"
-            "Both: Y&B! Nice to meet you!\n"
-            "\n"
-            "Yellow: Hey Blue! You heard? I'm taking a music class!\n"
-            "Blue: Wait, really? No way! What instrument are you\n"
-            "learning, Yellow? Is it the guitar? Drums maybe?\n"
-            "Yellow: Well, my part is...\n"
-            "Blue: Yeah? What?\n"
-            "Yellow: I'll be playing rhythm!\n"
-            "Blue: Wha? You can't \"play\" rhythm, Yellow.\n"
-            "It's not an instrument. Where did you hear that?\n"
-            "Yellow: Well, I told my teacher I wanted to play\n"
+            // 合并修正：恢复新版归档的阶段 5 中文；英美拼写选项沿用上游 BRIT。
+            // 阶段 5 已校对 reading_manzai_story；三处英式/美式台词分支保留，各自接入同一已校对中文。
+            // 实机核验：2026-09-29 mGBA 确认全文五页，对话换行、角色名和最终收尾均完整显示。
+            "黄小胖“大家好啊，我是黄小胖！”\n"
+            "蓝俊“大家好啊，我是蓝俊！”\n"
+            "二人“我们是 Y&B！请多关照～！”\n"
+            "黄小胖“喂喂，蓝俊。前几天啊，我去音乐教室体验入学了！”\n"
+            "蓝俊“诶ー！真的假的！？你都没跟我说！黄小胖，你要开始学乐器啦！？吉他？鼓？啥啥？”\n"
+            "黄小胖“我负责的啊…”\n"
+            "蓝俊“嗯嗯，啥啥？”\n"
+            "黄小胖“我负责的是 节奏！”\n"
+            "蓝俊“哈？节奏？黄小胖，那又不是乐器啊！啥叫节奏啊。”\n"
             #ifdef BRIT
-            "drums, but he told me I should practise \"rhythm\" first!\n"
+            "黄小胖“不是啦，我跟老师说我想学打鼓，结果老师就叫我先去练节奏啦！”\n"
             #else
             "黄小胖“不是啦，我跟老师说我想学打鼓，结果老师就叫我先去练节奏啦！”\n"
             #endif
-            "Blue: Yellow, I think he meant you need to\n"
-            "improve your sense of rhythm.\n"
-            "Yellow: Oh yeah, that's much closer! That's\n"
-            "incredible! How did you know? Are you psychic?\n"
-            "Blue: How did I- Why wouldn't I know!? It's just\n"
-            "common sense!\n"
-            "Yellow: Hey, man! No need to get so angry.\n"
-            "Blue: Ah... You know, you're right, I'm sorry...\n"
-            "Yellow: Oop! Blue, your fly is down!\n"
-            "Blue: Huh!? Wait, really?\n"
-            "Yellow: No, I lied.\n"
+            "蓝俊“黄小胖，他大概是叫你先锻炼节奏感吧。”\n"
+            "黄小胖“啊，对哦！好像确实是这么说的！蓝俊，你也太厉害了吧！你怎么知道的！？你是超能力者吗？”\n"
+            "蓝俊“什么叫怎么知道… 这不就一听就知道吗！！这是常识啊！！！”\n"
+            "黄小胖“嘛嘛，别那么生气啦～”\n"
+            "蓝俊“啊、啊啊，也是，对不起…”\n"
+            "黄小胖“啊！蓝俊，你裤链开了。”\n"
+            "蓝俊“诶！？哇，假的吧！！真的！？”\n"
+            "黄小胖“骗你的。”\n"
             #ifdef BRIT
-	    	"Blue: Why you...!\n"
-            	"\n"
-            	"Yellow: \"Why you\"! Man, that's kind of a\n"
+            "蓝俊“我倒！”\n"
+            "黄小胖“你这反应也太老啦。”\n"
             #else
             "蓝俊“我倒！”\n"
             "黄小胖“你这反应也太老啦。”\n"
             #endif
-            "cheesy line, don't you think?\n"
-            "Blue: Shut it... I've had enough.\n"
-            "Yellow: GRAAAGH!\n"
-            "Blue: Huh!? Why are you mad? What did I do?\n"
-            "Yellow: Well, weren't we talking about my music class?\n"
-            "Blue: Huh? Oh, yeah, that's right.\n"
-            "Yellow: Geez... way to derail the whole thing...\n"
-            "Blue: Ah, I'm sorry... wait, I'M sorry?\n"
-            "You were the one who-- by lying that my fly was down!\n"
-            "Yellow: Hey hey, no need to get so angry.\n"
-            "Blue: Oh, that's rich! Anyway, what about your\n"
-            "sense of rhythm?\n"
-            "Yellow: Right! My classmates said that my\n"
+            "蓝俊“吵死了！要你管！！”\n"
+            "黄小胖“气死我啦！！！”\n"
+            "蓝俊“哇！怎、怎么还是你反过来发火啊。真是完全搞不懂！”\n"
+            "黄小胖“然后啊，说回节奏感的事。”\n"
+            "蓝俊“啊、啊啊，对哦。”\n"
+            "黄小胖“真是的… 别把话题带跑啦。”\n"
+            "蓝俊“啊啊抱歉… 等等，带跑话题的不是你吗！！！把话题扯歪的人明明就是你啊ーーー！！还拿裤链开了这种事骗人！！！”\n"
+            "黄小胖“嘛嘛，别那么生气嘛。”\n"
+            "蓝俊“吵死啦！真是的… 所以说，节奏感到底要说啥？”\n"
             #ifdef BRIT
-            "\"scents of rhythm\" will improve with practise.\n"
+            "黄小胖“听说，嵌在的洗澡罐，经过训练就会成长。”\n"
             #else
             "黄小胖“听说，嵌在的洗澡罐，经过训练就会成长。”\n"
             #endif

@@ -839,7 +839,8 @@ def reading_story_installed(text, key, translation):
     if start not in section or stop not in section:
         return False
     body = section.split(start, 1)[1].split(stop, 1)[0]
-    branches = re.compile(r'#ifdef\s+PARADISE(.*?)#else(.*?)#endif', re.S)
+    # 上游把英美拼写开关改为 BRIT；兼容旧归档分支，仍逐侧核对。
+    branches = re.compile(r'#ifdef\s+(?:PARADISE|BRIT)(.*?)#else(.*?)#endif', re.S)
     if len(branches.findall(body)) != count:
         return False
 
