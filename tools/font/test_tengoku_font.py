@@ -4,7 +4,8 @@ Example: python tools/font/test_tengoku_font.py
 """
 
 from pathlib import Path
-from build_outline_font import THIRD, supplied_glyphs, collect_chars, outline, read_bdf, read_unifont, skeleton
+from build_outline_font import THIRD, ROOT, FangzhengFont, collect_chars, trim, read_bdf, read_unifont
+import re
 from dump_4bpp import decode_glyph as decode_4bpp_glyph, encode_glyph as encode_4bpp_glyph
 from tengoku_font import decode_glyph, encode_glyph
 
@@ -29,47 +30,43 @@ def main() -> None:
     glyph = decode_glyph(path.read_bytes()[offset:offset + 24], 12)
     ink = sum(sum(row[:9]) for row in glyph)
     assert 20 <= ink < 60, f'U+8E51 is unreadably dense: {ink}/81 pixels'
-    # 标题字体以前从 Unifont 缩小后再做八方向描边，导致“蹑”几乎变成实心方块。
-    # 核对生成结果确实使用了较稀疏的手工骨架，防止以后重建字库时问题复发。
-    codepoints = collect_chars('', root.parents[1] / 'build/text_report/bitmap_font_strings.txt')
-    # 盆舞句尾全角波浪号/感叹号曾在实机显示为方框，必须有实际字模。
-    for cp in (0xFF01, 0xFF5E):
-        assert cp in codepoints, f'fullwidth punctuation missing: {cp:04X}'
-        _, origin = skeleton(cp, 'large', {}, read_unifont(THIRD / 'unifont.hex', [cp]))
-        assert origin == 'unifont downsample', f'punctuation became a box: {cp:04X}'
-    index = codepoints.index(0x8E51)
-    outline_path = root.parents[1] / 'graphics/font/outline/small/bitmap_font_warioware_outline_small_cjk_used.raw.4bpp'
-    outline_glyph = decode_4bpp_glyph(outline_path.read_bytes()[index * 128:(index + 1) * 128])
-    body = sum(pixel in (10, 11) for row in outline_glyph for pixel in row)
-    occupied = sum(pixel != 0 for row in outline_glyph for pixel in row)
-    assert 30 <= body <= 50, f'U+8E51 title body is unreadably dense: {body} pixels'
-    assert occupied < 125, f'U+8E51 title outline is unreadably dense: {occupied} pixels'
-    source, origin = skeleton(0x8E51, 'small', read_bdf(THIRD / 'fusion-bold-10.bdf'),
-                              read_unifont(THIRD / 'unifont.hex'))
-    rebuilt = encode_4bpp_glyph(outline(source, 'small', diagonal=False))
-    stored = outline_path.read_bytes()[index * 128:(index + 1) * 128]
-    assert origin == 'manual' and rebuilt == stored, 'U+8E51 title glyph was not rebuilt from the manual skeleton'
-    # 原图像素必须逐字节保持；小号粗像素的最右列不得裁掉。
-    atlas = supplied_glyphs()
-    large = outline_path.parents[1] / 'large/bitmap_font_warioware_outline_large_cjk_used.raw.4bpp'
-    raw = large.read_bytes()
-    for i, cp in enumerate(codepoints):
-        if cp in atlas:
-            assert raw[i * 128:(i + 1) * 128] == encode_4bpp_glyph(atlas[cp]), chr(cp)
-    # 确认交付的二进制标点确实是新字形，而非只测试生成函数。
-    for size in ('large', 'small'):
-        font_data = (outline_path.parents[1] / size / f'bitmap_font_warioware_outline_{size}_cjk_used.raw.4bpp').read_bytes()
-        fusion = read_bdf(THIRD / 'fusion-bold-10.bdf') if size == 'small' else {}
-        unifont = read_unifont(THIRD / 'unifont.hex', (0xFF01, 0xFF5E))
-        for cp in (0xFF01, 0xFF5E):
-            index = codepoints.index(cp)
-            source, _ = skeleton(cp, size, fusion, unifont)
-            stored = font_data[index * 128:(index + 1) * 128]
-            assert stored == encode_4bpp_glyph(outline(source, size)), f'{size} U+{cp:04X}'
-    source, origin = skeleton(ord('国'), 'small', read_bdf(THIRD / 'fusion-bold-10.bdf'), {})
-    assert origin == 'fusion bold 10px' and len(source[0]) == 10
-    assert any(row[9] for row in source), '粗像素第十列丢失'
-    print(f"{count} font files round-tripped; atlas pixels and bold width verified")
+    # 新要求2：检查全部交付字模，不能只确认生成函数的结果。
+    codepoints = collect_chars('')
+    fusion = read_bdf(THIRD / 'fusion-bold-12.bdf')
+    fangzheng = FangzhengFont(THIRD / 'fangzheng-pixel-14.ttf')
+    definitions = (ROOT / 'data/font_definitions.c').read_text(encoding='utf-8')
+    for size in ('small', 'large'):
+        path = ROOT / f'graphics/font/outline/{size}/bitmap_font_warioware_outline_{size}_cjk_used.raw.4bpp'
+        raw = path.read_bytes()
+        assert len(raw) == len(codepoints) * 128
+        width_array = re.search(r'const u8 bitmap_font_warioware_outline_' + size + r'_cjk_widths\[\] = \{(.*?)\};', definitions, re.S)
+        widths = [int(v) for v in re.findall(r'\d+', width_array[1])]
+        assert len(widths) == len(codepoints)
+        for i, cp in enumerate(codepoints):
+            glyph = decode_4bpp_glyph(raw[i * 128:(i + 1) * 128])
+            occupied = {(x, y) for y, row in enumerate(glyph) for x, pixel in enumerate(row) if pixel}
+            assert occupied and min(x for x, _ in occupied) == 0, f'{size} {chr(cp)} 未贴左'
+            assert max(y for _, y in occupied) == 15, f'{size} {chr(cp)} 未贴底'
+            assert all(pixel in (0, 8, 10, 11) for row in glyph for pixel in row), '外部投影残留'
+            body = {(x, y) for y, row in enumerate(glyph) for x, pixel in enumerate(row) if pixel in (10, 11)}
+            expected_border = {(x + dx, y + dy) for x, y in body for dx in (-1, 0, 1) for dy in (-1, 0, 1)}
+            assert occupied == expected_border, f'{size} {chr(cp)} 描边以外多出像素或被裁切'
+            assert all((glyph[y][x] == 10) == ((x, y + 1) not in body) for x, y in body), '阴影不在字身下沿'
+            assert widths[i] - (size == 'small') == max(x for x, _ in occupied) + 1, '字距会压住描边'
+            assert encode_4bpp_glyph(glyph) == raw[i * 128:(i + 1) * 128]
+            # 有字源的字符逐点比对：小号不能缩成旧 9px；大号必须恰好向右加粗一像素。
+            source = trim(fusion[cp][0]) if size == 'small' and cp in fusion else (
+                fangzheng.glyph(cp) if size == 'large' and cp in fangzheng.codepoints else None)
+            if source is not None:
+                points = {(x, y) for y, row in enumerate(source) for x, bit in enumerate(row) if bit}
+                if size == 'large':
+                    points |= {(x + 1, y) for x, y in list(points)}
+                expected_body = {(x + 1, y + 15 - len(source)) for x, y in points}
+                assert body == expected_body, f'{size} {chr(cp)} 源字形不符或加粗失败'
+        for cp in (0xFF01, 0xFF5E, 0x8E51):
+            assert cp in codepoints, f'缺少回归字符 {cp:04X}'
+    assert 0x8E51 in fusion, '蹑应直接取 12px 粗像素字源'
+    print(f"{count} font files round-tripped; 12px/14px font sources, internal shading and bottom-left anchoring verified")
 
 
 if __name__ == "__main__":
