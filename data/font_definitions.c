@@ -2075,7 +2075,10 @@ const u16 bitmap_font_warioware_outline_cjk_codepoints[] = {
     0x9886, 0x9891, 0x9897, 0x9898, 0x989D, 0x98A0, 0x98CE, 0x98DE, 0x98DF, 0x98EF, 0x9910, 0x996D,
     0x9971, 0x9976, 0x9996, 0x9A6C, 0x9A6F, 0x9A82, 0x9A8C, 0x9A91, 0x9A97, 0x9A9C, 0x9AD8, 0x9AD9,
     0x9B3C, 0x9B42, 0x9B45, 0x9B54, 0x9C7C, 0x9C9C, 0x9E21, 0x9E23, 0x9E45, 0x9EC4, 0x9ED1, 0x9ED2,
-    0x9ED8, 0x9F13, 0x9F20, 0x9F50, 0x9F8D, 0x9F99
+    0x9ED8, 0x9F13, 0x9F20, 0x9F50, 0x9F8D, 0x9F99, 0xFF01, 0xFF08, 0xFF09, 0xFF0C, 0xFF0D, 0xFF0E,
+    0xFF10, 0xFF11, 0xFF12, 0xFF13, 0xFF14, 0xFF15, 0xFF16, 0xFF17, 0xFF18, 0xFF19, 0xFF1A, 0xFF1B,
+    0xFF1F, 0xFF21, 0xFF22, 0xFF23, 0xFF24, 0xFF27, 0xFF29, 0xFF30, 0xFF31, 0xFF32, 0xFF33, 0xFF34,
+    0xFF36, 0xFF37, 0xFF45, 0xFF48, 0xFF49, 0xFF4C, 0xFF4D, 0xFF52, 0xFF53, 0xFF55, 0xFF58, 0xFF5E
 };
 
 const u8 bitmap_font_warioware_outline_large_cjk_widths[] = {
@@ -2132,7 +2135,9 @@ const u8 bitmap_font_warioware_outline_large_cjk_widths[] = {
     14, 14, 16, 14, 14, 14, 14, 14, 14, 16, 16, 16, 14, 16, 14, 14, 14, 14, 14, 14, 14, 14, 16, 14,
     14, 14, 14, 16, 14, 16, 16, 14, 14, 14, 14, 14, 14, 16, 14, 16, 14, 16, 14, 14, 16, 16, 14, 14,
     14, 14, 14, 14, 14, 14, 14, 16, 14, 14, 14, 14, 14, 14, 16, 14, 14, 14, 14, 14, 14, 14, 16, 14,
-    16, 16, 14, 16, 14, 16, 14, 14, 14, 16, 14, 14, 14, 14, 14, 14, 14, 14
+    16, 16, 14, 16, 14, 16, 14, 14, 14, 16, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14,
+    14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14,
+    14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14
 };
 
 const u8 bitmap_font_warioware_outline_small_cjk_widths[] = {
@@ -2189,7 +2194,9 @@ const u8 bitmap_font_warioware_outline_small_cjk_widths[] = {
     12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12,
     12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12,
     12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12,
-    12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12
+    12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12,
+    12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12,
+    12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12
 };
 /* END GENERATED CJK */
 
@@ -2238,7 +2245,7 @@ struct BitmapFontRange bitmap_font_warioware_outline_large_wide_ranges[] = {
     /* CJK GENERATED RANGE */ {
         bitmap_font_warioware_outline_large_cjk_used_raw_4bpp,
         bitmap_font_warioware_outline_large_cjk_widths,
-        0x25A1, 0x9FFF,
+        0x25A1, 0xFFEF,
         bitmap_font_warioware_outline_cjk_codepoints,
         ARRAY_COUNT(bitmap_font_warioware_outline_cjk_codepoints)
     },
@@ -2289,7 +2296,7 @@ struct BitmapFontRange bitmap_font_warioware_outline_small_ranges[] = {
     /* CJK GENERATED RANGE */ {
         bitmap_font_warioware_outline_small_cjk_used_raw_4bpp,
         bitmap_font_warioware_outline_small_cjk_widths,
-        0x25A1, 0x9FFF,
+        0x25A1, 0xFFEF,
         bitmap_font_warioware_outline_cjk_codepoints,
         ARRAY_COUNT(bitmap_font_warioware_outline_cjk_codepoints)
     },
@@ -2340,7 +2347,7 @@ struct BitmapFontRange bitmap_font_warioware_outline_large_narrow_ranges[] = {
     /* CJK GENERATED RANGE */ {
         bitmap_font_warioware_outline_large_cjk_used_raw_4bpp,
         bitmap_font_warioware_outline_large_cjk_widths,
-        0x25A1, 0x9FFF,
+        0x25A1, 0xFFEF,
         bitmap_font_warioware_outline_cjk_codepoints,
         ARRAY_COUNT(bitmap_font_warioware_outline_cjk_codepoints)
     },

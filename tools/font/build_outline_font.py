@@ -28,14 +28,20 @@ def atomic_write(path, data):
     os.replace(temp, path)
 
 
+def needed_codepoint(char):
+    # 标题/歌词也使用全角感叹号和波浪号，不能只收录汉字，否则运行时会落到方框。
+    cp = ord(char)
+    return 0x4E00 <= cp <= 0x9FFF or 0xFF01 <= cp <= 0xFF5E
+
+
 def collect_chars(extra, char_file):
     chars = {'□'}
     for path in ARCHIVE.rglob('*.json'):
         for row in json.loads(path.read_text(encoding='utf-8')):
-            chars.update(ch for ch in row['translation'] if 0x4E00 <= ord(ch) <= 0x9FFF)
-    chars.update(ch for ch in extra if 0x4E00 <= ord(ch) <= 0x9FFF)
+            chars.update(ch for ch in row['translation'] if needed_codepoint(ch))
+    chars.update(ch for ch in extra if needed_codepoint(ch))
     if char_file.exists():
-        chars.update(ch for ch in char_file.read_text(encoding='utf-8') if 0x4E00 <= ord(ch) <= 0x9FFF)
+        chars.update(ch for ch in char_file.read_text(encoding='utf-8') if needed_codepoint(ch))
     return sorted(ord(ch) for ch in chars)
 
 
@@ -180,12 +186,14 @@ def update_definitions(path, codepoints, widths):
         start = text.index('struct BitmapFontRange ' + name + '[]')
         end = text.index('\n};', start)
         section = text[start:end]
+        section = section.replace('0x25A1, 0x9FFF', '0x25A1, 0xFFEF')
+        text = text[:start] + section + text[end:]
         if '/* CJK GENERATED RANGE */' not in section:
             item = (
                 '    /* CJK GENERATED RANGE */ {\n'
                 f'        bitmap_font_warioware_outline_{size}_cjk_used_raw_4bpp,\n'
                 f'        bitmap_font_warioware_outline_{size}_cjk_widths,\n'
-                '        0x25A1, 0x9FFF,\n'
+                '        0x25A1, 0xFFEF,\n'
                 '        bitmap_font_warioware_outline_cjk_codepoints,\n'
                 '        ARRAY_COUNT(bitmap_font_warioware_outline_cjk_codepoints)\n'
                 '    },\n'
@@ -204,7 +212,7 @@ def main():
     parser.add_argument('--defs', type=Path, default=ROOT / 'data/font_definitions.c')
     args = parser.parse_args()
     codepoints = collect_chars(args.extra, args.chars)
-    unifont = read_unifont(THIRD / 'unifont.hex')
+    unifont = read_unifont(THIRD / 'unifont.hex', codepoints)
     supplied = supplied_glyphs()
     widths = {}
     reports = []

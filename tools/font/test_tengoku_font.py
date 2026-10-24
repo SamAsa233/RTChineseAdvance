@@ -32,6 +32,11 @@ def main() -> None:
     # 标题字体以前从 Unifont 缩小后再做八方向描边，导致“蹑”几乎变成实心方块。
     # 核对生成结果确实使用了较稀疏的手工骨架，防止以后重建字库时问题复发。
     codepoints = collect_chars('', root.parents[1] / 'build/text_report/bitmap_font_strings.txt')
+    # 盆舞句尾全角波浪号/感叹号曾在实机显示为方框，必须有实际字模。
+    for cp in (0xFF01, 0xFF5E):
+        assert cp in codepoints, f'fullwidth punctuation missing: {cp:04X}'
+        _, origin = skeleton(cp, 'large', {}, read_unifont(THIRD / 'unifont.hex', [cp]))
+        assert origin == 'unifont downsample', f'punctuation became a box: {cp:04X}'
     index = codepoints.index(0x8E51)
     outline_path = root.parents[1] / 'graphics/font/outline/small/bitmap_font_warioware_outline_small_cjk_used.raw.4bpp'
     outline_glyph = decode_4bpp_glyph(outline_path.read_bytes()[index * 128:(index + 1) * 128])
@@ -51,6 +56,16 @@ def main() -> None:
     for i, cp in enumerate(codepoints):
         if cp in atlas:
             assert raw[i * 128:(i + 1) * 128] == encode_4bpp_glyph(atlas[cp]), chr(cp)
+    # 确认交付的二进制标点确实是新字形，而非只测试生成函数。
+    for size in ('large', 'small'):
+        font_data = (outline_path.parents[1] / size / f'bitmap_font_warioware_outline_{size}_cjk_used.raw.4bpp').read_bytes()
+        fusion = read_bdf(THIRD / 'fusion-bold-10.bdf') if size == 'small' else {}
+        unifont = read_unifont(THIRD / 'unifont.hex', (0xFF01, 0xFF5E))
+        for cp in (0xFF01, 0xFF5E):
+            index = codepoints.index(cp)
+            source, _ = skeleton(cp, size, fusion, unifont)
+            stored = font_data[index * 128:(index + 1) * 128]
+            assert stored == encode_4bpp_glyph(outline(source, size)), f'{size} U+{cp:04X}'
     source, origin = skeleton(ord('国'), 'small', read_bdf(THIRD / 'fusion-bold-10.bdf'), {})
     assert origin == 'fusion bold 10px' and len(source[0]) == 10
     assert any(row[9] for row in source), '粗像素第十列丢失'

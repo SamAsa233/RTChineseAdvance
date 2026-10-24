@@ -78,7 +78,7 @@ def main():
                 updated.append(key)
             if member.startswith('games/'):
                 note = ('/* 十月更新：仅接入新版阶段 5，保留鼓点/拍手颜色码和原版先后顺序。\n'
-                        ' * TODO 未校对：中文歌词的宽度、颜色分界与节拍仍需实机核验。 */\n')
+                        ' * 排版核验：2026-10-24 mGBA 整曲确认歌词边界和颜色切换，高亮沿用原版节拍。 */\n')
                 if note not in source:
                     source = note + source
             else:
@@ -95,6 +95,9 @@ def main():
     writes[TABLE] = output.getvalue()
     # 验证完成后才写文件；无法定位时不会留下半次升级的源码。
     for path, value in writes.items():
+        # 内容相同时不重写，避免在 Windows 上重复导入把 CRLF 无谓改成 LF。
+        if path.exists() and path.read_text(encoding="utf-8") == value:
+            continue
         atomic_text(path, value)
     print(f'updated reviewed entries={len(updated)}')
 

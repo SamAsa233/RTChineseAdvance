@@ -65,12 +65,14 @@ def read_bdf(path):
     return result
 
 
-def read_unifont(path):
+def read_unifont(path, extra_codepoints=()):
+    # 描边歌词还需要全角标点；正文仍只读取原来的 CJK 区间。
+    extra_codepoints = set(extra_codepoints)
     result = {}
     for line in path.open(encoding="ascii"):
         code, data = line.strip().split(":", 1)
         cp = int(code, 16)
-        if not START <= cp <= END:
+        if not START <= cp <= END and cp not in extra_codepoints:
             continue
         width = len(data) // 4
         if width not in (8, 16):
