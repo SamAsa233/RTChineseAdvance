@@ -1,6 +1,7 @@
 """Build sparse 16x16 outlined OBJ glyphs for every supplied translation.
 
-汉化改动：只为译文实际出现的汉字生成 16x16 标题字模，并补上原版标题使用的描边和阴影。
+新要求2：小号采用 Fusion Bold Pixel 12px，大号采用用户提供的方正像素14并自动加粗。
+仅做一像素描边与字身内阴影；描边后的可见边界贴住字格左侧和底部。
 这样既能让标题显示中文，也不用把两万多个 CJK 汉字全部放进 ROM。
 
 Example: python tools/font/build_outline_font.py --extra 节奏天国
@@ -13,12 +14,16 @@ import os
 from pathlib import Path
 import re
 
-from build_text_font import SMALL_MANUAL, ROOT, THIRD, bdf_canvas, read_bdf, read_unifont, shrink
+from build_text_font import ROOT, THIRD, read_bdf, read_unifont, shrink_nearest
+from PIL import ImageFont
+from fontTools.ttLib import TTFont
 from dump_4bpp import encode_glyph
 
 BEGIN = '/* BEGIN GENERATED CJK */'
 END = '/* END GENERATED CJK */'
 ARCHIVE = ROOT / 'text/zh_hans/source/utf8'
+# 保存实际标题字符清单，避免换电脑后依赖被忽略的 build 临时文件而生成不同字库。
+CHARSET = ROOT / 'tools/font/outline_chars.txt'
 
 
 def atomic_write(path, data):
@@ -34,7 +39,7 @@ def needed_codepoint(char):
     return 0x4E00 <= cp <= 0x9FFF or 0xFF01 <= cp <= 0xFF5E
 
 
-def collect_chars(extra, char_file):
+def collect_chars(extra, char_file=CHARSET):
     chars = {'□'}
     for path in ARCHIVE.rglob('*.json'):
         for row in json.loads(path.read_text(encoding='utf-8')):
@@ -45,93 +50,79 @@ def collect_chars(extra, char_file):
     return sorted(ord(ch) for ch in chars)
 
 
-def supplied_glyphs():
-    """按显式字符表取原图像素，不按译文排序猜测图块对应的汉字。"""
-    from PIL import Image
-    folder = ROOT / 'tools/font/supplied'
-    mapping = json.loads((folder / 'outline_large.charmap.json').read_text(encoding='utf-8'))
-    raw = (folder / 'outline_large.png').read_bytes()
-    if hashlib.sha256(raw).hexdigest() != mapping['sha256']:
-        raise ValueError('字模图已改变，必须重新核对字符表')
-    image = Image.open(folder / 'outline_large.png').convert('RGBA')
-    assert image.size == (mapping['columns'] * 16, len(mapping['rows']) * 16)
-    result = {}
-    palette = {0: 0, 136: 8, 153: 9, 170: 10, 187: 11}
-    for y, row in enumerate(mapping['rows']):
-        assert len(row) == mapping['columns']
-        for x, char in enumerate(row):
-            if char == '?':
-                continue
-            cp = ord(char)
-            assert cp not in result, f'重复字符：{char}'
-            glyph = []
-            for dy in range(16):
-                line = []
-                for dx in range(16):
-                    r, g, b, a = image.getpixel((x * 16 + dx, y * 16 + dy))
-                    assert r == g == b and a == 255 and r in palette
-                    line.append(palette[r])
-                glyph.append(line)
-            assert any(any(line) for line in glyph), f'空白字模：{char}'
-            result[cp] = glyph
-    return result
+def trim(rows):
+    """只去透明留白，不改变字身像素，也不把细笔画合并到同一个像素。"""
+    points = {(x, y) for y, row in enumerate(rows) for x, bit in enumerate(row) if bit}
+    if not points:
+        raise ValueError('源字体返回空白字形')
+    left, right = min(x for x, _ in points), max(x for x, _ in points) + 1
+    top, bottom = min(y for _, y in points), max(y for _, y in points) + 1
+    return [[int(rows[y][x] != 0) for x in range(left, right)] for y in range(top, bottom)]
 
 
-def skeleton(cp, size, fusion, unifont):
-    target = 11 if size == 'large' else 9
-    if cp == 0x25A1:
-        rows = [[int(y in (0, target - 1) or x in (0, target - 1)) for x in range(target)] for y in range(target)]
-        return rows, 'square'
-    if size == 'small' and cp not in fusion and cp in SMALL_MANUAL:
-        # 汉化字模修正：小号标题的“蹑”复用正文手工骨架，避免 Unifont 缩成 9×9 后接近实心块。
-        return [[pixel == '#' for pixel in row] for row in SMALL_MANUAL[cp]], 'manual'
-    if cp in fusion:
-        canvas, _ = bdf_canvas(fusion[cp], 16 if size == 'large' else 12, 9)
-        top = 0 if size == 'large' else 2
-        # 粗像素 10px 汉字宽 10、高 9；保留第十列，避免右侧笔画被截断。
-        width = 10 if size == 'small' else target
-        return [row[:width] for row in canvas[top:top + target]], 'fusion bold 10px'
+class FangzhengFont:
+    """用原始 TTF 的单色 14px 点阵，码表先确认缺字，避免误把 .notdef 方框当作汉字。"""
+    def __init__(self, path):
+        metadata = json.loads((ROOT / 'tools/font/font_sources.json').read_text(encoding='utf-8'))['large']
+        data = path.read_bytes()
+        if hashlib.sha256(data).hexdigest() != metadata['sha256']:
+            raise ValueError('方正字体散列不符，请使用本轮用户提供的方正像素14.TTF')
+        with TTFont(path, recalcTimestamp=False) as face:
+            self.codepoints = set(face.getBestCmap())
+        self.font = ImageFont.truetype(str(path), 14)
+
+    def glyph(self, cp):
+        mask = self.font.getmask(chr(cp), mode='1')
+        return trim([[int(mask[y * mask.size[0] + x] != 0)
+                      for x in range(mask.size[0])] for y in range(mask.size[1])])
+
+
+def bold_horizontal(source):
+    """方正字身向右扩一个像素完成自动加粗；高度及原笔画位置均保持。"""
+    width = len(source[0])
+    return [[int((x < width and row[x]) or (x > 0 and row[x - 1]))
+             for x in range(width + 1)] for row in source]
+
+
+def glyph_body(cp, size, fusion, fangzheng, unifont):
+    if size == 'small' and cp in fusion:
+        # 12px 字源本身已经是粗体，直接保留全部原始点阵；不再复用旧 9px 手工“蹑”。
+        return trim(fusion[cp][0]), 'fusion bold 12px'
+    if size == 'large' and cp in fangzheng.codepoints:
+        return bold_horizontal(fangzheng.glyph(cp)), 'fangzheng 14px bold'
     if cp in unifont:
-        canvas = shrink(unifont[cp], target, 16, 0)
-        return [row[:target] for row in canvas[:target]], 'unifont downsample'
-    rows = [[int(y in (0, target - 1) or x in (0, target - 1)) for x in range(target)] for y in range(target)]
-    return rows, 'missing box'
+        # 仅字源确实缺少的少量字符回退；方正回退留出一列做相同的自动加粗。
+        target = 12 if size == 'small' else 13
+        rows = trim(shrink_nearest(unifont[cp], target, target, 0))
+        return (bold_horizontal(rows) if size == 'large' else rows), 'unifont fallback'
+    raise ValueError(f'{size} 缺字 U+{cp:04X} {chr(cp)}')
 
 
-def outline(source, size, diagonal=True):
-    rows = [[0] * 16 for _ in range(16)]
-    left = 2 if size == 'large' else 3
-    top = 3 if size == 'large' else 5
+def outline(source, size=None):
+    """描边 bbox 左边为 x=0、底边为 y=15；阴影只能占据原字身点。"""
+    source = trim(source)
+    height, width = len(source), len(source[0])
+    if width > 14 or height > 14:
+        raise ValueError(f'字身 {width}x{height} 加描边超过 16x16，拒绝静默裁切')
+    left, top = 1, 15 - height
     points = {(left + x, top + y) for y, row in enumerate(source) for x, bit in enumerate(row) if bit}
-    offsets = tuple((dx, dy) for dy in (-1, 0, 1) for dx in (-1, 0, 1)) if diagonal else (
-        (0, 0), (-1, 0), (1, 0), (0, -1), (0, 1))
-    border = {(x + dx, y + dy) for x, y in points for dx, dy in offsets if 0 <= x + dx < 16 and 0 <= y + dy < 16}
+    border = {(x + dx, y + dy) for x, y in points
+              for dy in (-1, 0, 1) for dx in (-1, 0, 1)}
+    rows = [[0] * 16 for _ in range(16)]
     for x, y in border:
-        if y + 1 < 16 and (x, y + 1) not in border:
-            rows[y + 1][x] = 9  # lower cast shadow
-    for x, y in border:
-        rows[y][x] = 8  # dark outline
+        rows[y][x] = 8
     for x, y in points:
-        rows[y][x] = 10 if y >= top + len(source) - 2 else 11  # light body, darker baseline
+        # 每条笔画的下沿在字身内部变暗，描边之外不再另加投影像素。
+        rows[y][x] = 10 if (x, y + 1) not in points else 11
     return rows
 
 
-def manual_glyphs(path, codepoints):
-    manual_file = ROOT / 'tools/font/outline_manual.txt'
-    if not path.exists() or not manual_file.exists():
-        return {}
-    try:
-        from PIL import Image
-    except ImportError:
-        return {}
-    selected = {int(line.strip().removeprefix('U+'), 16) for line in manual_file.read_text(encoding='utf-8').splitlines() if line.strip() and not line.startswith('#')}
-    image = Image.open(path).convert('L')
-    result = {}
-    for i, cp in enumerate(codepoints):
-        if cp in selected:
-            x0, y0 = (i % 32) * 16, (i // 32) * 16
-            result[cp] = [[round(image.getpixel((x0 + x, y0 + y)) / 17) for x in range(16)] for y in range(16)]
-    return result
+def render_glyph(cp, size, fusion, fangzheng, unifont):
+    body, origin = glyph_body(cp, size, fusion, fangzheng, unifont)
+    glyph = outline(body)
+    # 小号的原版字距为 -1；步进多记一列，抵消它，避免新 12px 字互相压描边。
+    width = max(x for row in glyph for x, pixel in enumerate(row) if pixel) + 1
+    return glyph, width + (size == 'small'), origin
 
 
 def save_preview(path, glyphs):
@@ -168,7 +159,7 @@ def update_definitions(path, codepoints, widths):
         c_array('bitmap_font_warioware_outline_large_cjk_widths', widths['large'], 'u8', 24),
         c_array('bitmap_font_warioware_outline_small_cjk_widths', widths['small'], 'u8', 24),
     ))
-    block = BEGIN + '\n/* 十月字体更新：Unicode 稀疏索引与新字模同步；大号原图步进 16px，回退 14px，小号 12px。 */\n' + generated + '\n' + END
+    block = BEGIN + '\n/* 新要求2：大号方正14加粗、小号粗像素12；描边贴左下、阴影仅在字身内，字宽与新字模同步。 */\n' + generated + '\n' + END
     if BEGIN in text:
         start = text.index(BEGIN)
         end = text.index(END, start) + len(END)
@@ -206,45 +197,42 @@ def update_definitions(path, codepoints, widths):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--chars', type=Path, default=ROOT / 'build/text_report/bitmap_font_strings.txt')
+    parser.add_argument('--chars', type=Path, default=CHARSET)
     parser.add_argument('--extra', default='')
     parser.add_argument('--out', type=Path, default=ROOT / 'graphics/font/outline')
     parser.add_argument('--defs', type=Path, default=ROOT / 'data/font_definitions.c')
+    parser.add_argument('--large-font', type=Path, default=THIRD / 'fangzheng-pixel-14.ttf',
+                        help='用户提供的方正像素14.TTF；原始字体只在本地保存')
     args = parser.parse_args()
     codepoints = collect_chars(args.extra, args.chars)
     unifont = read_unifont(THIRD / 'unifont.hex', codepoints)
-    supplied = supplied_glyphs()
+    fangzheng = FangzhengFont(args.large_font)
+    fusion = read_bdf(THIRD / 'fusion-bold-12.bdf')
     widths = {}
     reports = []
+    glyph_origins = {}
     for size in ('large', 'small'):
-        # 小号使用粗像素；大号缺字直接从 Unifont 生成，不混入普通 Fusion。
-        fusion = read_bdf(THIRD / 'fusion-bold-10.bdf') if size == 'small' else {}
         texture_path = args.out / size / f'bitmap_font_warioware_outline_{size}_cjk_used.raw.4bpp'
         preview_path = args.out / size / f'bitmap_font_warioware_outline_{size}_cjk_used.png'
-        # 来源切换后不复用旧预览的位置索引，防止字符增减时错配字模。
-        glyphs, sources = [], {}
+        glyphs, sources, advances = [], {}, []
+        glyph_origins[size] = {}
         for cp in codepoints:
-            if size == 'large' and cp in supplied:
-                glyphs.append(supplied[cp])
-                sources['supplied atlas'] = sources.get('supplied atlas', 0) + 1
-                continue
-            source, origin = skeleton(cp, size, fusion, unifont)
-            # 汉化字模修正：“蹑”的 9×9 骨架笔画密集，八方向描边会把内部空隙全部填满；
-            # 这里只对该字使用四方向薄描边，其他标题字继续沿用原来的完整描边风格。
-            thin_outline = size == 'small' and cp == 0x8E51
-            glyphs.append(outline(source, size, diagonal=not thin_outline))
-            if thin_outline:
-                origin += ' thin outline'
+            glyph, advance, origin = render_glyph(cp, size, fusion, fangzheng, unifont)
+            glyphs.append(glyph)
+            advances.append(advance)
+            glyph_origins[size][f'U+{cp:04X}'] = origin
             sources[origin] = sources.get(origin, 0) + 1
-        # 用户图块使用整格 16px 步进，避免右侧描边与下个字符重叠。
-        widths[size] = [(16 if cp in supplied else 14) if size == 'large' else 12 for cp in codepoints]
+        widths[size] = advances
         atomic_write(texture_path, b''.join(encode_glyph(glyph) for glyph in glyphs))
         save_preview(preview_path, glyphs)
         reports.append(f'{size}: {sources}; glyphs={len(glyphs)}')
-    reports.append('large Unifont fallback: ' + ''.join(chr(cp) for cp in codepoints if cp not in supplied and cp != 0x25A1))
+        reports.append(f'{size} fallback: ' + ''.join(chr(cp) for cp in codepoints
+                       if glyph_origins[size][f'U+{cp:04X}'] == 'unifont fallback'))
     update_definitions(args.defs, codepoints, widths)
-    atomic_write(ROOT / 'build/font_report/outline.report.txt', ('Fusion Bold Pixel v2026.10.16; Unifont 17.0.05; user atlas\n' + '\n'.join(reports) + '\n').encode('utf-8'))
-    print('\n'.join(reports[:2]))
+    atomic_write(ROOT / 'build/font_report/outline.report.txt', ('Fusion Bold Pixel 12px v2026.10.16; user Fangzheng 14px synthetic bold\n' + '\n'.join(reports) + '\n').encode('utf-8'))
+    atomic_write(ROOT / 'build/font_report/outline.sources.json',
+                 (json.dumps(glyph_origins, ensure_ascii=False, indent=2) + '\n').encode('utf-8'))
+    print('\n'.join(reports))
 
 
 if __name__ == '__main__':

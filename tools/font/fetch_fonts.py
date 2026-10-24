@@ -19,9 +19,9 @@ import tarfile
 ROOT = Path(__file__).resolve().parent / "third_party"
 # 正文字模文件使用精简 hex 包；Unifont 许可从同版本 GNU 官方源码包提取。
 SOURCES = {
-    # 十月标题小字采用独立的 Fusion Bold Pixel 发布包，不能用普通字源加粗冒充。
-    "fusion-bold-10.zip": ("https://github.com/pixel-font-studio/fusion-bold-pixel-font/releases/download/2026.10.16/fusion-bold-pixel-font-10px-proportional-bdf-v2026.10.16.zip",
-                           "85b4fc6d5deba50fc5ff32d3f13e3c30fe74663b61b70c62328cdc927b3f8e1a"),
+    # 新要求2：小号改为 12px 粗像素字源，沿用固定发布版本并验证下载内容。
+    "fusion-bold-12.zip": ("https://github.com/pixel-font-studio/fusion-bold-pixel-font/releases/download/2026.10.16/fusion-bold-pixel-font-12px-proportional-bdf-v2026.10.16.zip",
+                           "567c912ccd9bbcc7cac42ddff309616262db4dca898886f6436ea6f18ef43036"),
     "fusion-10.zip": ("https://github.com/TakWolf/fusion-pixel-font/releases/download/2026.09.01/fusion-pixel-font-10px-proportional-bdf-v2026.09.01.zip",
                       "5aa9d46e5ddb0d11d0406426a47922d45bf119edf819cbf2dab5438006990705"),
     "fusion-12.zip": ("https://github.com/TakWolf/fusion-pixel-font/releases/download/2026.09.01/fusion-pixel-font-12px-proportional-bdf-v2026.09.01.zip",
@@ -92,6 +92,7 @@ def ensure_unifont_licenses(root: Path) -> None:
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--dir", type=Path, default=ROOT)
+    parser.add_argument("--large-font", type=Path, help="导入用户提供的方正像素14.TTF 到本地字源目录")
     args = parser.parse_args()
     root = args.dir
     root.mkdir(parents=True, exist_ok=True)
@@ -99,11 +100,12 @@ def main() -> None:
         path = root / name
         fetch_verified(path, url, digest)
         print(name, len(path.read_bytes()), digest)
-    with ZipFile(root / "fusion-bold-10.zip") as archive:
-        name = "fusion-bold-pixel-10px-proportional-zh_hans.bdf"
-        atomic_bytes(root / "fusion-bold-10.bdf", archive.read(name))
-        # 只选包根目录许可，避免误取其依赖字体子目录中的 OFL 文件。
-        atomic_bytes(root / "LICENSES" / "FusionBoldPixel-OFL.txt", archive.read("OFL.txt"))
+    for pixel_size in (12,):
+        with ZipFile(root / f"fusion-bold-{pixel_size}.zip") as archive:
+            name = f"fusion-bold-pixel-{pixel_size}px-proportional-zh_hans.bdf"
+            atomic_bytes(root / f"fusion-bold-{pixel_size}.bdf", archive.read(name))
+            # 只选包根目录许可，避免误取其依赖字体子目录中的 OFL 文件。
+            atomic_bytes(root / "LICENSES" / "FusionBoldPixel-OFL.txt", archive.read("OFL.txt"))
     for pixel_size in (10, 12):
         with ZipFile(root / f"fusion-{pixel_size}.zip") as archive:
             names = archive.namelist()
@@ -116,6 +118,16 @@ def main() -> None:
         atomic_bytes(root / "unifont.hex", source.read())
     # 为什么随工具保存许可：ROM 内嵌了生成后的 Unifont 字形，发布时必须能追溯其授权来源。
     ensure_unifont_licenses(root)
+    if args.large_font is not None:
+        # 原 TTF 不上传仓库；命令显式导入本地文件，并记录/验证用户指定的字源散列。
+        import json
+        info = json.loads((Path(__file__).parent / 'font_sources.json').read_text(encoding='utf-8'))['large']
+        data = args.large_font.read_bytes()
+        if hashlib.sha256(data).hexdigest() != info['sha256']:
+            raise ValueError('方正字体散列不符，请使用用户提供的方正像素14.TTF')
+        atomic_bytes(root / info['file'], data)
+        print(info['file'], len(data), info['sha256'])
+
 
 
 if __name__ == "__main__":

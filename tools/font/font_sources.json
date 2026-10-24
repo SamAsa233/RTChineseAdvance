@@ -1,0 +1,17 @@
+{
+  "small": {
+    "family": "Fusion Bold Pixel",
+    "size": 12,
+    "version": "2026.10.16",
+    "archive_sha256": "567c912ccd9bbcc7cac42ddff309616262db4dca898886f6436ea6f18ef43036"
+  },
+  "large": {
+    "family": "FZXS14",
+    "size": 14,
+    "file": "fangzheng-pixel-14.ttf",
+    "original_filename": "方正像素14.TTF",
+    "sha256": "c1bfb94df96b5e907a0a07c87ab79d50703bd887c0d953e75aa2ea8620e25193",
+    "source": "用户于 2026-10-24 提供；在本地通过 --large-font 导入。",
+    "synthetic_bold": "向右扩展一个像素，不缩放原字形。"
+  }
+}

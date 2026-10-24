@@ -25,3 +25,6 @@ tools/font/third_party/*.bdf
 tools/font/third_party/*.hex
 __pycache__/
 *.pyc
+
+# 用户提供的原始字体在本地保存；生成的字模仍提交。
+tools/font/third_party/*.ttf
