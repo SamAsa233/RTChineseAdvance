@@ -36,7 +36,7 @@ const char D_0805dd90[] =
     "来教你哦！";
 
 const char D_0805ddb8[] =
-    "那就马上开始，\n先练 A 键。";
+    "那就马上开始，\n先练"CHAR_A_BUTTON_UTF8"键。";
 
 const char D_0805dde0[] =
     "仔细听好，\n"
@@ -46,7 +46,7 @@ const char D_0805ddfc[] =
     "胖太也会加入。\n胖太那边的声音\n要按十字键下。";
 
 const char D_0805de40[] =
-    "接下来会快一点。\nA 键和十字键右\n交替按会轻松些哦。";
+    "接下来会快一点。\n"CHAR_A_BUTTON_UTF8"和"CHAR_RIGHT_DPAD_UTF8"\n交替按会轻松些哦。";
 
 const char D_0805de88[] = 
     "下一个练习就是最后啦。";

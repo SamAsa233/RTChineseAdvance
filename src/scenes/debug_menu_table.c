@@ -42,7 +42,7 @@ struct DebugMenuEntry debug_menu_entry_table[] = {
     },
     /* R-IQ (Result 1) */ {
         /* Scene */ &scene_results_ver_debug,
-        /* Label */ "R-IQ  （结果）",
+        /* Label */ "R-IQ （结果）",
         /* Epil. */ FALSE
     },
     /* R-IQ (Result 2) */ {

@@ -102,7 +102,7 @@ struct CueDefinition *metronome_cue_index[] = {
     END_OF_CUE_INDEX
 };
 
-const char D_0805a694[] = "跟着声音，按下 A 键吧。";
+const char D_0805a694[] = "跟着声音，按下"CHAR_A_BUTTON_UTF8"吧。";
 
 const char D_0805a6c0[] = "测量中";
 

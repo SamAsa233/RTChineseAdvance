@@ -28,7 +28,7 @@ const char D_0805d2f0[] = "老师的评语";
 
 const char D_0805d300[] = "来写字吧。";
 
-const char D_0805d318[] = "气势冲到顶点时，就按 A 键！！";
+const char D_0805d318[] = "气势冲到顶点时，就按"CHAR_A_BUTTON_UTF8"！！";
 
 const char D_0805d33c[] = "写得很好。";
 

@@ -54,7 +54,7 @@ const char D_0805af60[] = "";
 const char D_0805af60[] = "那，先来练练吧！";
 #endif
 
-const char D_0805af7c[] = "（用 A 键拍第 3 下哦）";
+const char D_0805af7c[] = "（用"CHAR_A_BUTTON_UTF8"拍第 3 下哦）";
 
 const char D_0805afa0[] = "OK";
 

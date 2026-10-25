@@ -8,7 +8,7 @@
 /* Game Text - Rhythm Test */
 
 
-const char D_0805eed8[] = "请跟着声音按下 A 键。";
+const char D_0805eed8[] = "请跟着声音按下"CHAR_A_BUTTON_UTF8"。";
 
 const char D_0805ef00[] = "还有一半";
 
@@ -18,13 +18,13 @@ const char D_0805ef10[] = "2";
 
 const char D_0805ef14[] = "1";
 
-const char D_0805ef18[] = "请在数到“零”的同时按下 A 键";
+const char D_0805ef18[] = "请在数到“零”的同时按下"CHAR_A_BUTTON_UTF8;
 
 const char D_0805ef44[] = "声音消失时，请在心里继续数拍";
 
 const char D_0805ef74[] = "那么，开始测定";
 
-const char D_0805ef8c[] = "请跟着声音按下 A 键。";
+const char D_0805ef8c[] = "请跟着声音按下"CHAR_A_BUTTON_UTF8"。";
 
 const char D_0805efb4[] = "就这样，继续保持节奏";
 

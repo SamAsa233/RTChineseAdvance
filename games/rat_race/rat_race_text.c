@@ -22,13 +22,13 @@ const char D_0805d180[] = "";
 
 const char D_0805d184[] = "等信号一出";
 
-const char D_0805d198[] = "就一直按住 A"CHAR_A_BUTTON_UTF8;
+const char D_0805d198[] = "就一直按住"CHAR_A_BUTTON_UTF8;
 
 const char D_0805d1ac[] = "给我停下！";
 
 const char D_0805d1bc[] = "等下一个信号时";
 
-const char D_0805d1d0[] = "把 A 松开"CHAR_A_BUTTON_UTF8;
+const char D_0805d1d0[] = "把"CHAR_A_BUTTON_UTF8"松开";
 
 const char D_0805d1e0[] = "冲出去！";
 

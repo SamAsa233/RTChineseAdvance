@@ -27,7 +27,7 @@ const char D_0805cde0[] = "・・・　祭典之前　・・・";
 
 const char D_0805ce00[] = "特训开始！";
 
-const char D_0805ce10[] = "听到“嘿！”这个信号时就按 A 键"CHAR_A_BUTTON_UTF8;
+const char D_0805ce10[] = "听到“嘿！”这个信号时就按"CHAR_A_BUTTON_UTF8;
 
 const char D_0805ce34[] = "首先是“普通的烟火”";
 

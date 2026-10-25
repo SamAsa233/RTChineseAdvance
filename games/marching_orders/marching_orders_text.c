@@ -44,13 +44,13 @@ const char D_0805c8c4[] = "开始练习！";
 
 const char D_0805c8e0[] = "那么，正式上场吧！";
 
-const char D_0805c8e1[] = "Right!";
+const char D_0805c8e1[] = "右转！";
 
-const char D_0805c8e2[] = "Left!";
+const char D_0805c8e2[] = "左转！";
 
-const char D_0805c8e3[] = "March!";
+const char D_0805c8e3[] = "踏步！";
 
-const char D_0805c8e4[] = "Halt!";
+const char D_0805c8e4[] = "立定！";
 
 const char D_0805c8f4[] = "基本功还没到位啦——！";
 

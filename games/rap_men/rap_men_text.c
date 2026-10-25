@@ -32,7 +32,7 @@ const char D_0805ea50[] = "来，跟我们一起嗨吧";
 
 const char D_0805ea6c[] = "我们来教你怎么跟上节奏";
 
-const char D_0805ea84[] = "听到“嗯”那一下就按 A 键";
+const char D_0805ea84[] = "听到“嗯”那一下就按"CHAR_A_BUTTON_UTF8;
 
 const char D_0805eaac[] = "先听一遍吧";
 

@@ -24,7 +24,7 @@ const char D_0805b530[] = "多余毛发检查";
 
 const char D_0805b544[] = "欢迎光临。";
 
-const char D_0805b550[] = "用 A 键或十字键拔毛哦！";
+const char D_0805b550[] = "用"CHAR_A_BUTTON_UTF8"或"CHAR_DPAD_UTF8"拔毛哦！";
 
 // 阶段 5 已校对：保留四个原版显示控制字节，只把提示词换成中文。
 // TODO 未校对：提示文字的字号与毛发检查画面位置仍需实机确认。

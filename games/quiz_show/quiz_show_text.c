@@ -83,7 +83,7 @@ const char D_0805ee5c[] =
     "在“请开始”之后，请敲出相同的次数。";
 
 const char D_0805ee8c[] = 
-    "A 键和十字键，按哪个都 OK。";
+    CHAR_A_BUTTON_UTF8"和"CHAR_DPAD_UTF8"，按哪个都 OK。";
 
 const char D_0805eebc[] = 
     "那么，就来试试看吧。";

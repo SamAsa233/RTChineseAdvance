@@ -56,4 +56,4 @@ const char D_0805da5c[] =
     "就是曲子的开头。";
 
 const char D_0805da84[] =
-    "我来数拍，\n请在曲子开始时\n同时按下 B 键和\nR 键（肩键）。";
+    "我来数拍，\n请在曲子开始时\n同时按下"CHAR_B_BUTTON_UTF8"和"CHAR_R_SHOULDER_BUTTON_UTF8"。";

@@ -75,9 +75,9 @@ const char *const D_0805e5e4[] = {
 };
 
 const char D_0805e5f8[] =
-    "接下来，试着在曲子开头\n加一下镲吧。\n镲是 R 键。";
+    "接下来，试着在曲子开头\n加一下镲吧。\n镲是"CHAR_R_SHOULDER_BUTTON_UTF8"键。";
 
-const char D_0805e64c[] = "也就是说，只有最开始\n要同时按下 B 键和 R 键。";
+const char D_0805e64c[] = "也就是说，只有最开始\n要同时按下"CHAR_B_BUTTON_UTF8"和"CHAR_R_SHOULDER_BUTTON_UTF8"。";
 
 const char D_0805e684[] = "回想一下曲子开头的练习哦。";
 

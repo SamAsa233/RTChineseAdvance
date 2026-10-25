@@ -30,9 +30,9 @@ const char D_0805dbc0[] = "一起蹦起来！";
 
 const char D_0805dbd8[] = "在跳到最高点的时候，";
 
-const char D_0805dbf4[] = "我用十字键，";
+const char D_0805dbf4[] = "我用"CHAR_DPAD_UTF8"，";
 
-const char D_0805dc0c[] = "我用 A 键，";
+const char D_0805dc0c[] = "我用"CHAR_A_BUTTON_UTF8"键，";
 
 const char D_0805dc24[] = "就能变身哦！";
 

@@ -22,7 +22,7 @@ const char D_0805e1d4[] = "";
 const char D_0805e1d4[] = "要和企鹅们一起表演。";
 #endif
 
-const char D_0805e1f8[] = "跟着信号按 A 键！";
+const char D_0805e1f8[] = "跟着信号按"CHAR_A_BUTTON_UTF8"！";
 
 const char D_0805e218[] = "";
 
