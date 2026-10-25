@@ -1,6 +1,6 @@
-/* 中文文本:本文件采用译文包中 stage 5 的已校对条目.
- * 字符串中的 \n 是游戏画面换行;相邻引号只是方便阅读源码.
- * 未校对或未定位的条目见 text/zh_hans/TODO_未校对.md. */
+/* 中文文本：本文件采用译文包中 stage 5 的已校对条目。
+ * 字符串中的 \n 是游戏画面换行；相邻引号只是方便阅读源码。
+ * 未校对或未定位的条目见 text/zh_hans/TODO_未校对.md。 */
 #include "global.h"
 #include "debug_menu.h"
 
@@ -12,77 +12,77 @@
 struct DebugMenuEntry debug_menu_entry_table[] = {
     /* R-IQ (Title Screen) */ {
         /* Scene */ &scene_title,
-        /* Label */ "R-IQ (标题)",
+        /* Label */ "Ｒ－ＩＱ　（标题）",
         /* Epil. */ FALSE
     },
     /* R-IQ (Main Menu) */ {
         /* Scene */ &scene_main_menu,
-        /* Label */ "R-IQ (菜单)",
+        /* Label */ "Ｒ－ＩＱ　（菜单）",
         /* Epil. */ FALSE
     },
     /* R-IQ (Game Select) */ {
         /* Scene */ &scene_game_select,
-        /* Label */ "R-IQ (游戏)",
+        /* Label */ "Ｒ－ＩＱ　（游戏）",
         /* Epil. */ FALSE
     },
     /* R-IQ (Rhythm Data Room) */ {
         /* Scene */ &scene_data_room,
-        /* Label */ "R-IQ (资料室)",
+        /* Label */ "Ｒ－ＩＱ　（资料室）",
         /* Epil. */ FALSE
     },
     /* R-IQ (Studio) */ {
         /* Scene */ &scene_studio,
-        /* Label */ "R-IQ (录音室)",
+        /* Label */ "Ｒ－ＩＱ　（录音室）",
         /* Epil. */ FALSE
     },
     /* R-IQ (Options) */ {
         /* Scene */ &scene_options_menu,
-        /* Label */ "R-IQ (选项)",
+        /* Label */ "Ｒ－ＩＱ　（选项）",
         /* Epil. */ FALSE
     },
     /* R-IQ (Result 1) */ {
         /* Scene */ &scene_results_ver_debug,
-        /* Label */ "R-IQ (结果)",
+        /* Label */ "Ｒ－ＩＱ　（结果）",
         /* Epil. */ FALSE
     },
     /* R-IQ (Result 2) */ {
         /* Scene */ &scene_results_ver_rank,
-        /* Label */ "R-IQ (结果 2)",
+        /* Label */ "Ｒ－ＩＱ　（结果　２）",
         /* Epil. */ FALSE
     },
     /* R-IQ (Result 3) */ {
         /* Scene */ &scene_results_ver_score,
-        /* Label */ "R-IQ (结果 3)",
+        /* Label */ "Ｒ－ＩＱ　（结果　３）",
         /* Epil. */ FALSE
     },
     /* R-IQ (Result 4) */ {
         /* Scene */ &scene_epilogue,
-        /* Label */ "R-IQ (结果 4)",
+        /* Label */ "Ｒ－ＩＱ　（结果　４）",
         /* Epil. */ TRUE
     },
     /* R-IQ (Rhythm Library) */ {
         /* Scene */ &scene_arrival,
-        /* Label */ "R-IQ (获得信件)",
+        /* Label */ "Ｒ－ＩＱ　（获得信件）",
         /* Epil. */ FALSE
     },
     /* R-IQ (Perfect) */ {
         /* Scene */ &scene_perfect,
-        /* Label */ "R-IQ (完美)",
+        /* Label */ "Ｒ－ＩＱ　（完美）",
         /* Epil. */ FALSE
     },
     /* R-IQ (Endless Games) */ {
         /* Scene */ &scene_endless_menu,
-        /* Label */ "R-IQ (无尽游戏)",
+        /* Label */ "Ｒ－ＩＱ　（无尽游戏）",
         /* Epil. */ FALSE
     },
     /* R-IQ (Drum Lessons) */ {
         /* Scene */ &scene_lessons_menu,
-        /* Label */ "R-IQ (击鼓课程)",
+        /* Label */ "Ｒ－ＩＱ　（击鼓课程）",
         /* Epil. */ FALSE
     },
     /* R-IQ (Rhythm Toys) */ {
         /* Scene */ &scene_toys_menu,
-        /* Label */ "R-IQ (节奏玩具)",
+        /* Label */ "Ｒ－ＩＱ　（节奏玩具）",
         /* Epil. */ FALSE
     },
     /* R-IQ (Cafe) */ {
@@ -90,7 +90,7 @@ struct DebugMenuEntry debug_menu_entry_table[] = {
         #ifdef BRIT
         /* Label */ "", // shoutout to british people
         #else
-        /* Label */ "R-IQ (咖啡谈心)",
+        /* Label */ "R-IQ （咖啡谈心）",
         #endif
         /* Epil. */ FALSE
     },
@@ -101,7 +101,7 @@ struct DebugMenuEntry debug_menu_entry_table[] = {
     },
     /* GBP Handshake */ {
         /* Scene */ &scene_gbp_handshake,
-        /* Label */ "GBP 手柄震动",
+        /* Label */ "ＧＢＰ　手柄震动",
         /* Epil. */ FALSE
     },
     /* Disclaimer */ {
@@ -111,29 +111,29 @@ struct DebugMenuEntry debug_menu_entry_table[] = {
     },
     /* Opening (A Type) */ {
         /* Scene */ &scene_drum_samurai_demo_cutscene,
-        /* Label */ "开场 (类型A)",
+        /* Label */ "开场　（类型A）",
         /* Epil. */ FALSE
     },
     /* Opening (B Type) */ {
         /* Scene */ &scene_drum_samurai_opening_cutscene,
-        /* Label */ "开场 (类型B)",
+        /* Label */ "开场　（类型B）",
         /* Epil. */ FALSE
     },
     /* Rhythm Test (Total) */ {
         /* Scene */ &scene_rhythm_test_opening,
-        /* Label */ "节奏感测试 (开场)"
+        /* Label */ "节奏感测试　（开场）"
     },
     /* Rhythm Test (Click) */ {
         /* Scene */ &scene_rhythm_test_click,
-        /* Label */ "节奏感测试 (点击)",
+        /* Label */ "节奏感测试　（点击）",
     },
     /* Rhythm Test (Cue) */ {
         /* Scene */ &scene_rhythm_test_cue,
-        /* Label */ "节奏感测试 (数拍)",
+        /* Label */ "节奏感测试　（数拍）",
     },
     /* Rhythm Test (Trick) */ {
         /* Scene */ &scene_rhythm_test_trick,
-        /* Label */ "节奏感测试 (棘手)"
+        /* Label */ "节奏感测试　（棘手）"
     },
     /* Reading Material */ {
         /* Scene */ &scene_reading,
@@ -142,12 +142,12 @@ struct DebugMenuEntry debug_menu_entry_table[] = {
     },
     /* Studio Drummer */ {
         /* Scene */ &scene_drum_studio_ver0,
-        /* Label */ "录音室打鼓 (Ver. 0)",
+        /* Label */ "录音室打鼓　（Ｖｅｒ．　０）",
         /* Epil. */ FALSE
     },
     /* Studio Drummer */ {
         /* Scene */ &scene_drum_studio_ver2,
-        /* Label */ "录音室打鼓 (Ver. 2)",
+        /* Label */ "录音室打鼓　（Ｖｅｒ．　２）",
         /* Epil. */ FALSE
     },
  /* Drum LIVE */ {
@@ -157,110 +157,110 @@ struct DebugMenuEntry debug_menu_entry_table[] = {
     },
     /* Ending (from clearing Remix 6) */ {
         /* Scene */ &scene_staff_credit_remix_6,
-        /* Label */ "结尾 (通关)",
+        /* Label */ "结尾　（通关）",
         /* Epil. */ FALSE
     },
     /* Ending (from Game Select) */ {
         /* Scene */ &scene_staff_credit,
-        /* Label */ "结尾 (再次观看)",
+        /* Label */ "结尾　（再次观看）",
         /* Epil. */ FALSE
     },
     /* Lesson (Basic 1) */ {
         /* Scene */ &scene_drum_lesson_basic_1,
-        /* Label */ "课程 (入门 1)",
+        /* Label */ "课程 （入门　１）",
         /* Epil. */ FALSE
     },
     /* Lesson (Basic 2) */ {
         /* Scene */ &scene_drum_lesson_basic_2,
-        /* Label */ "课程 (入门 2)",
+        /* Label */ "课程 （入门　２）",
         /* Epil. */ FALSE
     },
     /* Lesson (Short 1) */ {
         /* Scene */ &scene_drum_lesson_short_1,
-        /* Label */ "课程 (基础 1)",
+        /* Label */ "课程 （基础　１）",
         /* Epil. */ FALSE
     },
     /* Lesson (Short 2) */ {
         /* Scene */ &scene_drum_lesson_short_2,
-        /* Label */ "课程 (基础 2)",
+        /* Label */ "课程 （基础　２）",
         /* Epil. */ FALSE
     },
     /* Lesson (Short 3) */ {
         /* Scene */ &scene_drum_lesson_short_3,
-        /* Label */ "课程 (基础 3)",
+        /* Label */ "课程 （基础　３）",
         /* Epil. */ FALSE
     },
     /* Lesson (Short 4) */ {
         /* Scene */ &scene_drum_lesson_short_4,
-        /* Label */ "课程 (基础 4)",
+        /* Label */ "课程 （基础　４）",
         /* Epil. */ FALSE
     },
     /* Lesson (Short 5) */ {
         /* Scene */ &scene_drum_lesson_short_5,
-        /* Label */ "课程 (基础 5)",
+        /* Label */ "课程 （基础　５）",
         /* Epil. */ FALSE
     },
     /* Lesson (Short 6) */ {
         /* Scene */ &scene_drum_lesson_short_6,
-        /* Label */ "课程 (基础 6)",
+        /* Label */ "课程 （基础　６）",
         /* Epil. */ FALSE
     },
     /* Lesson (Short 7) */ {
         /* Scene */ &scene_drum_lesson_short_7,
-        /* Label */ "课程 (基础 7)",
+        /* Label */ "课程 （基础　７）",
         /* Epil. */ FALSE
     },
     /* Lesson (Short 8) */ {
         /* Scene */ &scene_drum_lesson_short_8,
-        /* Label */ "课程 (基础 8)",
+        /* Label */ "课程 （基础　８）",
         /* Epil. */ FALSE
     },
     /* Lesson (Short 9) */ {
         /* Scene */ &scene_drum_lesson_short_9,
-        /* Label */ "课程 (基础 9)",
+        /* Label */ "课程 （基础　９）",
         /* Epil. */ FALSE
     },
     /* Lesson (Long 1) */ {
         /* Scene */ &scene_drum_lesson_long_1,
-        /* Label */ "课程 (进阶 1)",
+        /* Label */ "课程 （进阶　１）",
         /* Epil. */ FALSE
     },
     /* Lesson (Long 2) */ {
         /* Scene */ &scene_drum_lesson_long_2,
-        /* Label */ "课程 (进阶 2)",
+        /* Label */ "课程 （进阶　２）",
         /* Epil. */ FALSE
     },
     /* Lesson (Long 3) */ {
         /* Scene */ &scene_drum_lesson_long_3,
-        /* Label */ "课程 (进阶 3)",
+        /* Label */ "课程 （进阶　３）",
         /* Epil. */ FALSE
     },
     /* Lesson (Long 4) */ {
         /* Scene */ &scene_drum_lesson_long_4,
-        /* Label */ "课程 (进阶 4)",
+        /* Label */ "课程 （进阶　４）",
         /* Epil. */ FALSE
     },
     /* Lesson (Long 5) */ {
         /* Scene */ &scene_drum_lesson_long_5,
-        /* Label */ "课程 (进阶 5)",
+        /* Label */ "课程 （进阶　５）",
         /* Epil. */ FALSE
     },
     /* Lesson (Long 6) */ {
         /* Scene */ &scene_drum_lesson_long_6,
-        /* Label */ "课程 (进阶 6)",
+        /* Label */ "课程 （进阶　６）",
         /* Epil. */ FALSE
     },
     /* Lesson (High-Tech 1) */ {
         /* Scene */ &scene_drum_lesson_hi_tech_1,
-        /* Label */ "课程 (技巧 1)",
+        /* Label */ "课程 （技巧　１）",
         /* Epil. */ FALSE
     },
     /* Lesson (High-Tech 2) */ {
         /* Scene */ &scene_drum_lesson_hi_tech_2,
-        /* Label */ "课程 (技巧 2)",
+        /* Label */ "课程 （技巧　２）",
         /* Epil. */ FALSE
     },
-    // 阶段 5 已校对:两种地区拼写共用"反拍男",但仍保留原 #ifdef 结构.
+    // 阶段 5 已校对：两种地区拼写共用“反拍男”，但仍保留原 #ifdef 结构。
     /* Mr. Upbeat */ {
         /* Scene */ &scene_mr_upbeat,
         #ifdef BRIT
@@ -270,15 +270,15 @@ struct DebugMenuEntry debug_menu_entry_table[] = {
         #endif
         /* Epil. */ FALSE
     },
-    // 阶段 5 已校对:将无尽模式的调试标签接入译文,保持原表项顺序.
+    // 阶段 5 已校对：将无尽模式的调试标签接入译文，保持原表项顺序。
     /* Sick Beats Endless */ {
         /* Scene */ &scene_sick_beats_endless,
-        /* Label */ "细菌博士 SP",
+        /* Label */ "细菌博士　ＳＰ",
         /* Epil. */ FALSE
     },
     /* Quiz Show Endless */ {
         /* Scene */ &scene_quiz_show_endless,
-        /* Label */ "节奏问答 特别篇",
+        /* Label */ "节奏问答　特别篇",
         /* Epil. */ FALSE
     },
     /* Mannequin Factory */ {
@@ -314,12 +314,12 @@ struct DebugMenuEntry debug_menu_entry_table[] = {
     },
     /* Karate Man 2 */ {
         /* Scene */ &scene_karate_man_2,
-        /* Label */ "空手道家 2",
+        /* Label */ "空手道家　２",
         /* Epil. */ TRUE
     },
     /* Karate Man (Extra) */ {
         /* Scene */ &scene_karate_man_extra,
-        /* Label */ "空手道家 (额外) WIP",
+        /* Label */ "空手道家　（额外）　ＷＩＰ",
         /* Epil. */ TRUE
     },
     /* Rhythm Tweezers */ {
@@ -329,12 +329,12 @@ struct DebugMenuEntry debug_menu_entry_table[] = {
     },
     /* Rhythm Tweezers 2 */ {
         /* Scene */ &scene_rhythm_tweezers_2,
-        /* Label */ "节奏脱毛 2",
+        /* Label */ "节奏脱毛　２",
         /* Epil. */ TRUE
     },
     /* Rhythm Tweezers (Extra) */ {
         /* Scene */ &scene_rhythm_tweezers_extra,
-        /* Label */ "节奏脱毛 (额外)",
+        /* Label */ "节奏脱毛　（额外）",
         /* Epil. */ TRUE
     },
     /* Marching Orders */ {
@@ -344,12 +344,12 @@ struct DebugMenuEntry debug_menu_entry_table[] = {
     },
     /* Marching Orders 2 */ {
         /* Scene */ &scene_marching_orders_2,
-        /* Label */ "行军 2",
+        /* Label */ "行军　２",
         /* Epil. */ TRUE
     },
     /* Marching Orders (Extra) */ {
         /* Scene */ &scene_marching_orders_extra,
-        /* Label */ "行军 (额外)",
+        /* Label */ "行军　（额外）",
         /* Epil. */ TRUE
     },
     /* Spaceball */ {
@@ -359,13 +359,13 @@ struct DebugMenuEntry debug_menu_entry_table[] = {
     },
     /* Spaceball 2 */ {
         /* Scene */ &scene_spaceball_2,
-        /* Label */ "空中击球手 2",
+        /* Label */ "空中击球手　２",
         /* Epil. */ TRUE
 
     },
     /* Spaceball (Extra) */ {
         /* Scene */ &scene_spaceball_extra,
-        /* Label */ "空中击球手 (额外)",
+        /* Label */ "空中击球手　（额外）",
         /* Epil. */ TRUE
     },
     /* The Clappy Trio */ {
@@ -380,7 +380,7 @@ struct DebugMenuEntry debug_menu_entry_table[] = {
     },
     /* The Clappy Trio (Extra) */ {
         /* Scene */ &scene_clappy_trio_extra,
-        /* Label */ "啪叽啪叽三人组 (额外) WIP",
+        /* Label */ "啪叽啪叽三人组　（额外）　ＷＩＰ",
         /* Epil. */ TRUE
     },
     /* Sneaky Spirits */ {
@@ -390,7 +390,7 @@ struct DebugMenuEntry debug_menu_entry_table[] = {
     },
     /* Sneaky Spirits 2 */ {
         /* Scene */ &scene_sneaky_spirits_2,
-        /* Label */ "白色的鬼 2",
+        /* Label */ "白色的鬼　２",
         /* Epil. */ TRUE
     },
     /* Samurai Slice */ {
@@ -410,7 +410,7 @@ struct DebugMenuEntry debug_menu_entry_table[] = {
     },
     /* The Bon Odori */ {
         /* Scene */ &scene_bon_odori,
-        /* Label */ "The 盂兰盆舞",
+        /* Label */ "Ｔｈｅ　盂兰盆舞",
         /* Epil. */ TRUE
     },
     /* Bon Dance */ {
@@ -460,7 +460,7 @@ struct DebugMenuEntry debug_menu_entry_table[] = {
     },
     /* Night Walk 2 */ {
         /* Scene */ &scene_night_walk_2,
-        /* Label */ "夜间漫步 2",
+        /* Label */ "夜间漫步　２",
         /* Epil. */ TRUE
     },
     /* Power Calligraphy */ {
@@ -475,7 +475,7 @@ struct DebugMenuEntry debug_menu_entry_table[] = {
     },
     /* Polyrhythm 2 */ {
         /* Scene */ &scene_polyrhythm_2,
-        /* Label */ "复合节奏 2",
+        /* Label */ "复合节奏　２",
         /* Epil. */ TRUE
     },
     /* Rap Men */ {
@@ -485,7 +485,7 @@ struct DebugMenuEntry debug_menu_entry_table[] = {
     },
     /* Rap Women (by YONE) */ {
         /* Scene */ &scene_rap_women,
-        /* Label */ "饶舌女 (米政美版)",
+        /* Label */ "饶舌女　（米政美版）",
         /* Epil. */ TRUE
     },
     /* Bouncy Road */ {
@@ -495,7 +495,7 @@ struct DebugMenuEntry debug_menu_entry_table[] = {
     },
     /* Bouncy Road 2 */ {
         /* Scene */ &scene_bouncy_road_2,
-        /* Label */ "跳杆之路 2",
+        /* Label */ "跳杆之路　２",
         /* Epil. */ TRUE
     },
     /* Ninja Bodyguard */ {
@@ -515,7 +515,7 @@ struct DebugMenuEntry debug_menu_entry_table[] = {
     },
     /* Toss Boys 2 */ {
         /* Scene */ &scene_toss_boys_2,
-        /* Label */ "传球少年 2",
+        /* Label */ "传球少年　２",
         /* Epil. */ TRUE
     },
     /* Fireworks */ {
@@ -535,132 +535,132 @@ struct DebugMenuEntry debug_menu_entry_table[] = {
     },
     /* Remix 1 */ {
         /* Scene */ &scene_remix_1,
-        /* Label */ "Remix 1",
+        /* Label */ "Ｒｅｍｉｘ　１",
         /* Epil. */ TRUE
     },
     /* Remix 2 */ {
         /* Scene */ &scene_remix_2,
-        /* Label */ "Remix 2",
+        /* Label */ "Ｒｅｍｉｘ　２",
         /* Epil. */ TRUE
     },
     /* Remix 3 */ {
         /* Scene */ &scene_remix_3,
-        /* Label */ "Remix 3",
+        /* Label */ "Ｒｅｍｉｘ　３",
         /* Epil. */ TRUE
     },
     /* Remix 4 */ {
         /* Scene */ &scene_remix_4,
-        /* Label */ "Remix 4",
+        /* Label */ "Ｒｅｍｉｘ　４",
         /* Epil. */ TRUE
     },
     /* Remix 5 */ {
         /* Scene */ &scene_remix_5,
-        /* Label */ "Remix 5",
+        /* Label */ "Ｒｅｍｉｘ　５",
         /* Epil. */ TRUE
     },
     /* Remix 6 */ {
         /* Scene */ &scene_remix_6,
-        /* Label */ "Remix 6",
+        /* Label */ "Ｒｅｍｉｘ　６",
         /* Epil. */ TRUE
     },
     /* Remix 7 */ {
         /* Scene */ &scene_remix_7,
-        /* Label */ "Remix 7",
+        /* Label */ "Ｒｅｍｉｘ　７",
         /* Epil. */ TRUE
     },
     /* Remix 8 */ {
         /* Scene */ &scene_remix_8,
-        /* Label */ "Remix 8",
+        /* Label */ "Ｒｅｍｉｘ　８",
         /* Epil. */ TRUE
     },
     /* Remix 1 (Extra) */ {
         /* Scene */ &scene_remix_1_extra,
-        /* Label */ "Remix 1 (额外) WIP",
+        /* Label */ "Ｒｅｍｉｘ　１　（额外）　ＷＩＰ",
         /* Epil. */ TRUE
     },
     /* Drum Intro (Unused 1) */ {
         /* Scene */ &scene_drum_intro_unused,
-        /* Label */ "击鼓课程 (未使用)",
+        /* Label */ "击鼓课程　（未使用）",
         /* Epil. */ TRUE
     },
     /* Drum Intro (Unused 2) */ {
         /* Scene */ &scene_drum_intro_unused_2,
-        /* Label */ "击鼓课程 (未使用 2)",
+        /* Label */ "击鼓课程　（未使用　２）",
         /* Epil. */ TRUE
     },
     /* Drum Intro (Unused 3) */ {
         /* Scene */ &scene_drum_intro_unused_3,
-        /* Label */ "击鼓课程 (未使用 3)",
+        /* Label */ "击鼓课程　（未使用　３）",
         /* Epil. */ TRUE
     },
     /* Tanuki and Monkey */ {
         /* Scene */ &scene_tanuki_and_monkey,
-        /* Label */ "狸猫与猴子 (未使用)",
+        /* Label */ "狸猫与猴子　（未使用）",
         /* Epil. */ TRUE
     },
     /* Metronome */ {
         /* Scene */ &scene_metronome,
-        /* Label */ "节拍器 (未使用)",
+        /* Label */ "节拍器　（未使用）",
         /* Epil. */ TRUE
     },
     /* Drum Girls LIVE */ {
         /* Scene */ &scene_drum_girls_live_unused,
-        /* Label */ "Drum Girls (未使用)",
+        /* Label */ "Ｄｒｕｍ　Ｇｉｒｌｓ　（未使用）",
         /* Epil. */ TRUE
     },
     /* Horse Machine (Unused) */ {
         /* Scene */ &scene_mechanical_horse_unused,
-        /* Label */ "骑马机 (未使用)",
+        /* Label */ "骑马机　（未使用）",
         /* Epil. */ TRUE
     },
     /* Marching Orders (Unused) */ {
         /* Scene */ &scene_marching_orders_unused,
-        /* Label */ "行军 (未使用)",
+        /* Label */ "行军　（未使用）",
         /* Epil. */ TRUE
     },
     /* Spaceball (Unused) */ {
         /* Scene */ &scene_spaceball_unused,
-        /* Label */ "空中击球手 (未使用)",
+        /* Label */ "空中击球手　（未使用）",
         /* Epil. */ TRUE
     },
     /* Spaceball (Unused 2) */ {
         /* Scene */ &scene_spaceball_unused_2,
-        /* Label */ "空中击球手 (未使用 2)",
+        /* Label */ "空中击球手　（未使用　２）",
         /* Epil. */ TRUE
     },
     /* Snappy Trio (Unused) */ {
         /* Scene */ &scene_snappy_trio_unused,
-        /* Label */ "帅气帅气三人组 (未使用)",
+        /* Label */ "帅气帅气三人组　（未使用）",
         /* Epil. */ TRUE
     },
     /* Rap Women (by KAZU) */ {
         /* Scene */ &scene_rap_women_unused,
-        /* Label */ "饶舌女 (大泽和义版)",
+        /* Label */ "饶舌女　（大泽和义版）",
         /* Epil. */ TRUE
     },
     /* Bouncy Road (Unused) */ {
         /* Scene */ &scene_bouncy_road_unused,
-        /* Label */ "跳杆之路 (未使用)",
+        /* Label */ "跳杆之路　（未使用）",
         /* Epil. */ TRUE
     },
     /* Bouncy Road (Unused 2) */ {
         /* Scene */ &scene_bouncy_road_unused_2,
-        /* Label */ "跳杆之路 (未使用 2)",
+        /* Label */ "跳杆之路　（未使用　２）",
         /* Epil. */ TRUE
     },
     /* Tap Trial (Unused) */ {
         /* Scene */ &scene_tap_trial_unused,
-        /* Label */ "踢踏舞 (未使用)",
+        /* Label */ "踢踏舞　（未使用）",
         /* Epil. */ TRUE
     },
     /* Dance Lesson 1 */ {
         /* Scene */ &scene_remix_1_unused,
-        /* Label */ "舞蹈课 1 (未使用)",
+        /* Label */ "舞蹈课　１　（未使用）",
         /* Epil. */ TRUE
     },
     /* RIQ Data Check */ {
         /* Scene */ &scene_data_check,
-        /* Label */ "R-IQ 数据查看",
+        /* Label */ "Ｒ－ＩＱ　数据查看",
         /* Epil. */ FALSE
     },
     /* Asset Test */ {
@@ -690,7 +690,7 @@ struct DebugMenuEntry debug_menu_entry_table[] = {
     },
     /* R-IQ Save Editor */ {
         /* Scene */ &scene_save_editor,
-        /* Label */ "R-IQ 存档编辑器",
+        /* Label */ "Ｒ－ＩＱ　存档编辑器",
         /* Epil. */ FALSE
     },
     /* Sequence Player */ {
