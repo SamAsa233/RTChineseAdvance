@@ -570,7 +570,8 @@ struct LevelData level_data_table[] = {
         /* Level Name    */ "小蹦与小床",
         /* Level Desc.   */ "小狐狸小蹦，\n"
                             "再加上小床的\n"
-                            "杂技秀就要开始啦！",
+                            "杂技秀就要\n"
+                            "开始啦！",
         /* Level Icon    */ 32,
         /* Level Type    */ LEVEL_TYPE_GAME,
         /* Epilogue GFX  */ epilogue_tram_pauline_gfx_tables,
@@ -633,8 +634,8 @@ struct LevelData level_data_table[] = {
         /* Level Name    */ "饶舌男",
         /* Level Desc.   */ "一对超酷的搭档\n"
                             "登场啦！\n"
-                            "火热的\n"
-                            "让人兴奋到不行！",
+                            "火热的让人\n"
+                            "兴奋到不行！",
         /* Level Icon    */ 42,
         /* Level Type    */ LEVEL_TYPE_GAME,
         /* Epilogue GFX  */ epilogue_rap_men_gfx_tables,
@@ -686,8 +687,7 @@ struct LevelData level_data_table[] = {
         /* Level Name    */ "The☆盂兰盆舞",
         /* Level Desc.   */ "跟着盂兰盆舞的\n"
                             "歌声，\n"
-                            "“啪”地\n"
-                            "拍手吧。",
+                            "“啪”地拍手吧。",
         /* Level Icon    */ 35,
         /* Level Type    */ LEVEL_TYPE_GAME,
         /* Epilogue GFX  */ epilogue_bon_odori_gfx_tables,
@@ -875,7 +875,8 @@ struct LevelData level_data_table[] = {
         /* Entry Scene   */ &scene_toys_menu,
         /* Level Name    */ "节奏玩具",
         /* Level Desc.   */ "收集奖牌，\n"
-                            "去玩玩那些会发声的玩具吧！\n"
+                            "去玩玩那些\n"
+                            "会发声的玩具吧！\n"
                             "有好几个哦。",
         /* Level Icon    */ 46,
         /* Level Type    */ LEVEL_TYPE_BONUS,

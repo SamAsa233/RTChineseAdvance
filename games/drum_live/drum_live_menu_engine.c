@@ -47,7 +47,7 @@ const char *drum_live_menu_poster_desc[] = {
     "\x03\x30" "\x01\x73" "\x05\x31" "\x01\x35" "♪ 啪叽啪叽三人组\n"
     "\x03\x30" "\x01\x73" "\x05\x31" "\x01\x35" "♪ 踢踏舞\n"
     // TODO 未校对：WISH 条目仅有阶段 2 译文，暂留英文。
-    "\x03\x30" "\x01\x73" "\x05\x31" "\x01\x35" "♪ WISH - Can't Wait for You\n"
+    "\x03\x30" "\x01\x73" "\x05\x31" "\x01\x35" "♪ WISH 我多想再为你等待\n"
     "\n",
 
     /* DRUM BAND  */
