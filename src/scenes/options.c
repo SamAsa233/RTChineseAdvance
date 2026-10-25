@@ -73,19 +73,19 @@ static void options_scene_refresh_classic_visuals(void) {
 static const char *options_scene_bitmap_get_value(s32 entry) {
     switch (entry) {
         case OPTIONS_BITMAP_NON_JP_SFX:
-            return CHECK_ADVANCE_FLAG(D_030046a8->data.advanceFlags, ADVANCE_FLAG_NON_JP_SFX) ? "English" : "Japanese";
+            return CHECK_ADVANCE_FLAG(D_030046a8->data.advanceFlags, ADVANCE_FLAG_NON_JP_SFX) ? "英文" : "日语";
 
         case OPTIONS_BITMAP_NON_JP_MUSIC:
-            return CHECK_ADVANCE_FLAG(D_030046a8->data.advanceFlags, ADVANCE_FLAG_NON_JP_MUSIC) ? "English" : "Japanese";
+            return CHECK_ADVANCE_FLAG(D_030046a8->data.advanceFlags, ADVANCE_FLAG_NON_JP_MUSIC) ? "英文翻唱" : "日语原唱";
 #ifdef RUMBLE
         case OPTIONS_BITMAP_RUMBLE:
-            return CHECK_ADVANCE_FLAG(D_030046a8->data.advanceFlags, ADVANCE_FLAG_DISABLE_RUMBLE) ? "Off" : "On";
+            return CHECK_ADVANCE_FLAG(D_030046a8->data.advanceFlags, ADVANCE_FLAG_DISABLE_RUMBLE) ? "关" : "开";
 #endif
         case OPTIONS_BITMAP_SKIP_DISCLAIMER:
-            return CHECK_ADVANCE_FLAG(D_030046a8->data.advanceFlags, ADVANCE_FLAG_SKIP_DISCLAIMER) ? "Skip" : "Show";
+            return CHECK_ADVANCE_FLAG(D_030046a8->data.advanceFlags, ADVANCE_FLAG_SKIP_DISCLAIMER) ? "跳过" : "展示";
 
         case OPTIONS_BITMAP_ALT_GAME_SELECT_MUSIC:
-            return CHECK_ADVANCE_FLAG(D_030046a8->data.advanceFlags, ADVANCE_FLAG_USE_ALT_GAME_SELECT_MUSIC) ? "Swapped" : "Normal";
+            return CHECK_ADVANCE_FLAG(D_030046a8->data.advanceFlags, ADVANCE_FLAG_USE_ALT_GAME_SELECT_MUSIC) ? "启用切换" : "禁用切换";
     }
 
     return "SHAFFY FUCKED UP";
