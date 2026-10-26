@@ -1,0 +1,18 @@
+{
+  "base": "684e5744",
+  "rom_sha256": "ccbd9e4fb3c266c40efe422263750f9fe61008c75468160996cab9b124cbc4fa",
+  "fonts": {
+    "large": {
+      "glyphs": 1312,
+      "sha256": "4ef93162603665dbd24e18f570adff8a992a7063135a4f63935a22c8fbe33b48",
+      "rom_font_bytes_match": true,
+      "rom_advance_bytes_match": true
+    },
+    "small": {
+      "glyphs": 1312,
+      "sha256": "83b74015ace5600d276021ea8984f7398e43036083d62ff61ab7851637c3395e",
+      "rom_font_bytes_match": true,
+      "rom_advance_bytes_match": true
+    }
+  }
+}

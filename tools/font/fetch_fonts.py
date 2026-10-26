@@ -92,7 +92,7 @@ def ensure_unifont_licenses(root: Path) -> None:
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--dir", type=Path, default=ROOT)
-    parser.add_argument("--large-font", type=Path, help="导入用户提供的方正像素14.TTF 到本地字源目录")
+    parser.add_argument("--large-font", type=Path, help="导入用户提供的大号字体 TTF 到本地字源目录")
     args = parser.parse_args()
     root = args.dir
     root.mkdir(parents=True, exist_ok=True)
@@ -124,7 +124,7 @@ def main() -> None:
         info = json.loads((Path(__file__).parent / 'font_sources.json').read_text(encoding='utf-8'))['large']
         data = args.large_font.read_bytes()
         if hashlib.sha256(data).hexdigest() != info['sha256']:
-            raise ValueError('方正字体散列不符，请使用用户提供的方正像素14.TTF')
+            raise ValueError(f"字体散列不符，请使用 {info['original_filename']}")
         atomic_bytes(root / info['file'], data)
         print(info['file'], len(data), info['sha256'])
 

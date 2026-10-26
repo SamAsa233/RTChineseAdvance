@@ -1,0 +1,24 @@
+{
+  "odori": {
+    "scenes": [
+      "scene_bon_odori_skipped_practice",
+      "scene_debug_menu"
+    ],
+    "sample_step_frames": 30,
+    "observations": 484,
+    "maximum_width": 206,
+    "outside_screen": 0,
+    "rom_sha256": "32687e1a0cd903cb0173c04a8ae910ce0134162f476219581b5874e22cc70fa9"
+  },
+  "dance": {
+    "scenes": [
+      "scene_bon_dance",
+      "scene_debug_menu"
+    ],
+    "sample_step_frames": 30,
+    "observations": 504,
+    "maximum_width": 206,
+    "outside_screen": 0,
+    "rom_sha256": "671c337605c89a38b3110afa6168aa8b0d6ed4debe0a871d07b2ba3dbfe54588"
+  }
+}
