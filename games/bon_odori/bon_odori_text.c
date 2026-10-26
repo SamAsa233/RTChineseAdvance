@@ -30,9 +30,9 @@ const char text_bon_odori_ha[] = ".0:0哈～";
 
 const char text_bon_odori_hanabi_agare_ba[] = ".0:0当烟花飞上天啊～";
 
-const char text_bon_odori_don_don_pan_pan[] = ".1:0咚－咚－.2:0啪－啪－";
+const char text_bon_odori_don_don_pan_pan[] = ".1:0咚－－咚－－.2:0乓－－乓－－";
 
-const char text_bon_odori_dondo_pan_pan[] = ".1:0咚咚 .2:0啪－啪";
+const char text_bon_odori_dondo_pan_pan[] = ".1:0咚－咚 .2:0乓－－乓－";
 
 const char text_bon_odori_haa[] = ".0:0哈～啊～";
 
@@ -44,19 +44,19 @@ const char text_bon_odori_kyuryo_agaru[] = ".0:0大家有更多工资～";
 
 const char text_bon_odori_matsuri_da_wasshoi[] = ".0:0整个日本 哇－咻－！";
 
-const char text_bon_odori_dondo_panpa_dondo_panpa[] = ".1:0咚咚 .2:0啪啪 .1:0咚咚 .2:0啪啪";
+const char text_bon_odori_dondo_panpa_dondo_panpa[] = ".1:0咚－咚 .2:0乓－乓 .1:0咚－咚 .2:0乓－乓";
 
 const char text_bon_odori_nippon_chu_ga_wasshoi[] = ".0:0在节日中 哇－咻－！";
 
-const char text_bon_odori_don_don_pan[] = ".1:0咚－咚－.2:0啪";
+const char text_bon_odori_don_don_pan[] = ".1:0咚－－咚－－.2:0乓－";
 
 const char text_bon_odori_sore_hikkuri_kaette[] = ".0:0来吧 让我们转起圈来";
 
 const char text_bon_odori_ha_bon_odori[] = ".0:0哈～ 跳这盂兰盆舞";
 
-const char text_bon_odori_dondo_panpa[] = ".1:0咚咚 .2:0啪啪";
+const char text_bon_odori_dondo_panpa[] = ".1:0咚－咚 .2:0乓－乓";
 
-const char text_bon_odori_don_pan_pan[] = ".1:0咚－.2:0啪－啪";
+const char text_bon_odori_don_pan_pan[] = ".1:0咚－－.2:0乓－－乓－";
 
 const char text_bon_odori_ame_ga_agare_ba[] = ".0:0当天上的雨停下～ ";
 
@@ -68,9 +68,9 @@ const char text_bon_odori_korezo[] = ".0:0这便是";
 
 const char text_bon_odori_meido_in_japan[] = ".0:0Made in Ja.2pan";
 
-const char text_bon_odori_pan_pan[] = ".2:0啪 啪";
+const char text_bon_odori_pan_pan[] = ".2:0乓－乓－";
 
-const char text_bon_odori_don_don_pan_pan_2[] = ".1:0咚－咚－.2:0啪－啪";
+const char text_bon_odori_don_don_pan_pan_2[] = ".1:0咚－－咚－－.2:0乓－－乓－";
 
 const char D_08067a84[] = ".6:1来跳盆舞吧！";
 

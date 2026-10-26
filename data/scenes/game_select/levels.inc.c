@@ -687,7 +687,7 @@ struct LevelData level_data_table[] = {
         /* Level Name    */ "The☆盂兰盆舞",
         /* Level Desc.   */ "跟着盂兰盆舞的\n"
                             "歌声，\n"
-                            "“啪”地拍手吧。",
+                            "“乓”地拍手吧。",
         /* Level Icon    */ 35,
         /* Level Type    */ LEVEL_TYPE_GAME,
         /* Epilogue GFX  */ epilogue_bon_odori_gfx_tables,

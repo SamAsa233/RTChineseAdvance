@@ -17,6 +17,7 @@ const char D_0805ec78[] = "";
 const char D_0805ec7c[] = "恭喜全部答对啦〜！";
 
 const char D_0805eca4[] =
+    "\n"
     "可惜啦！！";
 
 const char D_0805ecb0[] =
@@ -26,15 +27,19 @@ const char D_0805ecb0[] =
 const char D_0805ecd4[] = "主持人的一句话";
 
 const char D_0805ece8[] =
+    "\n"
     "这是第一题。";
 
 const char D_0805ecf8[] =
+    "\n"
     "那么，第 2 题。";
 
 const char D_0805ed08[] =
+    "\n"
     "第 3 题。";
 
 const char D_0805ed14[] =
+    "\n"
     "来吧，第 4 题！";
 
 const char D_0805ed28[] =
@@ -46,18 +51,23 @@ const char D_0805ed44[] =
     "第 5 题啦！！";
 
 const char D_0805ed60[] =
+    "\n"
     "最后一题啦！！";
 
 const char D_0805ed74[] =
+    "\n"
     "请开始。";
 
 const char D_0805ed7c[] =
+    "\n"
     "到此为止！！";
 
 const char D_0805ed8c[] =
+    "\n"    
     "那么，正确答案是？";
 
 const char D_0805ed9c[] =
+    "\n"
     "正确！！";
 
 const char D_0805eda8[] =
@@ -74,6 +84,7 @@ const char D_0805edf4[] =
     "现在是《问答是什么呢！？》的时间。";
 
 const char D_0805ee20[] =
+    "\n"
     "规则很简单。";
 
 const char D_0805ee34[] = 

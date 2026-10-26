@@ -30,39 +30,39 @@ const char text_bon_dance_ha[] = ".0:0哈～";
 
 const char text_bon_dance_hanabi_agare_ba[] = ".0:0当烟花飞上天啊～";
 
-const char text_bon_dance_don_don_pan_pan[] = ".1:0咚－咚－.2:0啪－啪－";
+const char text_bon_dance_don_don_pan_pan[] = ".1:0咚－－咚－－.2:0乓－－乓－";
 
-const char text_bon_dance_dondo_pan_pan[] = ".1:0咚咚 .2:0啪－啪";
+const char text_bon_dance_dondo_pan_pan[] = ".1:0咚－咚 .2:0乓－－乓－";
 
 const char text_bon_dance_haa[] = ".0:0哈～啊～";
 
 const char text_bon_dance_kansei_agaru[] = ".0:0大家都欢声笑语～";
 
-const char text_bon_dance_pan_pan_dondo_don[] = ".2:0啪－啪－.1:0咚咚 咚－";
+const char text_bon_dance_pan_pan_dondo_don[] = ".2:0乓－－乓－－.1:0咚－咚 咚－－";
 
-const char text_bon_dance_panpa_don_pan[] = ".2:0啪啪 .1:0咚－.2:0啪";
+const char text_bon_dance_panpa_don_pan[] = ".2:0乓－乓 .1:0咚－－.2:0乓－";
 
 const char text_bon_dance_ninki_agare_ba[] = ".0:0人气上升的话～";
 
-const char text_bon_dance_kyuryo_agaru[] = ".0:0大家有更多工资～";
+const char text_bon_dance_kyuryo_agaru[] = ".0:0大家 有更多工资～";
 
 const char text_bon_dance_matsuri_da_wasshoi[] = ".0:0整个日本 哇－咻－！";
 
-const char text_bon_dance_dondo_panpa_dondo_panpa[] = ".1:0咚咚 .2:0啪啪 .1:0咚咚 .2:0啪啪";
+const char text_bon_dance_dondo_panpa_dondo_panpa[] = ".1:0咚－咚 .2:0乓－乓 .1:0咚－咚 .2:0乓－乓";
 
 const char text_bon_dance_nippon_chu_ga_wasshoi[] = ".0:0在节日中 哇－咻－！";
 
-const char text_bon_dance_dondo_panpa_pan[] = ".1:0咚咚 .2:0啪啪 啪";
+const char text_bon_dance_dondo_panpa_pan[] = ".1:0咚－咚 .2:0乓－乓 乓－";
 
 const char text_bon_dance_sore_hikkuri_kaette[] = ".0:0来吧 让我们转起圈来";
 
 const char text_bon_dance_ha_bon_odori[] = ".0:0哈～ 跳这盂兰盆舞";
 
-const char text_bon_dance_dondo_panpa[] = ".1:0咚咚 .2:0啪啪";
+const char text_bon_dance_dondo_panpa[] = ".1:0咚－咚 .2:0乓－乓";
 
-const char text_bon_dance_panpa_dondo[] = ".2:0啪啪 .1:0咚咚";
+const char text_bon_dance_panpa_dondo[] = ".2:0乓－乓 .1:0咚－咚";
 
-const char text_bon_dance_pan_panpa_pa[] = ".2:0啪－啪啪 啪";
+const char text_bon_dance_pan_panpa_pa[] = ".2:0乓－－乓－乓 乓－";
 
 const char text_bon_dance_ame_ga_agare_ba[] = ".0:0当天上的雨停下～ ";
 
@@ -74,4 +74,4 @@ const char text_bon_dance_korezo[] = ".0:0这就是";
 
 const char text_bon_dance_meido_in_japan[] = ".0:0Made in Ja.2pan";
 
-const char text_bon_dance_pan[] = ".2:0啪";
+const char text_bon_dance_pan[] = ".2:0乓－";
