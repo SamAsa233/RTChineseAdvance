@@ -181,12 +181,12 @@ sb_stop
 
 text text_remix_6_honto_desu_ka
 @ TODO 未校对：text_remix_6_honto_desu_ka 译文包未到 stage 5，暂留原文。
-    .asciz ".b:1Maybe so, .b:0huh?.8:1"
+    .asciz ".b:1真的.b:0吗？.8:1"
 endtext
 
 text text_remix_6_kimi_tte_saikou
 @ TODO 未校对：text_remix_6_kimi_tte_saikou 译文包未到 stage 5，暂留原文。
-    .asciz ".a:1You are .a:0so AWESOME!.8:0"
+    .asciz ".a:1你.a:0最棒啦——！！.8:0"
 endtext
 
 
