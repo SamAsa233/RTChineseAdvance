@@ -1,0 +1,43 @@
+{
+  "base": "1d53c23f",
+  "glyph_count_per_size": 1312,
+  "large_glyphs_changed": 1311,
+  "large_bbox_distribution": {
+    "10x14": 1,
+    "12x14": 1,
+    "12x16": 2,
+    "13x16": 2,
+    "14x14": 8,
+    "14x16": 31,
+    "14x4": 1,
+    "15x16": 464,
+    "16x12": 1,
+    "16x14": 3,
+    "16x15": 94,
+    "16x16": 694,
+    "16x4": 1,
+    "16x6": 1,
+    "4x14": 1,
+    "6x11": 1,
+    "6x12": 1,
+    "6x14": 1,
+    "6x16": 2,
+    "6x5": 1,
+    "6x6": 1
+  },
+  "large_han_and_box_longest_edge_16px": true,
+  "small_glyph_bytes_unchanged": true,
+  "small_advances_unchanged": true,
+  "definitions_outside_generated_block_unchanged": true,
+  "large_sha256": "b4d405cebd38b16c9ad23052a33c7b4706ad342617654ab16cad3c4bf739db68",
+  "small_sha256": "83b74015ace5600d276021ea8984f7398e43036083d62ff61ab7851637c3395e",
+  "rebuild_identical": true,
+  "rebuild_checked_files": {
+    "data\\font_definitions.c": "d6add33ad8e7cfe5a8086aa1f2d8aaa3ba71a9bceb2445591fc371f3e9ac83e9",
+    "tools\\font\\outline_chars.txt": "8dd1c845cc912fec557c655682666193ec49ff67d4b8d1f8efa7aa6d49a93578",
+    "graphics\\font\\outline\\large\\bitmap_font_warioware_outline_large_cjk_used.png": "a4ae8ce63471ab2ca02dd8968c22943fe866529c677259b2002c58e4cc3c071b",
+    "graphics\\font\\outline\\large\\bitmap_font_warioware_outline_large_cjk_used.raw.4bpp": "b4d405cebd38b16c9ad23052a33c7b4706ad342617654ab16cad3c4bf739db68",
+    "graphics\\font\\outline\\small\\bitmap_font_warioware_outline_small_cjk_used.png": "833aee3ddcd602cd8785bc052b82f03a3e615411739d627ef538f2096b3f20e1",
+    "graphics\\font\\outline\\small\\bitmap_font_warioware_outline_small_cjk_used.raw.4bpp": "83b74015ace5600d276021ea8984f7398e43036083d62ff61ab7851637c3395e"
+  }
+}

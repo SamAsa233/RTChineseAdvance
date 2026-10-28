@@ -1,7 +1,7 @@
 """Build sparse 16x16 outlined OBJ glyphs for every supplied translation.
 
 新要求3：按当前源码重算字符；小号粗像素12，大号华康方圆W7按16px渲染。
-用户选择保留16×16字格，大号字身先等比例适配再加粗、描边；字底阴影按示例分层。
+大号不再额外加粗，字身等比例尽量用满14×14后描边；字底阴影按示例分层。
 这样既能让标题显示中文，也不用把两万多个 CJK 汉字全部放进 ROM。
 
 Example: python tools/font/build_outline_font.py --extra 节奏天国
@@ -105,26 +105,27 @@ class LargeFont:
                       for x in range(mask.size[0])] for y in range(mask.size[1])])
 
 
-def fit_body(source, max_width=13, max_height=14):
-    """用户已确认：维持16×16字格时，可先等比例缩小大号字身，再留一列加粗。"""
+def fit_body(source, max_width=14, max_height=14, enlarge=True):
+    """新要求：取消加粗预留列，等比例用满字身区域，四周各留1px完整描边。"""
     source = trim(source)
     width, height = len(source[0]), len(source)
-    scale = min(1, max_width / width, max_height / height)
+    scale = min(max_width / width, max_height / height)
+    # 窄标点保持16px字源的自然大小，不能把逗号、句号等小字身放成大块。
+    if not enlarge:
+        scale = min(1, scale)
     if scale == 1:
         return source
     target = (max(1, round(width * scale)), max(1, round(height * scale)))
     # 用整数中心坐标做最近邻采样，避免浮点边界在不同图像库版本里偏移一像素。
-    return trim([[source[min(height - 1, (2 * y + 1) * height // (2 * target[1]))]
-                        [min(width - 1, (2 * x + 1) * width // (2 * target[0]))]
-                  for x in range(target[0])] for y in range(target[1])])
+    fitted = trim([[source[min(height - 1, (2 * y + 1) * height // (2 * target[1]))]
+                          [min(width - 1, (2 * x + 1) * width // (2 * target[0]))]
+                    for x in range(target[0])] for y in range(target[1])])
+    # 缩小点采样偶尔会丢失孤立的最外像素；去白边后再等比例放大，确保不白留一圈。
+    # 第二次只放大，不会再丢边缘；这是整字缩放，不是向笔画旁复制像素加粗。
+    if enlarge and len(fitted[0]) < max_width and len(fitted) < max_height:
+        return fit_body(fitted, max_width, max_height)
+    return fitted
 
-
-
-def bold_horizontal(source):
-    """适配后的大号字身向右扩一个像素加粗，完整笔画与描边都留在字格内。"""
-    width = len(source[0])
-    return [[int((x < width and row[x]) or (x > 0 and row[x - 1]))
-             for x in range(width + 1)] for row in source]
 
 
 def glyph_body(cp, size, fusion, large_font, unifont):
@@ -133,14 +134,15 @@ def glyph_body(cp, size, fusion, large_font, unifont):
         return trim(fusion[cp][0]), 'fusion bold 12px'
     if size == 'large' and cp in large_font.codepoints:
         source = large_font.glyph(cp)
-        fitted = fit_body(source)
-        origin = 'huakang 16px fit bold' if fitted != source else 'huakang 16px bold'
-        return bold_horizontal(fitted), origin
+        fitted = fit_body(source, enlarge=not 0xFF01 <= cp <= 0xFF5E)
+        # 新要求：直接描边适配后的原笔画，不再向右复制笔画来人为加粗。
+        origin = 'huakang 16px fit regular' if fitted != source else 'huakang 16px regular'
+        return fitted, origin
     if cp in unifont:
-        # 仅主字源确实缺少的字符回退；大号仍留出一列做同样的自动加粗。
-        target = 12 if size == 'small' else 13
-        rows = trim(shrink_nearest(unifont[cp], target, target, 0))
-        return (bold_horizontal(rows) if size == 'large' else rows), 'unifont fallback'
+        # 回退字也取消额外加粗，并使用同一14×14上限，避免少数字符还残留旧规则。
+        rows = (fit_body(unifont[cp], enlarge=not 0xFF01 <= cp <= 0xFF5E)
+                if size == 'large' else trim(shrink_nearest(unifont[cp], 12, 12, 0)))
+        return rows, 'unifont fallback'
     raise ValueError(f'{size} 缺字 U+{cp:04X} {chr(cp)}')
 
 
@@ -226,7 +228,7 @@ def update_definitions(path, codepoints, widths):
         c_array('bitmap_font_warioware_outline_large_cjk_widths', widths['large'], 'u8', 24),
         c_array('bitmap_font_warioware_outline_small_cjk_widths', widths['small'], 'u8', 24),
     ))
-    block = BEGIN + '\n/* 新要求3：字符由当前源码重算；大号华康W7(16px适配字格)，小号粗像素12，阴影按示例集中在字底。 */\n' + generated + '\n' + END
+    block = BEGIN + '\n/* 新要求：大号华康W7取消额外加粗，字身等比例用满14×14后描边；小号及示例字底阴影保持原规则。 */\n' + generated + '\n' + END
     if BEGIN in text:
         start = text.index(BEGIN)
         end = text.index(END, start) + len(END)
@@ -302,7 +304,7 @@ def main():
     usage = {f'U+{cp:04X}': {'char': chr(cp), 'files': files} for cp, files in source_usage().items()}
     atomic_write(ROOT / 'build/font_report/outline.usage.json',
                  (json.dumps(usage, ensure_ascii=False, indent=2) + '\n').encode('utf-8'))
-    atomic_write(ROOT / 'build/font_report/outline.report.txt', ('Fusion Bold Pixel 12px v2026.10.16; user Huakang FangYuan W7 16px fit + synthetic bold\n' + '\n'.join(reports) + '\n').encode('utf-8'))
+    atomic_write(ROOT / 'build/font_report/outline.report.txt', ('Fusion Bold Pixel 12px v2026.10.16; user Huakang FangYuan W7 16px fit 14x14, no synthetic bold\n' + '\n'.join(reports) + '\n').encode('utf-8'))
     atomic_write(ROOT / 'build/font_report/outline.sources.json',
                  (json.dumps(glyph_origins, ensure_ascii=False, indent=2) + '\n').encode('utf-8'))
     print('\n'.join(reports))

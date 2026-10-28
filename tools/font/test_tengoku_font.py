@@ -4,6 +4,7 @@ Example: python tools/font/test_tengoku_font.py
 """
 
 from pathlib import Path
+from fractions import Fraction
 from build_outline_font import THIRD, ROOT, LargeFont, collect_chars, source_usage, SOURCE_TOKEN, ASM_SOURCE_TOKEN, shadow_bands, trim, read_bdf, read_unifont
 import re
 from dump_4bpp import decode_glyph as decode_4bpp_glyph, encode_glyph as encode_4bpp_glyph
@@ -35,6 +36,7 @@ def main() -> None:
     codepoints = collect_chars('')
     fusion = read_bdf(THIRD / 'fusion-bold-12.bdf')
     large_font = LargeFont(THIRD / 'huakang-fangyuan-w7.ttf')
+    unifont = read_unifont(THIRD / 'unifont.hex', codepoints)
     assert codepoints == sorted(set(source_usage()) | {0x25A1}), '默认统计混入旧字表'
     assert all(ord(ch) in codepoints for ch in '乓庞捣英'), '拉取后的新增字符未纳入'
     fixture = '/* 忽略 */ const char *a="保留//内容"; // 忽略\nconst char *b="有效";'
@@ -64,26 +66,34 @@ def main() -> None:
                 assert glyph[y][x] == expected, '阴影不符合示例字底分层'
             assert widths[i] - (size == 'small') == max(x for x, _ in occupied) + 1, '字距会压住描边'
             assert encode_4bpp_glyph(glyph) == raw[i * 128:(i + 1) * 128]
-            # 有字源的字符逐点比对：小号不能缩成旧 9px；大号在允许的字身范围内等比例适配，再恰好向右加粗一像素。
+            # 新要求：逐点检查大号原笔画和全部回退字，防止重新引入向右加粗或旧13列上限。
             source = trim(fusion[cp][0]) if size == 'small' and cp in fusion else (
-                large_font.glyph(cp) if size == 'large' and cp in large_font.codepoints else None)
+                (large_font.glyph(cp) if cp in large_font.codepoints else trim(unifont[cp]))
+                if size == 'large' else None)
             if source is not None:
                 if size == 'large':
-                    # 独立按最近邻中心坐标计算期望结果，避免把缩放或裁切错误一起带进测试。
-                    h, w = len(source), len(source[0])
-                    scale = min(1, 13 / w, 14 / h)
-                    tw, th = max(1, round(w * scale)), max(1, round(h * scale))
-                    source = trim([[source[min(h - 1, (2 * y + 1) * h // (2 * th))][min(w - 1, (2 * x + 1) * w // (2 * tw))]
-                                    for x in range(tw)] for y in range(th)])
+                    # 用精确分数定位像素中心，独立核对确定的采样规范，避开图像库浮点舍入差异。
+                    for _ in range(2):
+                        h, w = len(source), len(source[0])
+                        scale = min(14 / w, 14 / h)
+                        punctuation = 0xFF01 <= cp <= 0xFF5E
+                        if punctuation:
+                            scale = min(1, scale)
+                        tw, th = max(1, round(w * scale)), max(1, round(h * scale))
+                        source = trim([[source[int(Fraction(2 * y + 1, 2 * th) * h)]
+                                              [int(Fraction(2 * x + 1, 2 * tw) * w)]
+                                        for x in range(tw)] for y in range(th)])
+                        if punctuation or max(len(source), len(source[0])) == 14:
+                            break
                 points = {(x, y) for y, row in enumerate(source) for x, bit in enumerate(row) if bit}
-                if size == 'large':
-                    points |= {(x + 1, y) for x, y in list(points)}
                 expected_body = {(x + 1, y + 15 - len(source)) for x, y in points}
-                assert body == expected_body, f'{size} {chr(cp)} 源字形不符或加粗失败'
+                assert body == expected_body, f'{size} {chr(cp)} 源字形不符或仍有额外加粗'
+                if size == 'large' and not 0xFF01 <= cp <= 0xFF5E:
+                    assert max(max(x for x, _ in occupied) + 1, 16 - min(y for _, y in occupied)) == 16, f'{chr(cp)} 未用满字格最长边'
         for cp in (0xFF01, 0xFF5E, 0x8E51):
             assert cp in codepoints, f'缺少回归字符 {cp:04X}'
     assert 0x8E51 in fusion, '蹑应直接取 12px 粗像素字源'
-    print(f"{count} font files round-tripped; fresh source charset, Huakang16 fit, example shading and bottom-left anchoring verified")
+    print(f"{count} font files round-tripped; fresh source charset, Huakang16 regular 14x14 fit, example shading and bottom-left anchoring verified")
 
 
 if __name__ == "__main__":

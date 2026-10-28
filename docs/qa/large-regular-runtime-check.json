@@ -1,0 +1,64 @@
+{
+  "base": "1d53c23f",
+  "debug": {
+    "sha256": "e7fb9ade56848b410e710584680ae8b6d6a9e8c9cf2ad235d0f638f855ea75f6",
+    "fonts": {
+      "large": {
+        "glyphs": 1312,
+        "glyph_bytes_match": true,
+        "advance_bytes_match": true,
+        "glyph_sha256": "b4d405cebd38b16c9ad23052a33c7b4706ad342617654ab16cad3c4bf739db68"
+      },
+      "small": {
+        "glyphs": 1312,
+        "glyph_bytes_match": true,
+        "advance_bytes_match": true,
+        "glyph_sha256": "83b74015ace5600d276021ea8984f7398e43036083d62ff61ab7851637c3395e"
+      }
+    },
+    "codepoint_bytes_match": true
+  },
+  "normal_title": {
+    "sha256": "2b7426c87027a33d12fff3e9f6482756a23acc27034fd7a436652f078476a7b9",
+    "fonts": {
+      "large": {
+        "glyphs": 1312,
+        "glyph_bytes_match": true,
+        "advance_bytes_match": true,
+        "glyph_sha256": "b4d405cebd38b16c9ad23052a33c7b4706ad342617654ab16cad3c4bf739db68"
+      },
+      "small": {
+        "glyphs": 1312,
+        "glyph_bytes_match": true,
+        "advance_bytes_match": true,
+        "glyph_sha256": "83b74015ace5600d276021ea8984f7398e43036083d62ff61ab7851637c3395e"
+      }
+    },
+    "codepoint_bytes_match": true,
+    "boot_scene": "scene_title"
+  },
+  "runtime": {
+    "odori": {
+      "scenes": [
+        "scene_bon_odori_skipped_practice",
+        "scene_debug_menu"
+      ],
+      "sample_step_frames": 30,
+      "observations": 484,
+      "maximum_width": 202,
+      "outside_screen": 0,
+      "rom_sha256": "b59cc0f17a091677aa30b7f1b8074e8f42dd72fe5a4966f21f55ef26aca40e21"
+    },
+    "dance": {
+      "scenes": [
+        "scene_bon_dance",
+        "scene_debug_menu"
+      ],
+      "sample_step_frames": 30,
+      "observations": 504,
+      "maximum_width": 202,
+      "outside_screen": 0,
+      "rom_sha256": "22b74bd5d4ed4de5beac3cb9b8bae565676ed5c90282011c05bd42d4db6e5679"
+    }
+  }
+}

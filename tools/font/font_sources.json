@@ -13,10 +13,11 @@
     "sha256": "ab7b94672ba0e8d1cb4e572a6a3bbe7c4b2d636610af202289d48e42b9ea090c",
     "source": "用户于 2026-10-26 提供；选择保留 16×16 字格，允许缩小字身后描边。",
     "fit_body_max": [
-      13,
+      14,
       14
     ],
-    "synthetic_bold": "字身等比例适配后，向右扩展一个像素。"
+    "synthetic_bold": false,
+    "fit_description": "取消额外加粗。汉字等比例尽量用满14×14，描边后最长边16px，贴左下；全角标点保持自然比例且不放大。"
   },
   "shading": {
     "sample": "supplied/shading_example.png",
