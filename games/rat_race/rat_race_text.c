@@ -20,24 +20,24 @@ const char D_0805d164[] = "真是的！别碍事啦！";
 
 const char D_0805d180[] = "";
 
-const char D_0805d184[] = "等信号一出";
+const char D_0805d184[] = "我一发出信号";
 
-const char D_0805d198[] = "就一直按住"CHAR_A_BUTTON_UTF8;
+const char D_0805d198[] = "就按住"CHAR_A_BUTTON_UTF8"别松手";
 
-const char D_0805d1ac[] = "给我停下！";
+const char D_0805d1ac[] = "停下来！";
 
-const char D_0805d1bc[] = "等下一个信号时";
+const char D_0805d1bc[] = "等我发出下一个信号";
 
-const char D_0805d1d0[] = "把"CHAR_A_BUTTON_UTF8"松开";
+const char D_0805d1d0[] = "就松开"CHAR_A_BUTTON_UTF8;
 
 const char D_0805d1e0[] = "冲出去！";
 
 const char D_0805d1f0[] = "那就上啦！";
 
-const char D_0805d204[] = "接下来可";
+const char D_0805d204[] = "之后就不会";
 
-const char D_0805d214[] = "不会再给信号了";
+const char D_0805d214[] = "再给信号了";
 
-const char D_0805d220[] = "给我打起精神来！";
+const char D_0805d220[] = "可要好好表现！";
 
 const char D_0805d234[] = "伙伴的一句话";
