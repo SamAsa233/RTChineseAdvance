@@ -202,17 +202,17 @@ struct StudioEntry studio_song_table[] = {
         /* Drum Script */ script_studio_fireworks
     },
     /* REMIX7 */ {
-        /* Full Title  */ "Remix７",
+        /* Full Title  */ "Remix7",
         /* Short Title */ NULL,
         /* Drum Script */ script_studio_remix7
     },
     /* REMIX8 */ {
-        /* Full Title  */ "Remix８",
+        /* Full Title  */ "Remix8",
         /* Short Title */ NULL,
         /* Drum Script */ script_studio_remix8
     },
     /* REMIX6 */ {
-        /* Full Title  */ "Remix６",
+        /* Full Title  */ "Remix6",
         /* Short Title */ NULL,
         /* Drum Script */ script_studio_remix6
     },

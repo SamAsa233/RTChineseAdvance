@@ -561,11 +561,11 @@ struct ReadingMaterial reading_material_table[TOTAL_READING_MATERIALS] = {
             "\001C" "\0031" "\001l" "\n"
             "\n"
             "\n"
+            "\n"
             "舞跳得好 ≠ 节奏感好\n"
             "\n"
-            "\001C" "\0030" "\001s" "\n"
             "\n"
-            "\n"
+            "\001C" "\0030" "\001s""\n"
             "解说：舞跳得好的人，并不一定就代表“节奏感很好”。",
         /* STYLE ---------------------------------------------------------- */
             /* GFX */ reading_style_classroom_gfx_table,
@@ -891,7 +891,7 @@ struct ReadingMaterial reading_material_table[TOTAL_READING_MATERIALS] = {
             // reading_haiku_4：前三行是诗句，第四行是释文。
             "\001L" "\0032" "\001s" "等不住空拍\n"
             "\001L" "\0032" "\001l" "\n"
-            "\001C" "\0032" "\001s" "那个女孩总显得\n"
+            "\001C" "\0032" "\001l" "那个女孩总显得\n"
             "\001L" "\0032" "\001l" "\n"
             "\001R" "\0032" "\001l" "差了半拍呢\n"
             "\001L" "\0032" "\001l" "\n"
