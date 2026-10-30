@@ -290,7 +290,9 @@ void start_campaign_notice(s32 id) {
     //
     if (giftType == CAMPAIGN_GIFT_DRUM_KIT || giftType == CAMPAIGN_GIFT_READING_MATERIAL) {
         strcat(string, "即可获赠：\n");
-        strcat(string, get_campaign_gift_title(id, FALSE)); // received as a present!!
+        strcat(string, "「");
+        strcat(string, get_campaign_gift_title(id, FALSE)); 
+        strcat(string, "」");// received as a present!!
     }
     else if(isSong) {
         if(isSpecialSong) {
