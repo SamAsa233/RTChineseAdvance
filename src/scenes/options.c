@@ -73,10 +73,10 @@ static void options_scene_refresh_classic_visuals(void) {
 static const char *options_scene_bitmap_get_value(s32 entry) {
     switch (entry) {
         case OPTIONS_BITMAP_NON_JP_SFX:
-            return CHECK_ADVANCE_FLAG(D_030046a8->data.advanceFlags, ADVANCE_FLAG_NON_JP_SFX) ? "英文" : "日语";
+            return CHECK_ADVANCE_FLAG(D_030046a8->data.advanceFlags, ADVANCE_FLAG_NON_JP_SFX) ? "英语" : "日语";
 
         case OPTIONS_BITMAP_NON_JP_MUSIC:
-            return CHECK_ADVANCE_FLAG(D_030046a8->data.advanceFlags, ADVANCE_FLAG_NON_JP_MUSIC) ? "英文翻唱" : "日语原唱";
+            return CHECK_ADVANCE_FLAG(D_030046a8->data.advanceFlags, ADVANCE_FLAG_NON_JP_MUSIC) ? "英语翻唱" : "日语原唱";
 #ifdef RUMBLE
         case OPTIONS_BITMAP_RUMBLE:
             return CHECK_ADVANCE_FLAG(D_030046a8->data.advanceFlags, ADVANCE_FLAG_DISABLE_RUMBLE) ? "关" : "开";
