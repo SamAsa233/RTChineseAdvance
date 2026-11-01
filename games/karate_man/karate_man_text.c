@@ -20,7 +20,7 @@ const char D_0805ab90[] = "连续拳很有劲道！";
 const char D_0805abb0[] = "最后一下很到位！";
 
 const char D_0805abc4[] =
-    "别忘了跟着音乐动起来哦！";
+    "别忘了跟着音乐\n动起来哦！";
 
 const char D_0805abdc[] = "师父的话";
 
@@ -29,7 +29,7 @@ const char D_0805abec[] =
     "空手道家的游戏！";
 
 const char D_0805ac0c[] = 
-    "这个游戏只要用"CHAR_A_BUTTON_UTF8"\n把“东西”打飞，\n不过出拳时机可得抓得很准。";
+    "这个游戏只要用"CHAR_A_BUTTON_UTF8"\n把“东西”打飞，\n不过出拳时机\n可得抓得很准。";
 
 const char D_0805ac60[] =
     "先试着把飞过来的\n"

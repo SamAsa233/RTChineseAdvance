@@ -21,14 +21,14 @@ const char D_0805eca4[] =
     "可惜啦！！";
 
 const char D_0805ecb0[] =
-    "再来挑战吧。\n"
+    "下次再来挑战吧。\n"
     "再见啦。";
 
 const char D_0805ecd4[] = "主持人的一句话";
 
 const char D_0805ece8[] =
     "\n"
-    "这是第一题。";
+    "这是第 1 题。";
 
 const char D_0805ecf8[] =
     "\n"
@@ -68,12 +68,12 @@ const char D_0805ed8c[] =
 
 const char D_0805ed9c[] =
     "\n"
-    "正确！！";
+    "回答正确！！";
 
 const char D_0805eda8[] =
     "太棒啦！\n"
     "全部答对！！\n"
-    "奖金 100 万分！！";
+    "奖金 100 万元！！";
 
 const char D_0805edd8[] =
     "那么下周再见，\n"

@@ -464,64 +464,55 @@ quiz_show_endless_table D_08069958, D_08a59cf4
 
 text D_08069960
     .ascii "\n"
-    .ascii "Aww, too bad!\n"
-    .ascii "\n"
+    .ascii "可惜啦！！"
 endtext
 
 
 text D_0806996c
-    .ascii "Come back and try\n"
-    .ascii "again next week!\n"
-    .ascii "\n"
+    .ascii "下次再来挑战吧。\n"
+    .ascii "再见啦。"
 endtext
 
 
 text D_08069990
-    .ascii "Good day!\n"
-    .ascii "It's time to\n"
-    .asciz "play the quiz!"
+    .ascii "晚上好。\n"
+    .ascii "现在是《问答是什么呢！？》的时间。"
 endtext
 
 
 text D_080699bc
-    .ascii "Today, we will\n"
-    .ascii "be playing the\n"
-    .asciz "special round!"
+    .ascii "这次，可是\n"
+    .asciz "特别篇哦！"
 endtext
 
 
 text D_080699e0
-    .ascii "So with that...\n"
-    .ascii "let's begin!\n"
-    .ascii "\n"
+    .ascii "那么，\n"
+    .ascii "我们赶快开始吧！"
 endtext
 
 
 text D_08069a04
     .ascii "\n"
-    .ascii "Aaaand stop!\n"
-    .ascii "\n"
+    .ascii "到此为止！！"
 endtext
 
 
 text D_08069a14
-    .ascii "And the correct\n"
-    .ascii "answer is...\n"
     .ascii "\n"
+    .ascii "那么，正确答案是？\n"
 endtext
 
 
 text D_08069a28
     .ascii "\n"
-    .ascii "You are correct!\n"
-    .ascii "\n"
+    .ascii "回答正确！！"
 endtext
 
 
 text D_08069a34
-    .ascii "Let's move on\n"
-    .ascii "to the next\n"
-    .asciz "question."
+    .ascii "\n"
+    .ascii "那么，下一题。"
 endtext
 
 
