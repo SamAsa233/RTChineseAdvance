@@ -1191,11 +1191,12 @@ struct ReadingMaterial reading_material_table[TOTAL_READING_MATERIALS] = {
             "Advance Credits",
         /* BODY ----------------------------------------------------------- */
             #ifdef PARADISE
-            "Rhythm Paradise Advance is a fan translation project\n"
+            "Rhythm Paradise Advance is a fan translation\n"
+            "project made entirely by fans of the original series.\n"
             #else
             "Rhythm Heaven Advance is a fan translation project\n"
-            #endif
             "made entirely by fans of the original series.\n"
+            #endif
             "\n"
             "This project wouldn't have been possible without the\n"
             "help of all the incredible people that came together!\n"
