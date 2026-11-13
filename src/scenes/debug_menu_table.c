@@ -296,7 +296,7 @@ struct DebugMenuEntry debug_menu_entry_table[] = {
     },
     /* Rhythm Toys (Confession Machine) */ {
         /* Scene */ &scene_love_machine,
-        /* Label */ "‚k‚‚–‚…@‚l‚‚ƒ‚ˆ‚‰‚‚…",
+        /* Label */ "‚b‚‚‚†‚…‚“‚“‚‰‚‚@‚l‚‚ƒ‚ˆ‚‰‚‚…",
         /* Epil. */ FALSE
     },
     /* Rhythm Toys (Rap Machine) */ {
@@ -331,7 +331,7 @@ struct DebugMenuEntry debug_menu_entry_table[] = {
     },
     /* Rhythm Tweezers (Extra) */ {
         /* Scene */ &scene_rhythm_tweezers_extra,
-        /* Label */ "‚q‚ˆ‚™‚”‚ˆ‚@‚s‚—‚…‚…‚š‚…‚’‚“@i‚d‚˜‚”‚’‚j",
+        /* Label */ "‚q‚ˆ‚™‚”‚ˆ‚@‚s‚—‚…‚…‚š‚…‚’‚“@i‚d‚˜‚”‚’‚j@‚v‚h‚o",
         /* Epil. */ TRUE
     },
     /* Marching Orders */ {
@@ -346,7 +346,7 @@ struct DebugMenuEntry debug_menu_entry_table[] = {
     },
     /* Marching Orders (Extra) */ {
         /* Scene */ &scene_marching_orders_extra,
-        /* Label */ "‚l‚‚’‚ƒ‚ˆ‚‰‚‚‡@‚n‚’‚„‚…‚’‚“@i‚d‚˜‚”‚’‚j",
+        /* Label */ "‚l‚‚’‚ƒ‚ˆ‚‰‚‚‡@‚n‚’‚„‚…‚’‚“@i‚d‚˜‚”‚’‚j@‚v‚h‚o",
         /* Epil. */ TRUE
     },
     /* Spaceball */ {
@@ -362,7 +362,7 @@ struct DebugMenuEntry debug_menu_entry_table[] = {
     },
     /* Spaceball (Extra) */ {
         /* Scene */ &scene_spaceball_extra,
-        /* Label */ "‚r‚‚‚ƒ‚…‚‚‚‚Œ‚Œ@i‚d‚˜‚”‚’‚j",
+        /* Label */ "‚r‚‚‚ƒ‚…‚‚‚‚Œ‚Œ@i‚d‚˜‚”‚’‚j@‚v‚h‚o",
         /* Epil. */ TRUE
     },
     /* The Clappy Trio */ {
@@ -572,7 +572,7 @@ struct DebugMenuEntry debug_menu_entry_table[] = {
     },
     /* Remix 1 (Extra) */ {
         /* Scene */ &scene_remix_1_extra,
-        /* Label */ "‚q‚…‚‚‰‚˜@‚P@i‚d‚˜‚”‚’‚j@‚v‚h‚o",
+        /* Label */ "‚d‚˜‚”‚’‚ ‚q‚…‚‚‰‚˜@‚v‚h‚o",
         /* Epil. */ TRUE
     },
     /* Drum Intro (Unused 1) */ {
