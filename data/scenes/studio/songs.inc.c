@@ -202,17 +202,17 @@ struct StudioEntry studio_song_table[] = {
         /* Drum Script */ script_studio_fireworks
     },
     /* REMIX7 */ {
-        /* Full Title  */ "Remix7",
+        /* Full Title  */ "Remix 7",
         /* Short Title */ NULL,
         /* Drum Script */ script_studio_remix7
     },
     /* REMIX8 */ {
-        /* Full Title  */ "Remix8",
+        /* Full Title  */ "Remix 8",
         /* Short Title */ NULL,
         /* Drum Script */ script_studio_remix8
     },
     /* REMIX6 */ {
-        /* Full Title  */ "Remix6",
+        /* Full Title  */ "Remix 6",
         /* Short Title */ NULL,
         /* Drum Script */ script_studio_remix6
     },
@@ -247,7 +247,7 @@ struct StudioEntry studio_song_table[] = {
         /* Drum Script */ script_studio_staff_credit
     },
     /* GAME_SELECT_2 */ {
-        /* Full Title  */ "游戏选择２",
+        /* Full Title  */ "游戏选择 2",
         /* Short Title */ NULL,
         /* Drum Script */ script_studio_game_select_2
     },
