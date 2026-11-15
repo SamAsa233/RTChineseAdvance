@@ -79,13 +79,14 @@ void debug_menu_scene_start(void *sVar, s32 dArg) {
     import_all_scene_objects(gSpriteHandler, gDebugMenu->objFont, debug_menu_scene_objects, D_0300558c);
     debug_menu_scene_init_gfx1();
 
-    textAnim = bmp_font_obj_print_l(gDebugMenu->objFont, "‚c‚…‚‚‚•‚‡@‚l‚…‚‚•", 1, 6); // Sequence Test
+    // é˜¶æ®µ 5 å·²æ ¡å¯¹ï¼šåªæ¢è°ƒè¯•é¡µæ ‡é¢˜ï¼Œç»˜åˆ¶ä½ç½®ä¸å­—ä½“å‚æ•°ä¿æŒåŸæ ·ã€‚
+    textAnim = bmp_font_obj_print_l(gDebugMenu->objFont, "è°ƒè¯•èœå•", 1, 6); // Sequence Test
     sprite_create(gSpriteHandler, textAnim->frames, 0, 0, 8, 0x800, 0, 0, 0);
 
-    textAnim = bmp_font_obj_print_l(gDebugMenu->objFont, "–", 1, 7);
+    textAnim = bmp_font_obj_print_l(gDebugMenu->objFont, "*", 1, 7);
     gDebugMenu->cursor = sprite_create(gSpriteHandler, textAnim->frames, 0, 0, 0, 0x800, 0, 0, 0);
 
-    textAnim = bmp_font_obj_print_r(gDebugMenu->objFont, "‚P^‚P", 1, 4);
+    textAnim = bmp_font_obj_print_r(gDebugMenu->objFont, "1/1", 1, 4);
     gDebugMenu->counter = sprite_create(gSpriteHandler, textAnim->frames, 0, 240, 8, 0x800, 0, 0, 0);
 
     gDebugMenu->page = -1;

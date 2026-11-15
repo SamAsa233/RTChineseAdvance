@@ -1,3 +1,6 @@
+/* ä¸­æ–‡æ–‡æœ¬ï¼šæœ¬æ–‡ä»¶é‡‡ç”¨è¯‘æ–‡åŒ…ä¸­ stage 5 çš„å·²æ ¡å¯¹æ¡ç›®ã€‚
+ * å­—ç¬¦ä¸²ä¸­çš„ \n æ˜¯æ¸¸æˆç”»é¢æ¢è¡Œï¼›ç›¸é‚»å¼•å·åªæ˜¯æ–¹ä¾¿é˜…è¯»æºç ã€‚
+ * æœªæ ¡å¯¹æˆ–æœªå®šä½çš„æ¡ç›®è§ text/zh_hans/TODO_æœªæ ¡å¯¹.mdã€‚ */
 #include "global.h"
 #include "text.h"
 
@@ -5,60 +8,60 @@
 /* Game Text - Marching Orders */
 
 
-const char D_0805c774[] = "You haven't grasped the basics.";
+const char D_0805c774[] = "åŸºæœ¬åŠŸè¿˜ä¸å¤Ÿå•Šã€‚";
 
-const char D_0805c790[] = "Impressive marching!";
+const char D_0805c790[] = "æŒºä¸é”™ï¼";
 
-const char D_0805c7a8[] = "You lack proper judgement.";
+const char D_0805c7a8[] = "ä½ çš„åˆ¤æ–­è¿˜å·®ä¸€ç‚¹å•Šã€‚";
 
-const char D_0805c7c0[] = "Your timing is on point!";
+const char D_0805c7c0[] = "åˆ¤æ–­çœŸä¸é”™ï¼";
 
-const char D_0805c7d8[] = "Your technique needs work.";
+const char D_0805c7d8[] = "å†å¥½å¥½ç£¨ç»ƒä¸€ä¸‹å§ã€‚";
 
-const char D_0805c7f4[] = "Your technique is solid!";
+const char D_0805c7f4[] = "æŠ€æœ¯ä¸é”™å•Šï¼";
 
-const char D_0805c80c[] = "Sarge says...";
+const char D_0805c80c[] = "é˜Ÿé•¿çš„åˆ¤æ–­";
 
-const char D_0805c818[] = "‚f‚I";
+const char D_0805c818[] = "å‡ºåŠ¨ï¼ï¼";
 
-const char D_0805c828[] = "‚e‚‚Œ‚Œ@‚‰‚I";
+const char D_0805c828[] = "å¼€å§‹ç»ƒä¹ ï¼";
 
-const char D_0805c844[] = "‚s‚‰‚‚…@‚†‚‚’@‚”‚ˆ‚…@‚’‚…‚‚Œ@‚”‚ˆ‚‰‚‚‡I";
+const char D_0805c844[] = "é‚£ä¹ˆï¼Œæ­£å¼ä¸Šåœºå§ï¼";
 
-const char D_0805c858[] = "You haven't grasped the basics.";
+const char D_0805c858[] = "åŸºæœ¬åŠŸè¿˜ä¸å¤Ÿå•Šã€‚";
 
-const char D_0805c874[] = "Impressive marching!";
+const char D_0805c874[] = "æŒºä¸é”™ï¼";
 
 const char D_0805c88c[] = "";
 
-const char D_0805c890[] = "Your timing is on point!";
+const char D_0805c890[] = "åˆ¤æ–­çœŸä¸é”™ï¼";
 
-const char D_0805c8a8[] = "Sarge says...";
+const char D_0805c8a8[] = "é˜Ÿé•¿çš„åˆ¤æ–­";
 
-const char D_0805c8b4[] = "‚f‚I";
+const char D_0805c8b4[] = "å‡ºåŠ¨ï¼ï¼";
 
-const char D_0805c8c4[] = "‚e‚‚Œ‚Œ@‚‰‚I";
+const char D_0805c8c4[] = "å¼€å§‹ç»ƒä¹ ï¼";
 
-const char D_0805c8e0[] = "‚s‚‰‚‚…@‚†‚‚’@‚”‚ˆ‚…@‚’‚…‚‚Œ@‚”‚ˆ‚‰‚‚‡I";
+const char D_0805c8e0[] = "é‚£ä¹ˆï¼Œæ­£å¼ä¸Šåœºå§ï¼";
 
-const char D_0805c8e1[] = "‚q‚‰‚‡‚ˆ‚”I";
+const char D_0805c8e1[] = "å³è½¬ï¼";
 
-const char D_0805c8e2[] = "‚k‚…‚†‚”I";
+const char D_0805c8e2[] = "å·¦è½¬ï¼";
 
-const char D_0805c8e3[] = "‚l‚‚’‚ƒ‚ˆI";
+const char D_0805c8e3[] = "è¸æ­¥ï¼";
 
-const char D_0805c8e4[] = "‚g‚‚Œ‚”I";
+const char D_0805c8e4[] = "ç«‹å®šï¼";
 
-const char D_0805c8f4[] = "You still don't have the basics down!";
+const char D_0805c8f4[] = "åŸºæœ¬åŠŸè¿˜æ²¡åˆ°ä½å•¦â€”â€”ï¼";
 
-const char D_0805c910[] = "That wasn't half bad!";
+const char D_0805c910[] = "å·²ç»æŒºä¸é”™å•¦ï¼";
 
-const char D_0805c92c[] = "Your timing needs work.";
+const char D_0805c92c[] = "åˆ¤æ–­åŠ›è¿˜ä¸å¤Ÿå‘€â€”â€”ã€‚";
 
-const char D_0805c948[] = "Your timing is on point!";
+const char D_0805c948[] = "ä½ çš„åˆ¤æ–­çœŸæ£’å‘¢ã€œï¼";
 
-const char D_0805c964[] = "Keep refining your routine!";
+const char D_0805c964[] = "è¦ä¸è¦å†ç£¨ç»ƒä¸€ä¸‹å‘€ã€œï¼Ÿ";
 
-const char D_0805c984[] = "Your technique is impeccable!";
+const char D_0805c984[] = "è¿™ä¹Ÿå¤ªæœ‰æŠ€æœ¯å«é‡å•¦ï¼";
 
-const char D_0805c9a0[] = "Our trainer says...";
+const char D_0805c9a0[] = "é˜Ÿé•¿çš„ç‚¹è¯„";

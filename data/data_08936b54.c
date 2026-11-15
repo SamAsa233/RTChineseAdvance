@@ -1,3 +1,4 @@
+/* 汉化改动：数值字符表明确使用 ASCII 数字，避免旧的全角数字说明误导后续字库维护。 */
 #include "data_08936b54.h"
 #include "src/code_08003b28.h"
 #include "src/code_080068f8.h"
@@ -115,8 +116,9 @@ struct TaskMethods lcd_blend_mode_interp_task = {
     NULL
 };
 
-// Fullwidth Number Characters
-char D_08936c64[] = "�O�P�Q�R�S�T�U�V�W�X";
+// Fullwidth Number Characters... NOT!
+// just dont use `strintf` or `strnintf` and it'll be all good
+char D_08936c64[] = "0123456789";
 
 // ?
 struct TaskMethods D_08936c7c = {

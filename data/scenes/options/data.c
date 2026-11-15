@@ -1,7 +1,9 @@
+/* 中文文本：选项页仅接入阶段 5 的已校对译文；控制码待复核项见 TODO_未校对.md。 */
 #include "global.h"
 #include "graphics.h"
 #include "src/scenes/options.h"
 #include "graphics/options/options_graphics.h"
+#include "text.h"
 
 
   /* OPTIONS MENU - SCENE DATA */
@@ -43,56 +45,59 @@ struct CompressedData *options_buffered_textures[] = {
     END_OF_BUFFERED_TEXTURES_LIST
 };
 
+// 阶段 5 已校对：保留确认框的三行控制字节和原有居中留白，只替换可见文字。
+// 实机核验：2026-09-29 检查“确认/取消”两项的全角空格和光标，
+// 文字保持居中，光标没有压住中文或确认框边缘。
 const char options_data_clear_confirm_text[] =
-        "\0023" "\0013" "\001C" "Are you sure?\n"
-        "\0021" "\0011" "\001C" "�@�@  �@�@ Yes\n"
-        "�@�@ �@ No";
+        "\0023" "\0013" "\001C" "真的要删掉吗？\n"
+        "\0021" "\0011" "\001C" "        确认\n"
+        "        取消";
 
 const char *options_desc_text[] = {
     /* SOUND MODE ------------------------------------- */
-        "\0023" "\0013" "\001C" "Sound Mode\n"
-        "\0024" "\0011" "\001L" "Stereo�@�@" "\0021" " For dual-speaker systems. (DS, etc.)\n"
-        "\0024" "\0011" "\001L" "Mono�@�@ " "\x87\x53" "\0021" "For single-speaker systems. (GBA, etc.)",
+        "\0023" "\0013" "\001C" "声音模式\n"
+        "\0024" "\0011" "\001L" "立体声  " TEXT_COLOR_1 "戴耳机就选这个！推荐！\n"
+        "\0024" "\0011" "\001L" "单声道  " CHAR_1_PIXEL_GAP_UTF8 TEXT_COLOR_1 "用主机喇叭就选这个。",
     /* DATA CLEAR ------------------------------------- */
-        "\0023" "\0013" "\001C" "Clear Data\n"
-        "\0021" "\0011" "\001C" "This will delete " "\0022" "all " "\0021" "of your save data and start\n"
-        "you over from the beginning." "\0022" " Be careful!"
+        "\0023" "\0013" "\001C" "清除数据\n"
+        "\0021" "\0011" "\001C" "会把至今为止的记录" TEXT_COLOR_2 "全部" TEXT_COLOR_1 "删掉，然后从头开始。\n"
+        "要想清楚哦！"
     /* ------------------------------------------------ */
 };
 
 const char *advance_options_label_text[] = {
-    "�r���������@�d������������",
-    "�l��������",
+    "音效",
+    "音乐",
 #ifdef RUMBLE
-    "�q����������",
+    "震动",
 #endif
-    "�r�������@�c������������������",
-    "�f�������@�r�����������@�l��������",
+    "汉化声明",
+    "游戏选择菜单音乐",
 };
 
 const char *advance_options_desc_text[] = {
     /* NON-JP SFX ------------------------------------- */
-        "\0023" "\0013" "\001C" "Sound Effects\n"
-        "\0024" "\0011" "\001L" "English   " "\0021" "Use the localized sound effects.\n"
-        "\0024" "\0011" "\001L" "Japanese  " "\0021" "Use the original sound effects.",
+        "\0023" "\0013" "\001C" "音效\n"
+        "\0024" "\0011" "\001L" "英语  " "\0021" "使用英语翻配音效\n"
+        "\0024" "\0011" "\001L" "日语  " "\0021" "使用原版日语音效",
     /* NON-JP MUSIC ----------------------------------- */
-        "\0023" "\0013" "\001C" "Music\n"
-        "\0024" "\0011" "\001L" "English   " "\0021" "Use the localized music.\n"
-        "\0024" "\0011" "\001L" "Japanese  " "\0021" "Use the original music.",
+        "\0023" "\0013" "\001C" "音乐\n"
+        "\0024" "\0011" "\001L" "英语翻唱  " "\0021" "使用英语翻唱音乐\n"
+        "\0024" "\0011" "\001L" "日语原唱  " "\0021" "使用原版日语音乐",
     /* RUMBLE ----------------------------------------- */
 #ifdef RUMBLE
-        "\0023" "\0013" "\001C" "Rumble\n"
-        "\0024" "\0011" "\001L" "On        " "\0021" "Rumble is active during gameplay.\n"
-        "\0024" "\0011" "\001L" "Off       " "\0021" "Rumble is disabled.",
+        "\0023" "\0013" "\001C" "震动\n"
+        "\0024" "\0011" "\001L" "开       " "\0021" "游玩时设备将会震动\n"
+        "\0024" "\0011" "\001L" "关       " "\0021" "游玩时震动将被禁用",
 #endif
     /* SHOW DISCLAIMER -------------------------------- */
-        "\0023" "\0013" "\001C" "Show Disclaimer\n"
-        "\0024" "\0011" "\001L" "Show      " "\0021" "Show the disclaimer at startup.\n"
-        "\0024" "\0011" "\001L" "Skip      " "\0021" "Skip the disclaimer at startup.",
+        "\0023" "\0013" "\001C" "汉化声明\n"
+        "\0024" "\0011" "\001L" "展示      " "\0021" "游戏启动时展示汉化声明\n"
+        "\0024" "\0011" "\001L" "跳过      " "\0021" "启动时不再展示汉化声明",
     /* ALT GAME SELECT MUSIC --------------------------- */
-        "\0023" "\0013" "\001C" "Game Select Music\n"
-        "\0024" "\0011" "\001L" "Normal    " "\0021" "Use Game Select 2 after the credits.\n"
-        "\0024" "\0011" "\001L" "Swapped   " "\0021" "Use Game Select 1 after the credits.",
+        "\0023" "\0013" "\001C" "游戏选择菜单音乐\n"
+        "\0024" "\0011" "\001L" "启用切换    " "\0021" "二周目将切换新音乐\n"
+        "\0024" "\0011" "\001L" "禁用切换    " "\0021" "二周目仍播放旧音乐",
 };
 
 

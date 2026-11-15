@@ -1,3 +1,6 @@
+/* ä¸­æ–‡æ–‡æœ¬ï¼šæœ¬æ–‡ä»¶é‡‡ç”¨è¯‘æ–‡åŒ…ä¸­ stage 5 çš„å·²æ ¡å¯¹æ¡ç›®ã€‚
+ * å­—ç¬¦ä¸²ä¸­çš„ \n æ˜¯æ¸¸æˆç”»é¢æ¢è¡Œï¼›ç›¸é‚»å¼•å·åªæ˜¯æ–¹ä¾¿é˜…è¯»æºç ã€‚
+ * æœªæ ¡å¯¹æˆ–æœªå®šä½çš„æ¡ç›®è§ text/zh_hans/TODO_æœªæ ¡å¯¹.mdã€‚ */
 #include "global.h"
 #include "text.h"
 
@@ -5,50 +8,50 @@
 /* Game Text - Sneaky Spirits */
 
 
-const char D_0805ba80[] = "Your archery fundamentals needed work.";
+const char D_0805ba80[] = "æœ€åŸºæœ¬çš„éƒ½è¿˜åšä¸åˆ°å‘¢ã€‚";
 
 const char D_0805ba9c[] = "";
 
-const char D_0805baa0[] = "The silent ghosts sneaked past you.";
+const char D_0805baa0[] = "å£°éŸ³ä¸€æ¶ˆå¤±ï¼Œä½ å¥½åƒå°±ä¼šæ…Œå‘¢â€¦";
 
-const char D_0805bac4[] = "You hit them even when they were quiet.";
+const char D_0805bac4[] = "å°±ç®—å£°éŸ³æ¶ˆå¤±äº†ä¹Ÿå¾ˆé•‡å®šï¼";
 
-const char D_0805bae4[] = "You should have counted to yourself.";
+const char D_0805bae4[] = "å¯è¦å¥½å¥½æ•°æ‹å­å“¦ã€‚";
 
-const char D_0805bb04[] = "Your internal count was spot on!";
+const char D_0805bb04[] = "é»˜æ•°æ‹å­å¾ˆå‡†å•Šï¼";
 
-const char D_0805bb20[] = "You did superbly against the slow ones.";
+const char D_0805bb20[] = "å°±ç®—é€Ÿåº¦è¶…æ…¢ï¼Œä¹Ÿå®Œæˆå¾—å¾ˆæ£’ï¼";
 
-const char D_0805bb40[] = "‚r‚”‚‚@‚”‚ˆ‚‚“‚…@‚‡‚ˆ‚‚“‚”‚“I";
+const char D_0805bb40[] = "æŠŠé‚£ä¸ªç™½è‰²çš„å®¶ä¼™";
 
-const char D_0805bb58[] = "‚c‚‚f‚”@‚Œ‚…‚”@‚”‚ˆ‚…‚@‚‡‚…‚”@‚‚—‚‚™I";
+const char D_0805bb58[] = "ç‹ ç‹ å¹²æ‰å§ï¼";
 
-const char D_0805bb68[] = "‚x‚‚•‚’@‚”‚‰‚‚‰‚‚‡@‚ˆ‚‚“@‚”‚@‚‚‚…DDD";
+const char D_0805bb68[] = "æ—¶æœºå°±æ˜¯â€¦";
 
-const char D_0805bb78[] = "DDD‚‚…‚’‚†‚…‚ƒ‚”I";
+const char D_0805bb78[] = "è¿™é‡Œï¼";
 
-const char D_0805bb88[] = "‚v‚‚”‚ƒ‚ˆ@‚ƒ‚‚’‚…‚†‚•‚Œ‚Œ‚™D";
+const char D_0805bb88[] = "è¦çœ‹ä»”ç»†å“¦ï¼";
 
-const char D_0805bb9c[] = "‚q‚‰‚‡‚ˆ‚”DDD";
+const char D_0805bb9c[] = "è¦æ¥äº†â€¦";
 
-const char D_0805bb9D[] = "‚‚‚—I";
+const char D_0805bb9D[] = "Now!";
 
-const char D_0805bba8[] = "‚c‚‚f‚”@‚Œ‚…‚”@‚‚‚™@‚‡‚…‚”@‚‚‚“‚”@‚™‚‚•I";
+const char D_0805bba8[] = "é‚£ä¹ˆï¼Œæ­£å¼å¼€å§‹ã€‚";
 
-const char D_0805bbc8[] = "Spooky voices agree...";
+const char D_0805bbc8[] = "ç»†é›¨å‘¢å–ƒ";
 
-const char D_0805bbd8[] = "Your archery fundamentals needed work.";
+const char D_0805bbd8[] = "æœ€åŸºæœ¬çš„éƒ½è¿˜åšä¸åˆ°å‘¢ã€‚";
 
 const char D_0805bbf4[] = "";
 
-const char D_0805bbf8[] = "The silent ghosts sneaked past you.";
+const char D_0805bbf8[] = "å£°éŸ³ä¸€æ¶ˆå¤±ï¼Œä½ å¥½åƒå°±ä¼šæ…Œå‘¢â€¦";
 
-const char D_0805bc1c[] = "You hit them even when they were quiet.";
+const char D_0805bc1c[] = "å°±ç®—å£°éŸ³æ¶ˆå¤±äº†ä¹Ÿå¾ˆé•‡å®šï¼";
 
-const char D_0805bc3c[] = "Don't forget to count in your head.";
+const char D_0805bc3c[] = "å¯è¦å¥½å¥½æ•°æ‹å­å“¦ã€‚";
 
-const char D_0805bc5c[] = "Your internal count was spot on!";
+const char D_0805bc5c[] = "é»˜æ•°æ‹å­å¾ˆå‡†å•Šï¼";
 
-const char D_0805bc78[] = "You did superbly against the slow ones.";
+const char D_0805bc78[] = "å°±ç®—é€Ÿåº¦è¶…æ…¢ï¼Œä¹Ÿå®Œæˆå¾—å¾ˆæ£’ï¼";
 
-const char D_0805bc98[] = "Spooky voices agree...";
+const char D_0805bc98[] = "ç»†é›¨å‘¢å–ƒ";

@@ -1,3 +1,6 @@
+/* ä¸­æ–‡æ–‡æœ¬ï¼šæœ¬æ–‡ä»¶é‡‡ç”¨è¯‘æ–‡åŒ…ä¸­ stage 5 çš„å·²æ ¡å¯¹æ¡ç›®ã€‚
+ * å­—ç¬¦ä¸²ä¸­çš„ \n æ˜¯æ¸¸æˆç”»é¢æ¢è¡Œï¼›ç›¸é‚»å¼•å·åªæ˜¯æ–¹ä¾¿é˜…è¯»æºç ã€‚
+ * æœªæ ¡å¯¹æˆ–æœªå®šä½çš„æ¡ç›®è§ text/zh_hans/TODO_æœªæ ¡å¯¹.mdã€‚ */
 #include "global.h"
 #include "text.h"
 
@@ -5,44 +8,44 @@
 /* Game Text - Tram & Pauline */
 
 
-const char D_0805dae0[] = "Try harder, Tram.";
+const char D_0805dae0[] = "å°è¹¦ï¼Œé‡æ¥ä¸€æ¬¡ã€‚";
 
-const char D_0805dafc[] = "Your tricks were cool!";
+const char D_0805dafc[] = "åˆšæ‰é‚£ä¸‹çœŸå¸…å•Šï¼";
 
-const char D_0805db18[] = "Practice more, Pauline.";
+const char D_0805db18[] = "å°åºŠï¼Œé‡æ¥ä¸€æ¬¡ã€‚";
 
-const char D_0805db34[] = "What a beautiful performance!";
+const char D_0805db34[] = "åˆšæ‰é‚£ä¸‹çœŸæ¼‚äº®ï¼";
 
-const char D_0805db54[] = "Try and focus, you two.";
+const char D_0805db54[] = "åˆ«æ…Œï¼Œé›†ä¸­ä¸€ç‚¹å“¦ã€‚";
 
-const char D_0805db74[] = "Amazing acrobatics on both ends!";
+const char D_0805db74[] = "è¿™æ‚æŠ€åŠ¨ä½œçœŸç²¾å½©ï¼";
 
-const char D_0805db94[] = "The Ringmaster's advice:";
+const char D_0805db94[] = "å›¢é•¿çš„æ¿€åŠ±";
 
-const char D_0805dba0[] = "‚g‚‰C@‚hf‚@‚s‚’‚‚DDD";
+const char D_0805dba0[] = "å°è¹¦å’Œ";
 
-const char D_0805dbb0[] = "‚‚‚„@‚hf‚@‚o‚‚•‚Œ‚‰‚‚…D";
+const char D_0805dbb0[] = "å°åºŠï¼Œ";
 
-const char D_0805dbc0[] = "‚s‚‚‡‚…‚”‚ˆ‚…‚’C@‚—‚…@‚”‚’‚‚‚‚‚Œ‚‰‚‚…I";
+const char D_0805dbc0[] = "ä¸€èµ·è¹¦èµ·æ¥ï¼";
 
-const char D_0805dbd8[] = "‚`‚”@‚”‚ˆ‚…@‚‚…‚‚‹@‚‚†@‚‚•‚’@‚Š‚•‚‚‚“C";
+const char D_0805dbd8[] = "åœ¨è·³åˆ°æœ€é«˜ç‚¹çš„æ—¶å€™ï¼Œ";
 
-const char D_0805dbf4[] = "‚‚’‚…‚“‚“@{@‚†‚‚’@‚‚…DDD";
+const char D_0805dbf4[] = "æˆ‘ç”¨"CHAR_DPAD_UTF8"ï¼Œ";
 
-const char D_0805dc0c[] = "‚‚’‚…‚“‚“@T@‚†‚‚’@‚‚…DDD";
+const char D_0805dc0c[] = "æˆ‘ç”¨"CHAR_A_BUTTON_UTF8"é”®ï¼Œ";
 
-const char D_0805dc24[] = "‚‚‚„@‚—‚…f‚Œ‚Œ@‚”‚’‚‚‚“‚†‚‚’‚I";
+const char D_0805dc24[] = "å°±èƒ½å˜èº«å“¦ï¼";
 
 #ifdef BRIT
-const char D_0805dc38[] = "‚k‚…‚”f‚“@‚‚’‚‚ƒ‚”‚‰‚“‚…@‚†‚‚’@‚@‚‚‚‰‚”I";
+const char D_0805dc38[] = "";
 #else
-const char D_0805dc38[] = "‚k‚…‚”f‚“@‚‚’‚‚ƒ‚”‚‰‚ƒ‚…@‚†‚‚’@‚@‚‚‚‰‚”I";
+const char D_0805dc38[] = "å…ˆæ¥ç»ƒä¹ ä¸€ä¸‹å§ï¼";
 #endif
 
-const char D_0805dc58[] = "‚r‚•‚ƒ‚ƒ‚…‚“‚“‚‰‚–‚…@‚Š‚•‚‚‚“@‚‚‚—I";
+const char D_0805dc58[] = "è¿ç»­è·³è·ƒï¼";
 
-const char D_0805dc70[] = "‚s‚—‚@‚Š‚•‚‚‚“C@‚‰‚@‚”‚•‚’‚‚“I";
+const char D_0805dc70[] = "ä¸¤ä¸ªäººè½®æµæ¥ï¼";
 
-const char D_0805dc88[] = "‚s‚—‚@‚Š‚•‚‚‚“C@‚”‚‚‡‚…‚”‚ˆ‚…‚’I";
+const char D_0805dc88[] = "ä¸¤ä¸ªäººåŒæ—¶æ¥ï¼";
 
-const char D_0805dc9c[] = "‚m‚‚—@‚—‚…f‚’‚…@‚’‚…‚‚„‚™@‚”‚@‚“‚”‚‚’‚”I";
+const char D_0805dc9c[] = "å¥½ï¼Œæ­£å¼æ¥å’¯ï¼";

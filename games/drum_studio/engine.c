@@ -1,4 +1,8 @@
+/* 中文文本：本文件采用译文包中 stage 5 的已校对条目。
+ * 字符串中的 \n 是游戏画面换行；相邻引号只是方便阅读源码。
+ * 未校对或未定位的条目见 text/zh_hans/TODO_未校对.md。 */
 #include "engines/drum_studio.h"
+#include "text.h"
 
 
   //  //  //  DRUM SAMURAI DATA  //  //  //
@@ -121,80 +125,40 @@ const char D_08059f94[] = "";
 
 const char D_08059f98[] = "";
 
-const char D_08059f9c[] = 
-    "\n"
-    "Focus just on the start!\n"
-    "\n"
-    "\n";
+const char D_08059f9c[] = "\n先只专心顾好开头！";
 
-const char D_08059fb4[] = 
-    "\n"
-    "Aim for the start.\n"
-    "\n"
-    "\n";
+const char D_08059fb4[] = "\n开头要打准哦。";
 
-const char D_08059fd0[] = 
-    "\n"
-    "Stay focused!\n"
-    "\n"
-    "\n";
+const char D_08059fd0[] = "\n别发呆啊！";
 
-const char D_08059fe8[] = 
-    "\n"
-    "Press �N, too.\n"
-    "\n"
-    "\n";
+const char D_08059fe8[] = "\nA 键也要按扎实哦。";
 
-const char D_0805a004[] = 
-    "\n"
-    "Press �L, too.\n"
-    "\n"
-    "\n";
+const char D_0805a004[] = "\nR 键也要按扎实哦。";
 
-const char D_0805a020[] = 
-    "\n"
-    "Press �N and �L together.\n"
-    "\n"
-    "\n";
+const char D_0805a020[] = "\n没有同时按下哦。";
 
-const char D_0805a038[] = 
-    "\n"
-    "Don't rush it.\n"
-    "\n"
-    "\n";
+const char D_0805a038[] = "\n你有点抢拍啦。";
 
-const char D_0805a048[] = 
-    "\n"
-    "You were late...\n"
-    "\n"
-    "\n";
+const char D_0805a048[] = "\n慢了哦。";
 
-const char D_0805a058[] = 
-    "\n"
-    "Flawless!\n"
-    "\n"
-    "\n";
+const char D_0805a058[] = "\nVery Good！！";
 
-const char D_0805a06c[] = 
-    "\n"
-    "Pretty good!\n"
-    "\n"
-    "\n";
+const char D_0805a06c[] = "\nGood！";
 
 // [D_089e1778] Rank Text
 const char *drum_lessons_rank_text[] = {
     /* RANK_0 */ "\n",
-    /* RANK_C */ "\nNot bad!\n",
-    /* RANK_B */ "\nYou're doin' pretty well!\n",
-    /* RANK_A */ "\nYeah! That was great!\n",
-    /* RANK_S */ "\nUnbelievable!\n",
+    /* RANK_C */ "\n还算不错哦！",
+    /* RANK_B */ "\n已经挺不错啦！",
+    /* RANK_A */ "\n棒极了！！",
+    /* RANK_S */ "\n完美啦！！",
 };
 
-const char D_0805a0c0[] = "\nYou scored ";
+const char D_0805a0c0[] = "\n评价";
 
 const char D_0805a0c8[] = ".";
 
-const char D_0805a0cc[] = " points.";
+const char D_0805a0cc[] = "分";
 
 // [D_089e178c] Rank SFX
 struct SongHeader *drum_lessons_rank_sfx[] = {

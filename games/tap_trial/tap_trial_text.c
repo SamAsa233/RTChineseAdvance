@@ -1,3 +1,6 @@
+/* ä¸­æ–‡æ–‡æœ¬ï¼šæœ¬æ–‡ä»¶é‡‡ç”¨è¯‘æ–‡åŒ…ä¸­ stage 5 çš„å·²æ ¡å¯¹æ¡ç›®ã€‚
+ * å­—ç¬¦ä¸²ä¸­çš„ \n æ˜¯æ¸¸æˆç”»é¢æ¢è¡Œï¼›ç›¸é‚»å¼•å·åªæ˜¯æ–¹ä¾¿é˜…è¯»æºç ã€‚
+ * æœªæ ¡å¯¹æˆ–æœªå®šä½çš„æ¡ç›®è§ text/zh_hans/TODO_æœªæ ¡å¯¹.mdã€‚ */
 #include "global.h"
 #include "text.h"
 
@@ -5,83 +8,83 @@
 /* Game Text - Tap Trial */
 
 
-const char D_0805c0d0[] = "Your basics were a little sloppy.";
+const char D_0805c0d0[] = "åŸºæœ¬åŠŸè¿˜æ²¡åšåˆ°ä½å‘¢ã€‚";
 
-const char D_0805c0ec[] = "You stayed focused no matter what!";
+const char D_0805c0ec[] = "é€‚åº”èƒ½åŠ›ä¸é”™ï¼";
 
-const char D_0805c104[] = "Your decisions took too long.";
+const char D_0805c104[] = "åˆ¤æ–­è¿˜å·®ä¸€ç‚¹ã€‚";
 
-const char D_0805c11c[] = "You thought on the spot well!";
+const char D_0805c11c[] = "åˆ¤æ–­çœŸä¸èµ–ï¼";
 
-const char D_0805c130[] = "You needed to concentrate more.";
+const char D_0805c130[] = "å†é›†ä¸­ä¸€ç‚¹å§ã€‚";
 
-const char D_0805c144[] = "You were clearly concentrating hard.";
+const char D_0805c144[] = "è¿™ä¸“æ³¨åŠ›å¾ˆå‰å®³å“¦ï¼";
 
-const char D_0805c15c[] = "You let your guard down at the end.";
+const char D_0805c15c[] = "æ”¶å°¾è¿˜ä¸å¤Ÿåˆ©è½ã€‚";
 
 const char D_0805c170[] = "";
 
-const char D_0805c174[] = "‚k‚…‚”f‚“@‚„‚‚‚ƒ‚…I";
+const char D_0805c174[] = "æ­£å¼å¼€å§‹ï¼";
 
-const char D_0805c18c[] = "‚h@‚Œ‚‚–‚…@‚”‚‚I";
+const char D_0805c18c[] = "æˆ‘è¦å¼€å§‹æ£€æŸ¥å’¯ã€‚";
 
-const char D_0805c1a8[] = "‚v‚ˆ‚‚”@‚@‚‚…‚’‚†‚‚’‚‚‚‚ƒ‚…I";
+const char D_0805c1a8[] = "è¾›è‹¦ä½ å•¦ã€‚";
 
-const char D_0805c1bc[] = "‚k‚…‚”f‚“@‚”‚‚I";
+const char D_0805c1bc[] = "æ¥è¸¢è¸å§ï¼";
 
 #ifdef BRIT
-const char D_0805c1d0[] = "‚o‚’‚‚ƒ‚”‚‰‚“‚…@‚†‚‰‚’‚“‚”I";
+const char D_0805c1d0[] = "";
 #else
-const char D_0805c1d0[] = "‚o‚’‚‚ƒ‚”‚‰‚ƒ‚…@‚†‚‰‚’‚“‚”I";
+const char D_0805c1d0[] = "å…ˆæ¥ç»ƒä¹ ã€‚";
 #endif
 
-const char D_0805c1e8[] = "‚i‚•‚“‚”@‚ƒ‚‚‚™@‚•‚“I";
+const char D_0805c1e8[] = "è·Ÿç€åšå“¦ã€‚";
 
-const char D_0805c1f8[] = "‚n‚jC@‚ˆ‚…‚’‚…f‚“@‚‚‚‚”‚ˆ‚…‚’@‚“‚”‚…‚I";
+const char D_0805c1f8[] = "OKï¼ ä¸‹ä¸€ä¸ªæ¥å•¦ã€‚";
 
-const char D_0805c210[] = "‚m‚‰‚ƒ‚…I@‚n‚‚…@‚‚‚’‚…I@";
+const char D_0805c210[] = "OKï¼ è¿˜æœ‰å“¦ã€‚";
 
-const char D_0805c228[] = "‚f‚‚‚„I@‚k‚‚“‚”@‚‚‚…I";
+const char D_0805c228[] = "OKï¼ æœ€åå•¦ã€‚";
 
-const char D_0805c240[] = "‚n‚‚‹‚‰‚‰I@‚m‚‰‚ƒ‚…@‚—‚‚’‚‹I";
+const char D_0805c240[] = "OKï¼";
 
-const char D_0805c248[] = "Your basics were a little sloppy.";
+const char D_0805c248[] = "åŸºæœ¬åŠŸå¯èƒ½è¿˜å·®ä¸€ç‚¹â€¦";
 
-const char D_0805c264[] = "You showed real rhythm potential!";
+const char D_0805c264[] = "å·²ç»å¾ˆä¸Šæ‰‹å•¦ï¼";
 
-const char D_0805c274[] = "You seemed to be looking for the rhythm.";
+const char D_0805c274[] = "åˆ¤æ–­å¯èƒ½è¿˜å·®ä¸€ç‚¹â€¦";
 
-const char D_0805c290[] = "You had nice rhythm awareness!";
+const char D_0805c290[] = "è¿™åˆ¤æ–­çœŸå¯ä»¥å“¦ï¼";
 
-const char D_0805c2a8[] = "You needed to concentrate more.";
+const char D_0805c2a8[] = "å†é›†ä¸­ä¸€ç‚¹å§ã€‚";
 
-const char D_0805c2bc[] = "You were clearly concentrating hard.";
+const char D_0805c2bc[] = "ä¸“æ³¨åŠ›çœŸå‰å®³å‘€ã€œï¼";
 
-const char D_0805c2d4[] = "Did you lose focus at the end?";
+const char D_0805c2d4[] = "æ”¶å°¾å¯èƒ½è¿˜å·®ä¸€ç‚¹ã€‚";
 
 const char D_0805c2e8[] = "";
 
-const char D_0805c2ec[] = "Monkey feedback:";
+const char D_0805c2ec[] = "çŒ´å­çš„ç‚¹è¯„";
 
-const char D_0805c300[] = "‚k‚…‚”f‚“@‚„‚‚‚ƒ‚…I";
+const char D_0805c300[] = "æ­£å¼å¼€å§‹ï¼";
 
-const char D_0805c318[] = "‚h@‚Œ‚‚–‚…@‚”‚‚I";
+const char D_0805c318[] = "æˆ‘è¦å¼€å§‹æ£€æŸ¥å’¯ã€‚";
 
-const char D_0805c334[] = "‚v‚ˆ‚‚”@‚@‚‚…‚’‚†‚‚’‚‚‚‚ƒ‚…I";
+const char D_0805c334[] = "è¾›è‹¦ä½ å•¦ã€‚";
 
-const char D_0805c348[] = "‚k‚…‚”f‚“@‚”‚‚I";
+const char D_0805c348[] = "æ¥è¸¢è¸å§ï¼";
 
 #ifdef BRIT
-const char D_0805c35c[] = "‚o‚’‚‚ƒ‚”‚‰‚“‚…@‚†‚‰‚’‚“‚”I";
+const char D_0805c35c[] = "";
 #else
-const char D_0805c35c[] = "‚o‚’‚‚ƒ‚”‚‰‚ƒ‚…@‚†‚‰‚’‚“‚”I";
+const char D_0805c35c[] = "å…ˆæ¥ç»ƒä¹ ã€‚";
 #endif
-const char D_0805c374[] = "‚i‚•‚“‚”@‚ƒ‚‚‚™@‚•‚“I";
+const char D_0805c374[] = "è·Ÿç€åšå“¦ã€‚";
 
-const char D_0805c384[] = "‚n‚jC@‚ˆ‚…‚’‚…f‚“@‚‚‚‚”‚ˆ‚…‚’@‚“‚”‚…‚I";
+const char D_0805c384[] = "OKï¼ ä¸‹ä¸€ä¸ªæ¥å•¦ã€‚";
 
-const char D_0805c39c[] = "‚m‚‰‚ƒ‚…I@‚n‚‚…@‚‚‚’‚…I@";
+const char D_0805c39c[] = "OKï¼ è¿˜æœ‰å“¦ã€‚";
 
-const char D_0805c3b4[] = "‚f‚‚‚„I@‚k‚‚“‚”@‚‚‚…I";
+const char D_0805c3b4[] = "OKï¼ æœ€åå•¦ã€‚";
 
-const char D_0805c3cc[] = "‚n‚‚‹‚‰‚‰I@‚m‚‰‚ƒ‚…@‚—‚‚’‚‹I";
+const char D_0805c3cc[] = "OKï¼";

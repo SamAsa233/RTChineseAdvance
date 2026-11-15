@@ -1,3 +1,6 @@
+/* ä¸­æ–‡æ–‡æœ¬ï¼šæœ¬æ–‡ä»¶é‡‡ç”¨è¯‘æ–‡åŒ…ä¸­ stage 5 çš„å·²æ ¡å¯¹æ¡ç›®ã€‚
+ * å­—ç¬¦ä¸²ä¸­çš„ \n æ˜¯æ¸¸æˆç”»é¢æ¢è¡Œï¼›ç›¸é‚»å¼•å·åªæ˜¯æ–¹ä¾¿é˜…è¯»æºç ã€‚
+ * æœªæ ¡å¯¹æˆ–æœªå®šä½çš„æ¡ç›®è§ text/zh_hans/TODO_æœªæ ¡å¯¹.mdã€‚ */
 #include "global.h"
 #include "text.h"
 
@@ -5,40 +8,40 @@
 /* Game Text - Bunny Hop */
 
 
-const char D_0805cbbc[] = "You were a little unsteady.";
+const char D_0805cbbc[] = "èŠ‚å¥æœ‰ç‚¹ä¸ç¨³å“¦ã€‚";
 
-const char D_0805cbd4[] = "Nice, steady rhythm!";
+const char D_0805cbd4[] = "èŠ‚å¥å¾ˆç¨³å‘¢ï¼";
 
-const char D_0805cbec[] = "You couldn't find your flow...";
+const char D_0805cbec[] = "ä½ å¥½åƒè¿˜æ²¡æŠ“åˆ°æ•´ä½“èŠ‚å¥â€¦";
 
-const char D_0805cc10[] = "Your flow is on point!";
+const char D_0805cc10[] = "ä½ å·²ç»æŠ“åˆ°æ•´ä½“èŠ‚å¥å•¦ï¼";
 
-const char D_0805cc28[] = "You missed the breaks.";
+const char D_0805cc28[] = "ç©ºæ‹åçš„èµ·è·³æœ‰ç‚¹ä¸å‡†å‘¢ã€‚";
 
-const char D_0805cc48[] = "You nailed the breaks!";
+const char D_0805cc48[] = "ç©ºæ‹åçš„èµ·è·³å¾ˆæ¼‚äº®â€”â€”ï¼ï¼";
 
-const char D_0805cc68[] = "‚m‚…‚˜‚”DDD";
+const char D_0805cc68[] = "æ¥ä¸‹æ¥";
 
-const char D_0805cc70[] = "‚’‚…‚“‚”@‚†‚‚’@‚@‚”‚—‚|‚ƒ‚‚•‚‚”D";
+const char D_0805cc70[] = "è¦ç©º 2 æ‹å“¦";
 
 const char D_0805cc80[] = "";
 
-const char D_0805cc84[] = "‚’‚…‚“‚”@‚†‚‚’@‚@‚†‚‚•‚’|‚ƒ‚‚•‚‚”D";
+const char D_0805cc84[] = "è¦ç©º 4 æ‹å“¦";
 
-const char D_0805cc94[] = "‚P";
+const char D_0805cc94[] = "1";
 
-const char D_0805cc98[] = "‚Q";
+const char D_0805cc98[] = "2";
 
-const char D_0805cc9c[] = "‚R";
+const char D_0805cc9c[] = "3";
 
-const char D_0805cca0[] = "‚S";
+const char D_0805cca0[] = "4";
 
-const char D_0805cca4[] = "‚’‚…‚“‚”@‚†‚‚’@‚‚@‚…‚‰‚‡‚ˆ‚”|‚ƒ‚‚•‚‚”D";
+const char D_0805cca4[] = "è¦ç©º 8 æ‹å“¦";
 
-const char D_0805ccb4[] = "Sea friends' report:";
+const char D_0805ccb4[] = "æµ·ä¸­ä¼™ä¼´ä»¬çš„å£°éŸ³";
 
-const char D_0805ccb8[] = "@@@@@@@@@@@@@@@@@@@@‚o‚’‚…‚“‚“@T@‚‚@‚‚‚…‚‚”@‚”‚@‚ˆ‚‚@‚‚ƒ‚’‚‚“‚“D";
+const char D_0805ccb8[] = "è·Ÿç€éŸ³ä¹æŒ‰"CHAR_A_BUTTON_UTF8"æ¥è·³è·ƒå§ï¼";
 
-const char D_0805ccb9[] = "‚f‚I";
+const char D_0805ccb9[] = "é‚£å°±è·³èµ·æ¥å§ï¼";
 
-const char D_0805ccc5[] = "‚q‚…‚‚„‚™H";
+const char D_0805ccc5[] = "å‡†å¤‡å¥½äº†å—ï¼Ÿ";

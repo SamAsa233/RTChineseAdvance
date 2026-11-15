@@ -1,3 +1,4 @@
+/* 汉化改动：完美挑战奖励通知由已校对中文片段组成，并用有容量限制的 snprintf 写入缓冲区。 */
 #include "global.h"
 #include "game_select.h"
 #include "graphics/game_select/game_select_graphics.h"
@@ -253,7 +254,8 @@ const char *get_campaign_gift_title(s32 id, s32 shortenSongTitle) {
             return reading_material_table[giftID].title;
 
         case CAMPAIGN_GIFT_NEW_GAME:
-            return "New Game"; // New Game
+            // 已校对的「新游戏」来自 game_select_new_game；用于奖励标题。
+            return "新游戏";
     }
 }
 
@@ -282,21 +284,30 @@ void start_campaign_notice(s32 id) {
     notice->y = campaign_gifts_table[id].y;
     level = get_level_data_from_grid_xy(notice->x, notice->y);
     string = notice->text;
-    memcpy(string, "\001C" "If you get a Perfect on\n", 45); // [Right now]
+    memcpy(string, "\001C" "在「", 45); // [Right now]
     strcat(string, level->name); // "<game_name>"
-    strcat(string, "\nright now, you'll earn "); // Get a perfect on this
+    strcat(string, "」\n达成完美通关的话，\n "); // Get a perfect on this
+    //
     if (giftType == CAMPAIGN_GIFT_DRUM_KIT || giftType == CAMPAIGN_GIFT_READING_MATERIAL) {
-        strcat(string, "the following bonus:\n"); // received as a present!!
+        strcat(string, "即可获赠：\n");
+        strcat(string, "「");
+        strcat(string, get_campaign_gift_title(id, FALSE)); 
+        strcat(string, "」");// received as a present!!
     }
-    if (isSong) {
+    else if(isSong) {
         if(isSpecialSong) {
-            strcat(string, "the following song:\n");
-        } else {
-            strcat(string, "the game's song, also titled\n");
-    }
-    }
-    strcat(string, get_campaign_gift_title(id, FALSE)); // "<gift>"
-    strcat(string, ".\n");
+            strcat(string, "歌曲「");
+            strcat(string, get_campaign_gift_title(id, FALSE));
+            strcat(string, "」就送给你！");
+        }
+        else {
+            strcat(string, "「");
+            strcat(string, get_campaign_gift_title(id, FALSE));
+            strcat(string, "」的音乐\n");
+            strcat(string, "就送给你！");
+        }
+    } 
+
     text_printer_set_string(notice->printer, string);
 
     sprite_set_visible(gSpriteHandler, gGameSelect->selectionBorderSprite, FALSE);

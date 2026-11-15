@@ -1,3 +1,6 @@
+/* 中文文本：本文件采用译文包中 stage 5 的已校对条目。
+ * 字符串中的 \n 是游戏画面换行；相邻引号只是方便阅读源码。
+ * 未校对或未定位的条目见 text/zh_hans/TODO_未校对.md。 */
 #include "global.h"
 #include "studio.h"
 #include "graphics/studio/studio_graphics.h"
@@ -9,21 +12,21 @@
 
 // [D_089d83d0] Drum Kit Names
 const char *studio_drum_kit_names[] = {
-    /* DEFAULT */ "Standard Drums",
-    /* DRY     */ "Dry Drums",
-    /* POWER   */ "Power Drums",
-    /* TECHNO  */ "Techno Drums",
-    /* MATTE   */ "Matte Drums",
-    /* ASIAN   */ "Asian Drums",
-    /* LIGHT   */ "Light Drums",
-    /* HEAVY   */ "Heavy Drums",
-    /* HIHAT   */ "Hi-Hat Drums",
-    /* HEEL1   */ "Heel Drop Drums 1",
-    /* HEEL2   */ "Heel Drop Drums 2",
-    /* SFX     */ "SFX Drums",
-    /* TAP     */ "Tap Drums",
-    /* AIR     */ "Swift Drums",
-    /* SAMURAI */ "Samurai Drums"
+    /* DEFAULT */ "普通鼓组",
+    /* DRY     */ "干音鼓组",
+    /* POWER   */ "强力鼓组",
+    /* TECHNO  */ "电子鼓组",
+    /* MATTE   */ "沉稳鼓组",
+    /* ASIAN   */ "亚洲风鼓组",
+    /* LIGHT   */ "轻盈鼓组",
+    /* HEAVY   */ "硬派鼓组",
+    /* HIHAT   */ "踩镲技巧鼓组",
+    /* HEEL1   */ "脚跟技巧鼓组 1",
+    /* HEEL2   */ "脚跟技巧鼓组 2",
+    /* SFX     */ "音效鼓组",
+    /* TAP     */ "踢踏鼓组",
+    /* AIR     */ "疾风鼓组",
+    /* SAMURAI */ "武士鼓组"
 };
 
 
@@ -42,7 +45,7 @@ const char *studio_drum_list_get_string(s32 line) {
     if (D_030046a8->data.drumKitsUnlocked[line]) {
         strcat(gStudio->string, studio_drum_kit_names[line]);
     } else {
-        strcat(gStudio->string, "�H�H�H");
+        strcat(gStudio->string, "???");
     }
 
     return gStudio->string;
@@ -101,18 +104,18 @@ const char *studio_mem_warnings_text[] = {
     /* NO MEMORY -------------------------------------- */
         // [ You can't save any more data. ]
         // [ Perform without saving? ]
-        "Your memory is full.\n"
-        "Perform anyway?",
+        "存储空间已满。\n"
+        "本次演奏将无法保存，还要继续吗？",
     /* TOO MANY REPLAYS ------------------------------- */
         // [ You can only save 10 recitals. ]
         // [ Perform without saving? ]
-        "There's no more room for\n"
-        "saving. Perform anyway?",
+        "演奏数据最多只能保留 10 份。\n"
+        "本次演奏将无法保存，还要继续吗？",
     /* LOW MEMORY ------------------------------------- */
         // [ There's not much memory left. ]
         // [ Perform anyway? ]
-        "Save memory is running low.\n"
-        "Do you want to perform anyway?"
+        "存储空间快满了。\n"
+        "还要继续演奏吗？"
     /* ------------------------------------------------ */
 };
 

@@ -110,63 +110,63 @@ endstruct
 @ Remix 4 - Rap Men Text
 
 text text_remix_4_sanji_desu_ka
-    .asciz ".b:1‚h‚”f‚“@‚R@‚o‚lC@.b:0‚ˆ‚•‚ˆH.8:1"
+    .asciz ".b:1ä¸‹åˆä¸‰ç‚¹äº†.b:0å—ï¼Ÿ.8:1"
 endtext
 
 text text_remix_4_oyatsu_desu_ka
-    .asciz ".b:1‚h‚”f‚“@‚“‚‚‚ƒ‚‹@‚”‚‰‚‚…C@.b:0‚ˆ‚•‚ˆH.8:1"
+    .asciz ".b:1è¯¥åƒç‚¹å¿ƒäº†.b:0å—ï¼Ÿ.8:1"
 endtext
 
 text text_remix_4_honto_desu_ka
-    .asciz ".b:1‚l‚‚™‚‚‚…@‚“‚C@.b:0‚ˆ‚•‚ˆH.8:1"
+    .asciz ".b:1çœŸçš„.b:0å—ï¼Ÿ.8:1"
 endtext
 
 text text_remix_4_wakarimasu_ka
-    .asciz ".b:1‚x‚‚•@‚‡‚…‚”@‚‰‚”@‚‚‚—C@.b:0‚ˆ‚•‚ˆH.8:1"
+    .asciz ".b:1æ˜ç™½äº†.b:0å—ï¼Ÿ.8:1"
 endtext
 
 text text_remix_4_oishii_kamo_ne
-    .asciz ".9:1‚s‚‚“‚”‚™@‚“‚‚‚ƒ‚‹‚“C@.9:0‚™‚@‚†‚…‚…‚Œ@‚‚…H.8:1"
+    .asciz ".9:1ä¹Ÿè®¸å¾ˆå¥½åƒ.9:0å§.8:1"
 endtext
 
 text text_remix_4_herushii_kamo_ne
-    .asciz ".9:1‚g‚…‚‚Œ‚”‚ˆ‚™@‚“‚‚‚ƒ‚‹‚“C@.9:0‚™‚@‚†‚…‚…‚Œ@‚‚…H.8:1"
+    .asciz ".9:1ä¹Ÿè®¸å¾ˆå¥åº·.9:0å§.8:1"
 endtext
 
 text text_remix_4_ore_no_sei_kamo_ne
-    .asciz ".9:1‚l‚‰‚‡‚ˆ‚”f‚–‚…@‚‚‚…‚…‚@‚•‚“C@.9:0‚™‚@‚†‚…‚…‚Œ@‚‚…H.8:1"
+    .asciz ".9:1ä¹Ÿè®¸æ˜¯æˆ‘çš„é”™.9:0å§.8:1"
 endtext
 
 text text_remix_4_sore_mo_sou_kamo_ne
-    .asciz ".9:1‚s‚ˆ‚‚”f‚“@‚ˆ‚‚—@‚‰‚”@‚‚‚…C@.9:0‚™‚@‚†‚…‚…‚Œ@‚‚…H.8:1"
+    .asciz ".9:1ä¹Ÿè®¸çœŸæ˜¯é‚£æ ·.9:0å§.8:1"
 endtext
 
 text text_remix_4_tanoshii_kamo_ne
-    .asciz ".9:1‚g‚‚–‚‰‚f@‚†‚•‚C@.9:0‚™‚@‚†‚…‚…‚Œ@‚‚…H.8:1"
+    .asciz ".9:1ä¹Ÿè®¸ä¼šå¾ˆå¼€å¿ƒ.9:0å§.8:1"
 endtext
 
 text text_remix_4_oyatsu_wa_saikou
-    .asciz ".a:1‚r‚‚‚ƒ‚‹‚‰‚‚‡@‚‰‚“@.a:0‚“‚@‚`‚v‚d‚r‚n‚l‚dI.8:1"
+    .asciz ".a:1ç‚¹å¿ƒ.a:0æœ€æ£’å•¦â€”â€”ï¼ï¼.8:1"
 endtext
 
 text text_remix_4_kibun_wa_saikou
-    .asciz ".a:1‚h@‚†‚…‚…‚Œ@.a:0‚“‚@‚`‚v‚d‚r‚n‚l‚dI.8:1"
+    .asciz ".a:1å¿ƒæƒ….a:0æœ€æ£’å•¦â€”â€”ï¼ï¼.8:1"
 endtext
 
 text text_remix_4_ore_tte_saikou
-    .asciz ".a:1‚v‚…@‚‚’‚…@.a:0‚“‚@‚`‚v‚d‚r‚n‚l‚dI.8:1"
+    .asciz ".a:1æˆ‘.a:0æœ€æ£’å•¦â€”â€”ï¼ï¼.8:1"
 endtext
 
 text text_remix_4_kimi_tte_saikou
-    .asciz ".a:1‚x‚‚•@‚‚’‚…@.a:0‚“‚@‚`‚v‚d‚r‚n‚l‚dI.8:0"
+    .asciz ".a:1ä½ .a:0æœ€æ£’å•¦â€”â€”ï¼ï¼.8:0"
 endtext
 
 text text_remix_4_oyatsu_ga_nai_yo
-    .asciz ".a:1‚v‚‚‰‚”@‚@‚“‚…‚ƒC@‚—‚….a:0‚k‚n‚r‚s@‚r‚n‚l‚dI.8:1"
+    .asciz ".a:1ç‚¹å¿ƒ.a:0ä¸è§å•¦â€”â€”ï¼ï¼.8:1"
 endtext
 
 text text_remix_4_ore_shiranai_yo
-    .asciz ".a:1‚f‚•‚…‚“‚“@‚‰‚”f‚“@‚ˆ‚‚—@‚—‚…@.a:0‚k‚n‚r‚s@‚r‚n‚l‚dI.8:1"
+    .asciz ".a:1æˆ‘.a:0ä¸çŸ¥é“å•¦â€”â€”ï¼ï¼.8:1"
 endtext
 
 

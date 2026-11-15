@@ -1,3 +1,6 @@
+/* ä¸­æ–‡æ–‡æœ¬ï¼šæœ¬æ–‡ä»¶é‡‡ç”¨è¯‘æ–‡åŒ…ä¸­ stage 5 çš„å·²æ ¡å¯¹æ¡ç›®ã€‚
+ * å­—ç¬¦ä¸²ä¸­çš„ \n æ˜¯æ¸¸æˆç”»é¢æ¢è¡Œï¼›ç›¸é‚»å¼•å·åªæ˜¯æ–¹ä¾¿é˜…è¯»æºç ã€‚
+ * æœªæ ¡å¯¹æˆ–æœªå®šä½çš„æ¡ç›®è§ text/zh_hans/TODO_æœªæ ¡å¯¹.mdã€‚ */
 #include "global.h"
 #include "text.h"
 
@@ -5,36 +8,36 @@
 /* Game Text - Rat Race */
 
 
-const char D_0805d104[] = "Work on those stops!";
+const char D_0805d104[] = "ä¸å¤Ÿåˆ©è½å•Šã€‚";
 
-const char D_0805d118[] = "Your stops were perfect!";
+const char D_0805d118[] = "åœå¾—å¾ˆç¨³ï¼";
 
-const char D_0805d130[] = "You need to practice your starts.";
+const char D_0805d130[] = "èµ·æ­¥æ‹–æ‹–æ‹‰æ‹‰å•Šâ€¦";
 
-const char D_0805d14c[] = "Great starts!";
+const char D_0805d14c[] = "èµ·æ­¥å¾ˆæ¼‚äº®ï¼";
 
-const char D_0805d164[] = "Stop getting in the way!";
+const char D_0805d164[] = "çœŸæ˜¯çš„ï¼åˆ«ç¢äº‹å•¦ï¼";
 
 const char D_0805d180[] = "";
 
-const char D_0805d184[] = "‚`‚”@‚”‚ˆ‚…@‚†‚‰‚’‚“‚”@‚“‚‰‚‡‚C";
+const char D_0805d184[] = "æˆ‘ä¸€å‘å‡ºä¿¡å·";
 
-const char D_0805d198[] = "‚‚’‚…‚“‚“@‚‚‚„@‚ˆ‚‚Œ‚„@T";
+const char D_0805d198[] = "å°±æŒ‰ä½"CHAR_A_BUTTON_UTF8"åˆ«æ¾æ‰‹";
 
-const char D_0805d1ac[] = "‚”‚@‚“‚”‚‚™@‚“‚”‚‰‚Œ‚ŒI";
+const char D_0805d1ac[] = "åœä¸‹æ¥ï¼";
 
-const char D_0805d1bc[] = "‚`‚‚„@‚‚”@‚”‚ˆ‚…@‚‚…‚˜‚”@‚“‚‰‚‡‚C";
+const char D_0805d1bc[] = "ç­‰æˆ‘å‘å‡ºä¸‹ä¸€ä¸ªä¿¡å·";
 
-const char D_0805d1d0[] = "‚’‚…‚Œ‚…‚‚“‚…@T";
+const char D_0805d1d0[] = "å°±æ¾å¼€"CHAR_A_BUTTON_UTF8;
 
-const char D_0805d1e0[] = "‚”‚@‚“‚”‚‚’‚”@‚’‚•‚‚‚‰‚‚‡I";
+const char D_0805d1e0[] = "å†²å‡ºå»ï¼";
 
-const char D_0805d1f0[] = "‚x‚‚•@‚’‚…‚‚„‚™C@‚‚…‚—‚‚‚‰‚…H@‚f‚I";
+const char D_0805d1f0[] = "é‚£å°±ä¸Šå•¦ï¼";
 
-const char D_0805d204[] = "‚e‚’‚‚@‚ˆ‚…‚’‚…@‚‚@‚‚•‚”C";
+const char D_0805d204[] = "ä¹‹åå°±ä¸ä¼š";
 
-const char D_0805d214[] = "‚‚@‚‚‚’‚…@‚“‚‰‚‡‚‚“I";
+const char D_0805d214[] = "å†ç»™ä¿¡å·äº†";
 
-const char D_0805d220[] = "‚s‚’‚•‚“‚”@‚™‚‚•‚’@‚‰‚‚“‚”‚‰‚‚ƒ‚”‚“I";
+const char D_0805d220[] = "å¯è¦å¥½å¥½è¡¨ç°ï¼";
 
-const char D_0805d234[] = "Hushed Whispers";
+const char D_0805d234[] = "ä¼™ä¼´çš„ä¸€å¥è¯";

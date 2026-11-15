@@ -1,3 +1,6 @@
+/* 中文文本：本文件采用译文包中 stage 5 的已校对条目。
+ * 字符串中的 \n 是游戏画面换行；相邻引号只是方便阅读源码。
+ * 未校对或未定位的条目见 text/zh_hans/TODO_未校对.md。 */
 #include "global.h"
 #include "graphics.h"
 #include "src/scenes/perfect.h"
@@ -46,9 +49,9 @@ struct CompressedData *perfect_certificate_buffered_textures[] = {
         // You can read it in your e-mail.
         //
 const char *perfect_gift_directive_text[] = {
-    /* Song     */ "Listen to it in the studio!\n",
-    /* Drum Kit */ "Play it in the studio!\n",
-    /* E-Mail   */ "Read it in the archives!\n",
+    /* Song     */ "（可在录音室试听）\n",
+    /* Drum Kit */ "（可在录音室演奏）\n",
+    /* E-Mail   */ "（可在节奏资料室查看）\n",
     /* Other    */ "",
 };
 

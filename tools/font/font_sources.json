@@ -1,0 +1,34 @@
+{
+  "small": {
+    "family": "Fusion Bold Pixel",
+    "size": 12,
+    "version": "2026.10.16",
+    "archive_sha256": "567c912ccd9bbcc7cac42ddff309616262db4dca898886f6436ea6f18ef43036"
+  },
+  "large": {
+    "family": "DFPFangYuanW7-GB",
+    "size": 16,
+    "file": "huakang-fangyuan-w7.ttf",
+    "original_filename": "华康方圆体w7.ttf",
+    "sha256": "ab7b94672ba0e8d1cb4e572a6a3bbe7c4b2d636610af202289d48e42b9ea090c",
+    "source": "用户于 2026-10-26 提供；选择保留 16×16 字格，允许缩小字身后描边。",
+    "fit_body_max": [
+      14,
+      14
+    ],
+    "synthetic_bold": false,
+    "fit_description": "取消额外加粗。汉字等比例尽量用满14×14，描边后最长边16px，贴左下；全角标点保持自然比例且不放大。"
+  },
+  "shading": {
+    "sample": "supplied/shading_example.png",
+    "sha256": "b51e5553ebcae9b858fa614941ebc503b5762f8fd7f7b22c68b09ce1b04ebed7",
+    "body": 11,
+    "bottom_bands": [
+      9,
+      10,
+      10
+    ],
+    "border": 8,
+    "description": "以示例主要色阶作字底分层：最底字身行9、前两行10，上部11；短标点保留最上行亮色。"
+  }
+}

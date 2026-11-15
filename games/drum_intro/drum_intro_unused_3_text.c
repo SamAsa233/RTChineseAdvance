@@ -1,3 +1,6 @@
+/* 中文文本：本文件采用译文包中 stage 5 的已校对条目。
+ * 字符串中的 \n 是游戏画面换行；相邻引号只是方便阅读源码。
+ * 未校对或未定位的条目见 text/zh_hans/TODO_未校对.md。 */
 #include "global.h"
 #include "text.h"
 
@@ -6,46 +9,28 @@
 
 
 const char D_0805e42c[] =
-    "\n"
-    "Hi there!\n"
-    "I'm Samurai Drummer.\n"
-    "\n";
+    "你好！\n"
+    "我是鼓武士。";
 
-const char D_0805e444[] = 
-    "\n"
-    "How have you been?\n"
-    "\n"
-    "\n";
+const char D_0805e444[] = "最近还好吗？";
 
 const char D_0805e458[] = 
-    "\n"
-    "This lesson, let's play along\n"
-    "with a short music track.\n"
-    "\n";
+    "这次，就配着一首短曲\n"
+    "实际演奏一下吧。";
 
-const char D_0805e490[] =
-    "\n" 
-    "Listen closely,\n"
-    "then repeat after me.\n"
-    "\n";
+const char D_0805e490[] = 
+    "请仔细听我的演奏，\n"
+    "然后照着打。";
 
-const char D_0805e4c0[] = 
-    "\n"
-    "I'll get right to it.\n"
-    "\n"
-    "\n";
+const char D_0805e4c0[] = "那就马上开始吧。";
 
 const char D_0805e4e0[] =
-    "\n"
-    "No, that's not right!\n"
-    "Listen to me again.\n"
-    "\n";
+    "不对！\n"
+    "要仔细听哦。";
 
 const char D_0805e4f8[] =
-    "\n"
-    "Still not right!\n"
-    "Listen carefully.\n"
-    "\n";
+    "不对啦！\n"
+    "要再、更仔细地听哦。";
 
 const char *const D_0805e520[] = {
     D_0805e4c0,
@@ -55,22 +40,13 @@ const char *const D_0805e520[] = {
 };
 
 const char D_0805e530[] =
-    "\n"
-    "Now for your turn.\n"
-    "\n"
-    "\n";
+    "轮到你啦。";
 
 const char D_0805e544[] =
-    "\n"
-    "Alright, let's try again!\n"
-    "\n"
-    "\n";
+    "来，再试一次！";
 
 const char D_0805e55c[] =
-    "\n"
-    "Come on! You'll get it this time!\n"
-    "\n"
-    "\n";
+    "来，这次一定行！";
 
 const char *const D_0805e574[] = {
     D_0805e530,
@@ -80,30 +56,15 @@ const char *const D_0805e574[] = {
 };
 
 const char D_0805e584[] =
-    "\n"
-    "OK!\n"
-    "\n"
-    "\n";
+    "OK!";
 
 const char D_0805e58c[] = "";
 
-const char D_0805e590[] = 
-    "\n"
-    "Good, you've got it now!\n"
-    "\n"
-    "\n";
+const char D_0805e590[] = "哦，你一下就做到了！";
 
-const char D_0805e5ac[] = 
-    "\n"
-    "You're a quick learner!\n"
-    "\n"
-    "\n";
+const char D_0805e5ac[] = "你上手还真快啊！";
 
-const char D_0805e5d0[] = 
-    "\n"
-    "Nicely done!\n"
-    "\n"
-    "\n";
+const char D_0805e5d0[] = "感觉不错。";
 
 const char *const D_0805e5e4[] = {
     D_0805e58c,
@@ -114,28 +75,13 @@ const char *const D_0805e5e4[] = {
 };
 
 const char D_0805e5f8[] =
-    "\n"
-    "Next, let's start off the song\n"
-    "with a crash.\n"
-    "Press �L to hit the cymbals.\n";
+    "接下来，试着在曲子开头\n加一下镲吧。\n镲是"CHAR_R_SHOULDER_BUTTON_UTF8"键。";
 
-const char D_0805e64c[] = 
-    "\n"
-    "You only need to press both\n"
-    "�N and �L at the same time\n"
-    "once.\n";
+const char D_0805e64c[] = "也就是说，只有最开始\n要同时按下"CHAR_B_BUTTON_UTF8"和"CHAR_R_SHOULDER_BUTTON_UTF8"。";
 
-const char D_0805e684[] = 
-    "\n"
-    "We went over this in the\n"
-    "previous lesson, so remember\n"
-    "our practice from then.\n";
+const char D_0805e684[] = "回想一下曲子开头的练习哦。";
 
-const char D_0805e6b0[] = 
-    "\n"
-    "With that, let's start!\n"
-    "\n"
-    "\n";
+const char D_0805e6b0[] = "那，开始吧。";
 
 const char *const D_0805e6c4[] = {
     D_0805e6b0,
@@ -145,22 +91,12 @@ const char *const D_0805e6c4[] = {
 };
 
 const char D_0805e6d4[] =
-    "\n"
-    "Great work!\n"
-    "Keep it up!\n"
-    "\n";
+    "太棒了！\n"
+    "就是这个感觉。";
 
-const char D_0805e6f0[] = 
-    "\n"
-    "Did you find that too easy?\n"
-    "\n"
-    "\n";
+const char D_0805e6f0[] = "是不是还挺简单的？";
 
-const char D_0805e70c[] = 
-    "\n"
-    "That was hard, right?\n"
-    "\n"
-    "\n";
+const char D_0805e70c[] = "稍微费了点劲呢。";
 
 const char *const D_0805e730[] = {
     D_0805e58c,
@@ -170,17 +106,9 @@ const char *const D_0805e730[] = {
     NULL
 };
 
-const char D_0805e744[] = 
-    "\n"
-    "Let's end this on a high note!\n"
-    "\n"
-    "\n";
+const char D_0805e744[] = "那么接下来，试着把曲子的结尾\n收得漂亮一点吧。";
 
-const char D_0805e778[] = 
-    "\n"
-    "Here's a demonstration.\n"
-    "\n"
-    "\n";
+const char D_0805e778[] = "示范来了。";
 
 const char *const D_0805e790[] = {
     D_0805e778,
@@ -190,10 +118,7 @@ const char *const D_0805e790[] = {
 };
 
 const char D_0805e7a0[] =
-    "\n"
-    "Good luck!\n"
-    "\n"
-    "\n";
+    "加油！";
 
 const char *const D_0805e7b0[] = {
     D_0805e7a0,
@@ -203,22 +128,16 @@ const char *const D_0805e7b0[] = {
 };
 
 const char D_0805e7c0[] =
-    "\n"
-    "You did it all in one go!\n"
-    "I can't believe it!\n"
-    "\n";
+    "居然 1 次就做到了！\n"
+    "太厉害啦！";
 
 const char D_0805e7ec[] =
-    "\n"
-    "You did it in only two attempts!\n"
-    "Good job!\n"
-    "\n";
+    "只用了 2 次就成功啦！\n"
+    "真有你的！";
 
 const char D_0805e818[] =
-    "\n"
-    "You pulled it off in the end!\n"
-    "That's pretty good!\n"
-    "\n";
+    "总算做到了呢！\n"
+    "感觉很不错哦！";
 
 const char *const D_0805e844[] = {
     D_0805e58c,
@@ -228,20 +147,10 @@ const char *const D_0805e844[] = {
     NULL
 };
 
-const char D_0805e858[] = 
-    "\n"
-    "Since you've aced all the\n"
-    "parts of a song, I think you'll\n"
-    "enjoy my drum lessons!\n";
+const char D_0805e858[] = "像这样，把曲子的开头、\n中段和收尾都打出来的话，\n演奏起来就会更有意思。";
 
-const char D_0805e8c0[] = 
-    "\n"
-    "You can play them in the\n"
-    "Bonus Corner. Have fun!\n"
-    "\n";
+const char D_0805e8c0[] = "去那个区域多练几次，\n好好享受演奏吧。";
 
 const char D_0805e8f8[] =
-    "\n"
-    "Well, see you later!\n"
-    "Goodbye for now!\n"
-    "\n";
+    "那么，下回见。\n"
+    "再会啦。";

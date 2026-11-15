@@ -1,3 +1,6 @@
+/* 中文文本：本文件采用译文包中 stage 5 的已校对条目。
+ * 字符串中的 \n 是游戏画面换行；相邻引号只是方便阅读源码。
+ * 未校对或未定位的条目见 text/zh_hans/TODO_未校对.md。 */
 #include "global.h"
 #include "graphics.h"
 #include "src/bitmap_font.h"
@@ -48,14 +51,14 @@ struct CompressedData *score_results_buffered_textures[] = {
     // Almost there.
     // Hmm...
 const char *score_results_default_comments[] = {
-    /* BEST */ "Amazing!",
-    /* HIGH */ "Really good!",
-    /* MID  */ "Fairly average.",
-    /* LOW  */ "Getting there...",
+    /* BEST */ "顶级水平！！",
+    /* HIGH */ "相当不错！",
+    /* MID  */ "一般水平。",
+    /* LOW  */ "还差一点。",
     #ifdef BRIT
     /* FAIL */ "Hmm..."
     #else
-    /* FAIL */ "Hm..."
+    /* FAIL */ "唔〜…"
     #endif
 };
 

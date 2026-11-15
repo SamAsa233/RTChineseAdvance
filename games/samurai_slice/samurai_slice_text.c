@@ -1,3 +1,6 @@
+/* ä¸­æ–‡æ–‡æœ¬ï¼šæœ¬æ–‡ä»¶é‡‡ç”¨è¯‘æ–‡åŒ…ä¸­ stage 5 çš„å·²æ ¡å¯¹æ¡ç›®ã€‚
+ * å­—ç¬¦ä¸²ä¸­çš„ \n æ˜¯æ¸¸æˆç”»é¢æ¢è¡Œï¼›ç›¸é‚»å¼•å·åªæ˜¯æ–¹ä¾¿é˜…è¯»æºç ã€‚
+ * æœªæ ¡å¯¹æˆ–æœªå®šä½çš„æ¡ç›®è§ text/zh_hans/TODO_æœªæ ¡å¯¹.mdã€‚ */
 #include "global.h"
 #include "text.h"
 
@@ -5,26 +8,26 @@
 /* Game Text - Samurai Slice */
 
 
-const char D_0805bca8[] = "Work on your basics.";
+const char D_0805bca8[] = "åŸºæœ¬åŠŸè¿˜æ²¡åˆ°å®¶å•Šã€‚";
 
 const char D_0805bcc4[] = "";
 
-const char D_0805bcc8[] = "They ambushed you in the fog.";
+const char D_0805bcc8[] = "çœ‹ä¸è§æ•Œäººå°±ä¸è¡Œäº†å•Šâ€¦";
 
-const char D_0805bcec[] = "You cut straight through the fog!";
+const char D_0805bcec[] = "çœ‹ä¸è§æ•Œäººä¹Ÿæ‰“å¾—ä¸é”™ï¼";
 
-const char D_0805bd10[] = "You struggled against their quick pace.";
+const char D_0805bd10[] = "çœ‹æ¥ä½ ä¸å¤ªæ“…é•¿å¿«èŠ‚å¥å•Šâ€¦";
 
-const char D_0805bd30[] = "Even the fastest ones couldn't pass you!";
+const char D_0805bd30[] = "å¿«èŠ‚å¥æŠ“å¾—å¾ˆå¥½ï¼";
 
-const char D_0805bd50[] = "The slow ones couldn't trip you up!";
+const char D_0805bd50[] = "æ…¢æ‹å¤„ç†å¾—æ¼‚äº®ï¼";
 
-const char D_0805bd68[] = "@@@‚r‚Œ‚‰‚ƒ‚…@‚”‚ˆ‚…@‚…‚‚…‚‚‰‚…‚“I";
+const char D_0805bd68[] = "æŠŠæ•Œäººæ–©æ‰ï¼";
 
-const char D_0805bd7c[] = "‚g‚DDD";
+const char D_0805bd7c[] = "å””â€¦";
 
-const char D_0805bd88[] = "‚h‚”f‚“@‚‡‚…‚”‚”‚‰‚‚‡@‚†‚‚‡‚‡‚™DDD";
+const char D_0805bd88[] = "èµ·é›¾äº†å•Šâ€¦";
 
-const char D_0805bda4[] = "‚s‚—‚@‚‚†@‚”‚ˆ‚…‚DDDH";
+const char D_0805bda4[] = "ä¸¤åªâ€¦ï¼ï¼Ÿ";
 
-const char D_0805bdb8[] = "The Spectators' Tale";
+const char D_0805bdb8[] = "å›´è§‚è€…çš„è¯";

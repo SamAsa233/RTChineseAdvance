@@ -1,3 +1,8 @@
+/* åæœˆæ›´æ–°ï¼šä»…æ¥å…¥æ–°ç‰ˆé˜¶æ®µ 5ï¼Œä¿ç•™é¼“ç‚¹/æ‹æ‰‹é¢œè‰²ç å’ŒåŸç‰ˆå…ˆåé¡ºåºã€‚
+ * æ’ç‰ˆæ ¸éªŒï¼š2026-10-24 mGBA æ•´æ›²ç¡®è®¤æ­Œè¯è¾¹ç•Œå’Œé¢œè‰²åˆ‡æ¢ï¼Œé«˜äº®æ²¿ç”¨åŸç‰ˆèŠ‚æ‹ã€‚ */
+/* ä¸­æ–‡æ–‡æœ¬ï¼šæœ¬æ–‡ä»¶é‡‡ç”¨è¯‘æ–‡åŒ…ä¸­ stage 5 çš„å·²æ ¡å¯¹æ¡ç›®ã€‚
+ * å­—ç¬¦ä¸²ä¸­çš„ \n æ˜¯æ¸¸æˆç”»é¢æ¢è¡Œï¼›ç›¸é‚»å¼•å·åªæ˜¯æ–¹ä¾¿é˜…è¯»æºç ã€‚
+ * æœªæ ¡å¯¹æˆ–æœªå®šä½çš„æ¡ç›®è§ text/zh_hans/TODO_æœªæ ¡å¯¹.mdã€‚ */
 #include "global.h"
 #include "text.h"
 
@@ -5,75 +10,75 @@
 /* Game Text - The Bon Odori */
 
 
-const char D_080676b4[] = "The first half was kinda rough...";
+const char D_080676b4[] = "å‰åŠæ®µè¿˜å·®ä¸€ç‚¹å•Šã€‚";
 
-const char D_080676d4[] = "The first half was really good!";
+const char D_080676d4[] = "å‰åŠæ®µå¾ˆç¨³å˜›ï¼";
 
-const char D_080676ec[] = "The second half was sorta sloppy.";
+const char D_080676ec[] = "ååŠæ®µæ°”æ°›æœ‰ç‚¹å†·ä¸‹æ¥äº†å•Šã€‚";
 
-const char D_08067710[] = "The second half was incredible!";
+const char D_08067710[] = "ååŠæ®µçƒ­èµ·æ¥å•¦ã€œï¼";
 
 const char D_0806772c[] = "";
 
-const char D_08067730[] = "It really ramped up near the end!";
+const char D_08067730[] = "é«˜æ½®éƒ¨åˆ†å¾ˆåˆ°ä½ï¼ï¼";
 
-const char D_08067754[] = "The ending was pitch perfect!";
+const char D_08067754[] = "æœ€åæ”¶å¾—å¾ˆæ¼‚äº®å‘¢ï¼";
 
-const char D_08067778[] = "The audience says...";
+const char D_08067778[] = "å‘¨å›´äººçš„è¯„ä»·";
 
-const char text_bon_odori_ha[] = ".0:0" "‚g‚‚`";
+const char text_bon_odori_ha[] = ".0:0å“ˆï½";
 
-const char text_bon_odori_hanabi_agare_ba[] = ".0:0" "‚g‚‚‚‚‚‚‰@‚‚‡‚‚’‚…@‚‚‚`";
+const char text_bon_odori_hanabi_agare_ba[] = ".0:0å½“çƒŸèŠ±é£ä¸Šå¤©å•Šï½";
 
-const char text_bon_odori_don_don_pan_pan[] = ".1:0" "‚c‚|‚@‚„‚|‚@" ".2:0" "‚‚|‚@‚‚|‚";
+const char text_bon_odori_don_don_pan_pan[] = ".1:0å’šï¼ï¼å’šï¼ï¼.2:0ä¹“ï¼ï¼ä¹“ï¼ï¼";
 
-const char text_bon_odori_dondo_pan_pan[] = ".1:0" "‚c‚‚‚„‚@" ".2:0" "‚‚|‚@‚‚‚";
+const char text_bon_odori_dondo_pan_pan[] = ".1:0å’šï¼å’š .2:0ä¹“ï¼ï¼ä¹“ï¼";
 
-const char text_bon_odori_haa[] = ".0:0" "‚g‚‚`@‚`‚ˆ`";
+const char text_bon_odori_haa[] = ".0:0å“ˆï½å•Šï½";
 
-const char text_bon_odori_kansei_agaru[] = ".0:0" "‚j‚‚‚“‚…‚‰@‚‚‡‚‚’‚•`";
+const char text_bon_odori_kansei_agaru[] = ".0:0å¤§å®¶éƒ½æ¬¢å£°ç¬‘è¯­ï½";
 
-const char text_bon_odori_ninki_agare_ba[] = ".0:0" "‚m‚‰‚‚‹‚‰@‚‚‡‚‚’‚…@‚‚‚`";
+const char text_bon_odori_ninki_agare_ba[] = ".0:0äººæ°”ä¸Šå‡çš„è¯ï½";
 
-const char text_bon_odori_kyuryo_agaru[] = ".0:0" "‚j‚™‚•‚’‚™‚@‚‚‡‚‚’‚•`";
+const char text_bon_odori_kyuryo_agaru[] = ".0:0å¤§å®¶æœ‰æ›´å¤šå·¥èµ„ï½";
 
-const char text_bon_odori_matsuri_da_wasshoi[] = ".0:0" "‚l‚‚”‚“‚•‚’‚‰@‚„‚@‚—‚‚“‚“‚ˆ‚‚‰I";
+const char text_bon_odori_matsuri_da_wasshoi[] = ".0:0æ•´ä¸ªæ—¥æœ¬ å“‡ï¼å’»ï¼ï¼";
 
-const char text_bon_odori_dondo_panpa_dondo_panpa[] = ".1:0" "‚c‚‚‚„‚@" ".2:0" "‚‚‚‚‚@" ".1:0" "‚„‚‚‚„‚@" ".2:0" "‚‚‚‚‚";
+const char text_bon_odori_dondo_panpa_dondo_panpa[] = ".1:0å’šï¼å’š .2:0ä¹“ï¼ä¹“ .1:0å’šï¼å’š .2:0ä¹“ï¼ä¹“";
 
-const char text_bon_odori_nippon_chu_ga_wasshoi[] = ".0:0" "‚m‚‰‚‚‚‚@‚ƒ‚ˆ‚•@‚‡‚@‚—‚‚“‚“‚ˆ‚‚‰I";
+const char text_bon_odori_nippon_chu_ga_wasshoi[] = ".0:0åœ¨èŠ‚æ—¥ä¸­ å“‡ï¼å’»ï¼ï¼";
 
-const char text_bon_odori_don_don_pan[] = ".1:0" "‚c‚|‚@‚„‚|‚@" ".2:0" "‚‚‚";
+const char text_bon_odori_don_don_pan[] = ".1:0å’šï¼ï¼å’šï¼ï¼.2:0ä¹“ï¼";
 
-const char text_bon_odori_sore_hikkuri_kaette[] = ".0:0" "‚r‚‚’‚…@‚ˆ‚‰‚‹‚‹‚•‚’‚‰@‚‹‚‚…‚”‚”‚…";
+const char text_bon_odori_sore_hikkuri_kaette[] = ".0:0æ¥å§ è®©æˆ‘ä»¬è½¬èµ·åœˆæ¥";
 
-const char text_bon_odori_ha_bon_odori[] = ".0:0" "‚g‚‚`@‚a‚‚@‚n‚„‚‚’‚‰`";
+const char text_bon_odori_ha_bon_odori[] = ".0:0å“ˆï½ è·³è¿™ç›‚å…°ç›†èˆ";
 
-const char text_bon_odori_dondo_panpa[] = ".1:0" "‚c‚‚‚„‚@" ".2:0" "‚‚‚‚‚";
+const char text_bon_odori_dondo_panpa[] = ".1:0å’šï¼å’š .2:0ä¹“ï¼ä¹“";
 
-const char text_bon_odori_don_pan_pan[] = ".1:0" "‚c‚|‚@" ".2:0" "‚‚|‚@‚‚‚";
+const char text_bon_odori_don_pan_pan[] = ".1:0å’šï¼ï¼.2:0ä¹“ï¼ï¼ä¹“ï¼";
 
-const char text_bon_odori_ame_ga_agare_ba[] = ".0:0" "‚`‚‚…@‚‡‚@‚‚‡‚‚’‚…@‚‚‚`";
+const char text_bon_odori_ame_ga_agare_ba[] = ".0:0å½“å¤©ä¸Šçš„é›¨åœä¸‹ï½ ";
 
-const char text_bon_odori_yagura_ni_agaru[] = ".0:0" "‚x‚‚‡‚•‚’‚@‚‚‰@‚‚‡‚‚’‚•`";
+const char text_bon_odori_yagura_ni_agaru[] = ".0:0ç™»ä¸Šå¡”æ¥¼å»çœºæœ›ï½";
 
-const char text_bon_odori_hora_matsuri_da_wasshoi[] = ".0:0" "‚g‚‚’‚I@‚l‚‚”‚“‚•‚’‚‰@‚„‚@‚—‚‚“‚“‚ˆ‚‚‰I";
+const char text_bon_odori_hora_matsuri_da_wasshoi[] = ".0:0çœ‹å•Šï¼ç››å¤§èŠ‚æ—¥ å“‡ï¼å’»ï¼ï¼";
 
-const char text_bon_odori_korezo[] = ".0:0" "‚j‚‚’‚…‚š‚";
+const char text_bon_odori_korezo[] = ".0:0è¿™ä¾¿æ˜¯";
 
-const char text_bon_odori_meido_in_japan[] = ".0:0" "‚‚‚„‚…@‚‰‚@‚i‚" ".2" "‚o‚`‚m";
+const char text_bon_odori_meido_in_japan[] = ".0:0Made in Ja.2pan";
 
-const char text_bon_odori_pan_pan[] = ".2:0" "‚o‚‚@‚‚‚";
+const char text_bon_odori_pan_pan[] = ".2:0ä¹“ï¼ä¹“ï¼";
 
-const char text_bon_odori_don_don_pan_pan_2[] = ".1:0" "‚c‚|‚@‚„‚|‚@" ".2:0" "‚‚|‚@‚‚‚";
+const char text_bon_odori_don_don_pan_pan_2[] = ".1:0å’šï¼ï¼å’šï¼ï¼.2:0ä¹“ï¼ï¼ä¹“ï¼";
 
-const char D_08067a84[] = ".6:1" "‚v‚…‚Œ‚ƒ‚‚‚…@‚”‚@‚”‚ˆ‚…@‚a‚‚@‚e‚…‚“‚”‚‰‚–‚‚ŒI";
+const char D_08067a84[] = ".6:1æ¥è·³ç›†èˆå§ï¼";
 
-const char D_08067aa4[] = ".6:1" "‚v‚ˆ‚…‚@‚—‚…@‚“‚‚™@g‚o‚‚Ch@‚™‚‚•@‚ƒ‚Œ‚‚I";
+const char D_08067aa4[] = ".6:1ç…§ç€å¤§å®¶çš„æ ·å­æ‹æ‰‹å“¦ã€‚";
 
-const char D_08067ad0[] = ".6:0" "‚m‚‰‚ƒ‚…@‚ƒ‚Œ‚‚‚‚‰‚‚‡I";
+const char D_08067ad0[] = ".6:0OK!";
 
-const char D_08067adc[] = ".6:1" "‚v‚ˆ‚…‚@‚—‚…@‚“‚‚™@g‚o‚‚‚‚Ch@‚ƒ‚Œ‚‚@‚”‚—‚‰‚ƒ‚…I";
+const char D_08067adc[] = ".6:1å†æ¥ä¸€éå§ã€œï¼";
 
-const char D_08067b00[] = ".6:1" "‚k‚‚‚‹‚“@‚Œ‚‰‚‹‚…@‚™‚‚•f‚–‚…@‚‡‚‚”@‚‰‚”I";
+const char D_08067b00[] = ".6:1é‚£ä¹ˆï¼Œæ­£å¼ä¸Šåœºå¯è¦åŠ æ²¹å“¦ï¼";
 

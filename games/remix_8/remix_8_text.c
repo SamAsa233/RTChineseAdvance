@@ -1,3 +1,6 @@
+/* ä¸­æ–‡æ–‡æœ¬ï¼šæœ¬æ–‡ä»¶é‡‡ç”¨è¯‘æ–‡åŒ…ä¸­ stage 5 çš„å·²æ ¡å¯¹æ¡ç›®ã€‚
+ * å­—ç¬¦ä¸²ä¸­çš„ \n æ˜¯æ¸¸æˆç”»é¢æ¢è¡Œï¼›ç›¸é‚»å¼•å·åªæ˜¯æ–¹ä¾¿é˜…è¯»æºç ã€‚
+ * æœªæ ¡å¯¹æˆ–æœªå®šä½çš„æ¡ç›®è§ text/zh_hans/TODO_æœªæ ¡å¯¹.mdã€‚ */
 #include "global.h"
 #include "text.h"
 
@@ -5,30 +8,30 @@
 /* Game Text - Remix 8 */
 
 
-const char D_0806a97c[] = "Try a little harder.";
+const char D_0806a97c[] = "è¿˜å¾—ç»§ç»­åŠªåŠ›ã€‚";
 
-const char D_0806a98c[] = "That was really great!";
+const char D_0806a98c[] = "ç®€ç›´å¤ªæ£’å•¦ï¼ï¼";
 
-const char D_0806a9a8[] = "Your decisions took too long.";
+const char D_0806a9a8[] = "åˆ¤æ–­è¿˜å·®ç‚¹ç«å€™ã€‚";
 
-const char D_0806a9cc[] = "You thought on the spot well!";
+const char D_0806a9cc[] = "åˆ¤æ–­çœŸæ¼‚äº®ï¼";
 
-const char D_0806a9f0[] = "Your technique needs work.";
+const char D_0806a9f0[] = "å†å¥½å¥½ç£¨ç»ƒä¸€ä¸‹å§ã€‚";
 
-const char D_0806aa0c[] = "Your technique is solid!";
+const char D_0806aa0c[] = "æŠ€æœ¯ä¸é”™å•Šï¼";
 
-const char D_0806aa24[] = "Rhythm League notes:";
+const char D_0806aa24[] = "æ¥è‡ªç¥ç§˜èŠ‚å¥ç»„ç»‡çš„é€šå‘Š";
 
-const char D_0806aa40[] = "‚e‚‚’@‚™‚‚•@‚‰‚”@‚‰‚“@‚‚‚“‚“‚‰‚‚‚Œ‚…I";
+const char D_0806aa40[] = "ä½ ä¸€å®šèƒ½åšåˆ°ï¼";
 
-const char D_0806aa50[] = "‚j‚…‚…‚@‚‰‚”@‚•‚I";
+const char D_0806aa50[] = "å¯å¾—æ’‘ä½å•Šâ€”â€”ï¼ï¼";
 
-const char D_0806aa51[] = "‚q‚‰‚‡‚ˆ‚”I";
+const char D_0806aa51[] = "Right!";
 
-const char D_0806aa64[] = "‚f‚‰‚–‚…@‚‰‚”@‚™‚‚•‚’@‚‚Œ‚ŒI";
+const char D_0806aa64[] = "å†²å•Šï¼ï¼";
 
-const char D_0806aa74[] = "‚h‚”f‚“@‚”‚ˆ‚…@‚†‚‰‚‚‚Œ@‚‚•‚“‚ˆI";
+const char D_0806aa74[] = "å†åŠ æŠŠåŠ²ï¼ï¼";
 
-const char D_0806aa8c[] = "‚h‚”f‚“@‚‚Œ‚‚‚“‚”@‚‚–‚…‚’I";
+const char D_0806aa8c[] = "ä¸‹ä¸€ä¸ªå°±ç»“æŸå•¦ï¼Œå±ï¼";
 
 const char D_0806aaa8[] = "";

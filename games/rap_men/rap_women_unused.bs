@@ -1,3 +1,4 @@
+@ ä¸­æ–‡æ–‡æœ¬ï¼šä¿ç•™åŸè„šæœ¬æŒ‡ä»¤ï¼ŒåªæŠŠå·²æ ¡å¯¹å°è¯æ¥å…¥ï¼›æœªæ ¡å¯¹é¡¹æœç´¢ TODO æœªæ ¡å¯¹ã€‚
 .include "include/beatscript.inc"
 .include "games/rap_men/macros.inc"
 
@@ -31,51 +32,63 @@ define_gameplay_scene scene_rap_women_unused, script_rap_women_unused_entry
 @ Rap Women (Unused) - Text
 
 text text_rap_women_unused_juji_desu_ka
-    .asciz ".b:1‚h‚”f‚“@‚P‚O@‚`‚lC@.b:0‚ˆ‚•‚ˆH.8:1"
+@ TODO æœªæ ¡å¯¹ï¼štext_rap_women_unused_juji_desu_ka è¯‘æ–‡åŒ…æœªåˆ° stage 5ï¼Œæš‚ç•™åŸæ–‡ã€‚
+    .asciz ".b:1ä¸Šåˆåç‚¹äº†.b:0å—ï¼Ÿ.8:1"
 endtext
 
 text text_rap_women_unused_oyatsu_desu_ka
-    .asciz ".b:1‚h‚”f‚“@‚“‚‚‚ƒ‚‹@‚”‚‰‚‚…C@.b:0‚ˆ‚•‚ˆH.8:1"
+@ TODO æœªæ ¡å¯¹ï¼štext_rap_women_unused_oyatsu_desu_ka è¯‘æ–‡åŒ…æœªåˆ° stage 5ï¼Œæš‚ç•™åŸæ–‡ã€‚
+    .asciz ".b:1è¯¥åƒç‚¹å¿ƒäº†.b:0å—ï¼Ÿ.8:1"
 endtext
 
 text text_rap_women_unused_naisho_desu_ka
-    .asciz ".b:1‚v‚ˆ‚f‚“@‚”‚@‚‹‚‚‚—C@.b:0‚ˆ‚•‚ˆH.8:1"
+@ TODO æœªæ ¡å¯¹ï¼štext_rap_women_unused_naisho_desu_ka è¯‘æ–‡åŒ…æœªåˆ° stage 5ï¼Œæš‚ç•™åŸæ–‡ã€‚
+    .asciz ".b:1è¦ä¿å¯†.b:0å—ï¼Ÿ.8:1"
 endtext
 
 text text_rap_women_unused_kare_no_oyatsu_da_ne
-    .asciz ".9:1‚s‚ˆ‚…‚“‚…@‚‚’‚…@‚‚Œ‚Œ@‚”‚ˆ‚…‚‰‚’@‚“‚‚‚ƒ‚‹‚“C.9:0@‚™‚@‚“‚…‚…H.8:1"
+@ TODO æœªæ ¡å¯¹ï¼štext_rap_women_unused_kare_no_oyatsu_da_ne è¯‘æ–‡åŒ…æœªåˆ° stage 5ï¼Œæš‚ç•™åŸæ–‡ã€‚
+    .asciz ".9:1é‚£æ˜¯ä»–çš„ç‚¹å¿ƒ.9:0å§.8:1"
 endtext
 
 text text_rap_women_unused_tabeteii_kamo_ne
-    .asciz ".9:1‚d‚‚”@f‚…‚@‚‚Œ‚Œ@‚•‚C@.9:0‚™‚@‚†‚…‚…‚Œ@‚‚…H.8:1"
+@ TODO æœªæ ¡å¯¹ï¼štext_rap_women_unused_tabeteii_kamo_ne è¯‘æ–‡åŒ…æœªåˆ° stage 5ï¼Œæš‚ç•™åŸæ–‡ã€‚
+    .asciz ".9:1ä¹Ÿè®¸å¯ä»¥åƒ.9:0å§.8:1"
 endtext
 
 text text_rap_women_unused_aketeii_kamo_ne
-    .asciz ".9:1‚n‚‚…‚@f‚…‚@‚•‚C@.9:0‚™‚@‚†‚…‚…‚Œ@‚‚…H.8:1"
+@ TODO æœªæ ¡å¯¹ï¼štext_rap_women_unused_aketeii_kamo_ne è¯‘æ–‡åŒ…æœªåˆ° stage 5ï¼Œæš‚ç•™åŸæ–‡ã€‚
+    .asciz ".9:1ä¹Ÿè®¸å¯ä»¥æ‰“å¼€.9:0å§.8:1"
 endtext
 
 text text_rap_women_unused_oyatsu_wa_saikou
-    .asciz ".a:1‚r‚‚‚ƒ‚‹‚‰‚‚‡@‚‰‚“@.a:0‚“‚@‚`‚v‚d‚r‚n‚l‚dI.8:1"
+@ TODO æœªæ ¡å¯¹ï¼štext_rap_women_unused_oyatsu_wa_saikou è¯‘æ–‡åŒ…æœªåˆ° stage 5ï¼Œæš‚ç•™åŸæ–‡ã€‚
+    .asciz ".a:1ç‚¹å¿ƒ.a:0æœ€æ£’å•¦â€”â€”ï¼ï¼.8:1"
 endtext
 
 text text_rap_women_unused_kibun_wa_saikou
-    .asciz ".a:1‚h@‚†‚…‚…‚Œ@.a:0‚“‚@‚`‚v‚d‚r‚n‚l‚dI.8:1"
+@ TODO æœªæ ¡å¯¹ï¼štext_rap_women_unused_kibun_wa_saikou è¯‘æ–‡åŒ…æœªåˆ° stage 5ï¼Œæš‚ç•™åŸæ–‡ã€‚
+    .asciz ".a:1å¿ƒæƒ….a:0æœ€æ£’å•¦â€”â€”ï¼ï¼.8:1"
 endtext
 
 text text_rap_women_unused_amakute_saikou
-    .asciz ".a:1‚r‚—‚…‚…‚”‚“@‚‚’‚…@.a:0‚“‚@‚`‚v‚d‚r‚n‚l‚dI.8:1"
+@ TODO æœªæ ¡å¯¹ï¼štext_rap_women_unused_amakute_saikou è¯‘æ–‡åŒ…æœªåˆ° stage 5ï¼Œæš‚ç•™åŸæ–‡ã€‚
+    .asciz ".a:1ç”œç”œçš„ï¼Œ.a:0æœ€æ£’å•¦â€”â€”ï¼ï¼.8:1"
 endtext
 
 text text_rap_women_unused_betsubara_saikou
-    .asciz ".a:1‚b‚‚‹‚…‚“@‚‚’‚…@.a:0‚“‚@‚`‚v‚d‚r‚n‚l‚dI.8:1"
+@ TODO æœªæ ¡å¯¹ï¼štext_rap_women_unused_betsubara_saikou è¯‘æ–‡åŒ…æœªåˆ° stage 5ï¼Œæš‚ç•™åŸæ–‡ã€‚
+    .asciz ".a:1ç”œç‚¹èƒƒ.a:0æœ€æ£’å•¦â€”â€”ï¼ï¼.8:1"
 endtext
 
 text text_rap_women_unused_kare_ni_wa_naisho
-    .asciz ".a:1‚b‚Œ‚•‚…‚Œ‚…‚“‚“@‚”‚ˆ‚‚”@‚—‚…@.a:0‚r‚s‚n‚k‚d@f‚d‚lI.8:1"
+@ TODO æœªæ ¡å¯¹ï¼štext_rap_women_unused_kare_ni_wa_naisho è¯‘æ–‡åŒ…æœªåˆ° stage 5ï¼Œæš‚ç•™åŸæ–‡ã€‚
+    .asciz ".a:1åˆ«å‘Šè¯‰ä»–.a:0å‘€â€”â€”ï¼ï¼.8:1"
 endtext
 
 text text_rap_women_unused_dare_ni_mo_naisho
-    .asciz ".a:1‚s‚…‚Œ‚Œ@f‚…‚@‚—‚…@‚‚’‚…@.a:0‚k‚n‚`‚s‚g‚r‚n‚l‚dI.8:1"
+@ TODO æœªæ ¡å¯¹ï¼štext_rap_women_unused_dare_ni_mo_naisho è¯‘æ–‡åŒ…æœªåˆ° stage 5ï¼Œæš‚ç•™åŸæ–‡ã€‚
+    .asciz ".a:1è°éƒ½åˆ«å‘Šè¯‰.a:0å‘€â€”â€”ï¼ï¼.8:1"
 endtext
 
 

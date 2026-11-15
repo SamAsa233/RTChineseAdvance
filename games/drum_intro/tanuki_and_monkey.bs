@@ -1,6 +1,9 @@
+@ 中文文本：本文件采用译文包中 stage 5 的已校对条目。
+@ 字符串中的 \n 是游戏画面换行；未校对项见 text/zh_hans/TODO_未校对.md。
 .include "include/beatscript.inc"
 .include "games/drum_intro/macros.inc"
 
+@ 汉化：接入译文包 stage 5 已校对的狸猫与猴子教学提示；保留原有三段换行。
 
 
 .section .script.entry
@@ -97,45 +100,31 @@ return
 
 
 text D_08a2f220
-    .ascii "Okay, let's start out\n"
-    .asciz "simple for now."
+    .asciz "那先来个简单点的。"
 endtext
 
 text D_08a2f248
-    .ascii "Strike 1!\n"
-    .ascii "You have two more\n"
-    .asciz "chances. Good luck!"
+    .asciz "再来一次！\n还剩 2 次机会。\n加油！"
 endtext
 
 text D_08a2f278
-    .ascii "Strike 2!\n"
-    .ascii "This is your last\n"
-    .asciz "chance! Concentrate!"
+    .asciz "再来一次！\n最后一次机会！\n集中精神！！"
 endtext
 
 text D_08a2f2a0
-    .ascii "OK! Onto the next one!\n"
-    .ascii "Think you can handle\n"
-    .asciz "this one?"
+    .asciz "可以哦。\n来试试下一个吧！\n跟得上吗？"
 endtext
 
 text D_08a2f2d4
-    .ascii "Good job.\n"
-    .ascii "For the next pattern,\n"
-    .asciz "Ponta will play along, too!"
+    .asciz "有两下子嘛。\n下一个花样里\n胖太也会一起敲哦！"
 endtext
 
 text D_08a2f308
-    .ascii "That was great!\n"
-    .ascii "This next one's a\n"
-    .asciz "little more tricky!"
+    .asciz "哦哦，厉害！\n下一个会稍微\n讲点技巧哦！"
 endtext
 
 text D_08a2f340
-    .ascii "Heh, you're better\n"
-    .ascii "than we thought!\n"
-    .ascii "Looks like we'll have to\n"
-    .asciz "bring out the big guns!\n"
+    .asciz "哼，还挺难缠！！\n既然这样，\n就让你见识压箱底的吧！"
 endtext
 
 

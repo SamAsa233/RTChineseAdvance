@@ -1,3 +1,6 @@
+/* 中文文本：本文件采用译文包中 stage 5 的已校对条目。
+ * 字符串中的 \n 是游戏画面换行；相邻引号只是方便阅读源码。
+ * 未校对或未定位的条目见 text/zh_hans/TODO_未校对.md。 */
 #include "global.h"
 #include "graphics.h"
 #include "src/scenes/arrival.h"
@@ -43,7 +46,7 @@ struct CompressedData *arrival_buffered_textures[] = {
 };
 
 // [D_089cd1f0] "Error" Title
-char arrival_default_title[] = "Error[";
+char arrival_default_title[] = "错误";
 
 // [D_089cd1f8] Animations
 struct Animation *arrival_option_anim[] = {

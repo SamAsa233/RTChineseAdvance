@@ -2,6 +2,7 @@
 #include "results.h"
 #include "graphics/results/results_graphics.h"
 #include "src/code_080092cc.h"
+#include "src/text_printer.h"
 
 
 /* RESULTS SCENE 2 (RANK-TYPE) */
@@ -107,9 +108,17 @@ void rank_results_display_header(void) {
     }
 
     anim = results_get_comment_anim(score_handler->headerText, TEXT_ANCHOR_BOTTOM_LEFT, 0);
+
+    if (anim == NULL) {
+        sprite_set_visible(gSpriteHandler, gResults->placeholderIcon, TRUE);
+        return;
+    }
+
     sprite = sprite_create(gSpriteHandler, anim, 0, RANK_HEADER_BOX_X, RANK_HEADER_Y, 0x800, 0, 0, 0);
     sprite_set_base_palette(gSpriteHandler, sprite, RANK_HEADER_PALETTE);
-    width = sprite_get_data(gSpriteHandler, sprite, 24);
+    // Use the printer's exact pixel width instead of the cel's width, which is rounded up to
+    // a multiple of 8 and would overshoot the text with proportional fonts.
+    width = text_printer_get_current_line_width();
     sprite_create(gSpriteHandler, anim_rank_results_header_box, 0, SCREEN_CENTER_X, RANK_HEADER_Y, 0x864, 0, 0, 0);
     sprite_create(gSpriteHandler, anim_rank_results_header_box_mask, 0, SCREEN_CENTER_X + width, RANK_HEADER_Y, 0x850, 0, 0, 0);
 }

@@ -1,8 +1,21 @@
+/* 汉化改动：标题只保存译文用到的汉字，并把缓存键扩成“字号+字库区段+字形序号”，避免汉字超过 255 个后撞号显示错字。 */
 #pragma once
 
 #include "global.h"
 #include "graphics.h"
 #include "data/bitmap_font_data.h"
+#include "data/text_printer_data.h"
+
+struct BitmapFontRange {
+    const void *glyphTextures;
+    const u8 *glyphWidths;
+    u16 utf8Start;
+    u16 utf8End;
+    const u16 *codepointList; // NULL for an ordinary contiguous range.
+    u16 glyphCount;
+};
+
+#define BITMAP_FONT_END_OF_RANGE { NULL, NULL, 0, 0, NULL, 0 }
 
 // Definition of a Bitmap Font.
 struct BitmapFontData {
@@ -11,24 +24,12 @@ struct BitmapFontData {
     u8 textureHeight;    // Glyph Texture Height
     u8 descensionHeight; // Descension Height for Lowercase Latin Alphabet Characters
     s8 spacingWidth;     // Glyph Spacing
-    // [(0x8140 .. 0x817E), (0x8180 .. 0x819E)]
-    const void *punctuationTextures;
-    const u8 *punctuationWidths;
-    // [(0x824F .. 0x8258)]
-    const void *arabicNumeralTextures;
-    const u8 *arabicNumeralWidths;
-    // [(0x8260 .. 0x8279)]
-    const void *latinUppercaseTextures;
-    const u8 *latinUppercaseWidths;
-    // [(0x8281 .. 0x829A)]
-    const void *latinLowercaseTextures;
-    const u8 *latinLowercaseWidths;
-    // [(0x829F .. 0x82FC)]
-    const void *hiraganaTextures;
-    const u8 *hiraganaWidths;
-    // [(0x8340 .. 0x837E), (0x8380 .. 0x839E)]
-    const void *katakanaTextures;
-    const u8 *katakanaWidths;
+    struct BitmapFontRange* glyphRanges;
+};
+
+struct BmpFontSymbolEntry {
+    u16 codepoint;
+    u8 index;
 };
 
 // Bitmap Font Printer which creates OBJ Animations.
@@ -37,7 +38,7 @@ struct BitmapFontOBJ {
     const struct BitmapFontData *fonts;
     u16 baseTileNum;
     u8 maxAllocatedTileRows;
-    u16 *printedGlyphs;
+    u32 *printedGlyphs;
     u8 *printedGlyphCounts;
     void (*parseString)(char *, const char *);
     char *parsedOutput;
@@ -49,7 +50,7 @@ struct BitmapFontBG {
     u16 baseTileNum;
     u8 tilesetID;
     u8 maxAllocatedTileRows;
-    u16 *printedGlyphs;
+    u32 *printedGlyphs;
     u8 *printedGlyphCounts;
 };
 
@@ -99,18 +100,16 @@ extern struct BitmapFontOBJ *create_new_bmp_font_obj_alt(u16 memID, const struct
 extern struct BitmapFontOBJ *create_new_bmp_font_obj(u16 memID, const struct BitmapFontData *fonts, u16 baseTileNum, u8 maxTileRows);
 extern void delete_bmp_font_obj(struct BitmapFontOBJ *textObj);
 extern void bmp_font_obj_set_format_parser(struct BitmapFontOBJ *textObj, void *stringParserFunc, u32 maxOutputLength);
-extern void bmp_font_obj_set_data(struct BitmapFontOBJ *textObj, const struct BitmapFontData *fonts, u16 baseTileNum, u8 maxTileRows, u32, u32, u16 *printedGlyphs, u8 *printedGlyphCounts);
+extern void bmp_font_obj_set_data(struct BitmapFontOBJ *textObj, const struct BitmapFontData *fonts, u16 baseTileNum, u8 maxTileRows, u32, u32, u32 *printedGlyphs, u8 *printedGlyphCounts);
 extern void bmp_font_obj_clear_print_data(struct BitmapFontOBJ *textObj);
 extern u32 bmp_font_obj_get_anim_total(const char *string);
 extern u32 bmp_font_obj_get_glyph_width(const struct BitmapFontData *font, const char *string);
 extern u8 bmp_font_obj_parse_hex_digit(char c);
 extern u32 bmp_font_obj_get_string_width(const struct BitmapFontData *font, const char *string);
-extern void bmp_font_obj_write_glyph_hw(const u16 *texture, u16 *dest);
-extern void bmp_font_obj_write_glyph_fw(const u16 *texture, u16 *dest);
+extern void bmp_font_obj_write_glyph(const u16 *texture, u16 *dest);
 extern u16 bmp_font_obj_print_glyph(struct BitmapFontOBJ *textObj, const char *string, u32 *widthReq);
 extern u32 bmp_font_obj_glyph_is_whitespace(const char *string);
 extern u32 bmp_font_obj_get_latin_glyph_type(const char *string);
-extern const char *bmp_font_obj_convert_latin_hw_to_fw(const char *string);
 extern struct PrintedTextAnim *bmp_font_obj_print_text(struct BitmapFontOBJ *textObj, const char *string, u32 *widthReq, u32 fontStyle, u32 palette);
 extern struct PrintedTextAnim *bmp_font_obj_print_unaligned_default(struct BitmapFontOBJ *textObj, const char *string);
 extern struct PrintedTextAnim *bmp_font_obj_print_unaligned(struct BitmapFontOBJ *textObj, const char *string, u32 fontStyle, u32 palette);
@@ -134,7 +133,7 @@ extern void bmp_font_obj_move_anim_xy(struct Animation *anim, s16 x, s16 y);
 
 extern struct BitmapFontBG *create_new_bmp_font_bg(u16 memID, const struct BitmapFontData *fonts, u8 bgTilesetID, u16 baseTileNum, u8 maxTileRows);
 extern void delete_bmp_font_bg(struct BitmapFontBG *textObj);
-extern void bmp_font_bg_set_data(struct BitmapFontBG *textObj, const struct BitmapFontData *fonts, u8 bgTilesetID, u16 baseTileNum, u8 maxTileRows, u16 *printedGlyphs, u8 *printedGlyphCounts);
+extern void bmp_font_bg_set_data(struct BitmapFontBG *textObj, const struct BitmapFontData *fonts, u8 bgTilesetID, u16 baseTileNum, u8 maxTileRows, u32 *printedGlyphs, u8 *printedGlyphCounts);
 extern void bmp_font_bg_clear_print_data(struct BitmapFontBG *textObj);
 extern void bmp_font_bg_write_glyph(const u16 *texture, u16 *dest);
 extern u16 bmp_font_bg_print_glyph(struct BitmapFontBG *textObj, const char *string);

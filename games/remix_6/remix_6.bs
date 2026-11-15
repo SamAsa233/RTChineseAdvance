@@ -1,3 +1,4 @@
+@ ä¸­æ–‡æ–‡æœ¬ï¼šä¿ç•™åŸè„šæœ¬æ—¶åºï¼Œåªæ›¿æ¢é˜¶æ®µ 5 çš„å·²æ ¡å¯¹å°è¯ï¼›æœªæ ¡å¯¹é¡¹æœç´¢ TODO æœªæ ¡å¯¹ã€‚
 .include "include/beatscript.inc"
 .include "games/space_dance/macros.inc"
 .include "games/bouncy_road/macros.inc"
@@ -179,11 +180,13 @@ sb_stop
 @ Remix 6 - Rap Men Text
 
 text text_remix_6_honto_desu_ka
-    .asciz ".b:1‚l‚‚™‚‚‚…@‚“‚C@.b:0‚ˆ‚•‚ˆH.8:1"
+@ TODO æœªæ ¡å¯¹ï¼štext_remix_6_honto_desu_ka è¯‘æ–‡åŒ…æœªåˆ° stage 5ï¼Œæš‚ç•™åŸæ–‡ã€‚
+    .asciz ".b:1çœŸçš„.b:0å—ï¼Ÿ.8:1"
 endtext
 
 text text_remix_6_kimi_tte_saikou
-    .asciz ".a:1‚x‚‚•@‚‚’‚…@.a:0‚“‚@‚`‚v‚d‚r‚n‚l‚dI.8:0"
+@ TODO æœªæ ¡å¯¹ï¼štext_remix_6_kimi_tte_saikou è¯‘æ–‡åŒ…æœªåˆ° stage 5ï¼Œæš‚ç•™åŸæ–‡ã€‚
+    .asciz ".a:1ä½ .a:0æœ€æ£’å•¦â€”â€”ï¼ï¼.8:0"
 endtext
 
 

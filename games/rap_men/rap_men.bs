@@ -74,65 +74,67 @@ return
 
 .section .script.main
 @ Rap Men - Text
+@ é˜¶æ®µ 5 å·²æ ¡å¯¹ï¼šé€å¥ä¿ç•™åŸæœ‰çš„ä¸¤æ¬¡å˜è‰²å’Œç»“å°¾æ§åˆ¶ç ï¼Œåªæ›¿æ¢å…¶é—´çš„å¯è§æ–‡å­—ã€‚
+@ TODO æœªæ ¡å¯¹ï¼šä¸­æ–‡å¼ºè°ƒèŒƒå›´ã€å­—å®½å’Œå°è¯èŠ‚æ‹ä»éœ€åœ¨ Rap Men å®æœºç”»é¢æ ¸éªŒã€‚
 
 text text_rap_men_sanji_desu_ka
-    .asciz ".b:1‚h‚”f‚“@‚R@‚o‚lC@.b:0‚ˆ‚•‚ˆH.8:1"
+    .asciz ".b:1ä¸‹åˆä¸‰ç‚¹äº†.b:0å—ï¼Ÿ.8:1"
 endtext
 
 text text_rap_men_oyatsu_desu_ka
-    .asciz ".b:1‚h‚”f‚“@‚“‚‚‚ƒ‚‹@‚”‚‰‚‚…C@.b:0‚ˆ‚•‚ˆH.8:1"
+    .asciz ".b:1è¯¥åƒç‚¹å¿ƒäº†.b:0å—ï¼Ÿ.8:1"
 endtext
 
 text text_rap_men_honto_desu_ka
-    .asciz ".b:1‚l‚‚™‚‚‚…@‚“‚C@.b:0‚ˆ‚•‚ˆH.8:1"
+    .asciz ".b:1çœŸçš„.b:0å—ï¼Ÿ.8:1"
 endtext
 
 text text_rap_men_wakarimasu_ka
-    .asciz ".b:1‚x‚‚•@‚‡‚…‚”@‚‰‚”@‚‚‚—C@.b:0‚ˆ‚•‚ˆH.8:1"
+    .asciz ".b:1æ˜ç™½äº†.b:0å—ï¼Ÿ.8:1"
 endtext
 
 text text_rap_men_oishii_kamo_ne
-    .asciz ".9:1‚s‚‚“‚”‚™@‚“‚‚‚ƒ‚‹‚“C@.9:0‚™‚@‚†‚…‚…‚Œ@‚‚…H.8:1"
+    .asciz ".9:1ä¹Ÿè®¸å¾ˆå¥½åƒ.9:0å§.8:1"
 endtext
 
 text text_rap_men_herushii_kamo_ne
-    .asciz ".9:1‚g‚…‚‚Œ‚”‚ˆ‚™@‚“‚‚‚ƒ‚‹‚“C@.9:0‚™‚@‚†‚…‚…‚Œ@‚‚…H.8:1"
+    .asciz ".9:1ä¹Ÿè®¸å¾ˆå¥åº·.9:0å§.8:1"
 endtext
 
 text text_rap_men_ore_no_sei_kamo_ne
-    .asciz ".9:1‚l‚‰‚‡‚ˆ‚”f‚–‚…@‚‚‚…‚…‚@‚•‚“C@.9:0‚™‚@‚†‚…‚…‚Œ@‚‚…H.8:1"
+    .asciz ".9:1ä¹Ÿè®¸æ˜¯æˆ‘çš„é”™.9:0å§.8:1"
 endtext
 
 text text_rap_men_sore_mo_sou_kamo_ne
-    .asciz ".9:1‚s‚ˆ‚‚”f‚“@‚ˆ‚‚—@‚‰‚”@‚‚‚…C@.9:0‚™‚@‚†‚…‚…‚Œ@‚‚…H.8:1"
+    .asciz ".9:1ä¹Ÿè®¸çœŸæ˜¯é‚£æ ·.9:0å§.8:1"
 endtext
 
 text text_rap_men_tanoshii_kamo_ne
-    .asciz ".9:1‚g‚‚–‚‰‚f@‚†‚•‚C@.9:0‚™‚@‚†‚…‚…‚Œ@‚‚…H.8:1"
+    .asciz ".9:1ä¹Ÿè®¸ä¼šå¾ˆå¼€å¿ƒ.9:0å§.8:1"
 endtext
 
 text text_rap_men_oyatsu_wa_saikou
-    .asciz ".a:1‚r‚‚‚ƒ‚‹‚‰‚‚‡@‚‰‚“@.a:0‚“‚@‚`‚v‚d‚r‚n‚l‚dI.8:1"
+    .asciz ".a:1ç‚¹å¿ƒ.a:0æœ€æ£’å•¦â€”â€”ï¼ï¼.8:1"
 endtext
 
 text text_rap_men_kibun_wa_saikou
-    .asciz ".a:1‚h@‚†‚…‚…‚Œ@.a:0‚“‚@‚`‚v‚d‚r‚n‚l‚dI.8:1"
+    .asciz ".a:1å¿ƒæƒ….a:0æœ€æ£’å•¦â€”â€”ï¼ï¼.8:1"
 endtext
 
 text text_rap_men_ore_tte_saikou
-    .asciz ".a:1‚v‚…@‚‚’‚…@.a:0‚“‚@‚`‚v‚d‚r‚n‚l‚dI.8:1"
+    .asciz ".a:1æˆ‘.a:0æœ€æ£’å•¦â€”â€”ï¼ï¼.8:1"
 endtext
 
 text text_rap_men_kimi_tte_saikou
-    .asciz ".a:1‚x‚‚•@‚‚’‚…@.a:0‚“‚@‚`‚v‚d‚r‚n‚l‚dI.8:0"
+    .asciz ".a:1ä½ .a:0æœ€æ£’å•¦â€”â€”ï¼ï¼.8:0"
 endtext
 
 text text_rap_men_oyatsu_ga_nai_yo
-    .asciz ".a:1‚v‚‚‰‚”@‚@‚“‚…‚ƒC@‚—‚…@.a:0‚k‚n‚r‚s@‚r‚n‚l‚dI.8:1"
+    .asciz ".a:1ç‚¹å¿ƒ.a:0ä¸è§å•¦â€”â€”ï¼ï¼.8:1"
 endtext
 
 text text_rap_men_ore_shiranai_yo
-    .asciz ".a:1‚f‚•‚…‚“‚“@‚‰‚”f‚“@‚ˆ‚‚—@‚—‚…@.a:0‚k‚n‚r‚s@‚r‚n‚l‚dI.8:1"
+    .asciz ".a:1æˆ‘.a:0ä¸çŸ¥é“å•¦â€”â€”ï¼ï¼.8:1"
 endtext
 
 
