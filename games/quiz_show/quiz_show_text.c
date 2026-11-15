@@ -91,7 +91,7 @@ const char D_0805ee34[] =
     "只要猜中我敲了几下按钮就行。";
 
 const char D_0805ee5c[] = 
-    "在“请开始”之后，请敲出相同的次数。";
+    "在“请开始”之后，请敲出相同的次\n数。";
 
 const char D_0805ee8c[] = 
     CHAR_A_BUTTON_UTF8"和"CHAR_DPAD_UTF8"，按哪个都 OK。";
