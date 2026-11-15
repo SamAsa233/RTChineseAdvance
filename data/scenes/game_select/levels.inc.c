@@ -40,7 +40,7 @@ struct LevelData level_data_table[] = {
         /* Entry Scene   */ &scene_clappy_trio,
         /* Level Name    */ "啪叽啪叽三人组",
         /* Level Desc.   */ "我们要依次拍手哦！\n"
-                            "你排在第３个。\n"
+                            "你排在第3个。\n"
                             "仔细看好前面两人！",
         /* Level Icon    */ 4,
         /* Level Type    */ LEVEL_TYPE_GAME,
@@ -1023,7 +1023,7 @@ struct LevelData level_data_table[] = {
         /* Entry Scene   */ &scene_clappy_trio_extra,
         /* Level Name    */ "啪叽啪叽三人组",
         /* Level Desc.   */ "我们要依次拍手哦！\n"
-                            "你排在第３个。\n"
+                            "你排在第3个。\n"
                             "仔细看好前面两人再拍哦！",
         /* Level Icon    */ 58,
         /* Level Type    */ LEVEL_TYPE_GAME,
