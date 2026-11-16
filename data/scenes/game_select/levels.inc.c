@@ -1,6 +1,3 @@
-/* 中文文本：本文件采用译文包中 stage 5 的已校对条目。
- * 字符串中的 \n 是游戏画面换行；相邻引号只是方便阅读源码。
- * 未校对或未定位的条目见 text/zh_hans/TODO_未校对.md。 */
 // Level Entries Table
 struct LevelData level_data_table[] = {
     /* KARATE_MAN */ {
@@ -852,7 +849,6 @@ struct LevelData level_data_table[] = {
     },
     /* CAFE */ {
         /* Entry Scene   */ &scene_cafe,
-        // 阶段 5 已校对 level_cafe_counsel；两个地区原文拼写不同，中文同为“咖啡谈心”。
         #ifdef BRIT
         /* Level Name    */ "咖啡谈心",
         #else
@@ -1037,7 +1033,6 @@ struct LevelData level_data_table[] = {
     },
     /* REMIX_1 */ {
         /* Entry Scene   */ &scene_remix_1_extra,
-        // TODO 未校对：level_remix_extra 译文包未到 stage 5，暂留原文。
         /* Level Name    */ "Extra Remix",
         /* Level Desc.   */ "这是额外关卡的Remix哦。\n"
                             "能跟上这个速度吗？\n"

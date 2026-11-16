@@ -1,6 +1,3 @@
-/* 中文文本：本文件采用译文包中 stage 5 的已校对条目。
- * 字符串中的 \n 是游戏画面换行；相邻引号只是方便阅读源码。
- * 未校对或未定位的条目见 text/zh_hans/TODO_未校对.md。 */
 #include "global.h"
 #include "graphics.h"
 #include "text.h"
@@ -243,12 +240,10 @@ const char *cafe_dialogue_all_perfects_clear[] = {
 // Dialogue - Extra Perfects Cleared
 const char *cafe_dialogue_extra_perfects_clear[] = {
     /* ------------------------------------------------ */
-        // TODO 未校对：cafe_dialogue_extra_perfects_clear[0] 译文包未到 stage 5，暂留原文。
         "\n"
         "blabla you finished the extra campaign!\n"
         "\n",
     /* ------------------------------------------------ */
-        // TODO 未校对：cafe_dialogue_extra_perfects_clear[1] 译文包未到 stage 5，暂留原文。
         "\n"
         "it's so AWESOME!!\n"
         "\n",
@@ -260,12 +255,10 @@ const char *cafe_dialogue_extra_perfects_clear[] = {
 // Dialogue - All Perfects Cleared (Main + Extra)
 const char *cafe_dialogue_all_perfects_clear_big[] = {
     /* ------------------------------------------------ */
-        // TODO 未校对：cafe_dialogue_all_perfects_clear_big[0] 译文包未到 stage 5，暂留原文。
         "\n"
         "woohoo main & extra!\n"
         "\n",
     /* ------------------------------------------------ */
-        // TODO 未校对：cafe_dialogue_all_perfects_clear_big[1] 译文包未到 stage 5，暂留原文。
         "\n"
         "you finished the campaign!\n"
         "\n",
@@ -297,8 +290,6 @@ const char *cafe_dialogue_all_perfects_clear_big[] = {
         // Unbelievable!!
     /* -------------------------------- */
 
-/* 汉化修复：保留原版字号、居中和两个画面换行控制码；
- * 相邻 C 字符串会在编译时拼接，中文只替换可见台词。 */
 const char *cafe_dialogue_shouts_praise[] = {
     /* ------------------------------------------------ */
     "\0032" "\001l" "\0051" "\0015" "\n"
@@ -347,8 +338,6 @@ const char *cafe_dialogue_shouts_praise[] = {
         // I was moved!
     /* -------------------------------- */
 
-/* 汉化修复：保留原版字号、居中和两个画面换行控制码；
- * 相邻 C 字符串会在编译时拼接，中文只替换可见台词。 */
 const char *cafe_dialogue_shouts_cheer[] = {
     /* ------------------------------------------------ */
         "\0032" "\001l" "\0051" "\0015" "\n"
@@ -410,7 +399,6 @@ const char *cafe_dialogue_rhythm_sense[] = {
     /* ------------------------------------------------ */
         "\n"
         "不过，节奏感变好了的话，\n"
-        // 译文包只提供一条阶段 5 定稿；两个地区分支都使用该中文，同时保留原条件编译结构。
         #ifdef BRIT
         "人应该也会稍微开心一点吧。"
         #else

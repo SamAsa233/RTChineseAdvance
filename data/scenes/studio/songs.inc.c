@@ -1,7 +1,3 @@
-/* 中文文本：本文件采用译文包中 stage 5 的已校对条目。
- * 字符串中的 \n 是游戏画面换行；相邻引号只是方便阅读源码。
- * 未校对或未定位的条目见 text/zh_hans/TODO_未校对.md。 */
-/* 汉化：Cafe Counselling 的两个英文拼写分支统一使用阶段 5 已校对曲名。 */
 extern const struct Beatscript script_studio_silence[];
 extern const struct Beatscript script_studio_karate_man[];
 extern const struct Beatscript script_studio_clappy_trio[];

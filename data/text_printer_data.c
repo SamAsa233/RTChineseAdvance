@@ -1,4 +1,3 @@
-/* 汉化改动：增补正文汉字范围与中文禁则标点表，让 UTF-8 字符能显示并正确折行。 */
 #include "global.h"
 #include "text.h"
 #include "text_printer_data.h"
