@@ -210,11 +210,24 @@ def save_preview(path, glyphs):
     image.save(path)
 
 
-def c_array(name, data, kind, per_line):
-    lines = [f'const {kind} {name}[] = {{']
+def c_array(name, data, kind, per_line, chars=None, note=None):
+    """传 chars（逐项码位）时按 font_definitions.c 的既有格式给每项加字符注释。"""
+    lines = ([note] if note else []) + [f'const {kind} {name}[] = {{']
     for i in range(0, len(data), per_line):
         values = data[i:i + per_line]
-        lines.append('    ' + ', '.join(f'0x{value:04X}' if kind == 'u16' else str(value) for value in values) + (',' if i + per_line < len(data) else ''))
+        last = i + per_line >= len(data)
+        if chars is None:
+            body = ', '.join(f'0x{value:04X}' if kind == 'u16' else str(value) for value in values)
+            if not last:
+                body += ','
+        elif kind == 'u16':
+            body = '  '.join(f'0x{value:04X}, /* {chr(value)} */' for value in values)
+        else:
+            body = ' '.join(f'/* U+{cp:04X} {chr(cp)} */ {value},'
+                            for cp, value in zip(chars[i:i + per_line], values))
+            if last:
+                body = body[:-1]
+        lines.append('    ' + body)
     lines.append('};')
     return '\n'.join(lines)
 
@@ -224,9 +237,11 @@ def update_definitions(path, codepoints, widths):
     newline = '\r\n' if b'\r\n' in raw else '\n'
     text = raw.decode('utf-8').replace('\r\n', '\n')
     generated = '\n\n'.join((
-        c_array('bitmap_font_warioware_outline_cjk_codepoints', codepoints, 'u16', 12),
-        c_array('bitmap_font_warioware_outline_large_cjk_widths', widths['large'], 'u8', 24),
-        c_array('bitmap_font_warioware_outline_small_cjk_widths', widths['small'], 'u8', 24),
+        c_array('bitmap_font_warioware_outline_cjk_codepoints', codepoints, 'u16', 6, codepoints),
+        c_array('bitmap_font_warioware_outline_large_cjk_widths', widths['large'], 'u8', 1, codepoints,
+                '/* 与 bitmap_font_warioware_outline_cjk_codepoints 一一对应：注释为字形的字符与码位 */'),
+        c_array('bitmap_font_warioware_outline_small_cjk_widths', widths['small'], 'u8', 1, codepoints,
+                '/* 与 bitmap_font_warioware_outline_cjk_codepoints 一一对应：注释为字形的字符与码位 */'),
     ))
     block = BEGIN + '\n/* 新要求：大号华康W7取消额外加粗，字身等比例用满14×14后描边；小号及示例字底阴影保持原规则。 */\n' + generated + '\n' + END
     if BEGIN in text:

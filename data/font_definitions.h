@@ -1,4 +1,3 @@
-/* 汉化改动：声明标题实际用到的中文字模和查找表，避免把整套两万多个 CJK 字形全部放进 ROM。 */
 #pragma once
 
 #include "global.h"
