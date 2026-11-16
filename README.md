@@ -44,8 +44,11 @@
 - 以及热爱《节奏天国》系列的 **你**
 
 # BUG反馈
+腾讯文档：https://docs.qq.com/form/page/DUWljdUJWaGZZYmxJ
 
-![**QQ群：**](media/qrcode.png "群号")
+![**反馈**](media/feedback.png)
+
+你也可以通过提交issues的方式来反馈
 
 # 免责声明
 
