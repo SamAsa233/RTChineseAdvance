@@ -1,4 +1,3 @@
-/* 汉化改动：完美挑战奖励通知由已校对中文片段组成，并用有容量限制的 snprintf 写入缓冲区。 */
 #include "global.h"
 #include "game_select.h"
 #include "graphics/game_select/game_select_graphics.h"
@@ -254,7 +253,6 @@ const char *get_campaign_gift_title(s32 id, s32 shortenSongTitle) {
             return reading_material_table[giftID].title;
 
         case CAMPAIGN_GIFT_NEW_GAME:
-            // 已校对的「新游戏」来自 game_select_new_game；用于奖励标题。
             return "新游戏";
     }
 }

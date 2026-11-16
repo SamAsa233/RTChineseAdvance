@@ -330,7 +330,6 @@ void cafe_print_dialogue(void) {
             if (D_030046a8->data.unk294[CAFE_CLEAR_DIALOGUE_MAIN_PENDING]) {
                 // Oh! You're here, you're here!
                 // I've been waiting, you know!!
-                // 阶段 5 已校对 cafe_line_1；首尾空行是原版文本框的垂直留白。
                 string = "\n"
                          "哦，来啦来啦！\n"
                          "等你好久啦〜！！\n"
@@ -342,7 +341,6 @@ void cafe_print_dialogue(void) {
             }
 #ifdef TEMPOUP
             if (D_030046a8->data.unk294[CAFE_CLEAR_DIALOGUE_EXTRA_PENDING]) {
-                // TODO 未校对：原源码的 extra intro 没有对应的阶段 5 译文，暂保留英文占位。
                 string = "\n"
                          "extra intro\n"
                          "\n";
@@ -352,7 +350,6 @@ void cafe_print_dialogue(void) {
                 break;
             }
             if (D_030046a8->data.unk294[CAFE_CLEAR_DIALOGUE_BIG_PENDING]) {
-                // TODO 未校对：原源码的主线加额外关卡开场语尚无已校对译文。
                 string = "\n"
                          "combined main + extra intro\n"
                          "\n";
@@ -368,7 +365,6 @@ void cafe_print_dialogue(void) {
             }
 
             playtime = gCafe->totalPlayTime;
-            // 阶段 5 已校对 cafe_line_2～5；只换显示文字，保留分支和留白。
             if (playtime <= 20) {
                 // Are you making progress?
                 // Please do your best!
@@ -446,9 +442,6 @@ void cafe_print_dialogue(void) {
                 }
             }
 
-            // 阶段 5 已校对 cafe_line_6～9、11：只替换关卡名两侧的文字。
-            // \0051/\0015 和 \0054/\0018 仍负责高亮动态关卡名。
-            // TODO 未校对：关卡名长短不一，合并后的换行需在游戏里核验。
             switch (topic) {
                 case CAFE_TOPIC_CAMPAIGN_CLEAR:
                     // Was that you on [...]?
@@ -513,7 +506,6 @@ void cafe_print_dialogue(void) {
                 case CAFE_TOPIC_REMEMBERING:
                     activity->timeOfLastPlay = gCafe->totalPlayTime;
                     // Ah! Wait, I remember!
-                    // 阶段 5 已校对 cafe_line_10；两侧空行仍用于文本框定位。
                     string = "\n"
                              "\n"
                              "啊，我突然想起来一点事！\n"
@@ -550,7 +542,6 @@ void cafe_print_dialogue(void) {
         case CAFE_EV_CAMPAIGN_CLEAR_01:
             // Please keep on working hard.
             // I'll be here rooting for you~!
-            // 阶段 5 已校对 cafe_line_12；保留对话结束时的空行。
             string = "\n"
                      "今后也要继续加油哦。\n"
                      "我会为你打气的〜！\n"
@@ -564,9 +555,6 @@ void cafe_print_dialogue(void) {
             //
             // "Please skip it."
             // "No, thank you."
-            // 阶段 5 已校对 cafe_line_13；仅翻译可见文字，保留强调控制码和两项选择顺序。
-            // 中文句子比英文短，正文两行后接选项，仍在打印器的六行容量内。
-            // TODO 未校对：选项缩进和光标位置需要在咖啡馆实机核验。
             string = "嗯〜，要是你愿意，\n"
                      "我可以帮你" "\0051" "\0015" "通过"
                      "\0051" "\0015" "这一关" "\0054" "\0018" "，怎么样…？\n"
@@ -580,7 +568,6 @@ void cafe_print_dialogue(void) {
         case CAFE_EV_OFFER_CLEAR_01:
             if (gCafe->queryResult == CAFE_OPT_YES) {
                 // <Leave it to me!>
-                // 阶段 5 已校对 cafe_line_14；只换强调文字，不移动前后控制码。
                 string = "\n"
                          "\n"
                          "\0032" "\001l" "\0051" "\0015" "包在我身上！" "\0030" "\001s" "\0054" "\0018";
@@ -599,8 +586,6 @@ void cafe_print_dialogue(void) {
                 // You're determined to beat
                 // it with your own strength.
                 // Excellent!
-                // 阶段 5 已校对 cafe_line_15；四行译文加一个首空行，小于打印器六行上限。
-                // TODO 未校对：仍需在选择“还是不必了”后确认实际折行与垂直位置。
                 string = "\n"
                          "这样啊。\n"
                          "你想靠自己的力量\n"
@@ -614,7 +599,6 @@ void cafe_print_dialogue(void) {
             // I hope the next game will go
             // much better for you.
             // Tell me about it next time.
-            // 阶段 5 已校对 cafe_line_16；换行沿用译文的三个短句。
             string = "下一个游戏会是什么样的呢？\n"
                      "希望你能顺利完成呀〜。\n"
                      "那，下回见。";
@@ -624,7 +608,6 @@ void cafe_print_dialogue(void) {
         case CAFE_EV_OFFER_CLEAR_02_N:
             // Well then, please
             // do your best!
-            // 阶段 5 已校对 cafe_line_17；首尾空行仍用于垂直定位。
             string = "\n"
                      "那就继续加油哦〜。\n"
                      "\n";
@@ -637,9 +620,6 @@ void cafe_print_dialogue(void) {
             //
             //         "That's right."
             //         "Not right now."
-            // 阶段 5 已校对 cafe_line_18；保留两个地区编译分支和原来的强调控制码顺序。
-            // 中文两侧相同，是因为英式/美式拼写差异在中文译文中不存在。
-            // TODO 未校对：菜单缩进与光标相对位置仍需实机确认。
             #ifdef BRIT
             string = "\0054" "\0018" "你是在为"
             #else
@@ -668,7 +648,6 @@ void cafe_print_dialogue(void) {
         case CAFE_EV_UPCOMING_CAMPAIGN_00:
             // Just try your best and
             // go get that Perfect!
-            // 阶段 5 已校对 cafe_line_19；保留原版开头的空行。
             string = "\n"
                      "加把劲，\n"
                      "争取完美通关吧！\n";
@@ -679,7 +658,6 @@ void cafe_print_dialogue(void) {
             // At long last...
             // You have completed
             // the Perfect Campaign!
-            // 阶段 5 已校对 cafe_line_20；原版开头空行继续保留。
             string = "\n"
                      "听说你终于\n"
                      "把所有完美挑战\n"
@@ -689,7 +667,6 @@ void cafe_print_dialogue(void) {
 
         case CAFE_EV_ALL_CAMPAIGNS_CLEAR_01:
             // Crazy awesome!!
-            // 阶段 5 已校对 cafe_line_21；高亮与字号控制码保持原位。
             string = "\0032" "\001l" "\0051" "\0015" "\n"
                      "也太厉害啦!!" "\0030" "\001s" "\0054" "\0018";
             gCafe->bgEvent = CAFE_BG_EV_CHEER_02;
@@ -698,8 +675,6 @@ void cafe_print_dialogue(void) {
             break;
 
         case CAFE_EV_EXTRA_CAMPAIGNS_CLEAR_00:
-            // 阶段 5 已校对 cafe_line_extra_1～3；保留各完成状态分支。
-            // TODO 未校对：额外关卡的较长中文仍需在对应版本实机看宽度。
             string = "\0032" "\001l" "\0051" "\0015" "\n"
                      "天呐！所有的额外关卡！" "\0030" "\001s" "\0054" "\0018";
             gCafe->bgEvent = CAFE_BG_EV_CHEER_02;

@@ -1,4 +1,3 @@
-/* 汉化：证书页按译文包阶段 5 的片段拼接奖励文案，保留原有颜色控制码。 */
 #include "global.h"
 #include "scenes.h"
 #include "perfect.h"
@@ -194,9 +193,6 @@ void perfect_scene_start(void *sVar, s32 dArg) {
     if (activeCampaignsCleared < activeCampaignsTotal) {
         campaignsLeft = activeCampaignsTotal - activeCampaignsCleared;
     }
-    // 已校对片段来自 src/perfect.json；标题、数量和说明的组合顺序沿用原版。
-    // 实机核验：2026-09-29 分别检查长歌名、长资料名、长鼓组名、剩余数量和
-    // “礼物已经全部送完”分支，四行证书文字均未重叠、截断或错误换行。
     strint(count, campaignsLeft);
     giftTitle = get_campaign_gift_title(gPerfect->campaignID, FALSE);
     songSuffix = "";
@@ -208,14 +204,12 @@ void perfect_scene_start(void *sVar, s32 dArg) {
                 break;
 
             default:
-                // 部分曲名本身已是完整歌名；其余沿用原版加“的音乐”的规则。
                 songSuffix = "的音乐";
                 break;
         }
     }
 
     if (campaignsLeft > 0) {
-        // 中文“礼物还有…份”可同时覆盖剩余 1 份和多份，避免英语单复数分支。
         snprintf(gPerfect->string, sizeof(gPerfect->string),
                  "\0021\0011\001C\0030\001s\0054\0018%s%s已送给你！\0020\0010\n%s"
                  "礼物还有 \0021\0011%s\0020\0010 份，\n也去试试其他完美挑战吧！",

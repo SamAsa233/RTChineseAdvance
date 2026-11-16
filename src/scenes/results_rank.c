@@ -116,9 +116,7 @@ void rank_results_display_header(void) {
 
     sprite = sprite_create(gSpriteHandler, anim, 0, RANK_HEADER_BOX_X, RANK_HEADER_Y, 0x800, 0, 0, 0);
     sprite_set_base_palette(gSpriteHandler, sprite, RANK_HEADER_PALETTE);
-    // Use the printer's exact pixel width instead of the cel's width, which is rounded up to
-    // a multiple of 8 and would overshoot the text with proportional fonts.
-    width = text_printer_get_current_line_width();
+    width = text_printer_get_current_line_width(); // 改用字模实际宽度
     sprite_create(gSpriteHandler, anim_rank_results_header_box, 0, SCREEN_CENTER_X, RANK_HEADER_Y, 0x864, 0, 0, 0);
     sprite_create(gSpriteHandler, anim_rank_results_header_box_mask, 0, SCREEN_CENTER_X + width, RANK_HEADER_Y, 0x850, 0, 0, 0);
 }
