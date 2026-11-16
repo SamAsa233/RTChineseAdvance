@@ -74,8 +74,6 @@ return
 
 .section .script.main
 @ Rap Men - Text
-@ 阶段 5 已校对：逐句保留原有的两次变色和结尾控制码，只替换其间的可见文字。
-@ TODO 未校对：中文强调范围、字宽和台词节拍仍需在 Rap Men 实机画面核验。
 
 text text_rap_men_sanji_desu_ka
     .asciz ".b:1下午三点了.b:0吗？.8:1"

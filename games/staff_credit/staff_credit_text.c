@@ -78,9 +78,9 @@ const char D_08069bd4[] = "藤井 貴矢";
 
 const char D_08069bdc[] = "\0023" "演唱";
 
-const char D_08069be4[] = "時東　ぁみ";
+const char D_08069be4[] = "時東 ぁみ";
 
-const char D_08069bf0[] = "田中　総史";
+const char D_08069bf0[] = "田中 総史";
 
 const char D_08069bfc[] = "\0023" "配音";
 
@@ -142,7 +142,7 @@ const char D_08069d38[] = "堀田 拓司";
 
 const char D_08069d40[] = "松宮 信雄";
 
-const char D_08069d4c[] = "みつばち　まき";
+const char D_08069d4c[] = "みつばち まき";
 
 const char D_08069d5c[] = "剣持 あゆち";
 

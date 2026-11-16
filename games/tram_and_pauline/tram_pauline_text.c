@@ -1,6 +1,3 @@
-/* 中文文本：本文件采用译文包中 stage 5 的已校对条目。
- * 字符串中的 \n 是游戏画面换行；相邻引号只是方便阅读源码。
- * 未校对或未定位的条目见 text/zh_hans/TODO_未校对.md。 */
 #include "global.h"
 #include "text.h"
 
@@ -30,7 +27,7 @@ const char D_0805dbc0[] = "一起蹦起来！";
 
 const char D_0805dbd8[] = "在跳到最高点的时候，";
 
-const char D_0805dbf4[] = "我用"CHAR_DPAD_UTF8"，";
+const char D_0805dbf4[] = "我用"CHAR_DPAD_UTF8"键，";
 
 const char D_0805dc0c[] = "我用"CHAR_A_BUTTON_UTF8"键，";
 

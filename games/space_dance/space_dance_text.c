@@ -1,6 +1,3 @@
-/* 中文文本：本文件采用译文包中 stage 5 的已校对条目。
- * 字符串中的 \n 是游戏画面换行；相邻引号只是方便阅读源码。
- * 未校对或未定位的条目见 text/zh_hans/TODO_未校对.md。 */
 #include "global.h"
 #include "text.h"
 
@@ -26,7 +23,7 @@ const char D_0805e344[] = "进副歌前那段卡得很漂亮哦！";
 
 const char D_0805e364[] = "太空大叔的点评";
 
-const char D_0805e37c[] = "Let's Go！";
+const char D_0805e37c[] = "Let's Go!";
 
 const char D_0805e38c[] = "大家一起来跳舞吧！";
 
@@ -36,7 +33,7 @@ const char D_0805e3d8[] = "那么，第 1 个。";
 
 const char D_0805e3ec[] = "跟着做！";
 
-const char D_0805e3fc[] = "OK！";
+const char D_0805e3fc[] = "OK!";
 
 const char D_0805e3fd[] = "下蹲动作合格！";
 

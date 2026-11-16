@@ -1,4 +1,3 @@
-@ 中文文本：保留原脚本指令，只把已校对台词接入；未校对项搜索 TODO 未校对。
 .include "include/beatscript.inc"
 .include "games/rap_men/macros.inc"
 
