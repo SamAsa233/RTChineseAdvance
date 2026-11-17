@@ -5,7 +5,7 @@
 /* Game Text - Spaceball */
 
 
-const char D_0805bdc8[] = "基本功还没做到位。";
+const char D_0805bdc8[] = "基本功还没练到家。";
 
 const char D_0805bde4[] = "";
 
@@ -21,7 +21,7 @@ const char D_0805be50[] = "速度一快就招架不住了啊。";
 
 const char D_0805be6c[] = "快节奏打得很完美！";
 
-const char D_0805be80[] = "基本功还没做到位。";
+const char D_0805be80[] = "基本功还没练到家。";
 
 const char D_0805be9c[] = "";
 
@@ -37,7 +37,7 @@ const char D_0805bf08[] = "速度一快就招架不住了啊。";
 
 const char D_0805bf24[] = "快节奏打得很完美！";
 
-const char D_0805bf38[] = "基本功还没做到位。";
+const char D_0805bf38[] = "基本功还没练到家。";
 
 const char D_0805bf54[] = "";
 
@@ -55,7 +55,7 @@ const char D_0805bfe0[] = "快节奏很完美！";
 
 const char D_0805bff8[] = "评价";
 
-const char D_0805c004[] = "基本功还没做到位。";
+const char D_0805c004[] = "基本功还没练到家。";
 
 const char D_0805c020[] = "";
 
